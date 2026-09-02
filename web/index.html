@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>카카오 선물하기 세부 카테고리 Top 50 & IP 대시보드</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <!-- Chart.js & FontAwesome -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="dashboard-container">
+        <!-- Sidebar Navigation -->
+        <aside class="sidebar">
+            <div class="brand">
+                <div class="brand-icon">
+                    <i class="fa-solid fa-wand-magic-sparkles"></i>
+                </div>
+                <div class="brand-text">
+                    <h2>IP Brand Hub</h2>
+                    <span>Category Top 50 System</span>
+                </div>
+            </div>
+
+            <!-- 🔥 Main Page Tabs -->
+            <nav class="nav-menu" id="main-nav-menu">
+                <button class="nav-item active" data-page="page-overview">
+                    <i class="fa-solid fa-chart-pie"></i> 📊 트렌드 요약 & 차트
+                </button>
+                <button class="nav-item" data-page="page-ip-strategy">
+                    <i class="fa-solid fa-icons"></i> 🎨 캐릭터 IP 전략 분석
+                </button>
+                <button class="nav-item" data-page="page-ranking-table">
+                    <i class="fa-solid fa-table-list"></i> 📋 세부 랭킹 명세 (Top 50)
+                </button>
+            </nav>
+
+            <div class="schedule-badge">
+                <div class="status-indicator"></div>
+                <div class="schedule-info">
+                    <span class="label">수집 날짜</span>
+                    <span class="value" id="sidebar-date-label">최신 데이터</span>
+                </div>
+            </div>
+        </aside>
+
+        <!-- Main Content View -->
+        <main class="main-content">
+            <!-- Header -->
+            <header class="top-header">
+                <div class="header-title">
+                    <h1>🧸 카카오 선물하기 세부 카테고리별 Top 50 인사이트</h1>
+                    <p id="last-updated">최근 수집 시각: 불러오는 중...</p>
+                </div>
+                <div class="header-actions">
+                    <div class="date-picker-wrapper">
+                        <label class="date-label"><i class="fa-solid fa-calendar-days"></i> 날짜 선택:</label>
+                        <select id="date-selector" class="date-select">
+                            <option value="">최신 데이터</option>
+                        </select>
+                    </div>
+                    <button id="refresh-btn" class="btn-primary">
+                        <i class="fa-solid fa-rotate-right"></i> 데이터 갱신
+                    </button>
+                </div>
+            </header>
+
+            <!-- ================================================================= -->
+            <!-- PAGE 1: 📊 트렌드 요약 & 차트 (Overview & Charts View) -->
+            <!-- ================================================================= -->
+            <div id="page-overview" class="page-view active">
+                <!-- Category Filter Bar -->
+                <section class="category-filter-section card">
+                    <span class="filter-label"><i class="fa-solid fa-layer-group"></i> 카테고리 선택:</span>
+                    <div class="category-tabs" id="cat-tabs-overview">
+                        <button class="cat-tab active" data-cat="all">전체 수집 (200개)</button>
+                        <button class="cat-tab" data-cat="리빙 전체">🏠 리빙 전체 (50위)</button>
+                        <button class="cat-tab" data-cat="팬시/문구/취미 (IP핵심)">🧸 팬시/문구/취미 (IP 56.7%)</button>
+                        <button class="cat-tab" data-cat="침구/패브릭">🛏️ 침구/패브릭 (IP 70.0%)</button>
+                        <button class="cat-tab" data-cat="주방/식기">🍳 주방/식기 (50위)</button>
+                    </div>
+                </section>
+
+                <!-- Metric Cards -->
+                <section class="metrics-grid">
+                    <div class="card metric-card">
+                        <div class="card-icon icon-yellow">
+                            <i class="fa-solid fa-face-smile"></i>
+                        </div>
+                        <div class="metric-info">
+                            <span class="metric-label">캐릭터 IP 점유율</span>
+                            <h3 id="ov-ip-share" class="metric-value">0 %</h3>
+                            <span id="ov-ip-sub" class="metric-sub">선택 카테고리 기준</span>
+                        </div>
+                    </div>
+
+                    <div class="card metric-card">
+                        <div class="card-icon icon-rose">
+                            <i class="fa-solid fa-crown"></i>
+                        </div>
+                        <div class="metric-info">
+                            <span class="metric-label">최다 노출 캐릭터 IP</span>
+                            <h3 id="ov-top-ip" class="metric-value">-</h3>
+                            <span id="ov-top-ip-sub" class="metric-sub">1위 트렌드 IP</span>
+                        </div>
+                    </div>
+
+                    <div class="card metric-card">
+                        <div class="card-icon icon-cyan">
+                            <i class="fa-solid fa-coins"></i>
+                        </div>
+                        <div class="metric-info">
+                            <span class="metric-label">IP 상품 평균 가격</span>
+                            <h3 id="ov-avg-price" class="metric-value">0 원</h3>
+                            <span class="metric-sub">소비자 수용 적정가</span>
+                        </div>
+                    </div>
+
+                    <div class="card metric-card">
+                        <div class="card-icon icon-indigo">
+                            <i class="fa-solid fa-chart-line"></i>
+                        </div>
+                        <div class="metric-info">
+                            <span class="metric-label">수집 상품 수</span>
+                            <h3 id="ov-total-count" class="metric-value">0 개</h3>
+                            <span class="metric-sub">(광고 완전 제외)</span>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Charts Section -->
+                <section class="charts-grid">
+                    <div class="card chart-card">
+                        <div class="card-title">
+                            <h3><i class="fa-solid fa-chart-column"></i> 캐릭터 IP별 노출 비중</h3>
+                            <span>IP별 수집 개수</span>
+                        </div>
+                        <div class="chart-wrapper">
+                            <canvas id="ipChart"></canvas>
+                        </div>
+                    </div>
+
+                    <div class="card chart-card">
+                        <div class="card-title">
+                            <h3><i class="fa-solid fa-chart-pie"></i> 주요 제조 브랜드 점유율</h3>
+                            <span>제조 브랜드 분포</span>
+                        </div>
+                        <div class="chart-wrapper">
+                            <canvas id="brandChart"></canvas>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Top Ranking Cards Section -->
+                <section class="top-ranking-section">
+                    <div class="section-header">
+                        <h2><i class="fa-solid fa-trophy highlight-yellow"></i> 🏆 <span id="ov-cards-label">선택 카테고리</span> Top 6 인기 선물 (1위~6위)</h2>
+                    </div>
+                    <div class="ranking-cards-grid" id="top-cards-container">
+                        <!-- Dynamic Top 6 cards -->
+                    </div>
+                </section>
+            </div>
+
+            <!-- ================================================================= -->
+            <!-- PAGE 2: 🎨 캐릭터 IP 전략 분석 (Character IP Strategy Hub) -->
+            <!-- ================================================================= -->
+            <div id="page-ip-strategy" class="page-view">
+                <section class="insights-section card">
+                    <div class="section-header">
+                        <h2><i class="fa-solid fa-lightbulb highlight-icon"></i> 🎨 캐릭터 IP 브랜드 전용 마케팅 & 기획 인사이트</h2>
+                    </div>
+                    <div class="insights-content" id="ip-strategy-box">
+                        <!-- Dynamic IP strategy cards -->
+                    </div>
+                </section>
+
+                <!-- Top IP Ranking Summary -->
+                <section class="card" style="margin-bottom: 28px;">
+                    <div class="section-header">
+                        <h2><i class="fa-solid fa-heart highlight-rose"></i> 🧸 현재 인기 캐릭터 IP 노출 순위 & 주력 상품</h2>
+                    </div>
+                    <div class="table-container">
+                        <table class="custom-table">
+                            <thead>
+                                <tr>
+                                    <th style="width: 140px;">캐릭터 IP</th>
+                                    <th style="width: 110px;">노출 개수</th>
+                                    <th style="width: 110px;">점유율</th>
+                                    <th style="width: 110px;">최고 순위</th>
+                                    <th>주력 1위 상품 및 브랜드</th>
+                                </tr>
+                            </thead>
+                            <tbody id="ip-summary-tbody">
+                                <!-- Dynamic IP Summary Rows -->
+                            </tbody>
+                        </table>
+                    </div>
+                </section>
+            </div>
+
+            <!-- ================================================================= -->
+            <!-- PAGE 3: 📋 세부 랭킹 명세 (Full Top 50 Ranking Table View) -->
+            <!-- ================================================================= -->
+            <div id="page-ranking-table" class="page-view">
+                <!-- Category Filter Bar for Table -->
+                <section class="category-filter-section card">
+                    <span class="filter-label"><i class="fa-solid fa-layer-group"></i> 카테고리 선택:</span>
+                    <div class="category-tabs" id="cat-tabs-table">
+                        <button class="cat-tab active" data-cat="all">전체 수집 (200개)</button>
+                        <button class="cat-tab" data-cat="리빙 전체">🏠 리빙 전체 (1~50위)</button>
+                        <button class="cat-tab" data-cat="팬시/문구/취미 (IP핵심)">🧸 팬시/문구/취미 (1~50위)</button>
+                        <button class="cat-tab" data-cat="침구/패브릭">🛏️ 침구/패브릭 (1~50위)</button>
+                        <button class="cat-tab" data-cat="주방/식기">🍳 주방/식기 (1~50위)</button>
+                    </div>
+                </section>
+
+                <section class="table-section card">
+                    <div class="section-header table-header">
+                        <h2><i class="fa-solid fa-list-ol"></i> <span id="table-view-title">전체</span> 랭킹 명세 (Top 1 ~ Top 50)</h2>
+                        <div class="table-tools">
+                            <div class="search-input">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                                <input type="text" id="search-box" placeholder="상품명, 브랜드, 캐릭터 IP 검색...">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="table-container">
+                        <table class="custom-table">
+                            <thead>
+                                <tr>
+                                    <th style="width: 140px;">카테고리</th>
+                                    <th style="width: 70px;">순위</th>
+                                    <th style="width: 140px;">캐릭터 IP</th>
+                                    <th style="width: 120px;">브랜드</th>
+                                    <th>상품명</th>
+                                    <th style="width: 110px;">가격</th>
+                                    <th style="width: 90px;">링크</th>
+                                </tr>
+                            </thead>
+                            <tbody id="ranking-table-body">
+                                <!-- Dynamic Table Rows -->
+                            </tbody>
+                        </table>
+                    </div>
+                </section>
+            </div>
+        </main>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
