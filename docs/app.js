@@ -60,9 +60,21 @@ document.addEventListener('DOMContentLoaded', () => {
 
     async function loadAvailableDates() {
         try {
-            const res = await fetch('/api/dates');
-            if (!res.ok) return;
-            const dates = await res.json();
+            let dates = [];
+            try {
+                const res = await fetch('/api/dates');
+                if (res.ok) {
+                    dates = await res.json();
+                } else {
+                    throw new Error('API server not available');
+                }
+            } catch (err) {
+                // GitHub Pages 등 정적 서버 fallback
+                const staticRes = await fetch('dates.json');
+                if (staticRes.ok) {
+                    dates = await staticRes.json();
+                }
+            }
             
             if (dates && dates.length > 0) {
                 dateSelector.innerHTML = `<option value="">최신 데이터 (${dates[0].label})</option>`;
@@ -81,14 +93,25 @@ document.addEventListener('DOMContentLoaded', () => {
 
     async function loadData() {
         try {
-            const url = selectedDate ? `/api/data?date=${selectedDate}` : '/api/data';
-            const response = await fetch(url);
             let resJson;
-            if (response.ok) {
-                resJson = await response.json();
-            } else {
-                const fallbackResponse = await fetch('data.json');
-                resJson = await fallbackResponse.json();
+            const url = selectedDate ? `/api/data?date=${selectedDate}` : '/api/data';
+            try {
+                const response = await fetch(url);
+                if (response.ok) {
+                    resJson = await response.json();
+                } else {
+                    throw new Error('API fetch failed');
+                }
+            } catch (err) {
+                // 정적 배포(GitHub Pages) 환경 Fallback
+                const staticFile = selectedDate ? `data_${selectedDate}.json` : 'data.json';
+                let fallbackResponse = await fetch(staticFile);
+                if (!fallbackResponse.ok && selectedDate) {
+                    fallbackResponse = await fetch('data.json');
+                }
+                if (fallbackResponse.ok) {
+                    resJson = await fallbackResponse.json();
+                }
             }
 
             if (Array.isArray(resJson)) {
@@ -113,7 +136,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 }
             } catch (err) {}
         } catch (e) {
-            console.warn('API fetch failed, trying local data.json', e);
+            console.warn('Data fetch failed, trying local data.json', e);
             try {
                 const res = await fetch('data.json');
                 const resJson = await res.json();
