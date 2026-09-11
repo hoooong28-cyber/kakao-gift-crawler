@@ -32,11 +32,14 @@
                 <button class="nav-item active" data-page="page-overview">
                     <i class="fa-solid fa-chart-pie"></i> 📊 트렌드 요약 & 차트
                 </button>
+                <button class="nav-item" data-page="page-b2b-insights">
+                    <i class="fa-solid fa-lightbulb highlight-yellow"></i> 🚀 B2B 마케팅 인사이트 카드
+                </button>
                 <button class="nav-item" data-page="page-ip-strategy">
                     <i class="fa-solid fa-icons"></i> 🎨 캐릭터 IP 전략 분석
                 </button>
                 <button class="nav-item" data-page="page-ranking-table">
-                    <i class="fa-solid fa-table-list"></i> 📋 세부 랭킹 명세 (Top 50)
+                    <i class="fa-solid fa-table-list"></i> 📋 세부 랭킹 명세 (Top 100)
                 </button>
             </nav>
 
@@ -168,6 +171,27 @@
             </div>
 
             <!-- ================================================================= -->
+            <!-- PAGE: 🚀 B2B 마케팅 인사이트 카드 (Card 1 ~ Card 4) -->
+            <!-- ================================================================= -->
+            <div id="page-b2b-insights" class="page-view">
+                <!-- Category Filter Bar -->
+                <section class="category-filter-section card">
+                    <span class="filter-label"><i class="fa-solid fa-layer-group"></i> 카테고리 선택:</span>
+                    <div class="category-tabs" id="cat-tabs-b2b">
+                        <button class="cat-tab active" data-cat="리빙 전체">🏠 리빙 전체</button>
+                        <button class="cat-tab" data-cat="팬시/문구/취미 (IP핵심)">🧸 팬시/문구/취미</button>
+                        <button class="cat-tab" data-cat="침구/패브릭">🛏️ 침구/패브릭</button>
+                        <button class="cat-tab" data-cat="주방/식기">🍳 주방/식기</button>
+                        <button class="cat-tab" data-cat="전체">🌐 전체 통합</button>
+                    </div>
+                </section>
+
+                <div id="b2b-cards-container">
+                    <!-- Dynamic B2B Insight Cards (Card 1, Card 2, Card 3, Card 4) -->
+                </div>
+            </div>
+
+            <!-- ================================================================= -->
             <!-- PAGE 2: 🎨 캐릭터 IP 전략 분석 (Character IP Strategy Hub) -->
             <!-- ================================================================= -->
             <div id="page-ip-strategy" class="page-view">
@@ -253,6 +277,6 @@
         </main>
     </div>
 
-    <script src="app.js"></script>
+    <script src="app.js?v=3"></script>
 </body>
 </html>
