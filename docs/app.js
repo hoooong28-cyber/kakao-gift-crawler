@@ -551,35 +551,40 @@ document.addEventListener('DOMContentLoaded', () => {
     function renderIpStrategyPage(allProducts, sortedIps) {
         const strategyBox = document.getElementById('ip-strategy-box');
         
-        // Category IP Share Calculation
+        // Category IP Share Calculation (순수 캐릭터 IP 기준: 기타 캐릭터/팬시 제외)
         const catShareList = [];
         const categories = ["리빙 전체", "팬시/문구/취미 (IP핵심)", "침구/패브릭", "주방/식기"];
+        const nonPureTags = ['일반/비IP 상품', '기타 캐릭터/팬시', '캐릭터/팬시-침구', '캐릭터/팬시-팬시굿즈', '캐릭터/팬시-주방'];
         
         categories.forEach(c => {
             const catProds = allProducts.filter(p => p.category === c);
-            const ipProds = catProds.filter(p => p.character_ip && p.character_ip !== '일반/비IP 상품');
+            const ipProds = catProds.filter(p => p.character_ip && !nonPureTags.includes(p.character_ip));
             const pct = catProds.length > 0 ? roundToOneDecimal((ipProds.length / catProds.length) * 100) : 0;
             catShareList.push({ category: c, total: catProds.length, ipCount: ipProds.length, ratio: pct });
         });
 
+        const sortedCatShares = [...catShareList].sort((a, b) => b.ratio - a.ratio);
+        const top1 = sortedCatShares[0] || { category: '팬시/문구/취미 (IP핵심)', ratio: 44.0 };
+        const top2 = sortedCatShares[1] || { category: '침구/패브릭', ratio: 38.0 };
+
         strategyBox.innerHTML = `
             <div class="insight-item">
-                <h4><i class="fa-solid fa-fire"></i> 세부 카테고리별 IP 침투 밀도 현황</h4>
+                <h4><i class="fa-solid fa-fire"></i> 세부 카테고리별 순수 IP 침투 밀도 현황</h4>
                 <ul>
-                    ${catShareList.map(c => `<li><strong>[${c.category}]</strong>: IP 점유율 <strong>${c.ratio}%</strong> (${c.total}개 중 ${c.ipCount}개)</li>`).join('')}
+                    ${catShareList.map(c => `<li><strong>[${c.category}]</strong>: 순수 IP 점유율 <strong>${c.ratio}%</strong> (${c.total}개 중 ${c.ipCount}개)</li>`).join('')}
                 </ul>
             </div>
             <div class="insight-item">
                 <h4><i class="fa-solid fa-bullseye"></i> 굿즈 제조사 핵심 추천 구역</h4>
                 <ul>
-                    <li><strong>침구/패브릭 (70.0%)</strong> & <strong>팬시/문구 (56.7%)</strong> 카테고리가 IP 상품의 최다 유입 구역입니다.</li>
-                    <li>바디필로우, 핸드워머 쿠션, 마우스패드, 파우치 폼팩터 출시 시 즉각적인 소비자 반응 촉발.</li>
+                    <li><strong>${top1.category} (${top1.ratio}%)</strong> & <strong>${top2.category} (${top2.ratio}%)</strong> 카테고리가 명확한 캐릭터 IP 상품의 최다 유입 구역입니다.</li>
+                    <li>인형 키링, 마우스패드, 문구/파우치 폼팩터 출시 시 즉각적인 소비자 반응 촉발.</li>
                 </ul>
             </div>
             <div class="insight-item">
                 <h4><i class="fa-solid fa-lightbulb"></i> 가격 & 단독 패키징 셀링 포인트</h4>
                 <ul>
-                    <li>소비자 구매 결제 평균 적정가: <strong>18,000원 ~ 34,800원</strong></li>
+                    <li>소비자 구매 결제 평균 적정가: <strong>14,600원 ~ 31,700원</strong></li>
                     <li>상품 타이틀 <code>[단독/선런칭]</code> 및 <code>사은품 증정</code> 세팅 필수.</li>
                 </ul>
             </div>
