@@ -196,17 +196,25 @@ document.addEventListener('DOMContentLoaded', () => {
         let ipProductCount = 0;
         let totalIpPrice = 0;
 
+        const nonPureTags = ['일반/비IP 상품', '기타 캐릭터/팬시', '캐릭터/팬시-침구', '캐릭터/팬시-팬시굿즈', '캐릭터/팬시-주방'];
+
         products.forEach(p => {
             const ip = p.character_ip || '일반/비IP 상품';
             if (ip !== '일반/비IP 상품') {
-                ipProductCount++;
-                const rawPrice = parseInt((p.price || '').replace(/[^0-9]/g, ''), 10);
-                if (rawPrice) totalIpPrice += rawPrice;
-
                 const ipList = ip.split(', ');
-                ipList.forEach(item => {
-                    ipCounts[item] = (ipCounts[item] || 0) + 1;
-                });
+                const isGenericFancy = ipList.every(item => nonPureTags.includes(item));
+                
+                if (!isGenericFancy) {
+                    ipProductCount++;
+                    const rawPrice = parseInt((p.price || '').replace(/[^0-9]/g, ''), 10);
+                    if (rawPrice) totalIpPrice += rawPrice;
+
+                    ipList.forEach(item => {
+                        if (!nonPureTags.includes(item)) {
+                            ipCounts[item] = (ipCounts[item] || 0) + 1;
+                        }
+                    });
+                }
             }
 
             if (p.brand) {
@@ -217,7 +225,7 @@ document.addEventListener('DOMContentLoaded', () => {
         // Overview Metrics
         const ipSharePct = products.length > 0 ? roundToOneDecimal((ipProductCount / products.length) * 100) : 0;
         document.getElementById('ov-ip-share').textContent = `${ipSharePct} %`;
-        document.getElementById('ov-ip-sub').textContent = `${products.length}개 항목 중 ${ipProductCount}개 IP 상품`;
+        document.getElementById('ov-ip-sub').textContent = `${products.length}개 항목 중 ${ipProductCount}개 명확한 IP 상품`;
 
         const sortedIps = Object.entries(ipCounts).sort((a, b) => b[1] - a[1]);
         if (sortedIps.length > 0) {
@@ -254,7 +262,8 @@ document.addEventListener('DOMContentLoaded', () => {
         if (!products || products.length === 0) return {};
 
         const totalCnt = products.length;
-        const ipProds = products.filter(p => p.character_ip && p.character_ip !== '일반/비IP 상품');
+        const nonPureTags = ['일반/비IP 상품', '기타 캐릭터/팬시', '캐릭터/팬시-침구', '캐릭터/팬시-팬시굿즈', '캐릭터/팬시-주방'];
+        const ipProds = products.filter(p => p.character_ip && !nonPureTags.includes(p.character_ip));
         const ipShare = `${roundToOneDecimal((ipProds.length / totalCnt) * 100)}%`;
 
         let pkgCount = 0, engCount = 0, excCount = 0, totalPrice = 0;

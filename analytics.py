@@ -104,9 +104,11 @@ def generate_all_dashboard_cards(df_enriched, top_n=100):
             
         total_count = len(sub_df)
         
-        # 1. SOV
-        ip_counts = sub_df[sub_df['character_ip'] != '일반/비IP 상품']['character_ip'].value_counts()
-        ip_total = sub_df[sub_df['character_ip'] != '일반/비IP 상품'].shape[0]
+        # 1. SOV (순수 캐릭터 IP 기준: 기타 일반 캐릭터/팬시 항목 제외)
+        non_pure_tags = ["일반/비IP 상품", "기타 캐릭터/팬시", "캐릭터/팬시-침구", "캐릭터/팬시-팬시굿즈", "캐릭터/팬시-주방"]
+        pure_ip_df = sub_df[~sub_df['character_ip'].isin(non_pure_tags)]
+        ip_counts = pure_ip_df['character_ip'].value_counts()
+        ip_total = pure_ip_df.shape[0]
         ip_share = f"{round((ip_total / total_count) * 100, 1)}%" if total_count > 0 else "0%"
         top_ip_name = ip_counts.index[0] if not ip_counts.empty else "없음"
         
