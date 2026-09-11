@@ -1,35 +1,104 @@
-# 카카오 선물하기 랭킹 크롤러 및 인사이트 추출기 🎁
+# 카카오 선물하기 랭킹 크롤러 및 B2B 인사이트 파이프라인 🎁
 
-매일 오전 10시에 카카오 선물하기 랭킹 (카테고리 5: 리빙/주방/디지털 등) 데이터를 자동으로 크롤링하고, 일별 CSV 저장 및 트렌드 인사이트를 분석합니다.
+카카오 선물하기 랭킹 (카테고리 5: 리빙/주방/디지털/팬시 등) 데이터를 자동으로 크롤링하고, 파생 스키마 생성, 한국어 형태소/키워드 추출, 가격대 x 카테고리 매트릭스(White Space Analysis), USP 속성 비율, 라이징 아이템 감지 및 대시보드 연동용 JSON 카드를 자동 추출하는 B2B 마케팅/기획 파이프라인입니다.
+
+---
 
 ## 📁 프로젝트 구조
 
 ```
 kakao_gift_crawler/
-├── crawler.py           # Playwright 기반 크롤링 & 트렌드 인사이트 추출 스크립트
-├── requirements.txt      # 필요한 파이썬 라이브러리 목록
-├── run_crawler.bat      # 배치 실행 파일 (크롤러 실행 + 로깅)
+├── main.py              # 데이터 수집, 파생 스키마 가공 및 B2B 인사이트 전체 메인 실행 파일
+├── crawler.py           # Playwright 기반 Top 50~100 크롤링 동적 스크립트
+├── analytics.py         # 파생 컬럼 생성, 키워드 이원화 추출, USP/White Space 분석 모듈
+├── auditor.py           # 데이터 품질 검수 및 100점 점수화 감사 스크립트
+├── server.py            # 대시보드 API 서버 및 로컬 웹 서버
+├── requirements.txt      # 파이썬 의존성 패키지 목록
+├── run_crawler.bat      # 배치 실행 파일 (main.py 자동 실행 + 로깅)
 ├── setup_scheduler.bat  # Windows 작업 스케줄러 자동 등록 파일 (매일 10시)
-└── data/                # 일별 ranking_YYYYMMDD.csv 수집 데이터 저장 폴더
+├── data/                # 일별 ranking_YYYYMMDD.csv 및 ranking_master_history.csv
+├── reports/             # 품질 감사 리포트 (audit_report_YYYYMMDD.md)
+└── web/                 # 웹 대시보드 및 JSON 출력 (insight_cards.json, data.json)
 ```
-
-## 🚀 사용법
-
-### 1. 테스트 실행
-명령 프롬프트(CMD) 또는 터미널에서 다음 명령어 실행:
-```cmd
-py -3 crawler.py
-```
-실행이 완료되면 `data/ranking_YYYYMMDD.csv` 파일이 생성되고, 콘솔에 **오늘의 TOP 5**, **신규 진입 상품**, **순위 급상승 상품** 등의 인사이트가 출력됩니다.
-
-### 2. 매일 아침 10시 자동 실행 설정
-`setup_scheduler.bat` 파일만 우클릭하여 **'관리자 권한으로 실행'** 하시면 Windows 작업 스케줄러에 자동으로 등록됩니다.
 
 ---
 
-## 📊 제공하는 인사이트
+## 🚀 파생 수집 스키마 (Pandas DataFrame / DB)
 
-1. **🏆 오늘의 TOP 5 인기 선물**: 당일 가장 높은 랭킹을 기록한 상위 상품
-2. **🔄 전일 대비 순위 변동**: 어제 데이터와 비교하여 순위 변화 계산
-3. **🚀 순위 급상승 상품**: 전일 대비 3계단 이상 뛰어오른 트렌드 상품
-4. **🆕 신규 랭킹 진입 상품**: 어제 랭킹에 없다가 새로 올라온 인기 상품
+1. `price_tier`: 가격대 구간 분류 (`'1만원 미만'`, `'1만원대'`, `'2만원대'`, `'3만원대'`, `'4만원대'`, `'5만원 이상'`)
+2. `has_packaging`: 선물포장/쇼핑백/전용패키지/파우치/리본 포함 여부 (Boolean)
+3. `has_engraving`: 각인/메시지/메시지카드/문구 포함 여부 (Boolean)
+4. `is_exclusive`: 단독/1+1/세트/기획/증정/본품 구성 여부 (Boolean)
+5. `is_new_entry`: 직전 수집 대비 신규 랭킹 진입 여부 (Boolean)
+6. `rank_delta`: 직전 수집 대비 순위 변동폭 `(이전 순위 - 현재 순위)` (Integer)
+
+---
+
+## 📊 카테고리별 추천 키워드 모듈 (Recommended Keywords)
+
+- **분석 범위 파라미터화**: Top 50 ~ Top 100 가변 지정 (`--top_n 100`)
+- **랭킹 구간별 키워드 이원화 추출**:
+  - `Top 1~30 (안정권 키워드)`: 상위권 브랜드 필수/기본 키워드
+  - `Top 31~100 (트렌드/라이징 키워드)`: 중위권/급상승 상품 신규 트렌드 키워드
+- **키워드 성격별 Top 5 분류**:
+  - `[속성/혜택]`: 각인, 선물포장, 단독, 쇼핑백, 세트 등
+  - `[타깃/시즌]`: 생일, 응원, 집들이, 답례품, 기념일 등
+  - `[콘셉트/제형]`: 데스크테리어, 퍼퓸, 비건, 키링, 파우치 등
+
+---
+
+## 💡 대시보드 연동용 JSON 구조 (`web/insight_cards.json`)
+
+```json
+{
+  "category": "팬시/문구/취미 (IP핵심)",
+  "analyzed_count": 100,
+  "card_1_sov": {
+    "total_count": 100,
+    "top_ip_share": "66.0%",
+    "brand_ranks": [...]
+  },
+  "card_2_price_and_usp": {
+    "avg_price": 14658,
+    "packaging_ratio": 10.0,
+    "engraving_ratio": 0.0,
+    "exclusive_ratio": 14.0,
+    "price_tier_matrix": {...}
+  },
+  "card_3_recommended_keywords": {
+    "stable_keywords_top30": ["귀여운", "키링", "가나디"],
+    "rising_keywords_top31_100": ["쓸데없는", "신박한", "자취"],
+    "top_options": ["선물포장", "각인"],
+    "by_type": {
+      "attributes": ["단독", "선물포장", "각인", "쇼핑백", "세트"],
+      "target_season": ["생일", "집들이", "응원", "답례품", "기념일"],
+      "concept": ["데스크테리어", "퍼퓸", "비건", "키링", "파우치"]
+    }
+  },
+  "card_4_rising_stars": [...]
+}
+```
+
+---
+
+## 💻 실행 방법
+
+### 1. 고도화 파이프라인 실행
+```cmd
+py -3 main.py --top_n 100
+```
+
+### 2. 가공 데이터만 재분석 (수집 패스)
+```cmd
+py -3 main.py --skip_scrape
+```
+
+### 3. 데이터 품질 자체 검수 실행
+```cmd
+py -3 auditor.py
+```
+
+### 4. 대시보드 서버 가동
+```cmd
+py -3 server.py
+```
