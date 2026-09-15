@@ -150,12 +150,14 @@ def main():
         if os.path.exists(csv_file):
             df_raw = pd.read_csv(csv_file)
         else:
-            csv_files = sorted(glob.glob(os.path.join(DATA_DIR, "ranking_????????.csv")), reverse=True)
-            if not csv_files:
-                print("[오류] 가공할 CSV 파일이 존재하지 않습니다.")
-                sys.exit(1)
-            df_raw = pd.read_csv(csv_files[0])
+            raise RuntimeError("Today's CSV is missing; collect fresh data instead of relabeling old data.")
             
+    if df_raw.empty or "scraped_at" not in df_raw.columns:
+        raise RuntimeError("No dated records available; refusing to publish.")
+    collected_dates = pd.to_datetime(df_raw["scraped_at"], errors="raise").dt.strftime("%Y%m%d")
+    if not collected_dates.eq(today_str).all():
+        raise RuntimeError("Record dates do not match today; refusing to relabel old data.")
+
     # 2. 과거 데이터 로드 (순위 변동 및 신규 진입 산출용)
     print("2. 과거 수집 데이터 비교 및 랭킹 변동 연산 중...")
     df_prev = get_previous_dataset(today_str)

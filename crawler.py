@@ -79,11 +79,11 @@ def detect_character_ip(product_name, brand_name):
         
     return "일반/비IP 상품"
 
-def scrape_current_page_products(page, cat_label):
+def scrape_current_page_products(page, cat_label, top_n=50):
     products = []
     try:
         # 🔥 50위까지 충분히 수집하도록 스크롤 횟수 확대
-        for _ in range(8):
+        for _ in range(max(8, (top_n + 4) // 5)):
             page.evaluate("window.scrollBy(0, 800);")
             page.wait_for_timeout(350)
 
@@ -180,7 +180,7 @@ def scrape_current_page_products(page, cat_label):
                     "scraped_at": datetime.now().strftime("%Y-%m-%d %H:%M:%S")
                 })
                 rank += 1
-                if rank > 50: # 🔥 기본 50위까지 확장 수집!
+                if rank > top_n: # 🔥 기본 50위까지 확장 수집!
                     break
             except Exception:
                 continue
@@ -190,7 +190,7 @@ def scrape_current_page_products(page, cat_label):
     print(f"  ✅ [{cat_label}] {len(products)}개 수집 완료 (기본 Top 50)")
     return products
 
-def scrape_all_categories():
+def scrape_all_categories(top_n=50):
     print(f"[{datetime.now().strftime('%Y-%m-%d %H:%M:%S')}] 카카오 세부 카테고리 50위 확장 수집 시작...")
     all_products = []
     
@@ -219,12 +219,14 @@ def scrape_all_categories():
                             break
                     
                     if not clicked:
-                        print(f"  ⚠️ [{cat_label}] 탭 버튼 '{btn_keyword}' 찾기 실패.")
+                        raise RuntimeError(f"Category tab not found: {cat_label}")
 
-                prods = scrape_current_page_products(page, cat_label)
+                prods = scrape_current_page_products(page, cat_label, top_n=top_n)
+                if not prods:
+                    raise RuntimeError(f"No products collected: {cat_label}")
                 all_products.extend(prods)
             except Exception as e:
-                print(f"  ❌ [{cat_label}] 탭 처리 에러: {e}")
+                raise RuntimeError(f"Collection failed for {cat_label}") from e
 
         browser.close()
 
@@ -271,24 +273,9 @@ def generate_ip_insights(df_today, today_str):
     print("\n" + "="*60)
 
 def main():
-    today_str = datetime.now().strftime("%Y%m%d")
-    csv_file = os.path.join(DATA_DIR, f"ranking_{today_str}.csv")
-
-    products = scrape_all_categories()
-    
-    if products:
-        df = pd.DataFrame(products)
-        df.to_csv(csv_file, index=False, encoding="utf-8-sig")
-        print(f"\n[일별 데이터 저장 완료]: {csv_file} (총 {len(df)}개 항목)")
-        
-        update_master_history(df)
-        
-        json_file = os.path.join(WEB_DIR, "data.json")
-        df.to_json(json_file, orient="records", force_ascii=False, indent=2)
-        
-        generate_ip_insights(df, today_str)
-    else:
-        print("[경고] 상품 데이터를 가져오지 못했습니다.")
+    # Also regenerate date indexes and analytics when invoked directly.
+    from main import main as run_pipeline
+    run_pipeline()
 
 if __name__ == "__main__":
     main()

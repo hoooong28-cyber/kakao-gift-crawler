@@ -6,7 +6,8 @@ __pycache__/
 *.log
 data/*.csv
 .env
-
 # 루트 레벨 json만 제외 (web/ 폴더의 json은 GitHub Pages 배포에 필요)
 /*.json
-data/*.json
+data/*.json
+repair-backup-*/
+.repair-runtime/
