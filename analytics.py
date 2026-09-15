@@ -3,28 +3,34 @@ import sys
 import pandas as pd
 import numpy as np
 
+PRICE_TIER_ORDER = ["1만원 미만", "1만원대", "2만원대", "3만원대", "4만원대", "5만원 이상"]
+
+def get_price_tier(price):
+    """가격(원)을 6단계 가격대 구간으로 분류합니다. (docs/app.js의 클라이언트 폴백 로직과 동일한 경계값)"""
+    try:
+        p = float(price)
+        if p < 10000:
+            return "1만원 미만"
+        elif p < 20000:
+            return "1만원대"
+        elif p < 30000:
+            return "2만원대"
+        elif p < 40000:
+            return "3만원대"
+        elif p < 50000:
+            return "4만원대"
+        else:
+            return "5만원 이상"
+    except Exception:
+        return "기타"
+
 def enrich_dataframe(df_raw, df_prev=None):
     """
     원시 수집 데이터에 price_tier, USP 태그, rank_delta, is_new_entry 등 
     파생 스키마를 부여합니다.
     """
     df = df_raw.copy()
-    
-    # 1. 가격 팁 (price_tier)
-    def get_price_tier(price):
-        try:
-            p = float(price)
-            if p <= 10000:
-                return "1만원 이하"
-            elif p <= 30000:
-                return "1~3만원대"
-            elif p <= 50000:
-                return "3~5만원대"
-            else:
-                return "5만원 이상"
-        except Exception:
-            return "기타"
-            
+
     if 'price' in df.columns:
         df['price_numeric'] = pd.to_numeric(df['price'].astype(str).str.replace(",", "").str.replace("원", ""), errors='coerce').fillna(0)
         df['price_tier'] = df['price_numeric'].apply(get_price_tier)
@@ -124,24 +130,44 @@ def generate_all_dashboard_cards(df_enriched, top_n=100):
         pkg_cnt = sub_df[sub_df['usp'].str.contains("선물포장", na=False)].shape[0]
         eng_cnt = sub_df[sub_df['usp'].str.contains("각인", na=False)].shape[0]
         exc_cnt = sub_df[sub_df['usp'].str.contains("단독구성", na=False)].shape[0]
+
+        # 2-1. 가격대별 White Space 매트릭스 (대시보드 Card 2 테이블용)
+        price_tier_matrix = {}
+        for tier in PRICE_TIER_ORDER:
+            tier_df = sub_df[sub_df['price_tier'] == tier]
+            tier_count = len(tier_df)
+            top_brands = list(tier_df['brand'].value_counts().head(3).index) if tier_count > 0 else []
+            price_tier_matrix[tier] = {
+                "count": int(tier_count),
+                "share": round((tier_count / total_count) * 100, 1) if total_count > 0 else 0,
+                "avg_price": int(tier_df['price_numeric'].mean()) if tier_count > 0 else 0,
+                "top_brands": top_brands
+            }
         
         card_2 = {
             "avg_price": avg_price,
             "packaging_ratio": round((pkg_cnt / total_count) * 100, 1) if total_count > 0 else 0,
             "engraving_ratio": round((eng_cnt / total_count) * 100, 1) if total_count > 0 else 0,
-            "exclusive_ratio": round((exc_cnt / total_count) * 100, 1) if total_count > 0 else 0
+            "exclusive_ratio": round((exc_cnt / total_count) * 100, 1) if total_count > 0 else 0,
+            "price_tier_matrix": price_tier_matrix
         }
         
-        # 3. Keywords
+        # 3. Keywords (Top 5)
         top30 = sub_df[sub_df['rank'] <= 30]
-        stable_kws = list(top30['character_ip'].value_counts().head(3).index)
+        stable_kws = list(top30['character_ip'].value_counts().head(5).index)
         
         top31_100 = sub_df[(sub_df['rank'] > 30) & (sub_df['rank'] <= 100)]
-        rising_kws = list(top31_100['character_ip'].value_counts().head(3).index)
+        rising_kws = list(top31_100['character_ip'].value_counts().head(5).index)
         
         card_3 = {
             "stable_keywords_top30": [k for k in stable_kws if k != "일반/비IP 상품"],
-            "rising_keywords_top31_100": [k for k in rising_kws if k != "일반/비IP 상품"]
+            "rising_keywords_top31_100": [k for k in rising_kws if k != "일반/비IP 상품"],
+            "top_options": ["선물포장", "각인", "단독구성"],
+            "by_type": {
+                "attributes": ["단독", "선물포장", "각인", "쇼핑백", "전용패키지"],
+                "target_season": ["생일", "집들이", "응원", "답례품", "기념일"],
+                "concept": ["귀여운", "감성", "신박한", "쓸데없는", "인테리어"]
+            }
         }
         
         # 4. Rising Stars
@@ -153,7 +179,11 @@ def generate_all_dashboard_cards(df_enriched, top_n=100):
                     "product_name": str(r.get('product_name', '')),
                     "rank": int(r.get('rank', 0)),
                     "rank_delta": r.get('rank_delta'),
-                    "category": str(r.get('category', ''))
+                    "category": str(r.get('category', '')),
+                    "price": str(r.get('price', '')),
+                    "character_ip": str(r.get('character_ip', '')) or "일반/비IP 상품",
+                    "url": str(r.get('url', '')),
+                    "is_new_entry": bool(r.get('is_new_entry'))
                 })
                 
         card_4 = sorted(rising_items, key=lambda x: x['rank'])[:5]
