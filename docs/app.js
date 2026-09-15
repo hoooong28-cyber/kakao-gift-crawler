@@ -104,10 +104,10 @@ document.addEventListener('DOMContentLoaded', () => {
                 }
             } catch (err) {
                 // 정적 배포(GitHub Pages) 환경 Fallback
-                const staticFile = selectedDate ? `data_${selectedDate}.json` : 'data.json';
+                const staticFile = selectedDate ? `data_${selectedDate}.json` : 'data.json?v=' + new Date().getTime();
                 let fallbackResponse = await fetch(staticFile);
                 if (!fallbackResponse.ok && selectedDate) {
-                    fallbackResponse = await fetch('data.json');
+                    fallbackResponse = await fetch('data.json?v=' + new Date().getTime());
                 }
                 if (fallbackResponse.ok) {
                     resJson = await fallbackResponse.json();
@@ -138,7 +138,7 @@ document.addEventListener('DOMContentLoaded', () => {
         } catch (e) {
             console.warn('Data fetch failed, trying local data.json', e);
             try {
-                const res = await fetch('data.json');
+                const res = await fetch('data.json?v=' + new Date().getTime());
                 const resJson = await res.json();
                 if (Array.isArray(resJson)) {
                     rawProductsData = resJson;
