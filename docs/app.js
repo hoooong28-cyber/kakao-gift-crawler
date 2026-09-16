@@ -58,6 +58,17 @@ document.addEventListener('DOMContentLoaded', () => {
         renderDashboard();
     });
 
+    // GitHub Pages 등 정적 호스팅은 JSON 파일에 캐시 헤더를 걸어두는 경우가 많아,
+    // 강력 새로고침을 해도 브라우저가 예전 응답을 재사용하는 문제가 있었음.
+    // 정적 파일 fetch에는 항상 캐시 무효화 파라미터를 붙여 항상 최신 파일을 받아오도록 함.
+    function noCacheUrl(url) {
+        const sep = url.includes('?') ? '&' : '?';
+        return `${url}${sep}_=${Date.now()}`;
+    }
+    function fetchFresh(url) {
+        return fetch(noCacheUrl(url), { cache: 'no-store' });
+    }
+
     async function loadAvailableDates() {
         try {
             let dates = [];
@@ -70,7 +81,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 }
             } catch (err) {
                 // GitHub Pages 등 정적 서버 fallback
-                const staticRes = await fetch('dates.json');
+                const staticRes = await fetchFresh('dates.json');
                 if (staticRes.ok) {
                     dates = await staticRes.json();
                 }
@@ -105,9 +116,9 @@ document.addEventListener('DOMContentLoaded', () => {
             } catch (err) {
                 // 정적 배포(GitHub Pages) 환경 Fallback
                 const staticFile = selectedDate ? `data_${selectedDate}.json` : 'data.json';
-                let fallbackResponse = await fetch(staticFile);
+                let fallbackResponse = await fetchFresh(staticFile);
                 if (!fallbackResponse.ok && selectedDate) {
-                    fallbackResponse = await fetch('data.json');
+                    fallbackResponse = await fetchFresh('data.json');
                 }
                 if (fallbackResponse.ok) {
                     resJson = await fallbackResponse.json();
@@ -123,22 +134,28 @@ document.addEventListener('DOMContentLoaded', () => {
                 rawProductsData = [];
             }
 
-            // Fetch cards specifically
-            try {
-                const cardsRes = await fetch('/api/cards');
-                if (cardsRes.ok) {
-                    insightCardsData = await cardsRes.json();
-                } else {
-                    const cardsFallback = await fetch('insight_cards.json');
-                    if (cardsFallback.ok) {
-                        insightCardsData = await cardsFallback.json();
+            // Fetch cards specifically.
+            // 과거 날짜(selectedDate)를 조회 중일 때는 그 날짜 파일 안의 cards를 그대로 써야
+            // 날짜별로 B2B 인사이트 카드가 실제로 바뀐다. insight_cards.json은 "오늘자" 카드만
+            // 담고 있으므로, 최신 데이터를 볼 때(=selectedDate 없음) 또는 위에서 cards를 못 받아온
+            // 경우에만 보조로 사용한다.
+            if (!selectedDate) {
+                try {
+                    const cardsRes = await fetch('/api/cards');
+                    if (cardsRes.ok) {
+                        insightCardsData = await cardsRes.json();
+                    } else if (!insightCardsData || Object.keys(insightCardsData).length === 0) {
+                        const cardsFallback = await fetchFresh('insight_cards.json');
+                        if (cardsFallback.ok) {
+                            insightCardsData = await cardsFallback.json();
+                        }
                     }
-                }
-            } catch (err) {}
+                } catch (err) {}
+            }
         } catch (e) {
             console.warn('Data fetch failed, trying local data.json', e);
             try {
-                const res = await fetch('data.json');
+                const res = await fetchFresh('data.json');
                 const resJson = await res.json();
                 if (Array.isArray(resJson)) {
                     rawProductsData = resJson;
