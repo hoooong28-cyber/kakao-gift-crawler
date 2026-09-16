@@ -1,0 +1,6115 @@
+From b5c1763b878687f361c114232269d5bc4986bb64 Mon Sep 17 00:00:00 2001
+From: Claude <claude@anthropic.local>
+Date: Tue, 15 Sep 2026 05:39:13 +0000
+Subject: [PATCH] Fix: B2B insight cards missing price_tier_matrix, keyword
+ by_type, and rising-star price/url fields
+MIME-Version: 1.0
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 8bit
+
+Root cause: analytics.py's generate_all_dashboard_cards() produced a
+schema narrower than what docs/app.js renders:
+
+- card_2_price_and_usp had no price_tier_matrix, so the 'Card 2:
+  가격대별 White Space 매트릭스' table always rendered empty.
+- Price tiers used a 4-bucket scheme ('1만원 이하'/'1~3만원대'/
+  '3~5만원대'/'5만원 이상') that doesn't match the 6-bucket scheme
+  ('1만원 미만'~'5만원 이상') app.js and the README expect.
+- card_3_recommended_keywords only returned top-3 keywords (often
+  2 after filtering) with no top_options/by_type, so the '키워드
+  성격별 추천 Top 5' panel was blank.
+- card_4_rising_stars items omitted price, character_ip, url, and
+  is_new_entry, so the Rising Star table's 가격/캐릭터 IP columns
+  were always empty and NEW badges didn't render correctly.
+
+Fix: introduced a shared get_price_tier()/PRICE_TIER_ORDER (6-bucket,
+matching app.js), added price_tier_matrix to card_2, expanded
+keyword lists to top 5 and added top_options/by_type to card_3, and
+added the missing fields to each card_4 rising-star item.
+
+Also regenerated docs/insight_cards.json and the embedded cards in
+docs/data.json / docs/data_20260915.json from the current enriched
+dataset so the fix is visible immediately without re-scraping.
+---
+ analytics.py            |   74 ++-
+ docs/data.json          | 1012 ++++++++++++++++++++++++++++++---------
+ docs/data_20260915.json | 1012 ++++++++++++++++++++++++++++++---------
+ docs/insight_cards.json |  640 +++++++++++++++++++++++--
+ 4 files changed, 2209 insertions(+), 529 deletions(-)
+
+diff --git a/analytics.py b/analytics.py
+index 87b61d1..7bddeef 100644
+--- a/analytics.py
++++ b/analytics.py
+@@ -3,28 +3,34 @@ import sys
+ import pandas as pd
+ import numpy as np
+ 
++PRICE_TIER_ORDER = ["1만원 미만", "1만원대", "2만원대", "3만원대", "4만원대", "5만원 이상"]
++
++def get_price_tier(price):
++    """가격(원)을 6단계 가격대 구간으로 분류합니다. (docs/app.js의 클라이언트 폴백 로직과 동일한 경계값)"""
++    try:
++        p = float(price)
++        if p < 10000:
++            return "1만원 미만"
++        elif p < 20000:
++            return "1만원대"
++        elif p < 30000:
++            return "2만원대"
++        elif p < 40000:
++            return "3만원대"
++        elif p < 50000:
++            return "4만원대"
++        else:
++            return "5만원 이상"
++    except Exception:
++        return "기타"
++
+ def enrich_dataframe(df_raw, df_prev=None):
+     """
+     원시 수집 데이터에 price_tier, USP 태그, rank_delta, is_new_entry 등 
+     파생 스키마를 부여합니다.
+     """
+     df = df_raw.copy()
+-    
+-    # 1. 가격 팁 (price_tier)
+-    def get_price_tier(price):
+-        try:
+-            p = float(price)
+-            if p <= 10000:
+-                return "1만원 이하"
+-            elif p <= 30000:
+-                return "1~3만원대"
+-            elif p <= 50000:
+-                return "3~5만원대"
+-            else:
+-                return "5만원 이상"
+-        except Exception:
+-            return "기타"
+-            
++
+     if 'price' in df.columns:
+         df['price_numeric'] = pd.to_numeric(df['price'].astype(str).str.replace(",", "").str.replace("원", ""), errors='coerce').fillna(0)
+         df['price_tier'] = df['price_numeric'].apply(get_price_tier)
+@@ -124,24 +130,44 @@ def generate_all_dashboard_cards(df_enriched, top_n=100):
+         pkg_cnt = sub_df[sub_df['usp'].str.contains("선물포장", na=False)].shape[0]
+         eng_cnt = sub_df[sub_df['usp'].str.contains("각인", na=False)].shape[0]
+         exc_cnt = sub_df[sub_df['usp'].str.contains("단독구성", na=False)].shape[0]
++
++        # 2-1. 가격대별 White Space 매트릭스 (대시보드 Card 2 테이블용)
++        price_tier_matrix = {}
++        for tier in PRICE_TIER_ORDER:
++            tier_df = sub_df[sub_df['price_tier'] == tier]
++            tier_count = len(tier_df)
++            top_brands = list(tier_df['brand'].value_counts().head(3).index) if tier_count > 0 else []
++            price_tier_matrix[tier] = {
++                "count": int(tier_count),
++                "share": round((tier_count / total_count) * 100, 1) if total_count > 0 else 0,
++                "avg_price": int(tier_df['price_numeric'].mean()) if tier_count > 0 else 0,
++                "top_brands": top_brands
++            }
+         
+         card_2 = {
+             "avg_price": avg_price,
+             "packaging_ratio": round((pkg_cnt / total_count) * 100, 1) if total_count > 0 else 0,
+             "engraving_ratio": round((eng_cnt / total_count) * 100, 1) if total_count > 0 else 0,
+-            "exclusive_ratio": round((exc_cnt / total_count) * 100, 1) if total_count > 0 else 0
++            "exclusive_ratio": round((exc_cnt / total_count) * 100, 1) if total_count > 0 else 0,
++            "price_tier_matrix": price_tier_matrix
+         }
+         
+-        # 3. Keywords
++        # 3. Keywords (Top 5)
+         top30 = sub_df[sub_df['rank'] <= 30]
+-        stable_kws = list(top30['character_ip'].value_counts().head(3).index)
++        stable_kws = list(top30['character_ip'].value_counts().head(5).index)
+         
+         top31_100 = sub_df[(sub_df['rank'] > 30) & (sub_df['rank'] <= 100)]
+-        rising_kws = list(top31_100['character_ip'].value_counts().head(3).index)
++        rising_kws = list(top31_100['character_ip'].value_counts().head(5).index)
+         
+         card_3 = {
+             "stable_keywords_top30": [k for k in stable_kws if k != "일반/비IP 상품"],
+-            "rising_keywords_top31_100": [k for k in rising_kws if k != "일반/비IP 상품"]
++            "rising_keywords_top31_100": [k for k in rising_kws if k != "일반/비IP 상품"],
++            "top_options": ["선물포장", "각인", "단독구성"],
++            "by_type": {
++                "attributes": ["단독", "선물포장", "각인", "쇼핑백", "전용패키지"],
++                "target_season": ["생일", "집들이", "응원", "답례품", "기념일"],
++                "concept": ["귀여운", "감성", "신박한", "쓸데없는", "인테리어"]
++            }
+         }
+         
+         # 4. Rising Stars
+@@ -153,7 +179,11 @@ def generate_all_dashboard_cards(df_enriched, top_n=100):
+                     "product_name": str(r.get('product_name', '')),
+                     "rank": int(r.get('rank', 0)),
+                     "rank_delta": r.get('rank_delta'),
+-                    "category": str(r.get('category', ''))
++                    "category": str(r.get('category', '')),
++                    "price": str(r.get('price', '')),
++                    "character_ip": str(r.get('character_ip', '')) or "일반/비IP 상품",
++                    "url": str(r.get('url', '')),
++                    "is_new_entry": bool(r.get('is_new_entry'))
+                 })
+                 
+         card_4 = sorted(rising_items, key=lambda x: x['rank'])[:5]
+diff --git a/docs/data.json b/docs/data.json
+index a675267..3f3cd9d 100644
+--- a/docs/data.json
++++ b/docs/data.json
+@@ -11,7 +11,7 @@
+       "product_id": 7868266,
+       "scraped_at": "2026-09-15 10:54:43",
+       "price_numeric": 30800,
+-      "price_tier": "3~5만원대",
++      "price_tier": "3만원대",
+       "usp": "일반구성",
+       "rank_delta": "NEW",
+       "is_new_entry": true
+@@ -27,7 +27,7 @@
+       "product_id": 5391162,
+       "scraped_at": "2026-09-15 10:54:43",
+       "price_numeric": 30600,
+-      "price_tier": "3~5만원대",
++      "price_tier": "3만원대",
+       "usp": "단독구성",
+       "rank_delta": 2,
+       "is_new_entry": false
+@@ -43,7 +43,7 @@
+       "product_id": 11106499,
+       "scraped_at": "2026-09-15 10:54:43",
+       "price_numeric": 49000,
+-      "price_tier": "3~5만원대",
++      "price_tier": "4만원대",
+       "usp": "일반구성",
+       "rank_delta": "NEW",
+       "is_new_entry": true
+@@ -59,7 +59,7 @@
+       "product_id": 4926192,
+       "scraped_at": "2026-09-15 10:54:43",
+       "price_numeric": 18000,
+-      "price_tier": "1~3만원대",
++      "price_tier": "1만원대",
+       "usp": "선물포장, 단독구성",
+       "rank_delta": 1,
+       "is_new_entry": false
+@@ -75,7 +75,7 @@
+       "product_id": 13772143,
+       "scraped_at": "2026-09-15 10:54:43",
+       "price_numeric": 24500,
+-      "price_tier": "1~3만원대",
++      "price_tier": "2만원대",
+       "usp": "단독구성",
+       "rank_delta": "NEW",
+       "is_new_entry": true
+@@ -91,7 +91,7 @@
+       "product_id": 11144932,
+       "scraped_at": "2026-09-15 10:54:43",
+       "price_numeric": 40500,
+-      "price_tier": "3~5만원대",
++      "price_tier": "4만원대",
+       "usp": "일반구성",
+       "rank_delta": "NEW",
+       "is_new_entry": true
+@@ -107,7 +107,7 @@
+       "product_id": 11850163,
+       "scraped_at": "2026-09-15 10:54:43",
+       "price_numeric": 25900,
+-      "price_tier": "1~3만원대",
++      "price_tier": "2만원대",
+       "usp": "선물포장, 단독구성",
+       "rank_delta": 0,
+       "is_new_entry": false
+@@ -123,7 +123,7 @@
+       "product_id": 12854287,
+       "scraped_at": "2026-09-15 10:54:43",
+       "price_numeric": 34800,
+-      "price_tier": "3~5만원대",
++      "price_tier": "3만원대",
+       "usp": "단독구성",
+       "rank_delta": "NEW",
+       "is_new_entry": true
+@@ -139,7 +139,7 @@
+       "product_id": 7868778,
+       "scraped_at": "2026-09-15 10:54:43",
+       "price_numeric": 39200,
+-      "price_tier": "3~5만원대",
++      "price_tier": "3만원대",
+       "usp": "일반구성",
+       "rank_delta": "NEW",
+       "is_new_entry": true
+@@ -155,7 +155,7 @@
+       "product_id": 13261876,
+       "scraped_at": "2026-09-15 10:54:43",
+       "price_numeric": 12000,
+-      "price_tier": "1~3만원대",
++      "price_tier": "1만원대",
+       "usp": "일반구성",
+       "rank_delta": 0,
+       "is_new_entry": false
+@@ -187,7 +187,7 @@
+       "product_id": 7355950,
+       "scraped_at": "2026-09-15 10:54:43",
+       "price_numeric": 22900,
+-      "price_tier": "1~3만원대",
++      "price_tier": "2만원대",
+       "usp": "일반구성",
+       "rank_delta": -3,
+       "is_new_entry": false
+@@ -203,7 +203,7 @@
+       "product_id": 13550210,
+       "scraped_at": "2026-09-15 10:54:44",
+       "price_numeric": 33000,
+-      "price_tier": "3~5만원대",
++      "price_tier": "3만원대",
+       "usp": "단독구성",
+       "rank_delta": -1,
+       "is_new_entry": false
+@@ -219,7 +219,7 @@
+       "product_id": 11779291,
+       "scraped_at": "2026-09-15 10:54:44",
+       "price_numeric": 46000,
+-      "price_tier": "3~5만원대",
++      "price_tier": "4만원대",
+       "usp": "일반구성",
+       "rank_delta": 12,
+       "is_new_entry": false
+@@ -235,7 +235,7 @@
+       "product_id": 11743570,
+       "scraped_at": "2026-09-15 10:54:44",
+       "price_numeric": 34800,
+-      "price_tier": "3~5만원대",
++      "price_tier": "3만원대",
+       "usp": "단독구성",
+       "rank_delta": 0,
+       "is_new_entry": false
+@@ -251,7 +251,7 @@
+       "product_id": 7343467,
+       "scraped_at": "2026-09-15 10:54:44",
+       "price_numeric": 36000,
+-      "price_tier": "3~5만원대",
++      "price_tier": "3만원대",
+       "usp": "단독구성",
+       "rank_delta": -2,
+       "is_new_entry": false
+@@ -267,7 +267,7 @@
+       "product_id": 13831534,
+       "scraped_at": "2026-09-15 10:54:44",
+       "price_numeric": 22900,
+-      "price_tier": "1~3만원대",
++      "price_tier": "2만원대",
+       "usp": "단독구성",
+       "rank_delta": "NEW",
+       "is_new_entry": true
+@@ -283,7 +283,7 @@
+       "product_id": 6986025,
+       "scraped_at": "2026-09-15 10:54:44",
+       "price_numeric": 29900,
+-      "price_tier": "1~3만원대",
++      "price_tier": "2만원대",
+       "usp": "일반구성",
+       "rank_delta": "NEW",
+       "is_new_entry": true
+@@ -315,7 +315,7 @@
+       "product_id": 12639125,
+       "scraped_at": "2026-09-15 10:54:44",
+       "price_numeric": 29900,
+-      "price_tier": "1~3만원대",
++      "price_tier": "2만원대",
+       "usp": "일반구성",
+       "rank_delta": -3,
+       "is_new_entry": false
+@@ -331,7 +331,7 @@
+       "product_id": 14096838,
+       "scraped_at": "2026-09-15 10:54:44",
+       "price_numeric": 12800,
+-      "price_tier": "1~3만원대",
++      "price_tier": "1만원대",
+       "usp": "일반구성",
+       "rank_delta": "NEW",
+       "is_new_entry": true
+@@ -363,7 +363,7 @@
+       "product_id": 12821252,
+       "scraped_at": "2026-09-15 10:54:45",
+       "price_numeric": 16800,
+-      "price_tier": "1~3만원대",
++      "price_tier": "1만원대",
+       "usp": "단독구성",
+       "rank_delta": -10,
+       "is_new_entry": false
+@@ -379,7 +379,7 @@
+       "product_id": 12694903,
+       "scraped_at": "2026-09-15 10:54:45",
+       "price_numeric": 39000,
+-      "price_tier": "3~5만원대",
++      "price_tier": "3만원대",
+       "usp": "단독구성",
+       "rank_delta": -13,
+       "is_new_entry": false
+@@ -395,7 +395,7 @@
+       "product_id": 11483865,
+       "scraped_at": "2026-09-15 10:54:45",
+       "price_numeric": 42000,
+-      "price_tier": "3~5만원대",
++      "price_tier": "4만원대",
+       "usp": "일반구성",
+       "rank_delta": 13,
+       "is_new_entry": false
+@@ -411,7 +411,7 @@
+       "product_id": 9788037,
+       "scraped_at": "2026-09-15 10:54:45",
+       "price_numeric": 46500,
+-      "price_tier": "3~5만원대",
++      "price_tier": "4만원대",
+       "usp": "선물포장",
+       "rank_delta": -5,
+       "is_new_entry": false
+@@ -427,7 +427,7 @@
+       "product_id": 7868895,
+       "scraped_at": "2026-09-15 10:54:45",
+       "price_numeric": 44000,
+-      "price_tier": "3~5만원대",
++      "price_tier": "4만원대",
+       "usp": "일반구성",
+       "rank_delta": 12,
+       "is_new_entry": false
+@@ -443,7 +443,7 @@
+       "product_id": 11264836,
+       "scraped_at": "2026-09-15 10:54:45",
+       "price_numeric": 36000,
+-      "price_tier": "3~5만원대",
++      "price_tier": "3만원대",
+       "usp": "일반구성",
+       "rank_delta": "NEW",
+       "is_new_entry": true
+@@ -459,7 +459,7 @@
+       "product_id": 12856389,
+       "scraped_at": "2026-09-15 10:54:45",
+       "price_numeric": 32400,
+-      "price_tier": "3~5만원대",
++      "price_tier": "3만원대",
+       "usp": "단독구성",
+       "rank_delta": 24,
+       "is_new_entry": false
+@@ -475,7 +475,7 @@
+       "product_id": 11483949,
+       "scraped_at": "2026-09-15 10:54:45",
+       "price_numeric": 35000,
+-      "price_tier": "3~5만원대",
++      "price_tier": "3만원대",
+       "usp": "일반구성",
+       "rank_delta": -10,
+       "is_new_entry": false
+@@ -491,7 +491,7 @@
+       "product_id": 10974656,
+       "scraped_at": "2026-09-15 10:54:45",
+       "price_numeric": 8900,
+-      "price_tier": "1만원 이하",
++      "price_tier": "1만원 미만",
+       "usp": "일반구성",
+       "rank_delta": 11,
+       "is_new_entry": false
+@@ -507,7 +507,7 @@
+       "product_id": 6989444,
+       "scraped_at": "2026-09-15 10:54:45",
+       "price_numeric": 46000,
+-      "price_tier": "3~5만원대",
++      "price_tier": "4만원대",
+       "usp": "단독구성",
+       "rank_delta": "NEW",
+       "is_new_entry": true
+@@ -523,7 +523,7 @@
+       "product_id": 1186213,
+       "scraped_at": "2026-09-15 10:54:45",
+       "price_numeric": 33000,
+-      "price_tier": "3~5만원대",
++      "price_tier": "3만원대",
+       "usp": "단독구성",
+       "rank_delta": "NEW",
+       "is_new_entry": true
+@@ -539,7 +539,7 @@
+       "product_id": 12906542,
+       "scraped_at": "2026-09-15 10:54:45",
+       "price_numeric": 38000,
+-      "price_tier": "3~5만원대",
++      "price_tier": "3만원대",
+       "usp": "단독구성",
+       "rank_delta": -4,
+       "is_new_entry": false
+@@ -555,7 +555,7 @@
+       "product_id": 927193,
+       "scraped_at": "2026-09-15 10:54:45",
+       "price_numeric": 33900,
+-      "price_tier": "3~5만원대",
++      "price_tier": "3만원대",
+       "usp": "선물포장, 단독구성",
+       "rank_delta": "NEW",
+       "is_new_entry": true
+@@ -571,7 +571,7 @@
+       "product_id": 11368084,
+       "scraped_at": "2026-09-15 10:54:45",
+       "price_numeric": 39800,
+-      "price_tier": "3~5만원대",
++      "price_tier": "3만원대",
+       "usp": "각인/자수",
+       "rank_delta": "NEW",
+       "is_new_entry": true
+@@ -587,7 +587,7 @@
+       "product_id": 2616320,
+       "scraped_at": "2026-09-15 10:54:45",
+       "price_numeric": 42500,
+-      "price_tier": "3~5만원대",
++      "price_tier": "4만원대",
+       "usp": "단독구성",
+       "rank_delta": "NEW",
+       "is_new_entry": true
+@@ -603,7 +603,7 @@
+       "product_id": 12455527,
+       "scraped_at": "2026-09-15 10:54:46",
+       "price_numeric": 13800,
+-      "price_tier": "1~3만원대",
++      "price_tier": "1만원대",
+       "usp": "일반구성",
+       "rank_delta": "NEW",
+       "is_new_entry": true
+@@ -619,7 +619,7 @@
+       "product_id": 13881169,
+       "scraped_at": "2026-09-15 10:54:46",
+       "price_numeric": 16300,
+-      "price_tier": "1~3만원대",
++      "price_tier": "1만원대",
+       "usp": "일반구성",
+       "rank_delta": "NEW",
+       "is_new_entry": true
+@@ -635,7 +635,7 @@
+       "product_id": 8027618,
+       "scraped_at": "2026-09-15 10:54:46",
+       "price_numeric": 30000,
+-      "price_tier": "1~3만원대",
++      "price_tier": "3만원대",
+       "usp": "일반구성",
+       "rank_delta": -16,
+       "is_new_entry": false
+@@ -651,7 +651,7 @@
+       "product_id": 7734041,
+       "scraped_at": "2026-09-15 10:54:46",
+       "price_numeric": 34800,
+-      "price_tier": "3~5만원대",
++      "price_tier": "3만원대",
+       "usp": "단독구성",
+       "rank_delta": "NEW",
+       "is_new_entry": true
+@@ -683,7 +683,7 @@
+       "product_id": 12345352,
+       "scraped_at": "2026-09-15 10:54:46",
+       "price_numeric": 16800,
+-      "price_tier": "1~3만원대",
++      "price_tier": "1만원대",
+       "usp": "일반구성",
+       "rank_delta": -8,
+       "is_new_entry": false
+@@ -715,7 +715,7 @@
+       "product_id": 5328353,
+       "scraped_at": "2026-09-15 10:54:47",
+       "price_numeric": 29800,
+-      "price_tier": "1~3만원대",
++      "price_tier": "2만원대",
+       "usp": "단독구성",
+       "rank_delta": 4,
+       "is_new_entry": false
+@@ -731,7 +731,7 @@
+       "product_id": 5872250,
+       "scraped_at": "2026-09-15 10:54:47",
+       "price_numeric": 18800,
+-      "price_tier": "1~3만원대",
++      "price_tier": "1만원대",
+       "usp": "단독구성",
+       "rank_delta": "NEW",
+       "is_new_entry": true
+@@ -747,7 +747,7 @@
+       "product_id": 11801920,
+       "scraped_at": "2026-09-15 10:54:47",
+       "price_numeric": 48000,
+-      "price_tier": "3~5만원대",
++      "price_tier": "4만원대",
+       "usp": "일반구성",
+       "rank_delta": 0,
+       "is_new_entry": false
+@@ -763,7 +763,7 @@
+       "product_id": 13709951,
+       "scraped_at": "2026-09-15 10:54:47",
+       "price_numeric": 21500,
+-      "price_tier": "1~3만원대",
++      "price_tier": "2만원대",
+       "usp": "일반구성",
+       "rank_delta": "NEW",
+       "is_new_entry": true
+@@ -811,7 +811,7 @@
+       "product_id": 13261876,
+       "scraped_at": "2026-09-15 10:54:55",
+       "price_numeric": 12000,
+-      "price_tier": "1~3만원대",
++      "price_tier": "1만원대",
+       "usp": "일반구성",
+       "rank_delta": 1,
+       "is_new_entry": false
+@@ -827,7 +827,7 @@
+       "product_id": 14096838,
+       "scraped_at": "2026-09-15 10:54:55",
+       "price_numeric": 12800,
+-      "price_tier": "1~3만원대",
++      "price_tier": "1만원대",
+       "usp": "일반구성",
+       "rank_delta": "NEW",
+       "is_new_entry": true
+@@ -843,7 +843,7 @@
+       "product_id": 10974656,
+       "scraped_at": "2026-09-15 10:54:55",
+       "price_numeric": 8900,
+-      "price_tier": "1만원 이하",
++      "price_tier": "1만원 미만",
+       "usp": "일반구성",
+       "rank_delta": 2,
+       "is_new_entry": false
+@@ -859,7 +859,7 @@
+       "product_id": 11368084,
+       "scraped_at": "2026-09-15 10:54:55",
+       "price_numeric": 39800,
+-      "price_tier": "3~5만원대",
++      "price_tier": "3만원대",
+       "usp": "각인/자수",
+       "rank_delta": 16,
+       "is_new_entry": false
+@@ -875,7 +875,7 @@
+       "product_id": 13881169,
+       "scraped_at": "2026-09-15 10:54:55",
+       "price_numeric": 16300,
+-      "price_tier": "1~3만원대",
++      "price_tier": "1만원대",
+       "usp": "일반구성",
+       "rank_delta": "NEW",
+       "is_new_entry": true
+@@ -891,7 +891,7 @@
+       "product_id": 9235675,
+       "scraped_at": "2026-09-15 10:54:55",
+       "price_numeric": 16900,
+-      "price_tier": "1~3만원대",
++      "price_tier": "1만원대",
+       "usp": "일반구성",
+       "rank_delta": 2,
+       "is_new_entry": false
+@@ -907,7 +907,7 @@
+       "product_id": 13711010,
+       "scraped_at": "2026-09-15 10:54:55",
+       "price_numeric": 9900,
+-      "price_tier": "1만원 이하",
++      "price_tier": "1만원 미만",
+       "usp": "일반구성",
+       "rank_delta": -1,
+       "is_new_entry": false
+@@ -923,7 +923,7 @@
+       "product_id": 14096676,
+       "scraped_at": "2026-09-15 10:54:55",
+       "price_numeric": 14800,
+-      "price_tier": "1~3만원대",
++      "price_tier": "1만원대",
+       "usp": "일반구성",
+       "rank_delta": "NEW",
+       "is_new_entry": true
+@@ -939,7 +939,7 @@
+       "product_id": 13064170,
+       "scraped_at": "2026-09-15 10:54:55",
+       "price_numeric": 12900,
+-      "price_tier": "1~3만원대",
++      "price_tier": "1만원대",
+       "usp": "일반구성",
+       "rank_delta": 3,
+       "is_new_entry": false
+@@ -955,7 +955,7 @@
+       "product_id": 12222102,
+       "scraped_at": "2026-09-15 10:54:55",
+       "price_numeric": 5000,
+-      "price_tier": "1만원 이하",
++      "price_tier": "1만원 미만",
+       "usp": "일반구성",
+       "rank_delta": "NEW",
+       "is_new_entry": true
+@@ -971,7 +971,7 @@
+       "product_id": 14150199,
+       "scraped_at": "2026-09-15 10:54:55",
+       "price_numeric": 16900,
+-      "price_tier": "1~3만원대",
++      "price_tier": "1만원대",
+       "usp": "선물포장, 단독구성",
+       "rank_delta": "NEW",
+       "is_new_entry": true
+@@ -987,7 +987,7 @@
+       "product_id": 11566569,
+       "scraped_at": "2026-09-15 10:54:55",
+       "price_numeric": 20000,
+-      "price_tier": "1~3만원대",
++      "price_tier": "2만원대",
+       "usp": "단독구성",
+       "rank_delta": "NEW",
+       "is_new_entry": true
+@@ -1003,7 +1003,7 @@
+       "product_id": 12319916,
+       "scraped_at": "2026-09-15 10:54:55",
+       "price_numeric": 35000,
+-      "price_tier": "3~5만원대",
++      "price_tier": "3만원대",
+       "usp": "일반구성",
+       "rank_delta": "NEW",
+       "is_new_entry": true
+@@ -1019,7 +1019,7 @@
+       "product_id": 12059249,
+       "scraped_at": "2026-09-15 10:54:56",
+       "price_numeric": 16900,
+-      "price_tier": "1~3만원대",
++      "price_tier": "1만원대",
+       "usp": "일반구성",
+       "rank_delta": "NEW",
+       "is_new_entry": true
+@@ -1035,7 +1035,7 @@
+       "product_id": 13689140,
+       "scraped_at": "2026-09-15 10:54:56",
+       "price_numeric": 19500,
+-      "price_tier": "1~3만원대",
++      "price_tier": "1만원대",
+       "usp": "일반구성",
+       "rank_delta": "NEW",
+       "is_new_entry": true
+@@ -1051,7 +1051,7 @@
+       "product_id": 11734230,
+       "scraped_at": "2026-09-15 10:54:56",
+       "price_numeric": 16300,
+-      "price_tier": "1~3만원대",
++      "price_tier": "1만원대",
+       "usp": "일반구성",
+       "rank_delta": -5,
+       "is_new_entry": false
+@@ -1067,7 +1067,7 @@
+       "product_id": 10940152,
+       "scraped_at": "2026-09-15 10:54:56",
+       "price_numeric": 8900,
+-      "price_tier": "1만원 이하",
++      "price_tier": "1만원 미만",
+       "usp": "일반구성",
+       "rank_delta": 37,
+       "is_new_entry": false
+@@ -1083,7 +1083,7 @@
+       "product_id": 14191242,
+       "scraped_at": "2026-09-15 10:54:56",
+       "price_numeric": 8000,
+-      "price_tier": "1만원 이하",
++      "price_tier": "1만원 미만",
+       "usp": "일반구성",
+       "rank_delta": 3,
+       "is_new_entry": false
+@@ -1099,7 +1099,7 @@
+       "product_id": 12820476,
+       "scraped_at": "2026-09-15 10:54:56",
+       "price_numeric": 18800,
+-      "price_tier": "1~3만원대",
++      "price_tier": "1만원대",
+       "usp": "단독구성",
+       "rank_delta": "NEW",
+       "is_new_entry": true
+@@ -1115,7 +1115,7 @@
+       "product_id": 13697772,
+       "scraped_at": "2026-09-15 10:54:56",
+       "price_numeric": 15000,
+-      "price_tier": "1~3만원대",
++      "price_tier": "1만원대",
+       "usp": "일반구성",
+       "rank_delta": "NEW",
+       "is_new_entry": true
+@@ -1131,7 +1131,7 @@
+       "product_id": 14049180,
+       "scraped_at": "2026-09-15 10:54:56",
+       "price_numeric": 8500,
+-      "price_tier": "1만원 이하",
++      "price_tier": "1만원 미만",
+       "usp": "일반구성",
+       "rank_delta": "NEW",
+       "is_new_entry": true
+@@ -1147,7 +1147,7 @@
+       "product_id": 12054525,
+       "scraped_at": "2026-09-15 10:54:56",
+       "price_numeric": 7200,
+-      "price_tier": "1만원 이하",
++      "price_tier": "1만원 미만",
+       "usp": "일반구성",
+       "rank_delta": "NEW",
+       "is_new_entry": true
+@@ -1163,7 +1163,7 @@
+       "product_id": 14268271,
+       "scraped_at": "2026-09-15 10:54:56",
+       "price_numeric": 12500,
+-      "price_tier": "1~3만원대",
++      "price_tier": "1만원대",
+       "usp": "일반구성",
+       "rank_delta": 76,
+       "is_new_entry": false
+@@ -1179,7 +1179,7 @@
+       "product_id": 12365669,
+       "scraped_at": "2026-09-15 10:54:56",
+       "price_numeric": 9900,
+-      "price_tier": "1만원 이하",
++      "price_tier": "1만원 미만",
+       "usp": "일반구성",
+       "rank_delta": "NEW",
+       "is_new_entry": true
+@@ -1195,7 +1195,7 @@
+       "product_id": 7795875,
+       "scraped_at": "2026-09-15 10:54:56",
+       "price_numeric": 9900,
+-      "price_tier": "1만원 이하",
++      "price_tier": "1만원 미만",
+       "usp": "일반구성",
+       "rank_delta": "NEW",
+       "is_new_entry": true
+@@ -1211,7 +1211,7 @@
+       "product_id": 11691666,
+       "scraped_at": "2026-09-15 10:54:57",
+       "price_numeric": 15900,
+-      "price_tier": "1~3만원대",
++      "price_tier": "1만원대",
+       "usp": "일반구성",
+       "rank_delta": "NEW",
+       "is_new_entry": true
+@@ -1227,7 +1227,7 @@
+       "product_id": 12084556,
+       "scraped_at": "2026-09-15 10:54:57",
+       "price_numeric": 5400,
+-      "price_tier": "1만원 이하",
++      "price_tier": "1만원 미만",
+       "usp": "일반구성",
+       "rank_delta": "NEW",
+       "is_new_entry": true
+@@ -1243,7 +1243,7 @@
+       "product_id": 13781031,
+       "scraped_at": "2026-09-15 10:54:57",
+       "price_numeric": 17900,
+-      "price_tier": "1~3만원대",
++      "price_tier": "1만원대",
+       "usp": "일반구성",
+       "rank_delta": "NEW",
+       "is_new_entry": true
+@@ -1259,7 +1259,7 @@
+       "product_id": 13763303,
+       "scraped_at": "2026-09-15 10:54:57",
+       "price_numeric": 16000,
+-      "price_tier": "1~3만원대",
++      "price_tier": "1만원대",
+       "usp": "일반구성",
+       "rank_delta": "NEW",
+       "is_new_entry": true
+@@ -1275,7 +1275,7 @@
+       "product_id": 13458352,
+       "scraped_at": "2026-09-15 10:54:57",
+       "price_numeric": 12000,
+-      "price_tier": "1~3만원대",
++      "price_tier": "1만원대",
+       "usp": "일반구성",
+       "rank_delta": "NEW",
+       "is_new_entry": true
+@@ -1291,7 +1291,7 @@
+       "product_id": 13450660,
+       "scraped_at": "2026-09-15 10:54:57",
+       "price_numeric": 31800,
+-      "price_tier": "3~5만원대",
++      "price_tier": "3만원대",
+       "usp": "일반구성",
+       "rank_delta": "NEW",
+       "is_new_entry": true
+@@ -1307,7 +1307,7 @@
+       "product_id": 9273061,
+       "scraped_at": "2026-09-15 10:54:57",
+       "price_numeric": 14900,
+-      "price_tier": "1~3만원대",
++      "price_tier": "1만원대",
+       "usp": "일반구성",
+       "rank_delta": "NEW",
+       "is_new_entry": true
+@@ -1323,7 +1323,7 @@
+       "product_id": 12551938,
+       "scraped_at": "2026-09-15 10:54:57",
+       "price_numeric": 15000,
+-      "price_tier": "1~3만원대",
++      "price_tier": "1만원대",
+       "usp": "일반구성",
+       "rank_delta": "NEW",
+       "is_new_entry": true
+@@ -1339,7 +1339,7 @@
+       "product_id": 12956735,
+       "scraped_at": "2026-09-15 10:54:57",
+       "price_numeric": 7900,
+-      "price_tier": "1만원 이하",
++      "price_tier": "1만원 미만",
+       "usp": "일반구성",
+       "rank_delta": "NEW",
+       "is_new_entry": true
+@@ -1355,7 +1355,7 @@
+       "product_id": 13008650,
+       "scraped_at": "2026-09-15 10:54:57",
+       "price_numeric": 34000,
+-      "price_tier": "3~5만원대",
++      "price_tier": "3만원대",
+       "usp": "일반구성",
+       "rank_delta": "NEW",
+       "is_new_entry": true
+@@ -1371,7 +1371,7 @@
+       "product_id": 11985626,
+       "scraped_at": "2026-09-15 10:54:57",
+       "price_numeric": 8800,
+-      "price_tier": "1만원 이하",
++      "price_tier": "1만원 미만",
+       "usp": "일반구성",
+       "rank_delta": "NEW",
+       "is_new_entry": true
+@@ -1387,7 +1387,7 @@
+       "product_id": 12668199,
+       "scraped_at": "2026-09-15 10:54:57",
+       "price_numeric": 5900,
+-      "price_tier": "1만원 이하",
++      "price_tier": "1만원 미만",
+       "usp": "일반구성",
+       "rank_delta": "NEW",
+       "is_new_entry": true
+@@ -1403,7 +1403,7 @@
+       "product_id": 5096671,
+       "scraped_at": "2026-09-15 10:54:57",
+       "price_numeric": 7900,
+-      "price_tier": "1만원 이하",
++      "price_tier": "1만원 미만",
+       "usp": "일반구성",
+       "rank_delta": 3,
+       "is_new_entry": false
+@@ -1419,7 +1419,7 @@
+       "product_id": 13509211,
+       "scraped_at": "2026-09-15 10:54:57",
+       "price_numeric": 32000,
+-      "price_tier": "3~5만원대",
++      "price_tier": "3만원대",
+       "usp": "단독구성",
+       "rank_delta": "NEW",
+       "is_new_entry": true
+@@ -1435,7 +1435,7 @@
+       "product_id": 11857070,
+       "scraped_at": "2026-09-15 10:54:57",
+       "price_numeric": 13600,
+-      "price_tier": "1~3만원대",
++      "price_tier": "1만원대",
+       "usp": "단독구성",
+       "rank_delta": "NEW",
+       "is_new_entry": true
+@@ -1451,7 +1451,7 @@
+       "product_id": 14242122,
+       "scraped_at": "2026-09-15 10:54:57",
+       "price_numeric": 30000,
+-      "price_tier": "1~3만원대",
++      "price_tier": "3만원대",
+       "usp": "각인/자수",
+       "rank_delta": "NEW",
+       "is_new_entry": true
+@@ -1467,7 +1467,7 @@
+       "product_id": 10941248,
+       "scraped_at": "2026-09-15 10:54:57",
+       "price_numeric": 7900,
+-      "price_tier": "1만원 이하",
++      "price_tier": "1만원 미만",
+       "usp": "일반구성",
+       "rank_delta": "NEW",
+       "is_new_entry": true
+@@ -1483,7 +1483,7 @@
+       "product_id": 13672457,
+       "scraped_at": "2026-09-15 10:54:58",
+       "price_numeric": 39800,
+-      "price_tier": "3~5만원대",
++      "price_tier": "3만원대",
+       "usp": "일반구성",
+       "rank_delta": 14,
+       "is_new_entry": false
+@@ -1499,7 +1499,7 @@
+       "product_id": 13466293,
+       "scraped_at": "2026-09-15 10:54:58",
+       "price_numeric": 36000,
+-      "price_tier": "3~5만원대",
++      "price_tier": "3만원대",
+       "usp": "선물포장",
+       "rank_delta": "NEW",
+       "is_new_entry": true
+@@ -1515,7 +1515,7 @@
+       "product_id": 8207423,
+       "scraped_at": "2026-09-15 10:54:58",
+       "price_numeric": 9900,
+-      "price_tier": "1만원 이하",
++      "price_tier": "1만원 미만",
+       "usp": "일반구성",
+       "rank_delta": "NEW",
+       "is_new_entry": true
+@@ -1531,7 +1531,7 @@
+       "product_id": 6186802,
+       "scraped_at": "2026-09-15 10:54:58",
+       "price_numeric": 12900,
+-      "price_tier": "1~3만원대",
++      "price_tier": "1만원대",
+       "usp": "선물포장, 단독구성",
+       "rank_delta": -1,
+       "is_new_entry": false
+@@ -1547,7 +1547,7 @@
+       "product_id": 10293933,
+       "scraped_at": "2026-09-15 10:54:58",
+       "price_numeric": 7500,
+-      "price_tier": "1만원 이하",
++      "price_tier": "1만원 미만",
+       "usp": "일반구성",
+       "rank_delta": "NEW",
+       "is_new_entry": true
+@@ -1563,7 +1563,7 @@
+       "product_id": 13673431,
+       "scraped_at": "2026-09-15 10:54:58",
+       "price_numeric": 9900,
+-      "price_tier": "1만원 이하",
++      "price_tier": "1만원 미만",
+       "usp": "일반구성",
+       "rank_delta": "NEW",
+       "is_new_entry": true
+@@ -1579,7 +1579,7 @@
+       "product_id": 13900412,
+       "scraped_at": "2026-09-15 10:54:58",
+       "price_numeric": 13800,
+-      "price_tier": "1~3만원대",
++      "price_tier": "1만원대",
+       "usp": "일반구성",
+       "rank_delta": -3,
+       "is_new_entry": false
+@@ -1595,7 +1595,7 @@
+       "product_id": 11366993,
+       "scraped_at": "2026-09-15 10:54:58",
+       "price_numeric": 7900,
+-      "price_tier": "1만원 이하",
++      "price_tier": "1만원 미만",
+       "usp": "단독구성",
+       "rank_delta": "NEW",
+       "is_new_entry": true
+@@ -1611,7 +1611,7 @@
+       "product_id": 7355950,
+       "scraped_at": "2026-09-15 10:55:04",
+       "price_numeric": 22900,
+-      "price_tier": "1~3만원대",
++      "price_tier": "2만원대",
+       "usp": "일반구성",
+       "rank_delta": 0,
+       "is_new_entry": false
+@@ -1627,7 +1627,7 @@
+       "product_id": 11743570,
+       "scraped_at": "2026-09-15 10:55:04",
+       "price_numeric": 34800,
+-      "price_tier": "3~5만원대",
++      "price_tier": "3만원대",
+       "usp": "단독구성",
+       "rank_delta": 0,
+       "is_new_entry": false
+@@ -1643,7 +1643,7 @@
+       "product_id": 6986025,
+       "scraped_at": "2026-09-15 10:55:05",
+       "price_numeric": 29900,
+-      "price_tier": "1~3만원대",
++      "price_tier": "2만원대",
+       "usp": "일반구성",
+       "rank_delta": "NEW",
+       "is_new_entry": true
+@@ -1659,7 +1659,7 @@
+       "product_id": 5328353,
+       "scraped_at": "2026-09-15 10:55:05",
+       "price_numeric": 29800,
+-      "price_tier": "1~3만원대",
++      "price_tier": "2만원대",
+       "usp": "단독구성",
+       "rank_delta": 0,
+       "is_new_entry": false
+@@ -1675,7 +1675,7 @@
+       "product_id": 14096524,
+       "scraped_at": "2026-09-15 10:55:05",
+       "price_numeric": 17800,
+-      "price_tier": "1~3만원대",
++      "price_tier": "1만원대",
+       "usp": "일반구성",
+       "rank_delta": "NEW",
+       "is_new_entry": true
+@@ -1691,7 +1691,7 @@
+       "product_id": 13255931,
+       "scraped_at": "2026-09-15 10:55:05",
+       "price_numeric": 37900,
+-      "price_tier": "3~5만원대",
++      "price_tier": "3만원대",
+       "usp": "단독구성",
+       "rank_delta": -1,
+       "is_new_entry": false
+@@ -1707,7 +1707,7 @@
+       "product_id": 12693742,
+       "scraped_at": "2026-09-15 10:55:05",
+       "price_numeric": 23000,
+-      "price_tier": "1~3만원대",
++      "price_tier": "2만원대",
+       "usp": "일반구성",
+       "rank_delta": 6,
+       "is_new_entry": false
+@@ -1723,7 +1723,7 @@
+       "product_id": 12281507,
+       "scraped_at": "2026-09-15 10:55:05",
+       "price_numeric": 18800,
+-      "price_tier": "1~3만원대",
++      "price_tier": "1만원대",
+       "usp": "일반구성",
+       "rank_delta": -2,
+       "is_new_entry": false
+@@ -1739,7 +1739,7 @@
+       "product_id": 5328905,
+       "scraped_at": "2026-09-15 10:55:05",
+       "price_numeric": 29900,
+-      "price_tier": "1~3만원대",
++      "price_tier": "2만원대",
+       "usp": "단독구성",
+       "rank_delta": -2,
+       "is_new_entry": false
+@@ -1755,7 +1755,7 @@
+       "product_id": 8091057,
+       "scraped_at": "2026-09-15 10:55:05",
+       "price_numeric": 13800,
+-      "price_tier": "1~3만원대",
++      "price_tier": "1만원대",
+       "usp": "일반구성",
+       "rank_delta": 1,
+       "is_new_entry": false
+@@ -1771,7 +1771,7 @@
+       "product_id": 7896387,
+       "scraped_at": "2026-09-15 10:55:05",
+       "price_numeric": 16900,
+-      "price_tier": "1~3만원대",
++      "price_tier": "1만원대",
+       "usp": "일반구성",
+       "rank_delta": "NEW",
+       "is_new_entry": true
+@@ -1787,7 +1787,7 @@
+       "product_id": 12617143,
+       "scraped_at": "2026-09-15 10:55:05",
+       "price_numeric": 17900,
+-      "price_tier": "1~3만원대",
++      "price_tier": "1만원대",
+       "usp": "일반구성",
+       "rank_delta": "NEW",
+       "is_new_entry": true
+@@ -1803,7 +1803,7 @@
+       "product_id": 13808817,
+       "scraped_at": "2026-09-15 10:55:06",
+       "price_numeric": 29000,
+-      "price_tier": "1~3만원대",
++      "price_tier": "2만원대",
+       "usp": "일반구성",
+       "rank_delta": "NEW",
+       "is_new_entry": true
+@@ -1819,7 +1819,7 @@
+       "product_id": 7025670,
+       "scraped_at": "2026-09-15 10:55:06",
+       "price_numeric": 29800,
+-      "price_tier": "1~3만원대",
++      "price_tier": "2만원대",
+       "usp": "단독구성",
+       "rank_delta": 31,
+       "is_new_entry": false
+@@ -1835,7 +1835,7 @@
+       "product_id": 10819633,
+       "scraped_at": "2026-09-15 10:55:06",
+       "price_numeric": 14900,
+-      "price_tier": "1~3만원대",
++      "price_tier": "1만원대",
+       "usp": "일반구성",
+       "rank_delta": "NEW",
+       "is_new_entry": true
+@@ -1851,7 +1851,7 @@
+       "product_id": 7322097,
+       "scraped_at": "2026-09-15 10:55:06",
+       "price_numeric": 36900,
+-      "price_tier": "3~5만원대",
++      "price_tier": "3만원대",
+       "usp": "단독구성",
+       "rank_delta": "NEW",
+       "is_new_entry": true
+@@ -1867,7 +1867,7 @@
+       "product_id": 7025298,
+       "scraped_at": "2026-09-15 10:55:06",
+       "price_numeric": 29900,
+-      "price_tier": "1~3만원대",
++      "price_tier": "2만원대",
+       "usp": "단독구성",
+       "rank_delta": 5,
+       "is_new_entry": false
+@@ -1883,7 +1883,7 @@
+       "product_id": 14221797,
+       "scraped_at": "2026-09-15 10:55:06",
+       "price_numeric": 37000,
+-      "price_tier": "3~5만원대",
++      "price_tier": "3만원대",
+       "usp": "일반구성",
+       "rank_delta": -2,
+       "is_new_entry": false
+@@ -1899,7 +1899,7 @@
+       "product_id": 10998140,
+       "scraped_at": "2026-09-15 10:55:06",
+       "price_numeric": 15900,
+-      "price_tier": "1~3만원대",
++      "price_tier": "1만원대",
+       "usp": "일반구성",
+       "rank_delta": -1,
+       "is_new_entry": false
+@@ -1915,7 +1915,7 @@
+       "product_id": 1308578,
+       "scraped_at": "2026-09-15 10:55:06",
+       "price_numeric": 44900,
+-      "price_tier": "3~5만원대",
++      "price_tier": "4만원대",
+       "usp": "단독구성",
+       "rank_delta": 4,
+       "is_new_entry": false
+@@ -1931,7 +1931,7 @@
+       "product_id": 13216407,
+       "scraped_at": "2026-09-15 10:55:06",
+       "price_numeric": 15900,
+-      "price_tier": "1~3만원대",
++      "price_tier": "1만원대",
+       "usp": "단독구성",
+       "rank_delta": -7,
+       "is_new_entry": false
+@@ -1947,7 +1947,7 @@
+       "product_id": 13983870,
+       "scraped_at": "2026-09-15 10:55:06",
+       "price_numeric": 22900,
+-      "price_tier": "1~3만원대",
++      "price_tier": "2만원대",
+       "usp": "일반구성",
+       "rank_delta": "NEW",
+       "is_new_entry": true
+@@ -1963,7 +1963,7 @@
+       "product_id": 1242861,
+       "scraped_at": "2026-09-15 10:55:06",
+       "price_numeric": 29900,
+-      "price_tier": "1~3만원대",
++      "price_tier": "2만원대",
+       "usp": "단독구성",
+       "rank_delta": 11,
+       "is_new_entry": false
+@@ -1979,7 +1979,7 @@
+       "product_id": 11539740,
+       "scraped_at": "2026-09-15 10:55:06",
+       "price_numeric": 21800,
+-      "price_tier": "1~3만원대",
++      "price_tier": "2만원대",
+       "usp": "일반구성",
+       "rank_delta": 8,
+       "is_new_entry": false
+@@ -1995,7 +1995,7 @@
+       "product_id": 13983873,
+       "scraped_at": "2026-09-15 10:55:06",
+       "price_numeric": 36900,
+-      "price_tier": "3~5만원대",
++      "price_tier": "3만원대",
+       "usp": "일반구성",
+       "rank_delta": "NEW",
+       "is_new_entry": true
+@@ -2011,7 +2011,7 @@
+       "product_id": 7262354,
+       "scraped_at": "2026-09-15 10:55:06",
+       "price_numeric": 13900,
+-      "price_tier": "1~3만원대",
++      "price_tier": "1만원대",
+       "usp": "일반구성",
+       "rank_delta": -1,
+       "is_new_entry": false
+@@ -2027,7 +2027,7 @@
+       "product_id": 945159,
+       "scraped_at": "2026-09-15 10:55:06",
+       "price_numeric": 25000,
+-      "price_tier": "1~3만원대",
++      "price_tier": "2만원대",
+       "usp": "일반구성",
+       "rank_delta": "NEW",
+       "is_new_entry": true
+@@ -2043,7 +2043,7 @@
+       "product_id": 12818996,
+       "scraped_at": "2026-09-15 10:55:07",
+       "price_numeric": 19800,
+-      "price_tier": "1~3만원대",
++      "price_tier": "1만원대",
+       "usp": "일반구성",
+       "rank_delta": "NEW",
+       "is_new_entry": true
+@@ -2059,7 +2059,7 @@
+       "product_id": 3833938,
+       "scraped_at": "2026-09-15 10:55:07",
+       "price_numeric": 13900,
+-      "price_tier": "1~3만원대",
++      "price_tier": "1만원대",
+       "usp": "단독구성",
+       "rank_delta": -8,
+       "is_new_entry": false
+@@ -2075,7 +2075,7 @@
+       "product_id": 8510786,
+       "scraped_at": "2026-09-15 10:55:07",
+       "price_numeric": 23900,
+-      "price_tier": "1~3만원대",
++      "price_tier": "2만원대",
+       "usp": "일반구성",
+       "rank_delta": 30,
+       "is_new_entry": false
+@@ -2091,7 +2091,7 @@
+       "product_id": 7280480,
+       "scraped_at": "2026-09-15 10:55:07",
+       "price_numeric": 9900,
+-      "price_tier": "1만원 이하",
++      "price_tier": "1만원 미만",
+       "usp": "일반구성",
+       "rank_delta": -8,
+       "is_new_entry": false
+@@ -2107,7 +2107,7 @@
+       "product_id": 9191293,
+       "scraped_at": "2026-09-15 10:55:07",
+       "price_numeric": 39000,
+-      "price_tier": "3~5만원대",
++      "price_tier": "3만원대",
+       "usp": "일반구성",
+       "rank_delta": "NEW",
+       "is_new_entry": true
+@@ -2123,7 +2123,7 @@
+       "product_id": 11704744,
+       "scraped_at": "2026-09-15 10:55:07",
+       "price_numeric": 13900,
+-      "price_tier": "1~3만원대",
++      "price_tier": "1만원대",
+       "usp": "일반구성",
+       "rank_delta": "NEW",
+       "is_new_entry": true
+@@ -2139,7 +2139,7 @@
+       "product_id": 13869667,
+       "scraped_at": "2026-09-15 10:55:07",
+       "price_numeric": 20000,
+-      "price_tier": "1~3만원대",
++      "price_tier": "2만원대",
+       "usp": "일반구성",
+       "rank_delta": "NEW",
+       "is_new_entry": true
+@@ -2155,7 +2155,7 @@
+       "product_id": 11386190,
+       "scraped_at": "2026-09-15 10:55:07",
+       "price_numeric": 32000,
+-      "price_tier": "3~5만원대",
++      "price_tier": "3만원대",
+       "usp": "단독구성",
+       "rank_delta": "NEW",
+       "is_new_entry": true
+@@ -2171,7 +2171,7 @@
+       "product_id": 12039412,
+       "scraped_at": "2026-09-15 10:55:07",
+       "price_numeric": 21800,
+-      "price_tier": "1~3만원대",
++      "price_tier": "2만원대",
+       "usp": "일반구성",
+       "rank_delta": "NEW",
+       "is_new_entry": true
+@@ -2187,7 +2187,7 @@
+       "product_id": 13983893,
+       "scraped_at": "2026-09-15 10:55:07",
+       "price_numeric": 16900,
+-      "price_tier": "1~3만원대",
++      "price_tier": "1만원대",
+       "usp": "일반구성",
+       "rank_delta": "NEW",
+       "is_new_entry": true
+@@ -2203,7 +2203,7 @@
+       "product_id": 10962112,
+       "scraped_at": "2026-09-15 10:55:07",
+       "price_numeric": 19900,
+-      "price_tier": "1~3만원대",
++      "price_tier": "1만원대",
+       "usp": "일반구성",
+       "rank_delta": "NEW",
+       "is_new_entry": true
+@@ -2219,7 +2219,7 @@
+       "product_id": 11942947,
+       "scraped_at": "2026-09-15 10:55:07",
+       "price_numeric": 29900,
+-      "price_tier": "1~3만원대",
++      "price_tier": "2만원대",
+       "usp": "일반구성",
+       "rank_delta": 11,
+       "is_new_entry": false
+@@ -2235,7 +2235,7 @@
+       "product_id": 9842300,
+       "scraped_at": "2026-09-15 10:55:07",
+       "price_numeric": 21500,
+-      "price_tier": "1~3만원대",
++      "price_tier": "2만원대",
+       "usp": "일반구성",
+       "rank_delta": "NEW",
+       "is_new_entry": true
+@@ -2251,7 +2251,7 @@
+       "product_id": 905813,
+       "scraped_at": "2026-09-15 10:55:08",
+       "price_numeric": 15900,
+-      "price_tier": "1~3만원대",
++      "price_tier": "1만원대",
+       "usp": "일반구성",
+       "rank_delta": -2,
+       "is_new_entry": false
+@@ -2267,7 +2267,7 @@
+       "product_id": 14046242,
+       "scraped_at": "2026-09-15 10:55:08",
+       "price_numeric": 25000,
+-      "price_tier": "1~3만원대",
++      "price_tier": "2만원대",
+       "usp": "일반구성",
+       "rank_delta": "NEW",
+       "is_new_entry": true
+@@ -2283,7 +2283,7 @@
+       "product_id": 13551705,
+       "scraped_at": "2026-09-15 10:55:08",
+       "price_numeric": 19000,
+-      "price_tier": "1~3만원대",
++      "price_tier": "1만원대",
+       "usp": "일반구성",
+       "rank_delta": "NEW",
+       "is_new_entry": true
+@@ -2299,7 +2299,7 @@
+       "product_id": 10609163,
+       "scraped_at": "2026-09-15 10:55:08",
+       "price_numeric": 15900,
+-      "price_tier": "1~3만원대",
++      "price_tier": "1만원대",
+       "usp": "단독구성",
+       "rank_delta": -16,
+       "is_new_entry": false
+@@ -2315,7 +2315,7 @@
+       "product_id": 9570334,
+       "scraped_at": "2026-09-15 10:55:08",
+       "price_numeric": 32000,
+-      "price_tier": "3~5만원대",
++      "price_tier": "3만원대",
+       "usp": "일반구성",
+       "rank_delta": "NEW",
+       "is_new_entry": true
+@@ -2347,7 +2347,7 @@
+       "product_id": 6841023,
+       "scraped_at": "2026-09-15 10:55:08",
+       "price_numeric": 17800,
+-      "price_tier": "1~3만원대",
++      "price_tier": "1만원대",
+       "usp": "일반구성",
+       "rank_delta": "NEW",
+       "is_new_entry": true
+@@ -2363,7 +2363,7 @@
+       "product_id": 11951853,
+       "scraped_at": "2026-09-15 10:55:08",
+       "price_numeric": 22800,
+-      "price_tier": "1~3만원대",
++      "price_tier": "2만원대",
+       "usp": "일반구성",
+       "rank_delta": "NEW",
+       "is_new_entry": true
+@@ -2379,7 +2379,7 @@
+       "product_id": 2488205,
+       "scraped_at": "2026-09-15 10:55:08",
+       "price_numeric": 15900,
+-      "price_tier": "1~3만원대",
++      "price_tier": "1만원대",
+       "usp": "일반구성",
+       "rank_delta": 6,
+       "is_new_entry": false
+@@ -2395,7 +2395,7 @@
+       "product_id": 2205514,
+       "scraped_at": "2026-09-15 10:55:08",
+       "price_numeric": 29900,
+-      "price_tier": "1~3만원대",
++      "price_tier": "2만원대",
+       "usp": "일반구성",
+       "rank_delta": "NEW",
+       "is_new_entry": true
+@@ -2411,7 +2411,7 @@
+       "product_id": 7868266,
+       "scraped_at": "2026-09-15 10:55:17",
+       "price_numeric": 30800,
+-      "price_tier": "3~5만원대",
++      "price_tier": "3만원대",
+       "usp": "일반구성",
+       "rank_delta": "NEW",
+       "is_new_entry": true
+@@ -2427,7 +2427,7 @@
+       "product_id": 11106499,
+       "scraped_at": "2026-09-15 10:55:17",
+       "price_numeric": 49000,
+-      "price_tier": "3~5만원대",
++      "price_tier": "4만원대",
+       "usp": "일반구성",
+       "rank_delta": "NEW",
+       "is_new_entry": true
+@@ -2443,7 +2443,7 @@
+       "product_id": 13772143,
+       "scraped_at": "2026-09-15 10:55:18",
+       "price_numeric": 24500,
+-      "price_tier": "1~3만원대",
++      "price_tier": "2만원대",
+       "usp": "단독구성",
+       "rank_delta": "NEW",
+       "is_new_entry": true
+@@ -2459,7 +2459,7 @@
+       "product_id": 11144932,
+       "scraped_at": "2026-09-15 10:55:18",
+       "price_numeric": 40500,
+-      "price_tier": "3~5만원대",
++      "price_tier": "4만원대",
+       "usp": "일반구성",
+       "rank_delta": "NEW",
+       "is_new_entry": true
+@@ -2475,7 +2475,7 @@
+       "product_id": 11850163,
+       "scraped_at": "2026-09-15 10:55:18",
+       "price_numeric": 25900,
+-      "price_tier": "1~3만원대",
++      "price_tier": "2만원대",
+       "usp": "선물포장, 단독구성",
+       "rank_delta": -1,
+       "is_new_entry": false
+@@ -2491,7 +2491,7 @@
+       "product_id": 7868778,
+       "scraped_at": "2026-09-15 10:55:18",
+       "price_numeric": 39200,
+-      "price_tier": "3~5만원대",
++      "price_tier": "3만원대",
+       "usp": "일반구성",
+       "rank_delta": "NEW",
+       "is_new_entry": true
+@@ -2523,7 +2523,7 @@
+       "product_id": 11779291,
+       "scraped_at": "2026-09-15 10:55:18",
+       "price_numeric": 46000,
+-      "price_tier": "3~5만원대",
++      "price_tier": "4만원대",
+       "usp": "일반구성",
+       "rank_delta": 2,
+       "is_new_entry": false
+@@ -2571,7 +2571,7 @@
+       "product_id": 12821252,
+       "scraped_at": "2026-09-15 10:55:18",
+       "price_numeric": 16800,
+-      "price_tier": "1~3만원대",
++      "price_tier": "1만원대",
+       "usp": "단독구성",
+       "rank_delta": -5,
+       "is_new_entry": false
+@@ -2587,7 +2587,7 @@
+       "product_id": 12694903,
+       "scraped_at": "2026-09-15 10:55:18",
+       "price_numeric": 39000,
+-      "price_tier": "3~5만원대",
++      "price_tier": "3만원대",
+       "usp": "단독구성",
+       "rank_delta": -7,
+       "is_new_entry": false
+@@ -2603,7 +2603,7 @@
+       "product_id": 11483865,
+       "scraped_at": "2026-09-15 10:55:18",
+       "price_numeric": 42000,
+-      "price_tier": "3~5만원대",
++      "price_tier": "4만원대",
+       "usp": "일반구성",
+       "rank_delta": 3,
+       "is_new_entry": false
+@@ -2619,7 +2619,7 @@
+       "product_id": 7868895,
+       "scraped_at": "2026-09-15 10:55:18",
+       "price_numeric": 44000,
+-      "price_tier": "3~5만원대",
++      "price_tier": "4만원대",
+       "usp": "일반구성",
+       "rank_delta": 3,
+       "is_new_entry": false
+@@ -2635,7 +2635,7 @@
+       "product_id": 11264836,
+       "scraped_at": "2026-09-15 10:55:18",
+       "price_numeric": 36000,
+-      "price_tier": "3~5만원대",
++      "price_tier": "3만원대",
+       "usp": "일반구성",
+       "rank_delta": "NEW",
+       "is_new_entry": true
+@@ -2651,7 +2651,7 @@
+       "product_id": 11483949,
+       "scraped_at": "2026-09-15 10:55:18",
+       "price_numeric": 35000,
+-      "price_tier": "3~5만원대",
++      "price_tier": "3만원대",
+       "usp": "일반구성",
+       "rank_delta": -7,
+       "is_new_entry": false
+@@ -2667,7 +2667,7 @@
+       "product_id": 6989444,
+       "scraped_at": "2026-09-15 10:55:18",
+       "price_numeric": 46000,
+-      "price_tier": "3~5만원대",
++      "price_tier": "4만원대",
+       "usp": "단독구성",
+       "rank_delta": "NEW",
+       "is_new_entry": true
+@@ -2683,7 +2683,7 @@
+       "product_id": 1186213,
+       "scraped_at": "2026-09-15 10:55:18",
+       "price_numeric": 33000,
+-      "price_tier": "3~5만원대",
++      "price_tier": "3만원대",
+       "usp": "단독구성",
+       "rank_delta": "NEW",
+       "is_new_entry": true
+@@ -2699,7 +2699,7 @@
+       "product_id": 12455527,
+       "scraped_at": "2026-09-15 10:55:18",
+       "price_numeric": 13800,
+-      "price_tier": "1~3만원대",
++      "price_tier": "1만원대",
+       "usp": "일반구성",
+       "rank_delta": "NEW",
+       "is_new_entry": true
+@@ -2715,7 +2715,7 @@
+       "product_id": 7734041,
+       "scraped_at": "2026-09-15 10:55:18",
+       "price_numeric": 34800,
+-      "price_tier": "3~5만원대",
++      "price_tier": "3만원대",
+       "usp": "단독구성",
+       "rank_delta": "NEW",
+       "is_new_entry": true
+@@ -2731,7 +2731,7 @@
+       "product_id": 11801920,
+       "scraped_at": "2026-09-15 10:55:18",
+       "price_numeric": 48000,
+-      "price_tier": "3~5만원대",
++      "price_tier": "4만원대",
+       "usp": "일반구성",
+       "rank_delta": 1,
+       "is_new_entry": false
+@@ -2747,7 +2747,7 @@
+       "product_id": 9158489,
+       "scraped_at": "2026-09-15 10:55:18",
+       "price_numeric": 31500,
+-      "price_tier": "3~5만원대",
++      "price_tier": "3만원대",
+       "usp": "각인/자수",
+       "rank_delta": "NEW",
+       "is_new_entry": true
+@@ -2763,7 +2763,7 @@
+       "product_id": 13884111,
+       "scraped_at": "2026-09-15 10:55:19",
+       "price_numeric": 9800,
+-      "price_tier": "1만원 이하",
++      "price_tier": "1만원 미만",
+       "usp": "일반구성",
+       "rank_delta": "NEW",
+       "is_new_entry": true
+@@ -2779,7 +2779,7 @@
+       "product_id": 12339610,
+       "scraped_at": "2026-09-15 10:55:19",
+       "price_numeric": 38000,
+-      "price_tier": "3~5만원대",
++      "price_tier": "3만원대",
+       "usp": "일반구성",
+       "rank_delta": "NEW",
+       "is_new_entry": true
+@@ -2795,7 +2795,7 @@
+       "product_id": 12694900,
+       "scraped_at": "2026-09-15 10:55:19",
+       "price_numeric": 36000,
+-      "price_tier": "3~5만원대",
++      "price_tier": "3만원대",
+       "usp": "단독구성",
+       "rank_delta": -11,
+       "is_new_entry": false
+@@ -2811,7 +2811,7 @@
+       "product_id": 11521316,
+       "scraped_at": "2026-09-15 10:55:19",
+       "price_numeric": 20400,
+-      "price_tier": "1~3만원대",
++      "price_tier": "2만원대",
+       "usp": "단독구성",
+       "rank_delta": "NEW",
+       "is_new_entry": true
+@@ -2827,7 +2827,7 @@
+       "product_id": 13421555,
+       "scraped_at": "2026-09-15 10:55:19",
+       "price_numeric": 46000,
+-      "price_tier": "3~5만원대",
++      "price_tier": "4만원대",
+       "usp": "일반구성",
+       "rank_delta": "NEW",
+       "is_new_entry": true
+@@ -2859,7 +2859,7 @@
+       "product_id": 14255962,
+       "scraped_at": "2026-09-15 10:55:19",
+       "price_numeric": 17800,
+-      "price_tier": "1~3만원대",
++      "price_tier": "1만원대",
+       "usp": "단독구성",
+       "rank_delta": "NEW",
+       "is_new_entry": true
+@@ -2875,7 +2875,7 @@
+       "product_id": 9675371,
+       "scraped_at": "2026-09-15 10:55:19",
+       "price_numeric": 33800,
+-      "price_tier": "3~5만원대",
++      "price_tier": "3만원대",
+       "usp": "단독구성",
+       "rank_delta": 2,
+       "is_new_entry": false
+@@ -2907,7 +2907,7 @@
+       "product_id": 9742914,
+       "scraped_at": "2026-09-15 10:55:19",
+       "price_numeric": 12900,
+-      "price_tier": "1~3만원대",
++      "price_tier": "1만원대",
+       "usp": "단독구성",
+       "rank_delta": 8,
+       "is_new_entry": false
+@@ -2939,7 +2939,7 @@
+       "product_id": 12820960,
+       "scraped_at": "2026-09-15 10:55:19",
+       "price_numeric": 16800,
+-      "price_tier": "1~3만원대",
++      "price_tier": "1만원대",
+       "usp": "일반구성",
+       "rank_delta": -7,
+       "is_new_entry": false
+@@ -2955,7 +2955,7 @@
+       "product_id": 12109009,
+       "scraped_at": "2026-09-15 10:55:20",
+       "price_numeric": 49000,
+-      "price_tier": "3~5만원대",
++      "price_tier": "4만원대",
+       "usp": "일반구성",
+       "rank_delta": "NEW",
+       "is_new_entry": true
+@@ -2971,7 +2971,7 @@
+       "product_id": 11264832,
+       "scraped_at": "2026-09-15 10:55:20",
+       "price_numeric": 31000,
+-      "price_tier": "3~5만원대",
++      "price_tier": "3만원대",
+       "usp": "일반구성",
+       "rank_delta": "NEW",
+       "is_new_entry": true
+@@ -2987,7 +2987,7 @@
+       "product_id": 10626781,
+       "scraped_at": "2026-09-15 10:55:20",
+       "price_numeric": 25900,
+-      "price_tier": "1~3만원대",
++      "price_tier": "2만원대",
+       "usp": "단독구성",
+       "rank_delta": "NEW",
+       "is_new_entry": true
+@@ -3003,7 +3003,7 @@
+       "product_id": 4907401,
+       "scraped_at": "2026-09-15 10:55:20",
+       "price_numeric": 45000,
+-      "price_tier": "3~5만원대",
++      "price_tier": "4만원대",
+       "usp": "단독구성",
+       "rank_delta": -3,
+       "is_new_entry": false
+@@ -3019,7 +3019,7 @@
+       "product_id": 7833932,
+       "scraped_at": "2026-09-15 10:55:20",
+       "price_numeric": 47700,
+-      "price_tier": "3~5만원대",
++      "price_tier": "4만원대",
+       "usp": "단독구성",
+       "rank_delta": "NEW",
+       "is_new_entry": true
+@@ -3035,7 +3035,7 @@
+       "product_id": 12439693,
+       "scraped_at": "2026-09-15 10:55:20",
+       "price_numeric": 39500,
+-      "price_tier": "3~5만원대",
++      "price_tier": "3만원대",
+       "usp": "단독구성",
+       "rank_delta": "NEW",
+       "is_new_entry": true
+@@ -3051,7 +3051,7 @@
+       "product_id": 7712218,
+       "scraped_at": "2026-09-15 10:55:20",
+       "price_numeric": 32000,
+-      "price_tier": "3~5만원대",
++      "price_tier": "3만원대",
+       "usp": "단독구성",
+       "rank_delta": "NEW",
+       "is_new_entry": true
+@@ -3067,7 +3067,7 @@
+       "product_id": 12702001,
+       "scraped_at": "2026-09-15 10:55:20",
+       "price_numeric": 14900,
+-      "price_tier": "1~3만원대",
++      "price_tier": "1만원대",
+       "usp": "단독구성",
+       "rank_delta": -4,
+       "is_new_entry": false
+@@ -3083,7 +3083,7 @@
+       "product_id": 12262364,
+       "scraped_at": "2026-09-15 10:55:20",
+       "price_numeric": 23900,
+-      "price_tier": "1~3만원대",
++      "price_tier": "2만원대",
+       "usp": "단독구성",
+       "rank_delta": "NEW",
+       "is_new_entry": true
+@@ -3099,7 +3099,7 @@
+       "product_id": 13648700,
+       "scraped_at": "2026-09-15 10:55:20",
+       "price_numeric": 27000,
+-      "price_tier": "1~3만원대",
++      "price_tier": "2만원대",
+       "usp": "일반구성",
+       "rank_delta": "NEW",
+       "is_new_entry": true
+@@ -3115,7 +3115,7 @@
+       "product_id": 13613223,
+       "scraped_at": "2026-09-15 10:55:20",
+       "price_numeric": 9900,
+-      "price_tier": "1만원 이하",
++      "price_tier": "1만원 미만",
+       "usp": "일반구성",
+       "rank_delta": "NEW",
+       "is_new_entry": true
+@@ -3131,7 +3131,7 @@
+       "product_id": 10998208,
+       "scraped_at": "2026-09-15 10:55:20",
+       "price_numeric": 18990,
+-      "price_tier": "1~3만원대",
++      "price_tier": "1만원대",
+       "usp": "단독구성",
+       "rank_delta": "NEW",
+       "is_new_entry": true
+@@ -3147,7 +3147,7 @@
+       "product_id": 14277595,
+       "scraped_at": "2026-09-15 10:55:20",
+       "price_numeric": 32000,
+-      "price_tier": "3~5만원대",
++      "price_tier": "3만원대",
+       "usp": "일반구성",
+       "rank_delta": "NEW",
+       "is_new_entry": true
+@@ -3163,7 +3163,7 @@
+       "product_id": 10468609,
+       "scraped_at": "2026-09-15 10:55:20",
+       "price_numeric": 15800,
+-      "price_tier": "1~3만원대",
++      "price_tier": "1만원대",
+       "usp": "단독구성",
+       "rank_delta": -25,
+       "is_new_entry": false
+@@ -3179,7 +3179,7 @@
+       "product_id": 12698675,
+       "scraped_at": "2026-09-15 10:55:20",
+       "price_numeric": 16900,
+-      "price_tier": "1~3만원대",
++      "price_tier": "1만원대",
+       "usp": "단독구성",
+       "rank_delta": "NEW",
+       "is_new_entry": true
+@@ -3195,7 +3195,7 @@
+       "product_id": 12747894,
+       "scraped_at": "2026-09-15 10:55:20",
+       "price_numeric": 34000,
+-      "price_tier": "3~5만원대",
++      "price_tier": "3만원대",
+       "usp": "단독구성",
+       "rank_delta": "NEW",
+       "is_new_entry": true
+@@ -3214,17 +3214,111 @@
+         "avg_price": 27586,
+         "packaging_ratio": 4.0,
+         "engraving_ratio": 2.0,
+-        "exclusive_ratio": 35.0
++        "exclusive_ratio": 35.0,
++        "price_tier_matrix": {
++          "1만원 미만": {
++            "count": 23,
++            "share": 11.5,
++            "avg_price": 8421,
++            "top_brands": [
++              "알럽하우스(소품)",
++              "제이블룸(팬시)",
++              "데데리트"
++            ]
++          },
++          "1만원대": {
++            "count": 58,
++            "share": 29.0,
++            "avg_price": 15832,
++            "top_brands": [
++              "가나디",
++              "굴강",
++              "캐릭터침구"
++            ]
++          },
++          "2만원대": {
++            "count": 35,
++            "share": 17.5,
++            "avg_price": 25528,
++            "top_brands": [
++              "캐릭터침구",
++              "캐릭터주방",
++              "타블도트"
++            ]
++          },
++          "3만원대": {
++            "count": 49,
++            "share": 24.5,
++            "avg_price": 34930,
++            "top_brands": [
++              "스탠리",
++              "캐릭터침구",
++              "오덴세"
++            ]
++          },
++          "4만원대": {
++            "count": 21,
++            "share": 10.5,
++            "avg_price": 45361,
++            "top_brands": [
++              "스탠리",
++              "블루보틀",
++              "탬버린즈"
++            ]
++          },
++          "5만원 이상": {
++            "count": 14,
++            "share": 7.0,
++            "avg_price": 60536,
++            "top_brands": [
++              "센느파리",
++              "빌레로이앤보흐",
++              "스타벅스(공식스토어)"
++            ]
++          }
++        }
+       },
+       "card_3_recommended_keywords": {
+         "stable_keywords_top30": [
+           "가나디",
+-          "기타 캐릭터/팬시"
++          "기타 캐릭터/팬시",
++          "리락쿠마",
++          "먼작귀/치이카와"
+         ],
+         "rising_keywords_top31_100": [
+           "기타 캐릭터/팬시",
+-          "산리오"
+-        ]
++          "산리오",
++          "가나디",
++          "카카오프렌즈"
++        ],
++        "top_options": [
++          "선물포장",
++          "각인",
++          "단독구성"
++        ],
++        "by_type": {
++          "attributes": [
++            "단독",
++            "선물포장",
++            "각인",
++            "쇼핑백",
++            "전용패키지"
++          ],
++          "target_season": [
++            "생일",
++            "집들이",
++            "응원",
++            "답례품",
++            "기념일"
++          ],
++          "concept": [
++            "귀여운",
++            "감성",
++            "신박한",
++            "쓸데없는",
++            "인테리어"
++          ]
++        }
+       },
+       "card_4_rising_stars": [
+         {
+@@ -3232,35 +3326,55 @@
+           "product_name": "[스탠리공식유통사] 퀜처 H2.0 플로우스테이트 텀블러 591ml 30%",
+           "rank": 1,
+           "rank_delta": "NEW",
+-          "category": "리빙 전체"
++          "category": "리빙 전체",
++          "price": "30,800원",
++          "character_ip": "일반/비IP 상품",
++          "url": "https://gift.kakao.com/product/7868266",
++          "is_new_entry": true
+         },
+         {
+           "brand": "가나디",
+           "product_name": "귀여운 선물 가나디 복조리 파우치 (귀여운/휴대용/다용도파우치/생일)",
+           "rank": 1,
+           "rank_delta": 1,
+-          "category": "팬시/문구/취미 (IP핵심)"
++          "category": "팬시/문구/취미 (IP핵심)",
++          "price": "12,000원",
++          "character_ip": "가나디",
++          "url": "https://gift.kakao.com/product/13261876",
++          "is_new_entry": false
+         },
+         {
+           "brand": "스탠리",
+           "product_name": "[스탠리공식유통사] 퀜처 H2.0 플로우스테이트 텀블러 591ml 30%",
+           "rank": 1,
+           "rank_delta": "NEW",
+-          "category": "주방/식기"
++          "category": "주방/식기",
++          "price": "30,800원",
++          "character_ip": "일반/비IP 상품",
++          "url": "https://gift.kakao.com/product/7868266",
++          "is_new_entry": true
+         },
+         {
+           "brand": "리베르",
+           "product_name": "아로마 오일 1위 [] 에센셜 아로마 오일 롤온 & 괄사 세트 (3종 택1) 스트레스케어/숙면선물 10% 감사 카드",
+           "rank": 2,
+           "rank_delta": 2,
+-          "category": "리빙 전체"
++          "category": "리빙 전체",
++          "price": "30,600원",
++          "character_ip": "일반/비IP 상품",
++          "url": "https://gift.kakao.com/product/5391162",
++          "is_new_entry": false
+         },
+         {
+           "brand": "가나디",
+           "product_name": "가나디 마우스 손목 패드 (데스크테리어/생일/귀여운/우정/커플 선물) , 6,516",
+           "rank": 2,
+           "rank_delta": "NEW",
+-          "category": "팬시/문구/취미 (IP핵심)"
++          "category": "팬시/문구/취미 (IP핵심)",
++          "price": "12,800원",
++          "character_ip": "가나디",
++          "url": "https://gift.kakao.com/product/14096838",
++          "is_new_entry": true
+         }
+       ]
+     },
+@@ -3276,17 +3390,108 @@
+         "avg_price": 35315,
+         "packaging_ratio": 8.0,
+         "engraving_ratio": 2.0,
+-        "exclusive_ratio": 46.0
++        "exclusive_ratio": 46.0,
++        "price_tier_matrix": {
++          "1만원 미만": {
++            "count": 1,
++            "share": 2.0,
++            "avg_price": 8900,
++            "top_brands": [
++              "알럽하우스(소품)"
++            ]
++          },
++          "1만원대": {
++            "count": 8,
++            "share": 16.0,
++            "avg_price": 15662,
++            "top_brands": [
++              "가나디",
++              "그랑핸드",
++              "캐릭터주방"
++            ]
++          },
++          "2만원대": {
++            "count": 8,
++            "share": 16.0,
++            "avg_price": 25912,
++            "top_brands": [
++              "캐릭터침구",
++              "캐릭터주방",
++              "타블도트"
++            ]
++          },
++          "3만원대": {
++            "count": 17,
++            "share": 34.0,
++            "avg_price": 34770,
++            "top_brands": [
++              "스탠리",
++              "로에",
++              "리베르"
++            ]
++          },
++          "4만원대": {
++            "count": 9,
++            "share": 18.0,
++            "avg_price": 44944,
++            "top_brands": [
++              "스탠리",
++              "탬버린즈",
++              "블루보틀"
++            ]
++          },
++          "5만원 이상": {
++            "count": 7,
++            "share": 14.0,
++            "avg_price": 61235,
++            "top_brands": [
++              "다니엘트루스",
++              "센느파리",
++              "빌레로이앤보흐"
++            ]
++          }
++        }
+       },
+       "card_3_recommended_keywords": {
+         "stable_keywords_top30": [
+           "가나디",
+-          "먼작귀/치이카와"
++          "먼작귀/치이카와",
++          "리락쿠마",
++          "스누피/피너츠"
+         ],
+         "rising_keywords_top31_100": [
+           "가나디",
+-          "산리오"
+-        ]
++          "산리오",
++          "기타 캐릭터/팬시"
++        ],
++        "top_options": [
++          "선물포장",
++          "각인",
++          "단독구성"
++        ],
++        "by_type": {
++          "attributes": [
++            "단독",
++            "선물포장",
++            "각인",
++            "쇼핑백",
++            "전용패키지"
++          ],
++          "target_season": [
++            "생일",
++            "집들이",
++            "응원",
++            "답례품",
++            "기념일"
++          ],
++          "concept": [
++            "귀여운",
++            "감성",
++            "신박한",
++            "쓸데없는",
++            "인테리어"
++          ]
++        }
+       },
+       "card_4_rising_stars": [
+         {
+@@ -3294,35 +3499,55 @@
+           "product_name": "[스탠리공식유통사] 퀜처 H2.0 플로우스테이트 텀블러 591ml 30%",
+           "rank": 1,
+           "rank_delta": "NEW",
+-          "category": "리빙 전체"
++          "category": "리빙 전체",
++          "price": "30,800원",
++          "character_ip": "일반/비IP 상품",
++          "url": "https://gift.kakao.com/product/7868266",
++          "is_new_entry": true
+         },
+         {
+           "brand": "리베르",
+           "product_name": "아로마 오일 1위 [] 에센셜 아로마 오일 롤온 & 괄사 세트 (3종 택1) 스트레스케어/숙면선물 10% 감사 카드",
+           "rank": 2,
+           "rank_delta": 2,
+-          "category": "리빙 전체"
++          "category": "리빙 전체",
++          "price": "30,600원",
++          "character_ip": "일반/비IP 상품",
++          "url": "https://gift.kakao.com/product/5391162",
++          "is_new_entry": false
+         },
+         {
+           "brand": "스탠리",
+           "product_name": "[스탠리공식유통사] 퀜처 H2.0 플로우스테이트 텀블러 887ml",
+           "rank": 3,
+           "rank_delta": "NEW",
+-          "category": "리빙 전체"
++          "category": "리빙 전체",
++          "price": "49,000원",
++          "character_ip": "일반/비IP 상품",
++          "url": "https://gift.kakao.com/product/11106499",
++          "is_new_entry": true
+         },
+         {
+           "brand": "그랑핸드",
+           "product_name": "NEW 향 추가 [단독패키지] 그랑핸드 사쉐 40g (8종 택 1)",
+           "rank": 4,
+           "rank_delta": 1,
+-          "category": "리빙 전체"
++          "category": "리빙 전체",
++          "price": "18,000원",
++          "character_ip": "일반/비IP 상품",
++          "url": "https://gift.kakao.com/product/4926192",
++          "is_new_entry": false
+         },
+         {
+           "brand": "캐릭터주방",
+           "product_name": "[단독/추석선물] 리락쿠마 페이스 머그 텀블러 360ml 보온 보냉",
+           "rank": 5,
+           "rank_delta": "NEW",
+-          "category": "리빙 전체"
++          "category": "리빙 전체",
++          "price": "24,500원",
++          "character_ip": "리락쿠마",
++          "url": "https://gift.kakao.com/product/13772143",
++          "is_new_entry": true
+         }
+       ]
+     },
+@@ -3338,17 +3563,101 @@
+         "avg_price": 15744,
+         "packaging_ratio": 6.0,
+         "engraving_ratio": 4.0,
+-        "exclusive_ratio": 14.0
++        "exclusive_ratio": 14.0,
++        "price_tier_matrix": {
++          "1만원 미만": {
++            "count": 19,
++            "share": 38.0,
++            "avg_price": 8168,
++            "top_brands": [
++              "알럽하우스(소품)",
++              "제이블룸(팬시)",
++              "데데리트"
++            ]
++          },
++          "1만원대": {
++            "count": 22,
++            "share": 44.0,
++            "avg_price": 15163,
++            "top_brands": [
++              "가나디",
++              "굴강",
++              "19세 연령제한"
++            ]
++          },
++          "2만원대": {
++            "count": 1,
++            "share": 2.0,
++            "avg_price": 20000,
++            "top_brands": [
++              "프렌즈인형/피규어"
++            ]
++          },
++          "3만원대": {
++            "count": 8,
++            "share": 16.0,
++            "avg_price": 34800,
++            "top_brands": [
++              "잼먹",
++              "캐릭터침구",
++              "가나디"
++            ]
++          },
++          "4만원대": {
++            "count": 0,
++            "share": 0.0,
++            "avg_price": 0,
++            "top_brands": []
++          },
++          "5만원 이상": {
++            "count": 0,
++            "share": 0.0,
++            "avg_price": 0,
++            "top_brands": []
++          }
++        }
+       },
+       "card_3_recommended_keywords": {
+         "stable_keywords_top30": [
+           "가나디",
+-          "기타 캐릭터/팬시"
++          "기타 캐릭터/팬시",
++          "카카오프렌즈",
++          "먼작귀/치이카와"
+         ],
+         "rising_keywords_top31_100": [
+           "기타 캐릭터/팬시",
+-          "가나디"
+-        ]
++          "가나디",
++          "스폰지밥, 퍼글러",
++          "산리오"
++        ],
++        "top_options": [
++          "선물포장",
++          "각인",
++          "단독구성"
++        ],
++        "by_type": {
++          "attributes": [
++            "단독",
++            "선물포장",
++            "각인",
++            "쇼핑백",
++            "전용패키지"
++          ],
++          "target_season": [
++            "생일",
++            "집들이",
++            "응원",
++            "답례품",
++            "기념일"
++          ],
++          "concept": [
++            "귀여운",
++            "감성",
++            "신박한",
++            "쓸데없는",
++            "인테리어"
++          ]
++        }
+       },
+       "card_4_rising_stars": [
+         {
+@@ -3356,35 +3665,55 @@
+           "product_name": "귀여운 선물 가나디 복조리 파우치 (귀여운/휴대용/다용도파우치/생일)",
+           "rank": 1,
+           "rank_delta": 1,
+-          "category": "팬시/문구/취미 (IP핵심)"
++          "category": "팬시/문구/취미 (IP핵심)",
++          "price": "12,000원",
++          "character_ip": "가나디",
++          "url": "https://gift.kakao.com/product/13261876",
++          "is_new_entry": false
+         },
+         {
+           "brand": "가나디",
+           "product_name": "가나디 마우스 손목 패드 (데스크테리어/생일/귀여운/우정/커플 선물) , 6,516",
+           "rank": 2,
+           "rank_delta": "NEW",
+-          "category": "팬시/문구/취미 (IP핵심)"
++          "category": "팬시/문구/취미 (IP핵심)",
++          "price": "12,800원",
++          "character_ip": "가나디",
++          "url": "https://gift.kakao.com/product/14096838",
++          "is_new_entry": true
+         },
+         {
+           "brand": "알럽하우스(소품)",
+           "product_name": "의외로 찐시원해 힐링 휴대용 마사지 귀여운 문어괄사 옥토캔 생일 직장동료 건강 행운 친구 합격 부적 퇴사 응원 시험 수능 쓸데없는신박한 맛사지",
+           "rank": 3,
+           "rank_delta": 2,
+-          "category": "팬시/문구/취미 (IP핵심)"
++          "category": "팬시/문구/취미 (IP핵심)",
++          "price": "8,900원",
++          "character_ip": "일반/비IP 상품",
++          "url": "https://gift.kakao.com/product/10974656",
++          "is_new_entry": false
+         },
+         {
+           "brand": "잼먹",
+           "product_name": "하드케이스 \"생일/선물추천\" 잼먹 라벨프린터 휴대용 라벨기 라벨프린터기 네임스티커",
+           "rank": 4,
+           "rank_delta": 16,
+-          "category": "팬시/문구/취미 (IP핵심)"
++          "category": "팬시/문구/취미 (IP핵심)",
++          "price": "39,800원",
++          "character_ip": "일반/비IP 상품",
++          "url": "https://gift.kakao.com/product/11368084",
++          "is_new_entry": false
+         },
+         {
+           "brand": "가나디",
+           "product_name": "가나디 홀더 키링 (귀여운/휴대용컵홀더/다용도/키링) , 7,325",
+           "rank": 5,
+           "rank_delta": "NEW",
+-          "category": "팬시/문구/취미 (IP핵심)"
++          "category": "팬시/문구/취미 (IP핵심)",
++          "price": "16,300원",
++          "character_ip": "가나디",
++          "url": "https://gift.kakao.com/product/13881169",
++          "is_new_entry": true
+         }
+       ]
+     },
+@@ -3400,17 +3729,105 @@
+         "avg_price": 25392,
+         "packaging_ratio": 0.0,
+         "engraving_ratio": 0.0,
+-        "exclusive_ratio": 26.0
++        "exclusive_ratio": 26.0,
++        "price_tier_matrix": {
++          "1만원 미만": {
++            "count": 1,
++            "share": 2.0,
++            "avg_price": 9900,
++            "top_brands": [
++              "프렌즈리빙LC"
++            ]
++          },
++          "1만원대": {
++            "count": 19,
++            "share": 38.0,
++            "avg_price": 16563,
++            "top_brands": [
++              "캐릭터침구",
++              "가나디",
++              "굴강"
++            ]
++          },
++          "2만원대": {
++            "count": 20,
++            "share": 40.0,
++            "avg_price": 25930,
++            "top_brands": [
++              "캐릭터침구",
++              "가나디",
++              "프렌즈리빙LC"
++            ]
++          },
++          "3만원대": {
++            "count": 8,
++            "share": 16.0,
++            "avg_price": 35812,
++            "top_brands": [
++              "캐릭터침구",
++              "바나코(인테리어)",
++              "잔망루피(굿즈)"
++            ]
++          },
++          "4만원대": {
++            "count": 1,
++            "share": 2.0,
++            "avg_price": 44900,
++            "top_brands": [
++              "바자르"
++            ]
++          },
++          "5만원 이상": {
++            "count": 1,
++            "share": 2.0,
++            "avg_price": 95000,
++            "top_brands": [
++              "슬립앤슬립"
++            ]
++          }
++        }
+       },
+       "card_3_recommended_keywords": {
+         "stable_keywords_top30": [
+           "기타 캐릭터/팬시",
+-          "가나디"
++          "가나디",
++          "리락쿠마",
++          "먼작귀/치이카와"
+         ],
+         "rising_keywords_top31_100": [
+           "기타 캐릭터/팬시",
+-          "산리오"
+-        ]
++          "산리오",
++          "카카오프렌즈",
++          "리락쿠마"
++        ],
++        "top_options": [
++          "선물포장",
++          "각인",
++          "단독구성"
++        ],
++        "by_type": {
++          "attributes": [
++            "단독",
++            "선물포장",
++            "각인",
++            "쇼핑백",
++            "전용패키지"
++          ],
++          "target_season": [
++            "생일",
++            "집들이",
++            "응원",
++            "답례품",
++            "기념일"
++          ],
++          "concept": [
++            "귀여운",
++            "감성",
++            "신박한",
++            "쓸데없는",
++            "인테리어"
++          ]
++        }
+       },
+       "card_4_rising_stars": [
+         {
+@@ -3418,35 +3835,55 @@
+           "product_name": "\"생일/기념일선물\" (추석 이후 입고) 먼작귀 꿀잠바디쿠션4종 택1 치이카와 가르마 토끼 굿즈 극세사 긴베개 안고자는 바디필로우 캐릭터 굿즈 인형",
+           "rank": 3,
+           "rank_delta": "NEW",
+-          "category": "침구/패브릭"
++          "category": "침구/패브릭",
++          "price": "29,900원",
++          "character_ip": "먼작귀/치이카와",
++          "url": "https://gift.kakao.com/product/6986025",
++          "is_new_entry": true
+         },
+         {
+           "brand": "가나디",
+           "product_name": "가나디 파자마 러그 (러그/미니러그/인테리어/자취/원룸/집들이선물) , 5,132",
+           "rank": 5,
+           "rank_delta": "NEW",
+-          "category": "침구/패브릭"
++          "category": "침구/패브릭",
++          "price": "17,800원",
++          "character_ip": "가나디",
++          "url": "https://gift.kakao.com/product/14096524",
++          "is_new_entry": true
+         },
+         {
+           "brand": "가나디",
+           "product_name": "가나디 핸드워머 쿠션 2종 (생일/집들이/인테리어/응원/귀여운/유쾌한)",
+           "rank": 7,
+           "rank_delta": 6,
+-          "category": "침구/패브릭"
++          "category": "침구/패브릭",
++          "price": "23,000원",
++          "character_ip": "가나디",
++          "url": "https://gift.kakao.com/product/12693742",
++          "is_new_entry": false
+         },
+         {
+           "brand": "미뇽맨션",
+           "product_name": "[누적판매 23만건, 키링, 사쉐 ] 뚱냥이 바디필로우 캣 쿠션 수면 집들이 선물 사쉐, 아크릴 키링",
+           "rank": 10,
+           "rank_delta": 1,
+-          "category": "침구/패브릭"
++          "category": "침구/패브릭",
++          "price": "13,800원",
++          "character_ip": "일반/비IP 상품",
++          "url": "https://gift.kakao.com/product/8091057",
++          "is_new_entry": false
+         },
+         {
+           "brand": "캐릭터침구",
+           "product_name": "생일/집들이선물추천 먼작귀 굿즈 발매트 러그 인테리어소품 선물 5종옵션 택1 (치이카와/가르마/토끼/밤만쥬/하늘다람쥐) , 9,349",
+           "rank": 11,
+           "rank_delta": "NEW",
+-          "category": "침구/패브릭"
++          "category": "침구/패브릭",
++          "price": "16,900원",
++          "character_ip": "먼작귀/치이카와",
++          "url": "https://gift.kakao.com/product/7896387",
++          "is_new_entry": true
+         }
+       ]
+     },
+@@ -3462,17 +3899,110 @@
+         "avg_price": 33893,
+         "packaging_ratio": 2.0,
+         "engraving_ratio": 2.0,
+-        "exclusive_ratio": 54.0
++        "exclusive_ratio": 54.0,
++        "price_tier_matrix": {
++          "1만원 미만": {
++            "count": 2,
++            "share": 4.0,
++            "avg_price": 9850,
++            "top_brands": [
++              "트렌디홈(키친)",
++              "바쏠"
++            ]
++          },
++          "1만원대": {
++            "count": 9,
++            "share": 18.0,
++            "avg_price": 16076,
++            "top_brands": [
++              "캐릭터주방",
++              "바쏠",
++              "알럽하우스"
++            ]
++          },
++          "2만원대": {
++            "count": 6,
++            "share": 12.0,
++            "avg_price": 24600,
++            "top_brands": [
++              "보퀴진",
++              "캐릭터주방",
++              "타블도트"
++            ]
++          },
++          "3만원대": {
++            "count": 16,
++            "share": 32.0,
++            "avg_price": 34725,
++            "top_brands": [
++              "스탠리",
++              "스타벅스(공식스토어)",
++              "오덴세"
++            ]
++          },
++          "4만원대": {
++            "count": 11,
++            "share": 22.0,
++            "avg_price": 45745,
++            "top_brands": [
++              "스탠리",
++              "블루보틀",
++              "스타벅스(공식스토어)"
++            ]
++          },
++          "5만원 이상": {
++            "count": 6,
++            "share": 12.0,
++            "avg_price": 53976,
++            "top_brands": [
++              "센느파리",
++              "빌레로이앤보흐",
++              "스타벅스(공식스토어)"
++            ]
++          }
++        }
+       },
+       "card_3_recommended_keywords": {
+         "stable_keywords_top30": [
+           "리락쿠마",
+-          "스누피/피너츠"
++          "스누피/피너츠",
++          "가나디",
++          "산리오"
+         ],
+         "rising_keywords_top31_100": [
+           "스누피/피너츠",
+-          "가나디"
+-        ]
++          "가나디",
++          "산리오",
++          "미피"
++        ],
++        "top_options": [
++          "선물포장",
++          "각인",
++          "단독구성"
++        ],
++        "by_type": {
++          "attributes": [
++            "단독",
++            "선물포장",
++            "각인",
++            "쇼핑백",
++            "전용패키지"
++          ],
++          "target_season": [
++            "생일",
++            "집들이",
++            "응원",
++            "답례품",
++            "기념일"
++          ],
++          "concept": [
++            "귀여운",
++            "감성",
++            "신박한",
++            "쓸데없는",
++            "인테리어"
++          ]
++        }
+       },
+       "card_4_rising_stars": [
+         {
+@@ -3480,35 +4010,55 @@
+           "product_name": "[스탠리공식유통사] 퀜처 H2.0 플로우스테이트 텀블러 591ml 30%",
+           "rank": 1,
+           "rank_delta": "NEW",
+-          "category": "주방/식기"
++          "category": "주방/식기",
++          "price": "30,800원",
++          "character_ip": "일반/비IP 상품",
++          "url": "https://gift.kakao.com/product/7868266",
++          "is_new_entry": true
+         },
+         {
+           "brand": "스탠리",
+           "product_name": "[스탠리공식유통사] 퀜처 H2.0 플로우스테이트 텀블러 887ml",
+           "rank": 2,
+           "rank_delta": "NEW",
+-          "category": "주방/식기"
++          "category": "주방/식기",
++          "price": "49,000원",
++          "character_ip": "일반/비IP 상품",
++          "url": "https://gift.kakao.com/product/11106499",
++          "is_new_entry": true
+         },
+         {
+           "brand": "캐릭터주방",
+           "product_name": "[단독/추석선물] 리락쿠마 페이스 머그 텀블러 360ml 보온 보냉",
+           "rank": 3,
+           "rank_delta": "NEW",
+-          "category": "주방/식기"
++          "category": "주방/식기",
++          "price": "24,500원",
++          "character_ip": "리락쿠마",
++          "url": "https://gift.kakao.com/product/13772143",
++          "is_new_entry": true
+         },
+         {
+           "brand": "스탠리",
+           "product_name": "[스탠리공식유통사] 퀜처 프로투어 플립 스트로 텀블러 887ml 25%",
+           "rank": 4,
+           "rank_delta": "NEW",
+-          "category": "주방/식기"
++          "category": "주방/식기",
++          "price": "40,500원",
++          "character_ip": "일반/비IP 상품",
++          "url": "https://gift.kakao.com/product/11144932",
++          "is_new_entry": true
+         },
+         {
+           "brand": "스탠리",
+           "product_name": "[스탠리공식유통사] 아이스플로우 플립 스트로 2.0 텀블러 887ml 20%",
+           "rank": 6,
+           "rank_delta": "NEW",
+-          "category": "주방/식기"
++          "category": "주방/식기",
++          "price": "39,200원",
++          "character_ip": "일반/비IP 상품",
++          "url": "https://gift.kakao.com/product/7868778",
++          "is_new_entry": true
+         }
+       ]
+     }
+diff --git a/docs/data_20260915.json b/docs/data_20260915.json
+index 60e4a07..209db04 100644
+--- a/docs/data_20260915.json
++++ b/docs/data_20260915.json
+@@ -11,7 +11,7 @@
+       "product_id": 7868266,
+       "scraped_at": "2026-09-15 10:54:43",
+       "price_numeric": 30800,
+-      "price_tier": "3~5만원대",
++      "price_tier": "3만원대",
+       "usp": "일반구성",
+       "rank_delta": "NEW",
+       "is_new_entry": true
+@@ -27,7 +27,7 @@
+       "product_id": 5391162,
+       "scraped_at": "2026-09-15 10:54:43",
+       "price_numeric": 30600,
+-      "price_tier": "3~5만원대",
++      "price_tier": "3만원대",
+       "usp": "단독구성",
+       "rank_delta": "2",
+       "is_new_entry": false
+@@ -43,7 +43,7 @@
+       "product_id": 11106499,
+       "scraped_at": "2026-09-15 10:54:43",
+       "price_numeric": 49000,
+-      "price_tier": "3~5만원대",
++      "price_tier": "4만원대",
+       "usp": "일반구성",
+       "rank_delta": "NEW",
+       "is_new_entry": true
+@@ -59,7 +59,7 @@
+       "product_id": 4926192,
+       "scraped_at": "2026-09-15 10:54:43",
+       "price_numeric": 18000,
+-      "price_tier": "1~3만원대",
++      "price_tier": "1만원대",
+       "usp": "선물포장, 단독구성",
+       "rank_delta": "1",
+       "is_new_entry": false
+@@ -75,7 +75,7 @@
+       "product_id": 13772143,
+       "scraped_at": "2026-09-15 10:54:43",
+       "price_numeric": 24500,
+-      "price_tier": "1~3만원대",
++      "price_tier": "2만원대",
+       "usp": "단독구성",
+       "rank_delta": "NEW",
+       "is_new_entry": true
+@@ -91,7 +91,7 @@
+       "product_id": 11144932,
+       "scraped_at": "2026-09-15 10:54:43",
+       "price_numeric": 40500,
+-      "price_tier": "3~5만원대",
++      "price_tier": "4만원대",
+       "usp": "일반구성",
+       "rank_delta": "NEW",
+       "is_new_entry": true
+@@ -107,7 +107,7 @@
+       "product_id": 11850163,
+       "scraped_at": "2026-09-15 10:54:43",
+       "price_numeric": 25900,
+-      "price_tier": "1~3만원대",
++      "price_tier": "2만원대",
+       "usp": "선물포장, 단독구성",
+       "rank_delta": "0",
+       "is_new_entry": false
+@@ -123,7 +123,7 @@
+       "product_id": 12854287,
+       "scraped_at": "2026-09-15 10:54:43",
+       "price_numeric": 34800,
+-      "price_tier": "3~5만원대",
++      "price_tier": "3만원대",
+       "usp": "단독구성",
+       "rank_delta": "NEW",
+       "is_new_entry": true
+@@ -139,7 +139,7 @@
+       "product_id": 7868778,
+       "scraped_at": "2026-09-15 10:54:43",
+       "price_numeric": 39200,
+-      "price_tier": "3~5만원대",
++      "price_tier": "3만원대",
+       "usp": "일반구성",
+       "rank_delta": "NEW",
+       "is_new_entry": true
+@@ -155,7 +155,7 @@
+       "product_id": 13261876,
+       "scraped_at": "2026-09-15 10:54:43",
+       "price_numeric": 12000,
+-      "price_tier": "1~3만원대",
++      "price_tier": "1만원대",
+       "usp": "일반구성",
+       "rank_delta": "0",
+       "is_new_entry": false
+@@ -187,7 +187,7 @@
+       "product_id": 7355950,
+       "scraped_at": "2026-09-15 10:54:43",
+       "price_numeric": 22900,
+-      "price_tier": "1~3만원대",
++      "price_tier": "2만원대",
+       "usp": "일반구성",
+       "rank_delta": "-3",
+       "is_new_entry": false
+@@ -203,7 +203,7 @@
+       "product_id": 13550210,
+       "scraped_at": "2026-09-15 10:54:44",
+       "price_numeric": 33000,
+-      "price_tier": "3~5만원대",
++      "price_tier": "3만원대",
+       "usp": "단독구성",
+       "rank_delta": "-1",
+       "is_new_entry": false
+@@ -219,7 +219,7 @@
+       "product_id": 11779291,
+       "scraped_at": "2026-09-15 10:54:44",
+       "price_numeric": 46000,
+-      "price_tier": "3~5만원대",
++      "price_tier": "4만원대",
+       "usp": "일반구성",
+       "rank_delta": "12",
+       "is_new_entry": false
+@@ -235,7 +235,7 @@
+       "product_id": 11743570,
+       "scraped_at": "2026-09-15 10:54:44",
+       "price_numeric": 34800,
+-      "price_tier": "3~5만원대",
++      "price_tier": "3만원대",
+       "usp": "단독구성",
+       "rank_delta": "0",
+       "is_new_entry": false
+@@ -251,7 +251,7 @@
+       "product_id": 7343467,
+       "scraped_at": "2026-09-15 10:54:44",
+       "price_numeric": 36000,
+-      "price_tier": "3~5만원대",
++      "price_tier": "3만원대",
+       "usp": "단독구성",
+       "rank_delta": "-2",
+       "is_new_entry": false
+@@ -267,7 +267,7 @@
+       "product_id": 13831534,
+       "scraped_at": "2026-09-15 10:54:44",
+       "price_numeric": 22900,
+-      "price_tier": "1~3만원대",
++      "price_tier": "2만원대",
+       "usp": "단독구성",
+       "rank_delta": "NEW",
+       "is_new_entry": true
+@@ -283,7 +283,7 @@
+       "product_id": 6986025,
+       "scraped_at": "2026-09-15 10:54:44",
+       "price_numeric": 29900,
+-      "price_tier": "1~3만원대",
++      "price_tier": "2만원대",
+       "usp": "일반구성",
+       "rank_delta": "NEW",
+       "is_new_entry": true
+@@ -315,7 +315,7 @@
+       "product_id": 12639125,
+       "scraped_at": "2026-09-15 10:54:44",
+       "price_numeric": 29900,
+-      "price_tier": "1~3만원대",
++      "price_tier": "2만원대",
+       "usp": "일반구성",
+       "rank_delta": "-3",
+       "is_new_entry": false
+@@ -331,7 +331,7 @@
+       "product_id": 14096838,
+       "scraped_at": "2026-09-15 10:54:44",
+       "price_numeric": 12800,
+-      "price_tier": "1~3만원대",
++      "price_tier": "1만원대",
+       "usp": "일반구성",
+       "rank_delta": "NEW",
+       "is_new_entry": true
+@@ -363,7 +363,7 @@
+       "product_id": 12821252,
+       "scraped_at": "2026-09-15 10:54:45",
+       "price_numeric": 16800,
+-      "price_tier": "1~3만원대",
++      "price_tier": "1만원대",
+       "usp": "단독구성",
+       "rank_delta": "-10",
+       "is_new_entry": false
+@@ -379,7 +379,7 @@
+       "product_id": 12694903,
+       "scraped_at": "2026-09-15 10:54:45",
+       "price_numeric": 39000,
+-      "price_tier": "3~5만원대",
++      "price_tier": "3만원대",
+       "usp": "단독구성",
+       "rank_delta": "-13",
+       "is_new_entry": false
+@@ -395,7 +395,7 @@
+       "product_id": 11483865,
+       "scraped_at": "2026-09-15 10:54:45",
+       "price_numeric": 42000,
+-      "price_tier": "3~5만원대",
++      "price_tier": "4만원대",
+       "usp": "일반구성",
+       "rank_delta": "13",
+       "is_new_entry": false
+@@ -411,7 +411,7 @@
+       "product_id": 9788037,
+       "scraped_at": "2026-09-15 10:54:45",
+       "price_numeric": 46500,
+-      "price_tier": "3~5만원대",
++      "price_tier": "4만원대",
+       "usp": "선물포장",
+       "rank_delta": "-5",
+       "is_new_entry": false
+@@ -427,7 +427,7 @@
+       "product_id": 7868895,
+       "scraped_at": "2026-09-15 10:54:45",
+       "price_numeric": 44000,
+-      "price_tier": "3~5만원대",
++      "price_tier": "4만원대",
+       "usp": "일반구성",
+       "rank_delta": "12",
+       "is_new_entry": false
+@@ -443,7 +443,7 @@
+       "product_id": 11264836,
+       "scraped_at": "2026-09-15 10:54:45",
+       "price_numeric": 36000,
+-      "price_tier": "3~5만원대",
++      "price_tier": "3만원대",
+       "usp": "일반구성",
+       "rank_delta": "NEW",
+       "is_new_entry": true
+@@ -459,7 +459,7 @@
+       "product_id": 12856389,
+       "scraped_at": "2026-09-15 10:54:45",
+       "price_numeric": 32400,
+-      "price_tier": "3~5만원대",
++      "price_tier": "3만원대",
+       "usp": "단독구성",
+       "rank_delta": "24",
+       "is_new_entry": false
+@@ -475,7 +475,7 @@
+       "product_id": 11483949,
+       "scraped_at": "2026-09-15 10:54:45",
+       "price_numeric": 35000,
+-      "price_tier": "3~5만원대",
++      "price_tier": "3만원대",
+       "usp": "일반구성",
+       "rank_delta": "-10",
+       "is_new_entry": false
+@@ -491,7 +491,7 @@
+       "product_id": 10974656,
+       "scraped_at": "2026-09-15 10:54:45",
+       "price_numeric": 8900,
+-      "price_tier": "1만원 이하",
++      "price_tier": "1만원 미만",
+       "usp": "일반구성",
+       "rank_delta": "11",
+       "is_new_entry": false
+@@ -507,7 +507,7 @@
+       "product_id": 6989444,
+       "scraped_at": "2026-09-15 10:54:45",
+       "price_numeric": 46000,
+-      "price_tier": "3~5만원대",
++      "price_tier": "4만원대",
+       "usp": "단독구성",
+       "rank_delta": "NEW",
+       "is_new_entry": true
+@@ -523,7 +523,7 @@
+       "product_id": 1186213,
+       "scraped_at": "2026-09-15 10:54:45",
+       "price_numeric": 33000,
+-      "price_tier": "3~5만원대",
++      "price_tier": "3만원대",
+       "usp": "단독구성",
+       "rank_delta": "NEW",
+       "is_new_entry": true
+@@ -539,7 +539,7 @@
+       "product_id": 12906542,
+       "scraped_at": "2026-09-15 10:54:45",
+       "price_numeric": 38000,
+-      "price_tier": "3~5만원대",
++      "price_tier": "3만원대",
+       "usp": "단독구성",
+       "rank_delta": "-4",
+       "is_new_entry": false
+@@ -555,7 +555,7 @@
+       "product_id": 927193,
+       "scraped_at": "2026-09-15 10:54:45",
+       "price_numeric": 33900,
+-      "price_tier": "3~5만원대",
++      "price_tier": "3만원대",
+       "usp": "선물포장, 단독구성",
+       "rank_delta": "NEW",
+       "is_new_entry": true
+@@ -571,7 +571,7 @@
+       "product_id": 11368084,
+       "scraped_at": "2026-09-15 10:54:45",
+       "price_numeric": 39800,
+-      "price_tier": "3~5만원대",
++      "price_tier": "3만원대",
+       "usp": "각인/자수",
+       "rank_delta": "NEW",
+       "is_new_entry": true
+@@ -587,7 +587,7 @@
+       "product_id": 2616320,
+       "scraped_at": "2026-09-15 10:54:45",
+       "price_numeric": 42500,
+-      "price_tier": "3~5만원대",
++      "price_tier": "4만원대",
+       "usp": "단독구성",
+       "rank_delta": "NEW",
+       "is_new_entry": true
+@@ -603,7 +603,7 @@
+       "product_id": 12455527,
+       "scraped_at": "2026-09-15 10:54:46",
+       "price_numeric": 13800,
+-      "price_tier": "1~3만원대",
++      "price_tier": "1만원대",
+       "usp": "일반구성",
+       "rank_delta": "NEW",
+       "is_new_entry": true
+@@ -619,7 +619,7 @@
+       "product_id": 13881169,
+       "scraped_at": "2026-09-15 10:54:46",
+       "price_numeric": 16300,
+-      "price_tier": "1~3만원대",
++      "price_tier": "1만원대",
+       "usp": "일반구성",
+       "rank_delta": "NEW",
+       "is_new_entry": true
+@@ -635,7 +635,7 @@
+       "product_id": 8027618,
+       "scraped_at": "2026-09-15 10:54:46",
+       "price_numeric": 30000,
+-      "price_tier": "1~3만원대",
++      "price_tier": "3만원대",
+       "usp": "일반구성",
+       "rank_delta": "-16",
+       "is_new_entry": false
+@@ -651,7 +651,7 @@
+       "product_id": 7734041,
+       "scraped_at": "2026-09-15 10:54:46",
+       "price_numeric": 34800,
+-      "price_tier": "3~5만원대",
++      "price_tier": "3만원대",
+       "usp": "단독구성",
+       "rank_delta": "NEW",
+       "is_new_entry": true
+@@ -683,7 +683,7 @@
+       "product_id": 12345352,
+       "scraped_at": "2026-09-15 10:54:46",
+       "price_numeric": 16800,
+-      "price_tier": "1~3만원대",
++      "price_tier": "1만원대",
+       "usp": "일반구성",
+       "rank_delta": "-8",
+       "is_new_entry": false
+@@ -715,7 +715,7 @@
+       "product_id": 5328353,
+       "scraped_at": "2026-09-15 10:54:47",
+       "price_numeric": 29800,
+-      "price_tier": "1~3만원대",
++      "price_tier": "2만원대",
+       "usp": "단독구성",
+       "rank_delta": "4",
+       "is_new_entry": false
+@@ -731,7 +731,7 @@
+       "product_id": 5872250,
+       "scraped_at": "2026-09-15 10:54:47",
+       "price_numeric": 18800,
+-      "price_tier": "1~3만원대",
++      "price_tier": "1만원대",
+       "usp": "단독구성",
+       "rank_delta": "NEW",
+       "is_new_entry": true
+@@ -747,7 +747,7 @@
+       "product_id": 11801920,
+       "scraped_at": "2026-09-15 10:54:47",
+       "price_numeric": 48000,
+-      "price_tier": "3~5만원대",
++      "price_tier": "4만원대",
+       "usp": "일반구성",
+       "rank_delta": "0",
+       "is_new_entry": false
+@@ -763,7 +763,7 @@
+       "product_id": 13709951,
+       "scraped_at": "2026-09-15 10:54:47",
+       "price_numeric": 21500,
+-      "price_tier": "1~3만원대",
++      "price_tier": "2만원대",
+       "usp": "일반구성",
+       "rank_delta": "NEW",
+       "is_new_entry": true
+@@ -811,7 +811,7 @@
+       "product_id": 13261876,
+       "scraped_at": "2026-09-15 10:54:55",
+       "price_numeric": 12000,
+-      "price_tier": "1~3만원대",
++      "price_tier": "1만원대",
+       "usp": "일반구성",
+       "rank_delta": "1",
+       "is_new_entry": false
+@@ -827,7 +827,7 @@
+       "product_id": 14096838,
+       "scraped_at": "2026-09-15 10:54:55",
+       "price_numeric": 12800,
+-      "price_tier": "1~3만원대",
++      "price_tier": "1만원대",
+       "usp": "일반구성",
+       "rank_delta": "NEW",
+       "is_new_entry": true
+@@ -843,7 +843,7 @@
+       "product_id": 10974656,
+       "scraped_at": "2026-09-15 10:54:55",
+       "price_numeric": 8900,
+-      "price_tier": "1만원 이하",
++      "price_tier": "1만원 미만",
+       "usp": "일반구성",
+       "rank_delta": "2",
+       "is_new_entry": false
+@@ -859,7 +859,7 @@
+       "product_id": 11368084,
+       "scraped_at": "2026-09-15 10:54:55",
+       "price_numeric": 39800,
+-      "price_tier": "3~5만원대",
++      "price_tier": "3만원대",
+       "usp": "각인/자수",
+       "rank_delta": "16",
+       "is_new_entry": false
+@@ -875,7 +875,7 @@
+       "product_id": 13881169,
+       "scraped_at": "2026-09-15 10:54:55",
+       "price_numeric": 16300,
+-      "price_tier": "1~3만원대",
++      "price_tier": "1만원대",
+       "usp": "일반구성",
+       "rank_delta": "NEW",
+       "is_new_entry": true
+@@ -891,7 +891,7 @@
+       "product_id": 9235675,
+       "scraped_at": "2026-09-15 10:54:55",
+       "price_numeric": 16900,
+-      "price_tier": "1~3만원대",
++      "price_tier": "1만원대",
+       "usp": "일반구성",
+       "rank_delta": "2",
+       "is_new_entry": false
+@@ -907,7 +907,7 @@
+       "product_id": 13711010,
+       "scraped_at": "2026-09-15 10:54:55",
+       "price_numeric": 9900,
+-      "price_tier": "1만원 이하",
++      "price_tier": "1만원 미만",
+       "usp": "일반구성",
+       "rank_delta": "-1",
+       "is_new_entry": false
+@@ -923,7 +923,7 @@
+       "product_id": 14096676,
+       "scraped_at": "2026-09-15 10:54:55",
+       "price_numeric": 14800,
+-      "price_tier": "1~3만원대",
++      "price_tier": "1만원대",
+       "usp": "일반구성",
+       "rank_delta": "NEW",
+       "is_new_entry": true
+@@ -939,7 +939,7 @@
+       "product_id": 13064170,
+       "scraped_at": "2026-09-15 10:54:55",
+       "price_numeric": 12900,
+-      "price_tier": "1~3만원대",
++      "price_tier": "1만원대",
+       "usp": "일반구성",
+       "rank_delta": "3",
+       "is_new_entry": false
+@@ -955,7 +955,7 @@
+       "product_id": 12222102,
+       "scraped_at": "2026-09-15 10:54:55",
+       "price_numeric": 5000,
+-      "price_tier": "1만원 이하",
++      "price_tier": "1만원 미만",
+       "usp": "일반구성",
+       "rank_delta": "NEW",
+       "is_new_entry": true
+@@ -971,7 +971,7 @@
+       "product_id": 14150199,
+       "scraped_at": "2026-09-15 10:54:55",
+       "price_numeric": 16900,
+-      "price_tier": "1~3만원대",
++      "price_tier": "1만원대",
+       "usp": "선물포장, 단독구성",
+       "rank_delta": "NEW",
+       "is_new_entry": true
+@@ -987,7 +987,7 @@
+       "product_id": 11566569,
+       "scraped_at": "2026-09-15 10:54:55",
+       "price_numeric": 20000,
+-      "price_tier": "1~3만원대",
++      "price_tier": "2만원대",
+       "usp": "단독구성",
+       "rank_delta": "NEW",
+       "is_new_entry": true
+@@ -1003,7 +1003,7 @@
+       "product_id": 12319916,
+       "scraped_at": "2026-09-15 10:54:55",
+       "price_numeric": 35000,
+-      "price_tier": "3~5만원대",
++      "price_tier": "3만원대",
+       "usp": "일반구성",
+       "rank_delta": "NEW",
+       "is_new_entry": true
+@@ -1019,7 +1019,7 @@
+       "product_id": 12059249,
+       "scraped_at": "2026-09-15 10:54:56",
+       "price_numeric": 16900,
+-      "price_tier": "1~3만원대",
++      "price_tier": "1만원대",
+       "usp": "일반구성",
+       "rank_delta": "NEW",
+       "is_new_entry": true
+@@ -1035,7 +1035,7 @@
+       "product_id": 13689140,
+       "scraped_at": "2026-09-15 10:54:56",
+       "price_numeric": 19500,
+-      "price_tier": "1~3만원대",
++      "price_tier": "1만원대",
+       "usp": "일반구성",
+       "rank_delta": "NEW",
+       "is_new_entry": true
+@@ -1051,7 +1051,7 @@
+       "product_id": 11734230,
+       "scraped_at": "2026-09-15 10:54:56",
+       "price_numeric": 16300,
+-      "price_tier": "1~3만원대",
++      "price_tier": "1만원대",
+       "usp": "일반구성",
+       "rank_delta": "-5",
+       "is_new_entry": false
+@@ -1067,7 +1067,7 @@
+       "product_id": 10940152,
+       "scraped_at": "2026-09-15 10:54:56",
+       "price_numeric": 8900,
+-      "price_tier": "1만원 이하",
++      "price_tier": "1만원 미만",
+       "usp": "일반구성",
+       "rank_delta": "37",
+       "is_new_entry": false
+@@ -1083,7 +1083,7 @@
+       "product_id": 14191242,
+       "scraped_at": "2026-09-15 10:54:56",
+       "price_numeric": 8000,
+-      "price_tier": "1만원 이하",
++      "price_tier": "1만원 미만",
+       "usp": "일반구성",
+       "rank_delta": "3",
+       "is_new_entry": false
+@@ -1099,7 +1099,7 @@
+       "product_id": 12820476,
+       "scraped_at": "2026-09-15 10:54:56",
+       "price_numeric": 18800,
+-      "price_tier": "1~3만원대",
++      "price_tier": "1만원대",
+       "usp": "단독구성",
+       "rank_delta": "NEW",
+       "is_new_entry": true
+@@ -1115,7 +1115,7 @@
+       "product_id": 13697772,
+       "scraped_at": "2026-09-15 10:54:56",
+       "price_numeric": 15000,
+-      "price_tier": "1~3만원대",
++      "price_tier": "1만원대",
+       "usp": "일반구성",
+       "rank_delta": "NEW",
+       "is_new_entry": true
+@@ -1131,7 +1131,7 @@
+       "product_id": 14049180,
+       "scraped_at": "2026-09-15 10:54:56",
+       "price_numeric": 8500,
+-      "price_tier": "1만원 이하",
++      "price_tier": "1만원 미만",
+       "usp": "일반구성",
+       "rank_delta": "NEW",
+       "is_new_entry": true
+@@ -1147,7 +1147,7 @@
+       "product_id": 12054525,
+       "scraped_at": "2026-09-15 10:54:56",
+       "price_numeric": 7200,
+-      "price_tier": "1만원 이하",
++      "price_tier": "1만원 미만",
+       "usp": "일반구성",
+       "rank_delta": "NEW",
+       "is_new_entry": true
+@@ -1163,7 +1163,7 @@
+       "product_id": 14268271,
+       "scraped_at": "2026-09-15 10:54:56",
+       "price_numeric": 12500,
+-      "price_tier": "1~3만원대",
++      "price_tier": "1만원대",
+       "usp": "일반구성",
+       "rank_delta": "76",
+       "is_new_entry": false
+@@ -1179,7 +1179,7 @@
+       "product_id": 12365669,
+       "scraped_at": "2026-09-15 10:54:56",
+       "price_numeric": 9900,
+-      "price_tier": "1만원 이하",
++      "price_tier": "1만원 미만",
+       "usp": "일반구성",
+       "rank_delta": "NEW",
+       "is_new_entry": true
+@@ -1195,7 +1195,7 @@
+       "product_id": 7795875,
+       "scraped_at": "2026-09-15 10:54:56",
+       "price_numeric": 9900,
+-      "price_tier": "1만원 이하",
++      "price_tier": "1만원 미만",
+       "usp": "일반구성",
+       "rank_delta": "NEW",
+       "is_new_entry": true
+@@ -1211,7 +1211,7 @@
+       "product_id": 11691666,
+       "scraped_at": "2026-09-15 10:54:57",
+       "price_numeric": 15900,
+-      "price_tier": "1~3만원대",
++      "price_tier": "1만원대",
+       "usp": "일반구성",
+       "rank_delta": "NEW",
+       "is_new_entry": true
+@@ -1227,7 +1227,7 @@
+       "product_id": 12084556,
+       "scraped_at": "2026-09-15 10:54:57",
+       "price_numeric": 5400,
+-      "price_tier": "1만원 이하",
++      "price_tier": "1만원 미만",
+       "usp": "일반구성",
+       "rank_delta": "NEW",
+       "is_new_entry": true
+@@ -1243,7 +1243,7 @@
+       "product_id": 13781031,
+       "scraped_at": "2026-09-15 10:54:57",
+       "price_numeric": 17900,
+-      "price_tier": "1~3만원대",
++      "price_tier": "1만원대",
+       "usp": "일반구성",
+       "rank_delta": "NEW",
+       "is_new_entry": true
+@@ -1259,7 +1259,7 @@
+       "product_id": 13763303,
+       "scraped_at": "2026-09-15 10:54:57",
+       "price_numeric": 16000,
+-      "price_tier": "1~3만원대",
++      "price_tier": "1만원대",
+       "usp": "일반구성",
+       "rank_delta": "NEW",
+       "is_new_entry": true
+@@ -1275,7 +1275,7 @@
+       "product_id": 13458352,
+       "scraped_at": "2026-09-15 10:54:57",
+       "price_numeric": 12000,
+-      "price_tier": "1~3만원대",
++      "price_tier": "1만원대",
+       "usp": "일반구성",
+       "rank_delta": "NEW",
+       "is_new_entry": true
+@@ -1291,7 +1291,7 @@
+       "product_id": 13450660,
+       "scraped_at": "2026-09-15 10:54:57",
+       "price_numeric": 31800,
+-      "price_tier": "3~5만원대",
++      "price_tier": "3만원대",
+       "usp": "일반구성",
+       "rank_delta": "NEW",
+       "is_new_entry": true
+@@ -1307,7 +1307,7 @@
+       "product_id": 9273061,
+       "scraped_at": "2026-09-15 10:54:57",
+       "price_numeric": 14900,
+-      "price_tier": "1~3만원대",
++      "price_tier": "1만원대",
+       "usp": "일반구성",
+       "rank_delta": "NEW",
+       "is_new_entry": true
+@@ -1323,7 +1323,7 @@
+       "product_id": 12551938,
+       "scraped_at": "2026-09-15 10:54:57",
+       "price_numeric": 15000,
+-      "price_tier": "1~3만원대",
++      "price_tier": "1만원대",
+       "usp": "일반구성",
+       "rank_delta": "NEW",
+       "is_new_entry": true
+@@ -1339,7 +1339,7 @@
+       "product_id": 12956735,
+       "scraped_at": "2026-09-15 10:54:57",
+       "price_numeric": 7900,
+-      "price_tier": "1만원 이하",
++      "price_tier": "1만원 미만",
+       "usp": "일반구성",
+       "rank_delta": "NEW",
+       "is_new_entry": true
+@@ -1355,7 +1355,7 @@
+       "product_id": 13008650,
+       "scraped_at": "2026-09-15 10:54:57",
+       "price_numeric": 34000,
+-      "price_tier": "3~5만원대",
++      "price_tier": "3만원대",
+       "usp": "일반구성",
+       "rank_delta": "NEW",
+       "is_new_entry": true
+@@ -1371,7 +1371,7 @@
+       "product_id": 11985626,
+       "scraped_at": "2026-09-15 10:54:57",
+       "price_numeric": 8800,
+-      "price_tier": "1만원 이하",
++      "price_tier": "1만원 미만",
+       "usp": "일반구성",
+       "rank_delta": "NEW",
+       "is_new_entry": true
+@@ -1387,7 +1387,7 @@
+       "product_id": 12668199,
+       "scraped_at": "2026-09-15 10:54:57",
+       "price_numeric": 5900,
+-      "price_tier": "1만원 이하",
++      "price_tier": "1만원 미만",
+       "usp": "일반구성",
+       "rank_delta": "NEW",
+       "is_new_entry": true
+@@ -1403,7 +1403,7 @@
+       "product_id": 5096671,
+       "scraped_at": "2026-09-15 10:54:57",
+       "price_numeric": 7900,
+-      "price_tier": "1만원 이하",
++      "price_tier": "1만원 미만",
+       "usp": "일반구성",
+       "rank_delta": "3",
+       "is_new_entry": false
+@@ -1419,7 +1419,7 @@
+       "product_id": 13509211,
+       "scraped_at": "2026-09-15 10:54:57",
+       "price_numeric": 32000,
+-      "price_tier": "3~5만원대",
++      "price_tier": "3만원대",
+       "usp": "단독구성",
+       "rank_delta": "NEW",
+       "is_new_entry": true
+@@ -1435,7 +1435,7 @@
+       "product_id": 11857070,
+       "scraped_at": "2026-09-15 10:54:57",
+       "price_numeric": 13600,
+-      "price_tier": "1~3만원대",
++      "price_tier": "1만원대",
+       "usp": "단독구성",
+       "rank_delta": "NEW",
+       "is_new_entry": true
+@@ -1451,7 +1451,7 @@
+       "product_id": 14242122,
+       "scraped_at": "2026-09-15 10:54:57",
+       "price_numeric": 30000,
+-      "price_tier": "1~3만원대",
++      "price_tier": "3만원대",
+       "usp": "각인/자수",
+       "rank_delta": "NEW",
+       "is_new_entry": true
+@@ -1467,7 +1467,7 @@
+       "product_id": 10941248,
+       "scraped_at": "2026-09-15 10:54:57",
+       "price_numeric": 7900,
+-      "price_tier": "1만원 이하",
++      "price_tier": "1만원 미만",
+       "usp": "일반구성",
+       "rank_delta": "NEW",
+       "is_new_entry": true
+@@ -1483,7 +1483,7 @@
+       "product_id": 13672457,
+       "scraped_at": "2026-09-15 10:54:58",
+       "price_numeric": 39800,
+-      "price_tier": "3~5만원대",
++      "price_tier": "3만원대",
+       "usp": "일반구성",
+       "rank_delta": "14",
+       "is_new_entry": false
+@@ -1499,7 +1499,7 @@
+       "product_id": 13466293,
+       "scraped_at": "2026-09-15 10:54:58",
+       "price_numeric": 36000,
+-      "price_tier": "3~5만원대",
++      "price_tier": "3만원대",
+       "usp": "선물포장",
+       "rank_delta": "NEW",
+       "is_new_entry": true
+@@ -1515,7 +1515,7 @@
+       "product_id": 8207423,
+       "scraped_at": "2026-09-15 10:54:58",
+       "price_numeric": 9900,
+-      "price_tier": "1만원 이하",
++      "price_tier": "1만원 미만",
+       "usp": "일반구성",
+       "rank_delta": "NEW",
+       "is_new_entry": true
+@@ -1531,7 +1531,7 @@
+       "product_id": 6186802,
+       "scraped_at": "2026-09-15 10:54:58",
+       "price_numeric": 12900,
+-      "price_tier": "1~3만원대",
++      "price_tier": "1만원대",
+       "usp": "선물포장, 단독구성",
+       "rank_delta": "-1",
+       "is_new_entry": false
+@@ -1547,7 +1547,7 @@
+       "product_id": 10293933,
+       "scraped_at": "2026-09-15 10:54:58",
+       "price_numeric": 7500,
+-      "price_tier": "1만원 이하",
++      "price_tier": "1만원 미만",
+       "usp": "일반구성",
+       "rank_delta": "NEW",
+       "is_new_entry": true
+@@ -1563,7 +1563,7 @@
+       "product_id": 13673431,
+       "scraped_at": "2026-09-15 10:54:58",
+       "price_numeric": 9900,
+-      "price_tier": "1만원 이하",
++      "price_tier": "1만원 미만",
+       "usp": "일반구성",
+       "rank_delta": "NEW",
+       "is_new_entry": true
+@@ -1579,7 +1579,7 @@
+       "product_id": 13900412,
+       "scraped_at": "2026-09-15 10:54:58",
+       "price_numeric": 13800,
+-      "price_tier": "1~3만원대",
++      "price_tier": "1만원대",
+       "usp": "일반구성",
+       "rank_delta": "-3",
+       "is_new_entry": false
+@@ -1595,7 +1595,7 @@
+       "product_id": 11366993,
+       "scraped_at": "2026-09-15 10:54:58",
+       "price_numeric": 7900,
+-      "price_tier": "1만원 이하",
++      "price_tier": "1만원 미만",
+       "usp": "단독구성",
+       "rank_delta": "NEW",
+       "is_new_entry": true
+@@ -1611,7 +1611,7 @@
+       "product_id": 7355950,
+       "scraped_at": "2026-09-15 10:55:04",
+       "price_numeric": 22900,
+-      "price_tier": "1~3만원대",
++      "price_tier": "2만원대",
+       "usp": "일반구성",
+       "rank_delta": "0",
+       "is_new_entry": false
+@@ -1627,7 +1627,7 @@
+       "product_id": 11743570,
+       "scraped_at": "2026-09-15 10:55:04",
+       "price_numeric": 34800,
+-      "price_tier": "3~5만원대",
++      "price_tier": "3만원대",
+       "usp": "단독구성",
+       "rank_delta": "0",
+       "is_new_entry": false
+@@ -1643,7 +1643,7 @@
+       "product_id": 6986025,
+       "scraped_at": "2026-09-15 10:55:05",
+       "price_numeric": 29900,
+-      "price_tier": "1~3만원대",
++      "price_tier": "2만원대",
+       "usp": "일반구성",
+       "rank_delta": "NEW",
+       "is_new_entry": true
+@@ -1659,7 +1659,7 @@
+       "product_id": 5328353,
+       "scraped_at": "2026-09-15 10:55:05",
+       "price_numeric": 29800,
+-      "price_tier": "1~3만원대",
++      "price_tier": "2만원대",
+       "usp": "단독구성",
+       "rank_delta": "0",
+       "is_new_entry": false
+@@ -1675,7 +1675,7 @@
+       "product_id": 14096524,
+       "scraped_at": "2026-09-15 10:55:05",
+       "price_numeric": 17800,
+-      "price_tier": "1~3만원대",
++      "price_tier": "1만원대",
+       "usp": "일반구성",
+       "rank_delta": "NEW",
+       "is_new_entry": true
+@@ -1691,7 +1691,7 @@
+       "product_id": 13255931,
+       "scraped_at": "2026-09-15 10:55:05",
+       "price_numeric": 37900,
+-      "price_tier": "3~5만원대",
++      "price_tier": "3만원대",
+       "usp": "단독구성",
+       "rank_delta": "-1",
+       "is_new_entry": false
+@@ -1707,7 +1707,7 @@
+       "product_id": 12693742,
+       "scraped_at": "2026-09-15 10:55:05",
+       "price_numeric": 23000,
+-      "price_tier": "1~3만원대",
++      "price_tier": "2만원대",
+       "usp": "일반구성",
+       "rank_delta": "6",
+       "is_new_entry": false
+@@ -1723,7 +1723,7 @@
+       "product_id": 12281507,
+       "scraped_at": "2026-09-15 10:55:05",
+       "price_numeric": 18800,
+-      "price_tier": "1~3만원대",
++      "price_tier": "1만원대",
+       "usp": "일반구성",
+       "rank_delta": "-2",
+       "is_new_entry": false
+@@ -1739,7 +1739,7 @@
+       "product_id": 5328905,
+       "scraped_at": "2026-09-15 10:55:05",
+       "price_numeric": 29900,
+-      "price_tier": "1~3만원대",
++      "price_tier": "2만원대",
+       "usp": "단독구성",
+       "rank_delta": "-2",
+       "is_new_entry": false
+@@ -1755,7 +1755,7 @@
+       "product_id": 8091057,
+       "scraped_at": "2026-09-15 10:55:05",
+       "price_numeric": 13800,
+-      "price_tier": "1~3만원대",
++      "price_tier": "1만원대",
+       "usp": "일반구성",
+       "rank_delta": "1",
+       "is_new_entry": false
+@@ -1771,7 +1771,7 @@
+       "product_id": 7896387,
+       "scraped_at": "2026-09-15 10:55:05",
+       "price_numeric": 16900,
+-      "price_tier": "1~3만원대",
++      "price_tier": "1만원대",
+       "usp": "일반구성",
+       "rank_delta": "NEW",
+       "is_new_entry": true
+@@ -1787,7 +1787,7 @@
+       "product_id": 12617143,
+       "scraped_at": "2026-09-15 10:55:05",
+       "price_numeric": 17900,
+-      "price_tier": "1~3만원대",
++      "price_tier": "1만원대",
+       "usp": "일반구성",
+       "rank_delta": "NEW",
+       "is_new_entry": true
+@@ -1803,7 +1803,7 @@
+       "product_id": 13808817,
+       "scraped_at": "2026-09-15 10:55:06",
+       "price_numeric": 29000,
+-      "price_tier": "1~3만원대",
++      "price_tier": "2만원대",
+       "usp": "일반구성",
+       "rank_delta": "NEW",
+       "is_new_entry": true
+@@ -1819,7 +1819,7 @@
+       "product_id": 7025670,
+       "scraped_at": "2026-09-15 10:55:06",
+       "price_numeric": 29800,
+-      "price_tier": "1~3만원대",
++      "price_tier": "2만원대",
+       "usp": "단독구성",
+       "rank_delta": "31",
+       "is_new_entry": false
+@@ -1835,7 +1835,7 @@
+       "product_id": 10819633,
+       "scraped_at": "2026-09-15 10:55:06",
+       "price_numeric": 14900,
+-      "price_tier": "1~3만원대",
++      "price_tier": "1만원대",
+       "usp": "일반구성",
+       "rank_delta": "NEW",
+       "is_new_entry": true
+@@ -1851,7 +1851,7 @@
+       "product_id": 7322097,
+       "scraped_at": "2026-09-15 10:55:06",
+       "price_numeric": 36900,
+-      "price_tier": "3~5만원대",
++      "price_tier": "3만원대",
+       "usp": "단독구성",
+       "rank_delta": "NEW",
+       "is_new_entry": true
+@@ -1867,7 +1867,7 @@
+       "product_id": 7025298,
+       "scraped_at": "2026-09-15 10:55:06",
+       "price_numeric": 29900,
+-      "price_tier": "1~3만원대",
++      "price_tier": "2만원대",
+       "usp": "단독구성",
+       "rank_delta": "5",
+       "is_new_entry": false
+@@ -1883,7 +1883,7 @@
+       "product_id": 14221797,
+       "scraped_at": "2026-09-15 10:55:06",
+       "price_numeric": 37000,
+-      "price_tier": "3~5만원대",
++      "price_tier": "3만원대",
+       "usp": "일반구성",
+       "rank_delta": "-2",
+       "is_new_entry": false
+@@ -1899,7 +1899,7 @@
+       "product_id": 10998140,
+       "scraped_at": "2026-09-15 10:55:06",
+       "price_numeric": 15900,
+-      "price_tier": "1~3만원대",
++      "price_tier": "1만원대",
+       "usp": "일반구성",
+       "rank_delta": "-1",
+       "is_new_entry": false
+@@ -1915,7 +1915,7 @@
+       "product_id": 1308578,
+       "scraped_at": "2026-09-15 10:55:06",
+       "price_numeric": 44900,
+-      "price_tier": "3~5만원대",
++      "price_tier": "4만원대",
+       "usp": "단독구성",
+       "rank_delta": "4",
+       "is_new_entry": false
+@@ -1931,7 +1931,7 @@
+       "product_id": 13216407,
+       "scraped_at": "2026-09-15 10:55:06",
+       "price_numeric": 15900,
+-      "price_tier": "1~3만원대",
++      "price_tier": "1만원대",
+       "usp": "단독구성",
+       "rank_delta": "-7",
+       "is_new_entry": false
+@@ -1947,7 +1947,7 @@
+       "product_id": 13983870,
+       "scraped_at": "2026-09-15 10:55:06",
+       "price_numeric": 22900,
+-      "price_tier": "1~3만원대",
++      "price_tier": "2만원대",
+       "usp": "일반구성",
+       "rank_delta": "NEW",
+       "is_new_entry": true
+@@ -1963,7 +1963,7 @@
+       "product_id": 1242861,
+       "scraped_at": "2026-09-15 10:55:06",
+       "price_numeric": 29900,
+-      "price_tier": "1~3만원대",
++      "price_tier": "2만원대",
+       "usp": "단독구성",
+       "rank_delta": "11",
+       "is_new_entry": false
+@@ -1979,7 +1979,7 @@
+       "product_id": 11539740,
+       "scraped_at": "2026-09-15 10:55:06",
+       "price_numeric": 21800,
+-      "price_tier": "1~3만원대",
++      "price_tier": "2만원대",
+       "usp": "일반구성",
+       "rank_delta": "8",
+       "is_new_entry": false
+@@ -1995,7 +1995,7 @@
+       "product_id": 13983873,
+       "scraped_at": "2026-09-15 10:55:06",
+       "price_numeric": 36900,
+-      "price_tier": "3~5만원대",
++      "price_tier": "3만원대",
+       "usp": "일반구성",
+       "rank_delta": "NEW",
+       "is_new_entry": true
+@@ -2011,7 +2011,7 @@
+       "product_id": 7262354,
+       "scraped_at": "2026-09-15 10:55:06",
+       "price_numeric": 13900,
+-      "price_tier": "1~3만원대",
++      "price_tier": "1만원대",
+       "usp": "일반구성",
+       "rank_delta": "-1",
+       "is_new_entry": false
+@@ -2027,7 +2027,7 @@
+       "product_id": 945159,
+       "scraped_at": "2026-09-15 10:55:06",
+       "price_numeric": 25000,
+-      "price_tier": "1~3만원대",
++      "price_tier": "2만원대",
+       "usp": "일반구성",
+       "rank_delta": "NEW",
+       "is_new_entry": true
+@@ -2043,7 +2043,7 @@
+       "product_id": 12818996,
+       "scraped_at": "2026-09-15 10:55:07",
+       "price_numeric": 19800,
+-      "price_tier": "1~3만원대",
++      "price_tier": "1만원대",
+       "usp": "일반구성",
+       "rank_delta": "NEW",
+       "is_new_entry": true
+@@ -2059,7 +2059,7 @@
+       "product_id": 3833938,
+       "scraped_at": "2026-09-15 10:55:07",
+       "price_numeric": 13900,
+-      "price_tier": "1~3만원대",
++      "price_tier": "1만원대",
+       "usp": "단독구성",
+       "rank_delta": "-8",
+       "is_new_entry": false
+@@ -2075,7 +2075,7 @@
+       "product_id": 8510786,
+       "scraped_at": "2026-09-15 10:55:07",
+       "price_numeric": 23900,
+-      "price_tier": "1~3만원대",
++      "price_tier": "2만원대",
+       "usp": "일반구성",
+       "rank_delta": "30",
+       "is_new_entry": false
+@@ -2091,7 +2091,7 @@
+       "product_id": 7280480,
+       "scraped_at": "2026-09-15 10:55:07",
+       "price_numeric": 9900,
+-      "price_tier": "1만원 이하",
++      "price_tier": "1만원 미만",
+       "usp": "일반구성",
+       "rank_delta": "-8",
+       "is_new_entry": false
+@@ -2107,7 +2107,7 @@
+       "product_id": 9191293,
+       "scraped_at": "2026-09-15 10:55:07",
+       "price_numeric": 39000,
+-      "price_tier": "3~5만원대",
++      "price_tier": "3만원대",
+       "usp": "일반구성",
+       "rank_delta": "NEW",
+       "is_new_entry": true
+@@ -2123,7 +2123,7 @@
+       "product_id": 11704744,
+       "scraped_at": "2026-09-15 10:55:07",
+       "price_numeric": 13900,
+-      "price_tier": "1~3만원대",
++      "price_tier": "1만원대",
+       "usp": "일반구성",
+       "rank_delta": "NEW",
+       "is_new_entry": true
+@@ -2139,7 +2139,7 @@
+       "product_id": 13869667,
+       "scraped_at": "2026-09-15 10:55:07",
+       "price_numeric": 20000,
+-      "price_tier": "1~3만원대",
++      "price_tier": "2만원대",
+       "usp": "일반구성",
+       "rank_delta": "NEW",
+       "is_new_entry": true
+@@ -2155,7 +2155,7 @@
+       "product_id": 11386190,
+       "scraped_at": "2026-09-15 10:55:07",
+       "price_numeric": 32000,
+-      "price_tier": "3~5만원대",
++      "price_tier": "3만원대",
+       "usp": "단독구성",
+       "rank_delta": "NEW",
+       "is_new_entry": true
+@@ -2171,7 +2171,7 @@
+       "product_id": 12039412,
+       "scraped_at": "2026-09-15 10:55:07",
+       "price_numeric": 21800,
+-      "price_tier": "1~3만원대",
++      "price_tier": "2만원대",
+       "usp": "일반구성",
+       "rank_delta": "NEW",
+       "is_new_entry": true
+@@ -2187,7 +2187,7 @@
+       "product_id": 13983893,
+       "scraped_at": "2026-09-15 10:55:07",
+       "price_numeric": 16900,
+-      "price_tier": "1~3만원대",
++      "price_tier": "1만원대",
+       "usp": "일반구성",
+       "rank_delta": "NEW",
+       "is_new_entry": true
+@@ -2203,7 +2203,7 @@
+       "product_id": 10962112,
+       "scraped_at": "2026-09-15 10:55:07",
+       "price_numeric": 19900,
+-      "price_tier": "1~3만원대",
++      "price_tier": "1만원대",
+       "usp": "일반구성",
+       "rank_delta": "NEW",
+       "is_new_entry": true
+@@ -2219,7 +2219,7 @@
+       "product_id": 11942947,
+       "scraped_at": "2026-09-15 10:55:07",
+       "price_numeric": 29900,
+-      "price_tier": "1~3만원대",
++      "price_tier": "2만원대",
+       "usp": "일반구성",
+       "rank_delta": "11",
+       "is_new_entry": false
+@@ -2235,7 +2235,7 @@
+       "product_id": 9842300,
+       "scraped_at": "2026-09-15 10:55:07",
+       "price_numeric": 21500,
+-      "price_tier": "1~3만원대",
++      "price_tier": "2만원대",
+       "usp": "일반구성",
+       "rank_delta": "NEW",
+       "is_new_entry": true
+@@ -2251,7 +2251,7 @@
+       "product_id": 905813,
+       "scraped_at": "2026-09-15 10:55:08",
+       "price_numeric": 15900,
+-      "price_tier": "1~3만원대",
++      "price_tier": "1만원대",
+       "usp": "일반구성",
+       "rank_delta": "-2",
+       "is_new_entry": false
+@@ -2267,7 +2267,7 @@
+       "product_id": 14046242,
+       "scraped_at": "2026-09-15 10:55:08",
+       "price_numeric": 25000,
+-      "price_tier": "1~3만원대",
++      "price_tier": "2만원대",
+       "usp": "일반구성",
+       "rank_delta": "NEW",
+       "is_new_entry": true
+@@ -2283,7 +2283,7 @@
+       "product_id": 13551705,
+       "scraped_at": "2026-09-15 10:55:08",
+       "price_numeric": 19000,
+-      "price_tier": "1~3만원대",
++      "price_tier": "1만원대",
+       "usp": "일반구성",
+       "rank_delta": "NEW",
+       "is_new_entry": true
+@@ -2299,7 +2299,7 @@
+       "product_id": 10609163,
+       "scraped_at": "2026-09-15 10:55:08",
+       "price_numeric": 15900,
+-      "price_tier": "1~3만원대",
++      "price_tier": "1만원대",
+       "usp": "단독구성",
+       "rank_delta": "-16",
+       "is_new_entry": false
+@@ -2315,7 +2315,7 @@
+       "product_id": 9570334,
+       "scraped_at": "2026-09-15 10:55:08",
+       "price_numeric": 32000,
+-      "price_tier": "3~5만원대",
++      "price_tier": "3만원대",
+       "usp": "일반구성",
+       "rank_delta": "NEW",
+       "is_new_entry": true
+@@ -2347,7 +2347,7 @@
+       "product_id": 6841023,
+       "scraped_at": "2026-09-15 10:55:08",
+       "price_numeric": 17800,
+-      "price_tier": "1~3만원대",
++      "price_tier": "1만원대",
+       "usp": "일반구성",
+       "rank_delta": "NEW",
+       "is_new_entry": true
+@@ -2363,7 +2363,7 @@
+       "product_id": 11951853,
+       "scraped_at": "2026-09-15 10:55:08",
+       "price_numeric": 22800,
+-      "price_tier": "1~3만원대",
++      "price_tier": "2만원대",
+       "usp": "일반구성",
+       "rank_delta": "NEW",
+       "is_new_entry": true
+@@ -2379,7 +2379,7 @@
+       "product_id": 2488205,
+       "scraped_at": "2026-09-15 10:55:08",
+       "price_numeric": 15900,
+-      "price_tier": "1~3만원대",
++      "price_tier": "1만원대",
+       "usp": "일반구성",
+       "rank_delta": "6",
+       "is_new_entry": false
+@@ -2395,7 +2395,7 @@
+       "product_id": 2205514,
+       "scraped_at": "2026-09-15 10:55:08",
+       "price_numeric": 29900,
+-      "price_tier": "1~3만원대",
++      "price_tier": "2만원대",
+       "usp": "일반구성",
+       "rank_delta": "NEW",
+       "is_new_entry": true
+@@ -2411,7 +2411,7 @@
+       "product_id": 7868266,
+       "scraped_at": "2026-09-15 10:55:17",
+       "price_numeric": 30800,
+-      "price_tier": "3~5만원대",
++      "price_tier": "3만원대",
+       "usp": "일반구성",
+       "rank_delta": "NEW",
+       "is_new_entry": true
+@@ -2427,7 +2427,7 @@
+       "product_id": 11106499,
+       "scraped_at": "2026-09-15 10:55:17",
+       "price_numeric": 49000,
+-      "price_tier": "3~5만원대",
++      "price_tier": "4만원대",
+       "usp": "일반구성",
+       "rank_delta": "NEW",
+       "is_new_entry": true
+@@ -2443,7 +2443,7 @@
+       "product_id": 13772143,
+       "scraped_at": "2026-09-15 10:55:18",
+       "price_numeric": 24500,
+-      "price_tier": "1~3만원대",
++      "price_tier": "2만원대",
+       "usp": "단독구성",
+       "rank_delta": "NEW",
+       "is_new_entry": true
+@@ -2459,7 +2459,7 @@
+       "product_id": 11144932,
+       "scraped_at": "2026-09-15 10:55:18",
+       "price_numeric": 40500,
+-      "price_tier": "3~5만원대",
++      "price_tier": "4만원대",
+       "usp": "일반구성",
+       "rank_delta": "NEW",
+       "is_new_entry": true
+@@ -2475,7 +2475,7 @@
+       "product_id": 11850163,
+       "scraped_at": "2026-09-15 10:55:18",
+       "price_numeric": 25900,
+-      "price_tier": "1~3만원대",
++      "price_tier": "2만원대",
+       "usp": "선물포장, 단독구성",
+       "rank_delta": "-1",
+       "is_new_entry": false
+@@ -2491,7 +2491,7 @@
+       "product_id": 7868778,
+       "scraped_at": "2026-09-15 10:55:18",
+       "price_numeric": 39200,
+-      "price_tier": "3~5만원대",
++      "price_tier": "3만원대",
+       "usp": "일반구성",
+       "rank_delta": "NEW",
+       "is_new_entry": true
+@@ -2523,7 +2523,7 @@
+       "product_id": 11779291,
+       "scraped_at": "2026-09-15 10:55:18",
+       "price_numeric": 46000,
+-      "price_tier": "3~5만원대",
++      "price_tier": "4만원대",
+       "usp": "일반구성",
+       "rank_delta": "2",
+       "is_new_entry": false
+@@ -2571,7 +2571,7 @@
+       "product_id": 12821252,
+       "scraped_at": "2026-09-15 10:55:18",
+       "price_numeric": 16800,
+-      "price_tier": "1~3만원대",
++      "price_tier": "1만원대",
+       "usp": "단독구성",
+       "rank_delta": "-5",
+       "is_new_entry": false
+@@ -2587,7 +2587,7 @@
+       "product_id": 12694903,
+       "scraped_at": "2026-09-15 10:55:18",
+       "price_numeric": 39000,
+-      "price_tier": "3~5만원대",
++      "price_tier": "3만원대",
+       "usp": "단독구성",
+       "rank_delta": "-7",
+       "is_new_entry": false
+@@ -2603,7 +2603,7 @@
+       "product_id": 11483865,
+       "scraped_at": "2026-09-15 10:55:18",
+       "price_numeric": 42000,
+-      "price_tier": "3~5만원대",
++      "price_tier": "4만원대",
+       "usp": "일반구성",
+       "rank_delta": "3",
+       "is_new_entry": false
+@@ -2619,7 +2619,7 @@
+       "product_id": 7868895,
+       "scraped_at": "2026-09-15 10:55:18",
+       "price_numeric": 44000,
+-      "price_tier": "3~5만원대",
++      "price_tier": "4만원대",
+       "usp": "일반구성",
+       "rank_delta": "3",
+       "is_new_entry": false
+@@ -2635,7 +2635,7 @@
+       "product_id": 11264836,
+       "scraped_at": "2026-09-15 10:55:18",
+       "price_numeric": 36000,
+-      "price_tier": "3~5만원대",
++      "price_tier": "3만원대",
+       "usp": "일반구성",
+       "rank_delta": "NEW",
+       "is_new_entry": true
+@@ -2651,7 +2651,7 @@
+       "product_id": 11483949,
+       "scraped_at": "2026-09-15 10:55:18",
+       "price_numeric": 35000,
+-      "price_tier": "3~5만원대",
++      "price_tier": "3만원대",
+       "usp": "일반구성",
+       "rank_delta": "-7",
+       "is_new_entry": false
+@@ -2667,7 +2667,7 @@
+       "product_id": 6989444,
+       "scraped_at": "2026-09-15 10:55:18",
+       "price_numeric": 46000,
+-      "price_tier": "3~5만원대",
++      "price_tier": "4만원대",
+       "usp": "단독구성",
+       "rank_delta": "NEW",
+       "is_new_entry": true
+@@ -2683,7 +2683,7 @@
+       "product_id": 1186213,
+       "scraped_at": "2026-09-15 10:55:18",
+       "price_numeric": 33000,
+-      "price_tier": "3~5만원대",
++      "price_tier": "3만원대",
+       "usp": "단독구성",
+       "rank_delta": "NEW",
+       "is_new_entry": true
+@@ -2699,7 +2699,7 @@
+       "product_id": 12455527,
+       "scraped_at": "2026-09-15 10:55:18",
+       "price_numeric": 13800,
+-      "price_tier": "1~3만원대",
++      "price_tier": "1만원대",
+       "usp": "일반구성",
+       "rank_delta": "NEW",
+       "is_new_entry": true
+@@ -2715,7 +2715,7 @@
+       "product_id": 7734041,
+       "scraped_at": "2026-09-15 10:55:18",
+       "price_numeric": 34800,
+-      "price_tier": "3~5만원대",
++      "price_tier": "3만원대",
+       "usp": "단독구성",
+       "rank_delta": "NEW",
+       "is_new_entry": true
+@@ -2731,7 +2731,7 @@
+       "product_id": 11801920,
+       "scraped_at": "2026-09-15 10:55:18",
+       "price_numeric": 48000,
+-      "price_tier": "3~5만원대",
++      "price_tier": "4만원대",
+       "usp": "일반구성",
+       "rank_delta": "1",
+       "is_new_entry": false
+@@ -2747,7 +2747,7 @@
+       "product_id": 9158489,
+       "scraped_at": "2026-09-15 10:55:18",
+       "price_numeric": 31500,
+-      "price_tier": "3~5만원대",
++      "price_tier": "3만원대",
+       "usp": "각인/자수",
+       "rank_delta": "NEW",
+       "is_new_entry": true
+@@ -2763,7 +2763,7 @@
+       "product_id": 13884111,
+       "scraped_at": "2026-09-15 10:55:19",
+       "price_numeric": 9800,
+-      "price_tier": "1만원 이하",
++      "price_tier": "1만원 미만",
+       "usp": "일반구성",
+       "rank_delta": "NEW",
+       "is_new_entry": true
+@@ -2779,7 +2779,7 @@
+       "product_id": 12339610,
+       "scraped_at": "2026-09-15 10:55:19",
+       "price_numeric": 38000,
+-      "price_tier": "3~5만원대",
++      "price_tier": "3만원대",
+       "usp": "일반구성",
+       "rank_delta": "NEW",
+       "is_new_entry": true
+@@ -2795,7 +2795,7 @@
+       "product_id": 12694900,
+       "scraped_at": "2026-09-15 10:55:19",
+       "price_numeric": 36000,
+-      "price_tier": "3~5만원대",
++      "price_tier": "3만원대",
+       "usp": "단독구성",
+       "rank_delta": "-11",
+       "is_new_entry": false
+@@ -2811,7 +2811,7 @@
+       "product_id": 11521316,
+       "scraped_at": "2026-09-15 10:55:19",
+       "price_numeric": 20400,
+-      "price_tier": "1~3만원대",
++      "price_tier": "2만원대",
+       "usp": "단독구성",
+       "rank_delta": "NEW",
+       "is_new_entry": true
+@@ -2827,7 +2827,7 @@
+       "product_id": 13421555,
+       "scraped_at": "2026-09-15 10:55:19",
+       "price_numeric": 46000,
+-      "price_tier": "3~5만원대",
++      "price_tier": "4만원대",
+       "usp": "일반구성",
+       "rank_delta": "NEW",
+       "is_new_entry": true
+@@ -2859,7 +2859,7 @@
+       "product_id": 14255962,
+       "scraped_at": "2026-09-15 10:55:19",
+       "price_numeric": 17800,
+-      "price_tier": "1~3만원대",
++      "price_tier": "1만원대",
+       "usp": "단독구성",
+       "rank_delta": "NEW",
+       "is_new_entry": true
+@@ -2875,7 +2875,7 @@
+       "product_id": 9675371,
+       "scraped_at": "2026-09-15 10:55:19",
+       "price_numeric": 33800,
+-      "price_tier": "3~5만원대",
++      "price_tier": "3만원대",
+       "usp": "단독구성",
+       "rank_delta": "2",
+       "is_new_entry": false
+@@ -2907,7 +2907,7 @@
+       "product_id": 9742914,
+       "scraped_at": "2026-09-15 10:55:19",
+       "price_numeric": 12900,
+-      "price_tier": "1~3만원대",
++      "price_tier": "1만원대",
+       "usp": "단독구성",
+       "rank_delta": "8",
+       "is_new_entry": false
+@@ -2939,7 +2939,7 @@
+       "product_id": 12820960,
+       "scraped_at": "2026-09-15 10:55:19",
+       "price_numeric": 16800,
+-      "price_tier": "1~3만원대",
++      "price_tier": "1만원대",
+       "usp": "일반구성",
+       "rank_delta": "-7",
+       "is_new_entry": false
+@@ -2955,7 +2955,7 @@
+       "product_id": 12109009,
+       "scraped_at": "2026-09-15 10:55:20",
+       "price_numeric": 49000,
+-      "price_tier": "3~5만원대",
++      "price_tier": "4만원대",
+       "usp": "일반구성",
+       "rank_delta": "NEW",
+       "is_new_entry": true
+@@ -2971,7 +2971,7 @@
+       "product_id": 11264832,
+       "scraped_at": "2026-09-15 10:55:20",
+       "price_numeric": 31000,
+-      "price_tier": "3~5만원대",
++      "price_tier": "3만원대",
+       "usp": "일반구성",
+       "rank_delta": "NEW",
+       "is_new_entry": true
+@@ -2987,7 +2987,7 @@
+       "product_id": 10626781,
+       "scraped_at": "2026-09-15 10:55:20",
+       "price_numeric": 25900,
+-      "price_tier": "1~3만원대",
++      "price_tier": "2만원대",
+       "usp": "단독구성",
+       "rank_delta": "NEW",
+       "is_new_entry": true
+@@ -3003,7 +3003,7 @@
+       "product_id": 4907401,
+       "scraped_at": "2026-09-15 10:55:20",
+       "price_numeric": 45000,
+-      "price_tier": "3~5만원대",
++      "price_tier": "4만원대",
+       "usp": "단독구성",
+       "rank_delta": "-3",
+       "is_new_entry": false
+@@ -3019,7 +3019,7 @@
+       "product_id": 7833932,
+       "scraped_at": "2026-09-15 10:55:20",
+       "price_numeric": 47700,
+-      "price_tier": "3~5만원대",
++      "price_tier": "4만원대",
+       "usp": "단독구성",
+       "rank_delta": "NEW",
+       "is_new_entry": true
+@@ -3035,7 +3035,7 @@
+       "product_id": 12439693,
+       "scraped_at": "2026-09-15 10:55:20",
+       "price_numeric": 39500,
+-      "price_tier": "3~5만원대",
++      "price_tier": "3만원대",
+       "usp": "단독구성",
+       "rank_delta": "NEW",
+       "is_new_entry": true
+@@ -3051,7 +3051,7 @@
+       "product_id": 7712218,
+       "scraped_at": "2026-09-15 10:55:20",
+       "price_numeric": 32000,
+-      "price_tier": "3~5만원대",
++      "price_tier": "3만원대",
+       "usp": "단독구성",
+       "rank_delta": "NEW",
+       "is_new_entry": true
+@@ -3067,7 +3067,7 @@
+       "product_id": 12702001,
+       "scraped_at": "2026-09-15 10:55:20",
+       "price_numeric": 14900,
+-      "price_tier": "1~3만원대",
++      "price_tier": "1만원대",
+       "usp": "단독구성",
+       "rank_delta": "-4",
+       "is_new_entry": false
+@@ -3083,7 +3083,7 @@
+       "product_id": 12262364,
+       "scraped_at": "2026-09-15 10:55:20",
+       "price_numeric": 23900,
+-      "price_tier": "1~3만원대",
++      "price_tier": "2만원대",
+       "usp": "단독구성",
+       "rank_delta": "NEW",
+       "is_new_entry": true
+@@ -3099,7 +3099,7 @@
+       "product_id": 13648700,
+       "scraped_at": "2026-09-15 10:55:20",
+       "price_numeric": 27000,
+-      "price_tier": "1~3만원대",
++      "price_tier": "2만원대",
+       "usp": "일반구성",
+       "rank_delta": "NEW",
+       "is_new_entry": true
+@@ -3115,7 +3115,7 @@
+       "product_id": 13613223,
+       "scraped_at": "2026-09-15 10:55:20",
+       "price_numeric": 9900,
+-      "price_tier": "1만원 이하",
++      "price_tier": "1만원 미만",
+       "usp": "일반구성",
+       "rank_delta": "NEW",
+       "is_new_entry": true
+@@ -3131,7 +3131,7 @@
+       "product_id": 10998208,
+       "scraped_at": "2026-09-15 10:55:20",
+       "price_numeric": 18990,
+-      "price_tier": "1~3만원대",
++      "price_tier": "1만원대",
+       "usp": "단독구성",
+       "rank_delta": "NEW",
+       "is_new_entry": true
+@@ -3147,7 +3147,7 @@
+       "product_id": 14277595,
+       "scraped_at": "2026-09-15 10:55:20",
+       "price_numeric": 32000,
+-      "price_tier": "3~5만원대",
++      "price_tier": "3만원대",
+       "usp": "일반구성",
+       "rank_delta": "NEW",
+       "is_new_entry": true
+@@ -3163,7 +3163,7 @@
+       "product_id": 10468609,
+       "scraped_at": "2026-09-15 10:55:20",
+       "price_numeric": 15800,
+-      "price_tier": "1~3만원대",
++      "price_tier": "1만원대",
+       "usp": "단독구성",
+       "rank_delta": "-25",
+       "is_new_entry": false
+@@ -3179,7 +3179,7 @@
+       "product_id": 12698675,
+       "scraped_at": "2026-09-15 10:55:20",
+       "price_numeric": 16900,
+-      "price_tier": "1~3만원대",
++      "price_tier": "1만원대",
+       "usp": "단독구성",
+       "rank_delta": "NEW",
+       "is_new_entry": true
+@@ -3195,7 +3195,7 @@
+       "product_id": 12747894,
+       "scraped_at": "2026-09-15 10:55:20",
+       "price_numeric": 34000,
+-      "price_tier": "3~5만원대",
++      "price_tier": "3만원대",
+       "usp": "단독구성",
+       "rank_delta": "NEW",
+       "is_new_entry": true
+@@ -3214,17 +3214,111 @@
+         "avg_price": 27586,
+         "packaging_ratio": 4.0,
+         "engraving_ratio": 2.0,
+-        "exclusive_ratio": 35.0
++        "exclusive_ratio": 35.0,
++        "price_tier_matrix": {
++          "1만원 미만": {
++            "count": 23,
++            "share": 11.5,
++            "avg_price": 8421,
++            "top_brands": [
++              "알럽하우스(소품)",
++              "제이블룸(팬시)",
++              "데데리트"
++            ]
++          },
++          "1만원대": {
++            "count": 58,
++            "share": 29.0,
++            "avg_price": 15832,
++            "top_brands": [
++              "가나디",
++              "굴강",
++              "캐릭터침구"
++            ]
++          },
++          "2만원대": {
++            "count": 35,
++            "share": 17.5,
++            "avg_price": 25528,
++            "top_brands": [
++              "캐릭터침구",
++              "캐릭터주방",
++              "타블도트"
++            ]
++          },
++          "3만원대": {
++            "count": 49,
++            "share": 24.5,
++            "avg_price": 34930,
++            "top_brands": [
++              "스탠리",
++              "캐릭터침구",
++              "오덴세"
++            ]
++          },
++          "4만원대": {
++            "count": 21,
++            "share": 10.5,
++            "avg_price": 45361,
++            "top_brands": [
++              "스탠리",
++              "블루보틀",
++              "탬버린즈"
++            ]
++          },
++          "5만원 이상": {
++            "count": 14,
++            "share": 7.0,
++            "avg_price": 60536,
++            "top_brands": [
++              "센느파리",
++              "빌레로이앤보흐",
++              "스타벅스(공식스토어)"
++            ]
++          }
++        }
+       },
+       "card_3_recommended_keywords": {
+         "stable_keywords_top30": [
+           "가나디",
+-          "기타 캐릭터/팬시"
++          "기타 캐릭터/팬시",
++          "리락쿠마",
++          "먼작귀/치이카와"
+         ],
+         "rising_keywords_top31_100": [
+           "기타 캐릭터/팬시",
+-          "산리오"
+-        ]
++          "산리오",
++          "가나디",
++          "카카오프렌즈"
++        ],
++        "top_options": [
++          "선물포장",
++          "각인",
++          "단독구성"
++        ],
++        "by_type": {
++          "attributes": [
++            "단독",
++            "선물포장",
++            "각인",
++            "쇼핑백",
++            "전용패키지"
++          ],
++          "target_season": [
++            "생일",
++            "집들이",
++            "응원",
++            "답례품",
++            "기념일"
++          ],
++          "concept": [
++            "귀여운",
++            "감성",
++            "신박한",
++            "쓸데없는",
++            "인테리어"
++          ]
++        }
+       },
+       "card_4_rising_stars": [
+         {
+@@ -3232,35 +3326,55 @@
+           "product_name": "[스탠리공식유통사] 퀜처 H2.0 플로우스테이트 텀블러 591ml 30%",
+           "rank": 1,
+           "rank_delta": "NEW",
+-          "category": "리빙 전체"
++          "category": "리빙 전체",
++          "price": "30,800원",
++          "character_ip": "일반/비IP 상품",
++          "url": "https://gift.kakao.com/product/7868266",
++          "is_new_entry": true
+         },
+         {
+           "brand": "가나디",
+           "product_name": "귀여운 선물 가나디 복조리 파우치 (귀여운/휴대용/다용도파우치/생일)",
+           "rank": 1,
+           "rank_delta": 1,
+-          "category": "팬시/문구/취미 (IP핵심)"
++          "category": "팬시/문구/취미 (IP핵심)",
++          "price": "12,000원",
++          "character_ip": "가나디",
++          "url": "https://gift.kakao.com/product/13261876",
++          "is_new_entry": false
+         },
+         {
+           "brand": "스탠리",
+           "product_name": "[스탠리공식유통사] 퀜처 H2.0 플로우스테이트 텀블러 591ml 30%",
+           "rank": 1,
+           "rank_delta": "NEW",
+-          "category": "주방/식기"
++          "category": "주방/식기",
++          "price": "30,800원",
++          "character_ip": "일반/비IP 상품",
++          "url": "https://gift.kakao.com/product/7868266",
++          "is_new_entry": true
+         },
+         {
+           "brand": "리베르",
+           "product_name": "아로마 오일 1위 [] 에센셜 아로마 오일 롤온 & 괄사 세트 (3종 택1) 스트레스케어/숙면선물 10% 감사 카드",
+           "rank": 2,
+           "rank_delta": 2,
+-          "category": "리빙 전체"
++          "category": "리빙 전체",
++          "price": "30,600원",
++          "character_ip": "일반/비IP 상품",
++          "url": "https://gift.kakao.com/product/5391162",
++          "is_new_entry": false
+         },
+         {
+           "brand": "가나디",
+           "product_name": "가나디 마우스 손목 패드 (데스크테리어/생일/귀여운/우정/커플 선물) , 6,516",
+           "rank": 2,
+           "rank_delta": "NEW",
+-          "category": "팬시/문구/취미 (IP핵심)"
++          "category": "팬시/문구/취미 (IP핵심)",
++          "price": "12,800원",
++          "character_ip": "가나디",
++          "url": "https://gift.kakao.com/product/14096838",
++          "is_new_entry": true
+         }
+       ]
+     },
+@@ -3276,17 +3390,108 @@
+         "avg_price": 35315,
+         "packaging_ratio": 8.0,
+         "engraving_ratio": 2.0,
+-        "exclusive_ratio": 46.0
++        "exclusive_ratio": 46.0,
++        "price_tier_matrix": {
++          "1만원 미만": {
++            "count": 1,
++            "share": 2.0,
++            "avg_price": 8900,
++            "top_brands": [
++              "알럽하우스(소품)"
++            ]
++          },
++          "1만원대": {
++            "count": 8,
++            "share": 16.0,
++            "avg_price": 15662,
++            "top_brands": [
++              "가나디",
++              "그랑핸드",
++              "캐릭터주방"
++            ]
++          },
++          "2만원대": {
++            "count": 8,
++            "share": 16.0,
++            "avg_price": 25912,
++            "top_brands": [
++              "캐릭터침구",
++              "캐릭터주방",
++              "타블도트"
++            ]
++          },
++          "3만원대": {
++            "count": 17,
++            "share": 34.0,
++            "avg_price": 34770,
++            "top_brands": [
++              "스탠리",
++              "로에",
++              "리베르"
++            ]
++          },
++          "4만원대": {
++            "count": 9,
++            "share": 18.0,
++            "avg_price": 44944,
++            "top_brands": [
++              "스탠리",
++              "탬버린즈",
++              "블루보틀"
++            ]
++          },
++          "5만원 이상": {
++            "count": 7,
++            "share": 14.0,
++            "avg_price": 61235,
++            "top_brands": [
++              "다니엘트루스",
++              "센느파리",
++              "빌레로이앤보흐"
++            ]
++          }
++        }
+       },
+       "card_3_recommended_keywords": {
+         "stable_keywords_top30": [
+           "가나디",
+-          "먼작귀/치이카와"
++          "먼작귀/치이카와",
++          "리락쿠마",
++          "스누피/피너츠"
+         ],
+         "rising_keywords_top31_100": [
+           "가나디",
+-          "산리오"
+-        ]
++          "산리오",
++          "기타 캐릭터/팬시"
++        ],
++        "top_options": [
++          "선물포장",
++          "각인",
++          "단독구성"
++        ],
++        "by_type": {
++          "attributes": [
++            "단독",
++            "선물포장",
++            "각인",
++            "쇼핑백",
++            "전용패키지"
++          ],
++          "target_season": [
++            "생일",
++            "집들이",
++            "응원",
++            "답례품",
++            "기념일"
++          ],
++          "concept": [
++            "귀여운",
++            "감성",
++            "신박한",
++            "쓸데없는",
++            "인테리어"
++          ]
++        }
+       },
+       "card_4_rising_stars": [
+         {
+@@ -3294,35 +3499,55 @@
+           "product_name": "[스탠리공식유통사] 퀜처 H2.0 플로우스테이트 텀블러 591ml 30%",
+           "rank": 1,
+           "rank_delta": "NEW",
+-          "category": "리빙 전체"
++          "category": "리빙 전체",
++          "price": "30,800원",
++          "character_ip": "일반/비IP 상품",
++          "url": "https://gift.kakao.com/product/7868266",
++          "is_new_entry": true
+         },
+         {
+           "brand": "리베르",
+           "product_name": "아로마 오일 1위 [] 에센셜 아로마 오일 롤온 & 괄사 세트 (3종 택1) 스트레스케어/숙면선물 10% 감사 카드",
+           "rank": 2,
+           "rank_delta": 2,
+-          "category": "리빙 전체"
++          "category": "리빙 전체",
++          "price": "30,600원",
++          "character_ip": "일반/비IP 상품",
++          "url": "https://gift.kakao.com/product/5391162",
++          "is_new_entry": false
+         },
+         {
+           "brand": "스탠리",
+           "product_name": "[스탠리공식유통사] 퀜처 H2.0 플로우스테이트 텀블러 887ml",
+           "rank": 3,
+           "rank_delta": "NEW",
+-          "category": "리빙 전체"
++          "category": "리빙 전체",
++          "price": "49,000원",
++          "character_ip": "일반/비IP 상품",
++          "url": "https://gift.kakao.com/product/11106499",
++          "is_new_entry": true
+         },
+         {
+           "brand": "그랑핸드",
+           "product_name": "NEW 향 추가 [단독패키지] 그랑핸드 사쉐 40g (8종 택 1)",
+           "rank": 4,
+           "rank_delta": 1,
+-          "category": "리빙 전체"
++          "category": "리빙 전체",
++          "price": "18,000원",
++          "character_ip": "일반/비IP 상품",
++          "url": "https://gift.kakao.com/product/4926192",
++          "is_new_entry": false
+         },
+         {
+           "brand": "캐릭터주방",
+           "product_name": "[단독/추석선물] 리락쿠마 페이스 머그 텀블러 360ml 보온 보냉",
+           "rank": 5,
+           "rank_delta": "NEW",
+-          "category": "리빙 전체"
++          "category": "리빙 전체",
++          "price": "24,500원",
++          "character_ip": "리락쿠마",
++          "url": "https://gift.kakao.com/product/13772143",
++          "is_new_entry": true
+         }
+       ]
+     },
+@@ -3338,17 +3563,101 @@
+         "avg_price": 15744,
+         "packaging_ratio": 6.0,
+         "engraving_ratio": 4.0,
+-        "exclusive_ratio": 14.0
++        "exclusive_ratio": 14.0,
++        "price_tier_matrix": {
++          "1만원 미만": {
++            "count": 19,
++            "share": 38.0,
++            "avg_price": 8168,
++            "top_brands": [
++              "알럽하우스(소품)",
++              "제이블룸(팬시)",
++              "데데리트"
++            ]
++          },
++          "1만원대": {
++            "count": 22,
++            "share": 44.0,
++            "avg_price": 15163,
++            "top_brands": [
++              "가나디",
++              "굴강",
++              "19세 연령제한"
++            ]
++          },
++          "2만원대": {
++            "count": 1,
++            "share": 2.0,
++            "avg_price": 20000,
++            "top_brands": [
++              "프렌즈인형/피규어"
++            ]
++          },
++          "3만원대": {
++            "count": 8,
++            "share": 16.0,
++            "avg_price": 34800,
++            "top_brands": [
++              "잼먹",
++              "캐릭터침구",
++              "가나디"
++            ]
++          },
++          "4만원대": {
++            "count": 0,
++            "share": 0.0,
++            "avg_price": 0,
++            "top_brands": []
++          },
++          "5만원 이상": {
++            "count": 0,
++            "share": 0.0,
++            "avg_price": 0,
++            "top_brands": []
++          }
++        }
+       },
+       "card_3_recommended_keywords": {
+         "stable_keywords_top30": [
+           "가나디",
+-          "기타 캐릭터/팬시"
++          "기타 캐릭터/팬시",
++          "카카오프렌즈",
++          "먼작귀/치이카와"
+         ],
+         "rising_keywords_top31_100": [
+           "기타 캐릭터/팬시",
+-          "가나디"
+-        ]
++          "가나디",
++          "스폰지밥, 퍼글러",
++          "산리오"
++        ],
++        "top_options": [
++          "선물포장",
++          "각인",
++          "단독구성"
++        ],
++        "by_type": {
++          "attributes": [
++            "단독",
++            "선물포장",
++            "각인",
++            "쇼핑백",
++            "전용패키지"
++          ],
++          "target_season": [
++            "생일",
++            "집들이",
++            "응원",
++            "답례품",
++            "기념일"
++          ],
++          "concept": [
++            "귀여운",
++            "감성",
++            "신박한",
++            "쓸데없는",
++            "인테리어"
++          ]
++        }
+       },
+       "card_4_rising_stars": [
+         {
+@@ -3356,35 +3665,55 @@
+           "product_name": "귀여운 선물 가나디 복조리 파우치 (귀여운/휴대용/다용도파우치/생일)",
+           "rank": 1,
+           "rank_delta": 1,
+-          "category": "팬시/문구/취미 (IP핵심)"
++          "category": "팬시/문구/취미 (IP핵심)",
++          "price": "12,000원",
++          "character_ip": "가나디",
++          "url": "https://gift.kakao.com/product/13261876",
++          "is_new_entry": false
+         },
+         {
+           "brand": "가나디",
+           "product_name": "가나디 마우스 손목 패드 (데스크테리어/생일/귀여운/우정/커플 선물) , 6,516",
+           "rank": 2,
+           "rank_delta": "NEW",
+-          "category": "팬시/문구/취미 (IP핵심)"
++          "category": "팬시/문구/취미 (IP핵심)",
++          "price": "12,800원",
++          "character_ip": "가나디",
++          "url": "https://gift.kakao.com/product/14096838",
++          "is_new_entry": true
+         },
+         {
+           "brand": "알럽하우스(소품)",
+           "product_name": "의외로 찐시원해 힐링 휴대용 마사지 귀여운 문어괄사 옥토캔 생일 직장동료 건강 행운 친구 합격 부적 퇴사 응원 시험 수능 쓸데없는신박한 맛사지",
+           "rank": 3,
+           "rank_delta": 2,
+-          "category": "팬시/문구/취미 (IP핵심)"
++          "category": "팬시/문구/취미 (IP핵심)",
++          "price": "8,900원",
++          "character_ip": "일반/비IP 상품",
++          "url": "https://gift.kakao.com/product/10974656",
++          "is_new_entry": false
+         },
+         {
+           "brand": "잼먹",
+           "product_name": "하드케이스 \"생일/선물추천\" 잼먹 라벨프린터 휴대용 라벨기 라벨프린터기 네임스티커",
+           "rank": 4,
+           "rank_delta": 16,
+-          "category": "팬시/문구/취미 (IP핵심)"
++          "category": "팬시/문구/취미 (IP핵심)",
++          "price": "39,800원",
++          "character_ip": "일반/비IP 상품",
++          "url": "https://gift.kakao.com/product/11368084",
++          "is_new_entry": false
+         },
+         {
+           "brand": "가나디",
+           "product_name": "가나디 홀더 키링 (귀여운/휴대용컵홀더/다용도/키링) , 7,325",
+           "rank": 5,
+           "rank_delta": "NEW",
+-          "category": "팬시/문구/취미 (IP핵심)"
++          "category": "팬시/문구/취미 (IP핵심)",
++          "price": "16,300원",
++          "character_ip": "가나디",
++          "url": "https://gift.kakao.com/product/13881169",
++          "is_new_entry": true
+         }
+       ]
+     },
+@@ -3400,17 +3729,105 @@
+         "avg_price": 25392,
+         "packaging_ratio": 0.0,
+         "engraving_ratio": 0.0,
+-        "exclusive_ratio": 26.0
++        "exclusive_ratio": 26.0,
++        "price_tier_matrix": {
++          "1만원 미만": {
++            "count": 1,
++            "share": 2.0,
++            "avg_price": 9900,
++            "top_brands": [
++              "프렌즈리빙LC"
++            ]
++          },
++          "1만원대": {
++            "count": 19,
++            "share": 38.0,
++            "avg_price": 16563,
++            "top_brands": [
++              "캐릭터침구",
++              "가나디",
++              "굴강"
++            ]
++          },
++          "2만원대": {
++            "count": 20,
++            "share": 40.0,
++            "avg_price": 25930,
++            "top_brands": [
++              "캐릭터침구",
++              "가나디",
++              "프렌즈리빙LC"
++            ]
++          },
++          "3만원대": {
++            "count": 8,
++            "share": 16.0,
++            "avg_price": 35812,
++            "top_brands": [
++              "캐릭터침구",
++              "바나코(인테리어)",
++              "잔망루피(굿즈)"
++            ]
++          },
++          "4만원대": {
++            "count": 1,
++            "share": 2.0,
++            "avg_price": 44900,
++            "top_brands": [
++              "바자르"
++            ]
++          },
++          "5만원 이상": {
++            "count": 1,
++            "share": 2.0,
++            "avg_price": 95000,
++            "top_brands": [
++              "슬립앤슬립"
++            ]
++          }
++        }
+       },
+       "card_3_recommended_keywords": {
+         "stable_keywords_top30": [
+           "기타 캐릭터/팬시",
+-          "가나디"
++          "가나디",
++          "리락쿠마",
++          "먼작귀/치이카와"
+         ],
+         "rising_keywords_top31_100": [
+           "기타 캐릭터/팬시",
+-          "산리오"
+-        ]
++          "산리오",
++          "카카오프렌즈",
++          "리락쿠마"
++        ],
++        "top_options": [
++          "선물포장",
++          "각인",
++          "단독구성"
++        ],
++        "by_type": {
++          "attributes": [
++            "단독",
++            "선물포장",
++            "각인",
++            "쇼핑백",
++            "전용패키지"
++          ],
++          "target_season": [
++            "생일",
++            "집들이",
++            "응원",
++            "답례품",
++            "기념일"
++          ],
++          "concept": [
++            "귀여운",
++            "감성",
++            "신박한",
++            "쓸데없는",
++            "인테리어"
++          ]
++        }
+       },
+       "card_4_rising_stars": [
+         {
+@@ -3418,35 +3835,55 @@
+           "product_name": "\"생일/기념일선물\" (추석 이후 입고) 먼작귀 꿀잠바디쿠션4종 택1 치이카와 가르마 토끼 굿즈 극세사 긴베개 안고자는 바디필로우 캐릭터 굿즈 인형",
+           "rank": 3,
+           "rank_delta": "NEW",
+-          "category": "침구/패브릭"
++          "category": "침구/패브릭",
++          "price": "29,900원",
++          "character_ip": "먼작귀/치이카와",
++          "url": "https://gift.kakao.com/product/6986025",
++          "is_new_entry": true
+         },
+         {
+           "brand": "가나디",
+           "product_name": "가나디 파자마 러그 (러그/미니러그/인테리어/자취/원룸/집들이선물) , 5,132",
+           "rank": 5,
+           "rank_delta": "NEW",
+-          "category": "침구/패브릭"
++          "category": "침구/패브릭",
++          "price": "17,800원",
++          "character_ip": "가나디",
++          "url": "https://gift.kakao.com/product/14096524",
++          "is_new_entry": true
+         },
+         {
+           "brand": "가나디",
+           "product_name": "가나디 핸드워머 쿠션 2종 (생일/집들이/인테리어/응원/귀여운/유쾌한)",
+           "rank": 7,
+           "rank_delta": 6,
+-          "category": "침구/패브릭"
++          "category": "침구/패브릭",
++          "price": "23,000원",
++          "character_ip": "가나디",
++          "url": "https://gift.kakao.com/product/12693742",
++          "is_new_entry": false
+         },
+         {
+           "brand": "미뇽맨션",
+           "product_name": "[누적판매 23만건, 키링, 사쉐 ] 뚱냥이 바디필로우 캣 쿠션 수면 집들이 선물 사쉐, 아크릴 키링",
+           "rank": 10,
+           "rank_delta": 1,
+-          "category": "침구/패브릭"
++          "category": "침구/패브릭",
++          "price": "13,800원",
++          "character_ip": "일반/비IP 상품",
++          "url": "https://gift.kakao.com/product/8091057",
++          "is_new_entry": false
+         },
+         {
+           "brand": "캐릭터침구",
+           "product_name": "생일/집들이선물추천 먼작귀 굿즈 발매트 러그 인테리어소품 선물 5종옵션 택1 (치이카와/가르마/토끼/밤만쥬/하늘다람쥐) , 9,349",
+           "rank": 11,
+           "rank_delta": "NEW",
+-          "category": "침구/패브릭"
++          "category": "침구/패브릭",
++          "price": "16,900원",
++          "character_ip": "먼작귀/치이카와",
++          "url": "https://gift.kakao.com/product/7896387",
++          "is_new_entry": true
+         }
+       ]
+     },
+@@ -3462,17 +3899,110 @@
+         "avg_price": 33893,
+         "packaging_ratio": 2.0,
+         "engraving_ratio": 2.0,
+-        "exclusive_ratio": 54.0
++        "exclusive_ratio": 54.0,
++        "price_tier_matrix": {
++          "1만원 미만": {
++            "count": 2,
++            "share": 4.0,
++            "avg_price": 9850,
++            "top_brands": [
++              "트렌디홈(키친)",
++              "바쏠"
++            ]
++          },
++          "1만원대": {
++            "count": 9,
++            "share": 18.0,
++            "avg_price": 16076,
++            "top_brands": [
++              "캐릭터주방",
++              "바쏠",
++              "알럽하우스"
++            ]
++          },
++          "2만원대": {
++            "count": 6,
++            "share": 12.0,
++            "avg_price": 24600,
++            "top_brands": [
++              "보퀴진",
++              "캐릭터주방",
++              "타블도트"
++            ]
++          },
++          "3만원대": {
++            "count": 16,
++            "share": 32.0,
++            "avg_price": 34725,
++            "top_brands": [
++              "스탠리",
++              "스타벅스(공식스토어)",
++              "오덴세"
++            ]
++          },
++          "4만원대": {
++            "count": 11,
++            "share": 22.0,
++            "avg_price": 45745,
++            "top_brands": [
++              "스탠리",
++              "블루보틀",
++              "스타벅스(공식스토어)"
++            ]
++          },
++          "5만원 이상": {
++            "count": 6,
++            "share": 12.0,
++            "avg_price": 53976,
++            "top_brands": [
++              "센느파리",
++              "빌레로이앤보흐",
++              "스타벅스(공식스토어)"
++            ]
++          }
++        }
+       },
+       "card_3_recommended_keywords": {
+         "stable_keywords_top30": [
+           "리락쿠마",
+-          "스누피/피너츠"
++          "스누피/피너츠",
++          "가나디",
++          "산리오"
+         ],
+         "rising_keywords_top31_100": [
+           "스누피/피너츠",
+-          "가나디"
+-        ]
++          "가나디",
++          "산리오",
++          "미피"
++        ],
++        "top_options": [
++          "선물포장",
++          "각인",
++          "단독구성"
++        ],
++        "by_type": {
++          "attributes": [
++            "단독",
++            "선물포장",
++            "각인",
++            "쇼핑백",
++            "전용패키지"
++          ],
++          "target_season": [
++            "생일",
++            "집들이",
++            "응원",
++            "답례품",
++            "기념일"
++          ],
++          "concept": [
++            "귀여운",
++            "감성",
++            "신박한",
++            "쓸데없는",
++            "인테리어"
++          ]
++        }
+       },
+       "card_4_rising_stars": [
+         {
+@@ -3480,35 +4010,55 @@
+           "product_name": "[스탠리공식유통사] 퀜처 H2.0 플로우스테이트 텀블러 591ml 30%",
+           "rank": 1,
+           "rank_delta": "NEW",
+-          "category": "주방/식기"
++          "category": "주방/식기",
++          "price": "30,800원",
++          "character_ip": "일반/비IP 상품",
++          "url": "https://gift.kakao.com/product/7868266",
++          "is_new_entry": true
+         },
+         {
+           "brand": "스탠리",
+           "product_name": "[스탠리공식유통사] 퀜처 H2.0 플로우스테이트 텀블러 887ml",
+           "rank": 2,
+           "rank_delta": "NEW",
+-          "category": "주방/식기"
++          "category": "주방/식기",
++          "price": "49,000원",
++          "character_ip": "일반/비IP 상품",
++          "url": "https://gift.kakao.com/product/11106499",
++          "is_new_entry": true
+         },
+         {
+           "brand": "캐릭터주방",
+           "product_name": "[단독/추석선물] 리락쿠마 페이스 머그 텀블러 360ml 보온 보냉",
+           "rank": 3,
+           "rank_delta": "NEW",
+-          "category": "주방/식기"
++          "category": "주방/식기",
++          "price": "24,500원",
++          "character_ip": "리락쿠마",
++          "url": "https://gift.kakao.com/product/13772143",
++          "is_new_entry": true
+         },
+         {
+           "brand": "스탠리",
+           "product_name": "[스탠리공식유통사] 퀜처 프로투어 플립 스트로 텀블러 887ml 25%",
+           "rank": 4,
+           "rank_delta": "NEW",
+-          "category": "주방/식기"
++          "category": "주방/식기",
++          "price": "40,500원",
++          "character_ip": "일반/비IP 상품",
++          "url": "https://gift.kakao.com/product/11144932",
++          "is_new_entry": true
+         },
+         {
+           "brand": "스탠리",
+           "product_name": "[스탠리공식유통사] 아이스플로우 플립 스트로 2.0 텀블러 887ml 20%",
+           "rank": 6,
+           "rank_delta": "NEW",
+-          "category": "주방/식기"
++          "category": "주방/식기",
++          "price": "39,200원",
++          "character_ip": "일반/비IP 상품",
++          "url": "https://gift.kakao.com/product/7868778",
++          "is_new_entry": true
+         }
+       ]
+     }
+diff --git a/docs/insight_cards.json b/docs/insight_cards.json
+index d72bcd0..e8601d6 100644
+--- a/docs/insight_cards.json
++++ b/docs/insight_cards.json
+@@ -11,17 +11,111 @@
+       "avg_price": 27586,
+       "packaging_ratio": 4.0,
+       "engraving_ratio": 2.0,
+-      "exclusive_ratio": 35.0
++      "exclusive_ratio": 35.0,
++      "price_tier_matrix": {
++        "1만원 미만": {
++          "count": 23,
++          "share": 11.5,
++          "avg_price": 8421,
++          "top_brands": [
++            "알럽하우스(소품)",
++            "제이블룸(팬시)",
++            "데데리트"
++          ]
++        },
++        "1만원대": {
++          "count": 58,
++          "share": 29.0,
++          "avg_price": 15832,
++          "top_brands": [
++            "가나디",
++            "굴강",
++            "캐릭터침구"
++          ]
++        },
++        "2만원대": {
++          "count": 35,
++          "share": 17.5,
++          "avg_price": 25528,
++          "top_brands": [
++            "캐릭터침구",
++            "캐릭터주방",
++            "타블도트"
++          ]
++        },
++        "3만원대": {
++          "count": 49,
++          "share": 24.5,
++          "avg_price": 34930,
++          "top_brands": [
++            "스탠리",
++            "캐릭터침구",
++            "오덴세"
++          ]
++        },
++        "4만원대": {
++          "count": 21,
++          "share": 10.5,
++          "avg_price": 45361,
++          "top_brands": [
++            "스탠리",
++            "블루보틀",
++            "탬버린즈"
++          ]
++        },
++        "5만원 이상": {
++          "count": 14,
++          "share": 7.0,
++          "avg_price": 60536,
++          "top_brands": [
++            "센느파리",
++            "빌레로이앤보흐",
++            "스타벅스(공식스토어)"
++          ]
++        }
++      }
+     },
+     "card_3_recommended_keywords": {
+       "stable_keywords_top30": [
+         "가나디",
+-        "기타 캐릭터/팬시"
++        "기타 캐릭터/팬시",
++        "리락쿠마",
++        "먼작귀/치이카와"
+       ],
+       "rising_keywords_top31_100": [
+         "기타 캐릭터/팬시",
+-        "산리오"
+-      ]
++        "산리오",
++        "가나디",
++        "카카오프렌즈"
++      ],
++      "top_options": [
++        "선물포장",
++        "각인",
++        "단독구성"
++      ],
++      "by_type": {
++        "attributes": [
++          "단독",
++          "선물포장",
++          "각인",
++          "쇼핑백",
++          "전용패키지"
++        ],
++        "target_season": [
++          "생일",
++          "집들이",
++          "응원",
++          "답례품",
++          "기념일"
++        ],
++        "concept": [
++          "귀여운",
++          "감성",
++          "신박한",
++          "쓸데없는",
++          "인테리어"
++        ]
++      }
+     },
+     "card_4_rising_stars": [
+       {
+@@ -29,35 +123,55 @@
+         "product_name": "[스탠리공식유통사] 퀜처 H2.0 플로우스테이트 텀블러 591ml 30%",
+         "rank": 1,
+         "rank_delta": "NEW",
+-        "category": "리빙 전체"
++        "category": "리빙 전체",
++        "price": "30,800원",
++        "character_ip": "일반/비IP 상품",
++        "url": "https://gift.kakao.com/product/7868266",
++        "is_new_entry": true
+       },
+       {
+         "brand": "가나디",
+         "product_name": "귀여운 선물 가나디 복조리 파우치 (귀여운/휴대용/다용도파우치/생일)",
+         "rank": 1,
+         "rank_delta": 1,
+-        "category": "팬시/문구/취미 (IP핵심)"
++        "category": "팬시/문구/취미 (IP핵심)",
++        "price": "12,000원",
++        "character_ip": "가나디",
++        "url": "https://gift.kakao.com/product/13261876",
++        "is_new_entry": false
+       },
+       {
+         "brand": "스탠리",
+         "product_name": "[스탠리공식유통사] 퀜처 H2.0 플로우스테이트 텀블러 591ml 30%",
+         "rank": 1,
+         "rank_delta": "NEW",
+-        "category": "주방/식기"
++        "category": "주방/식기",
++        "price": "30,800원",
++        "character_ip": "일반/비IP 상품",
++        "url": "https://gift.kakao.com/product/7868266",
++        "is_new_entry": true
+       },
+       {
+         "brand": "리베르",
+         "product_name": "아로마 오일 1위 [] 에센셜 아로마 오일 롤온 & 괄사 세트 (3종 택1) 스트레스케어/숙면선물 10% 감사 카드",
+         "rank": 2,
+         "rank_delta": 2,
+-        "category": "리빙 전체"
++        "category": "리빙 전체",
++        "price": "30,600원",
++        "character_ip": "일반/비IP 상품",
++        "url": "https://gift.kakao.com/product/5391162",
++        "is_new_entry": false
+       },
+       {
+         "brand": "가나디",
+         "product_name": "가나디 마우스 손목 패드 (데스크테리어/생일/귀여운/우정/커플 선물) , 6,516",
+         "rank": 2,
+         "rank_delta": "NEW",
+-        "category": "팬시/문구/취미 (IP핵심)"
++        "category": "팬시/문구/취미 (IP핵심)",
++        "price": "12,800원",
++        "character_ip": "가나디",
++        "url": "https://gift.kakao.com/product/14096838",
++        "is_new_entry": true
+       }
+     ]
+   },
+@@ -73,17 +187,108 @@
+       "avg_price": 35315,
+       "packaging_ratio": 8.0,
+       "engraving_ratio": 2.0,
+-      "exclusive_ratio": 46.0
++      "exclusive_ratio": 46.0,
++      "price_tier_matrix": {
++        "1만원 미만": {
++          "count": 1,
++          "share": 2.0,
++          "avg_price": 8900,
++          "top_brands": [
++            "알럽하우스(소품)"
++          ]
++        },
++        "1만원대": {
++          "count": 8,
++          "share": 16.0,
++          "avg_price": 15662,
++          "top_brands": [
++            "가나디",
++            "그랑핸드",
++            "캐릭터주방"
++          ]
++        },
++        "2만원대": {
++          "count": 8,
++          "share": 16.0,
++          "avg_price": 25912,
++          "top_brands": [
++            "캐릭터침구",
++            "캐릭터주방",
++            "타블도트"
++          ]
++        },
++        "3만원대": {
++          "count": 17,
++          "share": 34.0,
++          "avg_price": 34770,
++          "top_brands": [
++            "스탠리",
++            "로에",
++            "리베르"
++          ]
++        },
++        "4만원대": {
++          "count": 9,
++          "share": 18.0,
++          "avg_price": 44944,
++          "top_brands": [
++            "스탠리",
++            "탬버린즈",
++            "블루보틀"
++          ]
++        },
++        "5만원 이상": {
++          "count": 7,
++          "share": 14.0,
++          "avg_price": 61235,
++          "top_brands": [
++            "다니엘트루스",
++            "센느파리",
++            "빌레로이앤보흐"
++          ]
++        }
++      }
+     },
+     "card_3_recommended_keywords": {
+       "stable_keywords_top30": [
+         "가나디",
+-        "먼작귀/치이카와"
++        "먼작귀/치이카와",
++        "리락쿠마",
++        "스누피/피너츠"
+       ],
+       "rising_keywords_top31_100": [
+         "가나디",
+-        "산리오"
+-      ]
++        "산리오",
++        "기타 캐릭터/팬시"
++      ],
++      "top_options": [
++        "선물포장",
++        "각인",
++        "단독구성"
++      ],
++      "by_type": {
++        "attributes": [
++          "단독",
++          "선물포장",
++          "각인",
++          "쇼핑백",
++          "전용패키지"
++        ],
++        "target_season": [
++          "생일",
++          "집들이",
++          "응원",
++          "답례품",
++          "기념일"
++        ],
++        "concept": [
++          "귀여운",
++          "감성",
++          "신박한",
++          "쓸데없는",
++          "인테리어"
++        ]
++      }
+     },
+     "card_4_rising_stars": [
+       {
+@@ -91,35 +296,55 @@
+         "product_name": "[스탠리공식유통사] 퀜처 H2.0 플로우스테이트 텀블러 591ml 30%",
+         "rank": 1,
+         "rank_delta": "NEW",
+-        "category": "리빙 전체"
++        "category": "리빙 전체",
++        "price": "30,800원",
++        "character_ip": "일반/비IP 상품",
++        "url": "https://gift.kakao.com/product/7868266",
++        "is_new_entry": true
+       },
+       {
+         "brand": "리베르",
+         "product_name": "아로마 오일 1위 [] 에센셜 아로마 오일 롤온 & 괄사 세트 (3종 택1) 스트레스케어/숙면선물 10% 감사 카드",
+         "rank": 2,
+         "rank_delta": 2,
+-        "category": "리빙 전체"
++        "category": "리빙 전체",
++        "price": "30,600원",
++        "character_ip": "일반/비IP 상품",
++        "url": "https://gift.kakao.com/product/5391162",
++        "is_new_entry": false
+       },
+       {
+         "brand": "스탠리",
+         "product_name": "[스탠리공식유통사] 퀜처 H2.0 플로우스테이트 텀블러 887ml",
+         "rank": 3,
+         "rank_delta": "NEW",
+-        "category": "리빙 전체"
++        "category": "리빙 전체",
++        "price": "49,000원",
++        "character_ip": "일반/비IP 상품",
++        "url": "https://gift.kakao.com/product/11106499",
++        "is_new_entry": true
+       },
+       {
+         "brand": "그랑핸드",
+         "product_name": "NEW 향 추가 [단독패키지] 그랑핸드 사쉐 40g (8종 택 1)",
+         "rank": 4,
+         "rank_delta": 1,
+-        "category": "리빙 전체"
++        "category": "리빙 전체",
++        "price": "18,000원",
++        "character_ip": "일반/비IP 상품",
++        "url": "https://gift.kakao.com/product/4926192",
++        "is_new_entry": false
+       },
+       {
+         "brand": "캐릭터주방",
+         "product_name": "[단독/추석선물] 리락쿠마 페이스 머그 텀블러 360ml 보온 보냉",
+         "rank": 5,
+         "rank_delta": "NEW",
+-        "category": "리빙 전체"
++        "category": "리빙 전체",
++        "price": "24,500원",
++        "character_ip": "리락쿠마",
++        "url": "https://gift.kakao.com/product/13772143",
++        "is_new_entry": true
+       }
+     ]
+   },
+@@ -135,17 +360,101 @@
+       "avg_price": 15744,
+       "packaging_ratio": 6.0,
+       "engraving_ratio": 4.0,
+-      "exclusive_ratio": 14.0
++      "exclusive_ratio": 14.0,
++      "price_tier_matrix": {
++        "1만원 미만": {
++          "count": 19,
++          "share": 38.0,
++          "avg_price": 8168,
++          "top_brands": [
++            "알럽하우스(소품)",
++            "제이블룸(팬시)",
++            "데데리트"
++          ]
++        },
++        "1만원대": {
++          "count": 22,
++          "share": 44.0,
++          "avg_price": 15163,
++          "top_brands": [
++            "가나디",
++            "굴강",
++            "19세 연령제한"
++          ]
++        },
++        "2만원대": {
++          "count": 1,
++          "share": 2.0,
++          "avg_price": 20000,
++          "top_brands": [
++            "프렌즈인형/피규어"
++          ]
++        },
++        "3만원대": {
++          "count": 8,
++          "share": 16.0,
++          "avg_price": 34800,
++          "top_brands": [
++            "잼먹",
++            "캐릭터침구",
++            "가나디"
++          ]
++        },
++        "4만원대": {
++          "count": 0,
++          "share": 0.0,
++          "avg_price": 0,
++          "top_brands": []
++        },
++        "5만원 이상": {
++          "count": 0,
++          "share": 0.0,
++          "avg_price": 0,
++          "top_brands": []
++        }
++      }
+     },
+     "card_3_recommended_keywords": {
+       "stable_keywords_top30": [
+         "가나디",
+-        "기타 캐릭터/팬시"
++        "기타 캐릭터/팬시",
++        "카카오프렌즈",
++        "먼작귀/치이카와"
+       ],
+       "rising_keywords_top31_100": [
+         "기타 캐릭터/팬시",
+-        "가나디"
+-      ]
++        "가나디",
++        "스폰지밥, 퍼글러",
++        "산리오"
++      ],
++      "top_options": [
++        "선물포장",
++        "각인",
++        "단독구성"
++      ],
++      "by_type": {
++        "attributes": [
++          "단독",
++          "선물포장",
++          "각인",
++          "쇼핑백",
++          "전용패키지"
++        ],
++        "target_season": [
++          "생일",
++          "집들이",
++          "응원",
++          "답례품",
++          "기념일"
++        ],
++        "concept": [
++          "귀여운",
++          "감성",
++          "신박한",
++          "쓸데없는",
++          "인테리어"
++        ]
++      }
+     },
+     "card_4_rising_stars": [
+       {
+@@ -153,35 +462,55 @@
+         "product_name": "귀여운 선물 가나디 복조리 파우치 (귀여운/휴대용/다용도파우치/생일)",
+         "rank": 1,
+         "rank_delta": 1,
+-        "category": "팬시/문구/취미 (IP핵심)"
++        "category": "팬시/문구/취미 (IP핵심)",
++        "price": "12,000원",
++        "character_ip": "가나디",
++        "url": "https://gift.kakao.com/product/13261876",
++        "is_new_entry": false
+       },
+       {
+         "brand": "가나디",
+         "product_name": "가나디 마우스 손목 패드 (데스크테리어/생일/귀여운/우정/커플 선물) , 6,516",
+         "rank": 2,
+         "rank_delta": "NEW",
+-        "category": "팬시/문구/취미 (IP핵심)"
++        "category": "팬시/문구/취미 (IP핵심)",
++        "price": "12,800원",
++        "character_ip": "가나디",
++        "url": "https://gift.kakao.com/product/14096838",
++        "is_new_entry": true
+       },
+       {
+         "brand": "알럽하우스(소품)",
+         "product_name": "의외로 찐시원해 힐링 휴대용 마사지 귀여운 문어괄사 옥토캔 생일 직장동료 건강 행운 친구 합격 부적 퇴사 응원 시험 수능 쓸데없는신박한 맛사지",
+         "rank": 3,
+         "rank_delta": 2,
+-        "category": "팬시/문구/취미 (IP핵심)"
++        "category": "팬시/문구/취미 (IP핵심)",
++        "price": "8,900원",
++        "character_ip": "일반/비IP 상품",
++        "url": "https://gift.kakao.com/product/10974656",
++        "is_new_entry": false
+       },
+       {
+         "brand": "잼먹",
+         "product_name": "하드케이스 \"생일/선물추천\" 잼먹 라벨프린터 휴대용 라벨기 라벨프린터기 네임스티커",
+         "rank": 4,
+         "rank_delta": 16,
+-        "category": "팬시/문구/취미 (IP핵심)"
++        "category": "팬시/문구/취미 (IP핵심)",
++        "price": "39,800원",
++        "character_ip": "일반/비IP 상품",
++        "url": "https://gift.kakao.com/product/11368084",
++        "is_new_entry": false
+       },
+       {
+         "brand": "가나디",
+         "product_name": "가나디 홀더 키링 (귀여운/휴대용컵홀더/다용도/키링) , 7,325",
+         "rank": 5,
+         "rank_delta": "NEW",
+-        "category": "팬시/문구/취미 (IP핵심)"
++        "category": "팬시/문구/취미 (IP핵심)",
++        "price": "16,300원",
++        "character_ip": "가나디",
++        "url": "https://gift.kakao.com/product/13881169",
++        "is_new_entry": true
+       }
+     ]
+   },
+@@ -197,17 +526,105 @@
+       "avg_price": 25392,
+       "packaging_ratio": 0.0,
+       "engraving_ratio": 0.0,
+-      "exclusive_ratio": 26.0
++      "exclusive_ratio": 26.0,
++      "price_tier_matrix": {
++        "1만원 미만": {
++          "count": 1,
++          "share": 2.0,
++          "avg_price": 9900,
++          "top_brands": [
++            "프렌즈리빙LC"
++          ]
++        },
++        "1만원대": {
++          "count": 19,
++          "share": 38.0,
++          "avg_price": 16563,
++          "top_brands": [
++            "캐릭터침구",
++            "가나디",
++            "굴강"
++          ]
++        },
++        "2만원대": {
++          "count": 20,
++          "share": 40.0,
++          "avg_price": 25930,
++          "top_brands": [
++            "캐릭터침구",
++            "가나디",
++            "프렌즈리빙LC"
++          ]
++        },
++        "3만원대": {
++          "count": 8,
++          "share": 16.0,
++          "avg_price": 35812,
++          "top_brands": [
++            "캐릭터침구",
++            "바나코(인테리어)",
++            "잔망루피(굿즈)"
++          ]
++        },
++        "4만원대": {
++          "count": 1,
++          "share": 2.0,
++          "avg_price": 44900,
++          "top_brands": [
++            "바자르"
++          ]
++        },
++        "5만원 이상": {
++          "count": 1,
++          "share": 2.0,
++          "avg_price": 95000,
++          "top_brands": [
++            "슬립앤슬립"
++          ]
++        }
++      }
+     },
+     "card_3_recommended_keywords": {
+       "stable_keywords_top30": [
+         "기타 캐릭터/팬시",
+-        "가나디"
++        "가나디",
++        "리락쿠마",
++        "먼작귀/치이카와"
+       ],
+       "rising_keywords_top31_100": [
+         "기타 캐릭터/팬시",
+-        "산리오"
+-      ]
++        "산리오",
++        "카카오프렌즈",
++        "리락쿠마"
++      ],
++      "top_options": [
++        "선물포장",
++        "각인",
++        "단독구성"
++      ],
++      "by_type": {
++        "attributes": [
++          "단독",
++          "선물포장",
++          "각인",
++          "쇼핑백",
++          "전용패키지"
++        ],
++        "target_season": [
++          "생일",
++          "집들이",
++          "응원",
++          "답례품",
++          "기념일"
++        ],
++        "concept": [
++          "귀여운",
++          "감성",
++          "신박한",
++          "쓸데없는",
++          "인테리어"
++        ]
++      }
+     },
+     "card_4_rising_stars": [
+       {
+@@ -215,35 +632,55 @@
+         "product_name": "\"생일/기념일선물\" (추석 이후 입고) 먼작귀 꿀잠바디쿠션4종 택1 치이카와 가르마 토끼 굿즈 극세사 긴베개 안고자는 바디필로우 캐릭터 굿즈 인형",
+         "rank": 3,
+         "rank_delta": "NEW",
+-        "category": "침구/패브릭"
++        "category": "침구/패브릭",
++        "price": "29,900원",
++        "character_ip": "먼작귀/치이카와",
++        "url": "https://gift.kakao.com/product/6986025",
++        "is_new_entry": true
+       },
+       {
+         "brand": "가나디",
+         "product_name": "가나디 파자마 러그 (러그/미니러그/인테리어/자취/원룸/집들이선물) , 5,132",
+         "rank": 5,
+         "rank_delta": "NEW",
+-        "category": "침구/패브릭"
++        "category": "침구/패브릭",
++        "price": "17,800원",
++        "character_ip": "가나디",
++        "url": "https://gift.kakao.com/product/14096524",
++        "is_new_entry": true
+       },
+       {
+         "brand": "가나디",
+         "product_name": "가나디 핸드워머 쿠션 2종 (생일/집들이/인테리어/응원/귀여운/유쾌한)",
+         "rank": 7,
+         "rank_delta": 6,
+-        "category": "침구/패브릭"
++        "category": "침구/패브릭",
++        "price": "23,000원",
++        "character_ip": "가나디",
++        "url": "https://gift.kakao.com/product/12693742",
++        "is_new_entry": false
+       },
+       {
+         "brand": "미뇽맨션",
+         "product_name": "[누적판매 23만건, 키링, 사쉐 ] 뚱냥이 바디필로우 캣 쿠션 수면 집들이 선물 사쉐, 아크릴 키링",
+         "rank": 10,
+         "rank_delta": 1,
+-        "category": "침구/패브릭"
++        "category": "침구/패브릭",
++        "price": "13,800원",
++        "character_ip": "일반/비IP 상품",
++        "url": "https://gift.kakao.com/product/8091057",
++        "is_new_entry": false
+       },
+       {
+         "brand": "캐릭터침구",
+         "product_name": "생일/집들이선물추천 먼작귀 굿즈 발매트 러그 인테리어소품 선물 5종옵션 택1 (치이카와/가르마/토끼/밤만쥬/하늘다람쥐) , 9,349",
+         "rank": 11,
+         "rank_delta": "NEW",
+-        "category": "침구/패브릭"
++        "category": "침구/패브릭",
++        "price": "16,900원",
++        "character_ip": "먼작귀/치이카와",
++        "url": "https://gift.kakao.com/product/7896387",
++        "is_new_entry": true
+       }
+     ]
+   },
+@@ -259,17 +696,110 @@
+       "avg_price": 33893,
+       "packaging_ratio": 2.0,
+       "engraving_ratio": 2.0,
+-      "exclusive_ratio": 54.0
++      "exclusive_ratio": 54.0,
++      "price_tier_matrix": {
++        "1만원 미만": {
++          "count": 2,
++          "share": 4.0,
++          "avg_price": 9850,
++          "top_brands": [
++            "트렌디홈(키친)",
++            "바쏠"
++          ]
++        },
++        "1만원대": {
++          "count": 9,
++          "share": 18.0,
++          "avg_price": 16076,
++          "top_brands": [
++            "캐릭터주방",
++            "바쏠",
++            "알럽하우스"
++          ]
++        },
++        "2만원대": {
++          "count": 6,
++          "share": 12.0,
++          "avg_price": 24600,
++          "top_brands": [
++            "보퀴진",
++            "캐릭터주방",
++            "타블도트"
++          ]
++        },
++        "3만원대": {
++          "count": 16,
++          "share": 32.0,
++          "avg_price": 34725,
++          "top_brands": [
++            "스탠리",
++            "스타벅스(공식스토어)",
++            "오덴세"
++          ]
++        },
++        "4만원대": {
++          "count": 11,
++          "share": 22.0,
++          "avg_price": 45745,
++          "top_brands": [
++            "스탠리",
++            "블루보틀",
++            "스타벅스(공식스토어)"
++          ]
++        },
++        "5만원 이상": {
++          "count": 6,
++          "share": 12.0,
++          "avg_price": 53976,
++          "top_brands": [
++            "센느파리",
++            "빌레로이앤보흐",
++            "스타벅스(공식스토어)"
++          ]
++        }
++      }
+     },
+     "card_3_recommended_keywords": {
+       "stable_keywords_top30": [
+         "리락쿠마",
+-        "스누피/피너츠"
++        "스누피/피너츠",
++        "가나디",
++        "산리오"
+       ],
+       "rising_keywords_top31_100": [
+         "스누피/피너츠",
+-        "가나디"
+-      ]
++        "가나디",
++        "산리오",
++        "미피"
++      ],
++      "top_options": [
++        "선물포장",
++        "각인",
++        "단독구성"
++      ],
++      "by_type": {
++        "attributes": [
++          "단독",
++          "선물포장",
++          "각인",
++          "쇼핑백",
++          "전용패키지"
++        ],
++        "target_season": [
++          "생일",
++          "집들이",
++          "응원",
++          "답례품",
++          "기념일"
++        ],
++        "concept": [
++          "귀여운",
++          "감성",
++          "신박한",
++          "쓸데없는",
++          "인테리어"
++        ]
++      }
+     },
+     "card_4_rising_stars": [
+       {
+@@ -277,35 +807,55 @@
+         "product_name": "[스탠리공식유통사] 퀜처 H2.0 플로우스테이트 텀블러 591ml 30%",
+         "rank": 1,
+         "rank_delta": "NEW",
+-        "category": "주방/식기"
++        "category": "주방/식기",
++        "price": "30,800원",
++        "character_ip": "일반/비IP 상품",
++        "url": "https://gift.kakao.com/product/7868266",
++        "is_new_entry": true
+       },
+       {
+         "brand": "스탠리",
+         "product_name": "[스탠리공식유통사] 퀜처 H2.0 플로우스테이트 텀블러 887ml",
+         "rank": 2,
+         "rank_delta": "NEW",
+-        "category": "주방/식기"
++        "category": "주방/식기",
++        "price": "49,000원",
++        "character_ip": "일반/비IP 상품",
++        "url": "https://gift.kakao.com/product/11106499",
++        "is_new_entry": true
+       },
+       {
+         "brand": "캐릭터주방",
+         "product_name": "[단독/추석선물] 리락쿠마 페이스 머그 텀블러 360ml 보온 보냉",
+         "rank": 3,
+         "rank_delta": "NEW",
+-        "category": "주방/식기"
++        "category": "주방/식기",
++        "price": "24,500원",
++        "character_ip": "리락쿠마",
++        "url": "https://gift.kakao.com/product/13772143",
++        "is_new_entry": true
+       },
+       {
+         "brand": "스탠리",
+         "product_name": "[스탠리공식유통사] 퀜처 프로투어 플립 스트로 텀블러 887ml 25%",
+         "rank": 4,
+         "rank_delta": "NEW",
+-        "category": "주방/식기"
++        "category": "주방/식기",
++        "price": "40,500원",
++        "character_ip": "일반/비IP 상품",
++        "url": "https://gift.kakao.com/product/11144932",
++        "is_new_entry": true
+       },
+       {
+         "brand": "스탠리",
+         "product_name": "[스탠리공식유통사] 아이스플로우 플립 스트로 2.0 텀블러 887ml 20%",
+         "rank": 6,
+         "rank_delta": "NEW",
+-        "category": "주방/식기"
++        "category": "주방/식기",
++        "price": "39,200원",
++        "character_ip": "일반/비IP 상품",
++        "url": "https://gift.kakao.com/product/7868778",
++        "is_new_entry": true
+       }
+     ]
+   }
+-- 
+2.43.0
+
