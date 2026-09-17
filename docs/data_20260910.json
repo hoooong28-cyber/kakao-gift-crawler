@@ -16,7 +16,10 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": 1.0
+      "rank_delta": 1,
+      "price_numeric": 44100,
+      "usp": "일반구성",
+      "rank_comparison_status": "compared"
     },
     {
       "category": "리빙 전체",
@@ -34,7 +37,10 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": -1.0
+      "rank_delta": -1,
+      "price_numeric": 20000,
+      "usp": "일반구성",
+      "rank_comparison_status": "compared"
     },
     {
       "category": "리빙 전체",
@@ -52,7 +58,10 @@
       "has_engraving": false,
       "is_exclusive": true,
       "is_new_entry": false,
-      "rank_delta": 4.0
+      "rank_delta": 4,
+      "price_numeric": 30600,
+      "usp": "단독구성",
+      "rank_comparison_status": "compared"
     },
     {
       "category": "리빙 전체",
@@ -70,7 +79,10 @@
       "has_engraving": false,
       "is_exclusive": true,
       "is_new_entry": false,
-      "rank_delta": 0.0
+      "rank_delta": 0,
+      "price_numeric": 24500,
+      "usp": "단독구성",
+      "rank_comparison_status": "compared"
     },
     {
       "category": "리빙 전체",
@@ -88,7 +100,10 @@
       "has_engraving": false,
       "is_exclusive": true,
       "is_new_entry": false,
-      "rank_delta": -2.0
+      "rank_delta": -2,
+      "price_numeric": 18000,
+      "usp": "선물포장, 단독구성",
+      "rank_comparison_status": "compared"
     },
     {
       "category": "리빙 전체",
@@ -106,7 +121,10 @@
       "has_engraving": false,
       "is_exclusive": true,
       "is_new_entry": false,
-      "rank_delta": -1.0
+      "rank_delta": -1,
+      "price_numeric": 32800,
+      "usp": "단독구성",
+      "rank_comparison_status": "compared"
     },
     {
       "category": "리빙 전체",
@@ -124,7 +142,10 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": 2.0
+      "rank_delta": 2,
+      "price_numeric": 22900,
+      "usp": "일반구성",
+      "rank_comparison_status": "compared"
     },
     {
       "category": "리빙 전체",
@@ -142,7 +163,10 @@
       "has_engraving": false,
       "is_exclusive": true,
       "is_new_entry": false,
-      "rank_delta": 6.0
+      "rank_delta": 6,
+      "price_numeric": 33000,
+      "usp": "단독구성",
+      "rank_comparison_status": "compared"
     },
     {
       "category": "리빙 전체",
@@ -160,7 +184,10 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": 2.0
+      "rank_delta": 2,
+      "price_numeric": 12000,
+      "usp": "일반구성",
+      "rank_comparison_status": "compared"
     },
     {
       "category": "리빙 전체",
@@ -178,7 +205,10 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": -4.0
+      "rank_delta": -4,
+      "price_numeric": 19500,
+      "usp": "일반구성",
+      "rank_comparison_status": "compared"
     },
     {
       "category": "리빙 전체",
@@ -196,7 +226,10 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": -3.0
+      "rank_delta": -3,
+      "price_numeric": 12800,
+      "usp": "일반구성",
+      "rank_comparison_status": "compared"
     },
     {
       "category": "리빙 전체",
@@ -214,7 +247,10 @@
       "has_engraving": false,
       "is_exclusive": true,
       "is_new_entry": false,
-      "rank_delta": 5.0
+      "rank_delta": 5,
+      "price_numeric": 34800,
+      "usp": "단독구성",
+      "rank_comparison_status": "compared"
     },
     {
       "category": "리빙 전체",
@@ -232,7 +268,10 @@
       "has_engraving": false,
       "is_exclusive": true,
       "is_new_entry": false,
-      "rank_delta": -3.0
+      "rank_delta": -3,
+      "price_numeric": 39000,
+      "usp": "단독구성",
+      "rank_comparison_status": "compared"
     },
     {
       "category": "리빙 전체",
@@ -250,7 +289,10 @@
       "has_engraving": false,
       "is_exclusive": true,
       "is_new_entry": false,
-      "rank_delta": 1.0
+      "rank_delta": 1,
+      "price_numeric": 36000,
+      "usp": "단독구성",
+      "rank_comparison_status": "compared"
     },
     {
       "category": "리빙 전체",
@@ -268,7 +310,10 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": -2.0
+      "rank_delta": -2,
+      "price_numeric": 37000,
+      "usp": "일반구성",
+      "rank_comparison_status": "compared"
     },
     {
       "category": "리빙 전체",
@@ -286,7 +331,10 @@
       "has_engraving": false,
       "is_exclusive": true,
       "is_new_entry": false,
-      "rank_delta": 5.0
+      "rank_delta": 5,
+      "price_numeric": 16800,
+      "usp": "단독구성",
+      "rank_comparison_status": "compared"
     },
     {
       "category": "리빙 전체",
@@ -304,7 +352,10 @@
       "has_engraving": false,
       "is_exclusive": true,
       "is_new_entry": true,
-      "rank_delta": ""
+      "rank_delta": "NEW",
+      "price_numeric": 27900,
+      "usp": "선물포장, 단독구성",
+      "rank_comparison_status": "new"
     },
     {
       "category": "리빙 전체",
@@ -322,7 +373,10 @@
       "has_engraving": false,
       "is_exclusive": true,
       "is_new_entry": false,
-      "rank_delta": 2.0
+      "rank_delta": 2,
+      "price_numeric": 46000,
+      "usp": "단독구성",
+      "rank_comparison_status": "compared"
     },
     {
       "category": "리빙 전체",
@@ -340,7 +394,10 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": -7.0
+      "rank_delta": -7,
+      "price_numeric": 28000,
+      "usp": "일반구성",
+      "rank_comparison_status": "compared"
     },
     {
       "category": "리빙 전체",
@@ -358,7 +415,10 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": -1.0
+      "rank_delta": -1,
+      "price_numeric": 29900,
+      "usp": "일반구성",
+      "rank_comparison_status": "compared"
     },
     {
       "category": "리빙 전체",
@@ -376,7 +436,10 @@
       "has_engraving": false,
       "is_exclusive": true,
       "is_new_entry": false,
-      "rank_delta": 4.0
+      "rank_delta": 4,
+      "price_numeric": 32800,
+      "usp": "일반구성",
+      "rank_comparison_status": "compared"
     },
     {
       "category": "리빙 전체",
@@ -394,7 +457,10 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": -4.0
+      "rank_delta": -4,
+      "price_numeric": 35000,
+      "usp": "일반구성",
+      "rank_comparison_status": "compared"
     },
     {
       "category": "리빙 전체",
@@ -412,7 +478,10 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": 4.0
+      "rank_delta": 4,
+      "price_numeric": 21500,
+      "usp": "일반구성",
+      "rank_comparison_status": "compared"
     },
     {
       "category": "리빙 전체",
@@ -430,7 +499,10 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": -1.0
+      "rank_delta": -1,
+      "price_numeric": 17800,
+      "usp": "일반구성",
+      "rank_comparison_status": "compared"
     },
     {
       "category": "리빙 전체",
@@ -448,7 +520,10 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": -3.0
+      "rank_delta": -3,
+      "price_numeric": 46500,
+      "usp": "선물포장",
+      "rank_comparison_status": "compared"
     },
     {
       "category": "리빙 전체",
@@ -466,7 +541,10 @@
       "has_engraving": false,
       "is_exclusive": true,
       "is_new_entry": true,
-      "rank_delta": ""
+      "rank_delta": "NEW",
+      "price_numeric": 21900,
+      "usp": "단독구성",
+      "rank_comparison_status": "new"
     },
     {
       "category": "리빙 전체",
@@ -484,7 +562,10 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": -3.0
+      "rank_delta": -3,
+      "price_numeric": 46000,
+      "usp": "일반구성",
+      "rank_comparison_status": "compared"
     },
     {
       "category": "리빙 전체",
@@ -502,7 +583,10 @@
       "has_engraving": false,
       "is_exclusive": true,
       "is_new_entry": false,
-      "rank_delta": 9.0
+      "rank_delta": 9,
+      "price_numeric": 9900,
+      "usp": "단독구성",
+      "rank_comparison_status": "compared"
     },
     {
       "category": "리빙 전체",
@@ -520,7 +604,10 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": 38.0
+      "rank_delta": 38,
+      "price_numeric": 30000,
+      "usp": "일반구성",
+      "rank_comparison_status": "compared"
     },
     {
       "category": "리빙 전체",
@@ -538,7 +625,10 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": -2.0
+      "rank_delta": -2,
+      "price_numeric": 9800,
+      "usp": "일반구성",
+      "rank_comparison_status": "compared"
     },
     {
       "category": "리빙 전체",
@@ -556,7 +646,10 @@
       "has_engraving": false,
       "is_exclusive": true,
       "is_new_entry": false,
-      "rank_delta": 8.0
+      "rank_delta": 8,
+      "price_numeric": 38000,
+      "usp": "단독구성",
+      "rank_comparison_status": "compared"
     },
     {
       "category": "리빙 전체",
@@ -574,7 +667,10 @@
       "has_engraving": false,
       "is_exclusive": true,
       "is_new_entry": false,
-      "rank_delta": 4.0
+      "rank_delta": 4,
+      "price_numeric": 57900,
+      "usp": "단독구성",
+      "rank_comparison_status": "compared"
     },
     {
       "category": "리빙 전체",
@@ -592,7 +688,10 @@
       "has_engraving": false,
       "is_exclusive": true,
       "is_new_entry": false,
-      "rank_delta": 5.0
+      "rank_delta": 5,
+      "price_numeric": 55800,
+      "usp": "단독구성",
+      "rank_comparison_status": "compared"
     },
     {
       "category": "리빙 전체",
@@ -610,7 +709,10 @@
       "has_engraving": false,
       "is_exclusive": true,
       "is_new_entry": false,
-      "rank_delta": -5.0
+      "rank_delta": -5,
+      "price_numeric": 44900,
+      "usp": "단독구성",
+      "rank_comparison_status": "compared"
     },
     {
       "category": "리빙 전체",
@@ -628,7 +730,10 @@
       "has_engraving": false,
       "is_exclusive": true,
       "is_new_entry": false,
-      "rank_delta": -3.0
+      "rank_delta": -3,
+      "price_numeric": 33300,
+      "usp": "일반구성",
+      "rank_comparison_status": "compared"
     },
     {
       "category": "리빙 전체",
@@ -646,7 +751,10 @@
       "has_engraving": false,
       "is_exclusive": true,
       "is_new_entry": false,
-      "rank_delta": 4.0
+      "rank_delta": 4,
+      "price_numeric": 36500,
+      "usp": "단독구성",
+      "rank_comparison_status": "compared"
     },
     {
       "category": "리빙 전체",
@@ -664,7 +772,10 @@
       "has_engraving": false,
       "is_exclusive": true,
       "is_new_entry": false,
-      "rank_delta": -6.0
+      "rank_delta": -6,
+      "price_numeric": 53820,
+      "usp": "단독구성",
+      "rank_comparison_status": "compared"
     },
     {
       "category": "리빙 전체",
@@ -682,7 +793,10 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": -8.0
+      "rank_delta": -8,
+      "price_numeric": 8900,
+      "usp": "일반구성",
+      "rank_comparison_status": "compared"
     },
     {
       "category": "리빙 전체",
@@ -700,7 +814,10 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": 21.0
+      "rank_delta": 21,
+      "price_numeric": 52000,
+      "usp": "일반구성",
+      "rank_comparison_status": "compared"
     },
     {
       "category": "리빙 전체",
@@ -718,7 +835,10 @@
       "has_engraving": false,
       "is_exclusive": true,
       "is_new_entry": false,
-      "rank_delta": -5.0
+      "rank_delta": -5,
+      "price_numeric": 18800,
+      "usp": "단독구성",
+      "rank_comparison_status": "compared"
     },
     {
       "category": "리빙 전체",
@@ -736,7 +856,10 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": 0.0
+      "rank_delta": 0,
+      "price_numeric": 44000,
+      "usp": "일반구성",
+      "rank_comparison_status": "compared"
     },
     {
       "category": "리빙 전체",
@@ -754,7 +877,10 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": 3.0
+      "rank_delta": 3,
+      "price_numeric": 42000,
+      "usp": "일반구성",
+      "rank_comparison_status": "compared"
     },
     {
       "category": "리빙 전체",
@@ -772,7 +898,10 @@
       "has_engraving": false,
       "is_exclusive": true,
       "is_new_entry": false,
-      "rank_delta": -17.0
+      "rank_delta": -17,
+      "price_numeric": 51000,
+      "usp": "단독구성",
+      "rank_comparison_status": "compared"
     },
     {
       "category": "리빙 전체",
@@ -790,7 +919,10 @@
       "has_engraving": false,
       "is_exclusive": true,
       "is_new_entry": false,
-      "rank_delta": -2.0
+      "rank_delta": -2,
+      "price_numeric": 36000,
+      "usp": "단독구성",
+      "rank_comparison_status": "compared"
     },
     {
       "category": "리빙 전체",
@@ -808,7 +940,10 @@
       "has_engraving": false,
       "is_exclusive": true,
       "is_new_entry": false,
-      "rank_delta": 5.0
+      "rank_delta": 5,
+      "price_numeric": 34500,
+      "usp": "단독구성",
+      "rank_comparison_status": "compared"
     },
     {
       "category": "리빙 전체",
@@ -826,7 +961,10 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": -12.0
+      "rank_delta": -12,
+      "price_numeric": 49000,
+      "usp": "일반구성",
+      "rank_comparison_status": "compared"
     },
     {
       "category": "리빙 전체",
@@ -844,7 +982,10 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": 27.0
+      "rank_delta": 27,
+      "price_numeric": 14800,
+      "usp": "일반구성",
+      "rank_comparison_status": "compared"
     },
     {
       "category": "리빙 전체",
@@ -862,7 +1003,10 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": 1.0
+      "rank_delta": 1,
+      "price_numeric": 16800,
+      "usp": "일반구성",
+      "rank_comparison_status": "compared"
     },
     {
       "category": "리빙 전체",
@@ -880,7 +1024,10 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": 6.0
+      "rank_delta": 6,
+      "price_numeric": 13800,
+      "usp": "일반구성",
+      "rank_comparison_status": "compared"
     },
     {
       "category": "리빙 전체",
@@ -898,7 +1045,10 @@
       "has_engraving": false,
       "is_exclusive": true,
       "is_new_entry": false,
-      "rank_delta": -17.0
+      "rank_delta": -17,
+      "price_numeric": 34000,
+      "usp": "단독구성",
+      "rank_comparison_status": "compared"
     },
     {
       "category": "리빙 전체",
@@ -916,7 +1066,10 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": 1.0
+      "rank_delta": 1,
+      "price_numeric": 38000,
+      "usp": "일반구성",
+      "rank_comparison_status": "compared"
     },
     {
       "category": "리빙 전체",
@@ -934,7 +1087,10 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": -8.0
+      "rank_delta": -8,
+      "price_numeric": 14800,
+      "usp": "일반구성",
+      "rank_comparison_status": "compared"
     },
     {
       "category": "리빙 전체",
@@ -952,7 +1108,10 @@
       "has_engraving": false,
       "is_exclusive": true,
       "is_new_entry": false,
-      "rank_delta": 5.0
+      "rank_delta": 5,
+      "price_numeric": 21800,
+      "usp": "단독구성",
+      "rank_comparison_status": "compared"
     },
     {
       "category": "리빙 전체",
@@ -970,7 +1129,10 @@
       "has_engraving": false,
       "is_exclusive": true,
       "is_new_entry": false,
-      "rank_delta": -11.0
+      "rank_delta": -11,
+      "price_numeric": 54150,
+      "usp": "단독구성",
+      "rank_comparison_status": "compared"
     },
     {
       "category": "리빙 전체",
@@ -988,7 +1150,10 @@
       "has_engraving": false,
       "is_exclusive": true,
       "is_new_entry": false,
-      "rank_delta": -4.0
+      "rank_delta": -4,
+      "price_numeric": 29800,
+      "usp": "단독구성",
+      "rank_comparison_status": "compared"
     },
     {
       "category": "리빙 전체",
@@ -1006,7 +1171,10 @@
       "has_engraving": false,
       "is_exclusive": true,
       "is_new_entry": false,
-      "rank_delta": -8.0
+      "rank_delta": -8,
+      "price_numeric": 38900,
+      "usp": "단독구성",
+      "rank_comparison_status": "compared"
     },
     {
       "category": "리빙 전체",
@@ -1024,7 +1192,10 @@
       "has_engraving": false,
       "is_exclusive": true,
       "is_new_entry": false,
-      "rank_delta": 14.0
+      "rank_delta": 14,
+      "price_numeric": 30900,
+      "usp": "선물포장, 단독구성",
+      "rank_comparison_status": "compared"
     },
     {
       "category": "리빙 전체",
@@ -1042,7 +1213,10 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": -2.0
+      "rank_delta": -2,
+      "price_numeric": 48000,
+      "usp": "일반구성",
+      "rank_comparison_status": "compared"
     },
     {
       "category": "리빙 전체",
@@ -1060,7 +1234,10 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": -12.0
+      "rank_delta": -12,
+      "price_numeric": 52900,
+      "usp": "일반구성",
+      "rank_comparison_status": "compared"
     },
     {
       "category": "리빙 전체",
@@ -1078,7 +1255,10 @@
       "has_engraving": false,
       "is_exclusive": true,
       "is_new_entry": false,
-      "rank_delta": -1.0
+      "rank_delta": -1,
+      "price_numeric": 32800,
+      "usp": "단독구성",
+      "rank_comparison_status": "compared"
     },
     {
       "category": "리빙 전체",
@@ -1096,7 +1276,10 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": -8.0
+      "rank_delta": -8,
+      "price_numeric": 46550,
+      "usp": "일반구성",
+      "rank_comparison_status": "compared"
     },
     {
       "category": "리빙 전체",
@@ -1114,7 +1297,10 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": 30.0
+      "rank_delta": 30,
+      "price_numeric": 56400,
+      "usp": "일반구성",
+      "rank_comparison_status": "compared"
     },
     {
       "category": "리빙 전체",
@@ -1132,7 +1318,10 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": 2.0
+      "rank_delta": 2,
+      "price_numeric": 54000,
+      "usp": "일반구성",
+      "rank_comparison_status": "compared"
     },
     {
       "category": "리빙 전체",
@@ -1150,7 +1339,10 @@
       "has_engraving": true,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": 2.0
+      "rank_delta": 2,
+      "price_numeric": 35000,
+      "usp": "각인/자수",
+      "rank_comparison_status": "compared"
     },
     {
       "category": "리빙 전체",
@@ -1168,7 +1360,10 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": -11.0
+      "rank_delta": -11,
+      "price_numeric": 9900,
+      "usp": "일반구성",
+      "rank_comparison_status": "compared"
     },
     {
       "category": "리빙 전체",
@@ -1186,7 +1381,10 @@
       "has_engraving": false,
       "is_exclusive": true,
       "is_new_entry": false,
-      "rank_delta": -5.0
+      "rank_delta": -5,
+      "price_numeric": 35900,
+      "usp": "선물포장, 단독구성",
+      "rank_comparison_status": "compared"
     },
     {
       "category": "리빙 전체",
@@ -1204,7 +1402,10 @@
       "has_engraving": false,
       "is_exclusive": true,
       "is_new_entry": false,
-      "rank_delta": -21.0
+      "rank_delta": -21,
+      "price_numeric": 32400,
+      "usp": "단독구성",
+      "rank_comparison_status": "compared"
     },
     {
       "category": "리빙 전체",
@@ -1222,7 +1423,10 @@
       "has_engraving": false,
       "is_exclusive": true,
       "is_new_entry": false,
-      "rank_delta": 16.0
+      "rank_delta": 16,
+      "price_numeric": 24400,
+      "usp": "단독구성",
+      "rank_comparison_status": "compared"
     },
     {
       "category": "리빙 전체",
@@ -1240,7 +1444,10 @@
       "has_engraving": false,
       "is_exclusive": true,
       "is_new_entry": true,
-      "rank_delta": ""
+      "rank_delta": "NEW",
+      "price_numeric": 29800,
+      "usp": "단독구성",
+      "rank_comparison_status": "new"
     },
     {
       "category": "리빙 전체",
@@ -1258,7 +1465,10 @@
       "has_engraving": false,
       "is_exclusive": true,
       "is_new_entry": false,
-      "rank_delta": 23.0
+      "rank_delta": 23,
+      "price_numeric": 37900,
+      "usp": "단독구성",
+      "rank_comparison_status": "compared"
     },
     {
       "category": "리빙 전체",
@@ -1276,7 +1486,10 @@
       "has_engraving": false,
       "is_exclusive": true,
       "is_new_entry": false,
-      "rank_delta": 2.0
+      "rank_delta": 2,
+      "price_numeric": 45000,
+      "usp": "단독구성",
+      "rank_comparison_status": "compared"
     },
     {
       "category": "리빙 전체",
@@ -1294,7 +1507,10 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": true,
-      "rank_delta": ""
+      "rank_delta": "NEW",
+      "price_numeric": 43800,
+      "usp": "각인/자수",
+      "rank_comparison_status": "new"
     },
     {
       "category": "리빙 전체",
@@ -1312,7 +1528,10 @@
       "has_engraving": false,
       "is_exclusive": true,
       "is_new_entry": true,
-      "rank_delta": ""
+      "rank_delta": "NEW",
+      "price_numeric": 50000,
+      "usp": "단독구성",
+      "rank_comparison_status": "new"
     },
     {
       "category": "리빙 전체",
@@ -1330,7 +1549,10 @@
       "has_engraving": false,
       "is_exclusive": true,
       "is_new_entry": false,
-      "rank_delta": 24.0
+      "rank_delta": 24,
+      "price_numeric": 39900,
+      "usp": "단독구성",
+      "rank_comparison_status": "compared"
     },
     {
       "category": "리빙 전체",
@@ -1348,7 +1570,10 @@
       "has_engraving": false,
       "is_exclusive": true,
       "is_new_entry": false,
-      "rank_delta": 2.0
+      "rank_delta": 2,
+      "price_numeric": 42000,
+      "usp": "단독구성",
+      "rank_comparison_status": "compared"
     },
     {
       "category": "리빙 전체",
@@ -1366,7 +1591,10 @@
       "has_engraving": false,
       "is_exclusive": true,
       "is_new_entry": false,
-      "rank_delta": 7.0
+      "rank_delta": 7,
+      "price_numeric": 35800,
+      "usp": "단독구성",
+      "rank_comparison_status": "compared"
     },
     {
       "category": "리빙 전체",
@@ -1384,7 +1612,10 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": 2.0
+      "rank_delta": 2,
+      "price_numeric": 32000,
+      "usp": "일반구성",
+      "rank_comparison_status": "compared"
     },
     {
       "category": "리빙 전체",
@@ -1402,7 +1633,10 @@
       "has_engraving": false,
       "is_exclusive": true,
       "is_new_entry": false,
-      "rank_delta": -21.0
+      "rank_delta": -21,
+      "price_numeric": 20000,
+      "usp": "단독구성",
+      "rank_comparison_status": "compared"
     },
     {
       "category": "리빙 전체",
@@ -1420,7 +1654,10 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": 15.0
+      "rank_delta": 15,
+      "price_numeric": 15800,
+      "usp": "일반구성",
+      "rank_comparison_status": "compared"
     },
     {
       "category": "리빙 전체",
@@ -1438,7 +1675,10 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": 0.0
+      "rank_delta": 0,
+      "price_numeric": 18800,
+      "usp": "일반구성",
+      "rank_comparison_status": "compared"
     },
     {
       "category": "리빙 전체",
@@ -1456,7 +1696,10 @@
       "has_engraving": false,
       "is_exclusive": true,
       "is_new_entry": false,
-      "rank_delta": -19.0
+      "rank_delta": -19,
+      "price_numeric": 171000,
+      "usp": "단독구성",
+      "rank_comparison_status": "compared"
     },
     {
       "category": "리빙 전체",
@@ -1474,7 +1717,10 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": -6.0
+      "rank_delta": -6,
+      "price_numeric": 19800,
+      "usp": "일반구성",
+      "rank_comparison_status": "compared"
     },
     {
       "category": "리빙 전체",
@@ -1492,7 +1738,10 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": true,
-      "rank_delta": ""
+      "rank_delta": "NEW",
+      "price_numeric": 16900,
+      "usp": "일반구성",
+      "rank_comparison_status": "new"
     },
     {
       "category": "리빙 전체",
@@ -1510,7 +1759,10 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": true,
-      "rank_delta": ""
+      "rank_delta": "NEW",
+      "price_numeric": 16900,
+      "usp": "일반구성",
+      "rank_comparison_status": "new"
     },
     {
       "category": "리빙 전체",
@@ -1528,7 +1780,10 @@
       "has_engraving": false,
       "is_exclusive": true,
       "is_new_entry": false,
-      "rank_delta": -16.0
+      "rank_delta": -16,
+      "price_numeric": 30000,
+      "usp": "단독구성",
+      "rank_comparison_status": "compared"
     },
     {
       "category": "리빙 전체",
@@ -1546,7 +1801,10 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": -4.0
+      "rank_delta": -4,
+      "price_numeric": 44100,
+      "usp": "일반구성",
+      "rank_comparison_status": "compared"
     },
     {
       "category": "리빙 전체",
@@ -1564,7 +1822,10 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": -23.0
+      "rank_delta": -23,
+      "price_numeric": 12900,
+      "usp": "일반구성",
+      "rank_comparison_status": "compared"
     },
     {
       "category": "리빙 전체",
@@ -1582,7 +1843,10 @@
       "has_engraving": false,
       "is_exclusive": true,
       "is_new_entry": true,
-      "rank_delta": ""
+      "rank_delta": "NEW",
+      "price_numeric": 28800,
+      "usp": "단독구성",
+      "rank_comparison_status": "new"
     },
     {
       "category": "리빙 전체",
@@ -1600,7 +1864,10 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": -4.0
+      "rank_delta": -4,
+      "price_numeric": 16900,
+      "usp": "일반구성",
+      "rank_comparison_status": "compared"
     },
     {
       "category": "리빙 전체",
@@ -1618,7 +1885,10 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": 9.0
+      "rank_delta": 9,
+      "price_numeric": 46000,
+      "usp": "일반구성",
+      "rank_comparison_status": "compared"
     },
     {
       "category": "리빙 전체",
@@ -1636,7 +1906,10 @@
       "has_engraving": false,
       "is_exclusive": true,
       "is_new_entry": false,
-      "rank_delta": -23.0
+      "rank_delta": -23,
+      "price_numeric": 29900,
+      "usp": "단독구성",
+      "rank_comparison_status": "compared"
     },
     {
       "category": "리빙 전체",
@@ -1654,7 +1927,10 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": -3.0
+      "rank_delta": -3,
+      "price_numeric": 42000,
+      "usp": "일반구성",
+      "rank_comparison_status": "compared"
     },
     {
       "category": "리빙 전체",
@@ -1672,7 +1948,10 @@
       "has_engraving": false,
       "is_exclusive": true,
       "is_new_entry": false,
-      "rank_delta": -23.0
+      "rank_delta": -23,
+      "price_numeric": 14900,
+      "usp": "단독구성",
+      "rank_comparison_status": "compared"
     },
     {
       "category": "리빙 전체",
@@ -1690,7 +1969,10 @@
       "has_engraving": false,
       "is_exclusive": true,
       "is_new_entry": true,
-      "rank_delta": ""
+      "rank_delta": "NEW",
+      "price_numeric": 29900,
+      "usp": "단독구성",
+      "rank_comparison_status": "new"
     },
     {
       "category": "리빙 전체",
@@ -1708,7 +1990,10 @@
       "has_engraving": false,
       "is_exclusive": true,
       "is_new_entry": true,
-      "rank_delta": ""
+      "rank_delta": "NEW",
+      "price_numeric": 25900,
+      "usp": "단독구성",
+      "rank_comparison_status": "new"
     },
     {
       "category": "리빙 전체",
@@ -1726,7 +2011,10 @@
       "has_engraving": false,
       "is_exclusive": true,
       "is_new_entry": false,
-      "rank_delta": -33.0
+      "rank_delta": -33,
+      "price_numeric": 15900,
+      "usp": "단독구성",
+      "rank_comparison_status": "compared"
     },
     {
       "category": "리빙 전체",
@@ -1744,7 +2032,10 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": -10.0
+      "rank_delta": -10,
+      "price_numeric": 44000,
+      "usp": "일반구성",
+      "rank_comparison_status": "compared"
     },
     {
       "category": "리빙 전체",
@@ -1762,7 +2053,10 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": -8.0
+      "rank_delta": -8,
+      "price_numeric": 17900,
+      "usp": "일반구성",
+      "rank_comparison_status": "compared"
     },
     {
       "category": "리빙 전체",
@@ -1780,7 +2074,10 @@
       "has_engraving": false,
       "is_exclusive": true,
       "is_new_entry": false,
-      "rank_delta": -83.0
+      "rank_delta": -83,
+      "price_numeric": 33300,
+      "usp": "일반구성",
+      "rank_comparison_status": "compared"
     },
     {
       "category": "리빙 전체",
@@ -1798,7 +2095,10 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": true,
-      "rank_delta": ""
+      "rank_delta": "NEW",
+      "price_numeric": 13800,
+      "usp": "일반구성",
+      "rank_comparison_status": "new"
     },
     {
       "category": "팬시/문구/취미 (IP핵심)",
@@ -1816,7 +2116,10 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": 0.0
+      "rank_delta": 0,
+      "price_numeric": 20000,
+      "usp": "일반구성",
+      "rank_comparison_status": "compared"
     },
     {
       "category": "팬시/문구/취미 (IP핵심)",
@@ -1834,7 +2137,10 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": 2.0
+      "rank_delta": 2,
+      "price_numeric": 12000,
+      "usp": "일반구성",
+      "rank_comparison_status": "compared"
     },
     {
       "category": "팬시/문구/취미 (IP핵심)",
@@ -1852,7 +2158,10 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": -1.0
+      "rank_delta": -1,
+      "price_numeric": 19500,
+      "usp": "일반구성",
+      "rank_comparison_status": "compared"
     },
     {
       "category": "팬시/문구/취미 (IP핵심)",
@@ -1870,7 +2179,10 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": -1.0
+      "rank_delta": -1,
+      "price_numeric": 12800,
+      "usp": "일반구성",
+      "rank_comparison_status": "compared"
     },
     {
       "category": "팬시/문구/취미 (IP핵심)",
@@ -1888,7 +2200,10 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": 0.0
+      "rank_delta": 0,
+      "price_numeric": 28000,
+      "usp": "일반구성",
+      "rank_comparison_status": "compared"
     },
     {
       "category": "팬시/문구/취미 (IP핵심)",
@@ -1906,7 +2221,10 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": 0.0
+      "rank_delta": 0,
+      "price_numeric": 8900,
+      "usp": "일반구성",
+      "rank_comparison_status": "compared"
     },
     {
       "category": "팬시/문구/취미 (IP핵심)",
@@ -1924,7 +2242,10 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": 3.0
+      "rank_delta": 3,
+      "price_numeric": 14800,
+      "usp": "일반구성",
+      "rank_comparison_status": "compared"
     },
     {
       "category": "팬시/문구/취미 (IP핵심)",
@@ -1942,7 +2263,10 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": -1.0
+      "rank_delta": -1,
+      "price_numeric": 9900,
+      "usp": "일반구성",
+      "rank_comparison_status": "compared"
     },
     {
       "category": "팬시/문구/취미 (IP핵심)",
@@ -1960,7 +2284,10 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": 5.0
+      "rank_delta": 5,
+      "price_numeric": 43800,
+      "usp": "각인/자수",
+      "rank_comparison_status": "compared"
     },
     {
       "category": "팬시/문구/취미 (IP핵심)",
@@ -1978,7 +2305,10 @@
       "has_engraving": false,
       "is_exclusive": true,
       "is_new_entry": false,
-      "rank_delta": -2.0
+      "rank_delta": -2,
+      "price_numeric": 20000,
+      "usp": "단독구성",
+      "rank_comparison_status": "compared"
     },
     {
       "category": "팬시/문구/취미 (IP핵심)",
@@ -1996,7 +2326,10 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": -2.0
+      "rank_delta": -2,
+      "price_numeric": 12900,
+      "usp": "일반구성",
+      "rank_comparison_status": "compared"
     },
     {
       "category": "팬시/문구/취미 (IP핵심)",
@@ -2014,7 +2347,10 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": 0.0
+      "rank_delta": 0,
+      "price_numeric": 16900,
+      "usp": "일반구성",
+      "rank_comparison_status": "compared"
     },
     {
       "category": "팬시/문구/취미 (IP핵심)",
@@ -2032,7 +2368,10 @@
       "has_engraving": false,
       "is_exclusive": true,
       "is_new_entry": false,
-      "rank_delta": -2.0
+      "rank_delta": -2,
+      "price_numeric": 12000,
+      "usp": "단독구성",
+      "rank_comparison_status": "compared"
     },
     {
       "category": "팬시/문구/취미 (IP핵심)",
@@ -2050,7 +2389,10 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": 1.0
+      "rank_delta": 1,
+      "price_numeric": 16300,
+      "usp": "일반구성",
+      "rank_comparison_status": "compared"
     },
     {
       "category": "팬시/문구/취미 (IP핵심)",
@@ -2068,7 +2410,10 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": 2.0
+      "rank_delta": 2,
+      "price_numeric": 16300,
+      "usp": "일반구성",
+      "rank_comparison_status": "compared"
     },
     {
       "category": "팬시/문구/취미 (IP핵심)",
@@ -2086,7 +2431,10 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": -3.0
+      "rank_delta": -3,
+      "price_numeric": 15900,
+      "usp": "일반구성",
+      "rank_comparison_status": "compared"
     },
     {
       "category": "팬시/문구/취미 (IP핵심)",
@@ -2104,7 +2452,10 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": 1.0
+      "rank_delta": 1,
+      "price_numeric": 5000,
+      "usp": "일반구성",
+      "rank_comparison_status": "compared"
     },
     {
       "category": "팬시/문구/취미 (IP핵심)",
@@ -2122,7 +2473,10 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": 2.0
+      "rank_delta": 2,
+      "price_numeric": 12900,
+      "usp": "일반구성",
+      "rank_comparison_status": "compared"
     },
     {
       "category": "팬시/문구/취미 (IP핵심)",
@@ -2140,7 +2494,10 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": 2.0
+      "rank_delta": 2,
+      "price_numeric": 16000,
+      "usp": "일반구성",
+      "rank_comparison_status": "compared"
     },
     {
       "category": "팬시/문구/취미 (IP핵심)",
@@ -2158,7 +2515,10 @@
       "has_engraving": false,
       "is_exclusive": true,
       "is_new_entry": false,
-      "rank_delta": -4.0
+      "rank_delta": -4,
+      "price_numeric": 16900,
+      "usp": "선물포장, 단독구성",
+      "rank_comparison_status": "compared"
     },
     {
       "category": "팬시/문구/취미 (IP핵심)",
@@ -2176,7 +2536,10 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": -2.0
+      "rank_delta": -2,
+      "price_numeric": 15000,
+      "usp": "일반구성",
+      "rank_comparison_status": "compared"
     },
     {
       "category": "팬시/문구/취미 (IP핵심)",
@@ -2194,7 +2557,10 @@
       "has_engraving": false,
       "is_exclusive": true,
       "is_new_entry": false,
-      "rank_delta": 6.0
+      "rank_delta": 6,
+      "price_numeric": 18800,
+      "usp": "단독구성",
+      "rank_comparison_status": "compared"
     },
     {
       "category": "팬시/문구/취미 (IP핵심)",
@@ -2212,7 +2578,10 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": 1.0
+      "rank_delta": 1,
+      "price_numeric": 15000,
+      "usp": "일반구성",
+      "rank_comparison_status": "compared"
     },
     {
       "category": "팬시/문구/취미 (IP핵심)",
@@ -2230,7 +2599,10 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": 1.0
+      "rank_delta": 1,
+      "price_numeric": 35000,
+      "usp": "일반구성",
+      "rank_comparison_status": "compared"
     },
     {
       "category": "팬시/문구/취미 (IP핵심)",
@@ -2248,7 +2620,10 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": 1.0
+      "rank_delta": 1,
+      "price_numeric": 7200,
+      "usp": "일반구성",
+      "rank_comparison_status": "compared"
     },
     {
       "category": "팬시/문구/취미 (IP핵심)",
@@ -2266,7 +2641,10 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": -3.0
+      "rank_delta": -3,
+      "price_numeric": 5900,
+      "usp": "일반구성",
+      "rank_comparison_status": "compared"
     },
     {
       "category": "팬시/문구/취미 (IP핵심)",
@@ -2284,7 +2662,10 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": 16.0
+      "rank_delta": 16,
+      "price_numeric": 8800,
+      "usp": "일반구성",
+      "rank_comparison_status": "compared"
     },
     {
       "category": "팬시/문구/취미 (IP핵심)",
@@ -2302,7 +2683,10 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": true,
-      "rank_delta": ""
+      "rank_delta": "NEW",
+      "price_numeric": 13800,
+      "usp": "일반구성",
+      "rank_comparison_status": "new"
     },
     {
       "category": "팬시/문구/취미 (IP핵심)",
@@ -2320,7 +2704,10 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": 2.0
+      "rank_delta": 2,
+      "price_numeric": 9900,
+      "usp": "일반구성",
+      "rank_comparison_status": "compared"
     },
     {
       "category": "팬시/문구/취미 (IP핵심)",
@@ -2338,7 +2725,10 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": 29.0
+      "rank_delta": 29,
+      "price_numeric": 4750,
+      "usp": "일반구성",
+      "rank_comparison_status": "compared"
     },
     {
       "category": "팬시/문구/취미 (IP핵심)",
@@ -2356,7 +2746,10 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": -4.0
+      "rank_delta": -4,
+      "price_numeric": 8900,
+      "usp": "일반구성",
+      "rank_comparison_status": "compared"
     },
     {
       "category": "팬시/문구/취미 (IP핵심)",
@@ -2374,7 +2767,10 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": 41.0
+      "rank_delta": 41,
+      "price_numeric": 8000,
+      "usp": "일반구성",
+      "rank_comparison_status": "compared"
     },
     {
       "category": "팬시/문구/취미 (IP핵심)",
@@ -2392,7 +2788,10 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": 12.0
+      "rank_delta": 12,
+      "price_numeric": 9500,
+      "usp": "일반구성",
+      "rank_comparison_status": "compared"
     },
     {
       "category": "팬시/문구/취미 (IP핵심)",
@@ -2410,7 +2809,10 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": 1.0
+      "rank_delta": 1,
+      "price_numeric": 20000,
+      "usp": "일반구성",
+      "rank_comparison_status": "compared"
     },
     {
       "category": "팬시/문구/취미 (IP핵심)",
@@ -2428,7 +2830,10 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": 20.0
+      "rank_delta": 20,
+      "price_numeric": 7900,
+      "usp": "일반구성",
+      "rank_comparison_status": "compared"
     },
     {
       "category": "팬시/문구/취미 (IP핵심)",
@@ -2446,7 +2851,10 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": -2.0
+      "rank_delta": -2,
+      "price_numeric": 20000,
+      "usp": "일반구성",
+      "rank_comparison_status": "compared"
     },
     {
       "category": "팬시/문구/취미 (IP핵심)",
@@ -2464,7 +2872,10 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": 7.0
+      "rank_delta": 7,
+      "price_numeric": 5800,
+      "usp": "일반구성",
+      "rank_comparison_status": "compared"
     },
     {
       "category": "팬시/문구/취미 (IP핵심)",
@@ -2482,7 +2893,10 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": -5.0
+      "rank_delta": -5,
+      "price_numeric": 36000,
+      "usp": "선물포장",
+      "rank_comparison_status": "compared"
     },
     {
       "category": "팬시/문구/취미 (IP핵심)",
@@ -2500,7 +2914,10 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": 1.0
+      "rank_delta": 1,
+      "price_numeric": 8500,
+      "usp": "일반구성",
+      "rank_comparison_status": "compared"
     },
     {
       "category": "팬시/문구/취미 (IP핵심)",
@@ -2518,7 +2935,10 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": 8.0
+      "rank_delta": 8,
+      "price_numeric": 15900,
+      "usp": "일반구성",
+      "rank_comparison_status": "compared"
     },
     {
       "category": "팬시/문구/취미 (IP핵심)",
@@ -2536,7 +2956,10 @@
       "has_engraving": false,
       "is_exclusive": true,
       "is_new_entry": false,
-      "rank_delta": -3.0
+      "rank_delta": -3,
+      "price_numeric": 9900,
+      "usp": "일반구성",
+      "rank_comparison_status": "compared"
     },
     {
       "category": "팬시/문구/취미 (IP핵심)",
@@ -2554,7 +2977,10 @@
       "has_engraving": false,
       "is_exclusive": true,
       "is_new_entry": false,
-      "rank_delta": -10.0
+      "rank_delta": -10,
+      "price_numeric": 9900,
+      "usp": "일반구성",
+      "rank_comparison_status": "compared"
     },
     {
       "category": "팬시/문구/취미 (IP핵심)",
@@ -2572,7 +2998,10 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": -1.0
+      "rank_delta": -1,
+      "price_numeric": 6400,
+      "usp": "일반구성",
+      "rank_comparison_status": "compared"
     },
     {
       "category": "팬시/문구/취미 (IP핵심)",
@@ -2590,7 +3019,10 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": 3.0
+      "rank_delta": 3,
+      "price_numeric": 18900,
+      "usp": "일반구성",
+      "rank_comparison_status": "compared"
     },
     {
       "category": "팬시/문구/취미 (IP핵심)",
@@ -2608,7 +3040,10 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": 19.0
+      "rank_delta": 19,
+      "price_numeric": 5900,
+      "usp": "일반구성",
+      "rank_comparison_status": "compared"
     },
     {
       "category": "팬시/문구/취미 (IP핵심)",
@@ -2626,7 +3061,10 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": -5.0
+      "rank_delta": -5,
+      "price_numeric": 11800,
+      "usp": "일반구성",
+      "rank_comparison_status": "compared"
     },
     {
       "category": "팬시/문구/취미 (IP핵심)",
@@ -2644,7 +3082,10 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": 27.0
+      "rank_delta": 27,
+      "price_numeric": 11500,
+      "usp": "일반구성",
+      "rank_comparison_status": "compared"
     },
     {
       "category": "팬시/문구/취미 (IP핵심)",
@@ -2662,7 +3103,10 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": 15.0
+      "rank_delta": 15,
+      "price_numeric": 7900,
+      "usp": "일반구성",
+      "rank_comparison_status": "compared"
     },
     {
       "category": "팬시/문구/취미 (IP핵심)",
@@ -2680,7 +3124,10 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": -3.0
+      "rank_delta": -3,
+      "price_numeric": 39800,
+      "usp": "일반구성",
+      "rank_comparison_status": "compared"
     },
     {
       "category": "팬시/문구/취미 (IP핵심)",
@@ -2698,7 +3145,10 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": 11.0
+      "rank_delta": 11,
+      "price_numeric": 13000,
+      "usp": "일반구성",
+      "rank_comparison_status": "compared"
     },
     {
       "category": "팬시/문구/취미 (IP핵심)",
@@ -2716,7 +3166,10 @@
       "has_engraving": false,
       "is_exclusive": true,
       "is_new_entry": true,
-      "rank_delta": ""
+      "rank_delta": "NEW",
+      "price_numeric": 25000,
+      "usp": "단독구성",
+      "rank_comparison_status": "new"
     },
     {
       "category": "팬시/문구/취미 (IP핵심)",
@@ -2734,7 +3187,10 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": true,
-      "rank_delta": ""
+      "rank_delta": "NEW",
+      "price_numeric": 4900,
+      "usp": "일반구성",
+      "rank_comparison_status": "new"
     },
     {
       "category": "팬시/문구/취미 (IP핵심)",
@@ -2752,7 +3208,10 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": -23.0
+      "rank_delta": -23,
+      "price_numeric": 31800,
+      "usp": "일반구성",
+      "rank_comparison_status": "compared"
     },
     {
       "category": "팬시/문구/취미 (IP핵심)",
@@ -2770,7 +3229,10 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": 21.0
+      "rank_delta": 21,
+      "price_numeric": 12900,
+      "usp": "일반구성",
+      "rank_comparison_status": "compared"
     },
     {
       "category": "팬시/문구/취미 (IP핵심)",
@@ -2788,7 +3250,10 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": true,
-      "rank_delta": ""
+      "rank_delta": "NEW",
+      "price_numeric": 4000,
+      "usp": "일반구성",
+      "rank_comparison_status": "new"
     },
     {
       "category": "팬시/문구/취미 (IP핵심)",
@@ -2806,7 +3271,10 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": -17.0
+      "rank_delta": -17,
+      "price_numeric": 5100,
+      "usp": "일반구성",
+      "rank_comparison_status": "compared"
     },
     {
       "category": "팬시/문구/취미 (IP핵심)",
@@ -2824,7 +3292,10 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": 21.0
+      "rank_delta": 21,
+      "price_numeric": 7200,
+      "usp": "일반구성",
+      "rank_comparison_status": "compared"
     },
     {
       "category": "팬시/문구/취미 (IP핵심)",
@@ -2842,7 +3313,10 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": -5.0
+      "rank_delta": -5,
+      "price_numeric": 8900,
+      "usp": "일반구성",
+      "rank_comparison_status": "compared"
     },
     {
       "category": "팬시/문구/취미 (IP핵심)",
@@ -2860,7 +3334,10 @@
       "has_engraving": false,
       "is_exclusive": true,
       "is_new_entry": false,
-      "rank_delta": -10.0
+      "rank_delta": -10,
+      "price_numeric": 11900,
+      "usp": "단독구성",
+      "rank_comparison_status": "compared"
     },
     {
       "category": "팬시/문구/취미 (IP핵심)",
@@ -2878,7 +3355,10 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": 8.0
+      "rank_delta": 8,
+      "price_numeric": 13900,
+      "usp": "일반구성",
+      "rank_comparison_status": "compared"
     },
     {
       "category": "팬시/문구/취미 (IP핵심)",
@@ -2896,7 +3376,10 @@
       "has_engraving": false,
       "is_exclusive": true,
       "is_new_entry": false,
-      "rank_delta": -39.0
+      "rank_delta": -39,
+      "price_numeric": 22900,
+      "usp": "단독구성",
+      "rank_comparison_status": "compared"
     },
     {
       "category": "팬시/문구/취미 (IP핵심)",
@@ -2914,7 +3397,10 @@
       "has_engraving": false,
       "is_exclusive": true,
       "is_new_entry": false,
-      "rank_delta": -11.0
+      "rank_delta": -11,
+      "price_numeric": 32000,
+      "usp": "단독구성",
+      "rank_comparison_status": "compared"
     },
     {
       "category": "팬시/문구/취미 (IP핵심)",
@@ -2932,7 +3418,10 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": -34.0
+      "rank_delta": -34,
+      "price_numeric": 34000,
+      "usp": "일반구성",
+      "rank_comparison_status": "compared"
     },
     {
       "category": "팬시/문구/취미 (IP핵심)",
@@ -2950,7 +3439,10 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": 8.0
+      "rank_delta": 8,
+      "price_numeric": 12900,
+      "usp": "일반구성",
+      "rank_comparison_status": "compared"
     },
     {
       "category": "팬시/문구/취미 (IP핵심)",
@@ -2968,7 +3460,10 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": -9.0
+      "rank_delta": -9,
+      "price_numeric": 9200,
+      "usp": "일반구성",
+      "rank_comparison_status": "compared"
     },
     {
       "category": "팬시/문구/취미 (IP핵심)",
@@ -2986,7 +3481,10 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": -9.0
+      "rank_delta": -9,
+      "price_numeric": 13600,
+      "usp": "일반구성",
+      "rank_comparison_status": "compared"
     },
     {
       "category": "팬시/문구/취미 (IP핵심)",
@@ -3004,7 +3502,10 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": -9.0
+      "rank_delta": -9,
+      "price_numeric": 13000,
+      "usp": "일반구성",
+      "rank_comparison_status": "compared"
     },
     {
       "category": "팬시/문구/취미 (IP핵심)",
@@ -3022,7 +3523,10 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": true,
-      "rank_delta": ""
+      "rank_delta": "NEW",
+      "price_numeric": 32000,
+      "usp": "일반구성",
+      "rank_comparison_status": "new"
     },
     {
       "category": "팬시/문구/취미 (IP핵심)",
@@ -3040,7 +3544,10 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": -4.0
+      "rank_delta": -4,
+      "price_numeric": 4500,
+      "usp": "일반구성",
+      "rank_comparison_status": "compared"
     },
     {
       "category": "팬시/문구/취미 (IP핵심)",
@@ -3058,7 +3565,10 @@
       "has_engraving": false,
       "is_exclusive": true,
       "is_new_entry": true,
-      "rank_delta": ""
+      "rank_delta": "NEW",
+      "price_numeric": 6900,
+      "usp": "단독구성",
+      "rank_comparison_status": "new"
     },
     {
       "category": "팬시/문구/취미 (IP핵심)",
@@ -3076,7 +3586,10 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": true,
-      "rank_delta": ""
+      "rank_delta": "NEW",
+      "price_numeric": 72000,
+      "usp": "일반구성",
+      "rank_comparison_status": "new"
     },
     {
       "category": "팬시/문구/취미 (IP핵심)",
@@ -3094,7 +3607,10 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": 8.0
+      "rank_delta": 8,
+      "price_numeric": 9800,
+      "usp": "일반구성",
+      "rank_comparison_status": "compared"
     },
     {
       "category": "팬시/문구/취미 (IP핵심)",
@@ -3112,7 +3628,10 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": -13.0
+      "rank_delta": -13,
+      "price_numeric": 13800,
+      "usp": "일반구성",
+      "rank_comparison_status": "compared"
     },
     {
       "category": "팬시/문구/취미 (IP핵심)",
@@ -3130,7 +3649,10 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": true,
-      "rank_delta": ""
+      "rank_delta": "NEW",
+      "price_numeric": 6300,
+      "usp": "일반구성",
+      "rank_comparison_status": "new"
     },
     {
       "category": "팬시/문구/취미 (IP핵심)",
@@ -3148,7 +3670,10 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": -21.0
+      "rank_delta": -21,
+      "price_numeric": 8500,
+      "usp": "일반구성",
+      "rank_comparison_status": "compared"
     },
     {
       "category": "팬시/문구/취미 (IP핵심)",
@@ -3166,7 +3691,10 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": 1.0
+      "rank_delta": 1,
+      "price_numeric": 7990,
+      "usp": "일반구성",
+      "rank_comparison_status": "compared"
     },
     {
       "category": "팬시/문구/취미 (IP핵심)",
@@ -3184,7 +3712,10 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": 8.0
+      "rank_delta": 8,
+      "price_numeric": 15000,
+      "usp": "일반구성",
+      "rank_comparison_status": "compared"
     },
     {
       "category": "팬시/문구/취미 (IP핵심)",
@@ -3202,7 +3733,10 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": 22.0
+      "rank_delta": 22,
+      "price_numeric": 12800,
+      "usp": "일반구성",
+      "rank_comparison_status": "compared"
     },
     {
       "category": "팬시/문구/취미 (IP핵심)",
@@ -3220,7 +3754,10 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": 16.0
+      "rank_delta": 16,
+      "price_numeric": 29900,
+      "usp": "일반구성",
+      "rank_comparison_status": "compared"
     },
     {
       "category": "팬시/문구/취미 (IP핵심)",
@@ -3238,7 +3775,10 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": true,
-      "rank_delta": ""
+      "rank_delta": "NEW",
+      "price_numeric": 29000,
+      "usp": "일반구성",
+      "rank_comparison_status": "new"
     },
     {
       "category": "팬시/문구/취미 (IP핵심)",
@@ -3256,7 +3796,10 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": -19.0
+      "rank_delta": -19,
+      "price_numeric": 17900,
+      "usp": "일반구성",
+      "rank_comparison_status": "compared"
     },
     {
       "category": "팬시/문구/취미 (IP핵심)",
@@ -3274,7 +3817,10 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": -45.0
+      "rank_delta": -45,
+      "price_numeric": 16900,
+      "usp": "일반구성",
+      "rank_comparison_status": "compared"
     },
     {
       "category": "팬시/문구/취미 (IP핵심)",
@@ -3292,7 +3838,10 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": true,
-      "rank_delta": ""
+      "rank_delta": "NEW",
+      "price_numeric": 7900,
+      "usp": "일반구성",
+      "rank_comparison_status": "new"
     },
     {
       "category": "팬시/문구/취미 (IP핵심)",
@@ -3310,7 +3859,10 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": -18.0
+      "rank_delta": -18,
+      "price_numeric": 11500,
+      "usp": "일반구성",
+      "rank_comparison_status": "compared"
     },
     {
       "category": "팬시/문구/취미 (IP핵심)",
@@ -3328,7 +3880,10 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": true,
-      "rank_delta": ""
+      "rank_delta": "NEW",
+      "price_numeric": 6700,
+      "usp": "일반구성",
+      "rank_comparison_status": "new"
     },
     {
       "category": "팬시/문구/취미 (IP핵심)",
@@ -3346,7 +3901,10 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": true,
-      "rank_delta": ""
+      "rank_delta": "NEW",
+      "price_numeric": 12900,
+      "usp": "일반구성",
+      "rank_comparison_status": "new"
     },
     {
       "category": "팬시/문구/취미 (IP핵심)",
@@ -3364,7 +3922,10 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": 4.0
+      "rank_delta": 4,
+      "price_numeric": 7900,
+      "usp": "일반구성",
+      "rank_comparison_status": "compared"
     },
     {
       "category": "팬시/문구/취미 (IP핵심)",
@@ -3382,7 +3943,10 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": true,
-      "rank_delta": ""
+      "rank_delta": "NEW",
+      "price_numeric": 13900,
+      "usp": "일반구성",
+      "rank_comparison_status": "new"
     },
     {
       "category": "팬시/문구/취미 (IP핵심)",
@@ -3400,7 +3964,10 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": -22.0
+      "rank_delta": -22,
+      "price_numeric": 18700,
+      "usp": "일반구성",
+      "rank_comparison_status": "compared"
     },
     {
       "category": "팬시/문구/취미 (IP핵심)",
@@ -3418,7 +3985,10 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": true,
-      "rank_delta": ""
+      "rank_delta": "NEW",
+      "price_numeric": 9000,
+      "usp": "일반구성",
+      "rank_comparison_status": "new"
     },
     {
       "category": "팬시/문구/취미 (IP핵심)",
@@ -3436,7 +4006,10 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": true,
-      "rank_delta": ""
+      "rank_delta": "NEW",
+      "price_numeric": 7600,
+      "usp": "일반구성",
+      "rank_comparison_status": "new"
     },
     {
       "category": "팬시/문구/취미 (IP핵심)",
@@ -3454,7 +4027,10 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": true,
-      "rank_delta": ""
+      "rank_delta": "NEW",
+      "price_numeric": 4900,
+      "usp": "일반구성",
+      "rank_comparison_status": "new"
     },
     {
       "category": "팬시/문구/취미 (IP핵심)",
@@ -3472,7 +4048,10 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": -24.0
+      "rank_delta": -24,
+      "price_numeric": 13000,
+      "usp": "일반구성",
+      "rank_comparison_status": "compared"
     },
     {
       "category": "팬시/문구/취미 (IP핵심)",
@@ -3490,7 +4069,10 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": true,
-      "rank_delta": ""
+      "rank_delta": "NEW",
+      "price_numeric": 13900,
+      "usp": "일반구성",
+      "rank_comparison_status": "new"
     },
     {
       "category": "팬시/문구/취미 (IP핵심)",
@@ -3508,7 +4090,10 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": true,
-      "rank_delta": ""
+      "rank_delta": "NEW",
+      "price_numeric": 17900,
+      "usp": "일반구성",
+      "rank_comparison_status": "new"
     },
     {
       "category": "팬시/문구/취미 (IP핵심)",
@@ -3526,7 +4111,10 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": -25.0
+      "rank_delta": -25,
+      "price_numeric": 12800,
+      "usp": "일반구성",
+      "rank_comparison_status": "compared"
     },
     {
       "category": "팬시/문구/취미 (IP핵심)",
@@ -3544,7 +4132,10 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": -5.0
+      "rank_delta": -5,
+      "price_numeric": 16500,
+      "usp": "일반구성",
+      "rank_comparison_status": "compared"
     },
     {
       "category": "팬시/문구/취미 (IP핵심)",
@@ -3562,7 +4153,10 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": -48.0
+      "rank_delta": -48,
+      "price_numeric": 12000,
+      "usp": "일반구성",
+      "rank_comparison_status": "compared"
     },
     {
       "category": "팬시/문구/취미 (IP핵심)",
@@ -3580,7 +4174,10 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": -18.0
+      "rank_delta": -18,
+      "price_numeric": 7900,
+      "usp": "일반구성",
+      "rank_comparison_status": "compared"
     },
     {
       "category": "팬시/문구/취미 (IP핵심)",
@@ -3598,7 +4195,10 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": -48.0
+      "rank_delta": -48,
+      "price_numeric": 16900,
+      "usp": "일반구성",
+      "rank_comparison_status": "compared"
     },
     {
       "category": "침구/패브릭",
@@ -3616,7 +4216,10 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": 0.0
+      "rank_delta": 0,
+      "price_numeric": 22900,
+      "usp": "일반구성",
+      "rank_comparison_status": "compared"
     },
     {
       "category": "침구/패브릭",
@@ -3634,7 +4237,10 @@
       "has_engraving": false,
       "is_exclusive": true,
       "is_new_entry": false,
-      "rank_delta": 0.0
+      "rank_delta": 0,
+      "price_numeric": 34800,
+      "usp": "단독구성",
+      "rank_comparison_status": "compared"
     },
     {
       "category": "침구/패브릭",
@@ -3652,7 +4258,10 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": 0.0
+      "rank_delta": 0,
+      "price_numeric": 17800,
+      "usp": "일반구성",
+      "rank_comparison_status": "compared"
     },
     {
       "category": "침구/패브릭",
@@ -3670,7 +4279,10 @@
       "has_engraving": false,
       "is_exclusive": true,
       "is_new_entry": false,
-      "rank_delta": 0.0
+      "rank_delta": 0,
+      "price_numeric": 29800,
+      "usp": "단독구성",
+      "rank_comparison_status": "compared"
     },
     {
       "category": "침구/패브릭",
@@ -3688,7 +4300,10 @@
       "has_engraving": false,
       "is_exclusive": true,
       "is_new_entry": false,
-      "rank_delta": 3.0
+      "rank_delta": 3,
+      "price_numeric": 37900,
+      "usp": "단독구성",
+      "rank_comparison_status": "compared"
     },
     {
       "category": "침구/패브릭",
@@ -3706,7 +4321,10 @@
       "has_engraving": false,
       "is_exclusive": true,
       "is_new_entry": false,
-      "rank_delta": 3.0
+      "rank_delta": 3,
+      "price_numeric": 39900,
+      "usp": "단독구성",
+      "rank_comparison_status": "compared"
     },
     {
       "category": "침구/패브릭",
@@ -3724,7 +4342,10 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": -1.0
+      "rank_delta": -1,
+      "price_numeric": 18800,
+      "usp": "일반구성",
+      "rank_comparison_status": "compared"
     },
     {
       "category": "침구/패브릭",
@@ -3742,7 +4363,10 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": 5.0
+      "rank_delta": 5,
+      "price_numeric": 16900,
+      "usp": "일반구성",
+      "rank_comparison_status": "compared"
     },
     {
       "category": "침구/패브릭",
@@ -3760,7 +4384,10 @@
       "has_engraving": false,
       "is_exclusive": true,
       "is_new_entry": false,
-      "rank_delta": -4.0
+      "rank_delta": -4,
+      "price_numeric": 29900,
+      "usp": "단독구성",
+      "rank_comparison_status": "compared"
     },
     {
       "category": "침구/패브릭",
@@ -3778,7 +4405,10 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": -3.0
+      "rank_delta": -3,
+      "price_numeric": 17900,
+      "usp": "일반구성",
+      "rank_comparison_status": "compared"
     },
     {
       "category": "침구/패브릭",
@@ -3796,7 +4426,10 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": -1.0
+      "rank_delta": -1,
+      "price_numeric": 13800,
+      "usp": "일반구성",
+      "rank_comparison_status": "compared"
     },
     {
       "category": "침구/패브릭",
@@ -3814,7 +4447,10 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": 2.0
+      "rank_delta": 2,
+      "price_numeric": 29000,
+      "usp": "일반구성",
+      "rank_comparison_status": "compared"
     },
     {
       "category": "침구/패브릭",
@@ -3832,7 +4468,10 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": 3.0
+      "rank_delta": 3,
+      "price_numeric": 19900,
+      "usp": "일반구성",
+      "rank_comparison_status": "compared"
     },
     {
       "category": "침구/패브릭",
@@ -3850,7 +4489,10 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": 4.0
+      "rank_delta": 4,
+      "price_numeric": 19800,
+      "usp": "일반구성",
+      "rank_comparison_status": "compared"
     },
     {
       "category": "침구/패브릭",
@@ -3868,7 +4510,10 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": -3.0
+      "rank_delta": -3,
+      "price_numeric": 23000,
+      "usp": "일반구성",
+      "rank_comparison_status": "compared"
     },
     {
       "category": "침구/패브릭",
@@ -3886,7 +4531,10 @@
       "has_engraving": false,
       "is_exclusive": true,
       "is_new_entry": false,
-      "rank_delta": -1.0
+      "rank_delta": -1,
+      "price_numeric": 15900,
+      "usp": "단독구성",
+      "rank_comparison_status": "compared"
     },
     {
       "category": "침구/패브릭",
@@ -3904,7 +4552,10 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": 6.0
+      "rank_delta": 6,
+      "price_numeric": 13900,
+      "usp": "일반구성",
+      "rank_comparison_status": "compared"
     },
     {
       "category": "침구/패브릭",
@@ -3922,7 +4573,10 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": 2.0
+      "rank_delta": 2,
+      "price_numeric": 36900,
+      "usp": "일반구성",
+      "rank_comparison_status": "compared"
     },
     {
       "category": "침구/패브릭",
@@ -3940,7 +4594,10 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": -8.0
+      "rank_delta": -8,
+      "price_numeric": 37000,
+      "usp": "일반구성",
+      "rank_comparison_status": "compared"
     },
     {
       "category": "침구/패브릭",
@@ -3958,7 +4615,10 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": 16.0
+      "rank_delta": 16,
+      "price_numeric": 24800,
+      "usp": "일반구성",
+      "rank_comparison_status": "compared"
     },
     {
       "category": "침구/패브릭",
@@ -3976,7 +4636,10 @@
       "has_engraving": false,
       "is_exclusive": true,
       "is_new_entry": false,
-      "rank_delta": 13.0
+      "rank_delta": 13,
+      "price_numeric": 15900,
+      "usp": "단독구성",
+      "rank_comparison_status": "compared"
     },
     {
       "category": "침구/패브릭",
@@ -3994,7 +4657,10 @@
       "has_engraving": false,
       "is_exclusive": true,
       "is_new_entry": false,
-      "rank_delta": 0.0
+      "rank_delta": 0,
+      "price_numeric": 42900,
+      "usp": "단독구성",
+      "rank_comparison_status": "compared"
     },
     {
       "category": "침구/패브릭",
@@ -4012,7 +4678,10 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": 14.0
+      "rank_delta": 14,
+      "price_numeric": 14900,
+      "usp": "일반구성",
+      "rank_comparison_status": "compared"
     },
     {
       "category": "침구/패브릭",
@@ -4030,7 +4699,10 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": -7.0
+      "rank_delta": -7,
+      "price_numeric": 32800,
+      "usp": "일반구성",
+      "rank_comparison_status": "compared"
     },
     {
       "category": "침구/패브릭",
@@ -4048,7 +4720,10 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": 2.0
+      "rank_delta": 2,
+      "price_numeric": 13900,
+      "usp": "일반구성",
+      "rank_comparison_status": "compared"
     },
     {
       "category": "침구/패브릭",
@@ -4066,7 +4741,10 @@
       "has_engraving": false,
       "is_exclusive": true,
       "is_new_entry": false,
-      "rank_delta": 5.0
+      "rank_delta": 5,
+      "price_numeric": 13900,
+      "usp": "단독구성",
+      "rank_comparison_status": "compared"
     },
     {
       "category": "침구/패브릭",
@@ -4084,7 +4762,10 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": 16.0
+      "rank_delta": 16,
+      "price_numeric": 15900,
+      "usp": "일반구성",
+      "rank_comparison_status": "compared"
     },
     {
       "category": "침구/패브릭",
@@ -4102,7 +4783,10 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": -3.0
+      "rank_delta": -3,
+      "price_numeric": 21800,
+      "usp": "일반구성",
+      "rank_comparison_status": "compared"
     },
     {
       "category": "침구/패브릭",
@@ -4120,7 +4804,10 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": 4.0
+      "rank_delta": 4,
+      "price_numeric": 29900,
+      "usp": "일반구성",
+      "rank_comparison_status": "compared"
     },
     {
       "category": "침구/패브릭",
@@ -4138,7 +4825,10 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": 17.0
+      "rank_delta": 17,
+      "price_numeric": 23800,
+      "usp": "일반구성",
+      "rank_comparison_status": "compared"
     },
     {
       "category": "침구/패브릭",
@@ -4156,7 +4846,10 @@
       "has_engraving": false,
       "is_exclusive": true,
       "is_new_entry": false,
-      "rank_delta": -12.0
+      "rank_delta": -12,
+      "price_numeric": 29900,
+      "usp": "단독구성",
+      "rank_comparison_status": "compared"
     },
     {
       "category": "침구/패브릭",
@@ -4174,7 +4867,10 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": -8.0
+      "rank_delta": -8,
+      "price_numeric": 9900,
+      "usp": "일반구성",
+      "rank_comparison_status": "compared"
     },
     {
       "category": "침구/패브릭",
@@ -4192,7 +4888,10 @@
       "has_engraving": false,
       "is_exclusive": true,
       "is_new_entry": false,
-      "rank_delta": -1.0
+      "rank_delta": -1,
+      "price_numeric": 29900,
+      "usp": "단독구성",
+      "rank_comparison_status": "compared"
     },
     {
       "category": "침구/패브릭",
@@ -4210,7 +4909,10 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": 1.0
+      "rank_delta": 1,
+      "price_numeric": 23900,
+      "usp": "일반구성",
+      "rank_comparison_status": "compared"
     },
     {
       "category": "침구/패브릭",
@@ -4228,7 +4930,10 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": 4.0
+      "rank_delta": 4,
+      "price_numeric": 9800,
+      "usp": "일반구성",
+      "rank_comparison_status": "compared"
     },
     {
       "category": "침구/패브릭",
@@ -4246,7 +4951,10 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": -15.0
+      "rank_delta": -15,
+      "price_numeric": 15900,
+      "usp": "일반구성",
+      "rank_comparison_status": "compared"
     },
     {
       "category": "침구/패브릭",
@@ -4264,7 +4972,10 @@
       "has_engraving": false,
       "is_exclusive": true,
       "is_new_entry": false,
-      "rank_delta": -7.0
+      "rank_delta": -7,
+      "price_numeric": 29800,
+      "usp": "단독구성",
+      "rank_comparison_status": "compared"
     },
     {
       "category": "침구/패브릭",
@@ -4282,7 +4993,10 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": -12.0
+      "rank_delta": -12,
+      "price_numeric": 39000,
+      "usp": "일반구성",
+      "rank_comparison_status": "compared"
     },
     {
       "category": "침구/패브릭",
@@ -4300,7 +5014,10 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": -11.0
+      "rank_delta": -11,
+      "price_numeric": 19900,
+      "usp": "일반구성",
+      "rank_comparison_status": "compared"
     },
     {
       "category": "침구/패브릭",
@@ -4318,7 +5035,10 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": true,
-      "rank_delta": ""
+      "rank_delta": "NEW",
+      "price_numeric": 19900,
+      "usp": "일반구성",
+      "rank_comparison_status": "new"
     },
     {
       "category": "침구/패브릭",
@@ -4336,7 +5056,10 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": -12.0
+      "rank_delta": -12,
+      "price_numeric": 9900,
+      "usp": "일반구성",
+      "rank_comparison_status": "compared"
     },
     {
       "category": "침구/패브릭",
@@ -4354,7 +5077,10 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": -1.0
+      "rank_delta": -1,
+      "price_numeric": 29800,
+      "usp": "일반구성",
+      "rank_comparison_status": "compared"
     },
     {
       "category": "침구/패브릭",
@@ -4372,7 +5098,10 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": 9.0
+      "rank_delta": 9,
+      "price_numeric": 23800,
+      "usp": "일반구성",
+      "rank_comparison_status": "compared"
     },
     {
       "category": "침구/패브릭",
@@ -4390,7 +5119,10 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": 25.0
+      "rank_delta": 25,
+      "price_numeric": 15900,
+      "usp": "일반구성",
+      "rank_comparison_status": "compared"
     },
     {
       "category": "침구/패브릭",
@@ -4408,7 +5140,10 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": 4.0
+      "rank_delta": 4,
+      "price_numeric": 79000,
+      "usp": "선물포장",
+      "rank_comparison_status": "compared"
     },
     {
       "category": "침구/패브릭",
@@ -4426,7 +5161,10 @@
       "has_engraving": false,
       "is_exclusive": true,
       "is_new_entry": false,
-      "rank_delta": -6.0
+      "rank_delta": -6,
+      "price_numeric": 32000,
+      "usp": "단독구성",
+      "rank_comparison_status": "compared"
     },
     {
       "category": "침구/패브릭",
@@ -4444,7 +5182,10 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": -9.0
+      "rank_delta": -9,
+      "price_numeric": 16900,
+      "usp": "일반구성",
+      "rank_comparison_status": "compared"
     },
     {
       "category": "침구/패브릭",
@@ -4462,7 +5203,10 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": true,
-      "rank_delta": ""
+      "rank_delta": "NEW",
+      "price_numeric": 29900,
+      "usp": "일반구성",
+      "rank_comparison_status": "new"
     },
     {
       "category": "침구/패브릭",
@@ -4480,7 +5224,10 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": 12.0
+      "rank_delta": 12,
+      "price_numeric": 39000,
+      "usp": "일반구성",
+      "rank_comparison_status": "compared"
     },
     {
       "category": "침구/패브릭",
@@ -4498,7 +5245,10 @@
       "has_engraving": false,
       "is_exclusive": true,
       "is_new_entry": false,
-      "rank_delta": -6.0
+      "rank_delta": -6,
+      "price_numeric": 29900,
+      "usp": "단독구성",
+      "rank_comparison_status": "compared"
     },
     {
       "category": "침구/패브릭",
@@ -4516,7 +5266,10 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": 19.0
+      "rank_delta": 19,
+      "price_numeric": 39000,
+      "usp": "일반구성",
+      "rank_comparison_status": "compared"
     },
     {
       "category": "침구/패브릭",
@@ -4534,7 +5287,10 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": 13.0
+      "rank_delta": 13,
+      "price_numeric": 25000,
+      "usp": "일반구성",
+      "rank_comparison_status": "compared"
     },
     {
       "category": "침구/패브릭",
@@ -4552,7 +5308,10 @@
       "has_engraving": false,
       "is_exclusive": true,
       "is_new_entry": false,
-      "rank_delta": 20.0
+      "rank_delta": 20,
+      "price_numeric": 79050,
+      "usp": "단독구성",
+      "rank_comparison_status": "compared"
     },
     {
       "category": "침구/패브릭",
@@ -4570,7 +5329,10 @@
       "has_engraving": false,
       "is_exclusive": true,
       "is_new_entry": false,
-      "rank_delta": 4.0
+      "rank_delta": 4,
+      "price_numeric": 22800,
+      "usp": "일반구성",
+      "rank_comparison_status": "compared"
     },
     {
       "category": "침구/패브릭",
@@ -4588,7 +5350,10 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": 22.0
+      "rank_delta": 22,
+      "price_numeric": 22000,
+      "usp": "일반구성",
+      "rank_comparison_status": "compared"
     },
     {
       "category": "침구/패브릭",
@@ -4606,7 +5371,10 @@
       "has_engraving": false,
       "is_exclusive": true,
       "is_new_entry": false,
-      "rank_delta": 1.0
+      "rank_delta": 1,
+      "price_numeric": 15900,
+      "usp": "일반구성",
+      "rank_comparison_status": "compared"
     },
     {
       "category": "침구/패브릭",
@@ -4624,7 +5392,10 @@
       "has_engraving": false,
       "is_exclusive": true,
       "is_new_entry": false,
-      "rank_delta": -12.0
+      "rank_delta": -12,
+      "price_numeric": 27900,
+      "usp": "선물포장, 단독구성",
+      "rank_comparison_status": "compared"
     },
     {
       "category": "침구/패브릭",
@@ -4642,7 +5413,10 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": -3.0
+      "rank_delta": -3,
+      "price_numeric": 22000,
+      "usp": "일반구성",
+      "rank_comparison_status": "compared"
     },
     {
       "category": "침구/패브릭",
@@ -4660,7 +5434,10 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": 13.0
+      "rank_delta": 13,
+      "price_numeric": 25900,
+      "usp": "일반구성",
+      "rank_comparison_status": "compared"
     },
     {
       "category": "침구/패브릭",
@@ -4678,7 +5455,10 @@
       "has_engraving": false,
       "is_exclusive": true,
       "is_new_entry": false,
-      "rank_delta": 20.0
+      "rank_delta": 20,
+      "price_numeric": 21800,
+      "usp": "단독구성",
+      "rank_comparison_status": "compared"
     },
     {
       "category": "침구/패브릭",
@@ -4696,7 +5476,10 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": -5.0
+      "rank_delta": -5,
+      "price_numeric": 13900,
+      "usp": "일반구성",
+      "rank_comparison_status": "compared"
     },
     {
       "category": "침구/패브릭",
@@ -4714,7 +5497,10 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": true,
-      "rank_delta": ""
+      "rank_delta": "NEW",
+      "price_numeric": 26000,
+      "usp": "일반구성",
+      "rank_comparison_status": "new"
     },
     {
       "category": "침구/패브릭",
@@ -4732,7 +5518,10 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": 28.0
+      "rank_delta": 28,
+      "price_numeric": 25000,
+      "usp": "일반구성",
+      "rank_comparison_status": "compared"
     },
     {
       "category": "침구/패브릭",
@@ -4750,7 +5539,10 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": -16.0
+      "rank_delta": -16,
+      "price_numeric": 22800,
+      "usp": "일반구성",
+      "rank_comparison_status": "compared"
     },
     {
       "category": "침구/패브릭",
@@ -4768,7 +5560,10 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": true,
-      "rank_delta": ""
+      "rank_delta": "NEW",
+      "price_numeric": 19900,
+      "usp": "일반구성",
+      "rank_comparison_status": "new"
     },
     {
       "category": "침구/패브릭",
@@ -4786,7 +5581,10 @@
       "has_engraving": false,
       "is_exclusive": true,
       "is_new_entry": true,
-      "rank_delta": ""
+      "rank_delta": "NEW",
+      "price_numeric": 29900,
+      "usp": "단독구성",
+      "rank_comparison_status": "new"
     },
     {
       "category": "침구/패브릭",
@@ -4804,7 +5602,10 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": -21.0
+      "rank_delta": -21,
+      "price_numeric": 28900,
+      "usp": "일반구성",
+      "rank_comparison_status": "compared"
     },
     {
       "category": "침구/패브릭",
@@ -4822,7 +5623,10 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": 0.0
+      "rank_delta": 0,
+      "price_numeric": 24800,
+      "usp": "일반구성",
+      "rank_comparison_status": "compared"
     },
     {
       "category": "침구/패브릭",
@@ -4840,7 +5644,10 @@
       "has_engraving": false,
       "is_exclusive": true,
       "is_new_entry": true,
-      "rank_delta": ""
+      "rank_delta": "NEW",
+      "price_numeric": 29900,
+      "usp": "단독구성",
+      "rank_comparison_status": "new"
     },
     {
       "category": "침구/패브릭",
@@ -4858,7 +5665,10 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": -7.0
+      "rank_delta": -7,
+      "price_numeric": 33900,
+      "usp": "일반구성",
+      "rank_comparison_status": "compared"
     },
     {
       "category": "침구/패브릭",
@@ -4876,7 +5686,10 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": -5.0
+      "rank_delta": -5,
+      "price_numeric": 32000,
+      "usp": "일반구성",
+      "rank_comparison_status": "compared"
     },
     {
       "category": "침구/패브릭",
@@ -4894,7 +5707,10 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": 6.0
+      "rank_delta": 6,
+      "price_numeric": 22900,
+      "usp": "일반구성",
+      "rank_comparison_status": "compared"
     },
     {
       "category": "침구/패브릭",
@@ -4912,7 +5728,10 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": true,
-      "rank_delta": ""
+      "rank_delta": "NEW",
+      "price_numeric": 13900,
+      "usp": "일반구성",
+      "rank_comparison_status": "new"
     },
     {
       "category": "침구/패브릭",
@@ -4930,7 +5749,10 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": -21.0
+      "rank_delta": -21,
+      "price_numeric": 29900,
+      "usp": "일반구성",
+      "rank_comparison_status": "compared"
     },
     {
       "category": "침구/패브릭",
@@ -4948,7 +5770,10 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": -16.0
+      "rank_delta": -16,
+      "price_numeric": 27100,
+      "usp": "일반구성",
+      "rank_comparison_status": "compared"
     },
     {
       "category": "침구/패브릭",
@@ -4966,7 +5791,10 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": true,
-      "rank_delta": ""
+      "rank_delta": "NEW",
+      "price_numeric": 14900,
+      "usp": "일반구성",
+      "rank_comparison_status": "new"
     },
     {
       "category": "침구/패브릭",
@@ -4984,7 +5812,10 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": true,
-      "rank_delta": ""
+      "rank_delta": "NEW",
+      "price_numeric": 21000,
+      "usp": "일반구성",
+      "rank_comparison_status": "new"
     },
     {
       "category": "침구/패브릭",
@@ -5002,7 +5833,10 @@
       "has_engraving": false,
       "is_exclusive": true,
       "is_new_entry": true,
-      "rank_delta": ""
+      "rank_delta": "NEW",
+      "price_numeric": 23900,
+      "usp": "일반구성",
+      "rank_comparison_status": "new"
     },
     {
       "category": "침구/패브릭",
@@ -5020,7 +5854,10 @@
       "has_engraving": false,
       "is_exclusive": true,
       "is_new_entry": false,
-      "rank_delta": -29.0
+      "rank_delta": -29,
+      "price_numeric": 39990,
+      "usp": "단독구성",
+      "rank_comparison_status": "compared"
     },
     {
       "category": "침구/패브릭",
@@ -5038,7 +5875,10 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": 1.0
+      "rank_delta": 1,
+      "price_numeric": 13900,
+      "usp": "일반구성",
+      "rank_comparison_status": "compared"
     },
     {
       "category": "침구/패브릭",
@@ -5056,7 +5896,10 @@
       "has_engraving": false,
       "is_exclusive": true,
       "is_new_entry": true,
-      "rank_delta": ""
+      "rank_delta": "NEW",
+      "price_numeric": 39900,
+      "usp": "단독구성",
+      "rank_comparison_status": "new"
     },
     {
       "category": "침구/패브릭",
@@ -5074,7 +5917,10 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": true,
-      "rank_delta": ""
+      "rank_delta": "NEW",
+      "price_numeric": 15900,
+      "usp": "일반구성",
+      "rank_comparison_status": "new"
     },
     {
       "category": "침구/패브릭",
@@ -5092,7 +5938,10 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": true,
-      "rank_delta": ""
+      "rank_delta": "NEW",
+      "price_numeric": 19800,
+      "usp": "일반구성",
+      "rank_comparison_status": "new"
     },
     {
       "category": "침구/패브릭",
@@ -5110,7 +5959,10 @@
       "has_engraving": false,
       "is_exclusive": true,
       "is_new_entry": false,
-      "rank_delta": 8.0
+      "rank_delta": 8,
+      "price_numeric": 23900,
+      "usp": "일반구성",
+      "rank_comparison_status": "compared"
     },
     {
       "category": "침구/패브릭",
@@ -5128,7 +5980,10 @@
       "has_engraving": false,
       "is_exclusive": true,
       "is_new_entry": false,
-      "rank_delta": 4.0
+      "rank_delta": 4,
+      "price_numeric": 9900,
+      "usp": "단독구성",
+      "rank_comparison_status": "compared"
     },
     {
       "category": "침구/패브릭",
@@ -5146,7 +6001,10 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": -3.0
+      "rank_delta": -3,
+      "price_numeric": 32900,
+      "usp": "일반구성",
+      "rank_comparison_status": "compared"
     },
     {
       "category": "침구/패브릭",
@@ -5164,7 +6022,10 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": true,
-      "rank_delta": ""
+      "rank_delta": "NEW",
+      "price_numeric": 26500,
+      "usp": "일반구성",
+      "rank_comparison_status": "new"
     },
     {
       "category": "침구/패브릭",
@@ -5182,7 +6043,10 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": true,
-      "rank_delta": ""
+      "rank_delta": "NEW",
+      "price_numeric": 15800,
+      "usp": "일반구성",
+      "rank_comparison_status": "new"
     },
     {
       "category": "침구/패브릭",
@@ -5200,7 +6064,10 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": true,
-      "rank_delta": ""
+      "rank_delta": "NEW",
+      "price_numeric": 6900,
+      "usp": "일반구성",
+      "rank_comparison_status": "new"
     },
     {
       "category": "침구/패브릭",
@@ -5218,7 +6085,10 @@
       "has_engraving": false,
       "is_exclusive": true,
       "is_new_entry": false,
-      "rank_delta": -5.0
+      "rank_delta": -5,
+      "price_numeric": 22900,
+      "usp": "단독구성",
+      "rank_comparison_status": "compared"
     },
     {
       "category": "침구/패브릭",
@@ -5236,7 +6106,10 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": true,
-      "rank_delta": ""
+      "rank_delta": "NEW",
+      "price_numeric": 19900,
+      "usp": "일반구성",
+      "rank_comparison_status": "new"
     },
     {
       "category": "침구/패브릭",
@@ -5254,7 +6127,10 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": -6.0
+      "rank_delta": -6,
+      "price_numeric": 17900,
+      "usp": "일반구성",
+      "rank_comparison_status": "compared"
     },
     {
       "category": "침구/패브릭",
@@ -5272,7 +6148,10 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": true,
-      "rank_delta": ""
+      "rank_delta": "NEW",
+      "price_numeric": 28900,
+      "usp": "일반구성",
+      "rank_comparison_status": "new"
     },
     {
       "category": "침구/패브릭",
@@ -5290,7 +6169,10 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": true,
-      "rank_delta": ""
+      "rank_delta": "NEW",
+      "price_numeric": 18000,
+      "usp": "일반구성",
+      "rank_comparison_status": "new"
     },
     {
       "category": "침구/패브릭",
@@ -5308,7 +6190,10 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": true,
-      "rank_delta": ""
+      "rank_delta": "NEW",
+      "price_numeric": 15500,
+      "usp": "일반구성",
+      "rank_comparison_status": "new"
     },
     {
       "category": "침구/패브릭",
@@ -5326,7 +6211,10 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": true,
-      "rank_delta": ""
+      "rank_delta": "NEW",
+      "price_numeric": 18900,
+      "usp": "일반구성",
+      "rank_comparison_status": "new"
     },
     {
       "category": "침구/패브릭",
@@ -5344,7 +6232,10 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": -2.0
+      "rank_delta": -2,
+      "price_numeric": 14900,
+      "usp": "일반구성",
+      "rank_comparison_status": "compared"
     },
     {
       "category": "침구/패브릭",
@@ -5362,7 +6253,10 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": true,
-      "rank_delta": ""
+      "rank_delta": "NEW",
+      "price_numeric": 25900,
+      "usp": "일반구성",
+      "rank_comparison_status": "new"
     },
     {
       "category": "침구/패브릭",
@@ -5380,7 +6274,10 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": -48.0
+      "rank_delta": -48,
+      "price_numeric": 14900,
+      "usp": "일반구성",
+      "rank_comparison_status": "compared"
     },
     {
       "category": "침구/패브릭",
@@ -5398,7 +6295,10 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": -33.0
+      "rank_delta": -33,
+      "price_numeric": 9590,
+      "usp": "일반구성",
+      "rank_comparison_status": "compared"
     },
     {
       "category": "주방/식기",
@@ -5416,7 +6316,10 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": 0.0
+      "rank_delta": 0,
+      "price_numeric": 44100,
+      "usp": "일반구성",
+      "rank_comparison_status": "compared"
     },
     {
       "category": "주방/식기",
@@ -5434,7 +6337,10 @@
       "has_engraving": false,
       "is_exclusive": true,
       "is_new_entry": false,
-      "rank_delta": 0.0
+      "rank_delta": 0,
+      "price_numeric": 24500,
+      "usp": "단독구성",
+      "rank_comparison_status": "compared"
     },
     {
       "category": "주방/식기",
@@ -5452,7 +6358,10 @@
       "has_engraving": false,
       "is_exclusive": true,
       "is_new_entry": false,
-      "rank_delta": 0.0
+      "rank_delta": 0,
+      "price_numeric": 39000,
+      "usp": "단독구성",
+      "rank_comparison_status": "compared"
     },
     {
       "category": "주방/식기",
@@ -5470,7 +6379,10 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": 0.0
+      "rank_delta": 0,
+      "price_numeric": 37000,
+      "usp": "일반구성",
+      "rank_comparison_status": "compared"
     },
     {
       "category": "주방/식기",
@@ -5488,7 +6400,10 @@
       "has_engraving": false,
       "is_exclusive": true,
       "is_new_entry": false,
-      "rank_delta": 2.0
+      "rank_delta": 2,
+      "price_numeric": 16800,
+      "usp": "단독구성",
+      "rank_comparison_status": "compared"
     },
     {
       "category": "주방/식기",
@@ -5506,7 +6421,10 @@
       "has_engraving": false,
       "is_exclusive": true,
       "is_new_entry": true,
-      "rank_delta": ""
+      "rank_delta": "NEW",
+      "price_numeric": 27900,
+      "usp": "선물포장, 단독구성",
+      "rank_comparison_status": "new"
     },
     {
       "category": "주방/식기",
@@ -5524,7 +6442,10 @@
       "has_engraving": false,
       "is_exclusive": true,
       "is_new_entry": false,
-      "rank_delta": -1.0
+      "rank_delta": -1,
+      "price_numeric": 46000,
+      "usp": "단독구성",
+      "rank_comparison_status": "compared"
     },
     {
       "category": "주방/식기",
@@ -5542,7 +6463,10 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": -3.0
+      "rank_delta": -3,
+      "price_numeric": 35000,
+      "usp": "일반구성",
+      "rank_comparison_status": "compared"
     },
     {
       "category": "주방/식기",
@@ -5560,7 +6484,10 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": -1.0
+      "rank_delta": -1,
+      "price_numeric": 46000,
+      "usp": "일반구성",
+      "rank_comparison_status": "compared"
     },
     {
       "category": "주방/식기",
@@ -5578,7 +6505,10 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": 0.0
+      "rank_delta": 0,
+      "price_numeric": 9800,
+      "usp": "일반구성",
+      "rank_comparison_status": "compared"
     },
     {
       "category": "주방/식기",
@@ -5596,7 +6526,10 @@
       "has_engraving": false,
       "is_exclusive": true,
       "is_new_entry": false,
-      "rank_delta": 2.0
+      "rank_delta": 2,
+      "price_numeric": 57900,
+      "usp": "단독구성",
+      "rank_comparison_status": "compared"
     },
     {
       "category": "주방/식기",
@@ -5614,7 +6547,10 @@
       "has_engraving": false,
       "is_exclusive": true,
       "is_new_entry": false,
-      "rank_delta": 2.0
+      "rank_delta": 2,
+      "price_numeric": 36500,
+      "usp": "단독구성",
+      "rank_comparison_status": "compared"
     },
     {
       "category": "주방/식기",
@@ -5632,7 +6568,10 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": 9.0
+      "rank_delta": 9,
+      "price_numeric": 52000,
+      "usp": "일반구성",
+      "rank_comparison_status": "compared"
     },
     {
       "category": "주방/식기",
@@ -5650,7 +6589,10 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": 1.0
+      "rank_delta": 1,
+      "price_numeric": 44000,
+      "usp": "일반구성",
+      "rank_comparison_status": "compared"
     },
     {
       "category": "주방/식기",
@@ -5668,7 +6610,10 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": 2.0
+      "rank_delta": 2,
+      "price_numeric": 42000,
+      "usp": "일반구성",
+      "rank_comparison_status": "compared"
     },
     {
       "category": "주방/식기",
@@ -5686,7 +6631,10 @@
       "has_engraving": false,
       "is_exclusive": true,
       "is_new_entry": false,
-      "rank_delta": -7.0
+      "rank_delta": -7,
+      "price_numeric": 51000,
+      "usp": "단독구성",
+      "rank_comparison_status": "compared"
     },
     {
       "category": "주방/식기",
@@ -5704,7 +6652,10 @@
       "has_engraving": false,
       "is_exclusive": true,
       "is_new_entry": false,
-      "rank_delta": -1.0
+      "rank_delta": -1,
+      "price_numeric": 36000,
+      "usp": "단독구성",
+      "rank_comparison_status": "compared"
     },
     {
       "category": "주방/식기",
@@ -5722,7 +6673,10 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": -6.0
+      "rank_delta": -6,
+      "price_numeric": 49000,
+      "usp": "일반구성",
+      "rank_comparison_status": "compared"
     },
     {
       "category": "주방/식기",
@@ -5740,7 +6694,10 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": 0.0
+      "rank_delta": 0,
+      "price_numeric": 13800,
+      "usp": "일반구성",
+      "rank_comparison_status": "compared"
     },
     {
       "category": "주방/식기",
@@ -5758,7 +6715,10 @@
       "has_engraving": false,
       "is_exclusive": true,
       "is_new_entry": false,
-      "rank_delta": -9.0
+      "rank_delta": -9,
+      "price_numeric": 34000,
+      "usp": "단독구성",
+      "rank_comparison_status": "compared"
     },
     {
       "category": "주방/식기",
@@ -5776,7 +6736,10 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": -3.0
+      "rank_delta": -3,
+      "price_numeric": 38000,
+      "usp": "일반구성",
+      "rank_comparison_status": "compared"
     },
     {
       "category": "주방/식기",
@@ -5794,7 +6757,10 @@
       "has_engraving": false,
       "is_exclusive": true,
       "is_new_entry": false,
-      "rank_delta": -1.0
+      "rank_delta": -1,
+      "price_numeric": 21800,
+      "usp": "단독구성",
+      "rank_comparison_status": "compared"
     },
     {
       "category": "주방/식기",
@@ -5812,7 +6778,10 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": -3.0
+      "rank_delta": -3,
+      "price_numeric": 48000,
+      "usp": "일반구성",
+      "rank_comparison_status": "compared"
     },
     {
       "category": "주방/식기",
@@ -5830,7 +6799,10 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": 0.0
+      "rank_delta": 0,
+      "price_numeric": 54000,
+      "usp": "일반구성",
+      "rank_comparison_status": "compared"
     },
     {
       "category": "주방/식기",
@@ -5848,7 +6820,10 @@
       "has_engraving": true,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": 0.0
+      "rank_delta": 0,
+      "price_numeric": 35000,
+      "usp": "각인/자수",
+      "rank_comparison_status": "compared"
     },
     {
       "category": "주방/식기",
@@ -5866,7 +6841,10 @@
       "has_engraving": false,
       "is_exclusive": true,
       "is_new_entry": false,
-      "rank_delta": 6.0
+      "rank_delta": 6,
+      "price_numeric": 24400,
+      "usp": "단독구성",
+      "rank_comparison_status": "compared"
     },
     {
       "category": "주방/식기",
@@ -5884,7 +6862,10 @@
       "has_engraving": false,
       "is_exclusive": true,
       "is_new_entry": false,
-      "rank_delta": 0.0
+      "rank_delta": 0,
+      "price_numeric": 45000,
+      "usp": "단독구성",
+      "rank_comparison_status": "compared"
     },
     {
       "category": "주방/식기",
@@ -5902,7 +6883,10 @@
       "has_engraving": false,
       "is_exclusive": true,
       "is_new_entry": false,
-      "rank_delta": 15.0
+      "rank_delta": 15,
+      "price_numeric": 50000,
+      "usp": "단독구성",
+      "rank_comparison_status": "compared"
     },
     {
       "category": "주방/식기",
@@ -5920,7 +6904,10 @@
       "has_engraving": false,
       "is_exclusive": true,
       "is_new_entry": false,
-      "rank_delta": 2.0
+      "rank_delta": 2,
+      "price_numeric": 35800,
+      "usp": "단독구성",
+      "rank_comparison_status": "compared"
     },
     {
       "category": "주방/식기",
@@ -5938,7 +6925,10 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": -2.0
+      "rank_delta": -2,
+      "price_numeric": 32000,
+      "usp": "일반구성",
+      "rank_comparison_status": "compared"
     },
     {
       "category": "주방/식기",
@@ -5956,7 +6946,10 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": -1.0
+      "rank_delta": -1,
+      "price_numeric": 44100,
+      "usp": "일반구성",
+      "rank_comparison_status": "compared"
     },
     {
       "category": "주방/식기",
@@ -5974,7 +6967,10 @@
       "has_engraving": false,
       "is_exclusive": true,
       "is_new_entry": false,
-      "rank_delta": 13.0
+      "rank_delta": 13,
+      "price_numeric": 28800,
+      "usp": "단독구성",
+      "rank_comparison_status": "compared"
     },
     {
       "category": "주방/식기",
@@ -5992,7 +6988,10 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": 3.0
+      "rank_delta": 3,
+      "price_numeric": 46000,
+      "usp": "일반구성",
+      "rank_comparison_status": "compared"
     },
     {
       "category": "주방/식기",
@@ -6010,7 +7009,10 @@
       "has_engraving": false,
       "is_exclusive": true,
       "is_new_entry": false,
-      "rank_delta": -8.0
+      "rank_delta": -8,
+      "price_numeric": 14900,
+      "usp": "단독구성",
+      "rank_comparison_status": "compared"
     },
     {
       "category": "주방/식기",
@@ -6028,7 +7030,10 @@
       "has_engraving": false,
       "is_exclusive": true,
       "is_new_entry": false,
-      "rank_delta": 4.0
+      "rank_delta": 4,
+      "price_numeric": 29900,
+      "usp": "단독구성",
+      "rank_comparison_status": "compared"
     },
     {
       "category": "주방/식기",
@@ -6046,7 +7051,10 @@
       "has_engraving": false,
       "is_exclusive": true,
       "is_new_entry": false,
-      "rank_delta": 10.0
+      "rank_delta": 10,
+      "price_numeric": 25900,
+      "usp": "단독구성",
+      "rank_comparison_status": "compared"
     },
     {
       "category": "주방/식기",
@@ -6064,7 +7072,10 @@
       "has_engraving": false,
       "is_exclusive": true,
       "is_new_entry": false,
-      "rank_delta": -14.0
+      "rank_delta": -14,
+      "price_numeric": 15900,
+      "usp": "단독구성",
+      "rank_comparison_status": "compared"
     },
     {
       "category": "주방/식기",
@@ -6082,7 +7093,10 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": -5.0
+      "rank_delta": -5,
+      "price_numeric": 44000,
+      "usp": "일반구성",
+      "rank_comparison_status": "compared"
     },
     {
       "category": "주방/식기",
@@ -6100,7 +7114,10 @@
       "has_engraving": false,
       "is_exclusive": true,
       "is_new_entry": false,
-      "rank_delta": -2.0
+      "rank_delta": -2,
+      "price_numeric": 12900,
+      "usp": "단독구성",
+      "rank_comparison_status": "compared"
     },
     {
       "category": "주방/식기",
@@ -6118,7 +7135,10 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": 1.0
+      "rank_delta": 1,
+      "price_numeric": 16800,
+      "usp": "일반구성",
+      "rank_comparison_status": "compared"
     },
     {
       "category": "주방/식기",
@@ -6136,7 +7156,10 @@
       "has_engraving": false,
       "is_exclusive": true,
       "is_new_entry": false,
-      "rank_delta": 3.0
+      "rank_delta": 3,
+      "price_numeric": 34000,
+      "usp": "단독구성",
+      "rank_comparison_status": "compared"
     },
     {
       "category": "주방/식기",
@@ -6154,7 +7177,10 @@
       "has_engraving": false,
       "is_exclusive": true,
       "is_new_entry": false,
-      "rank_delta": -8.0
+      "rank_delta": -8,
+      "price_numeric": 29800,
+      "usp": "단독구성",
+      "rank_comparison_status": "compared"
     },
     {
       "category": "주방/식기",
@@ -6172,7 +7198,10 @@
       "has_engraving": false,
       "is_exclusive": true,
       "is_new_entry": false,
-      "rank_delta": -14.0
+      "rank_delta": -14,
+      "price_numeric": 20400,
+      "usp": "단독구성",
+      "rank_comparison_status": "compared"
     },
     {
       "category": "주방/식기",
@@ -6190,7 +7219,10 @@
       "has_engraving": false,
       "is_exclusive": true,
       "is_new_entry": false,
-      "rank_delta": 5.0
+      "rank_delta": 5,
+      "price_numeric": 24900,
+      "usp": "단독구성",
+      "rank_comparison_status": "compared"
     },
     {
       "category": "주방/식기",
@@ -6208,7 +7240,10 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": 7.0
+      "rank_delta": 7,
+      "price_numeric": 16900,
+      "usp": "일반구성",
+      "rank_comparison_status": "compared"
     },
     {
       "category": "주방/식기",
@@ -6226,7 +7261,10 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": 12.0
+      "rank_delta": 12,
+      "price_numeric": 9900,
+      "usp": "일반구성",
+      "rank_comparison_status": "compared"
     },
     {
       "category": "주방/식기",
@@ -6244,7 +7282,10 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": 0.0
+      "rank_delta": 0,
+      "price_numeric": 27000,
+      "usp": "일반구성",
+      "rank_comparison_status": "compared"
     },
     {
       "category": "주방/식기",
@@ -6262,7 +7303,10 @@
       "has_engraving": false,
       "is_exclusive": true,
       "is_new_entry": false,
-      "rank_delta": 22.0
+      "rank_delta": 22,
+      "price_numeric": 38000,
+      "usp": "단독구성",
+      "rank_comparison_status": "compared"
     },
     {
       "category": "주방/식기",
@@ -6280,7 +7324,10 @@
       "has_engraving": false,
       "is_exclusive": true,
       "is_new_entry": false,
-      "rank_delta": -7.0
+      "rank_delta": -7,
+      "price_numeric": 43900,
+      "usp": "단독구성",
+      "rank_comparison_status": "compared"
     },
     {
       "category": "주방/식기",
@@ -6298,7 +7345,10 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": 0.0
+      "rank_delta": 0,
+      "price_numeric": 29500,
+      "usp": "일반구성",
+      "rank_comparison_status": "compared"
     },
     {
       "category": "주방/식기",
@@ -6316,7 +7366,10 @@
       "has_engraving": false,
       "is_exclusive": true,
       "is_new_entry": false,
-      "rank_delta": -13.0
+      "rank_delta": -13,
+      "price_numeric": 22800,
+      "usp": "단독구성",
+      "rank_comparison_status": "compared"
     },
     {
       "category": "주방/식기",
@@ -6334,7 +7387,10 @@
       "has_engraving": false,
       "is_exclusive": true,
       "is_new_entry": false,
-      "rank_delta": 2.0
+      "rank_delta": 2,
+      "price_numeric": 15800,
+      "usp": "단독구성",
+      "rank_comparison_status": "compared"
     },
     {
       "category": "주방/식기",
@@ -6352,7 +7408,10 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": 33.0
+      "rank_delta": 33,
+      "price_numeric": 9900,
+      "usp": "일반구성",
+      "rank_comparison_status": "compared"
     },
     {
       "category": "주방/식기",
@@ -6370,7 +7429,10 @@
       "has_engraving": false,
       "is_exclusive": true,
       "is_new_entry": false,
-      "rank_delta": 7.0
+      "rank_delta": 7,
+      "price_numeric": 56000,
+      "usp": "단독구성",
+      "rank_comparison_status": "compared"
     },
     {
       "category": "주방/식기",
@@ -6388,7 +7450,10 @@
       "has_engraving": false,
       "is_exclusive": true,
       "is_new_entry": false,
-      "rank_delta": 16.0
+      "rank_delta": 16,
+      "price_numeric": 15800,
+      "usp": "단독구성",
+      "rank_comparison_status": "compared"
     },
     {
       "category": "주방/식기",
@@ -6406,7 +7471,10 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": 1.0
+      "rank_delta": 1,
+      "price_numeric": 64000,
+      "usp": "일반구성",
+      "rank_comparison_status": "compared"
     },
     {
       "category": "주방/식기",
@@ -6424,7 +7492,10 @@
       "has_engraving": false,
       "is_exclusive": true,
       "is_new_entry": false,
-      "rank_delta": 6.0
+      "rank_delta": 6,
+      "price_numeric": 67200,
+      "usp": "단독구성",
+      "rank_comparison_status": "compared"
     },
     {
       "category": "주방/식기",
@@ -6442,7 +7513,10 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": -18.0
+      "rank_delta": -18,
+      "price_numeric": 19900,
+      "usp": "일반구성",
+      "rank_comparison_status": "compared"
     },
     {
       "category": "주방/식기",
@@ -6460,7 +7534,10 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": -3.0
+      "rank_delta": -3,
+      "price_numeric": 14900,
+      "usp": "일반구성",
+      "rank_comparison_status": "compared"
     },
     {
       "category": "주방/식기",
@@ -6478,7 +7555,10 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": -5.0
+      "rank_delta": -5,
+      "price_numeric": 47000,
+      "usp": "일반구성",
+      "rank_comparison_status": "compared"
     },
     {
       "category": "주방/식기",
@@ -6496,7 +7576,10 @@
       "has_engraving": false,
       "is_exclusive": true,
       "is_new_entry": false,
-      "rank_delta": -26.0
+      "rank_delta": -26,
+      "price_numeric": 54150,
+      "usp": "단독구성",
+      "rank_comparison_status": "compared"
     },
     {
       "category": "주방/식기",
@@ -6514,7 +7597,10 @@
       "has_engraving": false,
       "is_exclusive": true,
       "is_new_entry": false,
-      "rank_delta": -14.0
+      "rank_delta": -14,
+      "price_numeric": 53000,
+      "usp": "단독구성",
+      "rank_comparison_status": "compared"
     },
     {
       "category": "주방/식기",
@@ -6532,7 +7618,10 @@
       "has_engraving": false,
       "is_exclusive": true,
       "is_new_entry": false,
-      "rank_delta": -4.0
+      "rank_delta": -4,
+      "price_numeric": 14800,
+      "usp": "단독구성",
+      "rank_comparison_status": "compared"
     },
     {
       "category": "주방/식기",
@@ -6550,7 +7639,10 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": 9.0
+      "rank_delta": 9,
+      "price_numeric": 35500,
+      "usp": "일반구성",
+      "rank_comparison_status": "compared"
     },
     {
       "category": "주방/식기",
@@ -6568,7 +7660,10 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": 17.0
+      "rank_delta": 17,
+      "price_numeric": 39900,
+      "usp": "일반구성",
+      "rank_comparison_status": "compared"
     },
     {
       "category": "주방/식기",
@@ -6586,7 +7681,10 @@
       "has_engraving": true,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": 14.0
+      "rank_delta": 14,
+      "price_numeric": 39000,
+      "usp": "각인/자수",
+      "rank_comparison_status": "compared"
     },
     {
       "category": "주방/식기",
@@ -6604,7 +7702,10 @@
       "has_engraving": false,
       "is_exclusive": true,
       "is_new_entry": true,
-      "rank_delta": ""
+      "rank_delta": "NEW",
+      "price_numeric": 29800,
+      "usp": "단독구성",
+      "rank_comparison_status": "new"
     },
     {
       "category": "주방/식기",
@@ -6622,7 +7723,10 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": 6.0
+      "rank_delta": 6,
+      "price_numeric": 28000,
+      "usp": "일반구성",
+      "rank_comparison_status": "compared"
     },
     {
       "category": "주방/식기",
@@ -6640,7 +7744,10 @@
       "has_engraving": false,
       "is_exclusive": true,
       "is_new_entry": false,
-      "rank_delta": 8.0
+      "rank_delta": 8,
+      "price_numeric": 19900,
+      "usp": "단독구성",
+      "rank_comparison_status": "compared"
     },
     {
       "category": "주방/식기",
@@ -6658,7 +7765,10 @@
       "has_engraving": false,
       "is_exclusive": true,
       "is_new_entry": false,
-      "rank_delta": 27.0
+      "rank_delta": 27,
+      "price_numeric": 40800,
+      "usp": "단독구성",
+      "rank_comparison_status": "compared"
     },
     {
       "category": "주방/식기",
@@ -6676,7 +7786,10 @@
       "has_engraving": false,
       "is_exclusive": true,
       "is_new_entry": false,
-      "rank_delta": 5.0
+      "rank_delta": 5,
+      "price_numeric": 69000,
+      "usp": "단독구성",
+      "rank_comparison_status": "compared"
     },
     {
       "category": "주방/식기",
@@ -6694,7 +7807,10 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": 24.0
+      "rank_delta": 24,
+      "price_numeric": 39000,
+      "usp": "일반구성",
+      "rank_comparison_status": "compared"
     },
     {
       "category": "주방/식기",
@@ -6712,7 +7828,10 @@
       "has_engraving": false,
       "is_exclusive": true,
       "is_new_entry": false,
-      "rank_delta": -6.0
+      "rank_delta": -6,
+      "price_numeric": 39500,
+      "usp": "단독구성",
+      "rank_comparison_status": "compared"
     },
     {
       "category": "주방/식기",
@@ -6730,7 +7849,10 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": -14.0
+      "rank_delta": -14,
+      "price_numeric": 32000,
+      "usp": "일반구성",
+      "rank_comparison_status": "compared"
     },
     {
       "category": "주방/식기",
@@ -6748,7 +7870,10 @@
       "has_engraving": false,
       "is_exclusive": true,
       "is_new_entry": false,
-      "rank_delta": -22.0
+      "rank_delta": -22,
+      "price_numeric": 48900,
+      "usp": "단독구성",
+      "rank_comparison_status": "compared"
     },
     {
       "category": "주방/식기",
@@ -6766,7 +7891,10 @@
       "has_engraving": false,
       "is_exclusive": true,
       "is_new_entry": true,
-      "rank_delta": ""
+      "rank_delta": "NEW",
+      "price_numeric": 24800,
+      "usp": "단독구성",
+      "rank_comparison_status": "new"
     },
     {
       "category": "주방/식기",
@@ -6784,7 +7912,10 @@
       "has_engraving": false,
       "is_exclusive": true,
       "is_new_entry": false,
-      "rank_delta": 13.0
+      "rank_delta": 13,
+      "price_numeric": 18000,
+      "usp": "단독구성",
+      "rank_comparison_status": "compared"
     },
     {
       "category": "주방/식기",
@@ -6802,7 +7933,10 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": -6.0
+      "rank_delta": -6,
+      "price_numeric": 31500,
+      "usp": "일반구성",
+      "rank_comparison_status": "compared"
     },
     {
       "category": "주방/식기",
@@ -6820,7 +7954,10 @@
       "has_engraving": false,
       "is_exclusive": true,
       "is_new_entry": false,
-      "rank_delta": -4.0
+      "rank_delta": -4,
+      "price_numeric": 25000,
+      "usp": "단독구성",
+      "rank_comparison_status": "compared"
     },
     {
       "category": "주방/식기",
@@ -6838,7 +7975,10 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": -1.0
+      "rank_delta": -1,
+      "price_numeric": 30000,
+      "usp": "일반구성",
+      "rank_comparison_status": "compared"
     },
     {
       "category": "주방/식기",
@@ -6856,7 +7996,10 @@
       "has_engraving": false,
       "is_exclusive": true,
       "is_new_entry": true,
-      "rank_delta": ""
+      "rank_delta": "NEW",
+      "price_numeric": 26100,
+      "usp": "단독구성",
+      "rank_comparison_status": "new"
     },
     {
       "category": "주방/식기",
@@ -6874,7 +8017,10 @@
       "has_engraving": false,
       "is_exclusive": true,
       "is_new_entry": true,
-      "rank_delta": ""
+      "rank_delta": "NEW",
+      "price_numeric": 25000,
+      "usp": "단독구성",
+      "rank_comparison_status": "new"
     },
     {
       "category": "주방/식기",
@@ -6892,7 +8038,10 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": -17.0
+      "rank_delta": -17,
+      "price_numeric": 39200,
+      "usp": "일반구성",
+      "rank_comparison_status": "compared"
     },
     {
       "category": "주방/식기",
@@ -6910,7 +8059,10 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": -20.0
+      "rank_delta": -20,
+      "price_numeric": 68000,
+      "usp": "일반구성",
+      "rank_comparison_status": "compared"
     },
     {
       "category": "주방/식기",
@@ -6928,7 +8080,10 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": -7.0
+      "rank_delta": -7,
+      "price_numeric": 44000,
+      "usp": "일반구성",
+      "rank_comparison_status": "compared"
     },
     {
       "category": "주방/식기",
@@ -6946,7 +8101,10 @@
       "has_engraving": false,
       "is_exclusive": true,
       "is_new_entry": false,
-      "rank_delta": -35.0
+      "rank_delta": -35,
+      "price_numeric": 18990,
+      "usp": "단독구성",
+      "rank_comparison_status": "compared"
     },
     {
       "category": "주방/식기",
@@ -6964,7 +8122,10 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": true,
-      "rank_delta": ""
+      "rank_delta": "NEW",
+      "price_numeric": 44000,
+      "usp": "일반구성",
+      "rank_comparison_status": "new"
     },
     {
       "category": "주방/식기",
@@ -6982,7 +8143,10 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": -26.0
+      "rank_delta": -26,
+      "price_numeric": 129000,
+      "usp": "일반구성",
+      "rank_comparison_status": "compared"
     },
     {
       "category": "주방/식기",
@@ -7000,7 +8164,10 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": -20.0
+      "rank_delta": -20,
+      "price_numeric": 40000,
+      "usp": "일반구성",
+      "rank_comparison_status": "compared"
     },
     {
       "category": "주방/식기",
@@ -7018,7 +8185,10 @@
       "has_engraving": false,
       "is_exclusive": true,
       "is_new_entry": false,
-      "rank_delta": -2.0
+      "rank_delta": -2,
+      "price_numeric": 34000,
+      "usp": "단독구성",
+      "rank_comparison_status": "compared"
     },
     {
       "category": "주방/식기",
@@ -7036,7 +8206,10 @@
       "has_engraving": false,
       "is_exclusive": true,
       "is_new_entry": true,
-      "rank_delta": ""
+      "rank_delta": "NEW",
+      "price_numeric": 15200,
+      "usp": "단독구성",
+      "rank_comparison_status": "new"
     },
     {
       "category": "주방/식기",
@@ -7054,7 +8227,10 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": true,
-      "rank_delta": ""
+      "rank_delta": "NEW",
+      "price_numeric": 9900,
+      "usp": "일반구성",
+      "rank_comparison_status": "new"
     },
     {
       "category": "주방/식기",
@@ -7072,7 +8248,10 @@
       "has_engraving": true,
       "is_exclusive": true,
       "is_new_entry": true,
-      "rank_delta": ""
+      "rank_delta": "NEW",
+      "price_numeric": 46000,
+      "usp": "각인/자수, 단독구성",
+      "rank_comparison_status": "new"
     },
     {
       "category": "주방/식기",
@@ -7090,7 +8269,10 @@
       "has_engraving": false,
       "is_exclusive": true,
       "is_new_entry": false,
-      "rank_delta": 1.0
+      "rank_delta": 1,
+      "price_numeric": 58000,
+      "usp": "단독구성",
+      "rank_comparison_status": "compared"
     },
     {
       "category": "주방/식기",
@@ -7108,7 +8290,10 @@
       "has_engraving": false,
       "is_exclusive": true,
       "is_new_entry": true,
-      "rank_delta": ""
+      "rank_delta": "NEW",
+      "price_numeric": 39000,
+      "usp": "단독구성",
+      "rank_comparison_status": "new"
     },
     {
       "category": "주방/식기",
@@ -7126,7 +8311,10 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": 2.0
+      "rank_delta": 2,
+      "price_numeric": 42000,
+      "usp": "일반구성",
+      "rank_comparison_status": "compared"
     },
     {
       "category": "주방/식기",
@@ -7144,7 +8332,10 @@
       "has_engraving": false,
       "is_exclusive": true,
       "is_new_entry": false,
-      "rank_delta": -10.0
+      "rank_delta": -10,
+      "price_numeric": 49000,
+      "usp": "단독구성",
+      "rank_comparison_status": "compared"
     },
     {
       "category": "주방/식기",
@@ -7162,7 +8353,10 @@
       "has_engraving": false,
       "is_exclusive": true,
       "is_new_entry": false,
-      "rank_delta": -15.0
+      "rank_delta": -15,
+      "price_numeric": 24500,
+      "usp": "단독구성",
+      "rank_comparison_status": "compared"
     },
     {
       "category": "주방/식기",
@@ -7180,7 +8374,10 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": -34.0
+      "rank_delta": -34,
+      "price_numeric": 21000,
+      "usp": "일반구성",
+      "rank_comparison_status": "compared"
     },
     {
       "category": "주방/식기",
@@ -7198,8 +8395,883 @@
       "has_engraving": true,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": -32.0
+      "rank_delta": -32,
+      "price_numeric": 58000,
+      "usp": "각인/자수",
+      "rank_comparison_status": "compared"
     }
   ],
-  "cards": {}
+  "cards": {
+    "전체": {
+      "analyzed_count": 400,
+      "card_1_sov": {
+        "top_ip_share": "27.5%",
+        "top_ip_name": "가나디",
+        "ip_product_count": 110,
+        "total_count": 400
+      },
+      "card_2_price_and_usp": {
+        "avg_price": 27052,
+        "packaging_ratio": 2.5,
+        "engraving_ratio": 1.8,
+        "exclusive_ratio": 33.8,
+        "price_tier_matrix": {
+          "1만원 미만": {
+            "count": 52,
+            "share": 13.0,
+            "avg_price": 8040,
+            "top_brands": [
+              "다다랜드",
+              "알럽하우스(소품)",
+              "제이블룸(팬시)"
+            ]
+          },
+          "1만원대": {
+            "count": 117,
+            "share": 29.2,
+            "avg_price": 15750,
+            "top_brands": [
+              "굴강",
+              "가나디",
+              "캐릭터침구"
+            ]
+          },
+          "2만원대": {
+            "count": 88,
+            "share": 22.0,
+            "avg_price": 25714,
+            "top_brands": [
+              "캐릭터침구",
+              "망그러진 곰",
+              "캐릭터주방"
+            ]
+          },
+          "3만원대": {
+            "count": 74,
+            "share": 18.5,
+            "avg_price": 35440,
+            "top_brands": [
+              "캐릭터침구",
+              "오덴세",
+              "레고트"
+            ]
+          },
+          "4만원대": {
+            "count": 40,
+            "share": 10.0,
+            "avg_price": 44861,
+            "top_brands": [
+              "스탠리",
+              "스타벅스(공식스토어)",
+              "블루보틀"
+            ]
+          },
+          "5만원 이상": {
+            "count": 29,
+            "share": 7.2,
+            "avg_price": 64836,
+            "top_brands": [
+              "블루보틀",
+              "스탠리",
+              "센느파리"
+            ]
+          }
+        }
+      },
+      "card_3_recommended_keywords": {
+        "stable_keywords_top30": [
+          "기타 캐릭터/팬시",
+          "가나디",
+          "먼작귀/치이카와",
+          "리락쿠마"
+        ],
+        "rising_keywords_top31_100": [
+          "기타 캐릭터/팬시",
+          "산리오",
+          "카카오프렌즈",
+          "가나디"
+        ],
+        "top_options": [
+          "선물포장",
+          "각인",
+          "단독구성"
+        ],
+        "by_type": {
+          "attributes": [
+            "단독",
+            "선물포장",
+            "각인",
+            "쇼핑백",
+            "전용패키지"
+          ],
+          "target_season": [
+            "생일",
+            "집들이",
+            "응원",
+            "답례품",
+            "기념일"
+          ],
+          "concept": [
+            "귀여운",
+            "감성",
+            "신박한",
+            "쓸데없는",
+            "인테리어"
+          ]
+        }
+      },
+      "card_4_rising_stars": [
+        {
+          "brand": "타블도트",
+          "product_name": "접시 세트포장 [SET] 타블도트 모닝 플레이트 3P 선물세트 종지 과일 야채모양 집들이선물",
+          "rank": 6,
+          "rank_delta": "NEW",
+          "category": "주방/식기",
+          "price": "27,900원",
+          "character_ip": "일반/비IP 상품",
+          "url": "https://gift.kakao.com/product/11850163",
+          "is_new_entry": true
+        },
+        {
+          "brand": "타블도트",
+          "product_name": "접시 세트포장 [SET] 타블도트 모닝 플레이트 3P 선물세트 종지 과일 야채모양 집들이선물",
+          "rank": 17,
+          "rank_delta": "NEW",
+          "category": "리빙 전체",
+          "price": "27,900원",
+          "character_ip": "일반/비IP 상품",
+          "url": "https://gift.kakao.com/product/11850163",
+          "is_new_entry": true
+        },
+        {
+          "brand": "플러피홈",
+          "product_name": "내 근육 어때 [재미있는선물] 머슬 태닝 키티캣 바디필로우 벌크업 몸짱 근육인형 쿠션 아크릴 키링 , 4,414",
+          "rank": 20,
+          "rank_delta": 16,
+          "category": "침구/패브릭",
+          "price": "24,800원",
+          "character_ip": "기타 캐릭터/팬시",
+          "url": "https://gift.kakao.com/product/12155267",
+          "is_new_entry": false
+        },
+        {
+          "brand": "루시아이(침구)",
+          "product_name": "나 귀엽지 아나~ [자취/집들이선물] 단독사은품 토실토실 뱃살물범 인형 귀여운 바디필로우 애착 모찌 커플 방석 쿠션 기숙사 베개 집순이 방꾸미기",
+          "rank": 21,
+          "rank_delta": 13,
+          "category": "침구/패브릭",
+          "price": "15,900원",
+          "character_ip": "기타 캐릭터/팬시",
+          "url": "https://gift.kakao.com/product/10609163",
+          "is_new_entry": false
+        },
+        {
+          "brand": "알럽하우스(소품)",
+          "product_name": "배추 보낸다 김장준비완료 배추담요 [빅사이즈] 웃긴 직장동료 생일 연인 커플 합격 응원 집들이 결혼 선물 귀여운 자취 쓸데없는 신박한 행운 , 2,397",
+          "rank": 23,
+          "rank_delta": 14,
+          "category": "침구/패브릭",
+          "price": "14,900원",
+          "character_ip": "일반/비IP 상품",
+          "url": "https://gift.kakao.com/product/10819633",
+          "is_new_entry": false
+        }
+      ]
+    },
+    "리빙 전체": {
+      "analyzed_count": 100,
+      "card_1_sov": {
+        "top_ip_share": "21.0%",
+        "top_ip_name": "가나디",
+        "ip_product_count": 21,
+        "total_count": 100
+      },
+      "card_2_price_and_usp": {
+        "avg_price": 33108,
+        "packaging_ratio": 5.0,
+        "engraving_ratio": 2.0,
+        "exclusive_ratio": 49.0,
+        "price_tier_matrix": {
+          "1만원 미만": {
+            "count": 4,
+            "share": 4.0,
+            "avg_price": 9625,
+            "top_brands": [
+              "코코도르",
+              "트렌디홈(키친)",
+              "알럽하우스(소품)"
+            ]
+          },
+          "1만원대": {
+            "count": 22,
+            "share": 22.0,
+            "avg_price": 16200,
+            "top_brands": [
+              "가나디",
+              "캐릭터침구",
+              "굴강"
+            ]
+          },
+          "2만원대": {
+            "count": 17,
+            "share": 17.0,
+            "avg_price": 25700,
+            "top_brands": [
+              "캐릭터침구",
+              "망그러진 곰",
+              "캐릭터주방"
+            ]
+          },
+          "3만원대": {
+            "count": 29,
+            "share": 29.0,
+            "avg_price": 34693,
+            "top_brands": [
+              "오브제바이쿤달(디퓨저)",
+              "오덴세",
+              "레고트"
+            ]
+          },
+          "4만원대": {
+            "count": 17,
+            "share": 17.0,
+            "avg_price": 44938,
+            "top_brands": [
+              "스탠리",
+              "블루보틀",
+              "탬버린즈"
+            ]
+          },
+          "5만원 이상": {
+            "count": 11,
+            "share": 11.0,
+            "avg_price": 64451,
+            "top_brands": [
+              "블루보틀",
+              "센느파리",
+              "코토나"
+            ]
+          }
+        }
+      },
+      "card_3_recommended_keywords": {
+        "stable_keywords_top30": [
+          "가나디",
+          "기타 캐릭터/팬시",
+          "리락쿠마",
+          "먼작귀/치이카와"
+        ],
+        "rising_keywords_top31_100": [
+          "가나디",
+          "기타 캐릭터/팬시",
+          "산리오",
+          "잔망루피/뽀로로"
+        ],
+        "top_options": [
+          "선물포장",
+          "각인",
+          "단독구성"
+        ],
+        "by_type": {
+          "attributes": [
+            "단독",
+            "선물포장",
+            "각인",
+            "쇼핑백",
+            "전용패키지"
+          ],
+          "target_season": [
+            "생일",
+            "집들이",
+            "응원",
+            "답례품",
+            "기념일"
+          ],
+          "concept": [
+            "귀여운",
+            "감성",
+            "신박한",
+            "쓸데없는",
+            "인테리어"
+          ]
+        }
+      },
+      "card_4_rising_stars": [
+        {
+          "brand": "타블도트",
+          "product_name": "접시 세트포장 [SET] 타블도트 모닝 플레이트 3P 선물세트 종지 과일 야채모양 집들이선물",
+          "rank": 17,
+          "rank_delta": "NEW",
+          "category": "리빙 전체",
+          "price": "27,900원",
+          "character_ip": "일반/비IP 상품",
+          "url": "https://gift.kakao.com/product/11850163",
+          "is_new_entry": true
+        },
+        {
+          "brand": "입소문뷰티템",
+          "product_name": "[생일/힐링선물]미누 룸&드레스 퍼퓸 + 사쉐 세트 (+미니퍼퓸) 섬유 향수 탈취제 룸스프레이 &차량용 방향제 샤쉐 자취 선물 , 5,178",
+          "rank": 26,
+          "rank_delta": "NEW",
+          "category": "리빙 전체",
+          "price": "21,900원",
+          "character_ip": "일반/비IP 상품",
+          "url": "https://gift.kakao.com/product/13831534",
+          "is_new_entry": true
+        },
+        {
+          "brand": "에이센트",
+          "product_name": "NEW 디자인출시 [오일/쇼핑백] 에이센트 오브제 스톤디퓨저ㅣ방향제/인테리어/화산석/디퓨져/선물/결혼 50%",
+          "rank": 29,
+          "rank_delta": 38,
+          "category": "리빙 전체",
+          "price": "30,000원",
+          "character_ip": "일반/비IP 상품",
+          "url": "https://gift.kakao.com/product/8027618",
+          "is_new_entry": false
+        },
+        {
+          "brand": "블루보틀",
+          "product_name": "파우치 [쇼핑백] 데이오프 텀블러 (500ml) 파우치 랜덤",
+          "rank": 39,
+          "rank_delta": 21,
+          "category": "리빙 전체",
+          "price": "52,000원",
+          "character_ip": "일반/비IP 상품",
+          "url": "https://gift.kakao.com/product/6989471",
+          "is_new_entry": false
+        },
+        {
+          "brand": "가나디",
+          "product_name": "가나디 미니 피규어 탁상 시계 (데스크테리어/생일/친구/응원) , 2,686",
+          "rank": 47,
+          "rank_delta": 27,
+          "category": "리빙 전체",
+          "price": "14,800원",
+          "character_ip": "가나디",
+          "url": "https://gift.kakao.com/product/14096676",
+          "is_new_entry": false
+        }
+      ]
+    },
+    "팬시/문구/취미 (IP핵심)": {
+      "analyzed_count": 100,
+      "card_1_sov": {
+        "top_ip_share": "38.0%",
+        "top_ip_name": "가나디",
+        "ip_product_count": 38,
+        "total_count": 100
+      },
+      "card_2_price_and_usp": {
+        "avg_price": 14988,
+        "packaging_ratio": 2.0,
+        "engraving_ratio": 1.0,
+        "exclusive_ratio": 9.0,
+        "price_tier_matrix": {
+          "1만원 미만": {
+            "count": 38,
+            "share": 38.0,
+            "avg_price": 7477,
+            "top_brands": [
+              "다다랜드",
+              "빛내는사람들(팬시)",
+              "굴강"
+            ]
+          },
+          "1만원대": {
+            "count": 44,
+            "share": 44.0,
+            "avg_price": 14625,
+            "top_brands": [
+              "굴강",
+              "가나디",
+              "Monchhichi"
+            ]
+          },
+          "2만원대": {
+            "count": 9,
+            "share": 9.0,
+            "avg_price": 23866,
+            "top_brands": [
+              "망그러진 곰",
+              "프렌즈인형/피규어",
+              "삼공방"
+            ]
+          },
+          "3만원대": {
+            "count": 7,
+            "share": 7.0,
+            "avg_price": 34371,
+            "top_brands": [
+              "캐릭터침구",
+              "페팃",
+              "얼모스트블루"
+            ]
+          },
+          "4만원대": {
+            "count": 1,
+            "share": 1.0,
+            "avg_price": 43800,
+            "top_brands": [
+              "잼먹"
+            ]
+          },
+          "5만원 이상": {
+            "count": 1,
+            "share": 1.0,
+            "avg_price": 72000,
+            "top_brands": [
+              "대원SHOP"
+            ]
+          }
+        }
+      },
+      "card_3_recommended_keywords": {
+        "stable_keywords_top30": [
+          "기타 캐릭터/팬시",
+          "가나디",
+          "먼작귀/치이카와",
+          "몬치치"
+        ],
+        "rising_keywords_top31_100": [
+          "기타 캐릭터/팬시",
+          "리락쿠마",
+          "카카오프렌즈",
+          "명탐정 코난"
+        ],
+        "top_options": [
+          "선물포장",
+          "각인",
+          "단독구성"
+        ],
+        "by_type": {
+          "attributes": [
+            "단독",
+            "선물포장",
+            "각인",
+            "쇼핑백",
+            "전용패키지"
+          ],
+          "target_season": [
+            "생일",
+            "집들이",
+            "응원",
+            "답례품",
+            "기념일"
+          ],
+          "concept": [
+            "귀여운",
+            "감성",
+            "신박한",
+            "쓸데없는",
+            "인테리어"
+          ]
+        }
+      },
+      "card_4_rising_stars": [
+        {
+          "brand": "빛내는사람들(팬시)",
+          "product_name": "생일/귀여운 선물 럭키 고슴도치 키링 네잎클로버 행운 열쇠고리 수능 합격 부적 학생 응원 커플템 남자 여자 친구 취업 졸업 시험 선물 100일 10% , 7,435",
+          "rank": 27,
+          "rank_delta": 16,
+          "category": "팬시/문구/취미 (IP핵심)",
+          "price": "8,800원",
+          "character_ip": "일반/비IP 상품",
+          "url": "https://gift.kakao.com/product/11985626",
+          "is_new_entry": false
+        },
+        {
+          "brand": "소니엔젤",
+          "product_name": "몬치치,히퍼,귀여운 [Monchhichi Hippers] 몬치치 히퍼 (랜덤) , 3,214",
+          "rank": 28,
+          "rank_delta": "NEW",
+          "category": "팬시/문구/취미 (IP핵심)",
+          "price": "13,800원",
+          "character_ip": "몬치치",
+          "url": "https://gift.kakao.com/product/12447517",
+          "is_new_entry": true
+        },
+        {
+          "brand": "다다랜드",
+          "product_name": "얼굴붓기 관리템 문어괄사 빗 건강 선물 생일 직장동료 스트레스 해소 행운 친구 우정 합격 부적 커플 응원 승모근 마사지 시험 쓸데없는 신박한 , 2,918",
+          "rank": 30,
+          "rank_delta": 29,
+          "category": "팬시/문구/취미 (IP핵심)",
+          "price": "4,750원",
+          "character_ip": "일반/비IP 상품",
+          "url": "https://gift.kakao.com/product/13535800",
+          "is_new_entry": false
+        },
+        {
+          "brand": "인형",
+          "product_name": "리락쿠마 미니 파우치",
+          "rank": 32,
+          "rank_delta": 41,
+          "category": "팬시/문구/취미 (IP핵심)",
+          "price": "8,000원",
+          "character_ip": "리락쿠마",
+          "url": "https://gift.kakao.com/product/14191242",
+          "is_new_entry": false
+        },
+        {
+          "brand": "인형",
+          "product_name": "리락쿠마 반원 파우치 , 1,547",
+          "rank": 33,
+          "rank_delta": 12,
+          "category": "팬시/문구/취미 (IP핵심)",
+          "price": "9,500원",
+          "character_ip": "리락쿠마",
+          "url": "https://gift.kakao.com/product/13838117",
+          "is_new_entry": false
+        }
+      ]
+    },
+    "침구/패브릭": {
+      "analyzed_count": 100,
+      "card_1_sov": {
+        "top_ip_share": "33.0%",
+        "top_ip_name": "산리오",
+        "ip_product_count": 33,
+        "total_count": 100
+      },
+      "card_2_price_and_usp": {
+        "avg_price": 24549,
+        "packaging_ratio": 2.0,
+        "engraving_ratio": 0.0,
+        "exclusive_ratio": 23.0,
+        "price_tier_matrix": {
+          "1만원 미만": {
+            "count": 6,
+            "share": 6.0,
+            "avg_price": 9331,
+            "top_brands": [
+              "말랑필로우",
+              "부카즈(소품)",
+              "프렌즈리빙LC"
+            ]
+          },
+          "1만원대": {
+            "count": 35,
+            "share": 35.0,
+            "avg_price": 16617,
+            "top_brands": [
+              "캐릭터침구",
+              "루시아이(침구)",
+              "오늘의귀여움"
+            ]
+          },
+          "2만원대": {
+            "count": 41,
+            "share": 41.0,
+            "avg_price": 26082,
+            "top_brands": [
+              "캐릭터침구",
+              "미니멀룸",
+              "가나디"
+            ]
+          },
+          "3만원대": {
+            "count": 15,
+            "share": 15.0,
+            "avg_price": 36466,
+            "top_brands": [
+              "캐릭터침구",
+              "데이니즈",
+              "바나코(인테리어)"
+            ]
+          },
+          "4만원대": {
+            "count": 1,
+            "share": 1.0,
+            "avg_price": 42900,
+            "top_brands": [
+              "바자르"
+            ]
+          },
+          "5만원 이상": {
+            "count": 2,
+            "share": 2.0,
+            "avg_price": 79025,
+            "top_brands": [
+              "드브르베",
+              "캐릭터침구"
+            ]
+          }
+        }
+      },
+      "card_3_recommended_keywords": {
+        "stable_keywords_top30": [
+          "기타 캐릭터/팬시",
+          "가나디",
+          "먼작귀/치이카와",
+          "리락쿠마"
+        ],
+        "rising_keywords_top31_100": [
+          "기타 캐릭터/팬시",
+          "산리오",
+          "카카오프렌즈",
+          "짱구"
+        ],
+        "top_options": [
+          "선물포장",
+          "각인",
+          "단독구성"
+        ],
+        "by_type": {
+          "attributes": [
+            "단독",
+            "선물포장",
+            "각인",
+            "쇼핑백",
+            "전용패키지"
+          ],
+          "target_season": [
+            "생일",
+            "집들이",
+            "응원",
+            "답례품",
+            "기념일"
+          ],
+          "concept": [
+            "귀여운",
+            "감성",
+            "신박한",
+            "쓸데없는",
+            "인테리어"
+          ]
+        }
+      },
+      "card_4_rising_stars": [
+        {
+          "brand": "플러피홈",
+          "product_name": "내 근육 어때 [재미있는선물] 머슬 태닝 키티캣 바디필로우 벌크업 몸짱 근육인형 쿠션 아크릴 키링 , 4,414",
+          "rank": 20,
+          "rank_delta": 16,
+          "category": "침구/패브릭",
+          "price": "24,800원",
+          "character_ip": "기타 캐릭터/팬시",
+          "url": "https://gift.kakao.com/product/12155267",
+          "is_new_entry": false
+        },
+        {
+          "brand": "루시아이(침구)",
+          "product_name": "나 귀엽지 아나~ [자취/집들이선물] 단독사은품 토실토실 뱃살물범 인형 귀여운 바디필로우 애착 모찌 커플 방석 쿠션 기숙사 베개 집순이 방꾸미기",
+          "rank": 21,
+          "rank_delta": 13,
+          "category": "침구/패브릭",
+          "price": "15,900원",
+          "character_ip": "기타 캐릭터/팬시",
+          "url": "https://gift.kakao.com/product/10609163",
+          "is_new_entry": false
+        },
+        {
+          "brand": "알럽하우스(소품)",
+          "product_name": "배추 보낸다 김장준비완료 배추담요 [빅사이즈] 웃긴 직장동료 생일 연인 커플 합격 응원 집들이 결혼 선물 귀여운 자취 쓸데없는 신박한 행운 , 2,397",
+          "rank": 23,
+          "rank_delta": 14,
+          "category": "침구/패브릭",
+          "price": "14,900원",
+          "character_ip": "일반/비IP 상품",
+          "url": "https://gift.kakao.com/product/10819633",
+          "is_new_entry": false
+        },
+        {
+          "brand": "데일리라이크(침구)",
+          "product_name": "자취/집들이선물 \"집꾸 필수템\" 푹신보들 마이 버디 발매트(미니러그) 33종 (택1) 인테리어 이사 독립 응원 결혼 생일 자취 집들이 선물",
+          "rank": 27,
+          "rank_delta": 16,
+          "category": "침구/패브릭",
+          "price": "15,900원",
+          "character_ip": "일반/비IP 상품",
+          "url": "https://gift.kakao.com/product/2488205",
+          "is_new_entry": false
+        },
+        {
+          "brand": "가나디",
+          "product_name": "귀여운 선물 가나디 중형 시팅 인형 2종 (생일/집들이/인테리어/응원/귀여운)",
+          "rank": 30,
+          "rank_delta": 17,
+          "category": "침구/패브릭",
+          "price": "23,800원",
+          "character_ip": "가나디",
+          "url": "https://gift.kakao.com/product/11744430",
+          "is_new_entry": false
+        }
+      ]
+    },
+    "주방/식기": {
+      "analyzed_count": 100,
+      "card_1_sov": {
+        "top_ip_share": "18.0%",
+        "top_ip_name": "가나디",
+        "ip_product_count": 18,
+        "total_count": 100
+      },
+      "card_2_price_and_usp": {
+        "avg_price": 35565,
+        "packaging_ratio": 1.0,
+        "engraving_ratio": 4.0,
+        "exclusive_ratio": 54.0,
+        "price_tier_matrix": {
+          "1만원 미만": {
+            "count": 4,
+            "share": 4.0,
+            "avg_price": 9875,
+            "top_brands": [
+              "바쏠",
+              "트렌디홈(키친)"
+            ]
+          },
+          "1만원대": {
+            "count": 16,
+            "share": 16.0,
+            "avg_price": 16330,
+            "top_brands": [
+              "캐릭터주방",
+              "바쏠",
+              "알럽하우스"
+            ]
+          },
+          "2만원대": {
+            "count": 21,
+            "share": 21.0,
+            "avg_price": 25800,
+            "top_brands": [
+              "앨리건트테이블",
+              "캐릭터주방",
+              "타블도트"
+            ]
+          },
+          "3만원대": {
+            "count": 23,
+            "share": 23.0,
+            "avg_price": 36039,
+            "top_brands": [
+              "오덴세",
+              "레고트",
+              "스타벅스(공식스토어)"
+            ]
+          },
+          "4만원대": {
+            "count": 21,
+            "share": 21.0,
+            "avg_price": 44942,
+            "top_brands": [
+              "스탠리",
+              "스타벅스(공식스토어)",
+              "블루보틀"
+            ]
+          },
+          "5만원 이상": {
+            "count": 15,
+            "share": 15.0,
+            "avg_price": 62750,
+            "top_brands": [
+              "블루보틀",
+              "스탠리",
+              "웨지우드"
+            ]
+          }
+        }
+      },
+      "card_3_recommended_keywords": {
+        "stable_keywords_top30": [
+          "가나디",
+          "리락쿠마",
+          "산리오"
+        ],
+        "rising_keywords_top31_100": [
+          "카카오프렌즈",
+          "산리오",
+          "기타 캐릭터/팬시",
+          "짱구"
+        ],
+        "top_options": [
+          "선물포장",
+          "각인",
+          "단독구성"
+        ],
+        "by_type": {
+          "attributes": [
+            "단독",
+            "선물포장",
+            "각인",
+            "쇼핑백",
+            "전용패키지"
+          ],
+          "target_season": [
+            "생일",
+            "집들이",
+            "응원",
+            "답례품",
+            "기념일"
+          ],
+          "concept": [
+            "귀여운",
+            "감성",
+            "신박한",
+            "쓸데없는",
+            "인테리어"
+          ]
+        }
+      },
+      "card_4_rising_stars": [
+        {
+          "brand": "타블도트",
+          "product_name": "접시 세트포장 [SET] 타블도트 모닝 플레이트 3P 선물세트 종지 과일 야채모양 집들이선물",
+          "rank": 6,
+          "rank_delta": "NEW",
+          "category": "주방/식기",
+          "price": "27,900원",
+          "character_ip": "일반/비IP 상품",
+          "url": "https://gift.kakao.com/product/11850163",
+          "is_new_entry": true
+        },
+        {
+          "brand": "블루보틀",
+          "product_name": "파우치 [단독/] 블루보틀 머그 2P 선물세트(+쇼핑백) 파우치 랜덤",
+          "rank": 28,
+          "rank_delta": 15,
+          "category": "주방/식기",
+          "price": "50,000원",
+          "character_ip": "일반/비IP 상품",
+          "url": "https://gift.kakao.com/product/6990005",
+          "is_new_entry": false
+        },
+        {
+          "brand": "스타벅스(공식스토어)",
+          "product_name": "\"원터치 리드 이벤트\" [단독] 팬시 or 나수 하우스 텀블러 355ml (5종 택 1) +에코텀블러음료쿠폰() 10%",
+          "rank": 32,
+          "rank_delta": 13,
+          "category": "주방/식기",
+          "price": "28,800원",
+          "character_ip": "일반/비IP 상품",
+          "url": "https://gift.kakao.com/product/7712218",
+          "is_new_entry": false
+        },
+        {
+          "brand": "보퀴진",
+          "product_name": "자취/집들이선물 [보퀴진] 산리오 헬로키티 빈티지 1인식기 머그컵 집들이 홈카페 세트 , 7,364",
+          "rank": 36,
+          "rank_delta": 10,
+          "category": "주방/식기",
+          "price": "25,900원",
+          "character_ip": "산리오",
+          "url": "https://gift.kakao.com/product/10626781",
+          "is_new_entry": false
+        },
+        {
+          "brand": "바쏠",
+          "product_name": "뱁새 머그컵 귀여운 홈카페 감성 생일 자취 이사 집들이 10대 선물 가성비 컵 흰머리 오목눈이 하트 23% , 6,366",
+          "rank": 46,
+          "rank_delta": 12,
+          "category": "주방/식기",
+          "price": "9,900원",
+          "character_ip": "일반/비IP 상품",
+          "url": "https://gift.kakao.com/product/13613223",
+          "is_new_entry": false
+        }
+      ]
+    }
+  }
 }

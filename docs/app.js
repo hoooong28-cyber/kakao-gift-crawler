@@ -516,7 +516,7 @@ document.addEventListener('DOMContentLoaded', () => {
             <div class="card">
                 <div class="card-title">
                     <h3><i class="fa-solid fa-bolt highlight-cyan"></i> Card 4: 급상승 라이징 스타 (Rising Star Alert)</h3>
-                    <span>전날 대비(24시간) 순위 변동 +10 이상 또는 신규 진입 상품 · 상품명 클릭 시 카카오 선물하기 이동</span>
+                    <span>직전 수집일 대비 10계단 이상 상승 또는 이전 수집 범위 내 신규 진입 상품 · 상품명 클릭 시 카카오 선물하기 이동</span>
                 </div>
                 <div class="table-container" style="margin-top: 15px;">
                     <table class="custom-table">
@@ -733,7 +733,9 @@ document.addEventListener('DOMContentLoaded', () => {
             if (p.has_engraving) uspBadges += `<span style="background:rgba(16,185,129,0.2); color:#34D399; border:1px solid rgba(16,185,129,0.4); padding:1px 5px; border-radius:3px; font-size:10px; margin-right:3px;">각인</span>`;
 
             let deltaBadge = '';
-            if (p.is_new_entry) {
+            if (p.rank_comparison_status === 'unavailable') {
+                deltaBadge = `<span style="color:#94A3B8;font-size:10px;margin-left:4px;" title="이전 수집 범위 또는 상품 식별 정보가 부족합니다.">비교 불가</span>`;
+            } else if (p.is_new_entry) {
                 deltaBadge = `<span style="background:#EF4444; color:#FFF; font-size:9px; padding:1px 4px; border-radius:3px; margin-left:4px; font-weight:700;">NEW</span>`;
             } else if (p.rank_delta && p.rank_delta > 0) {
                 deltaBadge = `<span style="color:#10B981; font-size:10px; font-weight:700; margin-left:4px;"><i class="fa-solid fa-caret-up"></i> ${p.rank_delta}</span>`;

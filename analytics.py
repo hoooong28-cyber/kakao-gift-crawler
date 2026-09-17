@@ -2,6 +2,8 @@ import os
 import sys
 import pandas as pd
 import numpy as np
+from numbers import Real
+from rank_comparison import compare_rankings
 
 PRICE_TIER_ORDER = ["1만원 미만", "1만원대", "2만원대", "3만원대", "4만원대", "5만원 이상"]
 
@@ -54,40 +56,13 @@ def enrich_dataframe(df_raw, df_prev=None):
         
     df['usp'] = df.apply(detect_usp, axis=1)
 
-    # 3. 과거 데이터 비교 (rank_delta, is_new_entry)
-    df['rank_delta'] = 0
-    df['is_new_entry'] = False
-    
-    if df_prev is not None and not df_prev.empty and 'product_name' in df_prev.columns and 'rank' in df_prev.columns:
-        prev_map = {}
-        for _, prow in df_prev.iterrows():
-            key = (str(prow.get('category', '')), str(prow.get('product_name', '')))
-            try:
-                prev_map[key] = int(prow.get('rank', 0))
-            except Exception:
-                pass
-                
-        deltas = []
-        is_news = []
-        for _, row in df.iterrows():
-            cat = str(row.get('category', ''))
-            pname = str(row.get('product_name', ''))
-            try:
-                cur_rank = int(row.get('rank', 0))
-            except Exception:
-                cur_rank = 0
-                
-            prev_rank = prev_map.get((cat, pname))
-            if prev_rank is not None and prev_rank > 0:
-                delta = prev_rank - cur_rank  # 양수면 순위 상승
-                deltas.append(delta)
-                is_news.append(False)
-            else:
-                deltas.append("NEW")
-                is_news.append(True)
-                
-        df['rank_delta'] = deltas
-        df['is_new_entry'] = is_news
+    # Match stable IDs within the same category; titles may change every crawl.
+    comparison = compare_rankings(
+        df.to_dict(orient="records"),
+        df_prev.to_dict(orient="records") if df_prev is not None else None,
+    )
+    for column in ("rank_delta", "is_new_entry", "rank_comparison_status"):
+        df[column] = [row[column] for row in comparison]
 
     return df
 
@@ -173,7 +148,7 @@ def generate_all_dashboard_cards(df_enriched, top_n=100):
         # 4. Rising Stars
         rising_items = []
         for _, r in sub_df.iterrows():
-            if r.get('is_new_entry') or (isinstance(r.get('rank_delta'), (int, float)) and r.get('rank_delta') > 0):
+            if r.get('is_new_entry') or (isinstance(r.get('rank_delta'), Real) and r.get('rank_delta') >= 10):
                 rising_items.append({
                     "brand": str(r.get('brand', '')),
                     "product_name": str(r.get('product_name', '')),

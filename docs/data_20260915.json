@@ -11,10 +11,11 @@
       "product_id": 7868266,
       "scraped_at": "2026-09-15 10:54:43",
       "price_numeric": 30800,
-      "price_tier": "3~5만원대",
+      "price_tier": "3만원대",
       "usp": "일반구성",
-      "rank_delta": "NEW",
-      "is_new_entry": true
+      "rank_delta": 82,
+      "is_new_entry": false,
+      "rank_comparison_status": "compared"
     },
     {
       "category": "리빙 전체",
@@ -27,10 +28,11 @@
       "product_id": 5391162,
       "scraped_at": "2026-09-15 10:54:43",
       "price_numeric": 30600,
-      "price_tier": "3~5만원대",
+      "price_tier": "3만원대",
       "usp": "단독구성",
-      "rank_delta": "2",
-      "is_new_entry": false
+      "rank_delta": 2,
+      "is_new_entry": false,
+      "rank_comparison_status": "compared"
     },
     {
       "category": "리빙 전체",
@@ -43,10 +45,11 @@
       "product_id": 11106499,
       "scraped_at": "2026-09-15 10:54:43",
       "price_numeric": 49000,
-      "price_tier": "3~5만원대",
+      "price_tier": "4만원대",
       "usp": "일반구성",
-      "rank_delta": "NEW",
-      "is_new_entry": true
+      "rank_delta": -1,
+      "is_new_entry": false,
+      "rank_comparison_status": "compared"
     },
     {
       "category": "리빙 전체",
@@ -59,10 +62,11 @@
       "product_id": 4926192,
       "scraped_at": "2026-09-15 10:54:43",
       "price_numeric": 18000,
-      "price_tier": "1~3만원대",
+      "price_tier": "1만원대",
       "usp": "선물포장, 단독구성",
-      "rank_delta": "1",
-      "is_new_entry": false
+      "rank_delta": 1,
+      "is_new_entry": false,
+      "rank_comparison_status": "compared"
     },
     {
       "category": "리빙 전체",
@@ -75,10 +79,11 @@
       "product_id": 13772143,
       "scraped_at": "2026-09-15 10:54:43",
       "price_numeric": 24500,
-      "price_tier": "1~3만원대",
+      "price_tier": "2만원대",
       "usp": "단독구성",
-      "rank_delta": "NEW",
-      "is_new_entry": true
+      "rank_delta": 1,
+      "is_new_entry": false,
+      "rank_comparison_status": "compared"
     },
     {
       "category": "리빙 전체",
@@ -91,10 +96,11 @@
       "product_id": 11144932,
       "scraped_at": "2026-09-15 10:54:43",
       "price_numeric": 40500,
-      "price_tier": "3~5만원대",
+      "price_tier": "4만원대",
       "usp": "일반구성",
-      "rank_delta": "NEW",
-      "is_new_entry": true
+      "rank_delta": 37,
+      "is_new_entry": false,
+      "rank_comparison_status": "compared"
     },
     {
       "category": "리빙 전체",
@@ -107,10 +113,11 @@
       "product_id": 11850163,
       "scraped_at": "2026-09-15 10:54:43",
       "price_numeric": 25900,
-      "price_tier": "1~3만원대",
+      "price_tier": "2만원대",
       "usp": "선물포장, 단독구성",
-      "rank_delta": "0",
-      "is_new_entry": false
+      "rank_delta": 0,
+      "is_new_entry": false,
+      "rank_comparison_status": "compared"
     },
     {
       "category": "리빙 전체",
@@ -123,10 +130,11 @@
       "product_id": 12854287,
       "scraped_at": "2026-09-15 10:54:43",
       "price_numeric": 34800,
-      "price_tier": "3~5만원대",
+      "price_tier": "3만원대",
       "usp": "단독구성",
-      "rank_delta": "NEW",
-      "is_new_entry": true
+      "rank_delta": -7,
+      "is_new_entry": false,
+      "rank_comparison_status": "compared"
     },
     {
       "category": "리빙 전체",
@@ -139,10 +147,11 @@
       "product_id": 7868778,
       "scraped_at": "2026-09-15 10:54:43",
       "price_numeric": 39200,
-      "price_tier": "3~5만원대",
+      "price_tier": "3만원대",
       "usp": "일반구성",
-      "rank_delta": "NEW",
-      "is_new_entry": true
+      "rank_delta": 51,
+      "is_new_entry": false,
+      "rank_comparison_status": "compared"
     },
     {
       "category": "리빙 전체",
@@ -155,10 +164,11 @@
       "product_id": 13261876,
       "scraped_at": "2026-09-15 10:54:43",
       "price_numeric": 12000,
-      "price_tier": "1~3만원대",
+      "price_tier": "1만원대",
       "usp": "일반구성",
-      "rank_delta": "0",
-      "is_new_entry": false
+      "rank_delta": 0,
+      "is_new_entry": false,
+      "rank_comparison_status": "compared"
     },
     {
       "category": "리빙 전체",
@@ -173,8 +183,9 @@
       "price_numeric": 54900,
       "price_tier": "5만원 이상",
       "usp": "단독구성",
-      "rank_delta": "22",
-      "is_new_entry": false
+      "rank_delta": 22,
+      "is_new_entry": false,
+      "rank_comparison_status": "compared"
     },
     {
       "category": "리빙 전체",
@@ -187,10 +198,11 @@
       "product_id": 7355950,
       "scraped_at": "2026-09-15 10:54:43",
       "price_numeric": 22900,
-      "price_tier": "1~3만원대",
+      "price_tier": "2만원대",
       "usp": "일반구성",
-      "rank_delta": "-3",
-      "is_new_entry": false
+      "rank_delta": -3,
+      "is_new_entry": false,
+      "rank_comparison_status": "compared"
     },
     {
       "category": "리빙 전체",
@@ -203,10 +215,11 @@
       "product_id": 13550210,
       "scraped_at": "2026-09-15 10:54:44",
       "price_numeric": 33000,
-      "price_tier": "3~5만원대",
+      "price_tier": "3만원대",
       "usp": "단독구성",
-      "rank_delta": "-1",
-      "is_new_entry": false
+      "rank_delta": -1,
+      "is_new_entry": false,
+      "rank_comparison_status": "compared"
     },
     {
       "category": "리빙 전체",
@@ -219,10 +232,11 @@
       "product_id": 11779291,
       "scraped_at": "2026-09-15 10:54:44",
       "price_numeric": 46000,
-      "price_tier": "3~5만원대",
+      "price_tier": "4만원대",
       "usp": "일반구성",
-      "rank_delta": "12",
-      "is_new_entry": false
+      "rank_delta": 12,
+      "is_new_entry": false,
+      "rank_comparison_status": "compared"
     },
     {
       "category": "리빙 전체",
@@ -235,10 +249,11 @@
       "product_id": 11743570,
       "scraped_at": "2026-09-15 10:54:44",
       "price_numeric": 34800,
-      "price_tier": "3~5만원대",
+      "price_tier": "3만원대",
       "usp": "단독구성",
-      "rank_delta": "0",
-      "is_new_entry": false
+      "rank_delta": 0,
+      "is_new_entry": false,
+      "rank_comparison_status": "compared"
     },
     {
       "category": "리빙 전체",
@@ -251,10 +266,11 @@
       "product_id": 7343467,
       "scraped_at": "2026-09-15 10:54:44",
       "price_numeric": 36000,
-      "price_tier": "3~5만원대",
+      "price_tier": "3만원대",
       "usp": "단독구성",
-      "rank_delta": "-2",
-      "is_new_entry": false
+      "rank_delta": -2,
+      "is_new_entry": false,
+      "rank_comparison_status": "compared"
     },
     {
       "category": "리빙 전체",
@@ -267,10 +283,11 @@
       "product_id": 13831534,
       "scraped_at": "2026-09-15 10:54:44",
       "price_numeric": 22900,
-      "price_tier": "1~3만원대",
+      "price_tier": "2만원대",
       "usp": "단독구성",
-      "rank_delta": "NEW",
-      "is_new_entry": true
+      "rank_delta": 5,
+      "is_new_entry": false,
+      "rank_comparison_status": "compared"
     },
     {
       "category": "리빙 전체",
@@ -283,10 +300,11 @@
       "product_id": 6986025,
       "scraped_at": "2026-09-15 10:54:44",
       "price_numeric": 29900,
-      "price_tier": "1~3만원대",
+      "price_tier": "2만원대",
       "usp": "일반구성",
       "rank_delta": "NEW",
-      "is_new_entry": true
+      "is_new_entry": true,
+      "rank_comparison_status": "new"
     },
     {
       "category": "리빙 전체",
@@ -301,8 +319,9 @@
       "price_numeric": 51000,
       "price_tier": "5만원 이상",
       "usp": "단독구성",
-      "rank_delta": "9",
-      "is_new_entry": false
+      "rank_delta": 9,
+      "is_new_entry": false,
+      "rank_comparison_status": "compared"
     },
     {
       "category": "리빙 전체",
@@ -315,10 +334,11 @@
       "product_id": 12639125,
       "scraped_at": "2026-09-15 10:54:44",
       "price_numeric": 29900,
-      "price_tier": "1~3만원대",
+      "price_tier": "2만원대",
       "usp": "일반구성",
-      "rank_delta": "-3",
-      "is_new_entry": false
+      "rank_delta": -3,
+      "is_new_entry": false,
+      "rank_comparison_status": "compared"
     },
     {
       "category": "리빙 전체",
@@ -331,10 +351,11 @@
       "product_id": 14096838,
       "scraped_at": "2026-09-15 10:54:44",
       "price_numeric": 12800,
-      "price_tier": "1~3만원대",
+      "price_tier": "1만원대",
       "usp": "일반구성",
-      "rank_delta": "NEW",
-      "is_new_entry": true
+      "rank_delta": -3,
+      "is_new_entry": false,
+      "rank_comparison_status": "compared"
     },
     {
       "category": "리빙 전체",
@@ -350,7 +371,8 @@
       "price_tier": "5만원 이상",
       "usp": "일반구성",
       "rank_delta": "NEW",
-      "is_new_entry": true
+      "is_new_entry": true,
+      "rank_comparison_status": "new"
     },
     {
       "category": "리빙 전체",
@@ -363,10 +385,11 @@
       "product_id": 12821252,
       "scraped_at": "2026-09-15 10:54:45",
       "price_numeric": 16800,
-      "price_tier": "1~3만원대",
+      "price_tier": "1만원대",
       "usp": "단독구성",
-      "rank_delta": "-10",
-      "is_new_entry": false
+      "rank_delta": -10,
+      "is_new_entry": false,
+      "rank_comparison_status": "compared"
     },
     {
       "category": "리빙 전체",
@@ -379,10 +402,11 @@
       "product_id": 12694903,
       "scraped_at": "2026-09-15 10:54:45",
       "price_numeric": 39000,
-      "price_tier": "3~5만원대",
+      "price_tier": "3만원대",
       "usp": "단독구성",
-      "rank_delta": "-13",
-      "is_new_entry": false
+      "rank_delta": -13,
+      "is_new_entry": false,
+      "rank_comparison_status": "compared"
     },
     {
       "category": "리빙 전체",
@@ -395,10 +419,11 @@
       "product_id": 11483865,
       "scraped_at": "2026-09-15 10:54:45",
       "price_numeric": 42000,
-      "price_tier": "3~5만원대",
+      "price_tier": "4만원대",
       "usp": "일반구성",
-      "rank_delta": "13",
-      "is_new_entry": false
+      "rank_delta": 13,
+      "is_new_entry": false,
+      "rank_comparison_status": "compared"
     },
     {
       "category": "리빙 전체",
@@ -411,10 +436,11 @@
       "product_id": 9788037,
       "scraped_at": "2026-09-15 10:54:45",
       "price_numeric": 46500,
-      "price_tier": "3~5만원대",
+      "price_tier": "4만원대",
       "usp": "선물포장",
-      "rank_delta": "-5",
-      "is_new_entry": false
+      "rank_delta": -5,
+      "is_new_entry": false,
+      "rank_comparison_status": "compared"
     },
     {
       "category": "리빙 전체",
@@ -427,10 +453,11 @@
       "product_id": 7868895,
       "scraped_at": "2026-09-15 10:54:45",
       "price_numeric": 44000,
-      "price_tier": "3~5만원대",
+      "price_tier": "4만원대",
       "usp": "일반구성",
-      "rank_delta": "12",
-      "is_new_entry": false
+      "rank_delta": 12,
+      "is_new_entry": false,
+      "rank_comparison_status": "compared"
     },
     {
       "category": "리빙 전체",
@@ -443,10 +470,11 @@
       "product_id": 11264836,
       "scraped_at": "2026-09-15 10:54:45",
       "price_numeric": 36000,
-      "price_tier": "3~5만원대",
+      "price_tier": "3만원대",
       "usp": "일반구성",
-      "rank_delta": "NEW",
-      "is_new_entry": true
+      "rank_delta": -9,
+      "is_new_entry": false,
+      "rank_comparison_status": "compared"
     },
     {
       "category": "리빙 전체",
@@ -459,10 +487,11 @@
       "product_id": 12856389,
       "scraped_at": "2026-09-15 10:54:45",
       "price_numeric": 32400,
-      "price_tier": "3~5만원대",
+      "price_tier": "3만원대",
       "usp": "단독구성",
-      "rank_delta": "24",
-      "is_new_entry": false
+      "rank_delta": 24,
+      "is_new_entry": false,
+      "rank_comparison_status": "compared"
     },
     {
       "category": "리빙 전체",
@@ -475,10 +504,11 @@
       "product_id": 11483949,
       "scraped_at": "2026-09-15 10:54:45",
       "price_numeric": 35000,
-      "price_tier": "3~5만원대",
+      "price_tier": "3만원대",
       "usp": "일반구성",
-      "rank_delta": "-10",
-      "is_new_entry": false
+      "rank_delta": -10,
+      "is_new_entry": false,
+      "rank_comparison_status": "compared"
     },
     {
       "category": "리빙 전체",
@@ -491,10 +521,11 @@
       "product_id": 10974656,
       "scraped_at": "2026-09-15 10:54:45",
       "price_numeric": 8900,
-      "price_tier": "1만원 이하",
+      "price_tier": "1만원 미만",
       "usp": "일반구성",
-      "rank_delta": "11",
-      "is_new_entry": false
+      "rank_delta": 11,
+      "is_new_entry": false,
+      "rank_comparison_status": "compared"
     },
     {
       "category": "리빙 전체",
@@ -507,10 +538,11 @@
       "product_id": 6989444,
       "scraped_at": "2026-09-15 10:54:45",
       "price_numeric": 46000,
-      "price_tier": "3~5만원대",
+      "price_tier": "4만원대",
       "usp": "단독구성",
-      "rank_delta": "NEW",
-      "is_new_entry": true
+      "rank_delta": -16,
+      "is_new_entry": false,
+      "rank_comparison_status": "compared"
     },
     {
       "category": "리빙 전체",
@@ -523,10 +555,11 @@
       "product_id": 1186213,
       "scraped_at": "2026-09-15 10:54:45",
       "price_numeric": 33000,
-      "price_tier": "3~5만원대",
+      "price_tier": "3만원대",
       "usp": "단독구성",
-      "rank_delta": "NEW",
-      "is_new_entry": true
+      "rank_delta": 36,
+      "is_new_entry": false,
+      "rank_comparison_status": "compared"
     },
     {
       "category": "리빙 전체",
@@ -539,10 +572,11 @@
       "product_id": 12906542,
       "scraped_at": "2026-09-15 10:54:45",
       "price_numeric": 38000,
-      "price_tier": "3~5만원대",
+      "price_tier": "3만원대",
       "usp": "단독구성",
-      "rank_delta": "-4",
-      "is_new_entry": false
+      "rank_delta": -4,
+      "is_new_entry": false,
+      "rank_comparison_status": "compared"
     },
     {
       "category": "리빙 전체",
@@ -555,10 +589,11 @@
       "product_id": 927193,
       "scraped_at": "2026-09-15 10:54:45",
       "price_numeric": 33900,
-      "price_tier": "3~5만원대",
+      "price_tier": "3만원대",
       "usp": "선물포장, 단독구성",
-      "rank_delta": "NEW",
-      "is_new_entry": true
+      "rank_delta": 44,
+      "is_new_entry": false,
+      "rank_comparison_status": "compared"
     },
     {
       "category": "리빙 전체",
@@ -571,10 +606,11 @@
       "product_id": 11368084,
       "scraped_at": "2026-09-15 10:54:45",
       "price_numeric": 39800,
-      "price_tier": "3~5만원대",
+      "price_tier": "3만원대",
       "usp": "각인/자수",
       "rank_delta": "NEW",
-      "is_new_entry": true
+      "is_new_entry": true,
+      "rank_comparison_status": "new"
     },
     {
       "category": "리빙 전체",
@@ -587,10 +623,11 @@
       "product_id": 2616320,
       "scraped_at": "2026-09-15 10:54:45",
       "price_numeric": 42500,
-      "price_tier": "3~5만원대",
+      "price_tier": "4만원대",
       "usp": "단독구성",
-      "rank_delta": "NEW",
-      "is_new_entry": true
+      "rank_delta": 31,
+      "is_new_entry": false,
+      "rank_comparison_status": "compared"
     },
     {
       "category": "리빙 전체",
@@ -603,10 +640,11 @@
       "product_id": 12455527,
       "scraped_at": "2026-09-15 10:54:46",
       "price_numeric": 13800,
-      "price_tier": "1~3만원대",
+      "price_tier": "1만원대",
       "usp": "일반구성",
-      "rank_delta": "NEW",
-      "is_new_entry": true
+      "rank_delta": 20,
+      "is_new_entry": false,
+      "rank_comparison_status": "compared"
     },
     {
       "category": "리빙 전체",
@@ -619,10 +657,11 @@
       "product_id": 13881169,
       "scraped_at": "2026-09-15 10:54:46",
       "price_numeric": 16300,
-      "price_tier": "1~3만원대",
+      "price_tier": "1만원대",
       "usp": "일반구성",
       "rank_delta": "NEW",
-      "is_new_entry": true
+      "is_new_entry": true,
+      "rank_comparison_status": "new"
     },
     {
       "category": "리빙 전체",
@@ -635,10 +674,11 @@
       "product_id": 8027618,
       "scraped_at": "2026-09-15 10:54:46",
       "price_numeric": 30000,
-      "price_tier": "1~3만원대",
+      "price_tier": "3만원대",
       "usp": "일반구성",
-      "rank_delta": "-16",
-      "is_new_entry": false
+      "rank_delta": -16,
+      "is_new_entry": false,
+      "rank_comparison_status": "compared"
     },
     {
       "category": "리빙 전체",
@@ -651,10 +691,11 @@
       "product_id": 7734041,
       "scraped_at": "2026-09-15 10:54:46",
       "price_numeric": 34800,
-      "price_tier": "3~5만원대",
+      "price_tier": "3만원대",
       "usp": "단독구성",
-      "rank_delta": "NEW",
-      "is_new_entry": true
+      "rank_delta": 0,
+      "is_new_entry": false,
+      "rank_comparison_status": "compared"
     },
     {
       "category": "리빙 전체",
@@ -669,8 +710,9 @@
       "price_numeric": 51300,
       "price_tier": "5만원 이상",
       "usp": "일반구성",
-      "rank_delta": "NEW",
-      "is_new_entry": true
+      "rank_delta": 12,
+      "is_new_entry": false,
+      "rank_comparison_status": "compared"
     },
     {
       "category": "리빙 전체",
@@ -683,10 +725,11 @@
       "product_id": 12345352,
       "scraped_at": "2026-09-15 10:54:46",
       "price_numeric": 16800,
-      "price_tier": "1~3만원대",
+      "price_tier": "1만원대",
       "usp": "일반구성",
-      "rank_delta": "-8",
-      "is_new_entry": false
+      "rank_delta": -8,
+      "is_new_entry": false,
+      "rank_comparison_status": "compared"
     },
     {
       "category": "리빙 전체",
@@ -702,7 +745,8 @@
       "price_tier": "5만원 이상",
       "usp": "일반구성",
       "rank_delta": "NEW",
-      "is_new_entry": true
+      "is_new_entry": true,
+      "rank_comparison_status": "new"
     },
     {
       "category": "리빙 전체",
@@ -715,10 +759,11 @@
       "product_id": 5328353,
       "scraped_at": "2026-09-15 10:54:47",
       "price_numeric": 29800,
-      "price_tier": "1~3만원대",
+      "price_tier": "2만원대",
       "usp": "단독구성",
-      "rank_delta": "4",
-      "is_new_entry": false
+      "rank_delta": 4,
+      "is_new_entry": false,
+      "rank_comparison_status": "compared"
     },
     {
       "category": "리빙 전체",
@@ -731,10 +776,11 @@
       "product_id": 5872250,
       "scraped_at": "2026-09-15 10:54:47",
       "price_numeric": 18800,
-      "price_tier": "1~3만원대",
+      "price_tier": "1만원대",
       "usp": "단독구성",
-      "rank_delta": "NEW",
-      "is_new_entry": true
+      "rank_delta": -9,
+      "is_new_entry": false,
+      "rank_comparison_status": "compared"
     },
     {
       "category": "리빙 전체",
@@ -747,10 +793,11 @@
       "product_id": 11801920,
       "scraped_at": "2026-09-15 10:54:47",
       "price_numeric": 48000,
-      "price_tier": "3~5만원대",
+      "price_tier": "4만원대",
       "usp": "일반구성",
-      "rank_delta": "0",
-      "is_new_entry": false
+      "rank_delta": 0,
+      "is_new_entry": false,
+      "rank_comparison_status": "compared"
     },
     {
       "category": "리빙 전체",
@@ -763,10 +810,11 @@
       "product_id": 13709951,
       "scraped_at": "2026-09-15 10:54:47",
       "price_numeric": 21500,
-      "price_tier": "1~3만원대",
+      "price_tier": "2만원대",
       "usp": "일반구성",
-      "rank_delta": "NEW",
-      "is_new_entry": true
+      "rank_delta": 2,
+      "is_new_entry": false,
+      "rank_comparison_status": "compared"
     },
     {
       "category": "리빙 전체",
@@ -782,7 +830,8 @@
       "price_tier": "5만원 이상",
       "usp": "일반구성",
       "rank_delta": "NEW",
-      "is_new_entry": true
+      "is_new_entry": true,
+      "rank_comparison_status": "new"
     },
     {
       "category": "리빙 전체",
@@ -797,8 +846,9 @@
       "price_numeric": 55800,
       "price_tier": "5만원 이상",
       "usp": "단독구성",
-      "rank_delta": "-4",
-      "is_new_entry": false
+      "rank_delta": -4,
+      "is_new_entry": false,
+      "rank_comparison_status": "compared"
     },
     {
       "category": "팬시/문구/취미 (IP핵심)",
@@ -811,10 +861,11 @@
       "product_id": 13261876,
       "scraped_at": "2026-09-15 10:54:55",
       "price_numeric": 12000,
-      "price_tier": "1~3만원대",
+      "price_tier": "1만원대",
       "usp": "일반구성",
-      "rank_delta": "1",
-      "is_new_entry": false
+      "rank_delta": 1,
+      "is_new_entry": false,
+      "rank_comparison_status": "compared"
     },
     {
       "category": "팬시/문구/취미 (IP핵심)",
@@ -827,10 +878,11 @@
       "product_id": 14096838,
       "scraped_at": "2026-09-15 10:54:55",
       "price_numeric": 12800,
-      "price_tier": "1~3만원대",
+      "price_tier": "1만원대",
       "usp": "일반구성",
-      "rank_delta": "NEW",
-      "is_new_entry": true
+      "rank_delta": 1,
+      "is_new_entry": false,
+      "rank_comparison_status": "compared"
     },
     {
       "category": "팬시/문구/취미 (IP핵심)",
@@ -843,10 +895,11 @@
       "product_id": 10974656,
       "scraped_at": "2026-09-15 10:54:55",
       "price_numeric": 8900,
-      "price_tier": "1만원 이하",
+      "price_tier": "1만원 미만",
       "usp": "일반구성",
-      "rank_delta": "2",
-      "is_new_entry": false
+      "rank_delta": 2,
+      "is_new_entry": false,
+      "rank_comparison_status": "compared"
     },
     {
       "category": "팬시/문구/취미 (IP핵심)",
@@ -859,10 +912,11 @@
       "product_id": 11368084,
       "scraped_at": "2026-09-15 10:54:55",
       "price_numeric": 39800,
-      "price_tier": "3~5만원대",
+      "price_tier": "3만원대",
       "usp": "각인/자수",
-      "rank_delta": "16",
-      "is_new_entry": false
+      "rank_delta": 16,
+      "is_new_entry": false,
+      "rank_comparison_status": "compared"
     },
     {
       "category": "팬시/문구/취미 (IP핵심)",
@@ -875,10 +929,11 @@
       "product_id": 13881169,
       "scraped_at": "2026-09-15 10:54:55",
       "price_numeric": 16300,
-      "price_tier": "1~3만원대",
+      "price_tier": "1만원대",
       "usp": "일반구성",
-      "rank_delta": "NEW",
-      "is_new_entry": true
+      "rank_delta": 9,
+      "is_new_entry": false,
+      "rank_comparison_status": "compared"
     },
     {
       "category": "팬시/문구/취미 (IP핵심)",
@@ -891,10 +946,11 @@
       "product_id": 9235675,
       "scraped_at": "2026-09-15 10:54:55",
       "price_numeric": 16900,
-      "price_tier": "1~3만원대",
+      "price_tier": "1만원대",
       "usp": "일반구성",
-      "rank_delta": "2",
-      "is_new_entry": false
+      "rank_delta": 2,
+      "is_new_entry": false,
+      "rank_comparison_status": "compared"
     },
     {
       "category": "팬시/문구/취미 (IP핵심)",
@@ -907,10 +963,11 @@
       "product_id": 13711010,
       "scraped_at": "2026-09-15 10:54:55",
       "price_numeric": 9900,
-      "price_tier": "1만원 이하",
+      "price_tier": "1만원 미만",
       "usp": "일반구성",
-      "rank_delta": "-1",
-      "is_new_entry": false
+      "rank_delta": -1,
+      "is_new_entry": false,
+      "rank_comparison_status": "compared"
     },
     {
       "category": "팬시/문구/취미 (IP핵심)",
@@ -923,10 +980,11 @@
       "product_id": 14096676,
       "scraped_at": "2026-09-15 10:54:55",
       "price_numeric": 14800,
-      "price_tier": "1~3만원대",
+      "price_tier": "1만원대",
       "usp": "일반구성",
-      "rank_delta": "NEW",
-      "is_new_entry": true
+      "rank_delta": -1,
+      "is_new_entry": false,
+      "rank_comparison_status": "compared"
     },
     {
       "category": "팬시/문구/취미 (IP핵심)",
@@ -939,10 +997,11 @@
       "product_id": 13064170,
       "scraped_at": "2026-09-15 10:54:55",
       "price_numeric": 12900,
-      "price_tier": "1~3만원대",
+      "price_tier": "1만원대",
       "usp": "일반구성",
-      "rank_delta": "3",
-      "is_new_entry": false
+      "rank_delta": 3,
+      "is_new_entry": false,
+      "rank_comparison_status": "compared"
     },
     {
       "category": "팬시/문구/취미 (IP핵심)",
@@ -955,10 +1014,11 @@
       "product_id": 12222102,
       "scraped_at": "2026-09-15 10:54:55",
       "price_numeric": 5000,
-      "price_tier": "1만원 이하",
+      "price_tier": "1만원 미만",
       "usp": "일반구성",
-      "rank_delta": "NEW",
-      "is_new_entry": true
+      "rank_delta": 0,
+      "is_new_entry": false,
+      "rank_comparison_status": "compared"
     },
     {
       "category": "팬시/문구/취미 (IP핵심)",
@@ -971,10 +1031,11 @@
       "product_id": 14150199,
       "scraped_at": "2026-09-15 10:54:55",
       "price_numeric": 16900,
-      "price_tier": "1~3만원대",
+      "price_tier": "1만원대",
       "usp": "선물포장, 단독구성",
-      "rank_delta": "NEW",
-      "is_new_entry": true
+      "rank_delta": 5,
+      "is_new_entry": false,
+      "rank_comparison_status": "compared"
     },
     {
       "category": "팬시/문구/취미 (IP핵심)",
@@ -987,10 +1048,11 @@
       "product_id": 11566569,
       "scraped_at": "2026-09-15 10:54:55",
       "price_numeric": 20000,
-      "price_tier": "1~3만원대",
+      "price_tier": "2만원대",
       "usp": "단독구성",
-      "rank_delta": "NEW",
-      "is_new_entry": true
+      "rank_delta": -3,
+      "is_new_entry": false,
+      "rank_comparison_status": "compared"
     },
     {
       "category": "팬시/문구/취미 (IP핵심)",
@@ -1003,10 +1065,11 @@
       "product_id": 12319916,
       "scraped_at": "2026-09-15 10:54:55",
       "price_numeric": 35000,
-      "price_tier": "3~5만원대",
+      "price_tier": "3만원대",
       "usp": "일반구성",
-      "rank_delta": "NEW",
-      "is_new_entry": true
+      "rank_delta": 6,
+      "is_new_entry": false,
+      "rank_comparison_status": "compared"
     },
     {
       "category": "팬시/문구/취미 (IP핵심)",
@@ -1019,10 +1082,11 @@
       "product_id": 12059249,
       "scraped_at": "2026-09-15 10:54:56",
       "price_numeric": 16900,
-      "price_tier": "1~3만원대",
+      "price_tier": "1만원대",
       "usp": "일반구성",
-      "rank_delta": "NEW",
-      "is_new_entry": true
+      "rank_delta": 1,
+      "is_new_entry": false,
+      "rank_comparison_status": "compared"
     },
     {
       "category": "팬시/문구/취미 (IP핵심)",
@@ -1035,10 +1099,11 @@
       "product_id": 13689140,
       "scraped_at": "2026-09-15 10:54:56",
       "price_numeric": 19500,
-      "price_tier": "1~3만원대",
+      "price_tier": "1만원대",
       "usp": "일반구성",
-      "rank_delta": "NEW",
-      "is_new_entry": true
+      "rank_delta": -11,
+      "is_new_entry": false,
+      "rank_comparison_status": "compared"
     },
     {
       "category": "팬시/문구/취미 (IP핵심)",
@@ -1051,10 +1116,11 @@
       "product_id": 11734230,
       "scraped_at": "2026-09-15 10:54:56",
       "price_numeric": 16300,
-      "price_tier": "1~3만원대",
+      "price_tier": "1만원대",
       "usp": "일반구성",
-      "rank_delta": "-5",
-      "is_new_entry": false
+      "rank_delta": -5,
+      "is_new_entry": false,
+      "rank_comparison_status": "compared"
     },
     {
       "category": "팬시/문구/취미 (IP핵심)",
@@ -1067,10 +1133,11 @@
       "product_id": 10940152,
       "scraped_at": "2026-09-15 10:54:56",
       "price_numeric": 8900,
-      "price_tier": "1만원 이하",
+      "price_tier": "1만원 미만",
       "usp": "일반구성",
-      "rank_delta": "37",
-      "is_new_entry": false
+      "rank_delta": 37,
+      "is_new_entry": false,
+      "rank_comparison_status": "compared"
     },
     {
       "category": "팬시/문구/취미 (IP핵심)",
@@ -1083,10 +1150,11 @@
       "product_id": 14191242,
       "scraped_at": "2026-09-15 10:54:56",
       "price_numeric": 8000,
-      "price_tier": "1만원 이하",
+      "price_tier": "1만원 미만",
       "usp": "일반구성",
-      "rank_delta": "3",
-      "is_new_entry": false
+      "rank_delta": 3,
+      "is_new_entry": false,
+      "rank_comparison_status": "compared"
     },
     {
       "category": "팬시/문구/취미 (IP핵심)",
@@ -1099,10 +1167,11 @@
       "product_id": 12820476,
       "scraped_at": "2026-09-15 10:54:56",
       "price_numeric": 18800,
-      "price_tier": "1~3만원대",
+      "price_tier": "1만원대",
       "usp": "단독구성",
-      "rank_delta": "NEW",
-      "is_new_entry": true
+      "rank_delta": 7,
+      "is_new_entry": false,
+      "rank_comparison_status": "compared"
     },
     {
       "category": "팬시/문구/취미 (IP핵심)",
@@ -1115,10 +1184,11 @@
       "product_id": 13697772,
       "scraped_at": "2026-09-15 10:54:56",
       "price_numeric": 15000,
-      "price_tier": "1~3만원대",
+      "price_tier": "1만원대",
       "usp": "일반구성",
-      "rank_delta": "NEW",
-      "is_new_entry": true
+      "rank_delta": -3,
+      "is_new_entry": false,
+      "rank_comparison_status": "compared"
     },
     {
       "category": "팬시/문구/취미 (IP핵심)",
@@ -1131,10 +1201,11 @@
       "product_id": 14049180,
       "scraped_at": "2026-09-15 10:54:56",
       "price_numeric": 8500,
-      "price_tier": "1만원 이하",
+      "price_tier": "1만원 미만",
       "usp": "일반구성",
-      "rank_delta": "NEW",
-      "is_new_entry": true
+      "rank_delta": 10,
+      "is_new_entry": false,
+      "rank_comparison_status": "compared"
     },
     {
       "category": "팬시/문구/취미 (IP핵심)",
@@ -1147,10 +1218,11 @@
       "product_id": 12054525,
       "scraped_at": "2026-09-15 10:54:56",
       "price_numeric": 7200,
-      "price_tier": "1만원 이하",
+      "price_tier": "1만원 미만",
       "usp": "일반구성",
-      "rank_delta": "NEW",
-      "is_new_entry": true
+      "rank_delta": -4,
+      "is_new_entry": false,
+      "rank_comparison_status": "compared"
     },
     {
       "category": "팬시/문구/취미 (IP핵심)",
@@ -1163,10 +1235,11 @@
       "product_id": 14268271,
       "scraped_at": "2026-09-15 10:54:56",
       "price_numeric": 12500,
-      "price_tier": "1~3만원대",
+      "price_tier": "1만원대",
       "usp": "일반구성",
-      "rank_delta": "76",
-      "is_new_entry": false
+      "rank_delta": 76,
+      "is_new_entry": false,
+      "rank_comparison_status": "compared"
     },
     {
       "category": "팬시/문구/취미 (IP핵심)",
@@ -1179,10 +1252,11 @@
       "product_id": 12365669,
       "scraped_at": "2026-09-15 10:54:56",
       "price_numeric": 9900,
-      "price_tier": "1만원 이하",
+      "price_tier": "1만원 미만",
       "usp": "일반구성",
-      "rank_delta": "NEW",
-      "is_new_entry": true
+      "rank_delta": 1,
+      "is_new_entry": false,
+      "rank_comparison_status": "compared"
     },
     {
       "category": "팬시/문구/취미 (IP핵심)",
@@ -1195,10 +1269,11 @@
       "product_id": 7795875,
       "scraped_at": "2026-09-15 10:54:56",
       "price_numeric": 9900,
-      "price_tier": "1만원 이하",
+      "price_tier": "1만원 미만",
       "usp": "일반구성",
-      "rank_delta": "NEW",
-      "is_new_entry": true
+      "rank_delta": 4,
+      "is_new_entry": false,
+      "rank_comparison_status": "compared"
     },
     {
       "category": "팬시/문구/취미 (IP핵심)",
@@ -1211,10 +1286,11 @@
       "product_id": 11691666,
       "scraped_at": "2026-09-15 10:54:57",
       "price_numeric": 15900,
-      "price_tier": "1~3만원대",
+      "price_tier": "1만원대",
       "usp": "일반구성",
-      "rank_delta": "NEW",
-      "is_new_entry": true
+      "rank_delta": 25,
+      "is_new_entry": false,
+      "rank_comparison_status": "compared"
     },
     {
       "category": "팬시/문구/취미 (IP핵심)",
@@ -1227,10 +1303,11 @@
       "product_id": 12084556,
       "scraped_at": "2026-09-15 10:54:57",
       "price_numeric": 5400,
-      "price_tier": "1만원 이하",
+      "price_tier": "1만원 미만",
       "usp": "일반구성",
-      "rank_delta": "NEW",
-      "is_new_entry": true
+      "rank_delta": 0,
+      "is_new_entry": false,
+      "rank_comparison_status": "compared"
     },
     {
       "category": "팬시/문구/취미 (IP핵심)",
@@ -1243,10 +1320,11 @@
       "product_id": 13781031,
       "scraped_at": "2026-09-15 10:54:57",
       "price_numeric": 17900,
-      "price_tier": "1~3만원대",
+      "price_tier": "1만원대",
       "usp": "일반구성",
       "rank_delta": "NEW",
-      "is_new_entry": true
+      "is_new_entry": true,
+      "rank_comparison_status": "new"
     },
     {
       "category": "팬시/문구/취미 (IP핵심)",
@@ -1259,10 +1337,11 @@
       "product_id": 13763303,
       "scraped_at": "2026-09-15 10:54:57",
       "price_numeric": 16000,
-      "price_tier": "1~3만원대",
+      "price_tier": "1만원대",
       "usp": "일반구성",
-      "rank_delta": "NEW",
-      "is_new_entry": true
+      "rank_delta": -16,
+      "is_new_entry": false,
+      "rank_comparison_status": "compared"
     },
     {
       "category": "팬시/문구/취미 (IP핵심)",
@@ -1275,10 +1354,11 @@
       "product_id": 13458352,
       "scraped_at": "2026-09-15 10:54:57",
       "price_numeric": 12000,
-      "price_tier": "1~3만원대",
+      "price_tier": "1만원대",
       "usp": "일반구성",
-      "rank_delta": "NEW",
-      "is_new_entry": true
+      "rank_delta": 33,
+      "is_new_entry": false,
+      "rank_comparison_status": "compared"
     },
     {
       "category": "팬시/문구/취미 (IP핵심)",
@@ -1291,10 +1371,11 @@
       "product_id": 13450660,
       "scraped_at": "2026-09-15 10:54:57",
       "price_numeric": 31800,
-      "price_tier": "3~5만원대",
+      "price_tier": "3만원대",
       "usp": "일반구성",
-      "rank_delta": "NEW",
-      "is_new_entry": true
+      "rank_delta": 11,
+      "is_new_entry": false,
+      "rank_comparison_status": "compared"
     },
     {
       "category": "팬시/문구/취미 (IP핵심)",
@@ -1307,10 +1388,11 @@
       "product_id": 9273061,
       "scraped_at": "2026-09-15 10:54:57",
       "price_numeric": 14900,
-      "price_tier": "1~3만원대",
+      "price_tier": "1만원대",
       "usp": "일반구성",
-      "rank_delta": "NEW",
-      "is_new_entry": true
+      "rank_delta": 50,
+      "is_new_entry": false,
+      "rank_comparison_status": "compared"
     },
     {
       "category": "팬시/문구/취미 (IP핵심)",
@@ -1323,10 +1405,11 @@
       "product_id": 12551938,
       "scraped_at": "2026-09-15 10:54:57",
       "price_numeric": 15000,
-      "price_tier": "1~3만원대",
+      "price_tier": "1만원대",
       "usp": "일반구성",
-      "rank_delta": "NEW",
-      "is_new_entry": true
+      "rank_delta": -11,
+      "is_new_entry": false,
+      "rank_comparison_status": "compared"
     },
     {
       "category": "팬시/문구/취미 (IP핵심)",
@@ -1339,10 +1422,11 @@
       "product_id": 12956735,
       "scraped_at": "2026-09-15 10:54:57",
       "price_numeric": 7900,
-      "price_tier": "1만원 이하",
+      "price_tier": "1만원 미만",
       "usp": "일반구성",
-      "rank_delta": "NEW",
-      "is_new_entry": true
+      "rank_delta": 38,
+      "is_new_entry": false,
+      "rank_comparison_status": "compared"
     },
     {
       "category": "팬시/문구/취미 (IP핵심)",
@@ -1355,10 +1439,11 @@
       "product_id": 13008650,
       "scraped_at": "2026-09-15 10:54:57",
       "price_numeric": 34000,
-      "price_tier": "3~5만원대",
+      "price_tier": "3만원대",
       "usp": "일반구성",
-      "rank_delta": "NEW",
-      "is_new_entry": true
+      "rank_delta": 2,
+      "is_new_entry": false,
+      "rank_comparison_status": "compared"
     },
     {
       "category": "팬시/문구/취미 (IP핵심)",
@@ -1371,10 +1456,11 @@
       "product_id": 11985626,
       "scraped_at": "2026-09-15 10:54:57",
       "price_numeric": 8800,
-      "price_tier": "1만원 이하",
+      "price_tier": "1만원 미만",
       "usp": "일반구성",
-      "rank_delta": "NEW",
-      "is_new_entry": true
+      "rank_delta": -1,
+      "is_new_entry": false,
+      "rank_comparison_status": "compared"
     },
     {
       "category": "팬시/문구/취미 (IP핵심)",
@@ -1387,10 +1473,11 @@
       "product_id": 12668199,
       "scraped_at": "2026-09-15 10:54:57",
       "price_numeric": 5900,
-      "price_tier": "1만원 이하",
+      "price_tier": "1만원 미만",
       "usp": "일반구성",
-      "rank_delta": "NEW",
-      "is_new_entry": true
+      "rank_delta": 15,
+      "is_new_entry": false,
+      "rank_comparison_status": "compared"
     },
     {
       "category": "팬시/문구/취미 (IP핵심)",
@@ -1403,10 +1490,11 @@
       "product_id": 5096671,
       "scraped_at": "2026-09-15 10:54:57",
       "price_numeric": 7900,
-      "price_tier": "1만원 이하",
+      "price_tier": "1만원 미만",
       "usp": "일반구성",
-      "rank_delta": "3",
-      "is_new_entry": false
+      "rank_delta": 3,
+      "is_new_entry": false,
+      "rank_comparison_status": "compared"
     },
     {
       "category": "팬시/문구/취미 (IP핵심)",
@@ -1419,10 +1507,11 @@
       "product_id": 13509211,
       "scraped_at": "2026-09-15 10:54:57",
       "price_numeric": 32000,
-      "price_tier": "3~5만원대",
+      "price_tier": "3만원대",
       "usp": "단독구성",
-      "rank_delta": "NEW",
-      "is_new_entry": true
+      "rank_delta": 19,
+      "is_new_entry": false,
+      "rank_comparison_status": "compared"
     },
     {
       "category": "팬시/문구/취미 (IP핵심)",
@@ -1435,10 +1524,11 @@
       "product_id": 11857070,
       "scraped_at": "2026-09-15 10:54:57",
       "price_numeric": 13600,
-      "price_tier": "1~3만원대",
+      "price_tier": "1만원대",
       "usp": "단독구성",
-      "rank_delta": "NEW",
-      "is_new_entry": true
+      "rank_delta": 25,
+      "is_new_entry": false,
+      "rank_comparison_status": "compared"
     },
     {
       "category": "팬시/문구/취미 (IP핵심)",
@@ -1451,10 +1541,11 @@
       "product_id": 14242122,
       "scraped_at": "2026-09-15 10:54:57",
       "price_numeric": 30000,
-      "price_tier": "1~3만원대",
+      "price_tier": "3만원대",
       "usp": "각인/자수",
       "rank_delta": "NEW",
-      "is_new_entry": true
+      "is_new_entry": true,
+      "rank_comparison_status": "new"
     },
     {
       "category": "팬시/문구/취미 (IP핵심)",
@@ -1467,10 +1558,11 @@
       "product_id": 10941248,
       "scraped_at": "2026-09-15 10:54:57",
       "price_numeric": 7900,
-      "price_tier": "1만원 이하",
+      "price_tier": "1만원 미만",
       "usp": "일반구성",
       "rank_delta": "NEW",
-      "is_new_entry": true
+      "is_new_entry": true,
+      "rank_comparison_status": "new"
     },
     {
       "category": "팬시/문구/취미 (IP핵심)",
@@ -1483,10 +1575,11 @@
       "product_id": 13672457,
       "scraped_at": "2026-09-15 10:54:58",
       "price_numeric": 39800,
-      "price_tier": "3~5만원대",
+      "price_tier": "3만원대",
       "usp": "일반구성",
-      "rank_delta": "14",
-      "is_new_entry": false
+      "rank_delta": 14,
+      "is_new_entry": false,
+      "rank_comparison_status": "compared"
     },
     {
       "category": "팬시/문구/취미 (IP핵심)",
@@ -1499,10 +1592,11 @@
       "product_id": 13466293,
       "scraped_at": "2026-09-15 10:54:58",
       "price_numeric": 36000,
-      "price_tier": "3~5만원대",
+      "price_tier": "3만원대",
       "usp": "선물포장",
-      "rank_delta": "NEW",
-      "is_new_entry": true
+      "rank_delta": 11,
+      "is_new_entry": false,
+      "rank_comparison_status": "compared"
     },
     {
       "category": "팬시/문구/취미 (IP핵심)",
@@ -1515,10 +1609,11 @@
       "product_id": 8207423,
       "scraped_at": "2026-09-15 10:54:58",
       "price_numeric": 9900,
-      "price_tier": "1만원 이하",
+      "price_tier": "1만원 미만",
       "usp": "일반구성",
       "rank_delta": "NEW",
-      "is_new_entry": true
+      "is_new_entry": true,
+      "rank_comparison_status": "new"
     },
     {
       "category": "팬시/문구/취미 (IP핵심)",
@@ -1531,10 +1626,11 @@
       "product_id": 6186802,
       "scraped_at": "2026-09-15 10:54:58",
       "price_numeric": 12900,
-      "price_tier": "1~3만원대",
+      "price_tier": "1만원대",
       "usp": "선물포장, 단독구성",
-      "rank_delta": "-1",
-      "is_new_entry": false
+      "rank_delta": -1,
+      "is_new_entry": false,
+      "rank_comparison_status": "compared"
     },
     {
       "category": "팬시/문구/취미 (IP핵심)",
@@ -1547,10 +1643,11 @@
       "product_id": 10293933,
       "scraped_at": "2026-09-15 10:54:58",
       "price_numeric": 7500,
-      "price_tier": "1만원 이하",
+      "price_tier": "1만원 미만",
       "usp": "일반구성",
       "rank_delta": "NEW",
-      "is_new_entry": true
+      "is_new_entry": true,
+      "rank_comparison_status": "new"
     },
     {
       "category": "팬시/문구/취미 (IP핵심)",
@@ -1563,10 +1660,11 @@
       "product_id": 13673431,
       "scraped_at": "2026-09-15 10:54:58",
       "price_numeric": 9900,
-      "price_tier": "1만원 이하",
+      "price_tier": "1만원 미만",
       "usp": "일반구성",
-      "rank_delta": "NEW",
-      "is_new_entry": true
+      "rank_delta": -4,
+      "is_new_entry": false,
+      "rank_comparison_status": "compared"
     },
     {
       "category": "팬시/문구/취미 (IP핵심)",
@@ -1579,10 +1677,11 @@
       "product_id": 13900412,
       "scraped_at": "2026-09-15 10:54:58",
       "price_numeric": 13800,
-      "price_tier": "1~3만원대",
+      "price_tier": "1만원대",
       "usp": "일반구성",
-      "rank_delta": "-3",
-      "is_new_entry": false
+      "rank_delta": -3,
+      "is_new_entry": false,
+      "rank_comparison_status": "compared"
     },
     {
       "category": "팬시/문구/취미 (IP핵심)",
@@ -1595,10 +1694,11 @@
       "product_id": 11366993,
       "scraped_at": "2026-09-15 10:54:58",
       "price_numeric": 7900,
-      "price_tier": "1만원 이하",
+      "price_tier": "1만원 미만",
       "usp": "단독구성",
       "rank_delta": "NEW",
-      "is_new_entry": true
+      "is_new_entry": true,
+      "rank_comparison_status": "new"
     },
     {
       "category": "침구/패브릭",
@@ -1611,10 +1711,11 @@
       "product_id": 7355950,
       "scraped_at": "2026-09-15 10:55:04",
       "price_numeric": 22900,
-      "price_tier": "1~3만원대",
+      "price_tier": "2만원대",
       "usp": "일반구성",
-      "rank_delta": "0",
-      "is_new_entry": false
+      "rank_delta": 0,
+      "is_new_entry": false,
+      "rank_comparison_status": "compared"
     },
     {
       "category": "침구/패브릭",
@@ -1627,10 +1728,11 @@
       "product_id": 11743570,
       "scraped_at": "2026-09-15 10:55:04",
       "price_numeric": 34800,
-      "price_tier": "3~5만원대",
+      "price_tier": "3만원대",
       "usp": "단독구성",
-      "rank_delta": "0",
-      "is_new_entry": false
+      "rank_delta": 0,
+      "is_new_entry": false,
+      "rank_comparison_status": "compared"
     },
     {
       "category": "침구/패브릭",
@@ -1643,10 +1745,11 @@
       "product_id": 6986025,
       "scraped_at": "2026-09-15 10:55:05",
       "price_numeric": 29900,
-      "price_tier": "1~3만원대",
+      "price_tier": "2만원대",
       "usp": "일반구성",
       "rank_delta": "NEW",
-      "is_new_entry": true
+      "is_new_entry": true,
+      "rank_comparison_status": "new"
     },
     {
       "category": "침구/패브릭",
@@ -1659,10 +1762,11 @@
       "product_id": 5328353,
       "scraped_at": "2026-09-15 10:55:05",
       "price_numeric": 29800,
-      "price_tier": "1~3만원대",
+      "price_tier": "2만원대",
       "usp": "단독구성",
-      "rank_delta": "0",
-      "is_new_entry": false
+      "rank_delta": 0,
+      "is_new_entry": false,
+      "rank_comparison_status": "compared"
     },
     {
       "category": "침구/패브릭",
@@ -1675,10 +1779,11 @@
       "product_id": 14096524,
       "scraped_at": "2026-09-15 10:55:05",
       "price_numeric": 17800,
-      "price_tier": "1~3만원대",
+      "price_tier": "1만원대",
       "usp": "일반구성",
-      "rank_delta": "NEW",
-      "is_new_entry": true
+      "rank_delta": -2,
+      "is_new_entry": false,
+      "rank_comparison_status": "compared"
     },
     {
       "category": "침구/패브릭",
@@ -1691,10 +1796,11 @@
       "product_id": 13255931,
       "scraped_at": "2026-09-15 10:55:05",
       "price_numeric": 37900,
-      "price_tier": "3~5만원대",
+      "price_tier": "3만원대",
       "usp": "단독구성",
-      "rank_delta": "-1",
-      "is_new_entry": false
+      "rank_delta": -1,
+      "is_new_entry": false,
+      "rank_comparison_status": "compared"
     },
     {
       "category": "침구/패브릭",
@@ -1707,10 +1813,11 @@
       "product_id": 12693742,
       "scraped_at": "2026-09-15 10:55:05",
       "price_numeric": 23000,
-      "price_tier": "1~3만원대",
+      "price_tier": "2만원대",
       "usp": "일반구성",
-      "rank_delta": "6",
-      "is_new_entry": false
+      "rank_delta": 6,
+      "is_new_entry": false,
+      "rank_comparison_status": "compared"
     },
     {
       "category": "침구/패브릭",
@@ -1723,10 +1830,11 @@
       "product_id": 12281507,
       "scraped_at": "2026-09-15 10:55:05",
       "price_numeric": 18800,
-      "price_tier": "1~3만원대",
+      "price_tier": "1만원대",
       "usp": "일반구성",
-      "rank_delta": "-2",
-      "is_new_entry": false
+      "rank_delta": -2,
+      "is_new_entry": false,
+      "rank_comparison_status": "compared"
     },
     {
       "category": "침구/패브릭",
@@ -1739,10 +1847,11 @@
       "product_id": 5328905,
       "scraped_at": "2026-09-15 10:55:05",
       "price_numeric": 29900,
-      "price_tier": "1~3만원대",
+      "price_tier": "2만원대",
       "usp": "단독구성",
-      "rank_delta": "-2",
-      "is_new_entry": false
+      "rank_delta": -2,
+      "is_new_entry": false,
+      "rank_comparison_status": "compared"
     },
     {
       "category": "침구/패브릭",
@@ -1755,10 +1864,11 @@
       "product_id": 8091057,
       "scraped_at": "2026-09-15 10:55:05",
       "price_numeric": 13800,
-      "price_tier": "1~3만원대",
+      "price_tier": "1만원대",
       "usp": "일반구성",
-      "rank_delta": "1",
-      "is_new_entry": false
+      "rank_delta": 1,
+      "is_new_entry": false,
+      "rank_comparison_status": "compared"
     },
     {
       "category": "침구/패브릭",
@@ -1771,10 +1881,11 @@
       "product_id": 7896387,
       "scraped_at": "2026-09-15 10:55:05",
       "price_numeric": 16900,
-      "price_tier": "1~3만원대",
+      "price_tier": "1만원대",
       "usp": "일반구성",
-      "rank_delta": "NEW",
-      "is_new_entry": true
+      "rank_delta": -1,
+      "is_new_entry": false,
+      "rank_comparison_status": "compared"
     },
     {
       "category": "침구/패브릭",
@@ -1787,10 +1898,11 @@
       "product_id": 12617143,
       "scraped_at": "2026-09-15 10:55:05",
       "price_numeric": 17900,
-      "price_tier": "1~3만원대",
+      "price_tier": "1만원대",
       "usp": "일반구성",
-      "rank_delta": "NEW",
-      "is_new_entry": true
+      "rank_delta": -4,
+      "is_new_entry": false,
+      "rank_comparison_status": "compared"
     },
     {
       "category": "침구/패브릭",
@@ -1803,10 +1915,11 @@
       "product_id": 13808817,
       "scraped_at": "2026-09-15 10:55:06",
       "price_numeric": 29000,
-      "price_tier": "1~3만원대",
+      "price_tier": "2만원대",
       "usp": "일반구성",
-      "rank_delta": "NEW",
-      "is_new_entry": true
+      "rank_delta": 2,
+      "is_new_entry": false,
+      "rank_comparison_status": "compared"
     },
     {
       "category": "침구/패브릭",
@@ -1819,10 +1932,11 @@
       "product_id": 7025670,
       "scraped_at": "2026-09-15 10:55:06",
       "price_numeric": 29800,
-      "price_tier": "1~3만원대",
+      "price_tier": "2만원대",
       "usp": "단독구성",
-      "rank_delta": "31",
-      "is_new_entry": false
+      "rank_delta": 31,
+      "is_new_entry": false,
+      "rank_comparison_status": "compared"
     },
     {
       "category": "침구/패브릭",
@@ -1835,10 +1949,11 @@
       "product_id": 10819633,
       "scraped_at": "2026-09-15 10:55:06",
       "price_numeric": 14900,
-      "price_tier": "1~3만원대",
+      "price_tier": "1만원대",
       "usp": "일반구성",
-      "rank_delta": "NEW",
-      "is_new_entry": true
+      "rank_delta": 12,
+      "is_new_entry": false,
+      "rank_comparison_status": "compared"
     },
     {
       "category": "침구/패브릭",
@@ -1851,10 +1966,11 @@
       "product_id": 7322097,
       "scraped_at": "2026-09-15 10:55:06",
       "price_numeric": 36900,
-      "price_tier": "3~5만원대",
+      "price_tier": "3만원대",
       "usp": "단독구성",
-      "rank_delta": "NEW",
-      "is_new_entry": true
+      "rank_delta": -7,
+      "is_new_entry": false,
+      "rank_comparison_status": "compared"
     },
     {
       "category": "침구/패브릭",
@@ -1867,10 +1983,11 @@
       "product_id": 7025298,
       "scraped_at": "2026-09-15 10:55:06",
       "price_numeric": 29900,
-      "price_tier": "1~3만원대",
+      "price_tier": "2만원대",
       "usp": "단독구성",
-      "rank_delta": "5",
-      "is_new_entry": false
+      "rank_delta": 5,
+      "is_new_entry": false,
+      "rank_comparison_status": "compared"
     },
     {
       "category": "침구/패브릭",
@@ -1883,10 +2000,11 @@
       "product_id": 14221797,
       "scraped_at": "2026-09-15 10:55:06",
       "price_numeric": 37000,
-      "price_tier": "3~5만원대",
+      "price_tier": "3만원대",
       "usp": "일반구성",
-      "rank_delta": "-2",
-      "is_new_entry": false
+      "rank_delta": -2,
+      "is_new_entry": false,
+      "rank_comparison_status": "compared"
     },
     {
       "category": "침구/패브릭",
@@ -1899,10 +2017,11 @@
       "product_id": 10998140,
       "scraped_at": "2026-09-15 10:55:06",
       "price_numeric": 15900,
-      "price_tier": "1~3만원대",
+      "price_tier": "1만원대",
       "usp": "일반구성",
-      "rank_delta": "-1",
-      "is_new_entry": false
+      "rank_delta": -1,
+      "is_new_entry": false,
+      "rank_comparison_status": "compared"
     },
     {
       "category": "침구/패브릭",
@@ -1915,10 +2034,11 @@
       "product_id": 1308578,
       "scraped_at": "2026-09-15 10:55:06",
       "price_numeric": 44900,
-      "price_tier": "3~5만원대",
+      "price_tier": "4만원대",
       "usp": "단독구성",
-      "rank_delta": "4",
-      "is_new_entry": false
+      "rank_delta": 4,
+      "is_new_entry": false,
+      "rank_comparison_status": "compared"
     },
     {
       "category": "침구/패브릭",
@@ -1931,10 +2051,11 @@
       "product_id": 13216407,
       "scraped_at": "2026-09-15 10:55:06",
       "price_numeric": 15900,
-      "price_tier": "1~3만원대",
+      "price_tier": "1만원대",
       "usp": "단독구성",
-      "rank_delta": "-7",
-      "is_new_entry": false
+      "rank_delta": -7,
+      "is_new_entry": false,
+      "rank_comparison_status": "compared"
     },
     {
       "category": "침구/패브릭",
@@ -1947,10 +2068,11 @@
       "product_id": 13983870,
       "scraped_at": "2026-09-15 10:55:06",
       "price_numeric": 22900,
-      "price_tier": "1~3만원대",
+      "price_tier": "2만원대",
       "usp": "일반구성",
       "rank_delta": "NEW",
-      "is_new_entry": true
+      "is_new_entry": true,
+      "rank_comparison_status": "new"
     },
     {
       "category": "침구/패브릭",
@@ -1963,10 +2085,11 @@
       "product_id": 1242861,
       "scraped_at": "2026-09-15 10:55:06",
       "price_numeric": 29900,
-      "price_tier": "1~3만원대",
+      "price_tier": "2만원대",
       "usp": "단독구성",
-      "rank_delta": "11",
-      "is_new_entry": false
+      "rank_delta": 11,
+      "is_new_entry": false,
+      "rank_comparison_status": "compared"
     },
     {
       "category": "침구/패브릭",
@@ -1979,10 +2102,11 @@
       "product_id": 11539740,
       "scraped_at": "2026-09-15 10:55:06",
       "price_numeric": 21800,
-      "price_tier": "1~3만원대",
+      "price_tier": "2만원대",
       "usp": "일반구성",
-      "rank_delta": "8",
-      "is_new_entry": false
+      "rank_delta": 8,
+      "is_new_entry": false,
+      "rank_comparison_status": "compared"
     },
     {
       "category": "침구/패브릭",
@@ -1995,10 +2119,11 @@
       "product_id": 13983873,
       "scraped_at": "2026-09-15 10:55:06",
       "price_numeric": 36900,
-      "price_tier": "3~5만원대",
+      "price_tier": "3만원대",
       "usp": "일반구성",
-      "rank_delta": "NEW",
-      "is_new_entry": true
+      "rank_delta": -6,
+      "is_new_entry": false,
+      "rank_comparison_status": "compared"
     },
     {
       "category": "침구/패브릭",
@@ -2011,10 +2136,11 @@
       "product_id": 7262354,
       "scraped_at": "2026-09-15 10:55:06",
       "price_numeric": 13900,
-      "price_tier": "1~3만원대",
+      "price_tier": "1만원대",
       "usp": "일반구성",
-      "rank_delta": "-1",
-      "is_new_entry": false
+      "rank_delta": -1,
+      "is_new_entry": false,
+      "rank_comparison_status": "compared"
     },
     {
       "category": "침구/패브릭",
@@ -2027,10 +2153,11 @@
       "product_id": 945159,
       "scraped_at": "2026-09-15 10:55:06",
       "price_numeric": 25000,
-      "price_tier": "1~3만원대",
+      "price_tier": "2만원대",
       "usp": "일반구성",
-      "rank_delta": "NEW",
-      "is_new_entry": true
+      "rank_delta": -7,
+      "is_new_entry": false,
+      "rank_comparison_status": "compared"
     },
     {
       "category": "침구/패브릭",
@@ -2043,10 +2170,11 @@
       "product_id": 12818996,
       "scraped_at": "2026-09-15 10:55:07",
       "price_numeric": 19800,
-      "price_tier": "1~3만원대",
+      "price_tier": "1만원대",
       "usp": "일반구성",
-      "rank_delta": "NEW",
-      "is_new_entry": true
+      "rank_delta": -11,
+      "is_new_entry": false,
+      "rank_comparison_status": "compared"
     },
     {
       "category": "침구/패브릭",
@@ -2059,10 +2187,11 @@
       "product_id": 3833938,
       "scraped_at": "2026-09-15 10:55:07",
       "price_numeric": 13900,
-      "price_tier": "1~3만원대",
+      "price_tier": "1만원대",
       "usp": "단독구성",
-      "rank_delta": "-8",
-      "is_new_entry": false
+      "rank_delta": -8,
+      "is_new_entry": false,
+      "rank_comparison_status": "compared"
     },
     {
       "category": "침구/패브릭",
@@ -2075,10 +2204,11 @@
       "product_id": 8510786,
       "scraped_at": "2026-09-15 10:55:07",
       "price_numeric": 23900,
-      "price_tier": "1~3만원대",
+      "price_tier": "2만원대",
       "usp": "일반구성",
-      "rank_delta": "30",
-      "is_new_entry": false
+      "rank_delta": 30,
+      "is_new_entry": false,
+      "rank_comparison_status": "compared"
     },
     {
       "category": "침구/패브릭",
@@ -2091,10 +2221,11 @@
       "product_id": 7280480,
       "scraped_at": "2026-09-15 10:55:07",
       "price_numeric": 9900,
-      "price_tier": "1만원 이하",
+      "price_tier": "1만원 미만",
       "usp": "일반구성",
-      "rank_delta": "-8",
-      "is_new_entry": false
+      "rank_delta": -8,
+      "is_new_entry": false,
+      "rank_comparison_status": "compared"
     },
     {
       "category": "침구/패브릭",
@@ -2107,10 +2238,11 @@
       "product_id": 9191293,
       "scraped_at": "2026-09-15 10:55:07",
       "price_numeric": 39000,
-      "price_tier": "3~5만원대",
+      "price_tier": "3만원대",
       "usp": "일반구성",
-      "rank_delta": "NEW",
-      "is_new_entry": true
+      "rank_delta": 4,
+      "is_new_entry": false,
+      "rank_comparison_status": "compared"
     },
     {
       "category": "침구/패브릭",
@@ -2123,10 +2255,11 @@
       "product_id": 11704744,
       "scraped_at": "2026-09-15 10:55:07",
       "price_numeric": 13900,
-      "price_tier": "1~3만원대",
+      "price_tier": "1만원대",
       "usp": "일반구성",
-      "rank_delta": "NEW",
-      "is_new_entry": true
+      "rank_delta": 0,
+      "is_new_entry": false,
+      "rank_comparison_status": "compared"
     },
     {
       "category": "침구/패브릭",
@@ -2139,10 +2272,11 @@
       "product_id": 13869667,
       "scraped_at": "2026-09-15 10:55:07",
       "price_numeric": 20000,
-      "price_tier": "1~3만원대",
+      "price_tier": "2만원대",
       "usp": "일반구성",
-      "rank_delta": "NEW",
-      "is_new_entry": true
+      "rank_delta": 12,
+      "is_new_entry": false,
+      "rank_comparison_status": "compared"
     },
     {
       "category": "침구/패브릭",
@@ -2155,10 +2289,11 @@
       "product_id": 11386190,
       "scraped_at": "2026-09-15 10:55:07",
       "price_numeric": 32000,
-      "price_tier": "3~5만원대",
+      "price_tier": "3만원대",
       "usp": "단독구성",
-      "rank_delta": "NEW",
-      "is_new_entry": true
+      "rank_delta": -5,
+      "is_new_entry": false,
+      "rank_comparison_status": "compared"
     },
     {
       "category": "침구/패브릭",
@@ -2171,10 +2306,11 @@
       "product_id": 12039412,
       "scraped_at": "2026-09-15 10:55:07",
       "price_numeric": 21800,
-      "price_tier": "1~3만원대",
+      "price_tier": "2만원대",
       "usp": "일반구성",
-      "rank_delta": "NEW",
-      "is_new_entry": true
+      "rank_delta": 7,
+      "is_new_entry": false,
+      "rank_comparison_status": "compared"
     },
     {
       "category": "침구/패브릭",
@@ -2187,10 +2323,11 @@
       "product_id": 13983893,
       "scraped_at": "2026-09-15 10:55:07",
       "price_numeric": 16900,
-      "price_tier": "1~3만원대",
+      "price_tier": "1만원대",
       "usp": "일반구성",
-      "rank_delta": "NEW",
-      "is_new_entry": true
+      "rank_delta": 3,
+      "is_new_entry": false,
+      "rank_comparison_status": "compared"
     },
     {
       "category": "침구/패브릭",
@@ -2203,10 +2340,11 @@
       "product_id": 10962112,
       "scraped_at": "2026-09-15 10:55:07",
       "price_numeric": 19900,
-      "price_tier": "1~3만원대",
+      "price_tier": "1만원대",
       "usp": "일반구성",
-      "rank_delta": "NEW",
-      "is_new_entry": true
+      "rank_delta": 9,
+      "is_new_entry": false,
+      "rank_comparison_status": "compared"
     },
     {
       "category": "침구/패브릭",
@@ -2219,10 +2357,11 @@
       "product_id": 11942947,
       "scraped_at": "2026-09-15 10:55:07",
       "price_numeric": 29900,
-      "price_tier": "1~3만원대",
+      "price_tier": "2만원대",
       "usp": "일반구성",
-      "rank_delta": "11",
-      "is_new_entry": false
+      "rank_delta": 11,
+      "is_new_entry": false,
+      "rank_comparison_status": "compared"
     },
     {
       "category": "침구/패브릭",
@@ -2235,10 +2374,11 @@
       "product_id": 9842300,
       "scraped_at": "2026-09-15 10:55:07",
       "price_numeric": 21500,
-      "price_tier": "1~3만원대",
+      "price_tier": "2만원대",
       "usp": "일반구성",
-      "rank_delta": "NEW",
-      "is_new_entry": true
+      "rank_delta": 36,
+      "is_new_entry": false,
+      "rank_comparison_status": "compared"
     },
     {
       "category": "침구/패브릭",
@@ -2251,10 +2391,11 @@
       "product_id": 905813,
       "scraped_at": "2026-09-15 10:55:08",
       "price_numeric": 15900,
-      "price_tier": "1~3만원대",
+      "price_tier": "1만원대",
       "usp": "일반구성",
-      "rank_delta": "-2",
-      "is_new_entry": false
+      "rank_delta": -2,
+      "is_new_entry": false,
+      "rank_comparison_status": "compared"
     },
     {
       "category": "침구/패브릭",
@@ -2267,10 +2408,11 @@
       "product_id": 14046242,
       "scraped_at": "2026-09-15 10:55:08",
       "price_numeric": 25000,
-      "price_tier": "1~3만원대",
+      "price_tier": "2만원대",
       "usp": "일반구성",
-      "rank_delta": "NEW",
-      "is_new_entry": true
+      "rank_delta": -4,
+      "is_new_entry": false,
+      "rank_comparison_status": "compared"
     },
     {
       "category": "침구/패브릭",
@@ -2283,10 +2425,11 @@
       "product_id": 13551705,
       "scraped_at": "2026-09-15 10:55:08",
       "price_numeric": 19000,
-      "price_tier": "1~3만원대",
+      "price_tier": "1만원대",
       "usp": "일반구성",
       "rank_delta": "NEW",
-      "is_new_entry": true
+      "is_new_entry": true,
+      "rank_comparison_status": "new"
     },
     {
       "category": "침구/패브릭",
@@ -2299,10 +2442,11 @@
       "product_id": 10609163,
       "scraped_at": "2026-09-15 10:55:08",
       "price_numeric": 15900,
-      "price_tier": "1~3만원대",
+      "price_tier": "1만원대",
       "usp": "단독구성",
-      "rank_delta": "-16",
-      "is_new_entry": false
+      "rank_delta": -16,
+      "is_new_entry": false,
+      "rank_comparison_status": "compared"
     },
     {
       "category": "침구/패브릭",
@@ -2315,10 +2459,11 @@
       "product_id": 9570334,
       "scraped_at": "2026-09-15 10:55:08",
       "price_numeric": 32000,
-      "price_tier": "3~5만원대",
+      "price_tier": "3만원대",
       "usp": "일반구성",
       "rank_delta": "NEW",
-      "is_new_entry": true
+      "is_new_entry": true,
+      "rank_comparison_status": "new"
     },
     {
       "category": "침구/패브릭",
@@ -2333,8 +2478,9 @@
       "price_numeric": 95000,
       "price_tier": "5만원 이상",
       "usp": "일반구성",
-      "rank_delta": "NEW",
-      "is_new_entry": true
+      "rank_delta": 54,
+      "is_new_entry": false,
+      "rank_comparison_status": "compared"
     },
     {
       "category": "침구/패브릭",
@@ -2347,10 +2493,11 @@
       "product_id": 6841023,
       "scraped_at": "2026-09-15 10:55:08",
       "price_numeric": 17800,
-      "price_tier": "1~3만원대",
+      "price_tier": "1만원대",
       "usp": "일반구성",
       "rank_delta": "NEW",
-      "is_new_entry": true
+      "is_new_entry": true,
+      "rank_comparison_status": "new"
     },
     {
       "category": "침구/패브릭",
@@ -2363,10 +2510,11 @@
       "product_id": 11951853,
       "scraped_at": "2026-09-15 10:55:08",
       "price_numeric": 22800,
-      "price_tier": "1~3만원대",
+      "price_tier": "2만원대",
       "usp": "일반구성",
-      "rank_delta": "NEW",
-      "is_new_entry": true
+      "rank_delta": -7,
+      "is_new_entry": false,
+      "rank_comparison_status": "compared"
     },
     {
       "category": "침구/패브릭",
@@ -2379,10 +2527,11 @@
       "product_id": 2488205,
       "scraped_at": "2026-09-15 10:55:08",
       "price_numeric": 15900,
-      "price_tier": "1~3만원대",
+      "price_tier": "1만원대",
       "usp": "일반구성",
-      "rank_delta": "6",
-      "is_new_entry": false
+      "rank_delta": 6,
+      "is_new_entry": false,
+      "rank_comparison_status": "compared"
     },
     {
       "category": "침구/패브릭",
@@ -2395,10 +2544,11 @@
       "product_id": 2205514,
       "scraped_at": "2026-09-15 10:55:08",
       "price_numeric": 29900,
-      "price_tier": "1~3만원대",
+      "price_tier": "2만원대",
       "usp": "일반구성",
-      "rank_delta": "NEW",
-      "is_new_entry": true
+      "rank_delta": -13,
+      "is_new_entry": false,
+      "rank_comparison_status": "compared"
     },
     {
       "category": "주방/식기",
@@ -2411,10 +2561,11 @@
       "product_id": 7868266,
       "scraped_at": "2026-09-15 10:55:17",
       "price_numeric": 30800,
-      "price_tier": "3~5만원대",
+      "price_tier": "3만원대",
       "usp": "일반구성",
-      "rank_delta": "NEW",
-      "is_new_entry": true
+      "rank_delta": 33,
+      "is_new_entry": false,
+      "rank_comparison_status": "compared"
     },
     {
       "category": "주방/식기",
@@ -2427,10 +2578,11 @@
       "product_id": 11106499,
       "scraped_at": "2026-09-15 10:55:17",
       "price_numeric": 49000,
-      "price_tier": "3~5만원대",
+      "price_tier": "4만원대",
       "usp": "일반구성",
-      "rank_delta": "NEW",
-      "is_new_entry": true
+      "rank_delta": -1,
+      "is_new_entry": false,
+      "rank_comparison_status": "compared"
     },
     {
       "category": "주방/식기",
@@ -2443,10 +2595,11 @@
       "product_id": 13772143,
       "scraped_at": "2026-09-15 10:55:18",
       "price_numeric": 24500,
-      "price_tier": "1~3만원대",
+      "price_tier": "2만원대",
       "usp": "단독구성",
-      "rank_delta": "NEW",
-      "is_new_entry": true
+      "rank_delta": 0,
+      "is_new_entry": false,
+      "rank_comparison_status": "compared"
     },
     {
       "category": "주방/식기",
@@ -2459,10 +2612,11 @@
       "product_id": 11144932,
       "scraped_at": "2026-09-15 10:55:18",
       "price_numeric": 40500,
-      "price_tier": "3~5만원대",
+      "price_tier": "4만원대",
       "usp": "일반구성",
-      "rank_delta": "NEW",
-      "is_new_entry": true
+      "rank_delta": 16,
+      "is_new_entry": false,
+      "rank_comparison_status": "compared"
     },
     {
       "category": "주방/식기",
@@ -2475,10 +2629,11 @@
       "product_id": 11850163,
       "scraped_at": "2026-09-15 10:55:18",
       "price_numeric": 25900,
-      "price_tier": "1~3만원대",
+      "price_tier": "2만원대",
       "usp": "선물포장, 단독구성",
-      "rank_delta": "-1",
-      "is_new_entry": false
+      "rank_delta": -1,
+      "is_new_entry": false,
+      "rank_comparison_status": "compared"
     },
     {
       "category": "주방/식기",
@@ -2491,10 +2646,11 @@
       "product_id": 7868778,
       "scraped_at": "2026-09-15 10:55:18",
       "price_numeric": 39200,
-      "price_tier": "3~5만원대",
+      "price_tier": "3만원대",
       "usp": "일반구성",
-      "rank_delta": "NEW",
-      "is_new_entry": true
+      "rank_delta": 20,
+      "is_new_entry": false,
+      "rank_comparison_status": "compared"
     },
     {
       "category": "주방/식기",
@@ -2509,8 +2665,9 @@
       "price_numeric": 54900,
       "price_tier": "5만원 이상",
       "usp": "단독구성",
-      "rank_delta": "8",
-      "is_new_entry": false
+      "rank_delta": 8,
+      "is_new_entry": false,
+      "rank_comparison_status": "compared"
     },
     {
       "category": "주방/식기",
@@ -2523,10 +2680,11 @@
       "product_id": 11779291,
       "scraped_at": "2026-09-15 10:55:18",
       "price_numeric": 46000,
-      "price_tier": "3~5만원대",
+      "price_tier": "4만원대",
       "usp": "일반구성",
-      "rank_delta": "2",
-      "is_new_entry": false
+      "rank_delta": 2,
+      "is_new_entry": false,
+      "rank_comparison_status": "compared"
     },
     {
       "category": "주방/식기",
@@ -2541,8 +2699,9 @@
       "price_numeric": 51000,
       "price_tier": "5만원 이상",
       "usp": "단독구성",
-      "rank_delta": "3",
-      "is_new_entry": false
+      "rank_delta": 3,
+      "is_new_entry": false,
+      "rank_comparison_status": "compared"
     },
     {
       "category": "주방/식기",
@@ -2558,7 +2717,8 @@
       "price_tier": "5만원 이상",
       "usp": "일반구성",
       "rank_delta": "NEW",
-      "is_new_entry": true
+      "is_new_entry": true,
+      "rank_comparison_status": "new"
     },
     {
       "category": "주방/식기",
@@ -2571,10 +2731,11 @@
       "product_id": 12821252,
       "scraped_at": "2026-09-15 10:55:18",
       "price_numeric": 16800,
-      "price_tier": "1~3만원대",
+      "price_tier": "1만원대",
       "usp": "단독구성",
-      "rank_delta": "-5",
-      "is_new_entry": false
+      "rank_delta": -5,
+      "is_new_entry": false,
+      "rank_comparison_status": "compared"
     },
     {
       "category": "주방/식기",
@@ -2587,10 +2748,11 @@
       "product_id": 12694903,
       "scraped_at": "2026-09-15 10:55:18",
       "price_numeric": 39000,
-      "price_tier": "3~5만원대",
+      "price_tier": "3만원대",
       "usp": "단독구성",
-      "rank_delta": "-7",
-      "is_new_entry": false
+      "rank_delta": -7,
+      "is_new_entry": false,
+      "rank_comparison_status": "compared"
     },
     {
       "category": "주방/식기",
@@ -2603,10 +2765,11 @@
       "product_id": 11483865,
       "scraped_at": "2026-09-15 10:55:18",
       "price_numeric": 42000,
-      "price_tier": "3~5만원대",
+      "price_tier": "4만원대",
       "usp": "일반구성",
-      "rank_delta": "3",
-      "is_new_entry": false
+      "rank_delta": 3,
+      "is_new_entry": false,
+      "rank_comparison_status": "compared"
     },
     {
       "category": "주방/식기",
@@ -2619,10 +2782,11 @@
       "product_id": 7868895,
       "scraped_at": "2026-09-15 10:55:18",
       "price_numeric": 44000,
-      "price_tier": "3~5만원대",
+      "price_tier": "4만원대",
       "usp": "일반구성",
-      "rank_delta": "3",
-      "is_new_entry": false
+      "rank_delta": 3,
+      "is_new_entry": false,
+      "rank_comparison_status": "compared"
     },
     {
       "category": "주방/식기",
@@ -2635,10 +2799,11 @@
       "product_id": 11264836,
       "scraped_at": "2026-09-15 10:55:18",
       "price_numeric": 36000,
-      "price_tier": "3~5만원대",
+      "price_tier": "3만원대",
       "usp": "일반구성",
-      "rank_delta": "NEW",
-      "is_new_entry": true
+      "rank_delta": -7,
+      "is_new_entry": false,
+      "rank_comparison_status": "compared"
     },
     {
       "category": "주방/식기",
@@ -2651,10 +2816,11 @@
       "product_id": 11483949,
       "scraped_at": "2026-09-15 10:55:18",
       "price_numeric": 35000,
-      "price_tier": "3~5만원대",
+      "price_tier": "3만원대",
       "usp": "일반구성",
-      "rank_delta": "-7",
-      "is_new_entry": false
+      "rank_delta": -7,
+      "is_new_entry": false,
+      "rank_comparison_status": "compared"
     },
     {
       "category": "주방/식기",
@@ -2667,10 +2833,11 @@
       "product_id": 6989444,
       "scraped_at": "2026-09-15 10:55:18",
       "price_numeric": 46000,
-      "price_tier": "3~5만원대",
+      "price_tier": "4만원대",
       "usp": "단독구성",
-      "rank_delta": "NEW",
-      "is_new_entry": true
+      "rank_delta": -10,
+      "is_new_entry": false,
+      "rank_comparison_status": "compared"
     },
     {
       "category": "주방/식기",
@@ -2683,10 +2850,11 @@
       "product_id": 1186213,
       "scraped_at": "2026-09-15 10:55:18",
       "price_numeric": 33000,
-      "price_tier": "3~5만원대",
+      "price_tier": "3만원대",
       "usp": "단독구성",
-      "rank_delta": "NEW",
-      "is_new_entry": true
+      "rank_delta": 10,
+      "is_new_entry": false,
+      "rank_comparison_status": "compared"
     },
     {
       "category": "주방/식기",
@@ -2699,10 +2867,11 @@
       "product_id": 12455527,
       "scraped_at": "2026-09-15 10:55:18",
       "price_numeric": 13800,
-      "price_tier": "1~3만원대",
+      "price_tier": "1만원대",
       "usp": "일반구성",
-      "rank_delta": "NEW",
-      "is_new_entry": true
+      "rank_delta": 6,
+      "is_new_entry": false,
+      "rank_comparison_status": "compared"
     },
     {
       "category": "주방/식기",
@@ -2715,10 +2884,11 @@
       "product_id": 7734041,
       "scraped_at": "2026-09-15 10:55:18",
       "price_numeric": 34800,
-      "price_tier": "3~5만원대",
+      "price_tier": "3만원대",
       "usp": "단독구성",
-      "rank_delta": "NEW",
-      "is_new_entry": true
+      "rank_delta": -1,
+      "is_new_entry": false,
+      "rank_comparison_status": "compared"
     },
     {
       "category": "주방/식기",
@@ -2731,10 +2901,11 @@
       "product_id": 11801920,
       "scraped_at": "2026-09-15 10:55:18",
       "price_numeric": 48000,
-      "price_tier": "3~5만원대",
+      "price_tier": "4만원대",
       "usp": "일반구성",
-      "rank_delta": "1",
-      "is_new_entry": false
+      "rank_delta": 1,
+      "is_new_entry": false,
+      "rank_comparison_status": "compared"
     },
     {
       "category": "주방/식기",
@@ -2747,10 +2918,11 @@
       "product_id": 9158489,
       "scraped_at": "2026-09-15 10:55:18",
       "price_numeric": 31500,
-      "price_tier": "3~5만원대",
+      "price_tier": "3만원대",
       "usp": "각인/자수",
-      "rank_delta": "NEW",
-      "is_new_entry": true
+      "rank_delta": 15,
+      "is_new_entry": false,
+      "rank_comparison_status": "compared"
     },
     {
       "category": "주방/식기",
@@ -2763,10 +2935,11 @@
       "product_id": 13884111,
       "scraped_at": "2026-09-15 10:55:19",
       "price_numeric": 9800,
-      "price_tier": "1만원 이하",
+      "price_tier": "1만원 미만",
       "usp": "일반구성",
-      "rank_delta": "NEW",
-      "is_new_entry": true
+      "rank_delta": -10,
+      "is_new_entry": false,
+      "rank_comparison_status": "compared"
     },
     {
       "category": "주방/식기",
@@ -2779,10 +2952,11 @@
       "product_id": 12339610,
       "scraped_at": "2026-09-15 10:55:19",
       "price_numeric": 38000,
-      "price_tier": "3~5만원대",
+      "price_tier": "3만원대",
       "usp": "일반구성",
-      "rank_delta": "NEW",
-      "is_new_entry": true
+      "rank_delta": -3,
+      "is_new_entry": false,
+      "rank_comparison_status": "compared"
     },
     {
       "category": "주방/식기",
@@ -2795,10 +2969,11 @@
       "product_id": 12694900,
       "scraped_at": "2026-09-15 10:55:19",
       "price_numeric": 36000,
-      "price_tier": "3~5만원대",
+      "price_tier": "3만원대",
       "usp": "단독구성",
-      "rank_delta": "-11",
-      "is_new_entry": false
+      "rank_delta": -11,
+      "is_new_entry": false,
+      "rank_comparison_status": "compared"
     },
     {
       "category": "주방/식기",
@@ -2811,10 +2986,11 @@
       "product_id": 11521316,
       "scraped_at": "2026-09-15 10:55:19",
       "price_numeric": 20400,
-      "price_tier": "1~3만원대",
+      "price_tier": "2만원대",
       "usp": "단독구성",
-      "rank_delta": "NEW",
-      "is_new_entry": true
+      "rank_delta": -2,
+      "is_new_entry": false,
+      "rank_comparison_status": "compared"
     },
     {
       "category": "주방/식기",
@@ -2827,10 +3003,11 @@
       "product_id": 13421555,
       "scraped_at": "2026-09-15 10:55:19",
       "price_numeric": 46000,
-      "price_tier": "3~5만원대",
+      "price_tier": "4만원대",
       "usp": "일반구성",
-      "rank_delta": "NEW",
-      "is_new_entry": true
+      "rank_delta": 6,
+      "is_new_entry": false,
+      "rank_comparison_status": "compared"
     },
     {
       "category": "주방/식기",
@@ -2845,8 +3022,9 @@
       "price_numeric": 52000,
       "price_tier": "5만원 이상",
       "usp": "일반구성",
-      "rank_delta": "NEW",
-      "is_new_entry": true
+      "rank_delta": -10,
+      "is_new_entry": false,
+      "rank_comparison_status": "compared"
     },
     {
       "category": "주방/식기",
@@ -2859,10 +3037,11 @@
       "product_id": 14255962,
       "scraped_at": "2026-09-15 10:55:19",
       "price_numeric": 17800,
-      "price_tier": "1~3만원대",
+      "price_tier": "1만원대",
       "usp": "단독구성",
-      "rank_delta": "NEW",
-      "is_new_entry": true
+      "rank_delta": -27,
+      "is_new_entry": false,
+      "rank_comparison_status": "compared"
     },
     {
       "category": "주방/식기",
@@ -2875,10 +3054,11 @@
       "product_id": 9675371,
       "scraped_at": "2026-09-15 10:55:19",
       "price_numeric": 33800,
-      "price_tier": "3~5만원대",
+      "price_tier": "3만원대",
       "usp": "단독구성",
-      "rank_delta": "2",
-      "is_new_entry": false
+      "rank_delta": 2,
+      "is_new_entry": false,
+      "rank_comparison_status": "compared"
     },
     {
       "category": "주방/식기",
@@ -2893,8 +3073,9 @@
       "price_numeric": 54150,
       "price_tier": "5만원 이상",
       "usp": "단독구성",
-      "rank_delta": "32",
-      "is_new_entry": false
+      "rank_delta": 32,
+      "is_new_entry": false,
+      "rank_comparison_status": "compared"
     },
     {
       "category": "주방/식기",
@@ -2907,10 +3088,11 @@
       "product_id": 9742914,
       "scraped_at": "2026-09-15 10:55:19",
       "price_numeric": 12900,
-      "price_tier": "1~3만원대",
+      "price_tier": "1만원대",
       "usp": "단독구성",
-      "rank_delta": "8",
-      "is_new_entry": false
+      "rank_delta": 8,
+      "is_new_entry": false,
+      "rank_comparison_status": "compared"
     },
     {
       "category": "주방/식기",
@@ -2925,8 +3107,9 @@
       "price_numeric": 59810,
       "price_tier": "5만원 이상",
       "usp": "단독구성",
-      "rank_delta": "NEW",
-      "is_new_entry": true
+      "rank_delta": 21,
+      "is_new_entry": false,
+      "rank_comparison_status": "compared"
     },
     {
       "category": "주방/식기",
@@ -2939,10 +3122,11 @@
       "product_id": 12820960,
       "scraped_at": "2026-09-15 10:55:19",
       "price_numeric": 16800,
-      "price_tier": "1~3만원대",
+      "price_tier": "1만원대",
       "usp": "일반구성",
-      "rank_delta": "-7",
-      "is_new_entry": false
+      "rank_delta": -7,
+      "is_new_entry": false,
+      "rank_comparison_status": "compared"
     },
     {
       "category": "주방/식기",
@@ -2955,10 +3139,11 @@
       "product_id": 12109009,
       "scraped_at": "2026-09-15 10:55:20",
       "price_numeric": 49000,
-      "price_tier": "3~5만원대",
+      "price_tier": "4만원대",
       "usp": "일반구성",
-      "rank_delta": "NEW",
-      "is_new_entry": true
+      "rank_delta": -6,
+      "is_new_entry": false,
+      "rank_comparison_status": "compared"
     },
     {
       "category": "주방/식기",
@@ -2971,10 +3156,11 @@
       "product_id": 11264832,
       "scraped_at": "2026-09-15 10:55:20",
       "price_numeric": 31000,
-      "price_tier": "3~5만원대",
+      "price_tier": "3만원대",
       "usp": "일반구성",
-      "rank_delta": "NEW",
-      "is_new_entry": true
+      "rank_delta": -5,
+      "is_new_entry": false,
+      "rank_comparison_status": "compared"
     },
     {
       "category": "주방/식기",
@@ -2987,10 +3173,11 @@
       "product_id": 10626781,
       "scraped_at": "2026-09-15 10:55:20",
       "price_numeric": 25900,
-      "price_tier": "1~3만원대",
+      "price_tier": "2만원대",
       "usp": "단독구성",
-      "rank_delta": "NEW",
-      "is_new_entry": true
+      "rank_delta": 10,
+      "is_new_entry": false,
+      "rank_comparison_status": "compared"
     },
     {
       "category": "주방/식기",
@@ -3003,10 +3190,11 @@
       "product_id": 4907401,
       "scraped_at": "2026-09-15 10:55:20",
       "price_numeric": 45000,
-      "price_tier": "3~5만원대",
+      "price_tier": "4만원대",
       "usp": "단독구성",
-      "rank_delta": "-3",
-      "is_new_entry": false
+      "rank_delta": -3,
+      "is_new_entry": false,
+      "rank_comparison_status": "compared"
     },
     {
       "category": "주방/식기",
@@ -3019,10 +3207,11 @@
       "product_id": 7833932,
       "scraped_at": "2026-09-15 10:55:20",
       "price_numeric": 47700,
-      "price_tier": "3~5만원대",
+      "price_tier": "4만원대",
       "usp": "단독구성",
-      "rank_delta": "NEW",
-      "is_new_entry": true
+      "rank_delta": 11,
+      "is_new_entry": false,
+      "rank_comparison_status": "compared"
     },
     {
       "category": "주방/식기",
@@ -3035,10 +3224,11 @@
       "product_id": 12439693,
       "scraped_at": "2026-09-15 10:55:20",
       "price_numeric": 39500,
-      "price_tier": "3~5만원대",
+      "price_tier": "3만원대",
       "usp": "단독구성",
-      "rank_delta": "NEW",
-      "is_new_entry": true
+      "rank_delta": 25,
+      "is_new_entry": false,
+      "rank_comparison_status": "compared"
     },
     {
       "category": "주방/식기",
@@ -3051,10 +3241,11 @@
       "product_id": 7712218,
       "scraped_at": "2026-09-15 10:55:20",
       "price_numeric": 32000,
-      "price_tier": "3~5만원대",
+      "price_tier": "3만원대",
       "usp": "단독구성",
-      "rank_delta": "NEW",
-      "is_new_entry": true
+      "rank_delta": -5,
+      "is_new_entry": false,
+      "rank_comparison_status": "compared"
     },
     {
       "category": "주방/식기",
@@ -3067,10 +3258,11 @@
       "product_id": 12702001,
       "scraped_at": "2026-09-15 10:55:20",
       "price_numeric": 14900,
-      "price_tier": "1~3만원대",
+      "price_tier": "1만원대",
       "usp": "단독구성",
-      "rank_delta": "-4",
-      "is_new_entry": false
+      "rank_delta": -4,
+      "is_new_entry": false,
+      "rank_comparison_status": "compared"
     },
     {
       "category": "주방/식기",
@@ -3083,10 +3275,11 @@
       "product_id": 12262364,
       "scraped_at": "2026-09-15 10:55:20",
       "price_numeric": 23900,
-      "price_tier": "1~3만원대",
+      "price_tier": "2만원대",
       "usp": "단독구성",
-      "rank_delta": "NEW",
-      "is_new_entry": true
+      "rank_delta": 54,
+      "is_new_entry": false,
+      "rank_comparison_status": "compared"
     },
     {
       "category": "주방/식기",
@@ -3099,10 +3292,11 @@
       "product_id": 13648700,
       "scraped_at": "2026-09-15 10:55:20",
       "price_numeric": 27000,
-      "price_tier": "1~3만원대",
+      "price_tier": "2만원대",
       "usp": "일반구성",
-      "rank_delta": "NEW",
-      "is_new_entry": true
+      "rank_delta": -5,
+      "is_new_entry": false,
+      "rank_comparison_status": "compared"
     },
     {
       "category": "주방/식기",
@@ -3115,10 +3309,11 @@
       "product_id": 13613223,
       "scraped_at": "2026-09-15 10:55:20",
       "price_numeric": 9900,
-      "price_tier": "1만원 이하",
+      "price_tier": "1만원 미만",
       "usp": "일반구성",
-      "rank_delta": "NEW",
-      "is_new_entry": true
+      "rank_delta": 6,
+      "is_new_entry": false,
+      "rank_comparison_status": "compared"
     },
     {
       "category": "주방/식기",
@@ -3131,10 +3326,11 @@
       "product_id": 10998208,
       "scraped_at": "2026-09-15 10:55:20",
       "price_numeric": 18990,
-      "price_tier": "1~3만원대",
+      "price_tier": "1만원대",
       "usp": "단독구성",
-      "rank_delta": "NEW",
-      "is_new_entry": true
+      "rank_delta": 0,
+      "is_new_entry": false,
+      "rank_comparison_status": "compared"
     },
     {
       "category": "주방/식기",
@@ -3147,10 +3343,11 @@
       "product_id": 14277595,
       "scraped_at": "2026-09-15 10:55:20",
       "price_numeric": 32000,
-      "price_tier": "3~5만원대",
+      "price_tier": "3만원대",
       "usp": "일반구성",
       "rank_delta": "NEW",
-      "is_new_entry": true
+      "is_new_entry": true,
+      "rank_comparison_status": "new"
     },
     {
       "category": "주방/식기",
@@ -3163,10 +3360,11 @@
       "product_id": 10468609,
       "scraped_at": "2026-09-15 10:55:20",
       "price_numeric": 15800,
-      "price_tier": "1~3만원대",
+      "price_tier": "1만원대",
       "usp": "단독구성",
-      "rank_delta": "-25",
-      "is_new_entry": false
+      "rank_delta": -25,
+      "is_new_entry": false,
+      "rank_comparison_status": "compared"
     },
     {
       "category": "주방/식기",
@@ -3179,10 +3377,11 @@
       "product_id": 12698675,
       "scraped_at": "2026-09-15 10:55:20",
       "price_numeric": 16900,
-      "price_tier": "1~3만원대",
+      "price_tier": "1만원대",
       "usp": "단독구성",
-      "rank_delta": "NEW",
-      "is_new_entry": true
+      "rank_delta": 25,
+      "is_new_entry": false,
+      "rank_comparison_status": "compared"
     },
     {
       "category": "주방/식기",
@@ -3195,10 +3394,11 @@
       "product_id": 12747894,
       "scraped_at": "2026-09-15 10:55:20",
       "price_numeric": 34000,
-      "price_tier": "3~5만원대",
+      "price_tier": "3만원대",
       "usp": "단독구성",
-      "rank_delta": "NEW",
-      "is_new_entry": true
+      "rank_delta": 11,
+      "is_new_entry": false,
+      "rank_comparison_status": "compared"
     }
   ],
   "cards": {
@@ -3217,34 +3417,54 @@
         "exclusive_ratio": 35.0,
         "price_tier_matrix": {
           "1만원 미만": {
-            "count": 0,
-            "share": 0.0,
-            "avg_price": 0,
-            "top_brands": []
+            "count": 23,
+            "share": 11.5,
+            "avg_price": 8421,
+            "top_brands": [
+              "알럽하우스(소품)",
+              "제이블룸(팬시)",
+              "데데리트"
+            ]
           },
           "1만원대": {
-            "count": 0,
-            "share": 0.0,
-            "avg_price": 0,
-            "top_brands": []
+            "count": 58,
+            "share": 29.0,
+            "avg_price": 15832,
+            "top_brands": [
+              "가나디",
+              "굴강",
+              "캐릭터침구"
+            ]
           },
           "2만원대": {
-            "count": 0,
-            "share": 0.0,
-            "avg_price": 0,
-            "top_brands": []
+            "count": 35,
+            "share": 17.5,
+            "avg_price": 25528,
+            "top_brands": [
+              "캐릭터침구",
+              "캐릭터주방",
+              "타블도트"
+            ]
           },
           "3만원대": {
-            "count": 0,
-            "share": 0.0,
-            "avg_price": 0,
-            "top_brands": []
+            "count": 49,
+            "share": 24.5,
+            "avg_price": 34930,
+            "top_brands": [
+              "스탠리",
+              "캐릭터침구",
+              "오덴세"
+            ]
           },
           "4만원대": {
-            "count": 0,
-            "share": 0.0,
-            "avg_price": 0,
-            "top_brands": []
+            "count": 21,
+            "share": 10.5,
+            "avg_price": 45361,
+            "top_brands": [
+              "스탠리",
+              "블루보틀",
+              "탬버린즈"
+            ]
           },
           "5만원 이상": {
             "count": 14,
@@ -3305,56 +3525,56 @@
           "brand": "스탠리",
           "product_name": "[스탠리공식유통사] 퀜처 H2.0 플로우스테이트 텀블러 591ml 30%",
           "rank": 1,
-          "rank_delta": "NEW",
+          "rank_delta": 82,
           "category": "리빙 전체",
           "price": "30,800원",
           "character_ip": "일반/비IP 상품",
           "url": "https://gift.kakao.com/product/7868266",
-          "is_new_entry": true
+          "is_new_entry": false
         },
         {
           "brand": "스탠리",
           "product_name": "[스탠리공식유통사] 퀜처 H2.0 플로우스테이트 텀블러 591ml 30%",
           "rank": 1,
-          "rank_delta": "NEW",
+          "rank_delta": 33,
           "category": "주방/식기",
           "price": "30,800원",
           "character_ip": "일반/비IP 상품",
           "url": "https://gift.kakao.com/product/7868266",
-          "is_new_entry": true
+          "is_new_entry": false
         },
         {
-          "brand": "가나디",
-          "product_name": "가나디 마우스 손목 패드 (데스크테리어/생일/귀여운/우정/커플 선물) , 6,516",
-          "rank": 2,
-          "rank_delta": "NEW",
-          "category": "팬시/문구/취미 (IP핵심)",
-          "price": "12,800원",
-          "character_ip": "가나디",
-          "url": "https://gift.kakao.com/product/14096838",
-          "is_new_entry": true
-        },
-        {
-          "brand": "스탠리",
-          "product_name": "[스탠리공식유통사] 퀜처 H2.0 플로우스테이트 텀블러 887ml",
-          "rank": 2,
-          "rank_delta": "NEW",
-          "category": "주방/식기",
-          "price": "49,000원",
-          "character_ip": "일반/비IP 상품",
-          "url": "https://gift.kakao.com/product/11106499",
-          "is_new_entry": true
-        },
-        {
-          "brand": "스탠리",
-          "product_name": "[스탠리공식유통사] 퀜처 H2.0 플로우스테이트 텀블러 887ml",
+          "brand": "캐릭터침구",
+          "product_name": "\"생일/기념일선물\" (추석 이후 입고) 먼작귀 꿀잠바디쿠션4종 택1 치이카와 가르마 토끼 굿즈 극세사 긴베개 안고자는 바디필로우 캐릭터 굿즈 인형",
           "rank": 3,
           "rank_delta": "NEW",
-          "category": "리빙 전체",
-          "price": "49,000원",
-          "character_ip": "일반/비IP 상품",
-          "url": "https://gift.kakao.com/product/11106499",
+          "category": "침구/패브릭",
+          "price": "29,900원",
+          "character_ip": "먼작귀/치이카와",
+          "url": "https://gift.kakao.com/product/6986025",
           "is_new_entry": true
+        },
+        {
+          "brand": "잼먹",
+          "product_name": "하드케이스 \"생일/선물추천\" 잼먹 라벨프린터 휴대용 라벨기 라벨프린터기 네임스티커",
+          "rank": 4,
+          "rank_delta": 16,
+          "category": "팬시/문구/취미 (IP핵심)",
+          "price": "39,800원",
+          "character_ip": "일반/비IP 상품",
+          "url": "https://gift.kakao.com/product/11368084",
+          "is_new_entry": false
+        },
+        {
+          "brand": "스탠리",
+          "product_name": "[스탠리공식유통사] 퀜처 프로투어 플립 스트로 텀블러 887ml 25%",
+          "rank": 4,
+          "rank_delta": 16,
+          "category": "주방/식기",
+          "price": "40,500원",
+          "character_ip": "일반/비IP 상품",
+          "url": "https://gift.kakao.com/product/11144932",
+          "is_new_entry": false
         }
       ]
     },
@@ -3373,34 +3593,52 @@
         "exclusive_ratio": 46.0,
         "price_tier_matrix": {
           "1만원 미만": {
-            "count": 0,
-            "share": 0.0,
-            "avg_price": 0,
-            "top_brands": []
+            "count": 1,
+            "share": 2.0,
+            "avg_price": 8900,
+            "top_brands": [
+              "알럽하우스(소품)"
+            ]
           },
           "1만원대": {
-            "count": 0,
-            "share": 0.0,
-            "avg_price": 0,
-            "top_brands": []
+            "count": 8,
+            "share": 16.0,
+            "avg_price": 15662,
+            "top_brands": [
+              "가나디",
+              "그랑핸드",
+              "캐릭터주방"
+            ]
           },
           "2만원대": {
-            "count": 0,
-            "share": 0.0,
-            "avg_price": 0,
-            "top_brands": []
+            "count": 8,
+            "share": 16.0,
+            "avg_price": 25912,
+            "top_brands": [
+              "캐릭터침구",
+              "캐릭터주방",
+              "타블도트"
+            ]
           },
           "3만원대": {
-            "count": 0,
-            "share": 0.0,
-            "avg_price": 0,
-            "top_brands": []
+            "count": 17,
+            "share": 34.0,
+            "avg_price": 34770,
+            "top_brands": [
+              "스탠리",
+              "로에",
+              "리베르"
+            ]
           },
           "4만원대": {
-            "count": 0,
-            "share": 0.0,
-            "avg_price": 0,
-            "top_brands": []
+            "count": 9,
+            "share": 18.0,
+            "avg_price": 44944,
+            "top_brands": [
+              "스탠리",
+              "탬버린즈",
+              "블루보틀"
+            ]
           },
           "5만원 이상": {
             "count": 7,
@@ -3460,56 +3698,56 @@
           "brand": "스탠리",
           "product_name": "[스탠리공식유통사] 퀜처 H2.0 플로우스테이트 텀블러 591ml 30%",
           "rank": 1,
-          "rank_delta": "NEW",
+          "rank_delta": 82,
           "category": "리빙 전체",
           "price": "30,800원",
           "character_ip": "일반/비IP 상품",
           "url": "https://gift.kakao.com/product/7868266",
-          "is_new_entry": true
-        },
-        {
-          "brand": "스탠리",
-          "product_name": "[스탠리공식유통사] 퀜처 H2.0 플로우스테이트 텀블러 887ml",
-          "rank": 3,
-          "rank_delta": "NEW",
-          "category": "리빙 전체",
-          "price": "49,000원",
-          "character_ip": "일반/비IP 상품",
-          "url": "https://gift.kakao.com/product/11106499",
-          "is_new_entry": true
-        },
-        {
-          "brand": "캐릭터주방",
-          "product_name": "[단독/추석선물] 리락쿠마 페이스 머그 텀블러 360ml 보온 보냉",
-          "rank": 5,
-          "rank_delta": "NEW",
-          "category": "리빙 전체",
-          "price": "24,500원",
-          "character_ip": "리락쿠마",
-          "url": "https://gift.kakao.com/product/13772143",
-          "is_new_entry": true
+          "is_new_entry": false
         },
         {
           "brand": "스탠리",
           "product_name": "[스탠리공식유통사] 퀜처 프로투어 플립 스트로 텀블러 887ml 25%",
           "rank": 6,
-          "rank_delta": "NEW",
+          "rank_delta": 37,
           "category": "리빙 전체",
           "price": "40,500원",
           "character_ip": "일반/비IP 상품",
           "url": "https://gift.kakao.com/product/11144932",
-          "is_new_entry": true
+          "is_new_entry": false
         },
         {
-          "brand": "코토나",
-          "product_name": "생일/결혼/집들이 [] 코토나 기프트 세트 5P 호텔 수건 40수 고중량 타올 200g 순면 타월 답례 친구 신혼 이사 자취 추석 선물 42%",
-          "rank": 8,
-          "rank_delta": "NEW",
+          "brand": "스탠리",
+          "product_name": "[스탠리공식유통사] 아이스플로우 플립 스트로 2.0 텀블러 887ml 20%",
+          "rank": 9,
+          "rank_delta": 51,
           "category": "리빙 전체",
-          "price": "34,800원",
+          "price": "39,200원",
           "character_ip": "일반/비IP 상품",
-          "url": "https://gift.kakao.com/product/12854287",
-          "is_new_entry": true
+          "url": "https://gift.kakao.com/product/7868778",
+          "is_new_entry": false
+        },
+        {
+          "brand": "센느파리",
+          "product_name": "\"BEST 선물추천 \"NEW 컬러\"센느파리 크리스탈 와인잔 고블렛잔 2P세트 (7종) 신혼/집들이/생일/이사 홈파티 위스키잔 커피잔 추석 답례품 30% 프리미엄 더스트백+쇼핑백",
+          "rank": 11,
+          "rank_delta": 22,
+          "category": "리빙 전체",
+          "price": "54,900원",
+          "character_ip": "일반/비IP 상품",
+          "url": "https://gift.kakao.com/product/10841578",
+          "is_new_entry": false
+        },
+        {
+          "brand": "스탠리",
+          "product_name": "[스탠리공식유통사] 퀜처 H2.0 플로우스테이트 텀블러 591ml 손잡이형",
+          "rank": 14,
+          "rank_delta": 12,
+          "category": "리빙 전체",
+          "price": "46,000원",
+          "character_ip": "일반/비IP 상품",
+          "url": "https://gift.kakao.com/product/11779291",
+          "is_new_entry": false
         }
       ]
     },
@@ -3528,28 +3766,42 @@
         "exclusive_ratio": 14.0,
         "price_tier_matrix": {
           "1만원 미만": {
-            "count": 0,
-            "share": 0.0,
-            "avg_price": 0,
-            "top_brands": []
+            "count": 19,
+            "share": 38.0,
+            "avg_price": 8168,
+            "top_brands": [
+              "알럽하우스(소품)",
+              "제이블룸(팬시)",
+              "데데리트"
+            ]
           },
           "1만원대": {
-            "count": 0,
-            "share": 0.0,
-            "avg_price": 0,
-            "top_brands": []
+            "count": 22,
+            "share": 44.0,
+            "avg_price": 15163,
+            "top_brands": [
+              "가나디",
+              "굴강",
+              "19세 연령제한"
+            ]
           },
           "2만원대": {
-            "count": 0,
-            "share": 0.0,
-            "avg_price": 0,
-            "top_brands": []
+            "count": 1,
+            "share": 2.0,
+            "avg_price": 20000,
+            "top_brands": [
+              "프렌즈인형/피규어"
+            ]
           },
           "3만원대": {
-            "count": 0,
-            "share": 0.0,
-            "avg_price": 0,
-            "top_brands": []
+            "count": 8,
+            "share": 16.0,
+            "avg_price": 34800,
+            "top_brands": [
+              "잼먹",
+              "캐릭터침구",
+              "가나디"
+            ]
           },
           "4만원대": {
             "count": 0,
@@ -3609,59 +3861,59 @@
       },
       "card_4_rising_stars": [
         {
-          "brand": "가나디",
-          "product_name": "가나디 마우스 손목 패드 (데스크테리어/생일/귀여운/우정/커플 선물) , 6,516",
-          "rank": 2,
-          "rank_delta": "NEW",
+          "brand": "잼먹",
+          "product_name": "하드케이스 \"생일/선물추천\" 잼먹 라벨프린터 휴대용 라벨기 라벨프린터기 네임스티커",
+          "rank": 4,
+          "rank_delta": 16,
           "category": "팬시/문구/취미 (IP핵심)",
-          "price": "12,800원",
-          "character_ip": "가나디",
-          "url": "https://gift.kakao.com/product/14096838",
-          "is_new_entry": true
-        },
-        {
-          "brand": "가나디",
-          "product_name": "가나디 홀더 키링 (귀여운/휴대용컵홀더/다용도/키링) , 7,325",
-          "rank": 5,
-          "rank_delta": "NEW",
-          "category": "팬시/문구/취미 (IP핵심)",
-          "price": "16,300원",
-          "character_ip": "가나디",
-          "url": "https://gift.kakao.com/product/13881169",
-          "is_new_entry": true
-        },
-        {
-          "brand": "가나디",
-          "product_name": "가나디 미니 피규어 탁상 시계 (데스크테리어/생일/친구/응원) , 3,050",
-          "rank": 8,
-          "rank_delta": "NEW",
-          "category": "팬시/문구/취미 (IP핵심)",
-          "price": "14,800원",
-          "character_ip": "가나디",
-          "url": "https://gift.kakao.com/product/14096676",
-          "is_new_entry": true
-        },
-        {
-          "brand": "더 문",
-          "product_name": "[5천원의행복] 귀여운 미니미 \"크로버 키링\" 우정템 커플템 / 럭키빵행운의바다거북스트랩키링 , 4,969",
-          "rank": 10,
-          "rank_delta": "NEW",
-          "category": "팬시/문구/취미 (IP핵심)",
-          "price": "5,000원",
+          "price": "39,800원",
           "character_ip": "일반/비IP 상품",
-          "url": "https://gift.kakao.com/product/12222102",
-          "is_new_entry": true
+          "url": "https://gift.kakao.com/product/11368084",
+          "is_new_entry": false
         },
         {
-          "brand": "소프트해빗",
-          "product_name": "KC 인증 말랑이! [선물패키지] 크런치 슬랑이 말랑이 랜덤 3종 세트 (스트레스볼 스퀴시 촉감 쫀득 친구 커플 생일 축하 직장인 ASMR) 구매 시 파우치 ! , 7,858",
-          "rank": 11,
-          "rank_delta": "NEW",
+          "brand": "알럽하우스(소품)",
+          "product_name": "나 지금 진지해 모아이 안경 거치대 웃긴 선물 선글라스 귀여운 인형 키링 남자 선물 쓸데없는 신박한 생일 커플 합격 부적 응원 시험 수능 선물",
+          "rank": 17,
+          "rank_delta": 37,
           "category": "팬시/문구/취미 (IP핵심)",
-          "price": "16,900원",
+          "price": "8,900원",
           "character_ip": "기타 캐릭터/팬시",
-          "url": "https://gift.kakao.com/product/14150199",
-          "is_new_entry": true
+          "url": "https://gift.kakao.com/product/10940152",
+          "is_new_entry": false
+        },
+        {
+          "brand": "코난",
+          "product_name": "명탐정 코난 랜덤 거울 펜던트 키링 15% , 1,757",
+          "rank": 21,
+          "rank_delta": 10,
+          "category": "팬시/문구/취미 (IP핵심)",
+          "price": "8,500원",
+          "character_ip": "명탐정 코난",
+          "url": "https://gift.kakao.com/product/14049180",
+          "is_new_entry": false
+        },
+        {
+          "brand": "반다이",
+          "product_name": "케로로 미니미니 마스코트(1개입)",
+          "rank": 23,
+          "rank_delta": 76,
+          "category": "팬시/문구/취미 (IP핵심)",
+          "price": "12,500원",
+          "character_ip": "일반/비IP 상품",
+          "url": "https://gift.kakao.com/product/14268271",
+          "is_new_entry": false
+        },
+        {
+          "brand": "굴강",
+          "product_name": "공주한테 말대꾸금지 공주짤 티셔츠 웃긴 자취 여자친구 옷 여자선물 재미있는 쓸모없는 쓸데없는 신박한 선물 , 2,382",
+          "rank": 26,
+          "rank_delta": 25,
+          "category": "팬시/문구/취미 (IP핵심)",
+          "price": "15,900원",
+          "character_ip": "일반/비IP 상품",
+          "url": "https://gift.kakao.com/product/11691666",
+          "is_new_entry": false
         }
       ]
     },
@@ -3680,34 +3932,50 @@
         "exclusive_ratio": 26.0,
         "price_tier_matrix": {
           "1만원 미만": {
-            "count": 0,
-            "share": 0.0,
-            "avg_price": 0,
-            "top_brands": []
+            "count": 1,
+            "share": 2.0,
+            "avg_price": 9900,
+            "top_brands": [
+              "프렌즈리빙LC"
+            ]
           },
           "1만원대": {
-            "count": 0,
-            "share": 0.0,
-            "avg_price": 0,
-            "top_brands": []
+            "count": 19,
+            "share": 38.0,
+            "avg_price": 16563,
+            "top_brands": [
+              "캐릭터침구",
+              "가나디",
+              "굴강"
+            ]
           },
           "2만원대": {
-            "count": 0,
-            "share": 0.0,
-            "avg_price": 0,
-            "top_brands": []
+            "count": 20,
+            "share": 40.0,
+            "avg_price": 25930,
+            "top_brands": [
+              "캐릭터침구",
+              "가나디",
+              "프렌즈리빙LC"
+            ]
           },
           "3만원대": {
-            "count": 0,
-            "share": 0.0,
-            "avg_price": 0,
-            "top_brands": []
+            "count": 8,
+            "share": 16.0,
+            "avg_price": 35812,
+            "top_brands": [
+              "캐릭터침구",
+              "바나코(인테리어)",
+              "잔망루피(굿즈)"
+            ]
           },
           "4만원대": {
-            "count": 0,
-            "share": 0.0,
-            "avg_price": 0,
-            "top_brands": []
+            "count": 1,
+            "share": 2.0,
+            "avg_price": 44900,
+            "top_brands": [
+              "바자르"
+            ]
           },
           "5만원 이상": {
             "count": 1,
@@ -3774,48 +4042,48 @@
           "is_new_entry": true
         },
         {
-          "brand": "가나디",
-          "product_name": "가나디 파자마 러그 (러그/미니러그/인테리어/자취/원룸/집들이선물) , 5,132",
-          "rank": 5,
-          "rank_delta": "NEW",
+          "brand": "프렌즈리빙LC",
+          "product_name": "[단독] \"볼록한 배가 귀여운\" New 춘식이 배빵빵 모찌 바디필로우 80cm",
+          "rank": 14,
+          "rank_delta": 31,
           "category": "침구/패브릭",
-          "price": "17,800원",
-          "character_ip": "가나디",
-          "url": "https://gift.kakao.com/product/14096524",
-          "is_new_entry": true
+          "price": "29,800원",
+          "character_ip": "카카오프렌즈",
+          "url": "https://gift.kakao.com/product/7025670",
+          "is_new_entry": false
+        },
+        {
+          "brand": "알럽하우스(소품)",
+          "product_name": "배추 보낸다 김장준비완료 배추담요 [빅사이즈] 웃긴 직장동료 생일 연인 커플 합격 응원 집들이 결혼 선물 귀여운 자취 쓸데없는 신박한 행운 , 2,479",
+          "rank": 15,
+          "rank_delta": 12,
+          "category": "침구/패브릭",
+          "price": "14,900원",
+          "character_ip": "일반/비IP 상품",
+          "url": "https://gift.kakao.com/product/10819633",
+          "is_new_entry": false
         },
         {
           "brand": "캐릭터침구",
-          "product_name": "생일/집들이선물추천 먼작귀 굿즈 발매트 러그 인테리어소품 선물 5종옵션 택1 (치이카와/가르마/토끼/밤만쥬/하늘다람쥐) , 9,349",
-          "rank": 11,
+          "product_name": "\"생일/집들이선물\" 리락쿠마 낮잠쿠션 2종옵션 택1 캐릭터쿠션 핸드워머 사무실 학교 집들이 기념일 선물 , 1,209",
+          "rank": 22,
           "rank_delta": "NEW",
           "category": "침구/패브릭",
-          "price": "16,900원",
-          "character_ip": "먼작귀/치이카와",
-          "url": "https://gift.kakao.com/product/7896387",
-          "is_new_entry": true
-        },
-        {
-          "brand": "굴강",
-          "product_name": "\"나에게 기대\" 테토남 빵빵이 팔베개 쿠션 [품절대란] 웃긴 침구 쓸데없는 자취 바디필로우 인형 쓸모없는 신박한 선물 , 9,772",
-          "rank": 12,
-          "rank_delta": "NEW",
-          "category": "침구/패브릭",
-          "price": "17,900원",
-          "character_ip": "빵빵이",
-          "url": "https://gift.kakao.com/product/12617143",
-          "is_new_entry": true
-        },
-        {
-          "brand": "캐릭터침구",
-          "product_name": "생일/기념일선물추천 리락쿠마반달대쿠션 3종옵션 택1 알러지케어원단 캐릭터 침구 기념일 선물 , 7,252",
-          "rank": 13,
-          "rank_delta": "NEW",
-          "category": "침구/패브릭",
-          "price": "29,000원",
+          "price": "22,900원",
           "character_ip": "리락쿠마",
-          "url": "https://gift.kakao.com/product/13808817",
+          "url": "https://gift.kakao.com/product/13983870",
           "is_new_entry": true
+        },
+        {
+          "brand": "쉬즈홈",
+          "product_name": "[단독컬러] \"집들이선물\" 집순이 맞춤! 슬리브 등받이 삼각쿠션 필로우 베개 등쿠션 (대형) 18종택1",
+          "rank": 23,
+          "rank_delta": 11,
+          "category": "침구/패브릭",
+          "price": "29,900원",
+          "character_ip": "일반/비IP 상품",
+          "url": "https://gift.kakao.com/product/1242861",
+          "is_new_entry": false
         }
       ]
     },
@@ -3834,34 +4102,53 @@
         "exclusive_ratio": 54.0,
         "price_tier_matrix": {
           "1만원 미만": {
-            "count": 0,
-            "share": 0.0,
-            "avg_price": 0,
-            "top_brands": []
+            "count": 2,
+            "share": 4.0,
+            "avg_price": 9850,
+            "top_brands": [
+              "트렌디홈(키친)",
+              "바쏠"
+            ]
           },
           "1만원대": {
-            "count": 0,
-            "share": 0.0,
-            "avg_price": 0,
-            "top_brands": []
+            "count": 9,
+            "share": 18.0,
+            "avg_price": 16076,
+            "top_brands": [
+              "캐릭터주방",
+              "바쏠",
+              "알럽하우스"
+            ]
           },
           "2만원대": {
-            "count": 0,
-            "share": 0.0,
-            "avg_price": 0,
-            "top_brands": []
+            "count": 6,
+            "share": 12.0,
+            "avg_price": 24600,
+            "top_brands": [
+              "보퀴진",
+              "캐릭터주방",
+              "타블도트"
+            ]
           },
           "3만원대": {
-            "count": 0,
-            "share": 0.0,
-            "avg_price": 0,
-            "top_brands": []
+            "count": 16,
+            "share": 32.0,
+            "avg_price": 34725,
+            "top_brands": [
+              "스탠리",
+              "스타벅스(공식스토어)",
+              "오덴세"
+            ]
           },
           "4만원대": {
-            "count": 0,
-            "share": 0.0,
-            "avg_price": 0,
-            "top_brands": []
+            "count": 11,
+            "share": 22.0,
+            "avg_price": 45745,
+            "top_brands": [
+              "스탠리",
+              "블루보틀",
+              "스타벅스(공식스토어)"
+            ]
           },
           "5만원 이상": {
             "count": 6,
@@ -3922,56 +4209,56 @@
           "brand": "스탠리",
           "product_name": "[스탠리공식유통사] 퀜처 H2.0 플로우스테이트 텀블러 591ml 30%",
           "rank": 1,
-          "rank_delta": "NEW",
+          "rank_delta": 33,
           "category": "주방/식기",
           "price": "30,800원",
           "character_ip": "일반/비IP 상품",
           "url": "https://gift.kakao.com/product/7868266",
-          "is_new_entry": true
-        },
-        {
-          "brand": "스탠리",
-          "product_name": "[스탠리공식유통사] 퀜처 H2.0 플로우스테이트 텀블러 887ml",
-          "rank": 2,
-          "rank_delta": "NEW",
-          "category": "주방/식기",
-          "price": "49,000원",
-          "character_ip": "일반/비IP 상품",
-          "url": "https://gift.kakao.com/product/11106499",
-          "is_new_entry": true
-        },
-        {
-          "brand": "캐릭터주방",
-          "product_name": "[단독/추석선물] 리락쿠마 페이스 머그 텀블러 360ml 보온 보냉",
-          "rank": 3,
-          "rank_delta": "NEW",
-          "category": "주방/식기",
-          "price": "24,500원",
-          "character_ip": "리락쿠마",
-          "url": "https://gift.kakao.com/product/13772143",
-          "is_new_entry": true
+          "is_new_entry": false
         },
         {
           "brand": "스탠리",
           "product_name": "[스탠리공식유통사] 퀜처 프로투어 플립 스트로 텀블러 887ml 25%",
           "rank": 4,
-          "rank_delta": "NEW",
+          "rank_delta": 16,
           "category": "주방/식기",
           "price": "40,500원",
           "character_ip": "일반/비IP 상품",
           "url": "https://gift.kakao.com/product/11144932",
-          "is_new_entry": true
+          "is_new_entry": false
         },
         {
           "brand": "스탠리",
           "product_name": "[스탠리공식유통사] 아이스플로우 플립 스트로 2.0 텀블러 887ml 20%",
           "rank": 6,
-          "rank_delta": "NEW",
+          "rank_delta": 20,
           "category": "주방/식기",
           "price": "39,200원",
           "character_ip": "일반/비IP 상품",
           "url": "https://gift.kakao.com/product/7868778",
+          "is_new_entry": false
+        },
+        {
+          "brand": "스타벅스(공식스토어)",
+          "product_name": "\"피너츠 스트로 캡 포인트\" 펌킨 피너츠 글라스 콜드컵 591ml +에코텀블러음료쿠폰() (친구/귀여운 선물)",
+          "rank": 10,
+          "rank_delta": "NEW",
+          "category": "주방/식기",
+          "price": "52,000원",
+          "character_ip": "스누피/피너츠",
+          "url": "https://gift.kakao.com/product/14276887",
           "is_new_entry": true
+        },
+        {
+          "brand": "광주요",
+          "product_name": "[단독 컬러] 광주요 캐주얼라인 소리잔 2P (술잔/막걸리잔/디저트볼/고블렛잔) 28% 나눌수록 커지는 10+1",
+          "rank": 18,
+          "rank_delta": 10,
+          "category": "주방/식기",
+          "price": "33,000원",
+          "character_ip": "일반/비IP 상품",
+          "url": "https://gift.kakao.com/product/1186213",
+          "is_new_entry": false
         }
       ]
     }
