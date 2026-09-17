@@ -10,11 +10,13 @@
       "url": "https://gift.kakao.com/product/11106499",
       "product_id": 11106499,
       "scraped_at": "2026-09-04 11:06:24",
-      "is_new_entry": false,
-      "rank_delta": 0,
-      "price_numeric": 44100,
+      "price_num": 44100,
       "price_tier": "4만원대",
-      "usp": "일반구성"
+      "has_packaging": false,
+      "has_engraving": false,
+      "is_exclusive": false,
+      "is_new_entry": false,
+      "rank_delta": 0.0
     },
     {
       "category": "리빙 전체",
@@ -26,11 +28,13 @@
       "url": "https://gift.kakao.com/product/11850163",
       "product_id": 11850163,
       "scraped_at": "2026-09-04 11:06:24",
-      "is_new_entry": false,
-      "rank_delta": 0,
-      "price_numeric": 25500,
+      "price_num": 25500,
       "price_tier": "2만원대",
-      "usp": "선물포장, 단독구성"
+      "has_packaging": false,
+      "has_engraving": false,
+      "is_exclusive": true,
+      "is_new_entry": false,
+      "rank_delta": 0.0
     },
     {
       "category": "리빙 전체",
@@ -42,11 +46,13 @@
       "url": "https://gift.kakao.com/product/4926192",
       "product_id": 4926192,
       "scraped_at": "2026-09-04 11:06:24",
-      "is_new_entry": false,
-      "rank_delta": 0,
-      "price_numeric": 18000,
+      "price_num": 18000,
       "price_tier": "1만원대",
-      "usp": "선물포장, 단독구성"
+      "has_packaging": false,
+      "has_engraving": false,
+      "is_exclusive": true,
+      "is_new_entry": false,
+      "rank_delta": 0.0
     },
     {
       "category": "리빙 전체",
@@ -58,11 +64,13 @@
       "url": "https://gift.kakao.com/product/13772143",
       "product_id": 13772143,
       "scraped_at": "2026-09-04 11:06:24",
-      "is_new_entry": false,
-      "rank_delta": 0,
-      "price_numeric": 24500,
+      "price_num": 24500,
       "price_tier": "2만원대",
-      "usp": "단독구성"
+      "has_packaging": false,
+      "has_engraving": false,
+      "is_exclusive": true,
+      "is_new_entry": false,
+      "rank_delta": 1.0
     },
     {
       "category": "리빙 전체",
@@ -74,11 +82,13 @@
       "url": "https://gift.kakao.com/product/12854287",
       "product_id": 12854287,
       "scraped_at": "2026-09-04 11:06:24",
-      "is_new_entry": false,
-      "rank_delta": 0,
-      "price_numeric": 34800,
+      "price_num": 34800,
       "price_tier": "3만원대",
-      "usp": "단독구성"
+      "has_packaging": false,
+      "has_engraving": false,
+      "is_exclusive": true,
+      "is_new_entry": false,
+      "rank_delta": -1.0
     },
     {
       "category": "리빙 전체",
@@ -90,11 +100,13 @@
       "url": "https://gift.kakao.com/product/5391162",
       "product_id": 5391162,
       "scraped_at": "2026-09-04 11:06:24",
-      "is_new_entry": false,
-      "rank_delta": 0,
-      "price_numeric": 28900,
+      "price_num": 28900,
       "price_tier": "2만원대",
-      "usp": "단독구성"
+      "has_packaging": false,
+      "has_engraving": false,
+      "is_exclusive": true,
+      "is_new_entry": false,
+      "rank_delta": 1.0
     },
     {
       "category": "리빙 전체",
@@ -106,11 +118,13 @@
       "url": "https://gift.kakao.com/product/13550210",
       "product_id": 13550210,
       "scraped_at": "2026-09-04 11:06:24",
-      "is_new_entry": false,
-      "rank_delta": 0,
-      "price_numeric": 33000,
+      "price_num": 33000,
       "price_tier": "3만원대",
-      "usp": "단독구성"
+      "has_packaging": false,
+      "has_engraving": false,
+      "is_exclusive": true,
+      "is_new_entry": false,
+      "rank_delta": 1.0
     },
     {
       "category": "리빙 전체",
@@ -122,11 +136,13 @@
       "url": "https://gift.kakao.com/product/11264836",
       "product_id": 11264836,
       "scraped_at": "2026-09-04 11:06:24",
-      "is_new_entry": false,
-      "rank_delta": 0,
-      "price_numeric": 37000,
+      "price_num": 37000,
       "price_tier": "3만원대",
-      "usp": "일반구성"
+      "has_packaging": false,
+      "has_engraving": false,
+      "is_exclusive": false,
+      "is_new_entry": false,
+      "rank_delta": -2.0
     },
     {
       "category": "리빙 전체",
@@ -138,11 +154,13 @@
       "url": "https://gift.kakao.com/product/14096838",
       "product_id": 14096838,
       "scraped_at": "2026-09-04 11:06:24",
-      "is_new_entry": false,
-      "rank_delta": 0,
-      "price_numeric": 12800,
+      "price_num": 12800,
       "price_tier": "1만원대",
-      "usp": "일반구성"
+      "has_packaging": false,
+      "has_engraving": false,
+      "is_exclusive": false,
+      "is_new_entry": false,
+      "rank_delta": 4.0
     },
     {
       "category": "리빙 전체",
@@ -154,11 +172,13 @@
       "url": "https://gift.kakao.com/product/12821252",
       "product_id": 12821252,
       "scraped_at": "2026-09-04 11:06:24",
-      "is_new_entry": false,
-      "rank_delta": 0,
-      "price_numeric": 16800,
+      "price_num": 16800,
       "price_tier": "1만원대",
-      "usp": "단독구성"
+      "has_packaging": false,
+      "has_engraving": false,
+      "is_exclusive": true,
+      "is_new_entry": false,
+      "rank_delta": 8.0
     },
     {
       "category": "리빙 전체",
@@ -170,11 +190,13 @@
       "url": "https://gift.kakao.com/product/9788037",
       "product_id": 9788037,
       "scraped_at": "2026-09-04 11:06:24",
-      "is_new_entry": false,
-      "rank_delta": 0,
-      "price_numeric": 46500,
+      "price_num": 46500,
       "price_tier": "4만원대",
-      "usp": "선물포장"
+      "has_packaging": true,
+      "has_engraving": false,
+      "is_exclusive": false,
+      "is_new_entry": false,
+      "rank_delta": 11.0
     },
     {
       "category": "리빙 전체",
@@ -186,11 +208,13 @@
       "url": "https://gift.kakao.com/product/12639125",
       "product_id": 12639125,
       "scraped_at": "2026-09-04 11:06:24",
-      "is_new_entry": false,
-      "rank_delta": 0,
-      "price_numeric": 29900,
+      "price_num": 29900,
       "price_tier": "2만원대",
-      "usp": "일반구성"
+      "has_packaging": false,
+      "has_engraving": false,
+      "is_exclusive": false,
+      "is_new_entry": false,
+      "rank_delta": 3.0
     },
     {
       "category": "리빙 전체",
@@ -202,11 +226,13 @@
       "url": "https://gift.kakao.com/product/13261876",
       "product_id": 13261876,
       "scraped_at": "2026-09-04 11:06:24",
-      "is_new_entry": false,
-      "rank_delta": 0,
-      "price_numeric": 12000,
+      "price_num": 12000,
       "price_tier": "1만원대",
-      "usp": "일반구성"
+      "has_packaging": true,
+      "has_engraving": false,
+      "is_exclusive": false,
+      "is_new_entry": false,
+      "rank_delta": -4.0
     },
     {
       "category": "리빙 전체",
@@ -218,11 +244,13 @@
       "url": "https://gift.kakao.com/product/11779291",
       "product_id": 11779291,
       "scraped_at": "2026-09-04 11:06:24",
-      "is_new_entry": false,
-      "rank_delta": 0,
-      "price_numeric": 46000,
+      "price_num": 46000,
       "price_tier": "4만원대",
-      "usp": "일반구성"
+      "has_packaging": false,
+      "has_engraving": false,
+      "is_exclusive": false,
+      "is_new_entry": false,
+      "rank_delta": -4.0
     },
     {
       "category": "리빙 전체",
@@ -234,11 +262,13 @@
       "url": "https://gift.kakao.com/product/7355950",
       "product_id": 7355950,
       "scraped_at": "2026-09-04 11:06:24",
-      "is_new_entry": false,
-      "rank_delta": 0,
-      "price_numeric": 22900,
+      "price_num": 22900,
       "price_tier": "2만원대",
-      "usp": "일반구성"
+      "has_packaging": false,
+      "has_engraving": false,
+      "is_exclusive": false,
+      "is_new_entry": false,
+      "rank_delta": 4.0
     },
     {
       "category": "리빙 전체",
@@ -250,11 +280,13 @@
       "url": "https://gift.kakao.com/product/7343467",
       "product_id": 7343467,
       "scraped_at": "2026-09-04 11:06:25",
-      "is_new_entry": false,
-      "rank_delta": 0,
-      "price_numeric": 36000,
+      "price_num": 36000,
       "price_tier": "3만원대",
-      "usp": "단독구성"
+      "has_packaging": false,
+      "has_engraving": false,
+      "is_exclusive": true,
+      "is_new_entry": false,
+      "rank_delta": 0.0
     },
     {
       "category": "리빙 전체",
@@ -266,11 +298,13 @@
       "url": "https://gift.kakao.com/product/11743570",
       "product_id": 11743570,
       "scraped_at": "2026-09-04 11:06:25",
-      "is_new_entry": false,
-      "rank_delta": 0,
-      "price_numeric": 34800,
+      "price_num": 34800,
       "price_tier": "3만원대",
-      "usp": "단독구성"
+      "has_packaging": false,
+      "has_engraving": false,
+      "is_exclusive": true,
+      "is_new_entry": false,
+      "rank_delta": 0.0
     },
     {
       "category": "리빙 전체",
@@ -282,11 +316,13 @@
       "url": "https://gift.kakao.com/product/13015264",
       "product_id": 13015264,
       "scraped_at": "2026-09-04 11:06:25",
-      "is_new_entry": false,
-      "rank_delta": 0,
-      "price_numeric": 33300,
+      "price_num": 33300,
       "price_tier": "3만원대",
-      "usp": "일반구성"
+      "has_packaging": false,
+      "has_engraving": false,
+      "is_exclusive": true,
+      "is_new_entry": false,
+      "rank_delta": 3.0
     },
     {
       "category": "리빙 전체",
@@ -298,11 +334,13 @@
       "url": "https://gift.kakao.com/product/7868778",
       "product_id": 7868778,
       "scraped_at": "2026-09-04 11:06:25",
-      "is_new_entry": false,
-      "rank_delta": 0,
-      "price_numeric": 49000,
+      "price_num": 49000,
       "price_tier": "4만원대",
-      "usp": "일반구성"
+      "has_packaging": false,
+      "has_engraving": false,
+      "is_exclusive": false,
+      "is_new_entry": false,
+      "rank_delta": 1.0
     },
     {
       "category": "리빙 전체",
@@ -314,11 +352,13 @@
       "url": "https://gift.kakao.com/product/11483949",
       "product_id": 11483949,
       "scraped_at": "2026-09-04 11:06:25",
-      "is_new_entry": false,
-      "rank_delta": 0,
-      "price_numeric": 35000,
+      "price_num": 35000,
       "price_tier": "3만원대",
-      "usp": "일반구성"
+      "has_packaging": false,
+      "has_engraving": false,
+      "is_exclusive": false,
+      "is_new_entry": false,
+      "rank_delta": -8.0
     },
     {
       "category": "리빙 전체",
@@ -330,11 +370,13 @@
       "url": "https://gift.kakao.com/product/6989444",
       "product_id": 6989444,
       "scraped_at": "2026-09-04 11:06:25",
-      "is_new_entry": false,
-      "rank_delta": 0,
-      "price_numeric": 46000,
+      "price_num": 46000,
       "price_tier": "4만원대",
-      "usp": "단독구성"
+      "has_packaging": true,
+      "has_engraving": false,
+      "is_exclusive": true,
+      "is_new_entry": false,
+      "rank_delta": 9.0
     },
     {
       "category": "리빙 전체",
@@ -346,11 +388,13 @@
       "url": "https://gift.kakao.com/product/7868895",
       "product_id": 7868895,
       "scraped_at": "2026-09-04 11:06:25",
-      "is_new_entry": false,
-      "rank_delta": 0,
-      "price_numeric": 44000,
+      "price_num": 44000,
       "price_tier": "4만원대",
-      "usp": "일반구성"
+      "has_packaging": false,
+      "has_engraving": false,
+      "is_exclusive": false,
+      "is_new_entry": false,
+      "rank_delta": 2.0
     },
     {
       "category": "리빙 전체",
@@ -362,11 +406,13 @@
       "url": "https://gift.kakao.com/product/14096524",
       "product_id": 14096524,
       "scraped_at": "2026-09-04 11:06:25",
-      "is_new_entry": false,
-      "rank_delta": 0,
-      "price_numeric": 17800,
+      "price_num": 17800,
       "price_tier": "1만원대",
-      "usp": "일반구성"
+      "has_packaging": false,
+      "has_engraving": false,
+      "is_exclusive": false,
+      "is_new_entry": false,
+      "rank_delta": 18.0
     },
     {
       "category": "리빙 전체",
@@ -378,11 +424,13 @@
       "url": "https://gift.kakao.com/product/11483865",
       "product_id": 11483865,
       "scraped_at": "2026-09-04 11:06:25",
-      "is_new_entry": false,
-      "rank_delta": 0,
-      "price_numeric": 42000,
+      "price_num": 42000,
       "price_tier": "4만원대",
-      "usp": "일반구성"
+      "has_packaging": false,
+      "has_engraving": false,
+      "is_exclusive": false,
+      "is_new_entry": false,
+      "rank_delta": 3.0
     },
     {
       "category": "리빙 전체",
@@ -394,11 +442,13 @@
       "url": "https://gift.kakao.com/product/12906542",
       "product_id": 12906542,
       "scraped_at": "2026-09-04 11:06:25",
-      "is_new_entry": false,
-      "rank_delta": 0,
-      "price_numeric": 38000,
+      "price_num": 38000,
       "price_tier": "3만원대",
-      "usp": "단독구성"
+      "has_packaging": false,
+      "has_engraving": false,
+      "is_exclusive": true,
+      "is_new_entry": false,
+      "rank_delta": 0.0
     },
     {
       "category": "리빙 전체",
@@ -410,11 +460,13 @@
       "url": "https://gift.kakao.com/product/13884111",
       "product_id": 13884111,
       "scraped_at": "2026-09-04 11:06:25",
-      "is_new_entry": false,
-      "rank_delta": 0,
-      "price_numeric": 9800,
+      "price_num": 9800,
       "price_tier": "1만원 미만",
-      "usp": "일반구성"
+      "has_packaging": true,
+      "has_engraving": false,
+      "is_exclusive": false,
+      "is_new_entry": false,
+      "rank_delta": 14.0
     },
     {
       "category": "리빙 전체",
@@ -426,11 +478,13 @@
       "url": "https://gift.kakao.com/product/7734041",
       "product_id": 7734041,
       "scraped_at": "2026-09-04 11:06:25",
-      "is_new_entry": false,
-      "rank_delta": 0,
-      "price_numeric": 34800,
+      "price_num": 34800,
       "price_tier": "3만원대",
-      "usp": "단독구성"
+      "has_packaging": false,
+      "has_engraving": false,
+      "is_exclusive": true,
+      "is_new_entry": false,
+      "rank_delta": 2.0
     },
     {
       "category": "리빙 전체",
@@ -442,11 +496,13 @@
       "url": "https://gift.kakao.com/product/11144932",
       "product_id": 11144932,
       "scraped_at": "2026-09-04 11:06:25",
-      "is_new_entry": false,
-      "rank_delta": 0,
-      "price_numeric": 54000,
+      "price_num": 54000,
       "price_tier": "5만원 이상",
-      "usp": "일반구성"
+      "has_packaging": false,
+      "has_engraving": false,
+      "is_exclusive": false,
+      "is_new_entry": false,
+      "rank_delta": 8.0
     },
     {
       "category": "리빙 전체",
@@ -458,11 +514,13 @@
       "url": "https://gift.kakao.com/product/12863170",
       "product_id": 12863170,
       "scraped_at": "2026-09-04 11:06:25",
-      "is_new_entry": false,
-      "rank_delta": 0,
-      "price_numeric": 53820,
+      "price_num": 53820,
       "price_tier": "5만원 이상",
-      "usp": "단독구성"
+      "has_packaging": false,
+      "has_engraving": false,
+      "is_exclusive": true,
+      "is_new_entry": false,
+      "rank_delta": 6.0
     },
     {
       "category": "리빙 전체",
@@ -474,11 +532,13 @@
       "url": "https://gift.kakao.com/product/5872250",
       "product_id": 5872250,
       "scraped_at": "2026-09-04 11:06:25",
-      "is_new_entry": false,
-      "rank_delta": 0,
-      "price_numeric": 18800,
+      "price_num": 18800,
       "price_tier": "1만원대",
-      "usp": "단독구성"
+      "has_packaging": false,
+      "has_engraving": false,
+      "is_exclusive": true,
+      "is_new_entry": false,
+      "rank_delta": 2.0
     },
     {
       "category": "리빙 전체",
@@ -490,11 +550,13 @@
       "url": "https://gift.kakao.com/product/9742914",
       "product_id": 9742914,
       "scraped_at": "2026-09-04 11:06:25",
-      "is_new_entry": false,
-      "rank_delta": 0,
-      "price_numeric": 12900,
+      "price_num": 12900,
       "price_tier": "1만원대",
-      "usp": "단독구성"
+      "has_packaging": false,
+      "has_engraving": false,
+      "is_exclusive": true,
+      "is_new_entry": true,
+      "rank_delta": ""
     },
     {
       "category": "리빙 전체",
@@ -506,11 +568,13 @@
       "url": "https://gift.kakao.com/product/13255931",
       "product_id": 13255931,
       "scraped_at": "2026-09-04 11:06:26",
-      "is_new_entry": false,
-      "rank_delta": 0,
-      "price_numeric": 37900,
+      "price_num": 37900,
       "price_tier": "3만원대",
-      "usp": "단독구성"
+      "has_packaging": false,
+      "has_engraving": false,
+      "is_exclusive": true,
+      "is_new_entry": true,
+      "rank_delta": ""
     },
     {
       "category": "리빙 전체",
@@ -522,11 +586,13 @@
       "url": "https://gift.kakao.com/product/11264832",
       "product_id": 11264832,
       "scraped_at": "2026-09-04 11:06:26",
-      "is_new_entry": false,
-      "rank_delta": 0,
-      "price_numeric": 32000,
+      "price_num": 32000,
       "price_tier": "3만원대",
-      "usp": "일반구성"
+      "has_packaging": false,
+      "has_engraving": false,
+      "is_exclusive": false,
+      "is_new_entry": true,
+      "rank_delta": ""
     },
     {
       "category": "리빙 전체",
@@ -538,11 +604,13 @@
       "url": "https://gift.kakao.com/product/11801920",
       "product_id": 11801920,
       "scraped_at": "2026-09-04 11:06:26",
-      "is_new_entry": false,
-      "rank_delta": 0,
-      "price_numeric": 48000,
+      "price_num": 48000,
       "price_tier": "4만원대",
-      "usp": "일반구성"
+      "has_packaging": false,
+      "has_engraving": false,
+      "is_exclusive": false,
+      "is_new_entry": false,
+      "rank_delta": -6.0
     },
     {
       "category": "리빙 전체",
@@ -554,11 +622,13 @@
       "url": "https://gift.kakao.com/product/4907401",
       "product_id": 4907401,
       "scraped_at": "2026-09-04 11:06:26",
-      "is_new_entry": false,
-      "rank_delta": 0,
-      "price_numeric": 45000,
+      "price_num": 45000,
       "price_tier": "4만원대",
-      "usp": "단독구성"
+      "has_packaging": false,
+      "has_engraving": false,
+      "is_exclusive": true,
+      "is_new_entry": false,
+      "rank_delta": -24.0
     },
     {
       "category": "리빙 전체",
@@ -570,11 +640,13 @@
       "url": "https://gift.kakao.com/product/10841578",
       "product_id": 10841578,
       "scraped_at": "2026-09-04 11:06:26",
-      "is_new_entry": false,
-      "rank_delta": 0,
-      "price_numeric": 57900,
+      "price_num": 57900,
       "price_tier": "5만원 이상",
-      "usp": "단독구성"
+      "has_packaging": false,
+      "has_engraving": false,
+      "is_exclusive": true,
+      "is_new_entry": false,
+      "rank_delta": 1.0
     },
     {
       "category": "리빙 전체",
@@ -586,11 +658,13 @@
       "url": "https://gift.kakao.com/product/12694900",
       "product_id": 12694900,
       "scraped_at": "2026-09-04 11:06:26",
-      "is_new_entry": false,
-      "rank_delta": 0,
-      "price_numeric": 36000,
+      "price_num": 36000,
       "price_tier": "3만원대",
-      "usp": "단독구성"
+      "has_packaging": false,
+      "has_engraving": false,
+      "is_exclusive": true,
+      "is_new_entry": true,
+      "rank_delta": ""
     },
     {
       "category": "리빙 전체",
@@ -602,11 +676,13 @@
       "url": "https://gift.kakao.com/product/14150199",
       "product_id": 14150199,
       "scraped_at": "2026-09-04 11:06:26",
-      "is_new_entry": false,
-      "rank_delta": 0,
-      "price_numeric": 16900,
+      "price_num": 16900,
       "price_tier": "1만원대",
-      "usp": "선물포장, 단독구성"
+      "has_packaging": true,
+      "has_engraving": false,
+      "is_exclusive": true,
+      "is_new_entry": false,
+      "rank_delta": -4.0
     },
     {
       "category": "리빙 전체",
@@ -618,11 +694,13 @@
       "url": "https://gift.kakao.com/product/6986025",
       "product_id": 6986025,
       "scraped_at": "2026-09-04 11:06:26",
-      "is_new_entry": false,
-      "rank_delta": 0,
-      "price_numeric": 29900,
+      "price_num": 29900,
       "price_tier": "2만원대",
-      "usp": "일반구성"
+      "has_packaging": false,
+      "has_engraving": false,
+      "is_exclusive": false,
+      "is_new_entry": false,
+      "rank_delta": -8.0
     },
     {
       "category": "리빙 전체",
@@ -634,11 +712,13 @@
       "url": "https://gift.kakao.com/product/10383477",
       "product_id": 10383477,
       "scraped_at": "2026-09-04 11:06:26",
-      "is_new_entry": false,
-      "rank_delta": 0,
-      "price_numeric": 22000,
+      "price_num": 22000,
       "price_tier": "2만원대",
-      "usp": "일반구성"
+      "has_packaging": false,
+      "has_engraving": false,
+      "is_exclusive": false,
+      "is_new_entry": false,
+      "rank_delta": 8.0
     },
     {
       "category": "리빙 전체",
@@ -650,11 +730,13 @@
       "url": "https://gift.kakao.com/product/10974656",
       "product_id": 10974656,
       "scraped_at": "2026-09-04 11:06:26",
-      "is_new_entry": false,
-      "rank_delta": 0,
-      "price_numeric": 8900,
+      "price_num": 8900,
       "price_tier": "1만원 미만",
-      "usp": "일반구성"
+      "has_packaging": false,
+      "has_engraving": false,
+      "is_exclusive": false,
+      "is_new_entry": false,
+      "rank_delta": 4.0
     },
     {
       "category": "리빙 전체",
@@ -666,11 +748,13 @@
       "url": "https://gift.kakao.com/product/2338456",
       "product_id": 2338456,
       "scraped_at": "2026-09-04 11:06:26",
-      "is_new_entry": false,
-      "rank_delta": 0,
-      "price_numeric": 46550,
+      "price_num": 46550,
       "price_tier": "4만원대",
-      "usp": "일반구성"
+      "has_packaging": false,
+      "has_engraving": false,
+      "is_exclusive": false,
+      "is_new_entry": true,
+      "rank_delta": ""
     },
     {
       "category": "리빙 전체",
@@ -682,11 +766,13 @@
       "url": "https://gift.kakao.com/product/927193",
       "product_id": 927193,
       "scraped_at": "2026-09-04 11:06:26",
-      "is_new_entry": false,
-      "rank_delta": 0,
-      "price_numeric": 30900,
+      "price_num": 30900,
       "price_tier": "3만원대",
-      "usp": "선물포장, 단독구성"
+      "has_packaging": true,
+      "has_engraving": false,
+      "is_exclusive": true,
+      "is_new_entry": false,
+      "rank_delta": 6.0
     },
     {
       "category": "리빙 전체",
@@ -698,11 +784,13 @@
       "url": "https://gift.kakao.com/product/5328353",
       "product_id": 5328353,
       "scraped_at": "2026-09-04 11:06:26",
-      "is_new_entry": false,
-      "rank_delta": 0,
-      "price_numeric": 29800,
+      "price_num": 29800,
       "price_tier": "2만원대",
-      "usp": "단독구성"
+      "has_packaging": false,
+      "has_engraving": false,
+      "is_exclusive": true,
+      "is_new_entry": true,
+      "rank_delta": ""
     },
     {
       "category": "리빙 전체",
@@ -714,11 +802,13 @@
       "url": "https://gift.kakao.com/product/13754828",
       "product_id": 13754828,
       "scraped_at": "2026-09-04 11:06:26",
-      "is_new_entry": false,
-      "rank_delta": 0,
-      "price_numeric": 38900,
+      "price_num": 38900,
       "price_tier": "3만원대",
-      "usp": "선물포장, 단독구성"
+      "has_packaging": false,
+      "has_engraving": false,
+      "is_exclusive": true,
+      "is_new_entry": false,
+      "rank_delta": -31.0
     },
     {
       "category": "리빙 전체",
@@ -730,11 +820,13 @@
       "url": "https://gift.kakao.com/product/2438319",
       "product_id": 2438319,
       "scraped_at": "2026-09-04 11:06:26",
-      "is_new_entry": false,
-      "rank_delta": 0,
-      "price_numeric": 51000,
+      "price_num": 51000,
       "price_tier": "5만원 이상",
-      "usp": "단독구성"
+      "has_packaging": false,
+      "has_engraving": false,
+      "is_exclusive": true,
+      "is_new_entry": false,
+      "rank_delta": -20.0
     },
     {
       "category": "리빙 전체",
@@ -746,11 +838,13 @@
       "url": "https://gift.kakao.com/product/12694903",
       "product_id": 12694903,
       "scraped_at": "2026-09-04 11:06:27",
-      "is_new_entry": false,
-      "rank_delta": 0,
-      "price_numeric": 39000,
+      "price_num": 39000,
       "price_tier": "3만원대",
-      "usp": "단독구성"
+      "has_packaging": false,
+      "has_engraving": false,
+      "is_exclusive": true,
+      "is_new_entry": false,
+      "rank_delta": -8.0
     },
     {
       "category": "리빙 전체",
@@ -762,11 +856,13 @@
       "url": "https://gift.kakao.com/product/13711010",
       "product_id": 13711010,
       "scraped_at": "2026-09-04 11:06:27",
-      "is_new_entry": false,
-      "rank_delta": 0,
-      "price_numeric": 11900,
+      "price_num": 11900,
       "price_tier": "1만원대",
-      "usp": "일반구성"
+      "has_packaging": false,
+      "has_engraving": false,
+      "is_exclusive": false,
+      "is_new_entry": false,
+      "rank_delta": -2.0
     },
     {
       "category": "리빙 전체",
@@ -778,11 +874,13 @@
       "url": "https://gift.kakao.com/product/7868571",
       "product_id": 7868571,
       "scraped_at": "2026-09-04 11:06:27",
-      "is_new_entry": false,
-      "rank_delta": 0,
-      "price_numeric": 51200,
+      "price_num": 51200,
       "price_tier": "5만원 이상",
-      "usp": "일반구성"
+      "has_packaging": false,
+      "has_engraving": false,
+      "is_exclusive": false,
+      "is_new_entry": false,
+      "rank_delta": -16.0
     },
     {
       "category": "리빙 전체",
@@ -794,11 +892,13 @@
       "url": "https://gift.kakao.com/product/13056614",
       "product_id": 13056614,
       "scraped_at": "2026-09-04 11:06:27",
-      "is_new_entry": false,
-      "rank_delta": 0,
-      "price_numeric": 40500,
+      "price_num": 40500,
       "price_tier": "4만원대",
-      "usp": "일반구성"
+      "has_packaging": false,
+      "has_engraving": false,
+      "is_exclusive": false,
+      "is_new_entry": true,
+      "rank_delta": ""
     },
     {
       "category": "팬시/문구/취미 (IP핵심)",
@@ -810,11 +910,13 @@
       "url": "https://gift.kakao.com/product/14096838",
       "product_id": 14096838,
       "scraped_at": "2026-09-04 11:06:33",
-      "is_new_entry": false,
-      "rank_delta": 0,
-      "price_numeric": 12800,
+      "price_num": 12800,
       "price_tier": "1만원대",
-      "usp": "일반구성"
+      "has_packaging": false,
+      "has_engraving": false,
+      "is_exclusive": false,
+      "is_new_entry": false,
+      "rank_delta": 1.0
     },
     {
       "category": "팬시/문구/취미 (IP핵심)",
@@ -826,11 +928,13 @@
       "url": "https://gift.kakao.com/product/13261876",
       "product_id": 13261876,
       "scraped_at": "2026-09-04 11:06:33",
-      "is_new_entry": false,
-      "rank_delta": 0,
-      "price_numeric": 12000,
+      "price_num": 12000,
       "price_tier": "1만원대",
-      "usp": "일반구성"
+      "has_packaging": true,
+      "has_engraving": false,
+      "is_exclusive": false,
+      "is_new_entry": false,
+      "rank_delta": -1.0
     },
     {
       "category": "팬시/문구/취미 (IP핵심)",
@@ -842,11 +946,13 @@
       "url": "https://gift.kakao.com/product/14150199",
       "product_id": 14150199,
       "scraped_at": "2026-09-04 11:06:33",
-      "is_new_entry": false,
-      "rank_delta": 0,
-      "price_numeric": 16900,
+      "price_num": 16900,
       "price_tier": "1만원대",
-      "usp": "선물포장, 단독구성"
+      "has_packaging": true,
+      "has_engraving": false,
+      "is_exclusive": true,
+      "is_new_entry": false,
+      "rank_delta": 0.0
     },
     {
       "category": "팬시/문구/취미 (IP핵심)",
@@ -858,11 +964,13 @@
       "url": "https://gift.kakao.com/product/10974656",
       "product_id": 10974656,
       "scraped_at": "2026-09-04 11:06:33",
-      "is_new_entry": false,
-      "rank_delta": 0,
-      "price_numeric": 8900,
+      "price_num": 8900,
       "price_tier": "1만원 미만",
-      "usp": "일반구성"
+      "has_packaging": false,
+      "has_engraving": false,
+      "is_exclusive": false,
+      "is_new_entry": false,
+      "rank_delta": 0.0
     },
     {
       "category": "팬시/문구/취미 (IP핵심)",
@@ -874,11 +982,13 @@
       "url": "https://gift.kakao.com/product/13711010",
       "product_id": 13711010,
       "scraped_at": "2026-09-04 11:06:33",
-      "is_new_entry": false,
-      "rank_delta": 0,
-      "price_numeric": 11900,
+      "price_num": 11900,
       "price_tier": "1만원대",
-      "usp": "일반구성"
+      "has_packaging": false,
+      "has_engraving": false,
+      "is_exclusive": false,
+      "is_new_entry": false,
+      "rank_delta": 0.0
     },
     {
       "category": "팬시/문구/취미 (IP핵심)",
@@ -890,11 +1000,13 @@
       "url": "https://gift.kakao.com/product/13064170",
       "product_id": 13064170,
       "scraped_at": "2026-09-04 11:06:33",
-      "is_new_entry": false,
-      "rank_delta": 0,
-      "price_numeric": 12900,
+      "price_num": 12900,
       "price_tier": "1만원대",
-      "usp": "일반구성"
+      "has_packaging": false,
+      "has_engraving": false,
+      "is_exclusive": false,
+      "is_new_entry": false,
+      "rank_delta": 1.0
     },
     {
       "category": "팬시/문구/취미 (IP핵심)",
@@ -906,11 +1018,13 @@
       "url": "https://gift.kakao.com/product/9235675",
       "product_id": 9235675,
       "scraped_at": "2026-09-04 11:06:33",
-      "is_new_entry": false,
-      "rank_delta": 0,
-      "price_numeric": 16900,
+      "price_num": 16900,
       "price_tier": "1만원대",
-      "usp": "일반구성"
+      "has_packaging": false,
+      "has_engraving": false,
+      "is_exclusive": false,
+      "is_new_entry": false,
+      "rank_delta": -1.0
     },
     {
       "category": "팬시/문구/취미 (IP핵심)",
@@ -922,11 +1036,13 @@
       "url": "https://gift.kakao.com/product/14096676",
       "product_id": 14096676,
       "scraped_at": "2026-09-04 11:06:33",
-      "is_new_entry": false,
-      "rank_delta": 0,
-      "price_numeric": 14800,
+      "price_num": 14800,
       "price_tier": "1만원대",
-      "usp": "일반구성"
+      "has_packaging": false,
+      "has_engraving": false,
+      "is_exclusive": false,
+      "is_new_entry": false,
+      "rank_delta": 0.0
     },
     {
       "category": "팬시/문구/취미 (IP핵심)",
@@ -938,11 +1054,13 @@
       "url": "https://gift.kakao.com/product/11368084",
       "product_id": 11368084,
       "scraped_at": "2026-09-04 11:06:33",
-      "is_new_entry": false,
-      "rank_delta": 0,
-      "price_numeric": 43800,
+      "price_num": 43800,
       "price_tier": "4만원대",
-      "usp": "각인/자수"
+      "has_packaging": false,
+      "has_engraving": false,
+      "is_exclusive": false,
+      "is_new_entry": false,
+      "rank_delta": 0.0
     },
     {
       "category": "팬시/문구/취미 (IP핵심)",
@@ -954,11 +1072,13 @@
       "url": "https://gift.kakao.com/product/12059249",
       "product_id": 12059249,
       "scraped_at": "2026-09-04 11:06:33",
-      "is_new_entry": false,
-      "rank_delta": 0,
-      "price_numeric": 15900,
+      "price_num": 15900,
       "price_tier": "1만원대",
-      "usp": "일반구성"
+      "has_packaging": false,
+      "has_engraving": false,
+      "is_exclusive": false,
+      "is_new_entry": false,
+      "rank_delta": 6.0
     },
     {
       "category": "팬시/문구/취미 (IP핵심)",
@@ -970,11 +1090,13 @@
       "url": "https://gift.kakao.com/product/11734230",
       "product_id": 11734230,
       "scraped_at": "2026-09-04 11:06:33",
-      "is_new_entry": false,
-      "rank_delta": 0,
-      "price_numeric": 16300,
+      "price_num": 16300,
       "price_tier": "1만원대",
-      "usp": "일반구성"
+      "has_packaging": false,
+      "has_engraving": false,
+      "is_exclusive": false,
+      "is_new_entry": false,
+      "rank_delta": 2.0
     },
     {
       "category": "팬시/문구/취미 (IP핵심)",
@@ -986,11 +1108,13 @@
       "url": "https://gift.kakao.com/product/12222102",
       "product_id": 12222102,
       "scraped_at": "2026-09-04 11:06:34",
-      "is_new_entry": false,
-      "rank_delta": 0,
-      "price_numeric": 5000,
+      "price_num": 5000,
       "price_tier": "1만원 미만",
-      "usp": "일반구성"
+      "has_packaging": false,
+      "has_engraving": false,
+      "is_exclusive": false,
+      "is_new_entry": false,
+      "rank_delta": 0.0
     },
     {
       "category": "팬시/문구/취미 (IP핵심)",
@@ -1002,11 +1126,13 @@
       "url": "https://gift.kakao.com/product/13672457",
       "product_id": 13672457,
       "scraped_at": "2026-09-04 11:06:34",
-      "is_new_entry": false,
-      "rank_delta": 0,
-      "price_numeric": 39800,
+      "price_num": 39800,
       "price_tier": "3만원대",
-      "usp": "일반구성"
+      "has_packaging": false,
+      "has_engraving": false,
+      "is_exclusive": false,
+      "is_new_entry": false,
+      "rank_delta": 1.0
     },
     {
       "category": "팬시/문구/취미 (IP핵심)",
@@ -1018,11 +1144,13 @@
       "url": "https://gift.kakao.com/product/11566569",
       "product_id": 11566569,
       "scraped_at": "2026-09-04 11:06:34",
-      "is_new_entry": false,
-      "rank_delta": 0,
-      "price_numeric": 20000,
+      "price_num": 20000,
       "price_tier": "2만원대",
-      "usp": "단독구성"
+      "has_packaging": false,
+      "has_engraving": false,
+      "is_exclusive": true,
+      "is_new_entry": false,
+      "rank_delta": -4.0
     },
     {
       "category": "팬시/문구/취미 (IP핵심)",
@@ -1034,11 +1162,13 @@
       "url": "https://gift.kakao.com/product/13697772",
       "product_id": 13697772,
       "scraped_at": "2026-09-04 11:06:34",
-      "is_new_entry": false,
-      "rank_delta": 0,
-      "price_numeric": 15000,
+      "price_num": 15000,
       "price_tier": "1만원대",
-      "usp": "일반구성"
+      "has_packaging": true,
+      "has_engraving": false,
+      "is_exclusive": false,
+      "is_new_entry": false,
+      "rank_delta": -4.0
     },
     {
       "category": "팬시/문구/취미 (IP핵심)",
@@ -1050,11 +1180,13 @@
       "url": "https://gift.kakao.com/product/14147814",
       "product_id": 14147814,
       "scraped_at": "2026-09-04 11:06:34",
-      "is_new_entry": false,
-      "rank_delta": 0,
-      "price_numeric": 13000,
+      "price_num": 13000,
       "price_tier": "1만원대",
-      "usp": "일반구성"
+      "has_packaging": false,
+      "has_engraving": false,
+      "is_exclusive": false,
+      "is_new_entry": false,
+      "rank_delta": 1.0
     },
     {
       "category": "팬시/문구/취미 (IP핵심)",
@@ -1066,11 +1198,13 @@
       "url": "https://gift.kakao.com/product/13763303",
       "product_id": 13763303,
       "scraped_at": "2026-09-04 11:06:34",
-      "is_new_entry": false,
-      "rank_delta": 0,
-      "price_numeric": 16000,
+      "price_num": 16000,
       "price_tier": "1만원대",
-      "usp": "일반구성"
+      "has_packaging": false,
+      "has_engraving": false,
+      "is_exclusive": false,
+      "is_new_entry": false,
+      "rank_delta": 11.0
     },
     {
       "category": "팬시/문구/취미 (IP핵심)",
@@ -1082,11 +1216,13 @@
       "url": "https://gift.kakao.com/product/13450660",
       "product_id": 13450660,
       "scraped_at": "2026-09-04 11:06:34",
-      "is_new_entry": false,
-      "rank_delta": 0,
-      "price_numeric": 31800,
+      "price_num": 31800,
       "price_tier": "3만원대",
-      "usp": "일반구성"
+      "has_packaging": false,
+      "has_engraving": false,
+      "is_exclusive": false,
+      "is_new_entry": false,
+      "rank_delta": 0.0
     },
     {
       "category": "팬시/문구/취미 (IP핵심)",
@@ -1098,11 +1234,13 @@
       "url": "https://gift.kakao.com/product/12551938",
       "product_id": 12551938,
       "scraped_at": "2026-09-04 11:06:34",
-      "is_new_entry": false,
-      "rank_delta": 0,
-      "price_numeric": 15000,
+      "price_num": 15000,
       "price_tier": "1만원대",
-      "usp": "일반구성"
+      "has_packaging": false,
+      "has_engraving": false,
+      "is_exclusive": false,
+      "is_new_entry": false,
+      "rank_delta": 8.0
     },
     {
       "category": "팬시/문구/취미 (IP핵심)",
@@ -1114,11 +1252,13 @@
       "url": "https://gift.kakao.com/product/14026139",
       "product_id": 14026139,
       "scraped_at": "2026-09-04 11:06:34",
-      "is_new_entry": false,
-      "rank_delta": 0,
-      "price_numeric": 17000,
+      "price_num": 17000,
       "price_tier": "1만원대",
-      "usp": "일반구성"
+      "has_packaging": false,
+      "has_engraving": false,
+      "is_exclusive": false,
+      "is_new_entry": false,
+      "rank_delta": 1.0
     },
     {
       "category": "팬시/문구/취미 (IP핵심)",
@@ -1130,11 +1270,13 @@
       "url": "https://gift.kakao.com/product/12084556",
       "product_id": 12084556,
       "scraped_at": "2026-09-04 11:06:34",
-      "is_new_entry": false,
-      "rank_delta": 0,
-      "price_numeric": 5400,
+      "price_num": 5400,
       "price_tier": "1만원 미만",
-      "usp": "일반구성"
+      "has_packaging": false,
+      "has_engraving": false,
+      "is_exclusive": false,
+      "is_new_entry": false,
+      "rank_delta": -2.0
     },
     {
       "category": "팬시/문구/취미 (IP핵심)",
@@ -1146,11 +1288,13 @@
       "url": "https://gift.kakao.com/product/12319916",
       "product_id": 12319916,
       "scraped_at": "2026-09-04 11:06:34",
-      "is_new_entry": false,
-      "rank_delta": 0,
-      "price_numeric": 35000,
+      "price_num": 35000,
       "price_tier": "3만원대",
-      "usp": "일반구성"
+      "has_packaging": false,
+      "has_engraving": false,
+      "is_exclusive": false,
+      "is_new_entry": false,
+      "rank_delta": 16.0
     },
     {
       "category": "팬시/문구/취미 (IP핵심)",
@@ -1162,11 +1306,13 @@
       "url": "https://gift.kakao.com/product/12831291",
       "product_id": 12831291,
       "scraped_at": "2026-09-04 11:06:34",
-      "is_new_entry": false,
-      "rank_delta": 0,
-      "price_numeric": 20000,
+      "price_num": 20000,
       "price_tier": "2만원대",
-      "usp": "일반구성"
+      "has_packaging": false,
+      "has_engraving": false,
+      "is_exclusive": false,
+      "is_new_entry": false,
+      "rank_delta": -3.0
     },
     {
       "category": "팬시/문구/취미 (IP핵심)",
@@ -1178,11 +1324,13 @@
       "url": "https://gift.kakao.com/product/12054525",
       "product_id": 12054525,
       "scraped_at": "2026-09-04 11:06:34",
-      "is_new_entry": false,
-      "rank_delta": 0,
-      "price_numeric": 7200,
+      "price_num": 7200,
       "price_tier": "1만원 미만",
-      "usp": "일반구성"
+      "has_packaging": false,
+      "has_engraving": false,
+      "is_exclusive": false,
+      "is_new_entry": false,
+      "rank_delta": 5.0
     },
     {
       "category": "팬시/문구/취미 (IP핵심)",
@@ -1194,11 +1342,13 @@
       "url": "https://gift.kakao.com/product/12820476",
       "product_id": 12820476,
       "scraped_at": "2026-09-04 11:06:34",
-      "is_new_entry": false,
-      "rank_delta": 0,
-      "price_numeric": 18800,
+      "price_num": 18800,
       "price_tier": "1만원대",
-      "usp": "단독구성"
+      "has_packaging": false,
+      "has_engraving": false,
+      "is_exclusive": true,
+      "is_new_entry": false,
+      "rank_delta": -2.0
     },
     {
       "category": "팬시/문구/취미 (IP핵심)",
@@ -1210,11 +1360,13 @@
       "url": "https://gift.kakao.com/product/12447517",
       "product_id": 12447517,
       "scraped_at": "2026-09-04 11:06:34",
-      "is_new_entry": false,
-      "rank_delta": 0,
-      "price_numeric": 13800,
+      "price_num": 13800,
       "price_tier": "1만원대",
-      "usp": "일반구성"
+      "has_packaging": false,
+      "has_engraving": false,
+      "is_exclusive": false,
+      "is_new_entry": false,
+      "rank_delta": -4.0
     },
     {
       "category": "팬시/문구/취미 (IP핵심)",
@@ -1226,11 +1378,13 @@
       "url": "https://gift.kakao.com/product/13838085",
       "product_id": 13838085,
       "scraped_at": "2026-09-04 11:06:34",
-      "is_new_entry": false,
-      "rank_delta": 0,
-      "price_numeric": 8500,
+      "price_num": 8500,
       "price_tier": "1만원 미만",
-      "usp": "일반구성"
+      "has_packaging": true,
+      "has_engraving": false,
+      "is_exclusive": false,
+      "is_new_entry": true,
+      "rank_delta": ""
     },
     {
       "category": "팬시/문구/취미 (IP핵심)",
@@ -1242,11 +1396,13 @@
       "url": "https://gift.kakao.com/product/12365669",
       "product_id": 12365669,
       "scraped_at": "2026-09-04 11:06:34",
-      "is_new_entry": false,
-      "rank_delta": 0,
-      "price_numeric": 9900,
+      "price_num": 9900,
       "price_tier": "1만원 미만",
-      "usp": "일반구성"
+      "has_packaging": false,
+      "has_engraving": false,
+      "is_exclusive": false,
+      "is_new_entry": true,
+      "rank_delta": ""
     },
     {
       "category": "팬시/문구/취미 (IP핵심)",
@@ -1258,11 +1414,13 @@
       "url": "https://gift.kakao.com/product/14107455",
       "product_id": 14107455,
       "scraped_at": "2026-09-04 11:06:34",
-      "is_new_entry": false,
-      "rank_delta": 0,
-      "price_numeric": 12900,
+      "price_num": 12900,
       "price_tier": "1만원대",
-      "usp": "일반구성"
+      "has_packaging": false,
+      "has_engraving": false,
+      "is_exclusive": false,
+      "is_new_entry": false,
+      "rank_delta": -5.0
     },
     {
       "category": "팬시/문구/취미 (IP핵심)",
@@ -1274,11 +1432,13 @@
       "url": "https://gift.kakao.com/product/13838117",
       "product_id": 13838117,
       "scraped_at": "2026-09-04 11:06:34",
-      "is_new_entry": false,
-      "rank_delta": 0,
-      "price_numeric": 9500,
+      "price_num": 9500,
       "price_tier": "1만원 미만",
-      "usp": "일반구성"
+      "has_packaging": true,
+      "has_engraving": false,
+      "is_exclusive": false,
+      "is_new_entry": false,
+      "rank_delta": -5.0
     },
     {
       "category": "팬시/문구/취미 (IP핵심)",
@@ -1290,11 +1450,13 @@
       "url": "https://gift.kakao.com/product/6186802",
       "product_id": 6186802,
       "scraped_at": "2026-09-04 11:06:34",
-      "is_new_entry": false,
-      "rank_delta": 0,
-      "price_numeric": 12900,
+      "price_num": 12900,
       "price_tier": "1만원대",
-      "usp": "선물포장, 단독구성"
+      "has_packaging": false,
+      "has_engraving": false,
+      "is_exclusive": true,
+      "is_new_entry": false,
+      "rank_delta": 3.0
     },
     {
       "category": "팬시/문구/취미 (IP핵심)",
@@ -1306,11 +1468,13 @@
       "url": "https://gift.kakao.com/product/10662968",
       "product_id": 10662968,
       "scraped_at": "2026-09-04 11:06:34",
-      "is_new_entry": false,
-      "rank_delta": 0,
-      "price_numeric": 29900,
+      "price_num": 29900,
       "price_tier": "2만원대",
-      "usp": "일반구성"
+      "has_packaging": false,
+      "has_engraving": false,
+      "is_exclusive": false,
+      "is_new_entry": false,
+      "rank_delta": 7.0
     },
     {
       "category": "팬시/문구/취미 (IP핵심)",
@@ -1322,11 +1486,13 @@
       "url": "https://gift.kakao.com/product/13997783",
       "product_id": 13997783,
       "scraped_at": "2026-09-04 11:06:34",
-      "is_new_entry": false,
-      "rank_delta": 0,
-      "price_numeric": 18900,
+      "price_num": 18900,
       "price_tier": "1만원대",
-      "usp": "선물포장, 단독구성"
+      "has_packaging": false,
+      "has_engraving": false,
+      "is_exclusive": true,
+      "is_new_entry": false,
+      "rank_delta": 8.0
     },
     {
       "category": "팬시/문구/취미 (IP핵심)",
@@ -1338,11 +1504,13 @@
       "url": "https://gift.kakao.com/product/13673431",
       "product_id": 13673431,
       "scraped_at": "2026-09-04 11:06:34",
-      "is_new_entry": false,
-      "rank_delta": 0,
-      "price_numeric": 12900,
+      "price_num": 12900,
       "price_tier": "1만원대",
-      "usp": "일반구성"
+      "has_packaging": false,
+      "has_engraving": false,
+      "is_exclusive": true,
+      "is_new_entry": false,
+      "rank_delta": 2.0
     },
     {
       "category": "팬시/문구/취미 (IP핵심)",
@@ -1354,11 +1522,13 @@
       "url": "https://gift.kakao.com/product/7795875",
       "product_id": 7795875,
       "scraped_at": "2026-09-04 11:06:34",
-      "is_new_entry": false,
-      "rank_delta": 0,
-      "price_numeric": 9900,
+      "price_num": 9900,
       "price_tier": "1만원 미만",
-      "usp": "일반구성"
+      "has_packaging": false,
+      "has_engraving": false,
+      "is_exclusive": true,
+      "is_new_entry": false,
+      "rank_delta": 10.0
     },
     {
       "category": "팬시/문구/취미 (IP핵심)",
@@ -1370,11 +1540,13 @@
       "url": "https://gift.kakao.com/product/13673393",
       "product_id": 13673393,
       "scraped_at": "2026-09-04 11:06:34",
-      "is_new_entry": false,
-      "rank_delta": 0,
-      "price_numeric": 6900,
+      "price_num": 6900,
       "price_tier": "1만원 미만",
-      "usp": "일반구성"
+      "has_packaging": false,
+      "has_engraving": false,
+      "is_exclusive": false,
+      "is_new_entry": false,
+      "rank_delta": 1.0
     },
     {
       "category": "팬시/문구/취미 (IP핵심)",
@@ -1386,11 +1558,13 @@
       "url": "https://gift.kakao.com/product/5096671",
       "product_id": 5096671,
       "scraped_at": "2026-09-04 11:06:34",
-      "is_new_entry": false,
-      "rank_delta": 0,
-      "price_numeric": 7900,
+      "price_num": 7900,
       "price_tier": "1만원 미만",
-      "usp": "일반구성"
+      "has_packaging": false,
+      "has_engraving": false,
+      "is_exclusive": false,
+      "is_new_entry": false,
+      "rank_delta": -2.0
     },
     {
       "category": "팬시/문구/취미 (IP핵심)",
@@ -1402,11 +1576,13 @@
       "url": "https://gift.kakao.com/product/14049180",
       "product_id": 14049180,
       "scraped_at": "2026-09-04 11:06:34",
-      "is_new_entry": false,
-      "rank_delta": 0,
-      "price_numeric": 8500,
+      "price_num": 8500,
       "price_tier": "1만원 미만",
-      "usp": "일반구성"
+      "has_packaging": false,
+      "has_engraving": false,
+      "is_exclusive": false,
+      "is_new_entry": true,
+      "rank_delta": ""
     },
     {
       "category": "팬시/문구/취미 (IP핵심)",
@@ -1418,11 +1594,13 @@
       "url": "https://gift.kakao.com/product/11985626",
       "product_id": 11985626,
       "scraped_at": "2026-09-04 11:06:34",
-      "is_new_entry": false,
-      "rank_delta": 0,
-      "price_numeric": 8800,
+      "price_num": 8800,
       "price_tier": "1만원 미만",
-      "usp": "일반구성"
+      "has_packaging": false,
+      "has_engraving": false,
+      "is_exclusive": false,
+      "is_new_entry": false,
+      "rank_delta": 11.0
     },
     {
       "category": "팬시/문구/취미 (IP핵심)",
@@ -1434,11 +1612,13 @@
       "url": "https://gift.kakao.com/product/12684434",
       "product_id": 12684434,
       "scraped_at": "2026-09-04 11:06:35",
-      "is_new_entry": false,
-      "rank_delta": 0,
-      "price_numeric": 11800,
+      "price_num": 11800,
       "price_tier": "1만원대",
-      "usp": "일반구성"
+      "has_packaging": false,
+      "has_engraving": false,
+      "is_exclusive": false,
+      "is_new_entry": true,
+      "rank_delta": ""
     },
     {
       "category": "팬시/문구/취미 (IP핵심)",
@@ -1450,11 +1630,13 @@
       "url": "https://gift.kakao.com/product/13330560",
       "product_id": 13330560,
       "scraped_at": "2026-09-04 11:06:35",
-      "is_new_entry": false,
-      "rank_delta": 0,
-      "price_numeric": 16900,
+      "price_num": 16900,
       "price_tier": "1만원대",
-      "usp": "일반구성"
+      "has_packaging": false,
+      "has_engraving": false,
+      "is_exclusive": false,
+      "is_new_entry": true,
+      "rank_delta": ""
     },
     {
       "category": "팬시/문구/취미 (IP핵심)",
@@ -1466,11 +1648,13 @@
       "url": "https://gift.kakao.com/product/11691666",
       "product_id": 11691666,
       "scraped_at": "2026-09-04 11:06:35",
-      "is_new_entry": false,
-      "rank_delta": 0,
-      "price_numeric": 15900,
+      "price_num": 15900,
       "price_tier": "1만원대",
-      "usp": "일반구성"
+      "has_packaging": false,
+      "has_engraving": false,
+      "is_exclusive": false,
+      "is_new_entry": true,
+      "rank_delta": ""
     },
     {
       "category": "팬시/문구/취미 (IP핵심)",
@@ -1482,11 +1666,13 @@
       "url": "https://gift.kakao.com/product/14051995",
       "product_id": 14051995,
       "scraped_at": "2026-09-04 11:06:35",
-      "is_new_entry": false,
-      "rank_delta": 0,
-      "price_numeric": 8900,
+      "price_num": 8900,
       "price_tier": "1만원 미만",
-      "usp": "일반구성"
+      "has_packaging": false,
+      "has_engraving": false,
+      "is_exclusive": false,
+      "is_new_entry": false,
+      "rank_delta": 0.0
     },
     {
       "category": "팬시/문구/취미 (IP핵심)",
@@ -1498,11 +1684,13 @@
       "url": "https://gift.kakao.com/product/13900412",
       "product_id": 13900412,
       "scraped_at": "2026-09-04 11:06:35",
-      "is_new_entry": false,
-      "rank_delta": 0,
-      "price_numeric": 13800,
+      "price_num": 13800,
       "price_tier": "1만원대",
-      "usp": "일반구성"
+      "has_packaging": false,
+      "has_engraving": false,
+      "is_exclusive": false,
+      "is_new_entry": true,
+      "rank_delta": ""
     },
     {
       "category": "팬시/문구/취미 (IP핵심)",
@@ -1514,11 +1702,13 @@
       "url": "https://gift.kakao.com/product/6795932",
       "product_id": 6795932,
       "scraped_at": "2026-09-04 11:06:35",
-      "is_new_entry": false,
-      "rank_delta": 0,
-      "price_numeric": 13900,
+      "price_num": 13900,
       "price_tier": "1만원대",
-      "usp": "일반구성"
+      "has_packaging": false,
+      "has_engraving": false,
+      "is_exclusive": false,
+      "is_new_entry": true,
+      "rank_delta": ""
     },
     {
       "category": "팬시/문구/취미 (IP핵심)",
@@ -1530,11 +1720,13 @@
       "url": "https://gift.kakao.com/product/10940152",
       "product_id": 10940152,
       "scraped_at": "2026-09-04 11:06:35",
-      "is_new_entry": false,
-      "rank_delta": 0,
-      "price_numeric": 8900,
+      "price_num": 8900,
       "price_tier": "1만원 미만",
-      "usp": "일반구성"
+      "has_packaging": false,
+      "has_engraving": false,
+      "is_exclusive": false,
+      "is_new_entry": false,
+      "rank_delta": -15.0
     },
     {
       "category": "팬시/문구/취미 (IP핵심)",
@@ -1546,11 +1738,13 @@
       "url": "https://gift.kakao.com/product/12668199",
       "product_id": 12668199,
       "scraped_at": "2026-09-04 11:06:35",
-      "is_new_entry": false,
-      "rank_delta": 0,
-      "price_numeric": 5900,
+      "price_num": 5900,
       "price_tier": "1만원 미만",
-      "usp": "일반구성"
+      "has_packaging": false,
+      "has_engraving": false,
+      "is_exclusive": false,
+      "is_new_entry": true,
+      "rank_delta": ""
     },
     {
       "category": "팬시/문구/취미 (IP핵심)",
@@ -1562,11 +1756,13 @@
       "url": "https://gift.kakao.com/product/11147924",
       "product_id": 11147924,
       "scraped_at": "2026-09-04 11:06:35",
-      "is_new_entry": false,
-      "rank_delta": 0,
-      "price_numeric": 8900,
+      "price_num": 8900,
       "price_tier": "1만원 미만",
-      "usp": "일반구성"
+      "has_packaging": false,
+      "has_engraving": false,
+      "is_exclusive": false,
+      "is_new_entry": true,
+      "rank_delta": ""
     },
     {
       "category": "팬시/문구/취미 (IP핵심)",
@@ -1578,11 +1774,13 @@
       "url": "https://gift.kakao.com/product/9578798",
       "product_id": 9578798,
       "scraped_at": "2026-09-04 11:06:35",
-      "is_new_entry": false,
-      "rank_delta": 0,
-      "price_numeric": 4900,
+      "price_num": 4900,
       "price_tier": "1만원 미만",
-      "usp": "일반구성"
+      "has_packaging": false,
+      "has_engraving": false,
+      "is_exclusive": false,
+      "is_new_entry": true,
+      "rank_delta": ""
     },
     {
       "category": "팬시/문구/취미 (IP핵심)",
@@ -1594,11 +1792,13 @@
       "url": "https://gift.kakao.com/product/6082987",
       "product_id": 6082987,
       "scraped_at": "2026-09-04 11:06:35",
-      "is_new_entry": false,
-      "rank_delta": 0,
-      "price_numeric": 9800,
+      "price_num": 9800,
       "price_tier": "1만원 미만",
-      "usp": "일반구성"
+      "has_packaging": false,
+      "has_engraving": false,
+      "is_exclusive": false,
+      "is_new_entry": true,
+      "rank_delta": ""
     },
     {
       "category": "침구/패브릭",
@@ -1610,11 +1810,13 @@
       "url": "https://gift.kakao.com/product/7355950",
       "product_id": 7355950,
       "scraped_at": "2026-09-04 11:06:40",
-      "is_new_entry": false,
-      "rank_delta": 0,
-      "price_numeric": 22900,
+      "price_num": 22900,
       "price_tier": "2만원대",
-      "usp": "일반구성"
+      "has_packaging": false,
+      "has_engraving": false,
+      "is_exclusive": false,
+      "is_new_entry": false,
+      "rank_delta": 1.0
     },
     {
       "category": "침구/패브릭",
@@ -1626,11 +1828,13 @@
       "url": "https://gift.kakao.com/product/11743570",
       "product_id": 11743570,
       "scraped_at": "2026-09-04 11:06:40",
-      "is_new_entry": false,
-      "rank_delta": 0,
-      "price_numeric": 34800,
+      "price_num": 34800,
       "price_tier": "3만원대",
-      "usp": "단독구성"
+      "has_packaging": false,
+      "has_engraving": false,
+      "is_exclusive": true,
+      "is_new_entry": false,
+      "rank_delta": -1.0
     },
     {
       "category": "침구/패브릭",
@@ -1642,11 +1846,13 @@
       "url": "https://gift.kakao.com/product/14096524",
       "product_id": 14096524,
       "scraped_at": "2026-09-04 11:06:40",
-      "is_new_entry": false,
-      "rank_delta": 0,
-      "price_numeric": 17800,
+      "price_num": 17800,
       "price_tier": "1만원대",
-      "usp": "일반구성"
+      "has_packaging": false,
+      "has_engraving": false,
+      "is_exclusive": false,
+      "is_new_entry": false,
+      "rank_delta": 1.0
     },
     {
       "category": "침구/패브릭",
@@ -1658,11 +1864,13 @@
       "url": "https://gift.kakao.com/product/13255931",
       "product_id": 13255931,
       "scraped_at": "2026-09-04 11:06:40",
-      "is_new_entry": false,
-      "rank_delta": 0,
-      "price_numeric": 37900,
+      "price_num": 37900,
       "price_tier": "3만원대",
-      "usp": "단독구성"
+      "has_packaging": false,
+      "has_engraving": false,
+      "is_exclusive": true,
+      "is_new_entry": false,
+      "rank_delta": 5.0
     },
     {
       "category": "침구/패브릭",
@@ -1674,11 +1882,13 @@
       "url": "https://gift.kakao.com/product/6986025",
       "product_id": 6986025,
       "scraped_at": "2026-09-04 11:06:40",
-      "is_new_entry": false,
-      "rank_delta": 0,
-      "price_numeric": 29900,
+      "price_num": 29900,
       "price_tier": "2만원대",
-      "usp": "일반구성"
+      "has_packaging": false,
+      "has_engraving": false,
+      "is_exclusive": false,
+      "is_new_entry": false,
+      "rank_delta": -2.0
     },
     {
       "category": "침구/패브릭",
@@ -1690,11 +1900,13 @@
       "url": "https://gift.kakao.com/product/5328353",
       "product_id": 5328353,
       "scraped_at": "2026-09-04 11:06:41",
-      "is_new_entry": false,
-      "rank_delta": 0,
-      "price_numeric": 29800,
+      "price_num": 29800,
       "price_tier": "2만원대",
-      "usp": "단독구성"
+      "has_packaging": false,
+      "has_engraving": false,
+      "is_exclusive": true,
+      "is_new_entry": false,
+      "rank_delta": -1.0
     },
     {
       "category": "침구/패브릭",
@@ -1706,11 +1918,13 @@
       "url": "https://gift.kakao.com/product/8091057",
       "product_id": 8091057,
       "scraped_at": "2026-09-04 11:06:41",
-      "is_new_entry": false,
-      "rank_delta": 0,
-      "price_numeric": 13800,
+      "price_num": 13800,
       "price_tier": "1만원대",
-      "usp": "일반구성"
+      "has_packaging": false,
+      "has_engraving": false,
+      "is_exclusive": false,
+      "is_new_entry": false,
+      "rank_delta": 1.0
     },
     {
       "category": "침구/패브릭",
@@ -1722,11 +1936,13 @@
       "url": "https://gift.kakao.com/product/5328905",
       "product_id": 5328905,
       "scraped_at": "2026-09-04 11:06:41",
-      "is_new_entry": false,
-      "rank_delta": 0,
-      "price_numeric": 29900,
+      "price_num": 29900,
       "price_tier": "2만원대",
-      "usp": "단독구성"
+      "has_packaging": false,
+      "has_engraving": false,
+      "is_exclusive": true,
+      "is_new_entry": false,
+      "rank_delta": -2.0
     },
     {
       "category": "침구/패브릭",
@@ -1738,11 +1954,13 @@
       "url": "https://gift.kakao.com/product/12281507",
       "product_id": 12281507,
       "scraped_at": "2026-09-04 11:06:41",
-      "is_new_entry": false,
-      "rank_delta": 0,
-      "price_numeric": 18800,
+      "price_num": 18800,
       "price_tier": "1만원대",
-      "usp": "일반구성"
+      "has_packaging": false,
+      "has_engraving": false,
+      "is_exclusive": false,
+      "is_new_entry": false,
+      "rank_delta": 1.0
     },
     {
       "category": "침구/패브릭",
@@ -1754,11 +1972,13 @@
       "url": "https://gift.kakao.com/product/2176008",
       "product_id": 2176008,
       "scraped_at": "2026-09-04 11:06:41",
-      "is_new_entry": false,
-      "rank_delta": 0,
-      "price_numeric": 27900,
+      "price_num": 27900,
       "price_tier": "2만원대",
-      "usp": "선물포장, 단독구성"
+      "has_packaging": false,
+      "has_engraving": false,
+      "is_exclusive": true,
+      "is_new_entry": false,
+      "rank_delta": 18.0
     },
     {
       "category": "침구/패브릭",
@@ -1770,11 +1990,13 @@
       "url": "https://gift.kakao.com/product/12617143",
       "product_id": 12617143,
       "scraped_at": "2026-09-04 11:06:41",
-      "is_new_entry": false,
-      "rank_delta": 0,
-      "price_numeric": 17900,
+      "price_num": 17900,
       "price_tier": "1만원대",
-      "usp": "일반구성"
+      "has_packaging": false,
+      "has_engraving": false,
+      "is_exclusive": false,
+      "is_new_entry": false,
+      "rank_delta": -4.0
     },
     {
       "category": "침구/패브릭",
@@ -1786,11 +2008,13 @@
       "url": "https://gift.kakao.com/product/13216407",
       "product_id": 13216407,
       "scraped_at": "2026-09-04 11:06:41",
-      "is_new_entry": false,
-      "rank_delta": 0,
-      "price_numeric": 15900,
+      "price_num": 15900,
       "price_tier": "1만원대",
-      "usp": "단독구성"
+      "has_packaging": false,
+      "has_engraving": false,
+      "is_exclusive": true,
+      "is_new_entry": false,
+      "rank_delta": 2.0
     },
     {
       "category": "침구/패브릭",
@@ -1802,11 +2026,13 @@
       "url": "https://gift.kakao.com/product/10998140",
       "product_id": 10998140,
       "scraped_at": "2026-09-04 11:06:41",
-      "is_new_entry": false,
-      "rank_delta": 0,
-      "price_numeric": 15900,
+      "price_num": 15900,
       "price_tier": "1만원대",
-      "usp": "일반구성"
+      "has_packaging": false,
+      "has_engraving": false,
+      "is_exclusive": false,
+      "is_new_entry": false,
+      "rank_delta": -1.0
     },
     {
       "category": "침구/패브릭",
@@ -1818,11 +2044,13 @@
       "url": "https://gift.kakao.com/product/7898062",
       "product_id": 7898062,
       "scraped_at": "2026-09-04 11:06:41",
-      "is_new_entry": false,
-      "rank_delta": 0,
-      "price_numeric": 19900,
+      "price_num": 19900,
       "price_tier": "1만원대",
-      "usp": "일반구성"
+      "has_packaging": false,
+      "has_engraving": false,
+      "is_exclusive": false,
+      "is_new_entry": false,
+      "rank_delta": 1.0
     },
     {
       "category": "침구/패브릭",
@@ -1834,11 +2062,13 @@
       "url": "https://gift.kakao.com/product/945159",
       "product_id": 945159,
       "scraped_at": "2026-09-04 11:06:41",
-      "is_new_entry": false,
-      "rank_delta": 0,
-      "price_numeric": 25000,
+      "price_num": 25000,
       "price_tier": "2만원대",
-      "usp": "일반구성"
+      "has_packaging": false,
+      "has_engraving": false,
+      "is_exclusive": false,
+      "is_new_entry": false,
+      "rank_delta": 1.0
     },
     {
       "category": "침구/패브릭",
@@ -1850,11 +2080,13 @@
       "url": "https://gift.kakao.com/product/13808817",
       "product_id": 13808817,
       "scraped_at": "2026-09-04 11:06:41",
-      "is_new_entry": false,
-      "rank_delta": 0,
-      "price_numeric": 29000,
+      "price_num": 29000,
       "price_tier": "2만원대",
-      "usp": "일반구성"
+      "has_packaging": false,
+      "has_engraving": false,
+      "is_exclusive": false,
+      "is_new_entry": false,
+      "rank_delta": -5.0
     },
     {
       "category": "침구/패브릭",
@@ -1866,11 +2098,13 @@
       "url": "https://gift.kakao.com/product/7280480",
       "product_id": 7280480,
       "scraped_at": "2026-09-04 11:06:41",
-      "is_new_entry": false,
-      "rank_delta": 0,
-      "price_numeric": 9900,
+      "price_num": 9900,
       "price_tier": "1만원 미만",
-      "usp": "일반구성"
+      "has_packaging": false,
+      "has_engraving": false,
+      "is_exclusive": false,
+      "is_new_entry": false,
+      "rank_delta": 5.0
     },
     {
       "category": "침구/패브릭",
@@ -1882,11 +2116,13 @@
       "url": "https://gift.kakao.com/product/7025298",
       "product_id": 7025298,
       "scraped_at": "2026-09-04 11:06:41",
-      "is_new_entry": false,
-      "rank_delta": 0,
-      "price_numeric": 29900,
+      "price_num": 29900,
       "price_tier": "2만원대",
-      "usp": "단독구성"
+      "has_packaging": false,
+      "has_engraving": false,
+      "is_exclusive": true,
+      "is_new_entry": false,
+      "rank_delta": 0.0
     },
     {
       "category": "침구/패브릭",
@@ -1898,11 +2134,13 @@
       "url": "https://gift.kakao.com/product/12693742",
       "product_id": 12693742,
       "scraped_at": "2026-09-04 11:06:41",
-      "is_new_entry": false,
-      "rank_delta": 0,
-      "price_numeric": 23000,
+      "price_num": 23000,
       "price_tier": "2만원대",
-      "usp": "일반구성"
+      "has_packaging": false,
+      "has_engraving": false,
+      "is_exclusive": false,
+      "is_new_entry": false,
+      "rank_delta": -6.0
     },
     {
       "category": "침구/패브릭",
@@ -1914,11 +2152,13 @@
       "url": "https://gift.kakao.com/product/7896387",
       "product_id": 7896387,
       "scraped_at": "2026-09-04 11:06:41",
-      "is_new_entry": false,
-      "rank_delta": 0,
-      "price_numeric": 16900,
+      "price_num": 16900,
       "price_tier": "1만원대",
-      "usp": "일반구성"
+      "has_packaging": false,
+      "has_engraving": false,
+      "is_exclusive": false,
+      "is_new_entry": false,
+      "rank_delta": -3.0
     },
     {
       "category": "침구/패브릭",
@@ -1930,11 +2170,13 @@
       "url": "https://gift.kakao.com/product/11942947",
       "product_id": 11942947,
       "scraped_at": "2026-09-04 11:06:41",
-      "is_new_entry": false,
-      "rank_delta": 0,
-      "price_numeric": 19900,
+      "price_num": 19900,
       "price_tier": "1만원대",
-      "usp": "일반구성"
+      "has_packaging": false,
+      "has_engraving": false,
+      "is_exclusive": false,
+      "is_new_entry": false,
+      "rank_delta": 0.0
     },
     {
       "category": "침구/패브릭",
@@ -1946,11 +2188,13 @@
       "url": "https://gift.kakao.com/product/1308578",
       "product_id": 1308578,
       "scraped_at": "2026-09-04 11:06:41",
-      "is_new_entry": false,
-      "rank_delta": 0,
-      "price_numeric": 41900,
+      "price_num": 41900,
       "price_tier": "4만원대",
-      "usp": "단독구성"
+      "has_packaging": false,
+      "has_engraving": false,
+      "is_exclusive": true,
+      "is_new_entry": false,
+      "rank_delta": 9.0
     },
     {
       "category": "침구/패브릭",
@@ -1962,11 +2206,13 @@
       "url": "https://gift.kakao.com/product/11539740",
       "product_id": 11539740,
       "scraped_at": "2026-09-04 11:06:41",
-      "is_new_entry": false,
-      "rank_delta": 0,
-      "price_numeric": 21800,
+      "price_num": 21800,
       "price_tier": "2만원대",
-      "usp": "일반구성"
+      "has_packaging": false,
+      "has_engraving": false,
+      "is_exclusive": false,
+      "is_new_entry": false,
+      "rank_delta": 3.0
     },
     {
       "category": "침구/패브릭",
@@ -1978,11 +2224,13 @@
       "url": "https://gift.kakao.com/product/12818996",
       "product_id": 12818996,
       "scraped_at": "2026-09-04 11:06:41",
-      "is_new_entry": false,
-      "rank_delta": 0,
-      "price_numeric": 19800,
+      "price_num": 19800,
       "price_tier": "1만원대",
-      "usp": "일반구성"
+      "has_packaging": false,
+      "has_engraving": false,
+      "is_exclusive": false,
+      "is_new_entry": false,
+      "rank_delta": -1.0
     },
     {
       "category": "침구/패브릭",
@@ -1994,11 +2242,13 @@
       "url": "https://gift.kakao.com/product/7262354",
       "product_id": 7262354,
       "scraped_at": "2026-09-04 11:06:41",
-      "is_new_entry": false,
-      "rank_delta": 0,
-      "price_numeric": 13900,
+      "price_num": 13900,
       "price_tier": "1만원대",
-      "usp": "일반구성"
+      "has_packaging": false,
+      "has_engraving": false,
+      "is_exclusive": false,
+      "is_new_entry": false,
+      "rank_delta": -1.0
     },
     {
       "category": "침구/패브릭",
@@ -2010,11 +2260,13 @@
       "url": "https://gift.kakao.com/product/12039412",
       "product_id": 12039412,
       "scraped_at": "2026-09-04 11:06:42",
-      "is_new_entry": false,
-      "rank_delta": 0,
-      "price_numeric": 23800,
+      "price_num": 23800,
       "price_tier": "2만원대",
-      "usp": "일반구성"
+      "has_packaging": false,
+      "has_engraving": false,
+      "is_exclusive": false,
+      "is_new_entry": false,
+      "rank_delta": -7.0
     },
     {
       "category": "침구/패브릭",
@@ -2026,11 +2278,13 @@
       "url": "https://gift.kakao.com/product/13901557",
       "product_id": 13901557,
       "scraped_at": "2026-09-04 11:06:42",
-      "is_new_entry": false,
-      "rank_delta": 0,
-      "price_numeric": 22800,
+      "price_num": 22800,
       "price_tier": "2만원대",
-      "usp": "일반구성"
+      "has_packaging": false,
+      "has_engraving": false,
+      "is_exclusive": true,
+      "is_new_entry": false,
+      "rank_delta": 19.0
     },
     {
       "category": "침구/패브릭",
@@ -2042,11 +2296,13 @@
       "url": "https://gift.kakao.com/product/7322097",
       "product_id": 7322097,
       "scraped_at": "2026-09-04 11:06:42",
-      "is_new_entry": false,
-      "rank_delta": 0,
-      "price_numeric": 39900,
+      "price_num": 39900,
       "price_tier": "3만원대",
-      "usp": "단독구성"
+      "has_packaging": false,
+      "has_engraving": false,
+      "is_exclusive": true,
+      "is_new_entry": false,
+      "rank_delta": -3.0
     },
     {
       "category": "침구/패브릭",
@@ -2058,11 +2314,13 @@
       "url": "https://gift.kakao.com/product/10609163",
       "product_id": 10609163,
       "scraped_at": "2026-09-04 11:06:42",
-      "is_new_entry": false,
-      "rank_delta": 0,
-      "price_numeric": 15900,
+      "price_num": 15900,
       "price_tier": "1만원대",
-      "usp": "단독구성"
+      "has_packaging": false,
+      "has_engraving": false,
+      "is_exclusive": true,
+      "is_new_entry": false,
+      "rank_delta": 9.0
     },
     {
       "category": "침구/패브릭",
@@ -2074,11 +2332,13 @@
       "url": "https://gift.kakao.com/product/13983873",
       "product_id": 13983873,
       "scraped_at": "2026-09-04 11:06:42",
-      "is_new_entry": false,
-      "rank_delta": 0,
-      "price_numeric": 36900,
+      "price_num": 36900,
       "price_tier": "3만원대",
-      "usp": "일반구성"
+      "has_packaging": false,
+      "has_engraving": false,
+      "is_exclusive": false,
+      "is_new_entry": false,
+      "rank_delta": -1.0
     },
     {
       "category": "침구/패브릭",
@@ -2090,11 +2350,13 @@
       "url": "https://gift.kakao.com/product/11386190",
       "product_id": 11386190,
       "scraped_at": "2026-09-04 11:06:42",
-      "is_new_entry": false,
-      "rank_delta": 0,
-      "price_numeric": 32000,
+      "price_num": 32000,
       "price_tier": "3만원대",
-      "usp": "단독구성"
+      "has_packaging": false,
+      "has_engraving": false,
+      "is_exclusive": true,
+      "is_new_entry": false,
+      "rank_delta": 19.0
     },
     {
       "category": "침구/패브릭",
@@ -2106,11 +2368,13 @@
       "url": "https://gift.kakao.com/product/11781718",
       "product_id": 11781718,
       "scraped_at": "2026-09-04 11:06:42",
-      "is_new_entry": false,
-      "rank_delta": 0,
-      "price_numeric": 9800,
+      "price_num": 9800,
       "price_tier": "1만원 미만",
-      "usp": "일반구성"
+      "has_packaging": false,
+      "has_engraving": false,
+      "is_exclusive": false,
+      "is_new_entry": false,
+      "rank_delta": 2.0
     },
     {
       "category": "침구/패브릭",
@@ -2122,11 +2386,13 @@
       "url": "https://gift.kakao.com/product/11972964",
       "product_id": 11972964,
       "scraped_at": "2026-09-04 11:06:42",
-      "is_new_entry": false,
-      "rank_delta": 0,
-      "price_numeric": 30000,
+      "price_num": 30000,
       "price_tier": "3만원대",
-      "usp": "일반구성"
+      "has_packaging": false,
+      "has_engraving": false,
+      "is_exclusive": false,
+      "is_new_entry": false,
+      "rank_delta": 3.0
     },
     {
       "category": "침구/패브릭",
@@ -2138,11 +2404,13 @@
       "url": "https://gift.kakao.com/product/11704744",
       "product_id": 11704744,
       "scraped_at": "2026-09-04 11:06:42",
-      "is_new_entry": false,
-      "rank_delta": 0,
-      "price_numeric": 13900,
+      "price_num": 13900,
       "price_tier": "1만원대",
-      "usp": "일반구성"
+      "has_packaging": false,
+      "has_engraving": false,
+      "is_exclusive": false,
+      "is_new_entry": true,
+      "rank_delta": ""
     },
     {
       "category": "침구/패브릭",
@@ -2154,11 +2422,13 @@
       "url": "https://gift.kakao.com/product/3833938",
       "product_id": 3833938,
       "scraped_at": "2026-09-04 11:06:42",
-      "is_new_entry": false,
-      "rank_delta": 0,
-      "price_numeric": 13900,
+      "price_num": 13900,
       "price_tier": "1만원대",
-      "usp": "단독구성"
+      "has_packaging": false,
+      "has_engraving": false,
+      "is_exclusive": true,
+      "is_new_entry": false,
+      "rank_delta": -8.0
     },
     {
       "category": "침구/패브릭",
@@ -2170,11 +2440,13 @@
       "url": "https://gift.kakao.com/product/2205514",
       "product_id": 2205514,
       "scraped_at": "2026-09-04 11:06:42",
-      "is_new_entry": false,
-      "rank_delta": 0,
-      "price_numeric": 29900,
+      "price_num": 29900,
       "price_tier": "2만원대",
-      "usp": "일반구성"
+      "has_packaging": false,
+      "has_engraving": false,
+      "is_exclusive": false,
+      "is_new_entry": false,
+      "rank_delta": 6.0
     },
     {
       "category": "침구/패브릭",
@@ -2186,11 +2458,13 @@
       "url": "https://gift.kakao.com/product/8510786",
       "product_id": 8510786,
       "scraped_at": "2026-09-04 11:06:42",
-      "is_new_entry": false,
-      "rank_delta": 0,
-      "price_numeric": 23900,
+      "price_num": 23900,
       "price_tier": "2만원대",
-      "usp": "일반구성"
+      "has_packaging": false,
+      "has_engraving": false,
+      "is_exclusive": false,
+      "is_new_entry": false,
+      "rank_delta": -5.0
     },
     {
       "category": "침구/패브릭",
@@ -2202,11 +2476,13 @@
       "url": "https://gift.kakao.com/product/12155267",
       "product_id": 12155267,
       "scraped_at": "2026-09-04 11:06:42",
-      "is_new_entry": false,
-      "rank_delta": 0,
-      "price_numeric": 24800,
+      "price_num": 24800,
       "price_tier": "2만원대",
-      "usp": "일반구성"
+      "has_packaging": false,
+      "has_engraving": false,
+      "is_exclusive": false,
+      "is_new_entry": false,
+      "rank_delta": 7.0
     },
     {
       "category": "침구/패브릭",
@@ -2218,11 +2494,13 @@
       "url": "https://gift.kakao.com/product/2488205",
       "product_id": 2488205,
       "scraped_at": "2026-09-04 11:06:42",
-      "is_new_entry": false,
-      "rank_delta": 0,
-      "price_numeric": 15900,
+      "price_num": 15900,
       "price_tier": "1만원대",
-      "usp": "일반구성"
+      "has_packaging": false,
+      "has_engraving": false,
+      "is_exclusive": false,
+      "is_new_entry": false,
+      "rank_delta": 2.0
     },
     {
       "category": "침구/패브릭",
@@ -2234,11 +2512,13 @@
       "url": "https://gift.kakao.com/product/11546351",
       "product_id": 11546351,
       "scraped_at": "2026-09-04 11:06:42",
-      "is_new_entry": false,
-      "rank_delta": 0,
-      "price_numeric": 9900,
+      "price_num": 9900,
       "price_tier": "1만원 미만",
-      "usp": "일반구성"
+      "has_packaging": false,
+      "has_engraving": false,
+      "is_exclusive": false,
+      "is_new_entry": true,
+      "rank_delta": ""
     },
     {
       "category": "침구/패브릭",
@@ -2250,11 +2530,13 @@
       "url": "https://gift.kakao.com/product/1242861",
       "product_id": 1242861,
       "scraped_at": "2026-09-04 11:06:42",
-      "is_new_entry": false,
-      "rank_delta": 0,
-      "price_numeric": 29900,
+      "price_num": 29900,
       "price_tier": "2만원대",
-      "usp": "단독구성"
+      "has_packaging": false,
+      "has_engraving": false,
+      "is_exclusive": true,
+      "is_new_entry": false,
+      "rank_delta": -21.0
     },
     {
       "category": "침구/패브릭",
@@ -2266,11 +2548,13 @@
       "url": "https://gift.kakao.com/product/2498499",
       "product_id": 2498499,
       "scraped_at": "2026-09-04 11:06:42",
-      "is_new_entry": false,
-      "rank_delta": 0,
-      "price_numeric": 29900,
+      "price_num": 29900,
       "price_tier": "2만원대",
-      "usp": "단독구성"
+      "has_packaging": false,
+      "has_engraving": false,
+      "is_exclusive": true,
+      "is_new_entry": true,
+      "rank_delta": ""
     },
     {
       "category": "침구/패브릭",
@@ -2282,11 +2566,13 @@
       "url": "https://gift.kakao.com/product/10782325",
       "product_id": 10782325,
       "scraped_at": "2026-09-04 11:06:42",
-      "is_new_entry": false,
-      "rank_delta": 0,
-      "price_numeric": 31000,
+      "price_num": 31000,
       "price_tier": "3만원대",
-      "usp": "일반구성"
+      "has_packaging": false,
+      "has_engraving": false,
+      "is_exclusive": false,
+      "is_new_entry": false,
+      "rank_delta": -6.0
     },
     {
       "category": "침구/패브릭",
@@ -2298,11 +2584,13 @@
       "url": "https://gift.kakao.com/product/13417129",
       "product_id": 13417129,
       "scraped_at": "2026-09-04 11:06:42",
-      "is_new_entry": false,
-      "rank_delta": 0,
-      "price_numeric": 39990,
+      "price_num": 39990,
       "price_tier": "3만원대",
-      "usp": "단독구성"
+      "has_packaging": false,
+      "has_engraving": false,
+      "is_exclusive": true,
+      "is_new_entry": true,
+      "rank_delta": ""
     },
     {
       "category": "침구/패브릭",
@@ -2314,11 +2602,13 @@
       "url": "https://gift.kakao.com/product/11972978",
       "product_id": 11972978,
       "scraped_at": "2026-09-04 11:06:42",
-      "is_new_entry": false,
-      "rank_delta": 0,
-      "price_numeric": 20000,
+      "price_num": 20000,
       "price_tier": "2만원대",
-      "usp": "일반구성"
+      "has_packaging": false,
+      "has_engraving": false,
+      "is_exclusive": false,
+      "is_new_entry": true,
+      "rank_delta": ""
     },
     {
       "category": "침구/패브릭",
@@ -2330,11 +2620,13 @@
       "url": "https://gift.kakao.com/product/7281085",
       "product_id": 7281085,
       "scraped_at": "2026-09-04 11:06:42",
-      "is_new_entry": false,
-      "rank_delta": 0,
-      "price_numeric": 9590,
+      "price_num": 9590,
       "price_tier": "1만원 미만",
-      "usp": "일반구성"
+      "has_packaging": false,
+      "has_engraving": false,
+      "is_exclusive": false,
+      "is_new_entry": true,
+      "rank_delta": ""
     },
     {
       "category": "침구/패브릭",
@@ -2346,11 +2638,13 @@
       "url": "https://gift.kakao.com/product/777200",
       "product_id": 777200,
       "scraped_at": "2026-09-04 11:06:42",
-      "is_new_entry": false,
-      "rank_delta": 0,
-      "price_numeric": 22900,
+      "price_num": 22900,
       "price_tier": "2만원대",
-      "usp": "단독구성"
+      "has_packaging": false,
+      "has_engraving": false,
+      "is_exclusive": true,
+      "is_new_entry": true,
+      "rank_delta": ""
     },
     {
       "category": "침구/패브릭",
@@ -2362,11 +2656,13 @@
       "url": "https://gift.kakao.com/product/10819633",
       "product_id": 10819633,
       "scraped_at": "2026-09-04 11:06:42",
-      "is_new_entry": false,
-      "rank_delta": 0,
-      "price_numeric": 14900,
+      "price_num": 14900,
       "price_tier": "1만원대",
-      "usp": "일반구성"
+      "has_packaging": false,
+      "has_engraving": false,
+      "is_exclusive": false,
+      "is_new_entry": false,
+      "rank_delta": 1.0
     },
     {
       "category": "침구/패브릭",
@@ -2378,11 +2674,13 @@
       "url": "https://gift.kakao.com/product/13983893",
       "product_id": 13983893,
       "scraped_at": "2026-09-04 11:06:42",
-      "is_new_entry": false,
-      "rank_delta": 0,
-      "price_numeric": 16900,
+      "price_num": 16900,
       "price_tier": "1만원대",
-      "usp": "일반구성"
+      "has_packaging": false,
+      "has_engraving": false,
+      "is_exclusive": false,
+      "is_new_entry": false,
+      "rank_delta": -14.0
     },
     {
       "category": "침구/패브릭",
@@ -2394,11 +2692,13 @@
       "url": "https://gift.kakao.com/product/9583032",
       "product_id": 9583032,
       "scraped_at": "2026-09-04 11:06:42",
-      "is_new_entry": false,
-      "rank_delta": 0,
-      "price_numeric": 21800,
+      "price_num": 21800,
       "price_tier": "2만원대",
-      "usp": "단독구성"
+      "has_packaging": false,
+      "has_engraving": false,
+      "is_exclusive": true,
+      "is_new_entry": true,
+      "rank_delta": ""
     },
     {
       "category": "주방/식기",
@@ -2410,11 +2710,13 @@
       "url": "https://gift.kakao.com/product/11106499",
       "product_id": 11106499,
       "scraped_at": "2026-09-04 11:06:48",
-      "is_new_entry": false,
-      "rank_delta": 0,
-      "price_numeric": 44100,
+      "price_num": 44100,
       "price_tier": "4만원대",
-      "usp": "일반구성"
+      "has_packaging": false,
+      "has_engraving": false,
+      "is_exclusive": false,
+      "is_new_entry": false,
+      "rank_delta": 0.0
     },
     {
       "category": "주방/식기",
@@ -2426,11 +2728,13 @@
       "url": "https://gift.kakao.com/product/11850163",
       "product_id": 11850163,
       "scraped_at": "2026-09-04 11:06:48",
-      "is_new_entry": false,
-      "rank_delta": 0,
-      "price_numeric": 25500,
+      "price_num": 25500,
       "price_tier": "2만원대",
-      "usp": "선물포장, 단독구성"
+      "has_packaging": false,
+      "has_engraving": false,
+      "is_exclusive": true,
+      "is_new_entry": false,
+      "rank_delta": 0.0
     },
     {
       "category": "주방/식기",
@@ -2442,11 +2746,13 @@
       "url": "https://gift.kakao.com/product/13772143",
       "product_id": 13772143,
       "scraped_at": "2026-09-04 11:06:48",
-      "is_new_entry": false,
-      "rank_delta": 0,
-      "price_numeric": 24500,
+      "price_num": 24500,
       "price_tier": "2만원대",
-      "usp": "단독구성"
+      "has_packaging": false,
+      "has_engraving": false,
+      "is_exclusive": true,
+      "is_new_entry": false,
+      "rank_delta": 0.0
     },
     {
       "category": "주방/식기",
@@ -2458,11 +2764,13 @@
       "url": "https://gift.kakao.com/product/11264836",
       "product_id": 11264836,
       "scraped_at": "2026-09-04 11:06:48",
-      "is_new_entry": false,
-      "rank_delta": 0,
-      "price_numeric": 37000,
+      "price_num": 37000,
       "price_tier": "3만원대",
-      "usp": "일반구성"
+      "has_packaging": false,
+      "has_engraving": false,
+      "is_exclusive": false,
+      "is_new_entry": false,
+      "rank_delta": 0.0
     },
     {
       "category": "주방/식기",
@@ -2474,11 +2782,13 @@
       "url": "https://gift.kakao.com/product/12821252",
       "product_id": 12821252,
       "scraped_at": "2026-09-04 11:06:48",
-      "is_new_entry": false,
-      "rank_delta": 0,
-      "price_numeric": 16800,
+      "price_num": 16800,
       "price_tier": "1만원대",
-      "usp": "단독구성"
+      "has_packaging": false,
+      "has_engraving": false,
+      "is_exclusive": true,
+      "is_new_entry": false,
+      "rank_delta": 3.0
     },
     {
       "category": "주방/식기",
@@ -2490,11 +2800,13 @@
       "url": "https://gift.kakao.com/product/11779291",
       "product_id": 11779291,
       "scraped_at": "2026-09-04 11:06:48",
-      "is_new_entry": false,
-      "rank_delta": 0,
-      "price_numeric": 46000,
+      "price_num": 46000,
       "price_tier": "4만원대",
-      "usp": "일반구성"
+      "has_packaging": false,
+      "has_engraving": false,
+      "is_exclusive": false,
+      "is_new_entry": false,
+      "rank_delta": -1.0
     },
     {
       "category": "주방/식기",
@@ -2506,11 +2818,13 @@
       "url": "https://gift.kakao.com/product/7868778",
       "product_id": 7868778,
       "scraped_at": "2026-09-04 11:06:48",
-      "is_new_entry": false,
-      "rank_delta": 0,
-      "price_numeric": 49000,
+      "price_num": 49000,
       "price_tier": "4만원대",
-      "usp": "일반구성"
+      "has_packaging": false,
+      "has_engraving": false,
+      "is_exclusive": false,
+      "is_new_entry": false,
+      "rank_delta": 2.0
     },
     {
       "category": "주방/식기",
@@ -2522,11 +2836,13 @@
       "url": "https://gift.kakao.com/product/11483949",
       "product_id": 11483949,
       "scraped_at": "2026-09-04 11:06:48",
-      "is_new_entry": false,
-      "rank_delta": 0,
-      "price_numeric": 35000,
+      "price_num": 35000,
       "price_tier": "3만원대",
-      "usp": "일반구성"
+      "has_packaging": false,
+      "has_engraving": false,
+      "is_exclusive": false,
+      "is_new_entry": false,
+      "rank_delta": -1.0
     },
     {
       "category": "주방/식기",
@@ -2538,11 +2854,13 @@
       "url": "https://gift.kakao.com/product/6989444",
       "product_id": 6989444,
       "scraped_at": "2026-09-04 11:06:48",
-      "is_new_entry": false,
-      "rank_delta": 0,
-      "price_numeric": 46000,
+      "price_num": 46000,
       "price_tier": "4만원대",
-      "usp": "단독구성"
+      "has_packaging": true,
+      "has_engraving": false,
+      "is_exclusive": true,
+      "is_new_entry": false,
+      "rank_delta": 6.0
     },
     {
       "category": "주방/식기",
@@ -2554,11 +2872,13 @@
       "url": "https://gift.kakao.com/product/7868895",
       "product_id": 7868895,
       "scraped_at": "2026-09-04 11:06:48",
-      "is_new_entry": false,
-      "rank_delta": 0,
-      "price_numeric": 44000,
+      "price_num": 44000,
       "price_tier": "4만원대",
-      "usp": "일반구성"
+      "has_packaging": false,
+      "has_engraving": false,
+      "is_exclusive": false,
+      "is_new_entry": false,
+      "rank_delta": 0.0
     },
     {
       "category": "주방/식기",
@@ -2570,11 +2890,13 @@
       "url": "https://gift.kakao.com/product/11483865",
       "product_id": 11483865,
       "scraped_at": "2026-09-04 11:06:49",
-      "is_new_entry": false,
-      "rank_delta": 0,
-      "price_numeric": 42000,
+      "price_num": 42000,
       "price_tier": "4만원대",
-      "usp": "일반구성"
+      "has_packaging": false,
+      "has_engraving": false,
+      "is_exclusive": false,
+      "is_new_entry": false,
+      "rank_delta": 1.0
     },
     {
       "category": "주방/식기",
@@ -2586,11 +2908,13 @@
       "url": "https://gift.kakao.com/product/13884111",
       "product_id": 13884111,
       "scraped_at": "2026-09-04 11:06:49",
-      "is_new_entry": false,
-      "rank_delta": 0,
-      "price_numeric": 9800,
+      "price_num": 9800,
       "price_tier": "1만원 미만",
-      "usp": "일반구성"
+      "has_packaging": true,
+      "has_engraving": false,
+      "is_exclusive": false,
+      "is_new_entry": false,
+      "rank_delta": 9.0
     },
     {
       "category": "주방/식기",
@@ -2602,11 +2926,13 @@
       "url": "https://gift.kakao.com/product/7734041",
       "product_id": 7734041,
       "scraped_at": "2026-09-04 11:06:49",
-      "is_new_entry": false,
-      "rank_delta": 0,
-      "price_numeric": 34800,
+      "price_num": 34800,
       "price_tier": "3만원대",
-      "usp": "단독구성"
+      "has_packaging": false,
+      "has_engraving": false,
+      "is_exclusive": true,
+      "is_new_entry": false,
+      "rank_delta": 1.0
     },
     {
       "category": "주방/식기",
@@ -2618,11 +2944,13 @@
       "url": "https://gift.kakao.com/product/11144932",
       "product_id": 11144932,
       "scraped_at": "2026-09-04 11:06:49",
-      "is_new_entry": false,
-      "rank_delta": 0,
-      "price_numeric": 54000,
+      "price_num": 54000,
       "price_tier": "5만원 이상",
-      "usp": "일반구성"
+      "has_packaging": false,
+      "has_engraving": false,
+      "is_exclusive": false,
+      "is_new_entry": false,
+      "rank_delta": 3.0
     },
     {
       "category": "주방/식기",
@@ -2634,11 +2962,13 @@
       "url": "https://gift.kakao.com/product/9742914",
       "product_id": 9742914,
       "scraped_at": "2026-09-04 11:06:49",
-      "is_new_entry": false,
-      "rank_delta": 0,
-      "price_numeric": 12900,
+      "price_num": 12900,
       "price_tier": "1만원대",
-      "usp": "단독구성"
+      "has_packaging": false,
+      "has_engraving": false,
+      "is_exclusive": true,
+      "is_new_entry": true,
+      "rank_delta": ""
     },
     {
       "category": "주방/식기",
@@ -2650,11 +2980,13 @@
       "url": "https://gift.kakao.com/product/11264832",
       "product_id": 11264832,
       "scraped_at": "2026-09-04 11:06:49",
-      "is_new_entry": false,
-      "rank_delta": 0,
-      "price_numeric": 32000,
+      "price_num": 32000,
       "price_tier": "3만원대",
-      "usp": "일반구성"
+      "has_packaging": false,
+      "has_engraving": false,
+      "is_exclusive": false,
+      "is_new_entry": false,
+      "rank_delta": 10.0
     },
     {
       "category": "주방/식기",
@@ -2666,11 +2998,13 @@
       "url": "https://gift.kakao.com/product/11801920",
       "product_id": 11801920,
       "scraped_at": "2026-09-04 11:06:49",
-      "is_new_entry": false,
-      "rank_delta": 0,
-      "price_numeric": 48000,
+      "price_num": 48000,
       "price_tier": "4만원대",
-      "usp": "일반구성"
+      "has_packaging": false,
+      "has_engraving": false,
+      "is_exclusive": false,
+      "is_new_entry": false,
+      "rank_delta": -4.0
     },
     {
       "category": "주방/식기",
@@ -2682,11 +3016,13 @@
       "url": "https://gift.kakao.com/product/4907401",
       "product_id": 4907401,
       "scraped_at": "2026-09-04 11:06:49",
-      "is_new_entry": false,
-      "rank_delta": 0,
-      "price_numeric": 45000,
+      "price_num": 45000,
       "price_tier": "4만원대",
-      "usp": "단독구성"
+      "has_packaging": false,
+      "has_engraving": false,
+      "is_exclusive": true,
+      "is_new_entry": false,
+      "rank_delta": -12.0
     },
     {
       "category": "주방/식기",
@@ -2698,11 +3034,13 @@
       "url": "https://gift.kakao.com/product/10841578",
       "product_id": 10841578,
       "scraped_at": "2026-09-04 11:06:49",
-      "is_new_entry": false,
-      "rank_delta": 0,
-      "price_numeric": 57900,
+      "price_num": 57900,
       "price_tier": "5만원 이상",
-      "usp": "단독구성"
+      "has_packaging": false,
+      "has_engraving": false,
+      "is_exclusive": true,
+      "is_new_entry": false,
+      "rank_delta": -1.0
     },
     {
       "category": "주방/식기",
@@ -2714,11 +3052,13 @@
       "url": "https://gift.kakao.com/product/12694900",
       "product_id": 12694900,
       "scraped_at": "2026-09-04 11:06:49",
-      "is_new_entry": false,
-      "rank_delta": 0,
-      "price_numeric": 36000,
+      "price_num": 36000,
       "price_tier": "3만원대",
-      "usp": "단독구성"
+      "has_packaging": false,
+      "has_engraving": false,
+      "is_exclusive": true,
+      "is_new_entry": false,
+      "rank_delta": 12.0
     },
     {
       "category": "주방/식기",
@@ -2730,11 +3070,13 @@
       "url": "https://gift.kakao.com/product/2438319",
       "product_id": 2438319,
       "scraped_at": "2026-09-04 11:06:49",
-      "is_new_entry": false,
-      "rank_delta": 0,
-      "price_numeric": 51000,
+      "price_num": 51000,
       "price_tier": "5만원 이상",
-      "usp": "단독구성"
+      "has_packaging": false,
+      "has_engraving": false,
+      "is_exclusive": true,
+      "is_new_entry": false,
+      "rank_delta": -10.0
     },
     {
       "category": "주방/식기",
@@ -2746,11 +3088,13 @@
       "url": "https://gift.kakao.com/product/12694903",
       "product_id": 12694903,
       "scraped_at": "2026-09-04 11:06:49",
-      "is_new_entry": false,
-      "rank_delta": 0,
-      "price_numeric": 39000,
+      "price_num": 39000,
       "price_tier": "3만원대",
-      "usp": "단독구성"
+      "has_packaging": false,
+      "has_engraving": false,
+      "is_exclusive": true,
+      "is_new_entry": false,
+      "rank_delta": -2.0
     },
     {
       "category": "주방/식기",
@@ -2762,11 +3106,13 @@
       "url": "https://gift.kakao.com/product/7868571",
       "product_id": 7868571,
       "scraped_at": "2026-09-04 11:06:49",
-      "is_new_entry": false,
-      "rank_delta": 0,
-      "price_numeric": 51200,
+      "price_num": 51200,
       "price_tier": "5만원 이상",
-      "usp": "일반구성"
+      "has_packaging": false,
+      "has_engraving": false,
+      "is_exclusive": false,
+      "is_new_entry": false,
+      "rank_delta": -7.0
     },
     {
       "category": "주방/식기",
@@ -2778,11 +3124,13 @@
       "url": "https://gift.kakao.com/product/12339610",
       "product_id": 12339610,
       "scraped_at": "2026-09-04 11:06:49",
-      "is_new_entry": false,
-      "rank_delta": 0,
-      "price_numeric": 38000,
+      "price_num": 38000,
       "price_tier": "3만원대",
-      "usp": "일반구성"
+      "has_packaging": false,
+      "has_engraving": false,
+      "is_exclusive": false,
+      "is_new_entry": false,
+      "rank_delta": -2.0
     },
     {
       "category": "주방/식기",
@@ -2794,11 +3142,13 @@
       "url": "https://gift.kakao.com/product/12742409",
       "product_id": 12742409,
       "scraped_at": "2026-09-04 11:06:49",
-      "is_new_entry": false,
-      "rank_delta": 0,
-      "price_numeric": 120000,
+      "price_num": 120000,
       "price_tier": "5만원 이상",
-      "usp": "일반구성"
+      "has_packaging": false,
+      "has_engraving": false,
+      "is_exclusive": false,
+      "is_new_entry": false,
+      "rank_delta": -6.0
     },
     {
       "category": "주방/식기",
@@ -2810,11 +3160,13 @@
       "url": "https://gift.kakao.com/product/9158489",
       "product_id": 9158489,
       "scraped_at": "2026-09-04 11:06:49",
-      "is_new_entry": false,
-      "rank_delta": 0,
-      "price_numeric": 35000,
+      "price_num": 35000,
       "price_tier": "3만원대",
-      "usp": "각인/자수"
+      "has_packaging": true,
+      "has_engraving": true,
+      "is_exclusive": false,
+      "is_new_entry": false,
+      "rank_delta": -3.0
     },
     {
       "category": "주방/식기",
@@ -2826,11 +3178,13 @@
       "url": "https://gift.kakao.com/product/12109009",
       "product_id": 12109009,
       "scraped_at": "2026-09-04 11:06:49",
-      "is_new_entry": false,
-      "rank_delta": 0,
-      "price_numeric": 44100,
+      "price_num": 44100,
       "price_tier": "4만원대",
-      "usp": "일반구성"
+      "has_packaging": false,
+      "has_engraving": false,
+      "is_exclusive": false,
+      "is_new_entry": false,
+      "rank_delta": 2.0
     },
     {
       "category": "주방/식기",
@@ -2842,11 +3196,13 @@
       "url": "https://gift.kakao.com/product/1186213",
       "product_id": 1186213,
       "scraped_at": "2026-09-04 11:06:49",
-      "is_new_entry": false,
-      "rank_delta": 0,
-      "price_numeric": 34000,
+      "price_num": 34000,
       "price_tier": "3만원대",
-      "usp": "단독구성"
+      "has_packaging": false,
+      "has_engraving": false,
+      "is_exclusive": true,
+      "is_new_entry": false,
+      "rank_delta": 3.0
     },
     {
       "category": "주방/식기",
@@ -2858,11 +3214,13 @@
       "url": "https://gift.kakao.com/product/7868266",
       "product_id": 7868266,
       "scraped_at": "2026-09-04 11:06:49",
-      "is_new_entry": false,
-      "rank_delta": 0,
-      "price_numeric": 44000,
+      "price_num": 44000,
       "price_tier": "4만원대",
-      "usp": "일반구성"
+      "has_packaging": false,
+      "has_engraving": false,
+      "is_exclusive": false,
+      "is_new_entry": false,
+      "rank_delta": -2.0
     },
     {
       "category": "주방/식기",
@@ -2874,11 +3232,13 @@
       "url": "https://gift.kakao.com/product/12821204",
       "product_id": 12821204,
       "scraped_at": "2026-09-04 11:06:49",
-      "is_new_entry": false,
-      "rank_delta": 0,
-      "price_numeric": 21800,
+      "price_num": 21800,
       "price_tier": "2만원대",
-      "usp": "단독구성"
+      "has_packaging": false,
+      "has_engraving": false,
+      "is_exclusive": true,
+      "is_new_entry": false,
+      "rank_delta": -5.0
     },
     {
       "category": "주방/식기",
@@ -2890,11 +3250,13 @@
       "url": "https://gift.kakao.com/product/12455527",
       "product_id": 12455527,
       "scraped_at": "2026-09-04 11:06:49",
-      "is_new_entry": false,
-      "rank_delta": 0,
-      "price_numeric": 13800,
+      "price_num": 13800,
       "price_tier": "1만원대",
-      "usp": "일반구성"
+      "has_packaging": false,
+      "has_engraving": false,
+      "is_exclusive": false,
+      "is_new_entry": false,
+      "rank_delta": 13.0
     },
     {
       "category": "주방/식기",
@@ -2906,11 +3268,13 @@
       "url": "https://gift.kakao.com/product/11434780",
       "product_id": 11434780,
       "scraped_at": "2026-09-04 11:06:49",
-      "is_new_entry": false,
-      "rank_delta": 0,
-      "price_numeric": 24400,
+      "price_num": 24400,
       "price_tier": "2만원대",
-      "usp": "단독구성"
+      "has_packaging": false,
+      "has_engraving": false,
+      "is_exclusive": true,
+      "is_new_entry": false,
+      "rank_delta": 1.0
     },
     {
       "category": "주방/식기",
@@ -2922,11 +3286,13 @@
       "url": "https://gift.kakao.com/product/13421555",
       "product_id": 13421555,
       "scraped_at": "2026-09-04 11:06:49",
-      "is_new_entry": false,
-      "rank_delta": 0,
-      "price_numeric": 46000,
+      "price_num": 46000,
       "price_tier": "4만원대",
-      "usp": "일반구성"
+      "has_packaging": false,
+      "has_engraving": false,
+      "is_exclusive": false,
+      "is_new_entry": false,
+      "rank_delta": -9.0
     },
     {
       "category": "주방/식기",
@@ -2938,11 +3304,13 @@
       "url": "https://gift.kakao.com/product/12698675",
       "product_id": 12698675,
       "scraped_at": "2026-09-04 11:06:49",
-      "is_new_entry": false,
-      "rank_delta": 0,
-      "price_numeric": 15900,
+      "price_num": 15900,
       "price_tier": "1만원대",
-      "usp": "단독구성"
+      "has_packaging": false,
+      "has_engraving": false,
+      "is_exclusive": true,
+      "is_new_entry": true,
+      "rank_delta": ""
     },
     {
       "category": "주방/식기",
@@ -2954,11 +3322,13 @@
       "url": "https://gift.kakao.com/product/11413779",
       "product_id": 11413779,
       "scraped_at": "2026-09-04 11:06:49",
-      "is_new_entry": false,
-      "rank_delta": 0,
-      "price_numeric": 39500,
+      "price_num": 39500,
       "price_tier": "3만원대",
-      "usp": "단독구성"
+      "has_packaging": false,
+      "has_engraving": false,
+      "is_exclusive": true,
+      "is_new_entry": false,
+      "rank_delta": -5.0
     },
     {
       "category": "주방/식기",
@@ -2970,11 +3340,13 @@
       "url": "https://gift.kakao.com/product/12702001",
       "product_id": 12702001,
       "scraped_at": "2026-09-04 11:06:49",
-      "is_new_entry": false,
-      "rank_delta": 0,
-      "price_numeric": 14900,
+      "price_num": 14900,
       "price_tier": "1만원대",
-      "usp": "단독구성"
+      "has_packaging": false,
+      "has_engraving": false,
+      "is_exclusive": true,
+      "is_new_entry": false,
+      "rank_delta": 9.0
     },
     {
       "category": "주방/식기",
@@ -2986,11 +3358,13 @@
       "url": "https://gift.kakao.com/product/9675371",
       "product_id": 9675371,
       "scraped_at": "2026-09-04 11:06:49",
-      "is_new_entry": false,
-      "rank_delta": 0,
-      "price_numeric": 32800,
+      "price_num": 32800,
       "price_tier": "3만원대",
-      "usp": "단독구성"
+      "has_packaging": false,
+      "has_engraving": false,
+      "is_exclusive": true,
+      "is_new_entry": false,
+      "rank_delta": -9.0
     },
     {
       "category": "주방/식기",
@@ -3002,11 +3376,13 @@
       "url": "https://gift.kakao.com/product/13983071",
       "product_id": 13983071,
       "scraped_at": "2026-09-04 11:06:49",
-      "is_new_entry": false,
-      "rank_delta": 0,
-      "price_numeric": 28000,
+      "price_num": 28000,
       "price_tier": "2만원대",
-      "usp": "일반구성"
+      "has_packaging": false,
+      "has_engraving": false,
+      "is_exclusive": false,
+      "is_new_entry": false,
+      "rank_delta": 2.0
     },
     {
       "category": "주방/식기",
@@ -3018,11 +3394,13 @@
       "url": "https://gift.kakao.com/product/12820960",
       "product_id": 12820960,
       "scraped_at": "2026-09-04 11:06:49",
-      "is_new_entry": false,
-      "rank_delta": 0,
-      "price_numeric": 16800,
+      "price_num": 16800,
       "price_tier": "1만원대",
-      "usp": "일반구성"
+      "has_packaging": false,
+      "has_engraving": false,
+      "is_exclusive": false,
+      "is_new_entry": false,
+      "rank_delta": 4.0
     },
     {
       "category": "주방/식기",
@@ -3034,11 +3412,13 @@
       "url": "https://gift.kakao.com/product/7712218",
       "product_id": 7712218,
       "scraped_at": "2026-09-04 11:06:49",
-      "is_new_entry": false,
-      "rank_delta": 0,
-      "price_numeric": 28800,
+      "price_num": 28800,
       "price_tier": "2만원대",
-      "usp": "단독구성"
+      "has_packaging": false,
+      "has_engraving": false,
+      "is_exclusive": true,
+      "is_new_entry": true,
+      "rank_delta": ""
     },
     {
       "category": "주방/식기",
@@ -3050,11 +3430,13 @@
       "url": "https://gift.kakao.com/product/6989471",
       "product_id": 6989471,
       "scraped_at": "2026-09-04 11:06:49",
-      "is_new_entry": false,
-      "rank_delta": 0,
-      "price_numeric": 52000,
+      "price_num": 52000,
       "price_tier": "5만원 이상",
-      "usp": "일반구성"
+      "has_packaging": true,
+      "has_engraving": false,
+      "is_exclusive": false,
+      "is_new_entry": false,
+      "rank_delta": -7.0
     },
     {
       "category": "주방/식기",
@@ -3066,11 +3448,13 @@
       "url": "https://gift.kakao.com/product/7833932",
       "product_id": 7833932,
       "scraped_at": "2026-09-04 11:06:49",
-      "is_new_entry": false,
-      "rank_delta": 0,
-      "price_numeric": 53000,
+      "price_num": 53000,
       "price_tier": "5만원 이상",
-      "usp": "단독구성"
+      "has_packaging": true,
+      "has_engraving": false,
+      "is_exclusive": true,
+      "is_new_entry": true,
+      "rank_delta": ""
     },
     {
       "category": "주방/식기",
@@ -3082,11 +3466,13 @@
       "url": "https://gift.kakao.com/product/10998208",
       "product_id": 10998208,
       "scraped_at": "2026-09-04 11:06:49",
-      "is_new_entry": false,
-      "rank_delta": 0,
-      "price_numeric": 18990,
+      "price_num": 18990,
       "price_tier": "1만원대",
-      "usp": "단독구성"
+      "has_packaging": false,
+      "has_engraving": false,
+      "is_exclusive": true,
+      "is_new_entry": true,
+      "rank_delta": ""
     },
     {
       "category": "주방/식기",
@@ -3098,11 +3484,13 @@
       "url": "https://gift.kakao.com/product/11521316",
       "product_id": 11521316,
       "scraped_at": "2026-09-04 11:06:49",
-      "is_new_entry": false,
-      "rank_delta": 0,
-      "price_numeric": 20400,
+      "price_num": 20400,
       "price_tier": "2만원대",
-      "usp": "단독구성"
+      "has_packaging": false,
+      "has_engraving": false,
+      "is_exclusive": true,
+      "is_new_entry": false,
+      "rank_delta": -7.0
     },
     {
       "category": "주방/식기",
@@ -3114,11 +3502,13 @@
       "url": "https://gift.kakao.com/product/11957461",
       "product_id": 11957461,
       "scraped_at": "2026-09-04 11:06:49",
-      "is_new_entry": false,
-      "rank_delta": 0,
-      "price_numeric": 24900,
+      "price_num": 24900,
       "price_tier": "2만원대",
-      "usp": "단독구성"
+      "has_packaging": false,
+      "has_engraving": false,
+      "is_exclusive": true,
+      "is_new_entry": false,
+      "rank_delta": -7.0
     },
     {
       "category": "주방/식기",
@@ -3130,11 +3520,13 @@
       "url": "https://gift.kakao.com/product/7733981",
       "product_id": 7733981,
       "scraped_at": "2026-09-04 11:06:50",
-      "is_new_entry": false,
-      "rank_delta": 0,
-      "price_numeric": 27900,
+      "price_num": 27900,
       "price_tier": "2만원대",
-      "usp": "단독구성"
+      "has_packaging": false,
+      "has_engraving": false,
+      "is_exclusive": true,
+      "is_new_entry": false,
+      "rank_delta": -4.0
     },
     {
       "category": "주방/식기",
@@ -3146,11 +3538,13 @@
       "url": "https://gift.kakao.com/product/9791953",
       "product_id": 9791953,
       "scraped_at": "2026-09-04 11:06:50",
-      "is_new_entry": false,
-      "rank_delta": 0,
-      "price_numeric": 24800,
+      "price_num": 24800,
       "price_tier": "2만원대",
-      "usp": "단독구성"
+      "has_packaging": false,
+      "has_engraving": false,
+      "is_exclusive": true,
+      "is_new_entry": false,
+      "rank_delta": 2.0
     },
     {
       "category": "주방/식기",
@@ -3162,11 +3556,13 @@
       "url": "https://gift.kakao.com/product/13914979",
       "product_id": 13914979,
       "scraped_at": "2026-09-04 11:06:50",
-      "is_new_entry": false,
-      "rank_delta": 0,
-      "price_numeric": 16900,
+      "price_num": 16900,
       "price_tier": "1만원대",
-      "usp": "일반구성"
+      "has_packaging": false,
+      "has_engraving": false,
+      "is_exclusive": false,
+      "is_new_entry": false,
+      "rank_delta": -7.0
     },
     {
       "category": "주방/식기",
@@ -3178,11 +3574,13 @@
       "url": "https://gift.kakao.com/product/12958599",
       "product_id": 12958599,
       "scraped_at": "2026-09-04 11:06:50",
-      "is_new_entry": false,
-      "rank_delta": 0,
-      "price_numeric": 9900,
+      "price_num": 9900,
       "price_tier": "1만원 미만",
-      "usp": "일반구성"
+      "has_packaging": false,
+      "has_engraving": false,
+      "is_exclusive": false,
+      "is_new_entry": true,
+      "rank_delta": ""
     },
     {
       "category": "주방/식기",
@@ -3194,595 +3592,14 @@
       "url": "https://gift.kakao.com/product/5364018",
       "product_id": 5364018,
       "scraped_at": "2026-09-04 11:06:50",
-      "is_new_entry": false,
-      "rank_delta": 0,
-      "price_numeric": 34000,
+      "price_num": 34000,
       "price_tier": "3만원대",
-      "usp": "단독구성"
+      "has_packaging": false,
+      "has_engraving": false,
+      "is_exclusive": true,
+      "is_new_entry": false,
+      "rank_delta": -4.0
     }
   ],
-  "cards": {
-    "전체": {
-      "analyzed_count": 200,
-      "card_1_sov": {
-        "top_ip_share": "30.0%",
-        "top_ip_name": "가나디",
-        "ip_product_count": 60,
-        "total_count": 200
-      },
-      "card_2_price_and_usp": {
-        "avg_price": 26631,
-        "packaging_ratio": 5.5,
-        "engraving_ratio": 1.0,
-        "exclusive_ratio": 36.5,
-        "price_tier_matrix": {
-          "1만원 미만": {
-            "count": 26,
-            "share": 13.0,
-            "avg_price": 8511,
-            "top_brands": [
-              "알럽하우스(소품)",
-              "굴강",
-              "트렌디홈(키친)"
-            ]
-          },
-          "1만원대": {
-            "count": 59,
-            "share": 29.5,
-            "avg_price": 15520,
-            "top_brands": [
-              "가나디",
-              "굴강",
-              "캐릭터침구"
-            ]
-          },
-          "2만원대": {
-            "count": 41,
-            "share": 20.5,
-            "avg_price": 25685,
-            "top_brands": [
-              "캐릭터침구",
-              "타블도트",
-              "캐릭터주방"
-            ]
-          },
-          "3만원대": {
-            "count": 38,
-            "share": 19.0,
-            "avg_price": 35462,
-            "top_brands": [
-              "캐릭터침구",
-              "레고트",
-              "오덴세"
-            ]
-          },
-          "4만원대": {
-            "count": 24,
-            "share": 12.0,
-            "avg_price": 45064,
-            "top_brands": [
-              "스탠리",
-              "블루보틀",
-              "크로우캐년"
-            ]
-          },
-          "5만원 이상": {
-            "count": 12,
-            "share": 6.0,
-            "avg_price": 58918,
-            "top_brands": [
-              "스탠리",
-              "센느파리",
-              "빌레로이앤보흐"
-            ]
-          }
-        }
-      },
-      "card_3_recommended_keywords": {
-        "stable_keywords_top30": [
-          "가나디",
-          "기타 캐릭터/팬시",
-          "리락쿠마",
-          "먼작귀/치이카와"
-        ],
-        "rising_keywords_top31_100": [
-          "기타 캐릭터/팬시",
-          "산리오",
-          "먼작귀/치이카와",
-          "카카오프렌즈, 톰과제리"
-        ],
-        "top_options": [
-          "선물포장",
-          "각인",
-          "단독구성"
-        ],
-        "by_type": {
-          "attributes": [
-            "단독",
-            "선물포장",
-            "각인",
-            "쇼핑백",
-            "전용패키지"
-          ],
-          "target_season": [
-            "생일",
-            "집들이",
-            "응원",
-            "답례품",
-            "기념일"
-          ],
-          "concept": [
-            "귀여운",
-            "감성",
-            "신박한",
-            "쓸데없는",
-            "인테리어"
-          ]
-        }
-      },
-      "card_4_rising_stars": []
-    },
-    "리빙 전체": {
-      "analyzed_count": 50,
-      "card_1_sov": {
-        "top_ip_share": "20.0%",
-        "top_ip_name": "가나디",
-        "ip_product_count": 10,
-        "total_count": 50
-      },
-      "card_2_price_and_usp": {
-        "avg_price": 33339,
-        "packaging_ratio": 12.0,
-        "engraving_ratio": 0.0,
-        "exclusive_ratio": 50.0,
-        "price_tier_matrix": {
-          "1만원 미만": {
-            "count": 2,
-            "share": 4.0,
-            "avg_price": 9350,
-            "top_brands": [
-              "트렌디홈(키친)",
-              "알럽하우스(소품)"
-            ]
-          },
-          "1만원대": {
-            "count": 9,
-            "share": 18.0,
-            "avg_price": 15322,
-            "top_brands": [
-              "가나디",
-              "그랑핸드",
-              "캐릭터주방"
-            ]
-          },
-          "2만원대": {
-            "count": 8,
-            "share": 16.0,
-            "avg_price": 26675,
-            "top_brands": [
-              "캐릭터침구",
-              "타블도트",
-              "캐릭터주방"
-            ]
-          },
-          "3만원대": {
-            "count": 15,
-            "share": 30.0,
-            "avg_price": 35426,
-            "top_brands": [
-              "레고트",
-              "오덴세",
-              "코토나"
-            ]
-          },
-          "4만원대": {
-            "count": 11,
-            "share": 22.0,
-            "avg_price": 45240,
-            "top_brands": [
-              "스탠리",
-              "탬버린즈",
-              "블루보틀"
-            ]
-          },
-          "5만원 이상": {
-            "count": 5,
-            "share": 10.0,
-            "avg_price": 53584,
-            "top_brands": [
-              "스탠리",
-              "레나에너지",
-              "센느파리"
-            ]
-          }
-        }
-      },
-      "card_3_recommended_keywords": {
-        "stable_keywords_top30": [
-          "가나디",
-          "리락쿠마",
-          "먼작귀/치이카와",
-          "산리오"
-        ],
-        "rising_keywords_top31_100": [
-          "기타 캐릭터/팬시",
-          "먼작귀/치이카와",
-          "카카오프렌즈, 톰과제리"
-        ],
-        "top_options": [
-          "선물포장",
-          "각인",
-          "단독구성"
-        ],
-        "by_type": {
-          "attributes": [
-            "단독",
-            "선물포장",
-            "각인",
-            "쇼핑백",
-            "전용패키지"
-          ],
-          "target_season": [
-            "생일",
-            "집들이",
-            "응원",
-            "답례품",
-            "기념일"
-          ],
-          "concept": [
-            "귀여운",
-            "감성",
-            "신박한",
-            "쓸데없는",
-            "인테리어"
-          ]
-        }
-      },
-      "card_4_rising_stars": []
-    },
-    "팬시/문구/취미 (IP핵심)": {
-      "analyzed_count": 50,
-      "card_1_sov": {
-        "top_ip_share": "44.0%",
-        "top_ip_name": "가나디",
-        "ip_product_count": 22,
-        "total_count": 50
-      },
-      "card_2_price_and_usp": {
-        "avg_price": 14658,
-        "packaging_ratio": 6.0,
-        "engraving_ratio": 2.0,
-        "exclusive_ratio": 10.0,
-        "price_tier_matrix": {
-          "1만원 미만": {
-            "count": 18,
-            "share": 36.0,
-            "avg_price": 7983,
-            "top_brands": [
-              "알럽하우스(소품)",
-              "굴강",
-              "인형"
-            ]
-          },
-          "1만원대": {
-            "count": 25,
-            "share": 50.0,
-            "avg_price": 14756,
-            "top_brands": [
-              "굴강",
-              "가나디",
-              "제이블룸(팬시)"
-            ]
-          },
-          "2만원대": {
-            "count": 3,
-            "share": 6.0,
-            "avg_price": 23300,
-            "top_brands": [
-              "프렌즈인형/피규어",
-              "삼공방",
-              "굴강"
-            ]
-          },
-          "3만원대": {
-            "count": 3,
-            "share": 6.0,
-            "avg_price": 35533,
-            "top_brands": [
-              "얼모스트블루",
-              "가나디",
-              "캐릭터침구"
-            ]
-          },
-          "4만원대": {
-            "count": 1,
-            "share": 2.0,
-            "avg_price": 43800,
-            "top_brands": [
-              "잼먹"
-            ]
-          },
-          "5만원 이상": {
-            "count": 0,
-            "share": 0.0,
-            "avg_price": 0,
-            "top_brands": []
-          }
-        }
-      },
-      "card_3_recommended_keywords": {
-        "stable_keywords_top30": [
-          "가나디",
-          "기타 캐릭터/팬시",
-          "몬치치",
-          "먼작귀/치이카와"
-        ],
-        "rising_keywords_top31_100": [
-          "기타 캐릭터/팬시",
-          "명탐정 코난",
-          "실바니안패밀리",
-          "스폰지밥"
-        ],
-        "top_options": [
-          "선물포장",
-          "각인",
-          "단독구성"
-        ],
-        "by_type": {
-          "attributes": [
-            "단독",
-            "선물포장",
-            "각인",
-            "쇼핑백",
-            "전용패키지"
-          ],
-          "target_season": [
-            "생일",
-            "집들이",
-            "응원",
-            "답례품",
-            "기념일"
-          ],
-          "concept": [
-            "귀여운",
-            "감성",
-            "신박한",
-            "쓸데없는",
-            "인테리어"
-          ]
-        }
-      },
-      "card_4_rising_stars": []
-    },
-    "침구/패브릭": {
-      "analyzed_count": 50,
-      "card_1_sov": {
-        "top_ip_share": "42.0%",
-        "top_ip_name": "먼작귀/치이카와",
-        "ip_product_count": 21,
-        "total_count": 50
-      },
-      "card_2_price_and_usp": {
-        "avg_price": 23285,
-        "packaging_ratio": 2.0,
-        "engraving_ratio": 0.0,
-        "exclusive_ratio": 34.0,
-        "price_tier_matrix": {
-          "1만원 미만": {
-            "count": 4,
-            "share": 8.0,
-            "avg_price": 9797,
-            "top_brands": [
-              "프렌즈리빙LC",
-              "부카즈(소품)",
-              "말랑필로우"
-            ]
-          },
-          "1만원대": {
-            "count": 17,
-            "share": 34.0,
-            "avg_price": 16582,
-            "top_brands": [
-              "캐릭터침구",
-              "가나디",
-              "굴강"
-            ]
-          },
-          "2만원대": {
-            "count": 20,
-            "share": 40.0,
-            "avg_price": 25940,
-            "top_brands": [
-              "캐릭터침구",
-              "리브맘",
-              "프렌즈인형/피규어"
-            ]
-          },
-          "3만원대": {
-            "count": 8,
-            "share": 16.0,
-            "avg_price": 35311,
-            "top_brands": [
-              "캐릭터침구",
-              "바나코(인테리어)",
-              "잔망루피(굿즈)"
-            ]
-          },
-          "4만원대": {
-            "count": 1,
-            "share": 2.0,
-            "avg_price": 41900,
-            "top_brands": [
-              "바자르"
-            ]
-          },
-          "5만원 이상": {
-            "count": 0,
-            "share": 0.0,
-            "avg_price": 0,
-            "top_brands": []
-          }
-        }
-      },
-      "card_3_recommended_keywords": {
-        "stable_keywords_top30": [
-          "기타 캐릭터/팬시",
-          "먼작귀/치이카와",
-          "가나디",
-          "리락쿠마"
-        ],
-        "rising_keywords_top31_100": [
-          "기타 캐릭터/팬시",
-          "산리오",
-          "리락쿠마"
-        ],
-        "top_options": [
-          "선물포장",
-          "각인",
-          "단독구성"
-        ],
-        "by_type": {
-          "attributes": [
-            "단독",
-            "선물포장",
-            "각인",
-            "쇼핑백",
-            "전용패키지"
-          ],
-          "target_season": [
-            "생일",
-            "집들이",
-            "응원",
-            "답례품",
-            "기념일"
-          ],
-          "concept": [
-            "귀여운",
-            "감성",
-            "신박한",
-            "쓸데없는",
-            "인테리어"
-          ]
-        }
-      },
-      "card_4_rising_stars": []
-    },
-    "주방/식기": {
-      "analyzed_count": 50,
-      "card_1_sov": {
-        "top_ip_share": "14.0%",
-        "top_ip_name": "가나디",
-        "ip_product_count": 7,
-        "total_count": 50
-      },
-      "card_2_price_and_usp": {
-        "avg_price": 35241,
-        "packaging_ratio": 2.0,
-        "engraving_ratio": 2.0,
-        "exclusive_ratio": 52.0,
-        "price_tier_matrix": {
-          "1만원 미만": {
-            "count": 2,
-            "share": 4.0,
-            "avg_price": 9850,
-            "top_brands": [
-              "트렌디홈(키친)",
-              "바쏠"
-            ]
-          },
-          "1만원대": {
-            "count": 8,
-            "share": 16.0,
-            "avg_price": 15873,
-            "top_brands": [
-              "캐릭터주방",
-              "바쏠",
-              "알럽하우스"
-            ]
-          },
-          "2만원대": {
-            "count": 10,
-            "share": 20.0,
-            "avg_price": 25100,
-            "top_brands": [
-              "타블도트",
-              "캐릭터주방",
-              "크로우캐년"
-            ]
-          },
-          "3만원대": {
-            "count": 12,
-            "share": 24.0,
-            "avg_price": 35591,
-            "top_brands": [
-              "레고트",
-              "스탠리",
-              "앨리건트테이블"
-            ]
-          },
-          "4만원대": {
-            "count": 11,
-            "share": 22.0,
-            "avg_price": 45290,
-            "top_brands": [
-              "스탠리",
-              "블루보틀",
-              "크로우캐년"
-            ]
-          },
-          "5만원 이상": {
-            "count": 7,
-            "share": 14.0,
-            "avg_price": 62728,
-            "top_brands": [
-              "스탠리",
-              "센느파리",
-              "빌레로이앤보흐"
-            ]
-          }
-        }
-      },
-      "card_3_recommended_keywords": {
-        "stable_keywords_top30": [
-          "가나디",
-          "리락쿠마"
-        ],
-        "rising_keywords_top31_100": [
-          "산리오",
-          "가나디",
-          "스누피/피너츠",
-          "먼작귀/치이카와"
-        ],
-        "top_options": [
-          "선물포장",
-          "각인",
-          "단독구성"
-        ],
-        "by_type": {
-          "attributes": [
-            "단독",
-            "선물포장",
-            "각인",
-            "쇼핑백",
-            "전용패키지"
-          ],
-          "target_season": [
-            "생일",
-            "집들이",
-            "응원",
-            "답례품",
-            "기념일"
-          ],
-          "concept": [
-            "귀여운",
-            "감성",
-            "신박한",
-            "쓸데없는",
-            "인테리어"
-          ]
-        }
-      },
-      "card_4_rising_stars": []
-    }
-  }
+  "cards": {}
 }
