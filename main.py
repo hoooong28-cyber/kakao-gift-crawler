@@ -7,8 +7,8 @@ import argparse
 from datetime import datetime, timedelta
 import pandas as pd
 
-from crawler import scrape_all_categories, update_master_history, BASE_DIR, DATA_DIR, WEB_DIR
-from analytics import enrich_dataframe, generate_all_dashboard_cards
+from crawler import scrape_all_categories, update_master_history, detect_character_ip, BASE_DIR, DATA_DIR, WEB_DIR
+from analytics import enrich_dataframe, generate_all_dashboard_cards, compute_ip_trends
 
 if sys.platform == "win32":
     try:
@@ -100,10 +100,29 @@ def export_static_web_dataset(df_latest, latest_cards_dict):
     if os.path.exists(master_file):
         try:
             df_master = pd.read_csv(master_file).fillna("")
+
+            # 3-1. 라벨링 업데이트(예: 신규 IP_KEYWORDS 추가)가 과거 데이터에도 소급 적용되도록
+            #      character_ip를 최신 detect_character_ip 로직으로 재계산한다.
+            if 'product_name' in df_master.columns and 'brand' in df_master.columns:
+                df_master['character_ip'] = df_master.apply(
+                    lambda r: detect_character_ip(str(r.get('product_name', '')), str(r.get('brand', ''))),
+                    axis=1
+                )
+
             history_json_path = os.path.join(WEB_DIR, "history.json")
             with open(history_json_path, "w", encoding="utf-8") as f:
                 json.dump(df_master.to_dict(orient="records"), f, ensure_ascii=False, indent=2)
             print(f"  ✅ [history.json 저장 완료]: 마스터 누적 데이터 {len(df_master)}개 레코드")
+
+            # 3-2. IP별 점유율/가격 추이 (docs/ip_trends.json)
+            try:
+                ip_trends = compute_ip_trends(df_master, top_n_entities=15)
+                trends_json_path = os.path.join(WEB_DIR, "ip_trends.json")
+                with open(trends_json_path, "w", encoding="utf-8") as f:
+                    json.dump(ip_trends, f, ensure_ascii=False, indent=2)
+                print(f"  ✅ [ip_trends.json 저장 완료]: {len(ip_trends)}개 카테고리 추이 데이터")
+            except Exception as trend_ex:
+                print(f"  ⚠️ ip_trends.json 생성 실패: {trend_ex}")
         except Exception as ex:
             print(f"  ⚠️ history.json 생성 실패: {ex}")
 
