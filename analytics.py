@@ -2,6 +2,8 @@ import os
 import sys
 import pandas as pd
 import numpy as np
+from numbers import Real
+from rank_comparison import compare_rankings
 
 PRICE_TIER_ORDER = ["1만원 미만", "1만원대", "2만원대", "3만원대", "4만원대", "5만원 이상"]
 
@@ -54,40 +56,13 @@ def enrich_dataframe(df_raw, df_prev=None):
         
     df['usp'] = df.apply(detect_usp, axis=1)
 
-    # 3. 과거 데이터 비교 (rank_delta, is_new_entry)
-    df['rank_delta'] = 0
-    df['is_new_entry'] = False
-    
-    if df_prev is not None and not df_prev.empty and 'product_name' in df_prev.columns and 'rank' in df_prev.columns:
-        prev_map = {}
-        for _, prow in df_prev.iterrows():
-            key = (str(prow.get('category', '')), str(prow.get('product_name', '')))
-            try:
-                prev_map[key] = int(prow.get('rank', 0))
-            except Exception:
-                pass
-                
-        deltas = []
-        is_news = []
-        for _, row in df.iterrows():
-            cat = str(row.get('category', ''))
-            pname = str(row.get('product_name', ''))
-            try:
-                cur_rank = int(row.get('rank', 0))
-            except Exception:
-                cur_rank = 0
-                
-            prev_rank = prev_map.get((cat, pname))
-            if prev_rank is not None and prev_rank > 0:
-                delta = prev_rank - cur_rank  # 양수면 순위 상승
-                deltas.append(delta)
-                is_news.append(False)
-            else:
-                deltas.append("NEW")
-                is_news.append(True)
-                
-        df['rank_delta'] = deltas
-        df['is_new_entry'] = is_news
+    # Match stable IDs within the same category; titles may change every crawl.
+    comparison = compare_rankings(
+        df.to_dict(orient="records"),
+        df_prev.to_dict(orient="records") if df_prev is not None else None,
+    )
+    for column in ("rank_delta", "is_new_entry", "rank_comparison_status"):
+        df[column] = [row[column] for row in comparison]
 
     return df
 
@@ -173,7 +148,7 @@ def generate_all_dashboard_cards(df_enriched, top_n=100):
         # 4. Rising Stars
         rising_items = []
         for _, r in sub_df.iterrows():
-            if r.get('is_new_entry') or (isinstance(r.get('rank_delta'), (int, float)) and r.get('rank_delta') > 0):
+            if r.get('is_new_entry') or (isinstance(r.get('rank_delta'), Real) and r.get('rank_delta') >= 10):
                 rising_items.append({
                     "brand": str(r.get('brand', '')),
                     "product_name": str(r.get('product_name', '')),
@@ -197,3 +172,139 @@ def generate_all_dashboard_cards(df_enriched, top_n=100):
         }
         
     return cards
+
+
+# ── 시계열 추이 엔진 ──────────────────────────────────────────────────────
+# IP 전용이 아니라 범용으로 설계: group_by 컬럼만 바꾸면 브랜드별/가격대별/
+# 카테고리별 추이 등으로 그대로 재사용 가능하다.
+#
+# "기타 캐릭터/팬시"(라벨링 미비로 뭉뚱그려진 항목)와 "일반/비IP 상품"(진짜
+# 비IP 상품)은 하나의 진짜 IP처럼 취급하면 추이가 왜곡되므로, 개별 IP
+# 라인과 분리된 "미분류 참고선"으로만 별도 표시한다. NON_ENTITY_LABELS에
+# 나열된 값은 항상 개별 라인이 아니라 참고선(reference_only=True)으로
+# 내려간다.
+
+NON_ENTITY_LABELS = {"일반/비IP 상품", "기타 캐릭터/팬시", "기타"}
+
+def compute_trend(df_master, group_by="character_ip", metric="share",
+                   date_col="scraped_at", category_col="category",
+                   price_col="price_numeric", top_n_entities=None):
+    """
+    df_master: 여러 날짜가 누적된 마스터 히스토리 데이터프레임
+               (crawler.update_master_history가 만드는 ranking_master_history.csv
+                또는 docs/history.json을 읽어 만든 데이터프레임)
+    group_by:  추이를 낼 기준 컬럼. "character_ip"(기본), "brand", "price_tier" 등
+               다른 컬럼으로 바꿔도 그대로 동작한다.
+    metric:    "share"(그룹 내 비중 %), "count"(등장 개수), "avg_price"(평균가) 중 하나.
+
+    반환 형식:
+    {
+      "<category 값>": {
+        "<group_by 값>": [
+          {"date": "20260827", "count": 10, "share": 20.0, "avg_price": 15000},
+          ...
+        ],
+        ...
+        "__미분류__": [...]   # NON_ENTITY_LABELS에 해당하는 항목들의 합산치
+      },
+      ...
+    }
+    "전체"는 카테고리 구분 없이 전체를 합산한 결과.
+    """
+    df = df_master.copy()
+
+    if date_col not in df.columns:
+        return {}
+    df['_date'] = pd.to_datetime(df[date_col], errors='coerce').dt.strftime('%Y%m%d')
+    df = df[df['_date'].notna()]
+
+    if price_col not in df.columns:
+        if 'price' in df.columns:
+            df[price_col] = pd.to_numeric(
+                df['price'].astype(str).str.replace(",", "").str.replace("원", ""),
+                errors='coerce'
+            ).fillna(0)
+        else:
+            df[price_col] = 0
+
+    if group_by not in df.columns:
+        return {}
+
+    # character_ip처럼 콤마로 여러 값이 합쳐진 경우(예: "가나디, 산리오") 개별 값으로 분리
+    df['_group_list'] = df[group_by].astype(str).apply(
+        lambda v: [g.strip() for g in v.split(',') if g.strip()] or ["기타"]
+    )
+    df_exploded = df.explode('_group_list')
+
+    def build_category_trend(sub_df):
+        result = {}
+        total_by_date = sub_df.groupby('_date').size()
+        grouped = sub_df.groupby(['_date', '_group_list'])
+        agg = grouped.agg(count=('_group_list', 'size'),
+                           avg_price=(price_col, 'mean')).reset_index()
+
+        for entity, entity_df in agg.groupby('_group_list'):
+            series = []
+            for _, row in entity_df.sort_values('_date').iterrows():
+                date_total = total_by_date.get(row['_date'], 0)
+                share = round((row['count'] / date_total) * 100, 1) if date_total else 0
+                series.append({
+                    "date": row['_date'],
+                    "count": int(row['count']),
+                    "share": float(share),
+                    "avg_price": int(row['avg_price']) if pd.notna(row['avg_price']) else 0
+                })
+            result[entity] = series
+        return result
+
+    # 미분류(NON_ENTITY_LABELS)는 합쳐서 "__미분류__" 하나로 별도 집계
+    def merge_non_entities(result):
+        if not any(label in result for label in NON_ENTITY_LABELS):
+            return result
+        merged_by_date = {}
+        for label in list(result.keys()):
+            if label in NON_ENTITY_LABELS:
+                for point in result.pop(label):
+                    d = point['date']
+                    acc = merged_by_date.setdefault(d, {"count": 0, "price_sum": 0.0})
+                    acc['count'] += point['count']
+                    acc['price_sum'] += point['avg_price'] * point['count']
+        if merged_by_date:
+            series = []
+            for d, acc in sorted(merged_by_date.items()):
+                date_total = int(total_by_date_global.get(d, 0)) if total_by_date_global is not None and len(total_by_date_global) > 0 else 0
+                share = round((acc['count'] / date_total) * 100, 1) if date_total else 0
+                avg_price = int(acc['price_sum'] / acc['count']) if acc['count'] else 0
+                series.append({"date": d, "count": int(acc['count']), "share": float(share), "avg_price": avg_price})
+            result["__미분류__"] = series
+        return result
+
+    trends = {}
+    for cat, cat_df in df_exploded.groupby(category_col):
+        total_by_date_global = cat_df.groupby('_date').size()
+        result = build_category_trend(cat_df)
+        result = merge_non_entities(result)
+        trends[str(cat)] = result
+
+    total_by_date_global = df_exploded.groupby('_date').size()
+    overall = build_category_trend(df_exploded)
+    overall = merge_non_entities(overall)
+    trends["전체"] = overall
+
+    if top_n_entities:
+        for cat, entities in trends.items():
+            named = {k: v for k, v in entities.items() if k != "__미분류__"}
+            top_keys = sorted(named, key=lambda k: sum(p['count'] for p in named[k]), reverse=True)[:top_n_entities]
+            pruned = {k: entities[k] for k in top_keys}
+            if "__미분류__" in entities:
+                pruned["__미분류__"] = entities["__미분류__"]
+            trends[cat] = pruned
+
+    return trends
+
+
+def compute_ip_trends(df_master, top_n_entities=15):
+    """character_ip 기준 점유율/가격 추이. compute_trend의 얇은 래퍼."""
+    return compute_trend(df_master, group_by="character_ip", metric="share",
+                          top_n_entities=top_n_entities)
+
