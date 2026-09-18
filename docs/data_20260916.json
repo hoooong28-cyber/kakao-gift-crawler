@@ -14,7 +14,8 @@
       "price_tier": "3만원대",
       "usp": "일반구성",
       "rank_delta": "0",
-      "is_new_entry": false
+      "is_new_entry": false,
+      "rank_comparison_status": "compared"
     },
     {
       "category": "리빙 전체",
@@ -30,7 +31,8 @@
       "price_tier": "1만원대",
       "usp": "선물포장, 단독구성",
       "rank_delta": "2",
-      "is_new_entry": false
+      "is_new_entry": false,
+      "rank_comparison_status": "compared"
     },
     {
       "category": "리빙 전체",
@@ -46,7 +48,8 @@
       "price_tier": "4만원대",
       "usp": "일반구성",
       "rank_delta": "0",
-      "is_new_entry": false
+      "is_new_entry": false,
+      "rank_comparison_status": "compared"
     },
     {
       "category": "리빙 전체",
@@ -62,7 +65,8 @@
       "price_tier": "3만원대",
       "usp": "단독구성",
       "rank_delta": "-2",
-      "is_new_entry": false
+      "is_new_entry": false,
+      "rank_comparison_status": "compared"
     },
     {
       "category": "리빙 전체",
@@ -78,7 +82,8 @@
       "price_tier": "1만원대",
       "usp": "일반구성",
       "rank_delta": "NEW",
-      "is_new_entry": true
+      "is_new_entry": true,
+      "rank_comparison_status": "new"
     },
     {
       "category": "리빙 전체",
@@ -94,7 +99,8 @@
       "price_tier": "2만원대",
       "usp": "단독구성",
       "rank_delta": "-1",
-      "is_new_entry": false
+      "is_new_entry": false,
+      "rank_comparison_status": "compared"
     },
     {
       "category": "리빙 전체",
@@ -110,7 +116,8 @@
       "price_tier": "3만원대",
       "usp": "단독구성",
       "rank_delta": "1",
-      "is_new_entry": false
+      "is_new_entry": false,
+      "rank_comparison_status": "compared"
     },
     {
       "category": "리빙 전체",
@@ -126,7 +133,8 @@
       "price_tier": "4만원대",
       "usp": "일반구성",
       "rank_delta": "-2",
-      "is_new_entry": false
+      "is_new_entry": false,
+      "rank_comparison_status": "compared"
     },
     {
       "category": "리빙 전체",
@@ -142,7 +150,8 @@
       "price_tier": "3만원대",
       "usp": "일반구성",
       "rank_delta": "0",
-      "is_new_entry": false
+      "is_new_entry": false,
+      "rank_comparison_status": "compared"
     },
     {
       "category": "리빙 전체",
@@ -158,7 +167,8 @@
       "price_tier": "2만원대",
       "usp": "일반구성",
       "rank_delta": "2",
-      "is_new_entry": false
+      "is_new_entry": false,
+      "rank_comparison_status": "compared"
     },
     {
       "category": "리빙 전체",
@@ -174,7 +184,8 @@
       "price_tier": "1만원대",
       "usp": "일반구성",
       "rank_delta": "-1",
-      "is_new_entry": false
+      "is_new_entry": false,
+      "rank_comparison_status": "compared"
     },
     {
       "category": "리빙 전체",
@@ -190,7 +201,8 @@
       "price_tier": "3만원대",
       "usp": "단독구성",
       "rank_delta": "1",
-      "is_new_entry": false
+      "is_new_entry": false,
+      "rank_comparison_status": "compared"
     },
     {
       "category": "리빙 전체",
@@ -205,8 +217,9 @@
       "price_numeric": 12800,
       "price_tier": "1만원대",
       "usp": "일반구성",
-      "rank_delta": "NEW",
-      "is_new_entry": true
+      "rank_delta": "8",
+      "is_new_entry": false,
+      "rank_comparison_status": "compared"
     },
     {
       "category": "리빙 전체",
@@ -222,7 +235,8 @@
       "price_tier": "3만원대",
       "usp": "일반구성",
       "rank_delta": "16",
-      "is_new_entry": false
+      "is_new_entry": false,
+      "rank_comparison_status": "compared"
     },
     {
       "category": "리빙 전체",
@@ -238,7 +252,8 @@
       "price_tier": "3만원대",
       "usp": "단독구성",
       "rank_delta": "0",
-      "is_new_entry": false
+      "is_new_entry": false,
+      "rank_comparison_status": "compared"
     },
     {
       "category": "리빙 전체",
@@ -254,7 +269,8 @@
       "price_tier": "4만원대",
       "usp": "일반구성",
       "rank_delta": "-2",
-      "is_new_entry": false
+      "is_new_entry": false,
+      "rank_comparison_status": "compared"
     },
     {
       "category": "리빙 전체",
@@ -270,7 +286,8 @@
       "price_tier": "3만원대",
       "usp": "단독구성",
       "rank_delta": "-1",
-      "is_new_entry": false
+      "is_new_entry": false,
+      "rank_comparison_status": "compared"
     },
     {
       "category": "리빙 전체",
@@ -286,7 +303,8 @@
       "price_tier": "5만원 이상",
       "usp": "단독구성",
       "rank_delta": "1",
-      "is_new_entry": false
+      "is_new_entry": false,
+      "rank_comparison_status": "compared"
     },
     {
       "category": "리빙 전체",
@@ -302,7 +320,8 @@
       "price_tier": "1만원 미만",
       "usp": "일반구성",
       "rank_delta": "NEW",
-      "is_new_entry": true
+      "is_new_entry": true,
+      "rank_comparison_status": "new"
     },
     {
       "category": "리빙 전체",
@@ -318,7 +337,8 @@
       "price_tier": "2만원대",
       "usp": "일반구성",
       "rank_delta": "-2",
-      "is_new_entry": false
+      "is_new_entry": false,
+      "rank_comparison_status": "compared"
     },
     {
       "category": "리빙 전체",
@@ -334,7 +354,8 @@
       "price_tier": "1만원대",
       "usp": "단독구성",
       "rank_delta": "2",
-      "is_new_entry": false
+      "is_new_entry": false,
+      "rank_comparison_status": "compared"
     },
     {
       "category": "리빙 전체",
@@ -350,7 +371,8 @@
       "price_tier": "2만원대",
       "usp": "단독구성",
       "rank_delta": "NEW",
-      "is_new_entry": true
+      "is_new_entry": true,
+      "rank_comparison_status": "new"
     },
     {
       "category": "리빙 전체",
@@ -365,8 +387,9 @@
       "price_numeric": 65900,
       "price_tier": "5만원 이상",
       "usp": "일반구성",
-      "rank_delta": "NEW",
-      "is_new_entry": true
+      "rank_delta": "21",
+      "is_new_entry": false,
+      "rank_comparison_status": "compared"
     },
     {
       "category": "리빙 전체",
@@ -382,7 +405,8 @@
       "price_tier": "2만원대",
       "usp": "일반구성",
       "rank_delta": "-4",
-      "is_new_entry": false
+      "is_new_entry": false,
+      "rank_comparison_status": "compared"
     },
     {
       "category": "리빙 전체",
@@ -398,7 +422,8 @@
       "price_tier": "4만원대",
       "usp": "선물포장",
       "rank_delta": "1",
-      "is_new_entry": false
+      "is_new_entry": false,
+      "rank_comparison_status": "compared"
     },
     {
       "category": "리빙 전체",
@@ -414,7 +439,8 @@
       "price_tier": "1만원대",
       "usp": "일반구성",
       "rank_delta": "NEW",
-      "is_new_entry": true
+      "is_new_entry": true,
+      "rank_comparison_status": "new"
     },
     {
       "category": "리빙 전체",
@@ -430,7 +456,8 @@
       "price_tier": "4만원대",
       "usp": "단독구성",
       "rank_delta": "5",
-      "is_new_entry": false
+      "is_new_entry": false,
+      "rank_comparison_status": "compared"
     },
     {
       "category": "리빙 전체",
@@ -446,7 +473,8 @@
       "price_tier": "3만원대",
       "usp": "일반구성",
       "rank_delta": "0",
-      "is_new_entry": false
+      "is_new_entry": false,
+      "rank_comparison_status": "compared"
     },
     {
       "category": "리빙 전체",
@@ -462,7 +490,8 @@
       "price_tier": "3만원대",
       "usp": "단독구성",
       "rank_delta": "0",
-      "is_new_entry": false
+      "is_new_entry": false,
+      "rank_comparison_status": "compared"
     },
     {
       "category": "리빙 전체",
@@ -477,8 +506,9 @@
       "price_numeric": 22900,
       "price_tier": "2만원대",
       "usp": "단독구성",
-      "rank_delta": "NEW",
-      "is_new_entry": true
+      "rank_delta": "-13",
+      "is_new_entry": false,
+      "rank_comparison_status": "compared"
     },
     {
       "category": "리빙 전체",
@@ -494,7 +524,8 @@
       "price_tier": "5만원 이상",
       "usp": "단독구성",
       "rank_delta": "-20",
-      "is_new_entry": false
+      "is_new_entry": false,
+      "rank_comparison_status": "compared"
     },
     {
       "category": "리빙 전체",
@@ -510,7 +541,8 @@
       "price_tier": "4만원대",
       "usp": "일반구성",
       "rank_delta": "-5",
-      "is_new_entry": false
+      "is_new_entry": false,
+      "rank_comparison_status": "compared"
     },
     {
       "category": "리빙 전체",
@@ -525,8 +557,9 @@
       "price_numeric": 16300,
       "price_tier": "1만원대",
       "usp": "일반구성",
-      "rank_delta": "NEW",
-      "is_new_entry": true
+      "rank_delta": "6",
+      "is_new_entry": false,
+      "rank_comparison_status": "compared"
     },
     {
       "category": "리빙 전체",
@@ -542,7 +575,8 @@
       "price_tier": "4만원대",
       "usp": "일반구성",
       "rank_delta": "NEW",
-      "is_new_entry": true
+      "is_new_entry": true,
+      "rank_comparison_status": "new"
     },
     {
       "category": "리빙 전체",
@@ -558,7 +592,8 @@
       "price_tier": "3만원대",
       "usp": "단독구성",
       "rank_delta": "-11",
-      "is_new_entry": false
+      "is_new_entry": false,
+      "rank_comparison_status": "compared"
     },
     {
       "category": "리빙 전체",
@@ -574,7 +609,8 @@
       "price_tier": "4만원대",
       "usp": "일반구성",
       "rank_delta": "-11",
-      "is_new_entry": false
+      "is_new_entry": false,
+      "rank_comparison_status": "compared"
     },
     {
       "category": "리빙 전체",
@@ -590,7 +626,8 @@
       "price_tier": "5만원 이상",
       "usp": "일반구성",
       "rank_delta": "5",
-      "is_new_entry": false
+      "is_new_entry": false,
+      "rank_comparison_status": "compared"
     },
     {
       "category": "리빙 전체",
@@ -606,7 +643,8 @@
       "price_tier": "3만원대",
       "usp": "단독구성",
       "rank_delta": "-4",
-      "is_new_entry": false
+      "is_new_entry": false,
+      "rank_comparison_status": "compared"
     },
     {
       "category": "리빙 전체",
@@ -622,7 +660,8 @@
       "price_tier": "3만원대",
       "usp": "선물포장, 단독구성",
       "rank_delta": "-4",
-      "is_new_entry": false
+      "is_new_entry": false,
+      "rank_comparison_status": "compared"
     },
     {
       "category": "리빙 전체",
@@ -638,7 +677,8 @@
       "price_tier": "1만원대",
       "usp": "일반구성",
       "rank_delta": "-2",
-      "is_new_entry": false
+      "is_new_entry": false,
+      "rank_comparison_status": "compared"
     },
     {
       "category": "리빙 전체",
@@ -654,7 +694,8 @@
       "price_tier": "1만원대",
       "usp": "일반구성",
       "rank_delta": "2",
-      "is_new_entry": false
+      "is_new_entry": false,
+      "rank_comparison_status": "compared"
     },
     {
       "category": "리빙 전체",
@@ -670,7 +711,8 @@
       "price_tier": "3만원대",
       "usp": "각인/자수",
       "rank_delta": "NEW",
-      "is_new_entry": true
+      "is_new_entry": true,
+      "rank_comparison_status": "new"
     },
     {
       "category": "리빙 전체",
@@ -686,7 +728,8 @@
       "price_tier": "1만원대",
       "usp": "일반구성",
       "rank_delta": "NEW",
-      "is_new_entry": true
+      "is_new_entry": true,
+      "rank_comparison_status": "new"
     },
     {
       "category": "리빙 전체",
@@ -702,7 +745,8 @@
       "price_tier": "3만원대",
       "usp": "단독구성",
       "rank_delta": "-11",
-      "is_new_entry": false
+      "is_new_entry": false,
+      "rank_comparison_status": "compared"
     },
     {
       "category": "리빙 전체",
@@ -718,7 +762,8 @@
       "price_tier": "3만원대",
       "usp": "단독구성",
       "rank_delta": "-4",
-      "is_new_entry": false
+      "is_new_entry": false,
+      "rank_comparison_status": "compared"
     },
     {
       "category": "리빙 전체",
@@ -734,7 +779,8 @@
       "price_tier": "1만원 미만",
       "usp": "일반구성",
       "rank_delta": "-15",
-      "is_new_entry": false
+      "is_new_entry": false,
+      "rank_comparison_status": "compared"
     },
     {
       "category": "리빙 전체",
@@ -750,7 +796,8 @@
       "price_tier": "4만원대",
       "usp": "단독구성",
       "rank_delta": "NEW",
-      "is_new_entry": true
+      "is_new_entry": true,
+      "rank_comparison_status": "new"
     },
     {
       "category": "리빙 전체",
@@ -766,7 +813,8 @@
       "price_tier": "3만원대",
       "usp": "각인/자수",
       "rank_delta": "-12",
-      "is_new_entry": false
+      "is_new_entry": false,
+      "rank_comparison_status": "compared"
     },
     {
       "category": "리빙 전체",
@@ -782,7 +830,8 @@
       "price_tier": "3만원대",
       "usp": "일반구성",
       "rank_delta": "NEW",
-      "is_new_entry": true
+      "is_new_entry": true,
+      "rank_comparison_status": "new"
     },
     {
       "category": "리빙 전체",
@@ -797,8 +846,9 @@
       "price_numeric": 21500,
       "price_tier": "2만원대",
       "usp": "일반구성",
-      "rank_delta": "NEW",
-      "is_new_entry": true
+      "rank_delta": "-2",
+      "is_new_entry": false,
+      "rank_comparison_status": "compared"
     },
     {
       "category": "리빙 전체",
@@ -814,7 +864,8 @@
       "price_tier": "4만원대",
       "usp": "일반구성",
       "rank_delta": "-4",
-      "is_new_entry": false
+      "is_new_entry": false,
+      "rank_comparison_status": "compared"
     },
     {
       "category": "리빙 전체",
@@ -829,8 +880,9 @@
       "price_numeric": 32800,
       "price_tier": "3만원대",
       "usp": "단독구성",
-      "rank_delta": "NEW",
-      "is_new_entry": true
+      "rank_delta": "",
+      "is_new_entry": false,
+      "rank_comparison_status": "unavailable"
     },
     {
       "category": "리빙 전체",
@@ -846,7 +898,8 @@
       "price_tier": "4만원대",
       "usp": "단독구성",
       "rank_delta": "-16",
-      "is_new_entry": false
+      "is_new_entry": false,
+      "rank_comparison_status": "compared"
     },
     {
       "category": "리빙 전체",
@@ -861,8 +914,9 @@
       "price_numeric": 14800,
       "price_tier": "1만원대",
       "usp": "일반구성",
-      "rank_delta": "NEW",
-      "is_new_entry": true
+      "rank_delta": "",
+      "is_new_entry": false,
+      "rank_comparison_status": "unavailable"
     },
     {
       "category": "리빙 전체",
@@ -878,7 +932,8 @@
       "price_tier": "1만원대",
       "usp": "단독구성",
       "rank_delta": "-9",
-      "is_new_entry": false
+      "is_new_entry": false,
+      "rank_comparison_status": "compared"
     },
     {
       "category": "리빙 전체",
@@ -893,8 +948,9 @@
       "price_numeric": 32800,
       "price_tier": "3만원대",
       "usp": "일반구성",
-      "rank_delta": "NEW",
-      "is_new_entry": true
+      "rank_delta": "",
+      "is_new_entry": false,
+      "rank_comparison_status": "unavailable"
     },
     {
       "category": "리빙 전체",
@@ -909,8 +965,9 @@
       "price_numeric": 56800,
       "price_tier": "5만원 이상",
       "usp": "단독구성",
-      "rank_delta": "NEW",
-      "is_new_entry": true
+      "rank_delta": "",
+      "is_new_entry": false,
+      "rank_comparison_status": "unavailable"
     },
     {
       "category": "리빙 전체",
@@ -925,8 +982,9 @@
       "price_numeric": 39500,
       "price_tier": "3만원대",
       "usp": "단독구성",
-      "rank_delta": "NEW",
-      "is_new_entry": true
+      "rank_delta": "",
+      "is_new_entry": false,
+      "rank_comparison_status": "unavailable"
     },
     {
       "category": "리빙 전체",
@@ -941,8 +999,9 @@
       "price_numeric": 53580,
       "price_tier": "5만원 이상",
       "usp": "일반구성",
-      "rank_delta": "NEW",
-      "is_new_entry": true
+      "rank_delta": "",
+      "is_new_entry": false,
+      "rank_comparison_status": "unavailable"
     },
     {
       "category": "리빙 전체",
@@ -958,7 +1017,8 @@
       "price_tier": "2만원대",
       "usp": "단독구성",
       "rank_delta": "-15",
-      "is_new_entry": false
+      "is_new_entry": false,
+      "rank_comparison_status": "compared"
     },
     {
       "category": "리빙 전체",
@@ -973,8 +1033,9 @@
       "price_numeric": 16900,
       "price_tier": "1만원대",
       "usp": "일반구성",
-      "rank_delta": "NEW",
-      "is_new_entry": true
+      "rank_delta": "",
+      "is_new_entry": false,
+      "rank_comparison_status": "unavailable"
     },
     {
       "category": "리빙 전체",
@@ -989,8 +1050,9 @@
       "price_numeric": 44900,
       "price_tier": "4만원대",
       "usp": "단독구성",
-      "rank_delta": "NEW",
-      "is_new_entry": true
+      "rank_delta": "",
+      "is_new_entry": false,
+      "rank_comparison_status": "unavailable"
     },
     {
       "category": "리빙 전체",
@@ -1006,7 +1068,8 @@
       "price_tier": "5만원 이상",
       "usp": "일반구성",
       "rank_delta": "-41",
-      "is_new_entry": false
+      "is_new_entry": false,
+      "rank_comparison_status": "compared"
     },
     {
       "category": "리빙 전체",
@@ -1021,8 +1084,9 @@
       "price_numeric": 14800,
       "price_tier": "1만원대",
       "usp": "일반구성",
-      "rank_delta": "NEW",
-      "is_new_entry": true
+      "rank_delta": "",
+      "is_new_entry": false,
+      "rank_comparison_status": "unavailable"
     },
     {
       "category": "리빙 전체",
@@ -1037,8 +1101,9 @@
       "price_numeric": 9800,
       "price_tier": "1만원 미만",
       "usp": "일반구성",
-      "rank_delta": "NEW",
-      "is_new_entry": true
+      "rank_delta": "",
+      "is_new_entry": false,
+      "rank_comparison_status": "unavailable"
     },
     {
       "category": "리빙 전체",
@@ -1053,8 +1118,9 @@
       "price_numeric": 47700,
       "price_tier": "4만원대",
       "usp": "단독구성",
-      "rank_delta": "NEW",
-      "is_new_entry": true
+      "rank_delta": "",
+      "is_new_entry": false,
+      "rank_comparison_status": "unavailable"
     },
     {
       "category": "리빙 전체",
@@ -1069,8 +1135,9 @@
       "price_numeric": 52900,
       "price_tier": "5만원 이상",
       "usp": "일반구성",
-      "rank_delta": "NEW",
-      "is_new_entry": true
+      "rank_delta": "",
+      "is_new_entry": false,
+      "rank_comparison_status": "unavailable"
     },
     {
       "category": "리빙 전체",
@@ -1086,7 +1153,8 @@
       "price_tier": "3만원대",
       "usp": "일반구성",
       "rank_delta": "-28",
-      "is_new_entry": false
+      "is_new_entry": false,
+      "rank_comparison_status": "compared"
     },
     {
       "category": "리빙 전체",
@@ -1101,8 +1169,9 @@
       "price_numeric": 30000,
       "price_tier": "3만원대",
       "usp": "단독구성",
-      "rank_delta": "NEW",
-      "is_new_entry": true
+      "rank_delta": "",
+      "is_new_entry": false,
+      "rank_comparison_status": "unavailable"
     },
     {
       "category": "리빙 전체",
@@ -1117,8 +1186,9 @@
       "price_numeric": 52120,
       "price_tier": "5만원 이상",
       "usp": "일반구성",
-      "rank_delta": "NEW",
-      "is_new_entry": true
+      "rank_delta": "",
+      "is_new_entry": false,
+      "rank_comparison_status": "unavailable"
     },
     {
       "category": "리빙 전체",
@@ -1133,8 +1203,9 @@
       "price_numeric": 34500,
       "price_tier": "3만원대",
       "usp": "단독구성",
-      "rank_delta": "NEW",
-      "is_new_entry": true
+      "rank_delta": "",
+      "is_new_entry": false,
+      "rank_comparison_status": "unavailable"
     },
     {
       "category": "리빙 전체",
@@ -1149,8 +1220,9 @@
       "price_numeric": 38000,
       "price_tier": "3만원대",
       "usp": "일반구성",
-      "rank_delta": "NEW",
-      "is_new_entry": true
+      "rank_delta": "",
+      "is_new_entry": false,
+      "rank_comparison_status": "unavailable"
     },
     {
       "category": "리빙 전체",
@@ -1166,7 +1238,8 @@
       "price_tier": "5만원 이상",
       "usp": "단독구성",
       "rank_delta": "-23",
-      "is_new_entry": false
+      "is_new_entry": false,
+      "rank_comparison_status": "compared"
     },
     {
       "category": "리빙 전체",
@@ -1181,8 +1254,9 @@
       "price_numeric": 9900,
       "price_tier": "1만원 미만",
       "usp": "일반구성",
-      "rank_delta": "NEW",
-      "is_new_entry": true
+      "rank_delta": "",
+      "is_new_entry": false,
+      "rank_comparison_status": "unavailable"
     },
     {
       "category": "리빙 전체",
@@ -1197,8 +1271,9 @@
       "price_numeric": 16900,
       "price_tier": "1만원대",
       "usp": "일반구성",
-      "rank_delta": "NEW",
-      "is_new_entry": true
+      "rank_delta": "",
+      "is_new_entry": false,
+      "rank_comparison_status": "unavailable"
     },
     {
       "category": "리빙 전체",
@@ -1213,8 +1288,9 @@
       "price_numeric": 46550,
       "price_tier": "4만원대",
       "usp": "일반구성",
-      "rank_delta": "NEW",
-      "is_new_entry": true
+      "rank_delta": "",
+      "is_new_entry": false,
+      "rank_comparison_status": "unavailable"
     },
     {
       "category": "리빙 전체",
@@ -1229,8 +1305,9 @@
       "price_numeric": 171000,
       "price_tier": "5만원 이상",
       "usp": "단독구성",
-      "rank_delta": "NEW",
-      "is_new_entry": true
+      "rank_delta": "",
+      "is_new_entry": false,
+      "rank_comparison_status": "unavailable"
     },
     {
       "category": "리빙 전체",
@@ -1245,8 +1322,9 @@
       "price_numeric": 37900,
       "price_tier": "3만원대",
       "usp": "단독구성",
-      "rank_delta": "NEW",
-      "is_new_entry": true
+      "rank_delta": "",
+      "is_new_entry": false,
+      "rank_comparison_status": "unavailable"
     },
     {
       "category": "리빙 전체",
@@ -1261,8 +1339,9 @@
       "price_numeric": 36000,
       "price_tier": "3만원대",
       "usp": "일반구성",
-      "rank_delta": "NEW",
-      "is_new_entry": true
+      "rank_delta": "",
+      "is_new_entry": false,
+      "rank_comparison_status": "unavailable"
     },
     {
       "category": "리빙 전체",
@@ -1277,8 +1356,9 @@
       "price_numeric": 31000,
       "price_tier": "3만원대",
       "usp": "일반구성",
-      "rank_delta": "NEW",
-      "is_new_entry": true
+      "rank_delta": "",
+      "is_new_entry": false,
+      "rank_comparison_status": "unavailable"
     },
     {
       "category": "리빙 전체",
@@ -1293,8 +1373,9 @@
       "price_numeric": 36000,
       "price_tier": "3만원대",
       "usp": "단독구성",
-      "rank_delta": "NEW",
-      "is_new_entry": true
+      "rank_delta": "",
+      "is_new_entry": false,
+      "rank_comparison_status": "unavailable"
     },
     {
       "category": "리빙 전체",
@@ -1309,8 +1390,9 @@
       "price_numeric": 33300,
       "price_tier": "3만원대",
       "usp": "일반구성",
-      "rank_delta": "NEW",
-      "is_new_entry": true
+      "rank_delta": "",
+      "is_new_entry": false,
+      "rank_comparison_status": "unavailable"
     },
     {
       "category": "리빙 전체",
@@ -1325,8 +1407,9 @@
       "price_numeric": 63000,
       "price_tier": "5만원 이상",
       "usp": "일반구성",
-      "rank_delta": "NEW",
-      "is_new_entry": true
+      "rank_delta": "",
+      "is_new_entry": false,
+      "rank_comparison_status": "unavailable"
     },
     {
       "category": "리빙 전체",
@@ -1341,8 +1424,9 @@
       "price_numeric": 12900,
       "price_tier": "1만원대",
       "usp": "일반구성",
-      "rank_delta": "NEW",
-      "is_new_entry": true
+      "rank_delta": "",
+      "is_new_entry": false,
+      "rank_comparison_status": "unavailable"
     },
     {
       "category": "리빙 전체",
@@ -1357,8 +1441,9 @@
       "price_numeric": 38900,
       "price_tier": "3만원대",
       "usp": "단독구성",
-      "rank_delta": "NEW",
-      "is_new_entry": true
+      "rank_delta": "",
+      "is_new_entry": false,
+      "rank_comparison_status": "unavailable"
     },
     {
       "category": "리빙 전체",
@@ -1373,8 +1458,9 @@
       "price_numeric": 59810,
       "price_tier": "5만원 이상",
       "usp": "단독구성",
-      "rank_delta": "NEW",
-      "is_new_entry": true
+      "rank_delta": "",
+      "is_new_entry": false,
+      "rank_comparison_status": "unavailable"
     },
     {
       "category": "리빙 전체",
@@ -1389,8 +1475,9 @@
       "price_numeric": 9900,
       "price_tier": "1만원 미만",
       "usp": "단독구성",
-      "rank_delta": "NEW",
-      "is_new_entry": true
+      "rank_delta": "",
+      "is_new_entry": false,
+      "rank_comparison_status": "unavailable"
     },
     {
       "category": "리빙 전체",
@@ -1405,8 +1492,9 @@
       "price_numeric": 17800,
       "price_tier": "1만원대",
       "usp": "단독구성",
-      "rank_delta": "NEW",
-      "is_new_entry": true
+      "rank_delta": "",
+      "is_new_entry": false,
+      "rank_comparison_status": "unavailable"
     },
     {
       "category": "리빙 전체",
@@ -1421,8 +1509,9 @@
       "price_numeric": 23000,
       "price_tier": "2만원대",
       "usp": "일반구성",
-      "rank_delta": "NEW",
-      "is_new_entry": true
+      "rank_delta": "",
+      "is_new_entry": false,
+      "rank_comparison_status": "unavailable"
     },
     {
       "category": "리빙 전체",
@@ -1437,8 +1526,9 @@
       "price_numeric": 22000,
       "price_tier": "2만원대",
       "usp": "일반구성",
-      "rank_delta": "NEW",
-      "is_new_entry": true
+      "rank_delta": "",
+      "is_new_entry": false,
+      "rank_comparison_status": "unavailable"
     },
     {
       "category": "리빙 전체",
@@ -1453,8 +1543,9 @@
       "price_numeric": 97750,
       "price_tier": "5만원 이상",
       "usp": "일반구성",
-      "rank_delta": "NEW",
-      "is_new_entry": true
+      "rank_delta": "-42",
+      "is_new_entry": false,
+      "rank_comparison_status": "compared"
     },
     {
       "category": "리빙 전체",
@@ -1469,8 +1560,9 @@
       "price_numeric": 33800,
       "price_tier": "3만원대",
       "usp": "단독구성",
-      "rank_delta": "NEW",
-      "is_new_entry": true
+      "rank_delta": "",
+      "is_new_entry": false,
+      "rank_comparison_status": "unavailable"
     },
     {
       "category": "리빙 전체",
@@ -1485,8 +1577,9 @@
       "price_numeric": 14900,
       "price_tier": "1만원대",
       "usp": "단독구성",
-      "rank_delta": "NEW",
-      "is_new_entry": true
+      "rank_delta": "",
+      "is_new_entry": false,
+      "rank_comparison_status": "unavailable"
     },
     {
       "category": "리빙 전체",
@@ -1501,8 +1594,9 @@
       "price_numeric": 29900,
       "price_tier": "2만원대",
       "usp": "단독구성",
-      "rank_delta": "NEW",
-      "is_new_entry": true
+      "rank_delta": "",
+      "is_new_entry": false,
+      "rank_comparison_status": "unavailable"
     },
     {
       "category": "리빙 전체",
@@ -1517,8 +1611,9 @@
       "price_numeric": 16800,
       "price_tier": "1만원대",
       "usp": "일반구성",
-      "rank_delta": "NEW",
-      "is_new_entry": true
+      "rank_delta": "",
+      "is_new_entry": false,
+      "rank_comparison_status": "unavailable"
     },
     {
       "category": "리빙 전체",
@@ -1533,8 +1628,9 @@
       "price_numeric": 15800,
       "price_tier": "1만원대",
       "usp": "단독구성",
-      "rank_delta": "NEW",
-      "is_new_entry": true
+      "rank_delta": "",
+      "is_new_entry": false,
+      "rank_comparison_status": "unavailable"
     },
     {
       "category": "리빙 전체",
@@ -1549,8 +1645,9 @@
       "price_numeric": 25900,
       "price_tier": "2만원대",
       "usp": "단독구성",
-      "rank_delta": "NEW",
-      "is_new_entry": true
+      "rank_delta": "",
+      "is_new_entry": false,
+      "rank_comparison_status": "unavailable"
     },
     {
       "category": "리빙 전체",
@@ -1565,8 +1662,9 @@
       "price_numeric": 33300,
       "price_tier": "3만원대",
       "usp": "일반구성",
-      "rank_delta": "NEW",
-      "is_new_entry": true
+      "rank_delta": "",
+      "is_new_entry": false,
+      "rank_comparison_status": "unavailable"
     },
     {
       "category": "리빙 전체",
@@ -1581,8 +1679,9 @@
       "price_numeric": 18800,
       "price_tier": "1만원대",
       "usp": "일반구성",
-      "rank_delta": "NEW",
-      "is_new_entry": true
+      "rank_delta": "",
+      "is_new_entry": false,
+      "rank_comparison_status": "unavailable"
     },
     {
       "category": "리빙 전체",
@@ -1597,8 +1696,9 @@
       "price_numeric": 46000,
       "price_tier": "4만원대",
       "usp": "일반구성",
-      "rank_delta": "NEW",
-      "is_new_entry": true
+      "rank_delta": "",
+      "is_new_entry": false,
+      "rank_comparison_status": "unavailable"
     },
     {
       "category": "팬시/문구/취미 (IP핵심)",
@@ -1614,7 +1714,8 @@
       "price_tier": "1만원대",
       "usp": "일반구성",
       "rank_delta": "NEW",
-      "is_new_entry": true
+      "is_new_entry": true,
+      "rank_comparison_status": "new"
     },
     {
       "category": "팬시/문구/취미 (IP핵심)",
@@ -1630,7 +1731,8 @@
       "price_tier": "1만원대",
       "usp": "일반구성",
       "rank_delta": "-1",
-      "is_new_entry": false
+      "is_new_entry": false,
+      "rank_comparison_status": "compared"
     },
     {
       "category": "팬시/문구/취미 (IP핵심)",
@@ -1645,8 +1747,9 @@
       "price_numeric": 12800,
       "price_tier": "1만원대",
       "usp": "일반구성",
-      "rank_delta": "NEW",
-      "is_new_entry": true
+      "rank_delta": "-1",
+      "is_new_entry": false,
+      "rank_comparison_status": "compared"
     },
     {
       "category": "팬시/문구/취미 (IP핵심)",
@@ -1662,7 +1765,8 @@
       "price_tier": "1만원 미만",
       "usp": "일반구성",
       "rank_delta": "NEW",
-      "is_new_entry": true
+      "is_new_entry": true,
+      "rank_comparison_status": "new"
     },
     {
       "category": "팬시/문구/취미 (IP핵심)",
@@ -1678,7 +1782,8 @@
       "price_tier": "1만원대",
       "usp": "일반구성",
       "rank_delta": "NEW",
-      "is_new_entry": true
+      "is_new_entry": true,
+      "rank_comparison_status": "new"
     },
     {
       "category": "팬시/문구/취미 (IP핵심)",
@@ -1693,8 +1798,9 @@
       "price_numeric": 16300,
       "price_tier": "1만원대",
       "usp": "일반구성",
-      "rank_delta": "NEW",
-      "is_new_entry": true
+      "rank_delta": "-1",
+      "is_new_entry": false,
+      "rank_comparison_status": "compared"
     },
     {
       "category": "팬시/문구/취미 (IP핵심)",
@@ -1710,7 +1816,8 @@
       "price_tier": "1만원 미만",
       "usp": "일반구성",
       "rank_delta": "-4",
-      "is_new_entry": false
+      "is_new_entry": false,
+      "rank_comparison_status": "compared"
     },
     {
       "category": "팬시/문구/취미 (IP핵심)",
@@ -1726,7 +1833,8 @@
       "price_tier": "3만원대",
       "usp": "각인/자수",
       "rank_delta": "-4",
-      "is_new_entry": false
+      "is_new_entry": false,
+      "rank_comparison_status": "compared"
     },
     {
       "category": "팬시/문구/취미 (IP핵심)",
@@ -1742,7 +1850,8 @@
       "price_tier": "1만원대",
       "usp": "일반구성",
       "rank_delta": "-3",
-      "is_new_entry": false
+      "is_new_entry": false,
+      "rank_comparison_status": "compared"
     },
     {
       "category": "팬시/문구/취미 (IP핵심)",
@@ -1757,8 +1866,9 @@
       "price_numeric": 14800,
       "price_tier": "1만원대",
       "usp": "일반구성",
-      "rank_delta": "NEW",
-      "is_new_entry": true
+      "rank_delta": "-2",
+      "is_new_entry": false,
+      "rank_comparison_status": "compared"
     },
     {
       "category": "팬시/문구/취미 (IP핵심)",
@@ -1774,7 +1884,8 @@
       "price_tier": "1만원 미만",
       "usp": "일반구성",
       "rank_delta": "-4",
-      "is_new_entry": false
+      "is_new_entry": false,
+      "rank_comparison_status": "compared"
     },
     {
       "category": "팬시/문구/취미 (IP핵심)",
@@ -1790,7 +1901,8 @@
       "price_tier": "1만원대",
       "usp": "일반구성",
       "rank_delta": "-3",
-      "is_new_entry": false
+      "is_new_entry": false,
+      "rank_comparison_status": "compared"
     },
     {
       "category": "팬시/문구/취미 (IP핵심)",
@@ -1806,7 +1918,8 @@
       "price_tier": "1만원대",
       "usp": "일반구성",
       "rank_delta": "1",
-      "is_new_entry": false
+      "is_new_entry": false,
+      "rank_comparison_status": "compared"
     },
     {
       "category": "팬시/문구/취미 (IP핵심)",
@@ -1822,7 +1935,8 @@
       "price_tier": "2만원대",
       "usp": "단독구성",
       "rank_delta": "-2",
-      "is_new_entry": false
+      "is_new_entry": false,
+      "rank_comparison_status": "compared"
     },
     {
       "category": "팬시/문구/취미 (IP핵심)",
@@ -1837,8 +1951,9 @@
       "price_numeric": 15000,
       "price_tier": "1만원대",
       "usp": "일반구성",
-      "rank_delta": "NEW",
-      "is_new_entry": true
+      "rank_delta": "5",
+      "is_new_entry": false,
+      "rank_comparison_status": "compared"
     },
     {
       "category": "팬시/문구/취미 (IP핵심)",
@@ -1854,7 +1969,8 @@
       "price_tier": "1만원대",
       "usp": "일반구성",
       "rank_delta": "NEW",
-      "is_new_entry": true
+      "is_new_entry": true,
+      "rank_comparison_status": "new"
     },
     {
       "category": "팬시/문구/취미 (IP핵심)",
@@ -1869,8 +1985,9 @@
       "price_numeric": 5000,
       "price_tier": "1만원 미만",
       "usp": "일반구성",
-      "rank_delta": "NEW",
-      "is_new_entry": true
+      "rank_delta": "-7",
+      "is_new_entry": false,
+      "rank_comparison_status": "compared"
     },
     {
       "category": "팬시/문구/취미 (IP핵심)",
@@ -1885,8 +2002,9 @@
       "price_numeric": 35000,
       "price_tier": "3만원대",
       "usp": "일반구성",
-      "rank_delta": "NEW",
-      "is_new_entry": true
+      "rank_delta": "-5",
+      "is_new_entry": false,
+      "rank_comparison_status": "compared"
     },
     {
       "category": "팬시/문구/취미 (IP핵심)",
@@ -1902,7 +2020,8 @@
       "price_tier": "1만원대",
       "usp": "일반구성",
       "rank_delta": "-3",
-      "is_new_entry": false
+      "is_new_entry": false,
+      "rank_comparison_status": "compared"
     },
     {
       "category": "팬시/문구/취미 (IP핵심)",
@@ -1917,8 +2036,9 @@
       "price_numeric": 16900,
       "price_tier": "1만원대",
       "usp": "선물포장, 단독구성",
-      "rank_delta": "NEW",
-      "is_new_entry": true
+      "rank_delta": "-9",
+      "is_new_entry": false,
+      "rank_comparison_status": "compared"
     },
     {
       "category": "팬시/문구/취미 (IP핵심)",
@@ -1934,7 +2054,8 @@
       "price_tier": "1만원대",
       "usp": "일반구성",
       "rank_delta": "7",
-      "is_new_entry": false
+      "is_new_entry": false,
+      "rank_comparison_status": "compared"
     },
     {
       "category": "팬시/문구/취미 (IP핵심)",
@@ -1949,8 +2070,9 @@
       "price_numeric": 18800,
       "price_tier": "1만원대",
       "usp": "단독구성",
-      "rank_delta": "NEW",
-      "is_new_entry": true
+      "rank_delta": "-3",
+      "is_new_entry": false,
+      "rank_comparison_status": "compared"
     },
     {
       "category": "팬시/문구/취미 (IP핵심)",
@@ -1965,8 +2087,9 @@
       "price_numeric": 7200,
       "price_tier": "1만원 미만",
       "usp": "일반구성",
-      "rank_delta": "NEW",
-      "is_new_entry": true
+      "rank_delta": "-1",
+      "is_new_entry": false,
+      "rank_comparison_status": "compared"
     },
     {
       "category": "팬시/문구/취미 (IP핵심)",
@@ -1982,7 +2105,8 @@
       "price_tier": "1만원 미만",
       "usp": "일반구성",
       "rank_delta": "-6",
-      "is_new_entry": false
+      "is_new_entry": false,
+      "rank_comparison_status": "compared"
     },
     {
       "category": "팬시/문구/취미 (IP핵심)",
@@ -1997,8 +2121,9 @@
       "price_numeric": 19500,
       "price_tier": "1만원대",
       "usp": "일반구성",
-      "rank_delta": "NEW",
-      "is_new_entry": true
+      "rank_delta": "-10",
+      "is_new_entry": false,
+      "rank_comparison_status": "compared"
     },
     {
       "category": "팬시/문구/취미 (IP핵심)",
@@ -2013,8 +2138,9 @@
       "price_numeric": 5400,
       "price_tier": "1만원 미만",
       "usp": "일반구성",
-      "rank_delta": "NEW",
-      "is_new_entry": true
+      "rank_delta": "1",
+      "is_new_entry": false,
+      "rank_comparison_status": "compared"
     },
     {
       "category": "팬시/문구/취미 (IP핵심)",
@@ -2030,7 +2156,8 @@
       "price_tier": "1만원 미만",
       "usp": "일반구성",
       "rank_delta": "11",
-      "is_new_entry": false
+      "is_new_entry": false,
+      "rank_comparison_status": "compared"
     },
     {
       "category": "팬시/문구/취미 (IP핵심)",
@@ -2045,8 +2172,9 @@
       "price_numeric": 31800,
       "price_tier": "3만원대",
       "usp": "일반구성",
-      "rank_delta": "NEW",
-      "is_new_entry": true
+      "rank_delta": "3",
+      "is_new_entry": false,
+      "rank_comparison_status": "compared"
     },
     {
       "category": "팬시/문구/취미 (IP핵심)",
@@ -2062,7 +2190,8 @@
       "price_tier": "1만원대",
       "usp": "일반구성",
       "rank_delta": "-6",
-      "is_new_entry": false
+      "is_new_entry": false,
+      "rank_comparison_status": "compared"
     },
     {
       "category": "팬시/문구/취미 (IP핵심)",
@@ -2078,7 +2207,8 @@
       "price_tier": "1만원 미만",
       "usp": "일반구성",
       "rank_delta": "NEW",
-      "is_new_entry": true
+      "is_new_entry": true,
+      "rank_comparison_status": "new"
     },
     {
       "category": "팬시/문구/취미 (IP핵심)",
@@ -2094,7 +2224,8 @@
       "price_tier": "2만원대",
       "usp": "일반구성",
       "rank_delta": "NEW",
-      "is_new_entry": true
+      "is_new_entry": true,
+      "rank_comparison_status": "new"
     },
     {
       "category": "팬시/문구/취미 (IP핵심)",
@@ -2110,7 +2241,8 @@
       "price_tier": "1만원 미만",
       "usp": "일반구성",
       "rank_delta": "NEW",
-      "is_new_entry": true
+      "is_new_entry": true,
+      "rank_comparison_status": "new"
     },
     {
       "category": "팬시/문구/취미 (IP핵심)",
@@ -2126,7 +2258,8 @@
       "price_tier": "1만원 미만",
       "usp": "일반구성",
       "rank_delta": "-16",
-      "is_new_entry": false
+      "is_new_entry": false,
+      "rank_comparison_status": "compared"
     },
     {
       "category": "팬시/문구/취미 (IP핵심)",
@@ -2141,8 +2274,9 @@
       "price_numeric": 16000,
       "price_tier": "1만원대",
       "usp": "일반구성",
-      "rank_delta": "NEW",
-      "is_new_entry": true
+      "rank_delta": "-5",
+      "is_new_entry": false,
+      "rank_comparison_status": "compared"
     },
     {
       "category": "팬시/문구/취미 (IP핵심)",
@@ -2157,8 +2291,9 @@
       "price_numeric": 8500,
       "price_tier": "1만원 미만",
       "usp": "일반구성",
-      "rank_delta": "NEW",
-      "is_new_entry": true
+      "rank_delta": "-14",
+      "is_new_entry": false,
+      "rank_comparison_status": "compared"
     },
     {
       "category": "팬시/문구/취미 (IP핵심)",
@@ -2174,7 +2309,8 @@
       "price_tier": "2만원대",
       "usp": "일반구성",
       "rank_delta": "NEW",
-      "is_new_entry": true
+      "is_new_entry": true,
+      "rank_comparison_status": "new"
     },
     {
       "category": "팬시/문구/취미 (IP핵심)",
@@ -2190,7 +2326,8 @@
       "price_tier": "1만원대",
       "usp": "일반구성",
       "rank_delta": "NEW",
-      "is_new_entry": true
+      "is_new_entry": true,
+      "rank_comparison_status": "new"
     },
     {
       "category": "팬시/문구/취미 (IP핵심)",
@@ -2205,8 +2342,9 @@
       "price_numeric": 5900,
       "price_tier": "1만원 미만",
       "usp": "일반구성",
-      "rank_delta": "NEW",
-      "is_new_entry": true
+      "rank_delta": "-1",
+      "is_new_entry": false,
+      "rank_comparison_status": "compared"
     },
     {
       "category": "팬시/문구/취미 (IP핵심)",
@@ -2222,7 +2360,8 @@
       "price_tier": "2만원대",
       "usp": "일반구성",
       "rank_delta": "NEW",
-      "is_new_entry": true
+      "is_new_entry": true,
+      "rank_comparison_status": "new"
     },
     {
       "category": "팬시/문구/취미 (IP핵심)",
@@ -2237,8 +2376,9 @@
       "price_numeric": 14900,
       "price_tier": "1만원대",
       "usp": "일반구성",
-      "rank_delta": "NEW",
-      "is_new_entry": true
+      "rank_delta": "-8",
+      "is_new_entry": false,
+      "rank_comparison_status": "compared"
     },
     {
       "category": "팬시/문구/취미 (IP핵심)",
@@ -2253,8 +2393,9 @@
       "price_numeric": 15000,
       "price_tier": "1만원대",
       "usp": "일반구성",
-      "rank_delta": "NEW",
-      "is_new_entry": true
+      "rank_delta": "-8",
+      "is_new_entry": false,
+      "rank_comparison_status": "compared"
     },
     {
       "category": "팬시/문구/취미 (IP핵심)",
@@ -2270,7 +2411,8 @@
       "price_tier": "3만원대",
       "usp": "각인/자수",
       "rank_delta": "-1",
-      "is_new_entry": false
+      "is_new_entry": false,
+      "rank_comparison_status": "compared"
     },
     {
       "category": "팬시/문구/취미 (IP핵심)",
@@ -2286,7 +2428,8 @@
       "price_tier": "1만원대",
       "usp": "일반구성",
       "rank_delta": "NEW",
-      "is_new_entry": true
+      "is_new_entry": true,
+      "rank_comparison_status": "new"
     },
     {
       "category": "팬시/문구/취미 (IP핵심)",
@@ -2302,7 +2445,8 @@
       "price_tier": "2만원대",
       "usp": "일반구성",
       "rank_delta": "NEW",
-      "is_new_entry": true
+      "is_new_entry": true,
+      "rank_comparison_status": "new"
     },
     {
       "category": "팬시/문구/취미 (IP핵심)",
@@ -2317,8 +2461,9 @@
       "price_numeric": 9900,
       "price_tier": "1만원 미만",
       "usp": "일반구성",
-      "rank_delta": "NEW",
-      "is_new_entry": true
+      "rank_delta": "-20",
+      "is_new_entry": false,
+      "rank_comparison_status": "compared"
     },
     {
       "category": "팬시/문구/취미 (IP핵심)",
@@ -2333,8 +2478,9 @@
       "price_numeric": 36000,
       "price_tier": "3만원대",
       "usp": "선물포장",
-      "rank_delta": "NEW",
-      "is_new_entry": true
+      "rank_delta": "-2",
+      "is_new_entry": false,
+      "rank_comparison_status": "compared"
     },
     {
       "category": "팬시/문구/취미 (IP핵심)",
@@ -2349,8 +2495,9 @@
       "price_numeric": 9900,
       "price_tier": "1만원 미만",
       "usp": "일반구성",
-      "rank_delta": "NEW",
-      "is_new_entry": true
+      "rank_delta": "-2",
+      "is_new_entry": false,
+      "rank_comparison_status": "compared"
     },
     {
       "category": "팬시/문구/취미 (IP핵심)",
@@ -2366,7 +2513,8 @@
       "price_tier": "1만원대",
       "usp": "일반구성",
       "rank_delta": "NEW",
-      "is_new_entry": true
+      "is_new_entry": true,
+      "rank_comparison_status": "new"
     },
     {
       "category": "팬시/문구/취미 (IP핵심)",
@@ -2381,8 +2529,9 @@
       "price_numeric": 32000,
       "price_tier": "3만원대",
       "usp": "단독구성",
-      "rank_delta": "NEW",
-      "is_new_entry": true
+      "rank_delta": "-10",
+      "is_new_entry": false,
+      "rank_comparison_status": "compared"
     },
     {
       "category": "팬시/문구/취미 (IP핵심)",
@@ -2397,8 +2546,9 @@
       "price_numeric": 12000,
       "price_tier": "1만원대",
       "usp": "일반구성",
-      "rank_delta": "NEW",
-      "is_new_entry": true
+      "rank_delta": "-20",
+      "is_new_entry": false,
+      "rank_comparison_status": "compared"
     },
     {
       "category": "팬시/문구/취미 (IP핵심)",
@@ -2413,8 +2563,9 @@
       "price_numeric": 15000,
       "price_tier": "1만원대",
       "usp": "단독구성",
-      "rank_delta": "NEW",
-      "is_new_entry": true
+      "rank_delta": "",
+      "is_new_entry": false,
+      "rank_comparison_status": "unavailable"
     },
     {
       "category": "팬시/문구/취미 (IP핵심)",
@@ -2429,8 +2580,9 @@
       "price_numeric": 25000,
       "price_tier": "2만원대",
       "usp": "단독구성",
-      "rank_delta": "NEW",
-      "is_new_entry": true
+      "rank_delta": "",
+      "is_new_entry": false,
+      "rank_comparison_status": "unavailable"
     },
     {
       "category": "팬시/문구/취미 (IP핵심)",
@@ -2445,8 +2597,9 @@
       "price_numeric": 15900,
       "price_tier": "1만원대",
       "usp": "일반구성",
-      "rank_delta": "NEW",
-      "is_new_entry": true
+      "rank_delta": "-27",
+      "is_new_entry": false,
+      "rank_comparison_status": "compared"
     },
     {
       "category": "팬시/문구/취미 (IP핵심)",
@@ -2461,8 +2614,9 @@
       "price_numeric": 29000,
       "price_tier": "2만원대",
       "usp": "일반구성",
-      "rank_delta": "NEW",
-      "is_new_entry": true
+      "rank_delta": "",
+      "is_new_entry": false,
+      "rank_comparison_status": "unavailable"
     },
     {
       "category": "팬시/문구/취미 (IP핵심)",
@@ -2478,7 +2632,8 @@
       "price_tier": "1만원 미만",
       "usp": "일반구성",
       "rank_delta": "-8",
-      "is_new_entry": false
+      "is_new_entry": false,
+      "rank_comparison_status": "compared"
     },
     {
       "category": "팬시/문구/취미 (IP핵심)",
@@ -2494,7 +2649,8 @@
       "price_tier": "1만원대",
       "usp": "선물포장, 단독구성",
       "rank_delta": "-10",
-      "is_new_entry": false
+      "is_new_entry": false,
+      "rank_comparison_status": "compared"
     },
     {
       "category": "팬시/문구/취미 (IP핵심)",
@@ -2510,7 +2666,8 @@
       "price_tier": "3만원대",
       "usp": "일반구성",
       "rank_delta": "-14",
-      "is_new_entry": false
+      "is_new_entry": false,
+      "rank_comparison_status": "compared"
     },
     {
       "category": "팬시/문구/취미 (IP핵심)",
@@ -2526,7 +2683,8 @@
       "price_tier": "1만원 미만",
       "usp": "일반구성",
       "rank_delta": "-16",
-      "is_new_entry": false
+      "is_new_entry": false,
+      "rank_comparison_status": "compared"
     },
     {
       "category": "팬시/문구/취미 (IP핵심)",
@@ -2541,8 +2699,9 @@
       "price_numeric": 5100,
       "price_tier": "1만원 미만",
       "usp": "일반구성",
-      "rank_delta": "NEW",
-      "is_new_entry": true
+      "rank_delta": "",
+      "is_new_entry": false,
+      "rank_comparison_status": "unavailable"
     },
     {
       "category": "팬시/문구/취미 (IP핵심)",
@@ -2557,8 +2716,9 @@
       "price_numeric": 7900,
       "price_tier": "1만원 미만",
       "usp": "일반구성",
-      "rank_delta": "NEW",
-      "is_new_entry": true
+      "rank_delta": "-26",
+      "is_new_entry": false,
+      "rank_comparison_status": "compared"
     },
     {
       "category": "팬시/문구/취미 (IP핵심)",
@@ -2573,8 +2733,9 @@
       "price_numeric": 13600,
       "price_tier": "1만원대",
       "usp": "단독구성",
-      "rank_delta": "NEW",
-      "is_new_entry": true
+      "rank_delta": "-21",
+      "is_new_entry": false,
+      "rank_comparison_status": "compared"
     },
     {
       "category": "팬시/문구/취미 (IP핵심)",
@@ -2589,8 +2750,9 @@
       "price_numeric": 11800,
       "price_tier": "1만원대",
       "usp": "일반구성",
-      "rank_delta": "NEW",
-      "is_new_entry": true
+      "rank_delta": "",
+      "is_new_entry": false,
+      "rank_comparison_status": "unavailable"
     },
     {
       "category": "팬시/문구/취미 (IP핵심)",
@@ -2605,8 +2767,9 @@
       "price_numeric": 13900,
       "price_tier": "1만원대",
       "usp": "일반구성",
-      "rank_delta": "NEW",
-      "is_new_entry": true
+      "rank_delta": "",
+      "is_new_entry": false,
+      "rank_comparison_status": "unavailable"
     },
     {
       "category": "팬시/문구/취미 (IP핵심)",
@@ -2621,8 +2784,9 @@
       "price_numeric": 35800,
       "price_tier": "3만원대",
       "usp": "일반구성",
-      "rank_delta": "NEW",
-      "is_new_entry": true
+      "rank_delta": "",
+      "is_new_entry": false,
+      "rank_comparison_status": "unavailable"
     },
     {
       "category": "팬시/문구/취미 (IP핵심)",
@@ -2637,8 +2801,9 @@
       "price_numeric": 4500,
       "price_tier": "1만원 미만",
       "usp": "일반구성",
-      "rank_delta": "NEW",
-      "is_new_entry": true
+      "rank_delta": "",
+      "is_new_entry": false,
+      "rank_comparison_status": "unavailable"
     },
     {
       "category": "팬시/문구/취미 (IP핵심)",
@@ -2653,8 +2818,9 @@
       "price_numeric": 17900,
       "price_tier": "1만원대",
       "usp": "일반구성",
-      "rank_delta": "NEW",
-      "is_new_entry": true
+      "rank_delta": "",
+      "is_new_entry": false,
+      "rank_comparison_status": "unavailable"
     },
     {
       "category": "팬시/문구/취미 (IP핵심)",
@@ -2669,8 +2835,9 @@
       "price_numeric": 8800,
       "price_tier": "1만원 미만",
       "usp": "일반구성",
-      "rank_delta": "NEW",
-      "is_new_entry": true
+      "rank_delta": "-31",
+      "is_new_entry": false,
+      "rank_comparison_status": "compared"
     },
     {
       "category": "팬시/문구/취미 (IP핵심)",
@@ -2685,8 +2852,9 @@
       "price_numeric": 18900,
       "price_tier": "1만원대",
       "usp": "일반구성",
-      "rank_delta": "NEW",
-      "is_new_entry": true
+      "rank_delta": "",
+      "is_new_entry": false,
+      "rank_comparison_status": "unavailable"
     },
     {
       "category": "팬시/문구/취미 (IP핵심)",
@@ -2701,8 +2869,9 @@
       "price_numeric": 13000,
       "price_tier": "1만원대",
       "usp": "일반구성",
-      "rank_delta": "NEW",
-      "is_new_entry": true
+      "rank_delta": "",
+      "is_new_entry": false,
+      "rank_comparison_status": "unavailable"
     },
     {
       "category": "팬시/문구/취미 (IP핵심)",
@@ -2717,8 +2886,9 @@
       "price_numeric": 12900,
       "price_tier": "1만원대",
       "usp": "일반구성",
-      "rank_delta": "NEW",
-      "is_new_entry": true
+      "rank_delta": "",
+      "is_new_entry": false,
+      "rank_comparison_status": "unavailable"
     },
     {
       "category": "팬시/문구/취미 (IP핵심)",
@@ -2733,8 +2903,9 @@
       "price_numeric": 9900,
       "price_tier": "1만원 미만",
       "usp": "일반구성",
-      "rank_delta": "NEW",
-      "is_new_entry": true
+      "rank_delta": "-47",
+      "is_new_entry": false,
+      "rank_comparison_status": "compared"
     },
     {
       "category": "팬시/문구/취미 (IP핵심)",
@@ -2749,8 +2920,9 @@
       "price_numeric": 6500,
       "price_tier": "1만원 미만",
       "usp": "일반구성",
-      "rank_delta": "NEW",
-      "is_new_entry": true
+      "rank_delta": "",
+      "is_new_entry": false,
+      "rank_comparison_status": "unavailable"
     },
     {
       "category": "팬시/문구/취미 (IP핵심)",
@@ -2765,8 +2937,9 @@
       "price_numeric": 9900,
       "price_tier": "1만원 미만",
       "usp": "일반구성",
-      "rank_delta": "NEW",
-      "is_new_entry": true
+      "rank_delta": "-25",
+      "is_new_entry": false,
+      "rank_comparison_status": "compared"
     },
     {
       "category": "팬시/문구/취미 (IP핵심)",
@@ -2781,8 +2954,9 @@
       "price_numeric": 9800,
       "price_tier": "1만원 미만",
       "usp": "일반구성",
-      "rank_delta": "NEW",
-      "is_new_entry": true
+      "rank_delta": "",
+      "is_new_entry": false,
+      "rank_comparison_status": "unavailable"
     },
     {
       "category": "팬시/문구/취미 (IP핵심)",
@@ -2797,8 +2971,9 @@
       "price_numeric": 13000,
       "price_tier": "1만원대",
       "usp": "일반구성",
-      "rank_delta": "NEW",
-      "is_new_entry": true
+      "rank_delta": "",
+      "is_new_entry": false,
+      "rank_comparison_status": "unavailable"
     },
     {
       "category": "팬시/문구/취미 (IP핵심)",
@@ -2813,8 +2988,9 @@
       "price_numeric": 9200,
       "price_tier": "1만원 미만",
       "usp": "일반구성",
-      "rank_delta": "NEW",
-      "is_new_entry": true
+      "rank_delta": "",
+      "is_new_entry": false,
+      "rank_comparison_status": "unavailable"
     },
     {
       "category": "팬시/문구/취미 (IP핵심)",
@@ -2829,8 +3005,9 @@
       "price_numeric": 34000,
       "price_tier": "3만원대",
       "usp": "일반구성",
-      "rank_delta": "NEW",
-      "is_new_entry": true
+      "rank_delta": "-42",
+      "is_new_entry": false,
+      "rank_comparison_status": "compared"
     },
     {
       "category": "팬시/문구/취미 (IP핵심)",
@@ -2845,8 +3022,9 @@
       "price_numeric": 13900,
       "price_tier": "1만원대",
       "usp": "일반구성",
-      "rank_delta": "NEW",
-      "is_new_entry": true
+      "rank_delta": "",
+      "is_new_entry": false,
+      "rank_comparison_status": "unavailable"
     },
     {
       "category": "팬시/문구/취미 (IP핵심)",
@@ -2861,8 +3039,9 @@
       "price_numeric": 21900,
       "price_tier": "2만원대",
       "usp": "선물포장, 단독구성",
-      "rank_delta": "NEW",
-      "is_new_entry": true
+      "rank_delta": "",
+      "is_new_entry": false,
+      "rank_comparison_status": "unavailable"
     },
     {
       "category": "팬시/문구/취미 (IP핵심)",
@@ -2877,8 +3056,9 @@
       "price_numeric": 20000,
       "price_tier": "2만원대",
       "usp": "단독구성",
-      "rank_delta": "NEW",
-      "is_new_entry": true
+      "rank_delta": "",
+      "is_new_entry": false,
+      "rank_comparison_status": "unavailable"
     },
     {
       "category": "팬시/문구/취미 (IP핵심)",
@@ -2893,8 +3073,9 @@
       "price_numeric": 4750,
       "price_tier": "1만원 미만",
       "usp": "일반구성",
-      "rank_delta": "NEW",
-      "is_new_entry": true
+      "rank_delta": "",
+      "is_new_entry": false,
+      "rank_comparison_status": "unavailable"
     },
     {
       "category": "팬시/문구/취미 (IP핵심)",
@@ -2909,8 +3090,9 @@
       "price_numeric": 15000,
       "price_tier": "1만원대",
       "usp": "일반구성",
-      "rank_delta": "NEW",
-      "is_new_entry": true
+      "rank_delta": "",
+      "is_new_entry": false,
+      "rank_comparison_status": "unavailable"
     },
     {
       "category": "팬시/문구/취미 (IP핵심)",
@@ -2925,8 +3107,9 @@
       "price_numeric": 14000,
       "price_tier": "1만원대",
       "usp": "일반구성",
-      "rank_delta": "NEW",
-      "is_new_entry": true
+      "rank_delta": "",
+      "is_new_entry": false,
+      "rank_comparison_status": "unavailable"
     },
     {
       "category": "팬시/문구/취미 (IP핵심)",
@@ -2941,8 +3124,9 @@
       "price_numeric": 12000,
       "price_tier": "1만원대",
       "usp": "일반구성",
-      "rank_delta": "NEW",
-      "is_new_entry": true
+      "rank_delta": "",
+      "is_new_entry": false,
+      "rank_comparison_status": "unavailable"
     },
     {
       "category": "팬시/문구/취미 (IP핵심)",
@@ -2957,8 +3141,9 @@
       "price_numeric": 4900,
       "price_tier": "1만원 미만",
       "usp": "일반구성",
-      "rank_delta": "NEW",
-      "is_new_entry": true
+      "rank_delta": "",
+      "is_new_entry": false,
+      "rank_comparison_status": "unavailable"
     },
     {
       "category": "팬시/문구/취미 (IP핵심)",
@@ -2973,8 +3158,9 @@
       "price_numeric": 15900,
       "price_tier": "1만원대",
       "usp": "일반구성",
-      "rank_delta": "NEW",
-      "is_new_entry": true
+      "rank_delta": "",
+      "is_new_entry": false,
+      "rank_comparison_status": "unavailable"
     },
     {
       "category": "팬시/문구/취미 (IP핵심)",
@@ -2989,8 +3175,9 @@
       "price_numeric": 35900,
       "price_tier": "3만원대",
       "usp": "단독구성",
-      "rank_delta": "NEW",
-      "is_new_entry": true
+      "rank_delta": "",
+      "is_new_entry": false,
+      "rank_comparison_status": "unavailable"
     },
     {
       "category": "팬시/문구/취미 (IP핵심)",
@@ -3005,8 +3192,9 @@
       "price_numeric": 12300,
       "price_tier": "1만원대",
       "usp": "단독구성",
-      "rank_delta": "NEW",
-      "is_new_entry": true
+      "rank_delta": "",
+      "is_new_entry": false,
+      "rank_comparison_status": "unavailable"
     },
     {
       "category": "팬시/문구/취미 (IP핵심)",
@@ -3021,8 +3209,9 @@
       "price_numeric": 49900,
       "price_tier": "4만원대",
       "usp": "단독구성",
-      "rank_delta": "NEW",
-      "is_new_entry": true
+      "rank_delta": "",
+      "is_new_entry": false,
+      "rank_comparison_status": "unavailable"
     },
     {
       "category": "팬시/문구/취미 (IP핵심)",
@@ -3037,8 +3226,9 @@
       "price_numeric": 5800,
       "price_tier": "1만원 미만",
       "usp": "일반구성",
-      "rank_delta": "NEW",
-      "is_new_entry": true
+      "rank_delta": "",
+      "is_new_entry": false,
+      "rank_comparison_status": "unavailable"
     },
     {
       "category": "팬시/문구/취미 (IP핵심)",
@@ -3053,8 +3243,9 @@
       "price_numeric": 4000,
       "price_tier": "1만원 미만",
       "usp": "일반구성",
-      "rank_delta": "NEW",
-      "is_new_entry": true
+      "rank_delta": "",
+      "is_new_entry": false,
+      "rank_comparison_status": "unavailable"
     },
     {
       "category": "팬시/문구/취미 (IP핵심)",
@@ -3069,8 +3260,9 @@
       "price_numeric": 17000,
       "price_tier": "1만원대",
       "usp": "단독구성",
-      "rank_delta": "NEW",
-      "is_new_entry": true
+      "rank_delta": "",
+      "is_new_entry": false,
+      "rank_comparison_status": "unavailable"
     },
     {
       "category": "팬시/문구/취미 (IP핵심)",
@@ -3085,8 +3277,9 @@
       "price_numeric": 12900,
       "price_tier": "1만원대",
       "usp": "일반구성",
-      "rank_delta": "NEW",
-      "is_new_entry": true
+      "rank_delta": "",
+      "is_new_entry": false,
+      "rank_comparison_status": "unavailable"
     },
     {
       "category": "팬시/문구/취미 (IP핵심)",
@@ -3101,8 +3294,9 @@
       "price_numeric": 11900,
       "price_tier": "1만원대",
       "usp": "단독구성",
-      "rank_delta": "NEW",
-      "is_new_entry": true
+      "rank_delta": "",
+      "is_new_entry": false,
+      "rank_comparison_status": "unavailable"
     },
     {
       "category": "팬시/문구/취미 (IP핵심)",
@@ -3117,8 +3311,9 @@
       "price_numeric": 7990,
       "price_tier": "1만원 미만",
       "usp": "일반구성",
-      "rank_delta": "NEW",
-      "is_new_entry": true
+      "rank_delta": "",
+      "is_new_entry": false,
+      "rank_comparison_status": "unavailable"
     },
     {
       "category": "팬시/문구/취미 (IP핵심)",
@@ -3133,8 +3328,9 @@
       "price_numeric": 7200,
       "price_tier": "1만원 미만",
       "usp": "일반구성",
-      "rank_delta": "NEW",
-      "is_new_entry": true
+      "rank_delta": "",
+      "is_new_entry": false,
+      "rank_comparison_status": "unavailable"
     },
     {
       "category": "팬시/문구/취미 (IP핵심)",
@@ -3149,8 +3345,9 @@
       "price_numeric": 5900,
       "price_tier": "1만원 미만",
       "usp": "일반구성",
-      "rank_delta": "NEW",
-      "is_new_entry": true
+      "rank_delta": "",
+      "is_new_entry": false,
+      "rank_comparison_status": "unavailable"
     },
     {
       "category": "팬시/문구/취미 (IP핵심)",
@@ -3165,8 +3362,9 @@
       "price_numeric": 16900,
       "price_tier": "1만원대",
       "usp": "일반구성",
-      "rank_delta": "NEW",
-      "is_new_entry": true
+      "rank_delta": "",
+      "is_new_entry": false,
+      "rank_comparison_status": "unavailable"
     },
     {
       "category": "팬시/문구/취미 (IP핵심)",
@@ -3181,8 +3379,9 @@
       "price_numeric": 32000,
       "price_tier": "3만원대",
       "usp": "일반구성",
-      "rank_delta": "NEW",
-      "is_new_entry": true
+      "rank_delta": "",
+      "is_new_entry": false,
+      "rank_comparison_status": "unavailable"
     },
     {
       "category": "팬시/문구/취미 (IP핵심)",
@@ -3197,8 +3396,9 @@
       "price_numeric": 12900,
       "price_tier": "1만원대",
       "usp": "일반구성",
-      "rank_delta": "NEW",
-      "is_new_entry": true
+      "rank_delta": "",
+      "is_new_entry": false,
+      "rank_comparison_status": "unavailable"
     },
     {
       "category": "침구/패브릭",
@@ -3214,7 +3414,8 @@
       "price_tier": "2만원대",
       "usp": "일반구성",
       "rank_delta": "0",
-      "is_new_entry": false
+      "is_new_entry": false,
+      "rank_comparison_status": "compared"
     },
     {
       "category": "침구/패브릭",
@@ -3230,7 +3431,8 @@
       "price_tier": "3만원대",
       "usp": "단독구성",
       "rank_delta": "0",
-      "is_new_entry": false
+      "is_new_entry": false,
+      "rank_comparison_status": "compared"
     },
     {
       "category": "침구/패브릭",
@@ -3246,7 +3448,8 @@
       "price_tier": "2만원대",
       "usp": "일반구성",
       "rank_delta": "0",
-      "is_new_entry": false
+      "is_new_entry": false,
+      "rank_comparison_status": "compared"
     },
     {
       "category": "침구/패브릭",
@@ -3262,7 +3465,8 @@
       "price_tier": "2만원대",
       "usp": "단독구성",
       "rank_delta": "NEW",
-      "is_new_entry": true
+      "is_new_entry": true,
+      "rank_comparison_status": "new"
     },
     {
       "category": "침구/패브릭",
@@ -3277,8 +3481,9 @@
       "price_numeric": 17800,
       "price_tier": "1만원대",
       "usp": "일반구성",
-      "rank_delta": "NEW",
-      "is_new_entry": true
+      "rank_delta": "0",
+      "is_new_entry": false,
+      "rank_comparison_status": "compared"
     },
     {
       "category": "침구/패브릭",
@@ -3294,7 +3499,8 @@
       "price_tier": "4만원대",
       "usp": "단독구성",
       "rank_delta": "14",
-      "is_new_entry": false
+      "is_new_entry": false,
+      "rank_comparison_status": "compared"
     },
     {
       "category": "침구/패브릭",
@@ -3310,7 +3516,8 @@
       "price_tier": "2만원대",
       "usp": "단독구성",
       "rank_delta": "-3",
-      "is_new_entry": false
+      "is_new_entry": false,
+      "rank_comparison_status": "compared"
     },
     {
       "category": "침구/패브릭",
@@ -3325,8 +3532,9 @@
       "price_numeric": 16900,
       "price_tier": "1만원대",
       "usp": "일반구성",
-      "rank_delta": "NEW",
-      "is_new_entry": true
+      "rank_delta": "3",
+      "is_new_entry": false,
+      "rank_comparison_status": "compared"
     },
     {
       "category": "침구/패브릭",
@@ -3342,7 +3550,8 @@
       "price_tier": "3만원대",
       "usp": "단독구성",
       "rank_delta": "-3",
-      "is_new_entry": false
+      "is_new_entry": false,
+      "rank_comparison_status": "compared"
     },
     {
       "category": "침구/패브릭",
@@ -3358,7 +3567,8 @@
       "price_tier": "2만원대",
       "usp": "일반구성",
       "rank_delta": "-3",
-      "is_new_entry": false
+      "is_new_entry": false,
+      "rank_comparison_status": "compared"
     },
     {
       "category": "침구/패브릭",
@@ -3374,7 +3584,8 @@
       "price_tier": "2만원대",
       "usp": "단독구성",
       "rank_delta": "-2",
-      "is_new_entry": false
+      "is_new_entry": false,
+      "rank_comparison_status": "compared"
     },
     {
       "category": "침구/패브릭",
@@ -3390,7 +3601,8 @@
       "price_tier": "1만원대",
       "usp": "일반구성",
       "rank_delta": "-4",
-      "is_new_entry": false
+      "is_new_entry": false,
+      "rank_comparison_status": "compared"
     },
     {
       "category": "침구/패브릭",
@@ -3406,7 +3618,8 @@
       "price_tier": "3만원대",
       "usp": "단독구성",
       "rank_delta": "3",
-      "is_new_entry": false
+      "is_new_entry": false,
+      "rank_comparison_status": "compared"
     },
     {
       "category": "침구/패브릭",
@@ -3422,7 +3635,8 @@
       "price_tier": "1만원대",
       "usp": "일반구성",
       "rank_delta": "-4",
-      "is_new_entry": false
+      "is_new_entry": false,
+      "rank_comparison_status": "compared"
     },
     {
       "category": "침구/패브릭",
@@ -3438,7 +3652,8 @@
       "price_tier": "1만원대",
       "usp": "일반구성",
       "rank_delta": "-3",
-      "is_new_entry": false
+      "is_new_entry": false,
+      "rank_comparison_status": "compared"
     },
     {
       "category": "침구/패브릭",
@@ -3453,8 +3668,9 @@
       "price_numeric": 29000,
       "price_tier": "2만원대",
       "usp": "일반구성",
-      "rank_delta": "NEW",
-      "is_new_entry": true
+      "rank_delta": "-3",
+      "is_new_entry": false,
+      "rank_comparison_status": "compared"
     },
     {
       "category": "침구/패브릭",
@@ -3469,8 +3685,9 @@
       "price_numeric": 14900,
       "price_tier": "1만원대",
       "usp": "일반구성",
-      "rank_delta": "NEW",
-      "is_new_entry": true
+      "rank_delta": "-2",
+      "is_new_entry": false,
+      "rank_comparison_status": "compared"
     },
     {
       "category": "침구/패브릭",
@@ -3486,7 +3703,8 @@
       "price_tier": "1만원대",
       "usp": "일반구성",
       "rank_delta": "8",
-      "is_new_entry": false
+      "is_new_entry": false,
+      "rank_comparison_status": "compared"
     },
     {
       "category": "침구/패브릭",
@@ -3502,7 +3720,8 @@
       "price_tier": "1만원대",
       "usp": "단독구성",
       "rank_delta": "2",
-      "is_new_entry": false
+      "is_new_entry": false,
+      "rank_comparison_status": "compared"
     },
     {
       "category": "침구/패브릭",
@@ -3518,7 +3737,8 @@
       "price_tier": "1만원대",
       "usp": "일반구성",
       "rank_delta": "-1",
-      "is_new_entry": false
+      "is_new_entry": false,
+      "rank_comparison_status": "compared"
     },
     {
       "category": "침구/패브릭",
@@ -3534,7 +3754,8 @@
       "price_tier": "2만원대",
       "usp": "일반구성",
       "rank_delta": "6",
-      "is_new_entry": false
+      "is_new_entry": false,
+      "rank_comparison_status": "compared"
     },
     {
       "category": "침구/패브릭",
@@ -3550,7 +3771,8 @@
       "price_tier": "2만원대",
       "usp": "단독구성",
       "rank_delta": "1",
-      "is_new_entry": false
+      "is_new_entry": false,
+      "rank_comparison_status": "compared"
     },
     {
       "category": "침구/패브릭",
@@ -3566,7 +3788,8 @@
       "price_tier": "1만원대",
       "usp": "단독구성",
       "rank_delta": "21",
-      "is_new_entry": false
+      "is_new_entry": false,
+      "rank_comparison_status": "compared"
     },
     {
       "category": "침구/패브릭",
@@ -3582,7 +3805,8 @@
       "price_tier": "1만원대",
       "usp": "일반구성",
       "rank_delta": "15",
-      "is_new_entry": false
+      "is_new_entry": false,
+      "rank_comparison_status": "compared"
     },
     {
       "category": "침구/패브릭",
@@ -3597,8 +3821,9 @@
       "price_numeric": 19800,
       "price_tier": "1만원대",
       "usp": "일반구성",
-      "rank_delta": "NEW",
-      "is_new_entry": true
+      "rank_delta": "3",
+      "is_new_entry": false,
+      "rank_comparison_status": "compared"
     },
     {
       "category": "침구/패브릭",
@@ -3614,7 +3839,8 @@
       "price_tier": "1만원대",
       "usp": "단독구성",
       "rank_delta": "3",
-      "is_new_entry": false
+      "is_new_entry": false,
+      "rank_comparison_status": "compared"
     },
     {
       "category": "침구/패브릭",
@@ -3630,7 +3856,8 @@
       "price_tier": "2만원대",
       "usp": "단독구성",
       "rank_delta": "-10",
-      "is_new_entry": false
+      "is_new_entry": false,
+      "rank_comparison_status": "compared"
     },
     {
       "category": "침구/패브릭",
@@ -3646,7 +3873,8 @@
       "price_tier": "2만원대",
       "usp": "일반구성",
       "rank_delta": "2",
-      "is_new_entry": false
+      "is_new_entry": false,
+      "rank_comparison_status": "compared"
     },
     {
       "category": "침구/패브릭",
@@ -3662,7 +3890,8 @@
       "price_tier": "2만원대",
       "usp": "단독구성",
       "rank_delta": "-15",
-      "is_new_entry": false
+      "is_new_entry": false,
+      "rank_comparison_status": "compared"
     },
     {
       "category": "침구/패브릭",
@@ -3678,7 +3907,8 @@
       "price_tier": "1만원 미만",
       "usp": "일반구성",
       "rank_delta": "NEW",
-      "is_new_entry": true
+      "is_new_entry": true,
+      "rank_comparison_status": "new"
     },
     {
       "category": "침구/패브릭",
@@ -3694,7 +3924,8 @@
       "price_tier": "2만원대",
       "usp": "일반구성",
       "rank_delta": "-7",
-      "is_new_entry": false
+      "is_new_entry": false,
+      "rank_comparison_status": "compared"
     },
     {
       "category": "침구/패브릭",
@@ -3709,8 +3940,9 @@
       "price_numeric": 32000,
       "price_tier": "3만원대",
       "usp": "일반구성",
-      "rank_delta": "NEW",
-      "is_new_entry": true
+      "rank_delta": "13",
+      "is_new_entry": false,
+      "rank_comparison_status": "compared"
     },
     {
       "category": "침구/패브릭",
@@ -3726,7 +3958,8 @@
       "price_tier": "3만원대",
       "usp": "일반구성",
       "rank_delta": "NEW",
-      "is_new_entry": true
+      "is_new_entry": true,
+      "rank_comparison_status": "new"
     },
     {
       "category": "침구/패브릭",
@@ -3741,8 +3974,9 @@
       "price_numeric": 22900,
       "price_tier": "2만원대",
       "usp": "일반구성",
-      "rank_delta": "NEW",
-      "is_new_entry": true
+      "rank_delta": "-12",
+      "is_new_entry": false,
+      "rank_comparison_status": "compared"
     },
     {
       "category": "침구/패브릭",
@@ -3757,8 +3991,9 @@
       "price_numeric": 20000,
       "price_tier": "2만원대",
       "usp": "일반구성",
-      "rank_delta": "NEW",
-      "is_new_entry": true
+      "rank_delta": "-1",
+      "is_new_entry": false,
+      "rank_comparison_status": "compared"
     },
     {
       "category": "침구/패브릭",
@@ -3773,8 +4008,9 @@
       "price_numeric": 36900,
       "price_tier": "3만원대",
       "usp": "일반구성",
-      "rank_delta": "NEW",
-      "is_new_entry": true
+      "rank_delta": "-11",
+      "is_new_entry": false,
+      "rank_comparison_status": "compared"
     },
     {
       "category": "침구/패브릭",
@@ -3790,7 +4026,8 @@
       "price_tier": "1만원 미만",
       "usp": "일반구성",
       "rank_delta": "-6",
-      "is_new_entry": false
+      "is_new_entry": false,
+      "rank_comparison_status": "compared"
     },
     {
       "category": "침구/패브릭",
@@ -3805,8 +4042,9 @@
       "price_numeric": 32000,
       "price_tier": "3만원대",
       "usp": "단독구성",
-      "rank_delta": "NEW",
-      "is_new_entry": true
+      "rank_delta": "-3",
+      "is_new_entry": false,
+      "rank_comparison_status": "compared"
     },
     {
       "category": "침구/패브릭",
@@ -3822,7 +4060,8 @@
       "price_tier": "2만원대",
       "usp": "일반구성",
       "rank_delta": "NEW",
-      "is_new_entry": true
+      "is_new_entry": true,
+      "rank_comparison_status": "new"
     },
     {
       "category": "침구/패브릭",
@@ -3837,8 +4076,9 @@
       "price_numeric": 19900,
       "price_tier": "1만원대",
       "usp": "일반구성",
-      "rank_delta": "NEW",
-      "is_new_entry": true
+      "rank_delta": "-2",
+      "is_new_entry": false,
+      "rank_comparison_status": "compared"
     },
     {
       "category": "침구/패브릭",
@@ -3854,7 +4094,8 @@
       "price_tier": "1만원대",
       "usp": "일반구성",
       "rank_delta": "NEW",
-      "is_new_entry": true
+      "is_new_entry": true,
+      "rank_comparison_status": "new"
     },
     {
       "category": "침구/패브릭",
@@ -3869,8 +4110,9 @@
       "price_numeric": 13900,
       "price_tier": "1만원대",
       "usp": "일반구성",
-      "rank_delta": "NEW",
-      "is_new_entry": true
+      "rank_delta": "-9",
+      "is_new_entry": false,
+      "rank_comparison_status": "compared"
     },
     {
       "category": "침구/패브릭",
@@ -3886,7 +4128,8 @@
       "price_tier": "2만원대",
       "usp": "단독구성",
       "rank_delta": "NEW",
-      "is_new_entry": true
+      "is_new_entry": true,
+      "rank_comparison_status": "new"
     },
     {
       "category": "침구/패브릭",
@@ -3902,7 +4145,8 @@
       "price_tier": "1만원대",
       "usp": "일반구성",
       "rank_delta": "-3",
-      "is_new_entry": false
+      "is_new_entry": false,
+      "rank_comparison_status": "compared"
     },
     {
       "category": "침구/패브릭",
@@ -3918,7 +4162,8 @@
       "price_tier": "2만원대",
       "usp": "일반구성",
       "rank_delta": "5",
-      "is_new_entry": false
+      "is_new_entry": false,
+      "rank_comparison_status": "compared"
     },
     {
       "category": "침구/패브릭",
@@ -3934,7 +4179,8 @@
       "price_tier": "1만원대",
       "usp": "일반구성",
       "rank_delta": "3",
-      "is_new_entry": false
+      "is_new_entry": false,
+      "rank_comparison_status": "compared"
     },
     {
       "category": "침구/패브릭",
@@ -3950,7 +4196,8 @@
       "price_tier": "5만원 이상",
       "usp": "선물포장",
       "rank_delta": "NEW",
-      "is_new_entry": true
+      "is_new_entry": true,
+      "rank_comparison_status": "new"
     },
     {
       "category": "침구/패브릭",
@@ -3966,7 +4213,8 @@
       "price_tier": "2만원대",
       "usp": "일반구성",
       "rank_delta": "NEW",
-      "is_new_entry": true
+      "is_new_entry": true,
+      "rank_comparison_status": "new"
     },
     {
       "category": "침구/패브릭",
@@ -3982,7 +4230,8 @@
       "price_tier": "1만원대",
       "usp": "일반구성",
       "rank_delta": "NEW",
-      "is_new_entry": true
+      "is_new_entry": true,
+      "rank_comparison_status": "new"
     },
     {
       "category": "침구/패브릭",
@@ -3997,8 +4246,9 @@
       "price_numeric": 16900,
       "price_tier": "1만원대",
       "usp": "일반구성",
-      "rank_delta": "NEW",
-      "is_new_entry": true
+      "rank_delta": "-13",
+      "is_new_entry": false,
+      "rank_comparison_status": "compared"
     },
     {
       "category": "침구/패브릭",
@@ -4013,8 +4263,9 @@
       "price_numeric": 25000,
       "price_tier": "2만원대",
       "usp": "일반구성",
-      "rank_delta": "NEW",
-      "is_new_entry": true
+      "rank_delta": "-9",
+      "is_new_entry": false,
+      "rank_comparison_status": "compared"
     },
     {
       "category": "침구/패브릭",
@@ -4029,8 +4280,9 @@
       "price_numeric": 39000,
       "price_tier": "3만원대",
       "usp": "일반구성",
-      "rank_delta": "NEW",
-      "is_new_entry": true
+      "rank_delta": "-20",
+      "is_new_entry": false,
+      "rank_comparison_status": "compared"
     },
     {
       "category": "침구/패브릭",
@@ -4046,7 +4298,8 @@
       "price_tier": "2만원대",
       "usp": "일반구성",
       "rank_delta": "-17",
-      "is_new_entry": false
+      "is_new_entry": false,
+      "rank_comparison_status": "compared"
     },
     {
       "category": "침구/패브릭",
@@ -4061,8 +4314,9 @@
       "price_numeric": 13900,
       "price_tier": "1만원대",
       "usp": "일반구성",
-      "rank_delta": "NEW",
-      "is_new_entry": true
+      "rank_delta": "",
+      "is_new_entry": false,
+      "rank_comparison_status": "unavailable"
     },
     {
       "category": "침구/패브릭",
@@ -4077,8 +4331,9 @@
       "price_numeric": 32900,
       "price_tier": "3만원대",
       "usp": "일반구성",
-      "rank_delta": "NEW",
-      "is_new_entry": true
+      "rank_delta": "",
+      "is_new_entry": false,
+      "rank_comparison_status": "unavailable"
     },
     {
       "category": "침구/패브릭",
@@ -4093,8 +4348,9 @@
       "price_numeric": 26500,
       "price_tier": "2만원대",
       "usp": "일반구성",
-      "rank_delta": "NEW",
-      "is_new_entry": true
+      "rank_delta": "",
+      "is_new_entry": false,
+      "rank_comparison_status": "unavailable"
     },
     {
       "category": "침구/패브릭",
@@ -4109,8 +4365,9 @@
       "price_numeric": 14900,
       "price_tier": "1만원대",
       "usp": "일반구성",
-      "rank_delta": "NEW",
-      "is_new_entry": true
+      "rank_delta": "",
+      "is_new_entry": false,
+      "rank_comparison_status": "unavailable"
     },
     {
       "category": "침구/패브릭",
@@ -4125,8 +4382,9 @@
       "price_numeric": 39900,
       "price_tier": "3만원대",
       "usp": "단독구성",
-      "rank_delta": "NEW",
-      "is_new_entry": true
+      "rank_delta": "",
+      "is_new_entry": false,
+      "rank_comparison_status": "unavailable"
     },
     {
       "category": "침구/패브릭",
@@ -4141,8 +4399,9 @@
       "price_numeric": 27900,
       "price_tier": "2만원대",
       "usp": "선물포장, 단독구성",
-      "rank_delta": "NEW",
-      "is_new_entry": true
+      "rank_delta": "",
+      "is_new_entry": false,
+      "rank_comparison_status": "unavailable"
     },
     {
       "category": "침구/패브릭",
@@ -4157,8 +4416,9 @@
       "price_numeric": 9800,
       "price_tier": "1만원 미만",
       "usp": "일반구성",
-      "rank_delta": "NEW",
-      "is_new_entry": true
+      "rank_delta": "",
+      "is_new_entry": false,
+      "rank_comparison_status": "unavailable"
     },
     {
       "category": "침구/패브릭",
@@ -4173,8 +4433,9 @@
       "price_numeric": 16400,
       "price_tier": "1만원대",
       "usp": "일반구성",
-      "rank_delta": "NEW",
-      "is_new_entry": true
+      "rank_delta": "",
+      "is_new_entry": false,
+      "rank_comparison_status": "unavailable"
     },
     {
       "category": "침구/패브릭",
@@ -4189,8 +4450,9 @@
       "price_numeric": 21800,
       "price_tier": "2만원대",
       "usp": "단독구성",
-      "rank_delta": "NEW",
-      "is_new_entry": true
+      "rank_delta": "",
+      "is_new_entry": false,
+      "rank_comparison_status": "unavailable"
     },
     {
       "category": "침구/패브릭",
@@ -4205,8 +4467,9 @@
       "price_numeric": 48600,
       "price_tier": "4만원대",
       "usp": "단독구성",
-      "rank_delta": "NEW",
-      "is_new_entry": true
+      "rank_delta": "",
+      "is_new_entry": false,
+      "rank_comparison_status": "unavailable"
     },
     {
       "category": "침구/패브릭",
@@ -4221,8 +4484,9 @@
       "price_numeric": 23900,
       "price_tier": "2만원대",
       "usp": "일반구성",
-      "rank_delta": "NEW",
-      "is_new_entry": true
+      "rank_delta": "",
+      "is_new_entry": false,
+      "rank_comparison_status": "unavailable"
     },
     {
       "category": "침구/패브릭",
@@ -4237,8 +4501,9 @@
       "price_numeric": 33900,
       "price_tier": "3만원대",
       "usp": "일반구성",
-      "rank_delta": "NEW",
-      "is_new_entry": true
+      "rank_delta": "",
+      "is_new_entry": false,
+      "rank_comparison_status": "unavailable"
     },
     {
       "category": "침구/패브릭",
@@ -4253,8 +4518,9 @@
       "price_numeric": 32900,
       "price_tier": "3만원대",
       "usp": "일반구성",
-      "rank_delta": "NEW",
-      "is_new_entry": true
+      "rank_delta": "",
+      "is_new_entry": false,
+      "rank_comparison_status": "unavailable"
     },
     {
       "category": "침구/패브릭",
@@ -4269,8 +4535,9 @@
       "price_numeric": 29800,
       "price_tier": "2만원대",
       "usp": "일반구성",
-      "rank_delta": "NEW",
-      "is_new_entry": true
+      "rank_delta": "",
+      "is_new_entry": false,
+      "rank_comparison_status": "unavailable"
     },
     {
       "category": "침구/패브릭",
@@ -4285,8 +4552,9 @@
       "price_numeric": 31000,
       "price_tier": "3만원대",
       "usp": "일반구성",
-      "rank_delta": "NEW",
-      "is_new_entry": true
+      "rank_delta": "",
+      "is_new_entry": false,
+      "rank_comparison_status": "unavailable"
     },
     {
       "category": "침구/패브릭",
@@ -4301,8 +4569,9 @@
       "price_numeric": 22900,
       "price_tier": "2만원대",
       "usp": "일반구성",
-      "rank_delta": "NEW",
-      "is_new_entry": true
+      "rank_delta": "",
+      "is_new_entry": false,
+      "rank_comparison_status": "unavailable"
     },
     {
       "category": "침구/패브릭",
@@ -4317,8 +4586,9 @@
       "price_numeric": 29900,
       "price_tier": "2만원대",
       "usp": "일반구성",
-      "rank_delta": "NEW",
-      "is_new_entry": true
+      "rank_delta": "",
+      "is_new_entry": false,
+      "rank_comparison_status": "unavailable"
     },
     {
       "category": "침구/패브릭",
@@ -4333,8 +4603,9 @@
       "price_numeric": 22800,
       "price_tier": "2만원대",
       "usp": "일반구성",
-      "rank_delta": "NEW",
-      "is_new_entry": true
+      "rank_delta": "",
+      "is_new_entry": false,
+      "rank_comparison_status": "unavailable"
     },
     {
       "category": "침구/패브릭",
@@ -4349,8 +4620,9 @@
       "price_numeric": 25000,
       "price_tier": "2만원대",
       "usp": "일반구성",
-      "rank_delta": "NEW",
-      "is_new_entry": true
+      "rank_delta": "",
+      "is_new_entry": false,
+      "rank_comparison_status": "unavailable"
     },
     {
       "category": "침구/패브릭",
@@ -4365,8 +4637,9 @@
       "price_numeric": 39000,
       "price_tier": "3만원대",
       "usp": "일반구성",
-      "rank_delta": "NEW",
-      "is_new_entry": true
+      "rank_delta": "",
+      "is_new_entry": false,
+      "rank_comparison_status": "unavailable"
     },
     {
       "category": "침구/패브릭",
@@ -4381,8 +4654,9 @@
       "price_numeric": 24900,
       "price_tier": "2만원대",
       "usp": "일반구성",
-      "rank_delta": "NEW",
-      "is_new_entry": true
+      "rank_delta": "",
+      "is_new_entry": false,
+      "rank_comparison_status": "unavailable"
     },
     {
       "category": "침구/패브릭",
@@ -4397,8 +4671,9 @@
       "price_numeric": 9900,
       "price_tier": "1만원 미만",
       "usp": "단독구성",
-      "rank_delta": "NEW",
-      "is_new_entry": true
+      "rank_delta": "",
+      "is_new_entry": false,
+      "rank_comparison_status": "unavailable"
     },
     {
       "category": "침구/패브릭",
@@ -4413,8 +4688,9 @@
       "price_numeric": 35900,
       "price_tier": "3만원대",
       "usp": "일반구성",
-      "rank_delta": "NEW",
-      "is_new_entry": true
+      "rank_delta": "",
+      "is_new_entry": false,
+      "rank_comparison_status": "unavailable"
     },
     {
       "category": "침구/패브릭",
@@ -4429,8 +4705,9 @@
       "price_numeric": 31500,
       "price_tier": "3만원대",
       "usp": "일반구성",
-      "rank_delta": "NEW",
-      "is_new_entry": true
+      "rank_delta": "",
+      "is_new_entry": false,
+      "rank_comparison_status": "unavailable"
     },
     {
       "category": "침구/패브릭",
@@ -4445,8 +4722,9 @@
       "price_numeric": 32900,
       "price_tier": "3만원대",
       "usp": "단독구성",
-      "rank_delta": "NEW",
-      "is_new_entry": true
+      "rank_delta": "",
+      "is_new_entry": false,
+      "rank_comparison_status": "unavailable"
     },
     {
       "category": "침구/패브릭",
@@ -4461,8 +4739,9 @@
       "price_numeric": 39900,
       "price_tier": "3만원대",
       "usp": "일반구성",
-      "rank_delta": "NEW",
-      "is_new_entry": true
+      "rank_delta": "",
+      "is_new_entry": false,
+      "rank_comparison_status": "unavailable"
     },
     {
       "category": "침구/패브릭",
@@ -4477,8 +4756,9 @@
       "price_numeric": 19900,
       "price_tier": "1만원대",
       "usp": "일반구성",
-      "rank_delta": "NEW",
-      "is_new_entry": true
+      "rank_delta": "",
+      "is_new_entry": false,
+      "rank_comparison_status": "unavailable"
     },
     {
       "category": "침구/패브릭",
@@ -4493,8 +4773,9 @@
       "price_numeric": 32900,
       "price_tier": "3만원대",
       "usp": "일반구성",
-      "rank_delta": "NEW",
-      "is_new_entry": true
+      "rank_delta": "",
+      "is_new_entry": false,
+      "rank_comparison_status": "unavailable"
     },
     {
       "category": "침구/패브릭",
@@ -4509,8 +4790,9 @@
       "price_numeric": 22900,
       "price_tier": "2만원대",
       "usp": "일반구성",
-      "rank_delta": "NEW",
-      "is_new_entry": true
+      "rank_delta": "",
+      "is_new_entry": false,
+      "rank_comparison_status": "unavailable"
     },
     {
       "category": "침구/패브릭",
@@ -4525,8 +4807,9 @@
       "price_numeric": 19000,
       "price_tier": "1만원대",
       "usp": "일반구성",
-      "rank_delta": "NEW",
-      "is_new_entry": true
+      "rank_delta": "-40",
+      "is_new_entry": false,
+      "rank_comparison_status": "compared"
     },
     {
       "category": "침구/패브릭",
@@ -4541,8 +4824,9 @@
       "price_numeric": 29900,
       "price_tier": "2만원대",
       "usp": "단독구성",
-      "rank_delta": "NEW",
-      "is_new_entry": true
+      "rank_delta": "",
+      "is_new_entry": false,
+      "rank_comparison_status": "unavailable"
     },
     {
       "category": "침구/패브릭",
@@ -4557,8 +4841,9 @@
       "price_numeric": 9590,
       "price_tier": "1만원 미만",
       "usp": "일반구성",
-      "rank_delta": "NEW",
-      "is_new_entry": true
+      "rank_delta": "",
+      "is_new_entry": false,
+      "rank_comparison_status": "unavailable"
     },
     {
       "category": "침구/패브릭",
@@ -4573,8 +4858,9 @@
       "price_numeric": 14900,
       "price_tier": "1만원대",
       "usp": "일반구성",
-      "rank_delta": "NEW",
-      "is_new_entry": true
+      "rank_delta": "",
+      "is_new_entry": false,
+      "rank_comparison_status": "unavailable"
     },
     {
       "category": "침구/패브릭",
@@ -4589,8 +4875,9 @@
       "price_numeric": 24900,
       "price_tier": "2만원대",
       "usp": "일반구성",
-      "rank_delta": "NEW",
-      "is_new_entry": true
+      "rank_delta": "",
+      "is_new_entry": false,
+      "rank_comparison_status": "unavailable"
     },
     {
       "category": "침구/패브릭",
@@ -4605,8 +4892,9 @@
       "price_numeric": 22800,
       "price_tier": "2만원대",
       "usp": "일반구성",
-      "rank_delta": "NEW",
-      "is_new_entry": true
+      "rank_delta": "-40",
+      "is_new_entry": false,
+      "rank_comparison_status": "compared"
     },
     {
       "category": "침구/패브릭",
@@ -4621,8 +4909,9 @@
       "price_numeric": 12500,
       "price_tier": "1만원대",
       "usp": "일반구성",
-      "rank_delta": "NEW",
-      "is_new_entry": true
+      "rank_delta": "",
+      "is_new_entry": false,
+      "rank_comparison_status": "unavailable"
     },
     {
       "category": "침구/패브릭",
@@ -4637,8 +4926,9 @@
       "price_numeric": 39900,
       "price_tier": "3만원대",
       "usp": "단독구성",
-      "rank_delta": "NEW",
-      "is_new_entry": true
+      "rank_delta": "",
+      "is_new_entry": false,
+      "rank_comparison_status": "unavailable"
     },
     {
       "category": "침구/패브릭",
@@ -4653,8 +4943,9 @@
       "price_numeric": 37900,
       "price_tier": "3만원대",
       "usp": "일반구성",
-      "rank_delta": "NEW",
-      "is_new_entry": true
+      "rank_delta": "",
+      "is_new_entry": false,
+      "rank_comparison_status": "unavailable"
     },
     {
       "category": "침구/패브릭",
@@ -4669,8 +4960,9 @@
       "price_numeric": 29900,
       "price_tier": "2만원대",
       "usp": "일반구성",
-      "rank_delta": "NEW",
-      "is_new_entry": true
+      "rank_delta": "",
+      "is_new_entry": false,
+      "rank_comparison_status": "unavailable"
     },
     {
       "category": "침구/패브릭",
@@ -4685,8 +4977,9 @@
       "price_numeric": 29900,
       "price_tier": "2만원대",
       "usp": "일반구성",
-      "rank_delta": "NEW",
-      "is_new_entry": true
+      "rank_delta": "",
+      "is_new_entry": false,
+      "rank_comparison_status": "unavailable"
     },
     {
       "category": "침구/패브릭",
@@ -4701,8 +4994,9 @@
       "price_numeric": 21500,
       "price_tier": "2만원대",
       "usp": "일반구성",
-      "rank_delta": "NEW",
-      "is_new_entry": true
+      "rank_delta": "-54",
+      "is_new_entry": false,
+      "rank_comparison_status": "compared"
     },
     {
       "category": "침구/패브릭",
@@ -4717,8 +5011,9 @@
       "price_numeric": 40900,
       "price_tier": "4만원대",
       "usp": "일반구성",
-      "rank_delta": "NEW",
-      "is_new_entry": true
+      "rank_delta": "",
+      "is_new_entry": false,
+      "rank_comparison_status": "unavailable"
     },
     {
       "category": "침구/패브릭",
@@ -4733,8 +5028,9 @@
       "price_numeric": 19800,
       "price_tier": "1만원대",
       "usp": "일반구성",
-      "rank_delta": "NEW",
-      "is_new_entry": true
+      "rank_delta": "",
+      "is_new_entry": false,
+      "rank_comparison_status": "unavailable"
     },
     {
       "category": "침구/패브릭",
@@ -4749,8 +5045,9 @@
       "price_numeric": 39900,
       "price_tier": "3만원대",
       "usp": "일반구성",
-      "rank_delta": "NEW",
-      "is_new_entry": true
+      "rank_delta": "",
+      "is_new_entry": false,
+      "rank_comparison_status": "unavailable"
     },
     {
       "category": "침구/패브릭",
@@ -4765,8 +5062,9 @@
       "price_numeric": 49900,
       "price_tier": "4만원대",
       "usp": "단독구성",
-      "rank_delta": "NEW",
-      "is_new_entry": true
+      "rank_delta": "",
+      "is_new_entry": false,
+      "rank_comparison_status": "unavailable"
     },
     {
       "category": "침구/패브릭",
@@ -4781,8 +5079,9 @@
       "price_numeric": 17900,
       "price_tier": "1만원대",
       "usp": "일반구성",
-      "rank_delta": "NEW",
-      "is_new_entry": true
+      "rank_delta": "",
+      "is_new_entry": false,
+      "rank_comparison_status": "unavailable"
     },
     {
       "category": "침구/패브릭",
@@ -4797,8 +5096,9 @@
       "price_numeric": 58900,
       "price_tier": "5만원 이상",
       "usp": "단독구성",
-      "rank_delta": "NEW",
-      "is_new_entry": true
+      "rank_delta": "",
+      "is_new_entry": false,
+      "rank_comparison_status": "unavailable"
     },
     {
       "category": "주방/식기",
@@ -4814,7 +5114,8 @@
       "price_tier": "3만원대",
       "usp": "일반구성",
       "rank_delta": "0",
-      "is_new_entry": false
+      "is_new_entry": false,
+      "rank_comparison_status": "compared"
     },
     {
       "category": "주방/식기",
@@ -4830,7 +5131,8 @@
       "price_tier": "4만원대",
       "usp": "일반구성",
       "rank_delta": "0",
-      "is_new_entry": false
+      "is_new_entry": false,
+      "rank_comparison_status": "compared"
     },
     {
       "category": "주방/식기",
@@ -4846,7 +5148,8 @@
       "price_tier": "2만원대",
       "usp": "단독구성",
       "rank_delta": "0",
-      "is_new_entry": false
+      "is_new_entry": false,
+      "rank_comparison_status": "compared"
     },
     {
       "category": "주방/식기",
@@ -4862,7 +5165,8 @@
       "price_tier": "4만원대",
       "usp": "일반구성",
       "rank_delta": "0",
-      "is_new_entry": false
+      "is_new_entry": false,
+      "rank_comparison_status": "compared"
     },
     {
       "category": "주방/식기",
@@ -4878,7 +5182,8 @@
       "price_tier": "3만원대",
       "usp": "일반구성",
       "rank_delta": "1",
-      "is_new_entry": false
+      "is_new_entry": false,
+      "rank_comparison_status": "compared"
     },
     {
       "category": "주방/식기",
@@ -4894,7 +5199,8 @@
       "price_tier": "3만원대",
       "usp": "일반구성",
       "rank_delta": "10",
-      "is_new_entry": false
+      "is_new_entry": false,
+      "rank_comparison_status": "compared"
     },
     {
       "category": "주방/식기",
@@ -4910,7 +5216,8 @@
       "price_tier": "4만원대",
       "usp": "일반구성",
       "rank_delta": "1",
-      "is_new_entry": false
+      "is_new_entry": false,
+      "rank_comparison_status": "compared"
     },
     {
       "category": "주방/식기",
@@ -4926,7 +5233,8 @@
       "price_tier": "5만원 이상",
       "usp": "단독구성",
       "rank_delta": "1",
-      "is_new_entry": false
+      "is_new_entry": false,
+      "rank_comparison_status": "compared"
     },
     {
       "category": "주방/식기",
@@ -4942,7 +5250,8 @@
       "price_tier": "1만원대",
       "usp": "단독구성",
       "rank_delta": "2",
-      "is_new_entry": false
+      "is_new_entry": false,
+      "rank_comparison_status": "compared"
     },
     {
       "category": "주방/식기",
@@ -4958,7 +5267,8 @@
       "price_tier": "4만원대",
       "usp": "단독구성",
       "rank_delta": "7",
-      "is_new_entry": false
+      "is_new_entry": false,
+      "rank_comparison_status": "compared"
     },
     {
       "category": "주방/식기",
@@ -4974,7 +5284,8 @@
       "price_tier": "3만원대",
       "usp": "일반구성",
       "rank_delta": "4",
-      "is_new_entry": false
+      "is_new_entry": false,
+      "rank_comparison_status": "compared"
     },
     {
       "category": "주방/식기",
@@ -4990,7 +5301,8 @@
       "price_tier": "5만원 이상",
       "usp": "단독구성",
       "rank_delta": "-5",
-      "is_new_entry": false
+      "is_new_entry": false,
+      "rank_comparison_status": "compared"
     },
     {
       "category": "주방/식기",
@@ -5006,7 +5318,8 @@
       "price_tier": "4만원대",
       "usp": "일반구성",
       "rank_delta": "1",
-      "is_new_entry": false
+      "is_new_entry": false,
+      "rank_comparison_status": "compared"
     },
     {
       "category": "주방/식기",
@@ -5022,7 +5335,8 @@
       "price_tier": "3만원대",
       "usp": "단독구성",
       "rank_delta": "-2",
-      "is_new_entry": false
+      "is_new_entry": false,
+      "rank_comparison_status": "compared"
     },
     {
       "category": "주방/식기",
@@ -5038,7 +5352,8 @@
       "price_tier": "4만원대",
       "usp": "일반구성",
       "rank_delta": "-2",
-      "is_new_entry": false
+      "is_new_entry": false,
+      "rank_comparison_status": "compared"
     },
     {
       "category": "주방/식기",
@@ -5054,7 +5369,8 @@
       "price_tier": "1만원대",
       "usp": "일반구성",
       "rank_delta": "3",
-      "is_new_entry": false
+      "is_new_entry": false,
+      "rank_comparison_status": "compared"
     },
     {
       "category": "주방/식기",
@@ -5070,7 +5386,8 @@
       "price_tier": "3만원대",
       "usp": "각인/자수",
       "rank_delta": "5",
-      "is_new_entry": false
+      "is_new_entry": false,
+      "rank_comparison_status": "compared"
     },
     {
       "category": "주방/식기",
@@ -5086,7 +5403,8 @@
       "price_tier": "3만원대",
       "usp": "단독구성",
       "rank_delta": "0",
-      "is_new_entry": false
+      "is_new_entry": false,
+      "rank_comparison_status": "compared"
     },
     {
       "category": "주방/식기",
@@ -5102,7 +5420,8 @@
       "price_tier": "3만원대",
       "usp": "단독구성",
       "rank_delta": "1",
-      "is_new_entry": false
+      "is_new_entry": false,
+      "rank_comparison_status": "compared"
     },
     {
       "category": "주방/식기",
@@ -5118,7 +5437,8 @@
       "price_tier": "3만원대",
       "usp": "일반구성",
       "rank_delta": "NEW",
-      "is_new_entry": true
+      "is_new_entry": true,
+      "rank_comparison_status": "new"
     },
     {
       "category": "주방/식기",
@@ -5134,7 +5454,8 @@
       "price_tier": "4만원대",
       "usp": "일반구성",
       "rank_delta": "0",
-      "is_new_entry": false
+      "is_new_entry": false,
+      "rank_comparison_status": "compared"
     },
     {
       "category": "주방/식기",
@@ -5149,8 +5470,9 @@
       "price_numeric": 39500,
       "price_tier": "3만원대",
       "usp": "단독구성",
-      "rank_delta": "NEW",
-      "is_new_entry": true
+      "rank_delta": "18",
+      "is_new_entry": false,
+      "rank_comparison_status": "compared"
     },
     {
       "category": "주방/식기",
@@ -5166,7 +5488,8 @@
       "price_tier": "5만원 이상",
       "usp": "일반구성",
       "rank_delta": "-13",
-      "is_new_entry": false
+      "is_new_entry": false,
+      "rank_comparison_status": "compared"
     },
     {
       "category": "주방/식기",
@@ -5181,8 +5504,9 @@
       "price_numeric": 9800,
       "price_tier": "1만원 미만",
       "usp": "일반구성",
-      "rank_delta": "NEW",
-      "is_new_entry": true
+      "rank_delta": "-1",
+      "is_new_entry": false,
+      "rank_comparison_status": "compared"
     },
     {
       "category": "주방/식기",
@@ -5198,7 +5522,8 @@
       "price_tier": "4만원대",
       "usp": "단독구성",
       "rank_delta": "14",
-      "is_new_entry": false
+      "is_new_entry": false,
+      "rank_comparison_status": "compared"
     },
     {
       "category": "주방/식기",
@@ -5213,8 +5538,9 @@
       "price_numeric": 38000,
       "price_tier": "3만원대",
       "usp": "일반구성",
-      "rank_delta": "NEW",
-      "is_new_entry": true
+      "rank_delta": "-2",
+      "is_new_entry": false,
+      "rank_comparison_status": "compared"
     },
     {
       "category": "주방/식기",
@@ -5229,8 +5555,9 @@
       "price_numeric": 31000,
       "price_tier": "3만원대",
       "usp": "일반구성",
-      "rank_delta": "NEW",
-      "is_new_entry": true
+      "rank_delta": "9",
+      "is_new_entry": false,
+      "rank_comparison_status": "compared"
     },
     {
       "category": "주방/식기",
@@ -5246,7 +5573,8 @@
       "price_tier": "3만원대",
       "usp": "단독구성",
       "rank_delta": "-3",
-      "is_new_entry": false
+      "is_new_entry": false,
+      "rank_comparison_status": "compared"
     },
     {
       "category": "주방/식기",
@@ -5262,7 +5590,8 @@
       "price_tier": "5만원 이상",
       "usp": "단독구성",
       "rank_delta": "4",
-      "is_new_entry": false
+      "is_new_entry": false,
+      "rank_comparison_status": "compared"
     },
     {
       "category": "주방/식기",
@@ -5277,8 +5606,9 @@
       "price_numeric": 17800,
       "price_tier": "1만원대",
       "usp": "단독구성",
-      "rank_delta": "NEW",
-      "is_new_entry": true
+      "rank_delta": "-1",
+      "is_new_entry": false,
+      "rank_comparison_status": "compared"
     },
     {
       "category": "주방/식기",
@@ -5294,7 +5624,8 @@
       "price_tier": "3만원대",
       "usp": "단독구성",
       "rank_delta": "-1",
-      "is_new_entry": false
+      "is_new_entry": false,
+      "rank_comparison_status": "compared"
     },
     {
       "category": "주방/식기",
@@ -5310,7 +5641,8 @@
       "price_tier": "1만원대",
       "usp": "일반구성",
       "rank_delta": "2",
-      "is_new_entry": false
+      "is_new_entry": false,
+      "rank_comparison_status": "compared"
     },
     {
       "category": "주방/식기",
@@ -5326,7 +5658,8 @@
       "price_tier": "1만원대",
       "usp": "단독구성",
       "rank_delta": "15",
-      "is_new_entry": false
+      "is_new_entry": false,
+      "rank_comparison_status": "compared"
     },
     {
       "category": "주방/식기",
@@ -5341,8 +5674,9 @@
       "price_numeric": 25900,
       "price_tier": "2만원대",
       "usp": "단독구성",
-      "rank_delta": "NEW",
-      "is_new_entry": true
+      "rank_delta": "3",
+      "is_new_entry": false,
+      "rank_comparison_status": "compared"
     },
     {
       "category": "주방/식기",
@@ -5357,8 +5691,9 @@
       "price_numeric": 46000,
       "price_tier": "4만원대",
       "usp": "일반구성",
-      "rank_delta": "NEW",
-      "is_new_entry": true
+      "rank_delta": "-8",
+      "is_new_entry": false,
+      "rank_comparison_status": "compared"
     },
     {
       "category": "주방/식기",
@@ -5374,7 +5709,8 @@
       "price_tier": "5만원 이상",
       "usp": "일반구성",
       "rank_delta": "-8",
-      "is_new_entry": false
+      "is_new_entry": false,
+      "rank_comparison_status": "compared"
     },
     {
       "category": "주방/식기",
@@ -5390,7 +5726,8 @@
       "price_tier": "2만원대",
       "usp": "단독구성",
       "rank_delta": "NEW",
-      "is_new_entry": true
+      "is_new_entry": true,
+      "rank_comparison_status": "new"
     },
     {
       "category": "주방/식기",
@@ -5406,7 +5743,8 @@
       "price_tier": "4만원대",
       "usp": "일반구성",
       "rank_delta": "-3",
-      "is_new_entry": false
+      "is_new_entry": false,
+      "rank_comparison_status": "compared"
     },
     {
       "category": "주방/식기",
@@ -5422,7 +5760,8 @@
       "price_tier": "4만원대",
       "usp": "일반구성",
       "rank_delta": "NEW",
-      "is_new_entry": true
+      "is_new_entry": true,
+      "rank_comparison_status": "new"
     },
     {
       "category": "주방/식기",
@@ -5438,7 +5777,8 @@
       "price_tier": "1만원대",
       "usp": "일반구성",
       "rank_delta": "NEW",
-      "is_new_entry": true
+      "is_new_entry": true,
+      "rank_comparison_status": "new"
     },
     {
       "category": "주방/식기",
@@ -5454,7 +5794,8 @@
       "price_tier": "2만원대",
       "usp": "단독구성",
       "rank_delta": "NEW",
-      "is_new_entry": true
+      "is_new_entry": true,
+      "rank_comparison_status": "new"
     },
     {
       "category": "주방/식기",
@@ -5470,7 +5811,8 @@
       "price_tier": "4만원대",
       "usp": "일반구성",
       "rank_delta": "NEW",
-      "is_new_entry": true
+      "is_new_entry": true,
+      "rank_comparison_status": "new"
     },
     {
       "category": "주방/식기",
@@ -5486,7 +5828,8 @@
       "price_tier": "5만원 이상",
       "usp": "일반구성",
       "rank_delta": "NEW",
-      "is_new_entry": true
+      "is_new_entry": true,
+      "rank_comparison_status": "new"
     },
     {
       "category": "주방/식기",
@@ -5502,7 +5845,8 @@
       "price_tier": "2만원대",
       "usp": "단독구성",
       "rank_delta": "NEW",
-      "is_new_entry": true
+      "is_new_entry": true,
+      "rank_comparison_status": "new"
     },
     {
       "category": "주방/식기",
@@ -5518,7 +5862,8 @@
       "price_tier": "4만원대",
       "usp": "단독구성",
       "rank_delta": "-7",
-      "is_new_entry": false
+      "is_new_entry": false,
+      "rank_comparison_status": "compared"
     },
     {
       "category": "주방/식기",
@@ -5534,7 +5879,8 @@
       "price_tier": "1만원대",
       "usp": "단독구성",
       "rank_delta": "-4",
-      "is_new_entry": false
+      "is_new_entry": false,
+      "rank_comparison_status": "compared"
     },
     {
       "category": "주방/식기",
@@ -5550,7 +5896,8 @@
       "price_tier": "3만원대",
       "usp": "각인/자수",
       "rank_delta": "NEW",
-      "is_new_entry": true
+      "is_new_entry": true,
+      "rank_comparison_status": "new"
     },
     {
       "category": "주방/식기",
@@ -5565,8 +5912,9 @@
       "price_numeric": 9900,
       "price_tier": "1만원 미만",
       "usp": "일반구성",
-      "rank_delta": "NEW",
-      "is_new_entry": true
+      "rank_delta": "-3",
+      "is_new_entry": false,
+      "rank_comparison_status": "compared"
     },
     {
       "category": "주방/식기",
@@ -5582,7 +5930,8 @@
       "price_tier": "2만원대",
       "usp": "단독구성",
       "rank_delta": "-6",
-      "is_new_entry": false
+      "is_new_entry": false,
+      "rank_comparison_status": "compared"
     },
     {
       "category": "주방/식기",
@@ -5598,7 +5947,8 @@
       "price_tier": "3만원대",
       "usp": "단독구성",
       "rank_delta": "NEW",
-      "is_new_entry": true
+      "is_new_entry": true,
+      "rank_comparison_status": "new"
     },
     {
       "category": "주방/식기",
@@ -5613,8 +5963,9 @@
       "price_numeric": 27000,
       "price_tier": "2만원대",
       "usp": "일반구성",
-      "rank_delta": "NEW",
-      "is_new_entry": true
+      "rank_delta": "-7",
+      "is_new_entry": false,
+      "rank_comparison_status": "compared"
     },
     {
       "category": "주방/식기",
@@ -5630,7 +5981,8 @@
       "price_tier": "5만원 이상",
       "usp": "단독구성",
       "rank_delta": "-21",
-      "is_new_entry": false
+      "is_new_entry": false,
+      "rank_comparison_status": "compared"
     },
     {
       "category": "주방/식기",
@@ -5645,8 +5997,9 @@
       "price_numeric": 49000,
       "price_tier": "4만원대",
       "usp": "단독구성",
-      "rank_delta": "NEW",
-      "is_new_entry": true
+      "rank_delta": "",
+      "is_new_entry": false,
+      "rank_comparison_status": "unavailable"
     },
     {
       "category": "주방/식기",
@@ -5661,8 +6014,9 @@
       "price_numeric": 64000,
       "price_tier": "5만원 이상",
       "usp": "일반구성",
-      "rank_delta": "NEW",
-      "is_new_entry": true
+      "rank_delta": "",
+      "is_new_entry": false,
+      "rank_comparison_status": "unavailable"
     },
     {
       "category": "주방/식기",
@@ -5677,8 +6031,9 @@
       "price_numeric": 18990,
       "price_tier": "1만원대",
       "usp": "단독구성",
-      "rank_delta": "NEW",
-      "is_new_entry": true
+      "rank_delta": "-9",
+      "is_new_entry": false,
+      "rank_comparison_status": "compared"
     },
     {
       "category": "주방/식기",
@@ -5693,8 +6048,9 @@
       "price_numeric": 14800,
       "price_tier": "1만원대",
       "usp": "단독구성",
-      "rank_delta": "NEW",
-      "is_new_entry": true
+      "rank_delta": "",
+      "is_new_entry": false,
+      "rank_comparison_status": "unavailable"
     },
     {
       "category": "주방/식기",
@@ -5709,8 +6065,9 @@
       "price_numeric": 14900,
       "price_tier": "1만원대",
       "usp": "일반구성",
-      "rank_delta": "NEW",
-      "is_new_entry": true
+      "rank_delta": "",
+      "is_new_entry": false,
+      "rank_comparison_status": "unavailable"
     },
     {
       "category": "주방/식기",
@@ -5725,8 +6082,9 @@
       "price_numeric": 16900,
       "price_tier": "1만원대",
       "usp": "일반구성",
-      "rank_delta": "NEW",
-      "is_new_entry": true
+      "rank_delta": "",
+      "is_new_entry": false,
+      "rank_comparison_status": "unavailable"
     },
     {
       "category": "주방/식기",
@@ -5742,7 +6100,8 @@
       "price_tier": "1만원대",
       "usp": "단독구성",
       "rank_delta": "-27",
-      "is_new_entry": false
+      "is_new_entry": false,
+      "rank_comparison_status": "compared"
     },
     {
       "category": "주방/식기",
@@ -5758,7 +6117,8 @@
       "price_tier": "3만원대",
       "usp": "단독구성",
       "rank_delta": "-19",
-      "is_new_entry": false
+      "is_new_entry": false,
+      "rank_comparison_status": "compared"
     },
     {
       "category": "주방/식기",
@@ -5773,8 +6133,9 @@
       "price_numeric": 44000,
       "price_tier": "4만원대",
       "usp": "일반구성",
-      "rank_delta": "NEW",
-      "is_new_entry": true
+      "rank_delta": "",
+      "is_new_entry": false,
+      "rank_comparison_status": "unavailable"
     },
     {
       "category": "주방/식기",
@@ -5789,8 +6150,9 @@
       "price_numeric": 15900,
       "price_tier": "1만원대",
       "usp": "단독구성",
-      "rank_delta": "NEW",
-      "is_new_entry": true
+      "rank_delta": "-13",
+      "is_new_entry": false,
+      "rank_comparison_status": "compared"
     },
     {
       "category": "주방/식기",
@@ -5805,8 +6167,9 @@
       "price_numeric": 27900,
       "price_tier": "2만원대",
       "usp": "단독구성",
-      "rank_delta": "NEW",
-      "is_new_entry": true
+      "rank_delta": "",
+      "is_new_entry": false,
+      "rank_comparison_status": "unavailable"
     },
     {
       "category": "주방/식기",
@@ -5821,8 +6184,9 @@
       "price_numeric": 9900,
       "price_tier": "1만원 미만",
       "usp": "일반구성",
-      "rank_delta": "NEW",
-      "is_new_entry": true
+      "rank_delta": "",
+      "is_new_entry": false,
+      "rank_comparison_status": "unavailable"
     },
     {
       "category": "주방/식기",
@@ -5837,8 +6201,9 @@
       "price_numeric": 35000,
       "price_tier": "3만원대",
       "usp": "일반구성",
-      "rank_delta": "NEW",
-      "is_new_entry": true
+      "rank_delta": "",
+      "is_new_entry": false,
+      "rank_comparison_status": "unavailable"
     },
     {
       "category": "주방/식기",
@@ -5853,8 +6218,9 @@
       "price_numeric": 24900,
       "price_tier": "2만원대",
       "usp": "단독구성",
-      "rank_delta": "NEW",
-      "is_new_entry": true
+      "rank_delta": "",
+      "is_new_entry": false,
+      "rank_comparison_status": "unavailable"
     },
     {
       "category": "주방/식기",
@@ -5870,7 +6236,8 @@
       "price_tier": "3만원대",
       "usp": "일반구성",
       "rank_delta": "-20",
-      "is_new_entry": false
+      "is_new_entry": false,
+      "rank_comparison_status": "compared"
     },
     {
       "category": "주방/식기",
@@ -5885,8 +6252,9 @@
       "price_numeric": 38000,
       "price_tier": "3만원대",
       "usp": "일반구성",
-      "rank_delta": "NEW",
-      "is_new_entry": true
+      "rank_delta": "",
+      "is_new_entry": false,
+      "rank_comparison_status": "unavailable"
     },
     {
       "category": "주방/식기",
@@ -5901,8 +6269,9 @@
       "price_numeric": 24900,
       "price_tier": "2만원대",
       "usp": "일반구성",
-      "rank_delta": "NEW",
-      "is_new_entry": true
+      "rank_delta": "",
+      "is_new_entry": false,
+      "rank_comparison_status": "unavailable"
     },
     {
       "category": "주방/식기",
@@ -5917,8 +6286,9 @@
       "price_numeric": 39000,
       "price_tier": "3만원대",
       "usp": "일반구성",
-      "rank_delta": "NEW",
-      "is_new_entry": true
+      "rank_delta": "",
+      "is_new_entry": false,
+      "rank_comparison_status": "unavailable"
     },
     {
       "category": "주방/식기",
@@ -5933,8 +6303,9 @@
       "price_numeric": 21000,
       "price_tier": "2만원대",
       "usp": "일반구성",
-      "rank_delta": "NEW",
-      "is_new_entry": true
+      "rank_delta": "",
+      "is_new_entry": false,
+      "rank_comparison_status": "unavailable"
     },
     {
       "category": "주방/식기",
@@ -5949,8 +6320,9 @@
       "price_numeric": 55000,
       "price_tier": "5만원 이상",
       "usp": "일반구성",
-      "rank_delta": "NEW",
-      "is_new_entry": true
+      "rank_delta": "",
+      "is_new_entry": false,
+      "rank_comparison_status": "unavailable"
     },
     {
       "category": "주방/식기",
@@ -5965,8 +6337,9 @@
       "price_numeric": 15800,
       "price_tier": "1만원대",
       "usp": "단독구성",
-      "rank_delta": "NEW",
-      "is_new_entry": true
+      "rank_delta": "",
+      "is_new_entry": false,
+      "rank_comparison_status": "unavailable"
     },
     {
       "category": "주방/식기",
@@ -5981,8 +6354,9 @@
       "price_numeric": 28000,
       "price_tier": "2만원대",
       "usp": "일반구성",
-      "rank_delta": "NEW",
-      "is_new_entry": true
+      "rank_delta": "",
+      "is_new_entry": false,
+      "rank_comparison_status": "unavailable"
     },
     {
       "category": "주방/식기",
@@ -5997,8 +6371,9 @@
       "price_numeric": 40000,
       "price_tier": "4만원대",
       "usp": "일반구성",
-      "rank_delta": "NEW",
-      "is_new_entry": true
+      "rank_delta": "",
+      "is_new_entry": false,
+      "rank_comparison_status": "unavailable"
     },
     {
       "category": "주방/식기",
@@ -6013,8 +6388,9 @@
       "price_numeric": 38000,
       "price_tier": "3만원대",
       "usp": "선물포장, 단독구성",
-      "rank_delta": "NEW",
-      "is_new_entry": true
+      "rank_delta": "",
+      "is_new_entry": false,
+      "rank_comparison_status": "unavailable"
     },
     {
       "category": "주방/식기",
@@ -6029,8 +6405,9 @@
       "price_numeric": 121120,
       "price_tier": "5만원 이상",
       "usp": "일반구성",
-      "rank_delta": "NEW",
-      "is_new_entry": true
+      "rank_delta": "",
+      "is_new_entry": false,
+      "rank_comparison_status": "unavailable"
     },
     {
       "category": "주방/식기",
@@ -6045,8 +6422,9 @@
       "price_numeric": 38000,
       "price_tier": "3만원대",
       "usp": "단독구성",
-      "rank_delta": "NEW",
-      "is_new_entry": true
+      "rank_delta": "",
+      "is_new_entry": false,
+      "rank_comparison_status": "unavailable"
     },
     {
       "category": "주방/식기",
@@ -6061,8 +6439,9 @@
       "price_numeric": 14900,
       "price_tier": "1만원대",
       "usp": "일반구성",
-      "rank_delta": "NEW",
-      "is_new_entry": true
+      "rank_delta": "",
+      "is_new_entry": false,
+      "rank_comparison_status": "unavailable"
     },
     {
       "category": "주방/식기",
@@ -6077,8 +6456,9 @@
       "price_numeric": 15800,
       "price_tier": "1만원대",
       "usp": "단독구성",
-      "rank_delta": "NEW",
-      "is_new_entry": true
+      "rank_delta": "",
+      "is_new_entry": false,
+      "rank_comparison_status": "unavailable"
     },
     {
       "category": "주방/식기",
@@ -6093,8 +6473,9 @@
       "price_numeric": 78000,
       "price_tier": "5만원 이상",
       "usp": "단독구성",
-      "rank_delta": "NEW",
-      "is_new_entry": true
+      "rank_delta": "",
+      "is_new_entry": false,
+      "rank_comparison_status": "unavailable"
     },
     {
       "category": "주방/식기",
@@ -6109,8 +6490,9 @@
       "price_numeric": 29500,
       "price_tier": "2만원대",
       "usp": "일반구성",
-      "rank_delta": "NEW",
-      "is_new_entry": true
+      "rank_delta": "",
+      "is_new_entry": false,
+      "rank_comparison_status": "unavailable"
     },
     {
       "category": "주방/식기",
@@ -6125,8 +6507,9 @@
       "price_numeric": 24400,
       "price_tier": "2만원대",
       "usp": "단독구성",
-      "rank_delta": "NEW",
-      "is_new_entry": true
+      "rank_delta": "",
+      "is_new_entry": false,
+      "rank_comparison_status": "unavailable"
     },
     {
       "category": "주방/식기",
@@ -6141,8 +6524,9 @@
       "price_numeric": 54900,
       "price_tier": "5만원 이상",
       "usp": "단독구성",
-      "rank_delta": "NEW",
-      "is_new_entry": true
+      "rank_delta": "",
+      "is_new_entry": false,
+      "rank_comparison_status": "unavailable"
     },
     {
       "category": "주방/식기",
@@ -6157,8 +6541,9 @@
       "price_numeric": 67000,
       "price_tier": "5만원 이상",
       "usp": "단독구성",
-      "rank_delta": "NEW",
-      "is_new_entry": true
+      "rank_delta": "",
+      "is_new_entry": false,
+      "rank_comparison_status": "unavailable"
     },
     {
       "category": "주방/식기",
@@ -6173,8 +6558,9 @@
       "price_numeric": 41000,
       "price_tier": "4만원대",
       "usp": "일반구성",
-      "rank_delta": "NEW",
-      "is_new_entry": true
+      "rank_delta": "",
+      "is_new_entry": false,
+      "rank_comparison_status": "unavailable"
     },
     {
       "category": "주방/식기",
@@ -6189,8 +6575,9 @@
       "price_numeric": 68000,
       "price_tier": "5만원 이상",
       "usp": "일반구성",
-      "rank_delta": "NEW",
-      "is_new_entry": true
+      "rank_delta": "",
+      "is_new_entry": false,
+      "rank_comparison_status": "unavailable"
     },
     {
       "category": "주방/식기",
@@ -6205,8 +6592,9 @@
       "price_numeric": 34000,
       "price_tier": "3만원대",
       "usp": "단독구성",
-      "rank_delta": "NEW",
-      "is_new_entry": true
+      "rank_delta": "",
+      "is_new_entry": false,
+      "rank_comparison_status": "unavailable"
     },
     {
       "category": "주방/식기",
@@ -6221,8 +6609,9 @@
       "price_numeric": 35000,
       "price_tier": "3만원대",
       "usp": "일반구성",
-      "rank_delta": "NEW",
-      "is_new_entry": true
+      "rank_delta": "",
+      "is_new_entry": false,
+      "rank_comparison_status": "unavailable"
     },
     {
       "category": "주방/식기",
@@ -6237,8 +6626,9 @@
       "price_numeric": 21500,
       "price_tier": "2만원대",
       "usp": "일반구성",
-      "rank_delta": "NEW",
-      "is_new_entry": true
+      "rank_delta": "",
+      "is_new_entry": false,
+      "rank_comparison_status": "unavailable"
     },
     {
       "category": "주방/식기",
@@ -6253,8 +6643,9 @@
       "price_numeric": 48900,
       "price_tier": "4만원대",
       "usp": "단독구성",
-      "rank_delta": "NEW",
-      "is_new_entry": true
+      "rank_delta": "",
+      "is_new_entry": false,
+      "rank_comparison_status": "unavailable"
     },
     {
       "category": "주방/식기",
@@ -6269,8 +6660,9 @@
       "price_numeric": 54150,
       "price_tier": "5만원 이상",
       "usp": "단독구성",
-      "rank_delta": "NEW",
-      "is_new_entry": true
+      "rank_delta": "",
+      "is_new_entry": false,
+      "rank_comparison_status": "unavailable"
     },
     {
       "category": "주방/식기",
@@ -6285,8 +6677,9 @@
       "price_numeric": 34000,
       "price_tier": "3만원대",
       "usp": "일반구성",
-      "rank_delta": "NEW",
-      "is_new_entry": true
+      "rank_delta": "",
+      "is_new_entry": false,
+      "rank_comparison_status": "unavailable"
     },
     {
       "category": "주방/식기",
@@ -6301,8 +6694,9 @@
       "price_numeric": 29800,
       "price_tier": "2만원대",
       "usp": "단독구성",
-      "rank_delta": "NEW",
-      "is_new_entry": true
+      "rank_delta": "",
+      "is_new_entry": false,
+      "rank_comparison_status": "unavailable"
     },
     {
       "category": "주방/식기",
@@ -6317,8 +6711,9 @@
       "price_numeric": 13800,
       "price_tier": "1만원대",
       "usp": "일반구성",
-      "rank_delta": "NEW",
-      "is_new_entry": true
+      "rank_delta": "",
+      "is_new_entry": false,
+      "rank_comparison_status": "unavailable"
     },
     {
       "category": "주방/식기",
@@ -6333,8 +6728,9 @@
       "price_numeric": 58000,
       "price_tier": "5만원 이상",
       "usp": "각인/자수",
-      "rank_delta": "NEW",
-      "is_new_entry": true
+      "rank_delta": "",
+      "is_new_entry": false,
+      "rank_comparison_status": "unavailable"
     },
     {
       "category": "주방/식기",
@@ -6349,8 +6745,9 @@
       "price_numeric": 39000,
       "price_tier": "3만원대",
       "usp": "일반구성",
-      "rank_delta": "NEW",
-      "is_new_entry": true
+      "rank_delta": "",
+      "is_new_entry": false,
+      "rank_comparison_status": "unavailable"
     },
     {
       "category": "주방/식기",
@@ -6365,8 +6762,9 @@
       "price_numeric": 19900,
       "price_tier": "1만원대",
       "usp": "단독구성",
-      "rank_delta": "NEW",
-      "is_new_entry": true
+      "rank_delta": "",
+      "is_new_entry": false,
+      "rank_comparison_status": "unavailable"
     },
     {
       "category": "주방/식기",
@@ -6381,8 +6779,9 @@
       "price_numeric": 34000,
       "price_tier": "3만원대",
       "usp": "단독구성",
-      "rank_delta": "NEW",
-      "is_new_entry": true
+      "rank_delta": "-49",
+      "is_new_entry": false,
+      "rank_comparison_status": "compared"
     },
     {
       "category": "주방/식기",
@@ -6397,8 +6796,9 @@
       "price_numeric": 32000,
       "price_tier": "3만원대",
       "usp": "단독구성",
-      "rank_delta": "NEW",
-      "is_new_entry": true
+      "rank_delta": "",
+      "is_new_entry": false,
+      "rank_comparison_status": "unavailable"
     }
   ],
   "cards": {
@@ -6534,17 +6934,6 @@
         },
         {
           "brand": "가나디",
-          "product_name": "가나디 마우스 손목 패드 (데스크테리어/생일/귀여운/우정/커플 선물) , 6,777",
-          "rank": 3,
-          "rank_delta": "NEW",
-          "category": "팬시/문구/취미 (IP핵심)",
-          "price": "12,800원",
-          "character_ip": "가나디",
-          "url": "https://gift.kakao.com/product/14096838",
-          "is_new_entry": true
-        },
-        {
-          "brand": "가나디",
           "product_name": "가나디 인형 뱃지 2종 택1 (생일/친구/귀여운/우정/커플/선물 추천)",
           "rank": 4,
           "rank_delta": "NEW",
@@ -6574,6 +6963,17 @@
           "price": "12,800원",
           "character_ip": "가나디",
           "url": "https://gift.kakao.com/product/14256681",
+          "is_new_entry": true
+        },
+        {
+          "brand": "가나디",
+          "product_name": "가나디 미니 배낭 파우치 키링 (생일/귀여운/우정/커플/가벼운 선물)",
+          "rank": 5,
+          "rank_delta": "NEW",
+          "category": "팬시/문구/취미 (IP핵심)",
+          "price": "14,800원",
+          "character_ip": "가나디",
+          "url": "https://gift.kakao.com/product/14256740",
           "is_new_entry": true
         }
       ]
@@ -6709,17 +7109,6 @@
         },
         {
           "brand": "가나디",
-          "product_name": "가나디 마우스 손목 패드 (데스크테리어/생일/귀여운/우정/커플 선물) , 6,777",
-          "rank": 13,
-          "rank_delta": "NEW",
-          "category": "리빙 전체",
-          "price": "12,800원",
-          "character_ip": "가나디",
-          "url": "https://gift.kakao.com/product/14096838",
-          "is_new_entry": true
-        },
-        {
-          "brand": "가나디",
           "product_name": "가나디 인형 뱃지 2종 택1 (생일/친구/귀여운/우정/커플/선물 추천)",
           "rank": 19,
           "rank_delta": "NEW",
@@ -6741,14 +7130,25 @@
           "is_new_entry": true
         },
         {
-          "brand": "매직캔",
-          "product_name": "선착순!리필3롤 [매직캔] 냄새차단 쓰레기통 휴지통 히포2 크롬 오토실링 27L 19% 전용리필 3롤 , 3,078",
-          "rank": 23,
+          "brand": "가나디",
+          "product_name": "가나디 미니 배낭 파우치 키링 (생일/귀여운/우정/커플/가벼운 선물)",
+          "rank": 26,
           "rank_delta": "NEW",
           "category": "리빙 전체",
-          "price": "65,900원",
+          "price": "14,800원",
+          "character_ip": "가나디",
+          "url": "https://gift.kakao.com/product/14256740",
+          "is_new_entry": true
+        },
+        {
+          "brand": "브라운물티슈",
+          "product_name": "생분해 원단 브라운 네이처 밤부 1등급 아기물티슈 70매 캡형 10+10팩 브라운물티슈 31%",
+          "rank": 34,
+          "rank_delta": "NEW",
+          "category": "리빙 전체",
+          "price": "42,900원",
           "character_ip": "일반/비IP 상품",
-          "url": "https://gift.kakao.com/product/5575413",
+          "url": "https://gift.kakao.com/product/8214105",
           "is_new_entry": true
         }
       ]
@@ -6879,17 +7279,6 @@
         },
         {
           "brand": "가나디",
-          "product_name": "가나디 마우스 손목 패드 (데스크테리어/생일/귀여운/우정/커플 선물) , 6,777",
-          "rank": 3,
-          "rank_delta": "NEW",
-          "category": "팬시/문구/취미 (IP핵심)",
-          "price": "12,800원",
-          "character_ip": "가나디",
-          "url": "https://gift.kakao.com/product/14096838",
-          "is_new_entry": true
-        },
-        {
-          "brand": "가나디",
           "product_name": "가나디 인형 뱃지 2종 택1 (생일/친구/귀여운/우정/커플/선물 추천)",
           "rank": 4,
           "rank_delta": "NEW",
@@ -6911,14 +7300,25 @@
           "is_new_entry": true
         },
         {
-          "brand": "가나디",
-          "product_name": "가나디 홀더 키링 (귀여운/휴대용컵홀더/다용도/키링) , 7,554",
-          "rank": 6,
+          "brand": "라인프렌즈스퀘어(캐릭터)",
+          "product_name": "\"요즘 내 표정\" 누가사 인형 키링 , 2,544",
+          "rank": 16,
           "rank_delta": "NEW",
           "category": "팬시/문구/취미 (IP핵심)",
-          "price": "16,300원",
-          "character_ip": "가나디",
-          "url": "https://gift.kakao.com/product/13881169",
+          "price": "16,000원",
+          "character_ip": "라인프렌즈/BT21",
+          "url": "https://gift.kakao.com/product/13177497",
+          "is_new_entry": true
+        },
+        {
+          "brand": "인형",
+          "product_name": "리락쿠마 조리개 파우치 4종",
+          "rank": 30,
+          "rank_delta": "NEW",
+          "category": "팬시/문구/취미 (IP핵심)",
+          "price": "8,800원",
+          "character_ip": "리락쿠마",
+          "url": "https://gift.kakao.com/product/13838069",
           "is_new_entry": true
         }
       ]
@@ -7053,47 +7453,47 @@
           "is_new_entry": true
         },
         {
+          "brand": "말랑필로우",
+          "product_name": "뭘보냥 안고자는 고양이 바디필로우 80cm 롱 쿠션 긴 베개 인형 쿠션 인테리어 모찌 추천 애착 대형 동물 선물 이상한 여자 친구 22% , 6,312",
+          "rank": 30,
+          "rank_delta": "NEW",
+          "category": "침구/패브릭",
+          "price": "9,900원",
+          "character_ip": "기타 캐릭터/팬시",
+          "url": "https://gift.kakao.com/product/11546351",
+          "is_new_entry": true
+        },
+        {
+          "brand": "캐릭터침구",
+          "product_name": "한교동러버 선물추천 산리오 한교동 빅바디필로우 롱쿠션 롱베개 롱필로우 퍼니 23% , 5,929",
+          "rank": 33,
+          "rank_delta": "NEW",
+          "category": "침구/패브릭",
+          "price": "30,000원",
+          "character_ip": "산리오",
+          "url": "https://gift.kakao.com/product/11972964",
+          "is_new_entry": true
+        },
+        {
           "brand": "가나디",
-          "product_name": "가나디 파자마 러그 (러그/미니러그/인테리어/자취/원룸/집들이선물) , 5,327",
-          "rank": 5,
+          "product_name": "귀여운 선물 가나디 중형 시팅 인형 2종 (생일/집들이/인테리어/응원/귀여운)",
+          "rank": 39,
           "rank_delta": "NEW",
           "category": "침구/패브릭",
-          "price": "17,800원",
+          "price": "23,800원",
           "character_ip": "가나디",
-          "url": "https://gift.kakao.com/product/14096524",
+          "url": "https://gift.kakao.com/product/11744430",
           "is_new_entry": true
         },
         {
-          "brand": "캐릭터침구",
-          "product_name": "생일/집들이선물추천 먼작귀 굿즈 발매트 러그 인테리어소품 선물 5종옵션 택1 (치이카와/가르마/토끼/밤만쥬/하늘다람쥐) , 9,445",
-          "rank": 8,
+          "brand": "오셀픽(리빙)",
+          "product_name": "집꾸 필수템 [자취/집들이선물] 오셀픽 오브제 반원형 빨아쓰는 규조토 발매트 41% , 8,504",
+          "rank": 41,
           "rank_delta": "NEW",
           "category": "침구/패브릭",
-          "price": "16,900원",
-          "character_ip": "먼작귀/치이카와",
-          "url": "https://gift.kakao.com/product/7896387",
-          "is_new_entry": true
-        },
-        {
-          "brand": "캐릭터침구",
-          "product_name": "생일/기념일선물추천 리락쿠마반달대쿠션 3종옵션 택1 알러지케어원단 캐릭터 침구 기념일 선물 , 7,268",
-          "rank": 16,
-          "rank_delta": "NEW",
-          "category": "침구/패브릭",
-          "price": "29,000원",
-          "character_ip": "리락쿠마",
-          "url": "https://gift.kakao.com/product/13808817",
-          "is_new_entry": true
-        },
-        {
-          "brand": "알럽하우스(소품)",
-          "product_name": "배추 보낸다 김장준비완료 배추담요 [빅사이즈] 웃긴 직장동료 생일 연인 커플 합격 응원 집들이 결혼 선물 귀여운 자취 쓸데없는 신박한 행운 , 2,515",
-          "rank": 17,
-          "rank_delta": "NEW",
-          "category": "침구/패브릭",
-          "price": "14,900원",
+          "price": "13,900원",
           "character_ip": "일반/비IP 상품",
-          "url": "https://gift.kakao.com/product/10819633",
+          "url": "https://gift.kakao.com/product/11073954",
           "is_new_entry": true
         }
       ]
@@ -7228,47 +7628,47 @@
           "is_new_entry": true
         },
         {
-          "brand": "비아케이(주방)",
-          "product_name": "집들이/생일 (+코스터 )[2P세트] 플로라 웨이브 플레이트 2종세트 (S사이즈+플래터)",
-          "rank": 22,
-          "rank_delta": "NEW",
-          "category": "주방/식기",
-          "price": "39,500원",
-          "character_ip": "일반/비IP 상품",
-          "url": "https://gift.kakao.com/product/12439693",
-          "is_new_entry": true
-        },
-        {
-          "brand": "트렌디홈(키친)",
-          "product_name": "귀여운선물 리본 키티캣 고블렛 유리컵 스펀지 400ml 글라스 카페컵 막걸리 맥주잔 위스키잔 , 3,683",
-          "rank": 24,
-          "rank_delta": "NEW",
-          "category": "주방/식기",
-          "price": "9,800원",
-          "character_ip": "일반/비IP 상품",
-          "url": "https://gift.kakao.com/product/13884111",
-          "is_new_entry": true
-        },
-        {
-          "brand": "스탠리",
-          "product_name": "[스탠리공식유통사] 에브리데이 서버번 머그 473ml , 9,730",
-          "rank": 26,
-          "rank_delta": "NEW",
-          "category": "주방/식기",
-          "price": "38,000원",
-          "character_ip": "일반/비IP 상품",
-          "url": "https://gift.kakao.com/product/12339610",
-          "is_new_entry": true
-        },
-        {
           "brand": "레고트",
-          "product_name": "루프 텀블러 멀티 400ml (7 colors) 20% , 8,250",
-          "rank": 27,
+          "product_name": "[카카오단독] 루프 텀블러 미니 200ml (5 colors) 20% 튜브 키링 1P , 8,283",
+          "rank": 37,
           "rank_delta": "NEW",
           "category": "주방/식기",
-          "price": "31,000원",
+          "price": "23,200원",
           "character_ip": "일반/비IP 상품",
-          "url": "https://gift.kakao.com/product/11264832",
+          "url": "https://gift.kakao.com/product/13923057",
+          "is_new_entry": true
+        },
+        {
+          "brand": "이딸라",
+          "product_name": "리뷰이벤트 [][이딸라] 가스테헬미 유니버설 글래스 260ml (2P)(색상 선택) 22%",
+          "rank": 39,
+          "rank_delta": "NEW",
+          "category": "주방/식기",
+          "price": "47,000원",
+          "character_ip": "일반/비IP 상품",
+          "url": "https://gift.kakao.com/product/2125081",
+          "is_new_entry": true
+        },
+        {
+          "brand": "보아르",
+          "product_name": "50시간 보냉 [직장인/취업선물] 보아르 투웨이텀블러 1.18L대용량 손잡이 스테인리스 스텐 보온 보냉 차량용 대형 2종 빨대구성 생일 친구 13%",
+          "rank": 40,
+          "rank_delta": "NEW",
+          "category": "주방/식기",
+          "price": "19,900원",
+          "character_ip": "일반/비IP 상품",
+          "url": "https://gift.kakao.com/product/10756773",
+          "is_new_entry": true
+        },
+        {
+          "brand": "댄꼼마",
+          "product_name": "\"집들이 선물 추천\" 짱구 식기세트(4P) [밥그릇, 국그릇, 컵, 미니그릇 세트/정품인증] , 6,647",
+          "rank": 41,
+          "rank_delta": "NEW",
+          "category": "주방/식기",
+          "price": "29,900원",
+          "character_ip": "짱구",
+          "url": "https://gift.kakao.com/product/12786916",
           "is_new_entry": true
         }
       ]
