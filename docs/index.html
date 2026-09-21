@@ -226,6 +226,32 @@
                         </table>
                     </div>
                 </section>
+
+                <!-- IP Trend Chart (시계열 추이) -->
+                <section class="card" style="margin-bottom: 28px;">
+                    <div class="section-header">
+                        <h2><i class="fa-solid fa-chart-line highlight-icon"></i> 📈 캐릭터 IP 점유율/가격 추이</h2>
+                    </div>
+                    <div class="insights-content" style="display:flex; flex-wrap:wrap; gap:12px; align-items:center; margin-bottom:16px;">
+                        <div>
+                            <label style="margin-right:6px; font-size:0.9em; opacity:0.8;">지표:</label>
+                            <select id="trend-metric-selector" class="date-select">
+                                <option value="share">점유율 (%)</option>
+                                <option value="avg_price">평균가 (원)</option>
+                                <option value="count">노출 개수</option>
+                            </select>
+                        </div>
+                        <div id="trend-ip-checklist" style="display:flex; flex-wrap:wrap; gap:8px; font-size:0.85em;">
+                            <!-- Dynamic IP checkbox chips -->
+                        </div>
+                    </div>
+                    <div style="position:relative; height:340px;">
+                        <canvas id="trendChart"></canvas>
+                    </div>
+                    <p style="font-size:0.8em; opacity:0.6; margin-top:10px;">
+                        ※ "미분류"는 아직 개별 IP로 라벨링되지 않은 상품들의 합계입니다 (참고용 기준선이며, 특정 캐릭터를 의미하지 않습니다).
+                    </p>
+                </section>
             </div>
 
             <!-- ================================================================= -->

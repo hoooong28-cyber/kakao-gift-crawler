@@ -16,7 +16,7 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": 1,
+      "rank_delta": "1",
       "price_numeric": 44100,
       "usp": "일반구성",
       "rank_comparison_status": "compared"
@@ -37,7 +37,7 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": -1,
+      "rank_delta": "-1",
       "price_numeric": 20000,
       "usp": "일반구성",
       "rank_comparison_status": "compared"
@@ -58,7 +58,7 @@
       "has_engraving": false,
       "is_exclusive": true,
       "is_new_entry": false,
-      "rank_delta": 4,
+      "rank_delta": "4",
       "price_numeric": 30600,
       "usp": "단독구성",
       "rank_comparison_status": "compared"
@@ -79,7 +79,7 @@
       "has_engraving": false,
       "is_exclusive": true,
       "is_new_entry": false,
-      "rank_delta": 0,
+      "rank_delta": "0",
       "price_numeric": 24500,
       "usp": "단독구성",
       "rank_comparison_status": "compared"
@@ -100,7 +100,7 @@
       "has_engraving": false,
       "is_exclusive": true,
       "is_new_entry": false,
-      "rank_delta": -2,
+      "rank_delta": "-2",
       "price_numeric": 18000,
       "usp": "선물포장, 단독구성",
       "rank_comparison_status": "compared"
@@ -121,7 +121,7 @@
       "has_engraving": false,
       "is_exclusive": true,
       "is_new_entry": false,
-      "rank_delta": -1,
+      "rank_delta": "-1",
       "price_numeric": 32800,
       "usp": "단독구성",
       "rank_comparison_status": "compared"
@@ -142,7 +142,7 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": 2,
+      "rank_delta": "2",
       "price_numeric": 22900,
       "usp": "일반구성",
       "rank_comparison_status": "compared"
@@ -163,7 +163,7 @@
       "has_engraving": false,
       "is_exclusive": true,
       "is_new_entry": false,
-      "rank_delta": 6,
+      "rank_delta": "6",
       "price_numeric": 33000,
       "usp": "단독구성",
       "rank_comparison_status": "compared"
@@ -184,7 +184,7 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": 2,
+      "rank_delta": "2",
       "price_numeric": 12000,
       "usp": "일반구성",
       "rank_comparison_status": "compared"
@@ -205,7 +205,7 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": -4,
+      "rank_delta": "-4",
       "price_numeric": 19500,
       "usp": "일반구성",
       "rank_comparison_status": "compared"
@@ -226,7 +226,7 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": -3,
+      "rank_delta": "-3",
       "price_numeric": 12800,
       "usp": "일반구성",
       "rank_comparison_status": "compared"
@@ -247,7 +247,7 @@
       "has_engraving": false,
       "is_exclusive": true,
       "is_new_entry": false,
-      "rank_delta": 5,
+      "rank_delta": "5",
       "price_numeric": 34800,
       "usp": "단독구성",
       "rank_comparison_status": "compared"
@@ -268,7 +268,7 @@
       "has_engraving": false,
       "is_exclusive": true,
       "is_new_entry": false,
-      "rank_delta": -3,
+      "rank_delta": "-3",
       "price_numeric": 39000,
       "usp": "단독구성",
       "rank_comparison_status": "compared"
@@ -289,7 +289,7 @@
       "has_engraving": false,
       "is_exclusive": true,
       "is_new_entry": false,
-      "rank_delta": 1,
+      "rank_delta": "1",
       "price_numeric": 36000,
       "usp": "단독구성",
       "rank_comparison_status": "compared"
@@ -310,7 +310,7 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": -2,
+      "rank_delta": "-2",
       "price_numeric": 37000,
       "usp": "일반구성",
       "rank_comparison_status": "compared"
@@ -331,7 +331,7 @@
       "has_engraving": false,
       "is_exclusive": true,
       "is_new_entry": false,
-      "rank_delta": 5,
+      "rank_delta": "5",
       "price_numeric": 16800,
       "usp": "단독구성",
       "rank_comparison_status": "compared"
@@ -373,7 +373,7 @@
       "has_engraving": false,
       "is_exclusive": true,
       "is_new_entry": false,
-      "rank_delta": 2,
+      "rank_delta": "2",
       "price_numeric": 46000,
       "usp": "단독구성",
       "rank_comparison_status": "compared"
@@ -394,7 +394,7 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": -7,
+      "rank_delta": "-7",
       "price_numeric": 28000,
       "usp": "일반구성",
       "rank_comparison_status": "compared"
@@ -415,7 +415,7 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": -1,
+      "rank_delta": "-1",
       "price_numeric": 29900,
       "usp": "일반구성",
       "rank_comparison_status": "compared"
@@ -436,7 +436,7 @@
       "has_engraving": false,
       "is_exclusive": true,
       "is_new_entry": false,
-      "rank_delta": 4,
+      "rank_delta": "4",
       "price_numeric": 32800,
       "usp": "일반구성",
       "rank_comparison_status": "compared"
@@ -457,7 +457,7 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": -4,
+      "rank_delta": "-4",
       "price_numeric": 35000,
       "usp": "일반구성",
       "rank_comparison_status": "compared"
@@ -478,7 +478,7 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": 4,
+      "rank_delta": "4",
       "price_numeric": 21500,
       "usp": "일반구성",
       "rank_comparison_status": "compared"
@@ -499,7 +499,7 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": -1,
+      "rank_delta": "-1",
       "price_numeric": 17800,
       "usp": "일반구성",
       "rank_comparison_status": "compared"
@@ -520,7 +520,7 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": -3,
+      "rank_delta": "-3",
       "price_numeric": 46500,
       "usp": "선물포장",
       "rank_comparison_status": "compared"
@@ -562,7 +562,7 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": -3,
+      "rank_delta": "-3",
       "price_numeric": 46000,
       "usp": "일반구성",
       "rank_comparison_status": "compared"
@@ -583,7 +583,7 @@
       "has_engraving": false,
       "is_exclusive": true,
       "is_new_entry": false,
-      "rank_delta": 9,
+      "rank_delta": "9",
       "price_numeric": 9900,
       "usp": "단독구성",
       "rank_comparison_status": "compared"
@@ -604,7 +604,7 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": 38,
+      "rank_delta": "38",
       "price_numeric": 30000,
       "usp": "일반구성",
       "rank_comparison_status": "compared"
@@ -625,7 +625,7 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": -2,
+      "rank_delta": "-2",
       "price_numeric": 9800,
       "usp": "일반구성",
       "rank_comparison_status": "compared"
@@ -646,7 +646,7 @@
       "has_engraving": false,
       "is_exclusive": true,
       "is_new_entry": false,
-      "rank_delta": 8,
+      "rank_delta": "8",
       "price_numeric": 38000,
       "usp": "단독구성",
       "rank_comparison_status": "compared"
@@ -667,7 +667,7 @@
       "has_engraving": false,
       "is_exclusive": true,
       "is_new_entry": false,
-      "rank_delta": 4,
+      "rank_delta": "4",
       "price_numeric": 57900,
       "usp": "단독구성",
       "rank_comparison_status": "compared"
@@ -688,7 +688,7 @@
       "has_engraving": false,
       "is_exclusive": true,
       "is_new_entry": false,
-      "rank_delta": 5,
+      "rank_delta": "5",
       "price_numeric": 55800,
       "usp": "단독구성",
       "rank_comparison_status": "compared"
@@ -709,7 +709,7 @@
       "has_engraving": false,
       "is_exclusive": true,
       "is_new_entry": false,
-      "rank_delta": -5,
+      "rank_delta": "-5",
       "price_numeric": 44900,
       "usp": "단독구성",
       "rank_comparison_status": "compared"
@@ -730,7 +730,7 @@
       "has_engraving": false,
       "is_exclusive": true,
       "is_new_entry": false,
-      "rank_delta": -3,
+      "rank_delta": "-3",
       "price_numeric": 33300,
       "usp": "일반구성",
       "rank_comparison_status": "compared"
@@ -751,7 +751,7 @@
       "has_engraving": false,
       "is_exclusive": true,
       "is_new_entry": false,
-      "rank_delta": 4,
+      "rank_delta": "4",
       "price_numeric": 36500,
       "usp": "단독구성",
       "rank_comparison_status": "compared"
@@ -772,7 +772,7 @@
       "has_engraving": false,
       "is_exclusive": true,
       "is_new_entry": false,
-      "rank_delta": -6,
+      "rank_delta": "-6",
       "price_numeric": 53820,
       "usp": "단독구성",
       "rank_comparison_status": "compared"
@@ -793,7 +793,7 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": -8,
+      "rank_delta": "-8",
       "price_numeric": 8900,
       "usp": "일반구성",
       "rank_comparison_status": "compared"
@@ -814,7 +814,7 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": 21,
+      "rank_delta": "21",
       "price_numeric": 52000,
       "usp": "일반구성",
       "rank_comparison_status": "compared"
@@ -835,7 +835,7 @@
       "has_engraving": false,
       "is_exclusive": true,
       "is_new_entry": false,
-      "rank_delta": -5,
+      "rank_delta": "-5",
       "price_numeric": 18800,
       "usp": "단독구성",
       "rank_comparison_status": "compared"
@@ -856,7 +856,7 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": 0,
+      "rank_delta": "0",
       "price_numeric": 44000,
       "usp": "일반구성",
       "rank_comparison_status": "compared"
@@ -877,7 +877,7 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": 3,
+      "rank_delta": "3",
       "price_numeric": 42000,
       "usp": "일반구성",
       "rank_comparison_status": "compared"
@@ -898,7 +898,7 @@
       "has_engraving": false,
       "is_exclusive": true,
       "is_new_entry": false,
-      "rank_delta": -17,
+      "rank_delta": "-17",
       "price_numeric": 51000,
       "usp": "단독구성",
       "rank_comparison_status": "compared"
@@ -919,7 +919,7 @@
       "has_engraving": false,
       "is_exclusive": true,
       "is_new_entry": false,
-      "rank_delta": -2,
+      "rank_delta": "-2",
       "price_numeric": 36000,
       "usp": "단독구성",
       "rank_comparison_status": "compared"
@@ -940,7 +940,7 @@
       "has_engraving": false,
       "is_exclusive": true,
       "is_new_entry": false,
-      "rank_delta": 5,
+      "rank_delta": "5",
       "price_numeric": 34500,
       "usp": "단독구성",
       "rank_comparison_status": "compared"
@@ -961,7 +961,7 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": -12,
+      "rank_delta": "-12",
       "price_numeric": 49000,
       "usp": "일반구성",
       "rank_comparison_status": "compared"
@@ -982,7 +982,7 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": 27,
+      "rank_delta": "27",
       "price_numeric": 14800,
       "usp": "일반구성",
       "rank_comparison_status": "compared"
@@ -1003,7 +1003,7 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": 1,
+      "rank_delta": "1",
       "price_numeric": 16800,
       "usp": "일반구성",
       "rank_comparison_status": "compared"
@@ -1024,7 +1024,7 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": 6,
+      "rank_delta": "6",
       "price_numeric": 13800,
       "usp": "일반구성",
       "rank_comparison_status": "compared"
@@ -1045,7 +1045,7 @@
       "has_engraving": false,
       "is_exclusive": true,
       "is_new_entry": false,
-      "rank_delta": -17,
+      "rank_delta": "-17",
       "price_numeric": 34000,
       "usp": "단독구성",
       "rank_comparison_status": "compared"
@@ -1066,7 +1066,7 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": 1,
+      "rank_delta": "1",
       "price_numeric": 38000,
       "usp": "일반구성",
       "rank_comparison_status": "compared"
@@ -1087,7 +1087,7 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": -8,
+      "rank_delta": "-8",
       "price_numeric": 14800,
       "usp": "일반구성",
       "rank_comparison_status": "compared"
@@ -1108,7 +1108,7 @@
       "has_engraving": false,
       "is_exclusive": true,
       "is_new_entry": false,
-      "rank_delta": 5,
+      "rank_delta": "5",
       "price_numeric": 21800,
       "usp": "단독구성",
       "rank_comparison_status": "compared"
@@ -1129,7 +1129,7 @@
       "has_engraving": false,
       "is_exclusive": true,
       "is_new_entry": false,
-      "rank_delta": -11,
+      "rank_delta": "-11",
       "price_numeric": 54150,
       "usp": "단독구성",
       "rank_comparison_status": "compared"
@@ -1150,7 +1150,7 @@
       "has_engraving": false,
       "is_exclusive": true,
       "is_new_entry": false,
-      "rank_delta": -4,
+      "rank_delta": "-4",
       "price_numeric": 29800,
       "usp": "단독구성",
       "rank_comparison_status": "compared"
@@ -1171,7 +1171,7 @@
       "has_engraving": false,
       "is_exclusive": true,
       "is_new_entry": false,
-      "rank_delta": -8,
+      "rank_delta": "-8",
       "price_numeric": 38900,
       "usp": "단독구성",
       "rank_comparison_status": "compared"
@@ -1192,7 +1192,7 @@
       "has_engraving": false,
       "is_exclusive": true,
       "is_new_entry": false,
-      "rank_delta": 14,
+      "rank_delta": "14",
       "price_numeric": 30900,
       "usp": "선물포장, 단독구성",
       "rank_comparison_status": "compared"
@@ -1213,7 +1213,7 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": -2,
+      "rank_delta": "-2",
       "price_numeric": 48000,
       "usp": "일반구성",
       "rank_comparison_status": "compared"
@@ -1234,7 +1234,7 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": -12,
+      "rank_delta": "-12",
       "price_numeric": 52900,
       "usp": "일반구성",
       "rank_comparison_status": "compared"
@@ -1255,7 +1255,7 @@
       "has_engraving": false,
       "is_exclusive": true,
       "is_new_entry": false,
-      "rank_delta": -1,
+      "rank_delta": "-1",
       "price_numeric": 32800,
       "usp": "단독구성",
       "rank_comparison_status": "compared"
@@ -1276,7 +1276,7 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": -8,
+      "rank_delta": "-8",
       "price_numeric": 46550,
       "usp": "일반구성",
       "rank_comparison_status": "compared"
@@ -1297,7 +1297,7 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": 30,
+      "rank_delta": "30",
       "price_numeric": 56400,
       "usp": "일반구성",
       "rank_comparison_status": "compared"
@@ -1318,7 +1318,7 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": 2,
+      "rank_delta": "2",
       "price_numeric": 54000,
       "usp": "일반구성",
       "rank_comparison_status": "compared"
@@ -1339,7 +1339,7 @@
       "has_engraving": true,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": 2,
+      "rank_delta": "2",
       "price_numeric": 35000,
       "usp": "각인/자수",
       "rank_comparison_status": "compared"
@@ -1360,7 +1360,7 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": -11,
+      "rank_delta": "-11",
       "price_numeric": 9900,
       "usp": "일반구성",
       "rank_comparison_status": "compared"
@@ -1381,7 +1381,7 @@
       "has_engraving": false,
       "is_exclusive": true,
       "is_new_entry": false,
-      "rank_delta": -5,
+      "rank_delta": "-5",
       "price_numeric": 35900,
       "usp": "선물포장, 단독구성",
       "rank_comparison_status": "compared"
@@ -1402,7 +1402,7 @@
       "has_engraving": false,
       "is_exclusive": true,
       "is_new_entry": false,
-      "rank_delta": -21,
+      "rank_delta": "-21",
       "price_numeric": 32400,
       "usp": "단독구성",
       "rank_comparison_status": "compared"
@@ -1423,7 +1423,7 @@
       "has_engraving": false,
       "is_exclusive": true,
       "is_new_entry": false,
-      "rank_delta": 16,
+      "rank_delta": "16",
       "price_numeric": 24400,
       "usp": "단독구성",
       "rank_comparison_status": "compared"
@@ -1465,7 +1465,7 @@
       "has_engraving": false,
       "is_exclusive": true,
       "is_new_entry": false,
-      "rank_delta": 23,
+      "rank_delta": "23",
       "price_numeric": 37900,
       "usp": "단독구성",
       "rank_comparison_status": "compared"
@@ -1486,7 +1486,7 @@
       "has_engraving": false,
       "is_exclusive": true,
       "is_new_entry": false,
-      "rank_delta": 2,
+      "rank_delta": "2",
       "price_numeric": 45000,
       "usp": "단독구성",
       "rank_comparison_status": "compared"
@@ -1549,7 +1549,7 @@
       "has_engraving": false,
       "is_exclusive": true,
       "is_new_entry": false,
-      "rank_delta": 24,
+      "rank_delta": "24",
       "price_numeric": 39900,
       "usp": "단독구성",
       "rank_comparison_status": "compared"
@@ -1570,7 +1570,7 @@
       "has_engraving": false,
       "is_exclusive": true,
       "is_new_entry": false,
-      "rank_delta": 2,
+      "rank_delta": "2",
       "price_numeric": 42000,
       "usp": "단독구성",
       "rank_comparison_status": "compared"
@@ -1591,7 +1591,7 @@
       "has_engraving": false,
       "is_exclusive": true,
       "is_new_entry": false,
-      "rank_delta": 7,
+      "rank_delta": "7",
       "price_numeric": 35800,
       "usp": "단독구성",
       "rank_comparison_status": "compared"
@@ -1612,7 +1612,7 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": 2,
+      "rank_delta": "2",
       "price_numeric": 32000,
       "usp": "일반구성",
       "rank_comparison_status": "compared"
@@ -1633,7 +1633,7 @@
       "has_engraving": false,
       "is_exclusive": true,
       "is_new_entry": false,
-      "rank_delta": -21,
+      "rank_delta": "-21",
       "price_numeric": 20000,
       "usp": "단독구성",
       "rank_comparison_status": "compared"
@@ -1654,7 +1654,7 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": 15,
+      "rank_delta": "15",
       "price_numeric": 15800,
       "usp": "일반구성",
       "rank_comparison_status": "compared"
@@ -1675,7 +1675,7 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": 0,
+      "rank_delta": "0",
       "price_numeric": 18800,
       "usp": "일반구성",
       "rank_comparison_status": "compared"
@@ -1696,7 +1696,7 @@
       "has_engraving": false,
       "is_exclusive": true,
       "is_new_entry": false,
-      "rank_delta": -19,
+      "rank_delta": "-19",
       "price_numeric": 171000,
       "usp": "단독구성",
       "rank_comparison_status": "compared"
@@ -1717,7 +1717,7 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": -6,
+      "rank_delta": "-6",
       "price_numeric": 19800,
       "usp": "일반구성",
       "rank_comparison_status": "compared"
@@ -1780,7 +1780,7 @@
       "has_engraving": false,
       "is_exclusive": true,
       "is_new_entry": false,
-      "rank_delta": -16,
+      "rank_delta": "-16",
       "price_numeric": 30000,
       "usp": "단독구성",
       "rank_comparison_status": "compared"
@@ -1801,7 +1801,7 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": -4,
+      "rank_delta": "-4",
       "price_numeric": 44100,
       "usp": "일반구성",
       "rank_comparison_status": "compared"
@@ -1822,7 +1822,7 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": -23,
+      "rank_delta": "-23",
       "price_numeric": 12900,
       "usp": "일반구성",
       "rank_comparison_status": "compared"
@@ -1864,7 +1864,7 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": -4,
+      "rank_delta": "-4",
       "price_numeric": 16900,
       "usp": "일반구성",
       "rank_comparison_status": "compared"
@@ -1885,7 +1885,7 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": 9,
+      "rank_delta": "9",
       "price_numeric": 46000,
       "usp": "일반구성",
       "rank_comparison_status": "compared"
@@ -1906,7 +1906,7 @@
       "has_engraving": false,
       "is_exclusive": true,
       "is_new_entry": false,
-      "rank_delta": -23,
+      "rank_delta": "-23",
       "price_numeric": 29900,
       "usp": "단독구성",
       "rank_comparison_status": "compared"
@@ -1927,7 +1927,7 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": -3,
+      "rank_delta": "-3",
       "price_numeric": 42000,
       "usp": "일반구성",
       "rank_comparison_status": "compared"
@@ -1948,7 +1948,7 @@
       "has_engraving": false,
       "is_exclusive": true,
       "is_new_entry": false,
-      "rank_delta": -23,
+      "rank_delta": "-23",
       "price_numeric": 14900,
       "usp": "단독구성",
       "rank_comparison_status": "compared"
@@ -2011,7 +2011,7 @@
       "has_engraving": false,
       "is_exclusive": true,
       "is_new_entry": false,
-      "rank_delta": -33,
+      "rank_delta": "-33",
       "price_numeric": 15900,
       "usp": "단독구성",
       "rank_comparison_status": "compared"
@@ -2032,7 +2032,7 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": -10,
+      "rank_delta": "-10",
       "price_numeric": 44000,
       "usp": "일반구성",
       "rank_comparison_status": "compared"
@@ -2053,7 +2053,7 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": -8,
+      "rank_delta": "-8",
       "price_numeric": 17900,
       "usp": "일반구성",
       "rank_comparison_status": "compared"
@@ -2074,7 +2074,7 @@
       "has_engraving": false,
       "is_exclusive": true,
       "is_new_entry": false,
-      "rank_delta": -83,
+      "rank_delta": "-83",
       "price_numeric": 33300,
       "usp": "일반구성",
       "rank_comparison_status": "compared"
@@ -2116,7 +2116,7 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": 0,
+      "rank_delta": "0",
       "price_numeric": 20000,
       "usp": "일반구성",
       "rank_comparison_status": "compared"
@@ -2137,7 +2137,7 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": 2,
+      "rank_delta": "2",
       "price_numeric": 12000,
       "usp": "일반구성",
       "rank_comparison_status": "compared"
@@ -2158,7 +2158,7 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": -1,
+      "rank_delta": "-1",
       "price_numeric": 19500,
       "usp": "일반구성",
       "rank_comparison_status": "compared"
@@ -2179,7 +2179,7 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": -1,
+      "rank_delta": "-1",
       "price_numeric": 12800,
       "usp": "일반구성",
       "rank_comparison_status": "compared"
@@ -2200,7 +2200,7 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": 0,
+      "rank_delta": "0",
       "price_numeric": 28000,
       "usp": "일반구성",
       "rank_comparison_status": "compared"
@@ -2221,7 +2221,7 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": 0,
+      "rank_delta": "0",
       "price_numeric": 8900,
       "usp": "일반구성",
       "rank_comparison_status": "compared"
@@ -2242,7 +2242,7 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": 3,
+      "rank_delta": "3",
       "price_numeric": 14800,
       "usp": "일반구성",
       "rank_comparison_status": "compared"
@@ -2263,7 +2263,7 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": -1,
+      "rank_delta": "-1",
       "price_numeric": 9900,
       "usp": "일반구성",
       "rank_comparison_status": "compared"
@@ -2284,7 +2284,7 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": 5,
+      "rank_delta": "5",
       "price_numeric": 43800,
       "usp": "각인/자수",
       "rank_comparison_status": "compared"
@@ -2305,7 +2305,7 @@
       "has_engraving": false,
       "is_exclusive": true,
       "is_new_entry": false,
-      "rank_delta": -2,
+      "rank_delta": "-2",
       "price_numeric": 20000,
       "usp": "단독구성",
       "rank_comparison_status": "compared"
@@ -2326,7 +2326,7 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": -2,
+      "rank_delta": "-2",
       "price_numeric": 12900,
       "usp": "일반구성",
       "rank_comparison_status": "compared"
@@ -2347,7 +2347,7 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": 0,
+      "rank_delta": "0",
       "price_numeric": 16900,
       "usp": "일반구성",
       "rank_comparison_status": "compared"
@@ -2368,7 +2368,7 @@
       "has_engraving": false,
       "is_exclusive": true,
       "is_new_entry": false,
-      "rank_delta": -2,
+      "rank_delta": "-2",
       "price_numeric": 12000,
       "usp": "단독구성",
       "rank_comparison_status": "compared"
@@ -2389,7 +2389,7 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": 1,
+      "rank_delta": "1",
       "price_numeric": 16300,
       "usp": "일반구성",
       "rank_comparison_status": "compared"
@@ -2410,7 +2410,7 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": 2,
+      "rank_delta": "2",
       "price_numeric": 16300,
       "usp": "일반구성",
       "rank_comparison_status": "compared"
@@ -2431,7 +2431,7 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": -3,
+      "rank_delta": "-3",
       "price_numeric": 15900,
       "usp": "일반구성",
       "rank_comparison_status": "compared"
@@ -2452,7 +2452,7 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": 1,
+      "rank_delta": "1",
       "price_numeric": 5000,
       "usp": "일반구성",
       "rank_comparison_status": "compared"
@@ -2473,7 +2473,7 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": 2,
+      "rank_delta": "2",
       "price_numeric": 12900,
       "usp": "일반구성",
       "rank_comparison_status": "compared"
@@ -2494,7 +2494,7 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": 2,
+      "rank_delta": "2",
       "price_numeric": 16000,
       "usp": "일반구성",
       "rank_comparison_status": "compared"
@@ -2515,7 +2515,7 @@
       "has_engraving": false,
       "is_exclusive": true,
       "is_new_entry": false,
-      "rank_delta": -4,
+      "rank_delta": "-4",
       "price_numeric": 16900,
       "usp": "선물포장, 단독구성",
       "rank_comparison_status": "compared"
@@ -2536,7 +2536,7 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": -2,
+      "rank_delta": "-2",
       "price_numeric": 15000,
       "usp": "일반구성",
       "rank_comparison_status": "compared"
@@ -2557,7 +2557,7 @@
       "has_engraving": false,
       "is_exclusive": true,
       "is_new_entry": false,
-      "rank_delta": 6,
+      "rank_delta": "6",
       "price_numeric": 18800,
       "usp": "단독구성",
       "rank_comparison_status": "compared"
@@ -2578,7 +2578,7 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": 1,
+      "rank_delta": "1",
       "price_numeric": 15000,
       "usp": "일반구성",
       "rank_comparison_status": "compared"
@@ -2599,7 +2599,7 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": 1,
+      "rank_delta": "1",
       "price_numeric": 35000,
       "usp": "일반구성",
       "rank_comparison_status": "compared"
@@ -2620,7 +2620,7 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": 1,
+      "rank_delta": "1",
       "price_numeric": 7200,
       "usp": "일반구성",
       "rank_comparison_status": "compared"
@@ -2641,7 +2641,7 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": -3,
+      "rank_delta": "-3",
       "price_numeric": 5900,
       "usp": "일반구성",
       "rank_comparison_status": "compared"
@@ -2662,7 +2662,7 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": 16,
+      "rank_delta": "16",
       "price_numeric": 8800,
       "usp": "일반구성",
       "rank_comparison_status": "compared"
@@ -2704,7 +2704,7 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": 2,
+      "rank_delta": "2",
       "price_numeric": 9900,
       "usp": "일반구성",
       "rank_comparison_status": "compared"
@@ -2725,7 +2725,7 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": 29,
+      "rank_delta": "29",
       "price_numeric": 4750,
       "usp": "일반구성",
       "rank_comparison_status": "compared"
@@ -2746,7 +2746,7 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": -4,
+      "rank_delta": "-4",
       "price_numeric": 8900,
       "usp": "일반구성",
       "rank_comparison_status": "compared"
@@ -2767,7 +2767,7 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": 41,
+      "rank_delta": "41",
       "price_numeric": 8000,
       "usp": "일반구성",
       "rank_comparison_status": "compared"
@@ -2788,7 +2788,7 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": 12,
+      "rank_delta": "12",
       "price_numeric": 9500,
       "usp": "일반구성",
       "rank_comparison_status": "compared"
@@ -2809,7 +2809,7 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": 1,
+      "rank_delta": "1",
       "price_numeric": 20000,
       "usp": "일반구성",
       "rank_comparison_status": "compared"
@@ -2830,7 +2830,7 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": 20,
+      "rank_delta": "20",
       "price_numeric": 7900,
       "usp": "일반구성",
       "rank_comparison_status": "compared"
@@ -2851,7 +2851,7 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": -2,
+      "rank_delta": "-2",
       "price_numeric": 20000,
       "usp": "일반구성",
       "rank_comparison_status": "compared"
@@ -2872,7 +2872,7 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": 7,
+      "rank_delta": "7",
       "price_numeric": 5800,
       "usp": "일반구성",
       "rank_comparison_status": "compared"
@@ -2893,7 +2893,7 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": -5,
+      "rank_delta": "-5",
       "price_numeric": 36000,
       "usp": "선물포장",
       "rank_comparison_status": "compared"
@@ -2914,7 +2914,7 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": 1,
+      "rank_delta": "1",
       "price_numeric": 8500,
       "usp": "일반구성",
       "rank_comparison_status": "compared"
@@ -2935,7 +2935,7 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": 8,
+      "rank_delta": "8",
       "price_numeric": 15900,
       "usp": "일반구성",
       "rank_comparison_status": "compared"
@@ -2956,7 +2956,7 @@
       "has_engraving": false,
       "is_exclusive": true,
       "is_new_entry": false,
-      "rank_delta": -3,
+      "rank_delta": "-3",
       "price_numeric": 9900,
       "usp": "일반구성",
       "rank_comparison_status": "compared"
@@ -2977,7 +2977,7 @@
       "has_engraving": false,
       "is_exclusive": true,
       "is_new_entry": false,
-      "rank_delta": -10,
+      "rank_delta": "-10",
       "price_numeric": 9900,
       "usp": "일반구성",
       "rank_comparison_status": "compared"
@@ -2998,7 +2998,7 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": -1,
+      "rank_delta": "-1",
       "price_numeric": 6400,
       "usp": "일반구성",
       "rank_comparison_status": "compared"
@@ -3019,7 +3019,7 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": 3,
+      "rank_delta": "3",
       "price_numeric": 18900,
       "usp": "일반구성",
       "rank_comparison_status": "compared"
@@ -3040,7 +3040,7 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": 19,
+      "rank_delta": "19",
       "price_numeric": 5900,
       "usp": "일반구성",
       "rank_comparison_status": "compared"
@@ -3061,7 +3061,7 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": -5,
+      "rank_delta": "-5",
       "price_numeric": 11800,
       "usp": "일반구성",
       "rank_comparison_status": "compared"
@@ -3082,7 +3082,7 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": 27,
+      "rank_delta": "27",
       "price_numeric": 11500,
       "usp": "일반구성",
       "rank_comparison_status": "compared"
@@ -3103,7 +3103,7 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": 15,
+      "rank_delta": "15",
       "price_numeric": 7900,
       "usp": "일반구성",
       "rank_comparison_status": "compared"
@@ -3124,7 +3124,7 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": -3,
+      "rank_delta": "-3",
       "price_numeric": 39800,
       "usp": "일반구성",
       "rank_comparison_status": "compared"
@@ -3145,7 +3145,7 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": 11,
+      "rank_delta": "11",
       "price_numeric": 13000,
       "usp": "일반구성",
       "rank_comparison_status": "compared"
@@ -3208,7 +3208,7 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": -23,
+      "rank_delta": "-23",
       "price_numeric": 31800,
       "usp": "일반구성",
       "rank_comparison_status": "compared"
@@ -3229,7 +3229,7 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": 21,
+      "rank_delta": "21",
       "price_numeric": 12900,
       "usp": "일반구성",
       "rank_comparison_status": "compared"
@@ -3271,7 +3271,7 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": -17,
+      "rank_delta": "-17",
       "price_numeric": 5100,
       "usp": "일반구성",
       "rank_comparison_status": "compared"
@@ -3292,7 +3292,7 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": 21,
+      "rank_delta": "21",
       "price_numeric": 7200,
       "usp": "일반구성",
       "rank_comparison_status": "compared"
@@ -3313,7 +3313,7 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": -5,
+      "rank_delta": "-5",
       "price_numeric": 8900,
       "usp": "일반구성",
       "rank_comparison_status": "compared"
@@ -3334,7 +3334,7 @@
       "has_engraving": false,
       "is_exclusive": true,
       "is_new_entry": false,
-      "rank_delta": -10,
+      "rank_delta": "-10",
       "price_numeric": 11900,
       "usp": "단독구성",
       "rank_comparison_status": "compared"
@@ -3355,7 +3355,7 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": 8,
+      "rank_delta": "8",
       "price_numeric": 13900,
       "usp": "일반구성",
       "rank_comparison_status": "compared"
@@ -3376,7 +3376,7 @@
       "has_engraving": false,
       "is_exclusive": true,
       "is_new_entry": false,
-      "rank_delta": -39,
+      "rank_delta": "-39",
       "price_numeric": 22900,
       "usp": "단독구성",
       "rank_comparison_status": "compared"
@@ -3397,7 +3397,7 @@
       "has_engraving": false,
       "is_exclusive": true,
       "is_new_entry": false,
-      "rank_delta": -11,
+      "rank_delta": "-11",
       "price_numeric": 32000,
       "usp": "단독구성",
       "rank_comparison_status": "compared"
@@ -3418,7 +3418,7 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": -34,
+      "rank_delta": "-34",
       "price_numeric": 34000,
       "usp": "일반구성",
       "rank_comparison_status": "compared"
@@ -3439,7 +3439,7 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": 8,
+      "rank_delta": "8",
       "price_numeric": 12900,
       "usp": "일반구성",
       "rank_comparison_status": "compared"
@@ -3460,7 +3460,7 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": -9,
+      "rank_delta": "-9",
       "price_numeric": 9200,
       "usp": "일반구성",
       "rank_comparison_status": "compared"
@@ -3481,7 +3481,7 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": -9,
+      "rank_delta": "-9",
       "price_numeric": 13600,
       "usp": "일반구성",
       "rank_comparison_status": "compared"
@@ -3502,7 +3502,7 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": -9,
+      "rank_delta": "-9",
       "price_numeric": 13000,
       "usp": "일반구성",
       "rank_comparison_status": "compared"
@@ -3544,7 +3544,7 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": -4,
+      "rank_delta": "-4",
       "price_numeric": 4500,
       "usp": "일반구성",
       "rank_comparison_status": "compared"
@@ -3607,7 +3607,7 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": 8,
+      "rank_delta": "8",
       "price_numeric": 9800,
       "usp": "일반구성",
       "rank_comparison_status": "compared"
@@ -3628,7 +3628,7 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": -13,
+      "rank_delta": "-13",
       "price_numeric": 13800,
       "usp": "일반구성",
       "rank_comparison_status": "compared"
@@ -3670,7 +3670,7 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": -21,
+      "rank_delta": "-21",
       "price_numeric": 8500,
       "usp": "일반구성",
       "rank_comparison_status": "compared"
@@ -3691,7 +3691,7 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": 1,
+      "rank_delta": "1",
       "price_numeric": 7990,
       "usp": "일반구성",
       "rank_comparison_status": "compared"
@@ -3712,7 +3712,7 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": 8,
+      "rank_delta": "8",
       "price_numeric": 15000,
       "usp": "일반구성",
       "rank_comparison_status": "compared"
@@ -3733,7 +3733,7 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": 22,
+      "rank_delta": "22",
       "price_numeric": 12800,
       "usp": "일반구성",
       "rank_comparison_status": "compared"
@@ -3754,7 +3754,7 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": 16,
+      "rank_delta": "16",
       "price_numeric": 29900,
       "usp": "일반구성",
       "rank_comparison_status": "compared"
@@ -3796,7 +3796,7 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": -19,
+      "rank_delta": "-19",
       "price_numeric": 17900,
       "usp": "일반구성",
       "rank_comparison_status": "compared"
@@ -3817,7 +3817,7 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": -45,
+      "rank_delta": "-45",
       "price_numeric": 16900,
       "usp": "일반구성",
       "rank_comparison_status": "compared"
@@ -3859,7 +3859,7 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": -18,
+      "rank_delta": "-18",
       "price_numeric": 11500,
       "usp": "일반구성",
       "rank_comparison_status": "compared"
@@ -3922,7 +3922,7 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": 4,
+      "rank_delta": "4",
       "price_numeric": 7900,
       "usp": "일반구성",
       "rank_comparison_status": "compared"
@@ -3964,7 +3964,7 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": -22,
+      "rank_delta": "-22",
       "price_numeric": 18700,
       "usp": "일반구성",
       "rank_comparison_status": "compared"
@@ -4048,7 +4048,7 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": -24,
+      "rank_delta": "-24",
       "price_numeric": 13000,
       "usp": "일반구성",
       "rank_comparison_status": "compared"
@@ -4111,7 +4111,7 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": -25,
+      "rank_delta": "-25",
       "price_numeric": 12800,
       "usp": "일반구성",
       "rank_comparison_status": "compared"
@@ -4132,7 +4132,7 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": -5,
+      "rank_delta": "-5",
       "price_numeric": 16500,
       "usp": "일반구성",
       "rank_comparison_status": "compared"
@@ -4153,7 +4153,7 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": -48,
+      "rank_delta": "-48",
       "price_numeric": 12000,
       "usp": "일반구성",
       "rank_comparison_status": "compared"
@@ -4174,7 +4174,7 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": -18,
+      "rank_delta": "-18",
       "price_numeric": 7900,
       "usp": "일반구성",
       "rank_comparison_status": "compared"
@@ -4195,7 +4195,7 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": -48,
+      "rank_delta": "-48",
       "price_numeric": 16900,
       "usp": "일반구성",
       "rank_comparison_status": "compared"
@@ -4216,7 +4216,7 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": 0,
+      "rank_delta": "0",
       "price_numeric": 22900,
       "usp": "일반구성",
       "rank_comparison_status": "compared"
@@ -4237,7 +4237,7 @@
       "has_engraving": false,
       "is_exclusive": true,
       "is_new_entry": false,
-      "rank_delta": 0,
+      "rank_delta": "0",
       "price_numeric": 34800,
       "usp": "단독구성",
       "rank_comparison_status": "compared"
@@ -4258,7 +4258,7 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": 0,
+      "rank_delta": "0",
       "price_numeric": 17800,
       "usp": "일반구성",
       "rank_comparison_status": "compared"
@@ -4279,7 +4279,7 @@
       "has_engraving": false,
       "is_exclusive": true,
       "is_new_entry": false,
-      "rank_delta": 0,
+      "rank_delta": "0",
       "price_numeric": 29800,
       "usp": "단독구성",
       "rank_comparison_status": "compared"
@@ -4300,7 +4300,7 @@
       "has_engraving": false,
       "is_exclusive": true,
       "is_new_entry": false,
-      "rank_delta": 3,
+      "rank_delta": "3",
       "price_numeric": 37900,
       "usp": "단독구성",
       "rank_comparison_status": "compared"
@@ -4321,7 +4321,7 @@
       "has_engraving": false,
       "is_exclusive": true,
       "is_new_entry": false,
-      "rank_delta": 3,
+      "rank_delta": "3",
       "price_numeric": 39900,
       "usp": "단독구성",
       "rank_comparison_status": "compared"
@@ -4342,7 +4342,7 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": -1,
+      "rank_delta": "-1",
       "price_numeric": 18800,
       "usp": "일반구성",
       "rank_comparison_status": "compared"
@@ -4363,7 +4363,7 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": 5,
+      "rank_delta": "5",
       "price_numeric": 16900,
       "usp": "일반구성",
       "rank_comparison_status": "compared"
@@ -4384,7 +4384,7 @@
       "has_engraving": false,
       "is_exclusive": true,
       "is_new_entry": false,
-      "rank_delta": -4,
+      "rank_delta": "-4",
       "price_numeric": 29900,
       "usp": "단독구성",
       "rank_comparison_status": "compared"
@@ -4405,7 +4405,7 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": -3,
+      "rank_delta": "-3",
       "price_numeric": 17900,
       "usp": "일반구성",
       "rank_comparison_status": "compared"
@@ -4426,7 +4426,7 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": -1,
+      "rank_delta": "-1",
       "price_numeric": 13800,
       "usp": "일반구성",
       "rank_comparison_status": "compared"
@@ -4447,7 +4447,7 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": 2,
+      "rank_delta": "2",
       "price_numeric": 29000,
       "usp": "일반구성",
       "rank_comparison_status": "compared"
@@ -4468,7 +4468,7 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": 3,
+      "rank_delta": "3",
       "price_numeric": 19900,
       "usp": "일반구성",
       "rank_comparison_status": "compared"
@@ -4489,7 +4489,7 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": 4,
+      "rank_delta": "4",
       "price_numeric": 19800,
       "usp": "일반구성",
       "rank_comparison_status": "compared"
@@ -4510,7 +4510,7 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": -3,
+      "rank_delta": "-3",
       "price_numeric": 23000,
       "usp": "일반구성",
       "rank_comparison_status": "compared"
@@ -4531,7 +4531,7 @@
       "has_engraving": false,
       "is_exclusive": true,
       "is_new_entry": false,
-      "rank_delta": -1,
+      "rank_delta": "-1",
       "price_numeric": 15900,
       "usp": "단독구성",
       "rank_comparison_status": "compared"
@@ -4552,7 +4552,7 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": 6,
+      "rank_delta": "6",
       "price_numeric": 13900,
       "usp": "일반구성",
       "rank_comparison_status": "compared"
@@ -4573,7 +4573,7 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": 2,
+      "rank_delta": "2",
       "price_numeric": 36900,
       "usp": "일반구성",
       "rank_comparison_status": "compared"
@@ -4594,7 +4594,7 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": -8,
+      "rank_delta": "-8",
       "price_numeric": 37000,
       "usp": "일반구성",
       "rank_comparison_status": "compared"
@@ -4615,7 +4615,7 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": 16,
+      "rank_delta": "16",
       "price_numeric": 24800,
       "usp": "일반구성",
       "rank_comparison_status": "compared"
@@ -4636,7 +4636,7 @@
       "has_engraving": false,
       "is_exclusive": true,
       "is_new_entry": false,
-      "rank_delta": 13,
+      "rank_delta": "13",
       "price_numeric": 15900,
       "usp": "단독구성",
       "rank_comparison_status": "compared"
@@ -4657,7 +4657,7 @@
       "has_engraving": false,
       "is_exclusive": true,
       "is_new_entry": false,
-      "rank_delta": 0,
+      "rank_delta": "0",
       "price_numeric": 42900,
       "usp": "단독구성",
       "rank_comparison_status": "compared"
@@ -4678,7 +4678,7 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": 14,
+      "rank_delta": "14",
       "price_numeric": 14900,
       "usp": "일반구성",
       "rank_comparison_status": "compared"
@@ -4699,7 +4699,7 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": -7,
+      "rank_delta": "-7",
       "price_numeric": 32800,
       "usp": "일반구성",
       "rank_comparison_status": "compared"
@@ -4720,7 +4720,7 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": 2,
+      "rank_delta": "2",
       "price_numeric": 13900,
       "usp": "일반구성",
       "rank_comparison_status": "compared"
@@ -4741,7 +4741,7 @@
       "has_engraving": false,
       "is_exclusive": true,
       "is_new_entry": false,
-      "rank_delta": 5,
+      "rank_delta": "5",
       "price_numeric": 13900,
       "usp": "단독구성",
       "rank_comparison_status": "compared"
@@ -4762,7 +4762,7 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": 16,
+      "rank_delta": "16",
       "price_numeric": 15900,
       "usp": "일반구성",
       "rank_comparison_status": "compared"
@@ -4783,7 +4783,7 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": -3,
+      "rank_delta": "-3",
       "price_numeric": 21800,
       "usp": "일반구성",
       "rank_comparison_status": "compared"
@@ -4804,7 +4804,7 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": 4,
+      "rank_delta": "4",
       "price_numeric": 29900,
       "usp": "일반구성",
       "rank_comparison_status": "compared"
@@ -4825,7 +4825,7 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": 17,
+      "rank_delta": "17",
       "price_numeric": 23800,
       "usp": "일반구성",
       "rank_comparison_status": "compared"
@@ -4846,7 +4846,7 @@
       "has_engraving": false,
       "is_exclusive": true,
       "is_new_entry": false,
-      "rank_delta": -12,
+      "rank_delta": "-12",
       "price_numeric": 29900,
       "usp": "단독구성",
       "rank_comparison_status": "compared"
@@ -4867,7 +4867,7 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": -8,
+      "rank_delta": "-8",
       "price_numeric": 9900,
       "usp": "일반구성",
       "rank_comparison_status": "compared"
@@ -4888,7 +4888,7 @@
       "has_engraving": false,
       "is_exclusive": true,
       "is_new_entry": false,
-      "rank_delta": -1,
+      "rank_delta": "-1",
       "price_numeric": 29900,
       "usp": "단독구성",
       "rank_comparison_status": "compared"
@@ -4909,7 +4909,7 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": 1,
+      "rank_delta": "1",
       "price_numeric": 23900,
       "usp": "일반구성",
       "rank_comparison_status": "compared"
@@ -4930,7 +4930,7 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": 4,
+      "rank_delta": "4",
       "price_numeric": 9800,
       "usp": "일반구성",
       "rank_comparison_status": "compared"
@@ -4951,7 +4951,7 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": -15,
+      "rank_delta": "-15",
       "price_numeric": 15900,
       "usp": "일반구성",
       "rank_comparison_status": "compared"
@@ -4972,7 +4972,7 @@
       "has_engraving": false,
       "is_exclusive": true,
       "is_new_entry": false,
-      "rank_delta": -7,
+      "rank_delta": "-7",
       "price_numeric": 29800,
       "usp": "단독구성",
       "rank_comparison_status": "compared"
@@ -4993,7 +4993,7 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": -12,
+      "rank_delta": "-12",
       "price_numeric": 39000,
       "usp": "일반구성",
       "rank_comparison_status": "compared"
@@ -5014,7 +5014,7 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": -11,
+      "rank_delta": "-11",
       "price_numeric": 19900,
       "usp": "일반구성",
       "rank_comparison_status": "compared"
@@ -5056,7 +5056,7 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": -12,
+      "rank_delta": "-12",
       "price_numeric": 9900,
       "usp": "일반구성",
       "rank_comparison_status": "compared"
@@ -5077,7 +5077,7 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": -1,
+      "rank_delta": "-1",
       "price_numeric": 29800,
       "usp": "일반구성",
       "rank_comparison_status": "compared"
@@ -5098,7 +5098,7 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": 9,
+      "rank_delta": "9",
       "price_numeric": 23800,
       "usp": "일반구성",
       "rank_comparison_status": "compared"
@@ -5119,7 +5119,7 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": 25,
+      "rank_delta": "25",
       "price_numeric": 15900,
       "usp": "일반구성",
       "rank_comparison_status": "compared"
@@ -5140,7 +5140,7 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": 4,
+      "rank_delta": "4",
       "price_numeric": 79000,
       "usp": "선물포장",
       "rank_comparison_status": "compared"
@@ -5161,7 +5161,7 @@
       "has_engraving": false,
       "is_exclusive": true,
       "is_new_entry": false,
-      "rank_delta": -6,
+      "rank_delta": "-6",
       "price_numeric": 32000,
       "usp": "단독구성",
       "rank_comparison_status": "compared"
@@ -5182,7 +5182,7 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": -9,
+      "rank_delta": "-9",
       "price_numeric": 16900,
       "usp": "일반구성",
       "rank_comparison_status": "compared"
@@ -5224,7 +5224,7 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": 12,
+      "rank_delta": "12",
       "price_numeric": 39000,
       "usp": "일반구성",
       "rank_comparison_status": "compared"
@@ -5245,7 +5245,7 @@
       "has_engraving": false,
       "is_exclusive": true,
       "is_new_entry": false,
-      "rank_delta": -6,
+      "rank_delta": "-6",
       "price_numeric": 29900,
       "usp": "단독구성",
       "rank_comparison_status": "compared"
@@ -5266,7 +5266,7 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": 19,
+      "rank_delta": "19",
       "price_numeric": 39000,
       "usp": "일반구성",
       "rank_comparison_status": "compared"
@@ -5287,7 +5287,7 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": 13,
+      "rank_delta": "13",
       "price_numeric": 25000,
       "usp": "일반구성",
       "rank_comparison_status": "compared"
@@ -5308,7 +5308,7 @@
       "has_engraving": false,
       "is_exclusive": true,
       "is_new_entry": false,
-      "rank_delta": 20,
+      "rank_delta": "20",
       "price_numeric": 79050,
       "usp": "단독구성",
       "rank_comparison_status": "compared"
@@ -5329,7 +5329,7 @@
       "has_engraving": false,
       "is_exclusive": true,
       "is_new_entry": false,
-      "rank_delta": 4,
+      "rank_delta": "4",
       "price_numeric": 22800,
       "usp": "일반구성",
       "rank_comparison_status": "compared"
@@ -5350,7 +5350,7 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": 22,
+      "rank_delta": "22",
       "price_numeric": 22000,
       "usp": "일반구성",
       "rank_comparison_status": "compared"
@@ -5371,7 +5371,7 @@
       "has_engraving": false,
       "is_exclusive": true,
       "is_new_entry": false,
-      "rank_delta": 1,
+      "rank_delta": "1",
       "price_numeric": 15900,
       "usp": "일반구성",
       "rank_comparison_status": "compared"
@@ -5392,7 +5392,7 @@
       "has_engraving": false,
       "is_exclusive": true,
       "is_new_entry": false,
-      "rank_delta": -12,
+      "rank_delta": "-12",
       "price_numeric": 27900,
       "usp": "선물포장, 단독구성",
       "rank_comparison_status": "compared"
@@ -5413,7 +5413,7 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": -3,
+      "rank_delta": "-3",
       "price_numeric": 22000,
       "usp": "일반구성",
       "rank_comparison_status": "compared"
@@ -5434,7 +5434,7 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": 13,
+      "rank_delta": "13",
       "price_numeric": 25900,
       "usp": "일반구성",
       "rank_comparison_status": "compared"
@@ -5455,7 +5455,7 @@
       "has_engraving": false,
       "is_exclusive": true,
       "is_new_entry": false,
-      "rank_delta": 20,
+      "rank_delta": "20",
       "price_numeric": 21800,
       "usp": "단독구성",
       "rank_comparison_status": "compared"
@@ -5476,7 +5476,7 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": -5,
+      "rank_delta": "-5",
       "price_numeric": 13900,
       "usp": "일반구성",
       "rank_comparison_status": "compared"
@@ -5518,7 +5518,7 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": 28,
+      "rank_delta": "28",
       "price_numeric": 25000,
       "usp": "일반구성",
       "rank_comparison_status": "compared"
@@ -5539,7 +5539,7 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": -16,
+      "rank_delta": "-16",
       "price_numeric": 22800,
       "usp": "일반구성",
       "rank_comparison_status": "compared"
@@ -5602,7 +5602,7 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": -21,
+      "rank_delta": "-21",
       "price_numeric": 28900,
       "usp": "일반구성",
       "rank_comparison_status": "compared"
@@ -5623,7 +5623,7 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": 0,
+      "rank_delta": "0",
       "price_numeric": 24800,
       "usp": "일반구성",
       "rank_comparison_status": "compared"
@@ -5665,7 +5665,7 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": -7,
+      "rank_delta": "-7",
       "price_numeric": 33900,
       "usp": "일반구성",
       "rank_comparison_status": "compared"
@@ -5686,7 +5686,7 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": -5,
+      "rank_delta": "-5",
       "price_numeric": 32000,
       "usp": "일반구성",
       "rank_comparison_status": "compared"
@@ -5707,7 +5707,7 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": 6,
+      "rank_delta": "6",
       "price_numeric": 22900,
       "usp": "일반구성",
       "rank_comparison_status": "compared"
@@ -5749,7 +5749,7 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": -21,
+      "rank_delta": "-21",
       "price_numeric": 29900,
       "usp": "일반구성",
       "rank_comparison_status": "compared"
@@ -5770,7 +5770,7 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": -16,
+      "rank_delta": "-16",
       "price_numeric": 27100,
       "usp": "일반구성",
       "rank_comparison_status": "compared"
@@ -5854,7 +5854,7 @@
       "has_engraving": false,
       "is_exclusive": true,
       "is_new_entry": false,
-      "rank_delta": -29,
+      "rank_delta": "-29",
       "price_numeric": 39990,
       "usp": "단독구성",
       "rank_comparison_status": "compared"
@@ -5875,7 +5875,7 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": 1,
+      "rank_delta": "1",
       "price_numeric": 13900,
       "usp": "일반구성",
       "rank_comparison_status": "compared"
@@ -5959,7 +5959,7 @@
       "has_engraving": false,
       "is_exclusive": true,
       "is_new_entry": false,
-      "rank_delta": 8,
+      "rank_delta": "8",
       "price_numeric": 23900,
       "usp": "일반구성",
       "rank_comparison_status": "compared"
@@ -5980,7 +5980,7 @@
       "has_engraving": false,
       "is_exclusive": true,
       "is_new_entry": false,
-      "rank_delta": 4,
+      "rank_delta": "4",
       "price_numeric": 9900,
       "usp": "단독구성",
       "rank_comparison_status": "compared"
@@ -6001,7 +6001,7 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": -3,
+      "rank_delta": "-3",
       "price_numeric": 32900,
       "usp": "일반구성",
       "rank_comparison_status": "compared"
@@ -6085,7 +6085,7 @@
       "has_engraving": false,
       "is_exclusive": true,
       "is_new_entry": false,
-      "rank_delta": -5,
+      "rank_delta": "-5",
       "price_numeric": 22900,
       "usp": "단독구성",
       "rank_comparison_status": "compared"
@@ -6127,7 +6127,7 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": -6,
+      "rank_delta": "-6",
       "price_numeric": 17900,
       "usp": "일반구성",
       "rank_comparison_status": "compared"
@@ -6232,7 +6232,7 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": -2,
+      "rank_delta": "-2",
       "price_numeric": 14900,
       "usp": "일반구성",
       "rank_comparison_status": "compared"
@@ -6274,7 +6274,7 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": -48,
+      "rank_delta": "-48",
       "price_numeric": 14900,
       "usp": "일반구성",
       "rank_comparison_status": "compared"
@@ -6295,7 +6295,7 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": -33,
+      "rank_delta": "-33",
       "price_numeric": 9590,
       "usp": "일반구성",
       "rank_comparison_status": "compared"
@@ -6316,7 +6316,7 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": 0,
+      "rank_delta": "0",
       "price_numeric": 44100,
       "usp": "일반구성",
       "rank_comparison_status": "compared"
@@ -6337,7 +6337,7 @@
       "has_engraving": false,
       "is_exclusive": true,
       "is_new_entry": false,
-      "rank_delta": 0,
+      "rank_delta": "0",
       "price_numeric": 24500,
       "usp": "단독구성",
       "rank_comparison_status": "compared"
@@ -6358,7 +6358,7 @@
       "has_engraving": false,
       "is_exclusive": true,
       "is_new_entry": false,
-      "rank_delta": 0,
+      "rank_delta": "0",
       "price_numeric": 39000,
       "usp": "단독구성",
       "rank_comparison_status": "compared"
@@ -6379,7 +6379,7 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": 0,
+      "rank_delta": "0",
       "price_numeric": 37000,
       "usp": "일반구성",
       "rank_comparison_status": "compared"
@@ -6400,7 +6400,7 @@
       "has_engraving": false,
       "is_exclusive": true,
       "is_new_entry": false,
-      "rank_delta": 2,
+      "rank_delta": "2",
       "price_numeric": 16800,
       "usp": "단독구성",
       "rank_comparison_status": "compared"
@@ -6442,7 +6442,7 @@
       "has_engraving": false,
       "is_exclusive": true,
       "is_new_entry": false,
-      "rank_delta": -1,
+      "rank_delta": "-1",
       "price_numeric": 46000,
       "usp": "단독구성",
       "rank_comparison_status": "compared"
@@ -6463,7 +6463,7 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": -3,
+      "rank_delta": "-3",
       "price_numeric": 35000,
       "usp": "일반구성",
       "rank_comparison_status": "compared"
@@ -6484,7 +6484,7 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": -1,
+      "rank_delta": "-1",
       "price_numeric": 46000,
       "usp": "일반구성",
       "rank_comparison_status": "compared"
@@ -6505,7 +6505,7 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": 0,
+      "rank_delta": "0",
       "price_numeric": 9800,
       "usp": "일반구성",
       "rank_comparison_status": "compared"
@@ -6526,7 +6526,7 @@
       "has_engraving": false,
       "is_exclusive": true,
       "is_new_entry": false,
-      "rank_delta": 2,
+      "rank_delta": "2",
       "price_numeric": 57900,
       "usp": "단독구성",
       "rank_comparison_status": "compared"
@@ -6547,7 +6547,7 @@
       "has_engraving": false,
       "is_exclusive": true,
       "is_new_entry": false,
-      "rank_delta": 2,
+      "rank_delta": "2",
       "price_numeric": 36500,
       "usp": "단독구성",
       "rank_comparison_status": "compared"
@@ -6568,7 +6568,7 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": 9,
+      "rank_delta": "9",
       "price_numeric": 52000,
       "usp": "일반구성",
       "rank_comparison_status": "compared"
@@ -6589,7 +6589,7 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": 1,
+      "rank_delta": "1",
       "price_numeric": 44000,
       "usp": "일반구성",
       "rank_comparison_status": "compared"
@@ -6610,7 +6610,7 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": 2,
+      "rank_delta": "2",
       "price_numeric": 42000,
       "usp": "일반구성",
       "rank_comparison_status": "compared"
@@ -6631,7 +6631,7 @@
       "has_engraving": false,
       "is_exclusive": true,
       "is_new_entry": false,
-      "rank_delta": -7,
+      "rank_delta": "-7",
       "price_numeric": 51000,
       "usp": "단독구성",
       "rank_comparison_status": "compared"
@@ -6652,7 +6652,7 @@
       "has_engraving": false,
       "is_exclusive": true,
       "is_new_entry": false,
-      "rank_delta": -1,
+      "rank_delta": "-1",
       "price_numeric": 36000,
       "usp": "단독구성",
       "rank_comparison_status": "compared"
@@ -6673,7 +6673,7 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": -6,
+      "rank_delta": "-6",
       "price_numeric": 49000,
       "usp": "일반구성",
       "rank_comparison_status": "compared"
@@ -6694,7 +6694,7 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": 0,
+      "rank_delta": "0",
       "price_numeric": 13800,
       "usp": "일반구성",
       "rank_comparison_status": "compared"
@@ -6715,7 +6715,7 @@
       "has_engraving": false,
       "is_exclusive": true,
       "is_new_entry": false,
-      "rank_delta": -9,
+      "rank_delta": "-9",
       "price_numeric": 34000,
       "usp": "단독구성",
       "rank_comparison_status": "compared"
@@ -6736,7 +6736,7 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": -3,
+      "rank_delta": "-3",
       "price_numeric": 38000,
       "usp": "일반구성",
       "rank_comparison_status": "compared"
@@ -6757,7 +6757,7 @@
       "has_engraving": false,
       "is_exclusive": true,
       "is_new_entry": false,
-      "rank_delta": -1,
+      "rank_delta": "-1",
       "price_numeric": 21800,
       "usp": "단독구성",
       "rank_comparison_status": "compared"
@@ -6778,7 +6778,7 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": -3,
+      "rank_delta": "-3",
       "price_numeric": 48000,
       "usp": "일반구성",
       "rank_comparison_status": "compared"
@@ -6799,7 +6799,7 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": 0,
+      "rank_delta": "0",
       "price_numeric": 54000,
       "usp": "일반구성",
       "rank_comparison_status": "compared"
@@ -6820,7 +6820,7 @@
       "has_engraving": true,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": 0,
+      "rank_delta": "0",
       "price_numeric": 35000,
       "usp": "각인/자수",
       "rank_comparison_status": "compared"
@@ -6841,7 +6841,7 @@
       "has_engraving": false,
       "is_exclusive": true,
       "is_new_entry": false,
-      "rank_delta": 6,
+      "rank_delta": "6",
       "price_numeric": 24400,
       "usp": "단독구성",
       "rank_comparison_status": "compared"
@@ -6862,7 +6862,7 @@
       "has_engraving": false,
       "is_exclusive": true,
       "is_new_entry": false,
-      "rank_delta": 0,
+      "rank_delta": "0",
       "price_numeric": 45000,
       "usp": "단독구성",
       "rank_comparison_status": "compared"
@@ -6883,7 +6883,7 @@
       "has_engraving": false,
       "is_exclusive": true,
       "is_new_entry": false,
-      "rank_delta": 15,
+      "rank_delta": "15",
       "price_numeric": 50000,
       "usp": "단독구성",
       "rank_comparison_status": "compared"
@@ -6904,7 +6904,7 @@
       "has_engraving": false,
       "is_exclusive": true,
       "is_new_entry": false,
-      "rank_delta": 2,
+      "rank_delta": "2",
       "price_numeric": 35800,
       "usp": "단독구성",
       "rank_comparison_status": "compared"
@@ -6925,7 +6925,7 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": -2,
+      "rank_delta": "-2",
       "price_numeric": 32000,
       "usp": "일반구성",
       "rank_comparison_status": "compared"
@@ -6946,7 +6946,7 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": -1,
+      "rank_delta": "-1",
       "price_numeric": 44100,
       "usp": "일반구성",
       "rank_comparison_status": "compared"
@@ -6967,7 +6967,7 @@
       "has_engraving": false,
       "is_exclusive": true,
       "is_new_entry": false,
-      "rank_delta": 13,
+      "rank_delta": "13",
       "price_numeric": 28800,
       "usp": "단독구성",
       "rank_comparison_status": "compared"
@@ -6988,7 +6988,7 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": 3,
+      "rank_delta": "3",
       "price_numeric": 46000,
       "usp": "일반구성",
       "rank_comparison_status": "compared"
@@ -7009,7 +7009,7 @@
       "has_engraving": false,
       "is_exclusive": true,
       "is_new_entry": false,
-      "rank_delta": -8,
+      "rank_delta": "-8",
       "price_numeric": 14900,
       "usp": "단독구성",
       "rank_comparison_status": "compared"
@@ -7030,7 +7030,7 @@
       "has_engraving": false,
       "is_exclusive": true,
       "is_new_entry": false,
-      "rank_delta": 4,
+      "rank_delta": "4",
       "price_numeric": 29900,
       "usp": "단독구성",
       "rank_comparison_status": "compared"
@@ -7051,7 +7051,7 @@
       "has_engraving": false,
       "is_exclusive": true,
       "is_new_entry": false,
-      "rank_delta": 10,
+      "rank_delta": "10",
       "price_numeric": 25900,
       "usp": "단독구성",
       "rank_comparison_status": "compared"
@@ -7072,7 +7072,7 @@
       "has_engraving": false,
       "is_exclusive": true,
       "is_new_entry": false,
-      "rank_delta": -14,
+      "rank_delta": "-14",
       "price_numeric": 15900,
       "usp": "단독구성",
       "rank_comparison_status": "compared"
@@ -7093,7 +7093,7 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": -5,
+      "rank_delta": "-5",
       "price_numeric": 44000,
       "usp": "일반구성",
       "rank_comparison_status": "compared"
@@ -7114,7 +7114,7 @@
       "has_engraving": false,
       "is_exclusive": true,
       "is_new_entry": false,
-      "rank_delta": -2,
+      "rank_delta": "-2",
       "price_numeric": 12900,
       "usp": "단독구성",
       "rank_comparison_status": "compared"
@@ -7135,7 +7135,7 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": 1,
+      "rank_delta": "1",
       "price_numeric": 16800,
       "usp": "일반구성",
       "rank_comparison_status": "compared"
@@ -7156,7 +7156,7 @@
       "has_engraving": false,
       "is_exclusive": true,
       "is_new_entry": false,
-      "rank_delta": 3,
+      "rank_delta": "3",
       "price_numeric": 34000,
       "usp": "단독구성",
       "rank_comparison_status": "compared"
@@ -7177,7 +7177,7 @@
       "has_engraving": false,
       "is_exclusive": true,
       "is_new_entry": false,
-      "rank_delta": -8,
+      "rank_delta": "-8",
       "price_numeric": 29800,
       "usp": "단독구성",
       "rank_comparison_status": "compared"
@@ -7198,7 +7198,7 @@
       "has_engraving": false,
       "is_exclusive": true,
       "is_new_entry": false,
-      "rank_delta": -14,
+      "rank_delta": "-14",
       "price_numeric": 20400,
       "usp": "단독구성",
       "rank_comparison_status": "compared"
@@ -7219,7 +7219,7 @@
       "has_engraving": false,
       "is_exclusive": true,
       "is_new_entry": false,
-      "rank_delta": 5,
+      "rank_delta": "5",
       "price_numeric": 24900,
       "usp": "단독구성",
       "rank_comparison_status": "compared"
@@ -7240,7 +7240,7 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": 7,
+      "rank_delta": "7",
       "price_numeric": 16900,
       "usp": "일반구성",
       "rank_comparison_status": "compared"
@@ -7261,7 +7261,7 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": 12,
+      "rank_delta": "12",
       "price_numeric": 9900,
       "usp": "일반구성",
       "rank_comparison_status": "compared"
@@ -7282,7 +7282,7 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": 0,
+      "rank_delta": "0",
       "price_numeric": 27000,
       "usp": "일반구성",
       "rank_comparison_status": "compared"
@@ -7303,7 +7303,7 @@
       "has_engraving": false,
       "is_exclusive": true,
       "is_new_entry": false,
-      "rank_delta": 22,
+      "rank_delta": "22",
       "price_numeric": 38000,
       "usp": "단독구성",
       "rank_comparison_status": "compared"
@@ -7324,7 +7324,7 @@
       "has_engraving": false,
       "is_exclusive": true,
       "is_new_entry": false,
-      "rank_delta": -7,
+      "rank_delta": "-7",
       "price_numeric": 43900,
       "usp": "단독구성",
       "rank_comparison_status": "compared"
@@ -7345,7 +7345,7 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": 0,
+      "rank_delta": "0",
       "price_numeric": 29500,
       "usp": "일반구성",
       "rank_comparison_status": "compared"
@@ -7366,7 +7366,7 @@
       "has_engraving": false,
       "is_exclusive": true,
       "is_new_entry": false,
-      "rank_delta": -13,
+      "rank_delta": "-13",
       "price_numeric": 22800,
       "usp": "단독구성",
       "rank_comparison_status": "compared"
@@ -7387,7 +7387,7 @@
       "has_engraving": false,
       "is_exclusive": true,
       "is_new_entry": false,
-      "rank_delta": 2,
+      "rank_delta": "2",
       "price_numeric": 15800,
       "usp": "단독구성",
       "rank_comparison_status": "compared"
@@ -7408,7 +7408,7 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": 33,
+      "rank_delta": "33",
       "price_numeric": 9900,
       "usp": "일반구성",
       "rank_comparison_status": "compared"
@@ -7429,7 +7429,7 @@
       "has_engraving": false,
       "is_exclusive": true,
       "is_new_entry": false,
-      "rank_delta": 7,
+      "rank_delta": "7",
       "price_numeric": 56000,
       "usp": "단독구성",
       "rank_comparison_status": "compared"
@@ -7450,7 +7450,7 @@
       "has_engraving": false,
       "is_exclusive": true,
       "is_new_entry": false,
-      "rank_delta": 16,
+      "rank_delta": "16",
       "price_numeric": 15800,
       "usp": "단독구성",
       "rank_comparison_status": "compared"
@@ -7471,7 +7471,7 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": 1,
+      "rank_delta": "1",
       "price_numeric": 64000,
       "usp": "일반구성",
       "rank_comparison_status": "compared"
@@ -7492,7 +7492,7 @@
       "has_engraving": false,
       "is_exclusive": true,
       "is_new_entry": false,
-      "rank_delta": 6,
+      "rank_delta": "6",
       "price_numeric": 67200,
       "usp": "단독구성",
       "rank_comparison_status": "compared"
@@ -7513,7 +7513,7 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": -18,
+      "rank_delta": "-18",
       "price_numeric": 19900,
       "usp": "일반구성",
       "rank_comparison_status": "compared"
@@ -7534,7 +7534,7 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": -3,
+      "rank_delta": "-3",
       "price_numeric": 14900,
       "usp": "일반구성",
       "rank_comparison_status": "compared"
@@ -7555,7 +7555,7 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": -5,
+      "rank_delta": "-5",
       "price_numeric": 47000,
       "usp": "일반구성",
       "rank_comparison_status": "compared"
@@ -7576,7 +7576,7 @@
       "has_engraving": false,
       "is_exclusive": true,
       "is_new_entry": false,
-      "rank_delta": -26,
+      "rank_delta": "-26",
       "price_numeric": 54150,
       "usp": "단독구성",
       "rank_comparison_status": "compared"
@@ -7597,7 +7597,7 @@
       "has_engraving": false,
       "is_exclusive": true,
       "is_new_entry": false,
-      "rank_delta": -14,
+      "rank_delta": "-14",
       "price_numeric": 53000,
       "usp": "단독구성",
       "rank_comparison_status": "compared"
@@ -7618,7 +7618,7 @@
       "has_engraving": false,
       "is_exclusive": true,
       "is_new_entry": false,
-      "rank_delta": -4,
+      "rank_delta": "-4",
       "price_numeric": 14800,
       "usp": "단독구성",
       "rank_comparison_status": "compared"
@@ -7639,7 +7639,7 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": 9,
+      "rank_delta": "9",
       "price_numeric": 35500,
       "usp": "일반구성",
       "rank_comparison_status": "compared"
@@ -7660,7 +7660,7 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": 17,
+      "rank_delta": "17",
       "price_numeric": 39900,
       "usp": "일반구성",
       "rank_comparison_status": "compared"
@@ -7681,7 +7681,7 @@
       "has_engraving": true,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": 14,
+      "rank_delta": "14",
       "price_numeric": 39000,
       "usp": "각인/자수",
       "rank_comparison_status": "compared"
@@ -7723,7 +7723,7 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": 6,
+      "rank_delta": "6",
       "price_numeric": 28000,
       "usp": "일반구성",
       "rank_comparison_status": "compared"
@@ -7744,7 +7744,7 @@
       "has_engraving": false,
       "is_exclusive": true,
       "is_new_entry": false,
-      "rank_delta": 8,
+      "rank_delta": "8",
       "price_numeric": 19900,
       "usp": "단독구성",
       "rank_comparison_status": "compared"
@@ -7765,7 +7765,7 @@
       "has_engraving": false,
       "is_exclusive": true,
       "is_new_entry": false,
-      "rank_delta": 27,
+      "rank_delta": "27",
       "price_numeric": 40800,
       "usp": "단독구성",
       "rank_comparison_status": "compared"
@@ -7786,7 +7786,7 @@
       "has_engraving": false,
       "is_exclusive": true,
       "is_new_entry": false,
-      "rank_delta": 5,
+      "rank_delta": "5",
       "price_numeric": 69000,
       "usp": "단독구성",
       "rank_comparison_status": "compared"
@@ -7807,7 +7807,7 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": 24,
+      "rank_delta": "24",
       "price_numeric": 39000,
       "usp": "일반구성",
       "rank_comparison_status": "compared"
@@ -7828,7 +7828,7 @@
       "has_engraving": false,
       "is_exclusive": true,
       "is_new_entry": false,
-      "rank_delta": -6,
+      "rank_delta": "-6",
       "price_numeric": 39500,
       "usp": "단독구성",
       "rank_comparison_status": "compared"
@@ -7849,7 +7849,7 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": -14,
+      "rank_delta": "-14",
       "price_numeric": 32000,
       "usp": "일반구성",
       "rank_comparison_status": "compared"
@@ -7870,7 +7870,7 @@
       "has_engraving": false,
       "is_exclusive": true,
       "is_new_entry": false,
-      "rank_delta": -22,
+      "rank_delta": "-22",
       "price_numeric": 48900,
       "usp": "단독구성",
       "rank_comparison_status": "compared"
@@ -7912,7 +7912,7 @@
       "has_engraving": false,
       "is_exclusive": true,
       "is_new_entry": false,
-      "rank_delta": 13,
+      "rank_delta": "13",
       "price_numeric": 18000,
       "usp": "단독구성",
       "rank_comparison_status": "compared"
@@ -7933,7 +7933,7 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": -6,
+      "rank_delta": "-6",
       "price_numeric": 31500,
       "usp": "일반구성",
       "rank_comparison_status": "compared"
@@ -7954,7 +7954,7 @@
       "has_engraving": false,
       "is_exclusive": true,
       "is_new_entry": false,
-      "rank_delta": -4,
+      "rank_delta": "-4",
       "price_numeric": 25000,
       "usp": "단독구성",
       "rank_comparison_status": "compared"
@@ -7975,7 +7975,7 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": -1,
+      "rank_delta": "-1",
       "price_numeric": 30000,
       "usp": "일반구성",
       "rank_comparison_status": "compared"
@@ -8038,7 +8038,7 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": -17,
+      "rank_delta": "-17",
       "price_numeric": 39200,
       "usp": "일반구성",
       "rank_comparison_status": "compared"
@@ -8059,7 +8059,7 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": -20,
+      "rank_delta": "-20",
       "price_numeric": 68000,
       "usp": "일반구성",
       "rank_comparison_status": "compared"
@@ -8080,7 +8080,7 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": -7,
+      "rank_delta": "-7",
       "price_numeric": 44000,
       "usp": "일반구성",
       "rank_comparison_status": "compared"
@@ -8101,7 +8101,7 @@
       "has_engraving": false,
       "is_exclusive": true,
       "is_new_entry": false,
-      "rank_delta": -35,
+      "rank_delta": "-35",
       "price_numeric": 18990,
       "usp": "단독구성",
       "rank_comparison_status": "compared"
@@ -8143,7 +8143,7 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": -26,
+      "rank_delta": "-26",
       "price_numeric": 129000,
       "usp": "일반구성",
       "rank_comparison_status": "compared"
@@ -8164,7 +8164,7 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": -20,
+      "rank_delta": "-20",
       "price_numeric": 40000,
       "usp": "일반구성",
       "rank_comparison_status": "compared"
@@ -8185,7 +8185,7 @@
       "has_engraving": false,
       "is_exclusive": true,
       "is_new_entry": false,
-      "rank_delta": -2,
+      "rank_delta": "-2",
       "price_numeric": 34000,
       "usp": "단독구성",
       "rank_comparison_status": "compared"
@@ -8269,7 +8269,7 @@
       "has_engraving": false,
       "is_exclusive": true,
       "is_new_entry": false,
-      "rank_delta": 1,
+      "rank_delta": "1",
       "price_numeric": 58000,
       "usp": "단독구성",
       "rank_comparison_status": "compared"
@@ -8311,7 +8311,7 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": 2,
+      "rank_delta": "2",
       "price_numeric": 42000,
       "usp": "일반구성",
       "rank_comparison_status": "compared"
@@ -8332,7 +8332,7 @@
       "has_engraving": false,
       "is_exclusive": true,
       "is_new_entry": false,
-      "rank_delta": -10,
+      "rank_delta": "-10",
       "price_numeric": 49000,
       "usp": "단독구성",
       "rank_comparison_status": "compared"
@@ -8353,7 +8353,7 @@
       "has_engraving": false,
       "is_exclusive": true,
       "is_new_entry": false,
-      "rank_delta": -15,
+      "rank_delta": "-15",
       "price_numeric": 24500,
       "usp": "단독구성",
       "rank_comparison_status": "compared"
@@ -8374,7 +8374,7 @@
       "has_engraving": false,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": -34,
+      "rank_delta": "-34",
       "price_numeric": 21000,
       "usp": "일반구성",
       "rank_comparison_status": "compared"
@@ -8395,7 +8395,7 @@
       "has_engraving": true,
       "is_exclusive": false,
       "is_new_entry": false,
-      "rank_delta": -32,
+      "rank_delta": "-32",
       "price_numeric": 58000,
       "usp": "각인/자수",
       "rank_comparison_status": "compared"
@@ -8544,37 +8544,37 @@
           "is_new_entry": true
         },
         {
-          "brand": "플러피홈",
-          "product_name": "내 근육 어때 [재미있는선물] 머슬 태닝 키티캣 바디필로우 벌크업 몸짱 근육인형 쿠션 아크릴 키링 , 4,414",
-          "rank": 20,
-          "rank_delta": 16,
-          "category": "침구/패브릭",
-          "price": "24,800원",
-          "character_ip": "기타 캐릭터/팬시",
-          "url": "https://gift.kakao.com/product/12155267",
-          "is_new_entry": false
-        },
-        {
-          "brand": "루시아이(침구)",
-          "product_name": "나 귀엽지 아나~ [자취/집들이선물] 단독사은품 토실토실 뱃살물범 인형 귀여운 바디필로우 애착 모찌 커플 방석 쿠션 기숙사 베개 집순이 방꾸미기",
-          "rank": 21,
-          "rank_delta": 13,
-          "category": "침구/패브릭",
-          "price": "15,900원",
-          "character_ip": "기타 캐릭터/팬시",
-          "url": "https://gift.kakao.com/product/10609163",
-          "is_new_entry": false
-        },
-        {
-          "brand": "알럽하우스(소품)",
-          "product_name": "배추 보낸다 김장준비완료 배추담요 [빅사이즈] 웃긴 직장동료 생일 연인 커플 합격 응원 집들이 결혼 선물 귀여운 자취 쓸데없는 신박한 행운 , 2,397",
-          "rank": 23,
-          "rank_delta": 14,
-          "category": "침구/패브릭",
-          "price": "14,900원",
+          "brand": "입소문뷰티템",
+          "product_name": "[생일/힐링선물]미누 룸&드레스 퍼퓸 + 사쉐 세트 (+미니퍼퓸) 섬유 향수 탈취제 룸스프레이 &차량용 방향제 샤쉐 자취 선물 , 5,178",
+          "rank": 26,
+          "rank_delta": "NEW",
+          "category": "리빙 전체",
+          "price": "21,900원",
           "character_ip": "일반/비IP 상품",
-          "url": "https://gift.kakao.com/product/10819633",
-          "is_new_entry": false
+          "url": "https://gift.kakao.com/product/13831534",
+          "is_new_entry": true
+        },
+        {
+          "brand": "소니엔젤",
+          "product_name": "몬치치,히퍼,귀여운 [Monchhichi Hippers] 몬치치 히퍼 (랜덤) , 3,214",
+          "rank": 28,
+          "rank_delta": "NEW",
+          "category": "팬시/문구/취미 (IP핵심)",
+          "price": "13,800원",
+          "character_ip": "몬치치",
+          "url": "https://gift.kakao.com/product/12447517",
+          "is_new_entry": true
+        },
+        {
+          "brand": "캐릭터침구",
+          "product_name": "팝업스토어 굿즈 먼작귀 스노우담요 140x100 집순이 극세사 블랭킷 차량용 사무실 캠핑 차박 무릎담요 , 1,203",
+          "rank": 40,
+          "rank_delta": "NEW",
+          "category": "침구/패브릭",
+          "price": "19,900원",
+          "character_ip": "먼작귀/치이카와",
+          "url": "https://gift.kakao.com/product/10962112",
+          "is_new_entry": true
         }
       ]
     },
@@ -8720,37 +8720,37 @@
           "is_new_entry": true
         },
         {
-          "brand": "에이센트",
-          "product_name": "NEW 디자인출시 [오일/쇼핑백] 에이센트 오브제 스톤디퓨저ㅣ방향제/인테리어/화산석/디퓨져/선물/결혼 50%",
-          "rank": 29,
-          "rank_delta": 38,
+          "brand": "클라우망 1981",
+          "product_name": "생일/집들이/이사 집들이/이사/신혼 프리미엄 40수 200g 고중량 3P 실용 선물 먼지없는 수건세트 클라우망1981 익스클루시브 41% 핸드타월 1P",
+          "rank": 69,
+          "rank_delta": "NEW",
           "category": "리빙 전체",
-          "price": "30,000원",
+          "price": "29,800원",
           "character_ip": "일반/비IP 상품",
-          "url": "https://gift.kakao.com/product/8027618",
-          "is_new_entry": false
+          "url": "https://gift.kakao.com/product/11334211",
+          "is_new_entry": true
+        },
+        {
+          "brand": "잼먹",
+          "product_name": "하드케이스 \"생일/선물추천\" 잼먹 라벨프린터 휴대용 라벨기 라벨프린터기 네임스티커",
+          "rank": 72,
+          "rank_delta": "NEW",
+          "category": "리빙 전체",
+          "price": "43,800원",
+          "character_ip": "일반/비IP 상품",
+          "url": "https://gift.kakao.com/product/11368084",
+          "is_new_entry": true
         },
         {
           "brand": "블루보틀",
-          "product_name": "파우치 [쇼핑백] 데이오프 텀블러 (500ml) 파우치 랜덤",
-          "rank": 39,
-          "rank_delta": 21,
+          "product_name": "파우치 [단독/] 블루보틀 머그 2P 선물세트(+쇼핑백) 파우치 랜덤",
+          "rank": 73,
+          "rank_delta": "NEW",
           "category": "리빙 전체",
-          "price": "52,000원",
+          "price": "50,000원",
           "character_ip": "일반/비IP 상품",
-          "url": "https://gift.kakao.com/product/6989471",
-          "is_new_entry": false
-        },
-        {
-          "brand": "가나디",
-          "product_name": "가나디 미니 피규어 탁상 시계 (데스크테리어/생일/친구/응원) , 2,686",
-          "rank": 47,
-          "rank_delta": 27,
-          "category": "리빙 전체",
-          "price": "14,800원",
-          "character_ip": "가나디",
-          "url": "https://gift.kakao.com/product/14096676",
-          "is_new_entry": false
+          "url": "https://gift.kakao.com/product/6990005",
+          "is_new_entry": true
         }
       ]
     },
@@ -8870,17 +8870,6 @@
       },
       "card_4_rising_stars": [
         {
-          "brand": "빛내는사람들(팬시)",
-          "product_name": "생일/귀여운 선물 럭키 고슴도치 키링 네잎클로버 행운 열쇠고리 수능 합격 부적 학생 응원 커플템 남자 여자 친구 취업 졸업 시험 선물 100일 10% , 7,435",
-          "rank": 27,
-          "rank_delta": 16,
-          "category": "팬시/문구/취미 (IP핵심)",
-          "price": "8,800원",
-          "character_ip": "일반/비IP 상품",
-          "url": "https://gift.kakao.com/product/11985626",
-          "is_new_entry": false
-        },
-        {
           "brand": "소니엔젤",
           "product_name": "몬치치,히퍼,귀여운 [Monchhichi Hippers] 몬치치 히퍼 (랜덤) , 3,214",
           "rank": 28,
@@ -8892,37 +8881,48 @@
           "is_new_entry": true
         },
         {
-          "brand": "다다랜드",
-          "product_name": "얼굴붓기 관리템 문어괄사 빗 건강 선물 생일 직장동료 스트레스 해소 행운 친구 우정 합격 부적 커플 응원 승모근 마사지 시험 쓸데없는 신박한 , 2,918",
-          "rank": 30,
-          "rank_delta": 29,
+          "brand": "코난",
+          "product_name": "명탐정 코난 랜덤 키링 5개 세트 41% , 1,000",
+          "rank": 51,
+          "rank_delta": "NEW",
           "category": "팬시/문구/취미 (IP핵심)",
-          "price": "4,750원",
+          "price": "25,000원",
+          "character_ip": "명탐정 코난",
+          "url": "https://gift.kakao.com/product/14049728",
+          "is_new_entry": true
+        },
+        {
+          "brand": "알럽하우스(소품)",
+          "product_name": "친구/생일/인형키링 행운 키링 귀여운 고양이키링 카피바라 & 별고양이 네잎클로버 인형 키링 가방고리 생일 합격 부적 커플 응원 시험수능 쓸데없는",
+          "rank": 52,
+          "rank_delta": "NEW",
+          "category": "팬시/문구/취미 (IP핵심)",
+          "price": "4,900원",
+          "character_ip": "기타 캐릭터/팬시",
+          "url": "https://gift.kakao.com/product/9578798",
+          "is_new_entry": true
+        },
+        {
+          "brand": "어프어프",
+          "product_name": "행운의 부적 키링 (7종 택1) 아크릴 열쇠고리 키홀더 가방 소품 친구 학생 취업 시험 수능 응원 귀여운 선물 , 6,279",
+          "rank": 55,
+          "rank_delta": "NEW",
+          "category": "팬시/문구/취미 (IP핵심)",
+          "price": "4,000원",
           "character_ip": "일반/비IP 상품",
-          "url": "https://gift.kakao.com/product/13535800",
-          "is_new_entry": false
+          "url": "https://gift.kakao.com/product/8082385",
+          "is_new_entry": true
         },
         {
-          "brand": "인형",
-          "product_name": "리락쿠마 미니 파우치",
-          "rank": 32,
-          "rank_delta": 41,
+          "brand": "실바니안",
+          "product_name": "5750-단짝 아기친구들의 별자리 파자마파티 , 2,157",
+          "rank": 68,
+          "rank_delta": "NEW",
           "category": "팬시/문구/취미 (IP핵심)",
-          "price": "8,000원",
-          "character_ip": "리락쿠마",
-          "url": "https://gift.kakao.com/product/14191242",
-          "is_new_entry": false
-        },
-        {
-          "brand": "인형",
-          "product_name": "리락쿠마 반원 파우치 , 1,547",
-          "rank": 33,
-          "rank_delta": 12,
-          "category": "팬시/문구/취미 (IP핵심)",
-          "price": "9,500원",
-          "character_ip": "리락쿠마",
-          "url": "https://gift.kakao.com/product/13838117",
-          "is_new_entry": false
+          "price": "32,000원",
+          "character_ip": "실바니안패밀리",
+          "url": "https://gift.kakao.com/product/8803046",
+          "is_new_entry": true
         }
       ]
     },
@@ -9043,59 +9043,59 @@
       },
       "card_4_rising_stars": [
         {
-          "brand": "플러피홈",
-          "product_name": "내 근육 어때 [재미있는선물] 머슬 태닝 키티캣 바디필로우 벌크업 몸짱 근육인형 쿠션 아크릴 키링 , 4,414",
-          "rank": 20,
-          "rank_delta": 16,
+          "brand": "캐릭터침구",
+          "product_name": "팝업스토어 굿즈 먼작귀 스노우담요 140x100 집순이 극세사 블랭킷 차량용 사무실 캠핑 차박 무릎담요 , 1,203",
+          "rank": 40,
+          "rank_delta": "NEW",
           "category": "침구/패브릭",
-          "price": "24,800원",
+          "price": "19,900원",
+          "character_ip": "먼작귀/치이카와",
+          "url": "https://gift.kakao.com/product/10962112",
+          "is_new_entry": true
+        },
+        {
+          "brand": "미니멀룸",
+          "product_name": "\"이거슨 꿀잠맛집\" 찹쌀떡 모찌모찌 왕베개",
+          "rank": 48,
+          "rank_delta": "NEW",
+          "category": "침구/패브릭",
+          "price": "29,900원",
           "character_ip": "기타 캐릭터/팬시",
-          "url": "https://gift.kakao.com/product/12155267",
-          "is_new_entry": false
+          "url": "https://gift.kakao.com/product/2422985",
+          "is_new_entry": true
         },
         {
-          "brand": "루시아이(침구)",
-          "product_name": "나 귀엽지 아나~ [자취/집들이선물] 단독사은품 토실토실 뱃살물범 인형 귀여운 바디필로우 애착 모찌 커플 방석 쿠션 기숙사 베개 집순이 방꾸미기",
-          "rank": 21,
-          "rank_delta": 13,
+          "brand": "캐릭터침구",
+          "product_name": "시나모롤팬 선물 산리오캐릭터즈 시나모롤 얼굴 인형 쿠션 , 2,053",
+          "rank": 62,
+          "rank_delta": "NEW",
           "category": "침구/패브릭",
-          "price": "15,900원",
+          "price": "26,000원",
+          "character_ip": "산리오",
+          "url": "https://gift.kakao.com/product/4970360",
+          "is_new_entry": true
+        },
+        {
+          "brand": "캐릭터침구",
+          "product_name": "친구/직장동료선물 포켓몬 패턴담요 2종옵션 메타몽 잠만보 캐릭터 극세사 무릎담요 포근한 겨울 보온 소프트 블랭킷",
+          "rank": 65,
+          "rank_delta": "NEW",
+          "category": "침구/패브릭",
+          "price": "19,900원",
+          "character_ip": "포켓몬",
+          "url": "https://gift.kakao.com/product/12302770",
+          "is_new_entry": true
+        },
+        {
+          "brand": "캐릭터침구",
+          "product_name": "[단독] \"시원한 선물\" 펭귄 슈퍼쿨 냉감 바디필로우 3종택1 (블루/그레이/핑크)",
+          "rank": 66,
+          "rank_delta": "NEW",
+          "category": "침구/패브릭",
+          "price": "29,900원",
           "character_ip": "기타 캐릭터/팬시",
-          "url": "https://gift.kakao.com/product/10609163",
-          "is_new_entry": false
-        },
-        {
-          "brand": "알럽하우스(소품)",
-          "product_name": "배추 보낸다 김장준비완료 배추담요 [빅사이즈] 웃긴 직장동료 생일 연인 커플 합격 응원 집들이 결혼 선물 귀여운 자취 쓸데없는 신박한 행운 , 2,397",
-          "rank": 23,
-          "rank_delta": 14,
-          "category": "침구/패브릭",
-          "price": "14,900원",
-          "character_ip": "일반/비IP 상품",
-          "url": "https://gift.kakao.com/product/10819633",
-          "is_new_entry": false
-        },
-        {
-          "brand": "데일리라이크(침구)",
-          "product_name": "자취/집들이선물 \"집꾸 필수템\" 푹신보들 마이 버디 발매트(미니러그) 33종 (택1) 인테리어 이사 독립 응원 결혼 생일 자취 집들이 선물",
-          "rank": 27,
-          "rank_delta": 16,
-          "category": "침구/패브릭",
-          "price": "15,900원",
-          "character_ip": "일반/비IP 상품",
-          "url": "https://gift.kakao.com/product/2488205",
-          "is_new_entry": false
-        },
-        {
-          "brand": "가나디",
-          "product_name": "귀여운 선물 가나디 중형 시팅 인형 2종 (생일/집들이/인테리어/응원/귀여운)",
-          "rank": 30,
-          "rank_delta": 17,
-          "category": "침구/패브릭",
-          "price": "23,800원",
-          "character_ip": "가나디",
-          "url": "https://gift.kakao.com/product/11744430",
-          "is_new_entry": false
+          "url": "https://gift.kakao.com/product/2470751",
+          "is_new_entry": true
         }
       ]
     },
@@ -9228,48 +9228,48 @@
           "is_new_entry": true
         },
         {
-          "brand": "블루보틀",
-          "product_name": "파우치 [단독/] 블루보틀 머그 2P 선물세트(+쇼핑백) 파우치 랜덤",
-          "rank": 28,
-          "rank_delta": 15,
+          "brand": "앨리건트테이블",
+          "product_name": "[우드티포크2p이벤트/선물세트] 윤설 화 플레이트 2p선물세트 2color 무광 접시 , 3,009",
+          "rank": 67,
+          "rank_delta": "NEW",
           "category": "주방/식기",
-          "price": "50,000원",
+          "price": "29,800원",
           "character_ip": "일반/비IP 상품",
-          "url": "https://gift.kakao.com/product/6990005",
-          "is_new_entry": false
+          "url": "https://gift.kakao.com/product/12302228",
+          "is_new_entry": true
         },
         {
-          "brand": "스타벅스(공식스토어)",
-          "product_name": "\"원터치 리드 이벤트\" [단독] 팬시 or 나수 하우스 텀블러 355ml (5종 택 1) +에코텀블러음료쿠폰() 10%",
-          "rank": 32,
-          "rank_delta": 13,
+          "brand": "앨리건트테이블",
+          "product_name": "[우드티포크사은품이벤트] 아이보리앤도트머그&플레이트 선물세트 신혼 집들이 친구 커플 크리스마스 홈파티",
+          "rank": 76,
+          "rank_delta": "NEW",
           "category": "주방/식기",
-          "price": "28,800원",
+          "price": "24,800원",
           "character_ip": "일반/비IP 상품",
-          "url": "https://gift.kakao.com/product/7712218",
-          "is_new_entry": false
+          "url": "https://gift.kakao.com/product/6177827",
+          "is_new_entry": true
         },
         {
-          "brand": "보퀴진",
-          "product_name": "자취/집들이선물 [보퀴진] 산리오 헬로키티 빈티지 1인식기 머그컵 집들이 홈카페 세트 , 7,364",
-          "rank": 36,
-          "rank_delta": 10,
+          "brand": "레고트",
+          "product_name": "[카카오단독] 루프 텀블러 미니 200ml (5 colors) , 2,490",
+          "rank": 81,
+          "rank_delta": "NEW",
           "category": "주방/식기",
-          "price": "25,900원",
-          "character_ip": "산리오",
-          "url": "https://gift.kakao.com/product/10626781",
-          "is_new_entry": false
+          "price": "26,100원",
+          "character_ip": "일반/비IP 상품",
+          "url": "https://gift.kakao.com/product/13923057",
+          "is_new_entry": true
         },
         {
-          "brand": "바쏠",
-          "product_name": "뱁새 머그컵 귀여운 홈카페 감성 생일 자취 이사 집들이 10대 선물 가성비 컵 흰머리 오목눈이 하트 23% , 6,366",
-          "rank": 46,
-          "rank_delta": 12,
+          "brand": "코난",
+          "product_name": "명탐정 코난 피겨린 머그&소서 세트 10% , 1,322",
+          "rank": 82,
+          "rank_delta": "NEW",
           "category": "주방/식기",
-          "price": "9,900원",
-          "character_ip": "일반/비IP 상품",
-          "url": "https://gift.kakao.com/product/13613223",
-          "is_new_entry": false
+          "price": "25,000원",
+          "character_ip": "명탐정 코난",
+          "url": "https://gift.kakao.com/product/14046268",
+          "is_new_entry": true
         }
       ]
     }

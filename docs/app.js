@@ -7,6 +7,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
     let ipChartInstance = null;
     let brandChartInstance = null;
+    let trendChartInstance = null;
+    let ipTrendsData = {};
+    let trendMetric = 'share';
+    let trendSelectedIps = null; // null이면 기본(상위 5개) 사용
 
     const refreshBtn = document.getElementById('refresh-btn');
     const searchBox = document.getElementById('search-box');
@@ -169,6 +173,16 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         }
 
+        // ip_trends.json은 날짜 선택과 무관하게 항상 전체 누적 시계열이므로 매번 최신으로 가져온다.
+        try {
+            const trendsRes = await fetchFresh('ip_trends.json');
+            if (trendsRes.ok) {
+                ipTrendsData = await trendsRes.json();
+            }
+        } catch (err) {
+            console.warn('ip_trends.json fetch failed', err);
+        }
+
         // 사이드바 날짜 표시 업데이트
         const sidebarLabel = document.getElementById('sidebar-date-label');
         if (sidebarLabel) {
@@ -262,6 +276,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         // Render Page 2 Components (IP Strategy Hub)
         try { renderIpStrategyPage(rawProductsData, sortedIps); } catch (e) { console.warn('ipStrategy err:', e); }
+        try { renderTrendChart(); } catch (e) { console.warn('trendChart err:', e); }
 
         // Render Page 3 Table Components
         try { renderTable(products); } catch (e) { console.warn('table err:', e); }
@@ -649,6 +664,130 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     }
+
+
+    // ── IP 추이(시계열) 차트 ──────────────────────────────────────────────
+    const TREND_COLORS = ['#FEE500', '#60A5FA', '#F472B6', '#34D399', '#FB923C', '#A78BFA', '#F87171', '#38BDF8'];
+
+    function formatTrendDate(d) {
+        if (!d || d.length !== 8) return d;
+        return `${d.slice(4, 6)}/${d.slice(6, 8)}`;
+    }
+
+    function getTrendTargetCategory() {
+        return (activeCategory === 'all') ? '전체' : activeCategory;
+    }
+
+    function renderTrendIpChecklist(entities) {
+        const box = document.getElementById('trend-ip-checklist');
+        if (!box) return;
+
+        const names = Object.keys(entities).filter(k => k !== '__미분류__');
+        names.sort((a, b) => {
+            const sumA = entities[a].reduce((s, p) => s + (p.count || 0), 0);
+            const sumB = entities[b].reduce((s, p) => s + (p.count || 0), 0);
+            return sumB - sumA;
+        });
+
+        if (trendSelectedIps === null) {
+            trendSelectedIps = new Set(names.slice(0, 5));
+        }
+
+        box.innerHTML = '';
+        names.forEach(name => {
+            const label = document.createElement('label');
+            label.style.cssText = 'display:flex; align-items:center; gap:4px; cursor:pointer; padding:4px 8px; border-radius:6px; background:rgba(255,255,255,0.04);';
+            label.innerHTML = `<input type="checkbox" ${trendSelectedIps.has(name) ? 'checked' : ''} style="cursor:pointer;"> ${name}`;
+            label.querySelector('input').addEventListener('change', (e) => {
+                if (e.target.checked) trendSelectedIps.add(name);
+                else trendSelectedIps.delete(name);
+                renderTrendChart();
+            });
+            box.appendChild(label);
+        });
+
+        if (entities['__미분류__']) {
+            const label = document.createElement('label');
+            label.style.cssText = 'display:flex; align-items:center; gap:4px; cursor:pointer; padding:4px 8px; border-radius:6px; background:rgba(255,255,255,0.08); opacity:0.85;';
+            label.innerHTML = `<input type="checkbox" ${trendSelectedIps.has('__미분류__') ? 'checked' : ''} style="cursor:pointer;"> 미분류 (참고선)`;
+            label.querySelector('input').addEventListener('change', (e) => {
+                if (e.target.checked) trendSelectedIps.add('__미분류__');
+                else trendSelectedIps.delete('__미분류__');
+                renderTrendChart();
+            });
+            box.appendChild(label);
+        }
+    }
+
+    function renderTrendChart() {
+        const canvas = document.getElementById('trendChart');
+        if (!canvas || typeof Chart === 'undefined') return;
+
+        const targetCat = getTrendTargetCategory();
+        const entities = (ipTrendsData && ipTrendsData[targetCat]) ? ipTrendsData[targetCat] : {};
+
+        const metricSelector = document.getElementById('trend-metric-selector');
+        if (metricSelector) trendMetric = metricSelector.value || 'share';
+
+        renderTrendIpChecklist(entities);
+
+        const dateSet = new Set();
+        Object.values(entities).forEach(series => series.forEach(p => dateSet.add(p.date)));
+        const dates = Array.from(dateSet).sort();
+
+        const metricLabel = { share: '점유율 (%)', avg_price: '평균가 (원)', count: '노출 개수' }[trendMetric] || trendMetric;
+
+        const datasets = [];
+        let colorIdx = 0;
+        Array.from(trendSelectedIps || []).forEach(name => {
+            const series = entities[name];
+            if (!series) return;
+            const byDate = {};
+            series.forEach(p => { byDate[p.date] = p[trendMetric]; });
+            const isMisc = name === '__미분류__';
+            datasets.push({
+                label: isMisc ? '미분류(참고)' : name,
+                data: dates.map(d => (byDate[d] !== undefined ? byDate[d] : null)),
+                spanGaps: true,
+                borderColor: isMisc ? 'rgba(148, 163, 184, 0.7)' : TREND_COLORS[colorIdx % TREND_COLORS.length],
+                backgroundColor: 'transparent',
+                borderDash: isMisc ? [6, 4] : [],
+                borderWidth: isMisc ? 2 : 2.5,
+                tension: 0.3,
+                pointRadius: 2
+            });
+            if (!isMisc) colorIdx++;
+        });
+
+        if (trendChartInstance) trendChartInstance.destroy();
+        trendChartInstance = new Chart(canvas.getContext('2d'), {
+            type: 'line',
+            data: { labels: dates.map(formatTrendDate), datasets },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                interaction: { mode: 'index', intersect: false },
+                plugins: {
+                    legend: { labels: { color: '#CBD5E1' } },
+                    tooltip: {
+                        callbacks: {
+                            label: (ctx) => `${ctx.dataset.label}: ${ctx.parsed.y}${trendMetric === 'share' ? '%' : trendMetric === 'avg_price' ? '원' : '개'}`
+                        }
+                    }
+                },
+                scales: {
+                    x: { ticks: { color: '#94A3B8' }, grid: { display: false } },
+                    y: {
+                        ticks: { color: '#94A3B8' },
+                        grid: { color: 'rgba(255, 255, 255, 0.05)' },
+                        title: { display: true, text: metricLabel, color: '#94A3B8' }
+                    }
+                }
+            }
+        });
+    }
+
+    document.getElementById('trend-metric-selector') && document.getElementById('trend-metric-selector').addEventListener('change', renderTrendChart);
 
     function renderBrandChart(brandData) {
         const ctx = document.getElementById('brandChart').getContext('2d');
