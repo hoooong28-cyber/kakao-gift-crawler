@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>카카오 선물하기 세부 카테고리 Top 50 & IP 대시보드</title>
+    <title>카카오 선물하기 카테고리 랭킹 & IP 대시보드</title>
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -23,7 +23,7 @@
                 </div>
                 <div class="brand-text">
                     <h2>IP Brand Hub</h2>
-                    <span>Category Top 50 System</span>
+                    <span>Category Ranking Monitor</span>
                 </div>
             </div>
 
@@ -39,7 +39,7 @@
                     <i class="fa-solid fa-icons"></i> 🎨 캐릭터 IP 전략 분석
                 </button>
                 <button class="nav-item" data-page="page-ranking-table">
-                    <i class="fa-solid fa-table-list"></i> 📋 세부 랭킹 명세 (Top 100)
+                    <i class="fa-solid fa-table-list"></i> 📋 세부 랭킹 명세
                 </button>
             </nav>
 
@@ -57,7 +57,7 @@
             <!-- Header -->
             <header class="top-header">
                 <div class="header-title">
-                    <h1>🧸 카카오 선물하기 세부 카테고리별 Top 50 인사이트</h1>
+                    <h1>🧸 카카오 선물하기 카테고리별 랭킹 인사이트</h1>
                     <p id="last-updated">최근 수집 시각: 불러오는 중...</p>
                 </div>
                 <div class="header-actions">
@@ -72,6 +72,7 @@
                     </button>
                 </div>
             </header>
+            <p id="scope-note" class="metric-sub" style="margin-bottom:20px;line-height:1.7;" aria-live="polite"></p>
 
             <!-- ================================================================= -->
             <!-- PAGE 1: 📊 트렌드 요약 & 차트 (Overview & Charts View) -->
@@ -81,11 +82,11 @@
                 <section class="category-filter-section card">
                     <span class="filter-label"><i class="fa-solid fa-layer-group"></i> 카테고리 선택:</span>
                     <div class="category-tabs" id="cat-tabs-overview">
-                        <button class="cat-tab active" data-cat="all">전체 수집 (200개)</button>
-                        <button class="cat-tab" data-cat="리빙 전체">🏠 리빙 전체 (50위)</button>
-                        <button class="cat-tab" data-cat="팬시/문구/취미 (IP핵심)">🧸 팬시/문구/취미 (IP 56.7%)</button>
-                        <button class="cat-tab" data-cat="침구/패브릭">🛏️ 침구/패브릭 (IP 70.0%)</button>
-                        <button class="cat-tab" data-cat="주방/식기">🍳 주방/식기 (50위)</button>
+                        <button class="cat-tab active" data-cat="all">전체 통합</button>
+                        <button class="cat-tab" data-cat="리빙 전체">🏠 리빙 전체</button>
+                        <button class="cat-tab" data-cat="팬시/문구/취미 (IP핵심)">🧸 팬시/문구/취미</button>
+                        <button class="cat-tab" data-cat="침구/패브릭">🛏️ 침구/패브릭</button>
+                        <button class="cat-tab" data-cat="주방/식기">🍳 주방/식기</button>
                     </div>
                 </section>
 
@@ -96,7 +97,7 @@
                             <i class="fa-solid fa-face-smile"></i>
                         </div>
                         <div class="metric-info">
-                            <span class="metric-label">캐릭터 IP 점유율</span>
+                            <span class="metric-label">개별 IP 분류 상품 비중</span>
                             <h3 id="ov-ip-share" class="metric-value">0 %</h3>
                             <span id="ov-ip-sub" class="metric-sub">선택 카테고리 기준</span>
                         </div>
@@ -118,9 +119,9 @@
                             <i class="fa-solid fa-coins"></i>
                         </div>
                         <div class="metric-info">
-                            <span class="metric-label">IP 상품 평균 가격</span>
+                            <span class="metric-label">분류된 IP 상품 평균 표시가격</span>
                             <h3 id="ov-avg-price" class="metric-value">0 원</h3>
-                            <span class="metric-sub">소비자 수용 적정가</span>
+                            <span class="metric-sub">가격 확인 가능한 IP 기록의 평균</span>
                         </div>
                     </div>
 
@@ -129,9 +130,9 @@
                             <i class="fa-solid fa-chart-line"></i>
                         </div>
                         <div class="metric-info">
-                            <span class="metric-label">수집 상품 수</span>
+                            <span class="metric-label">랭킹 노출 수</span>
                             <h3 id="ov-total-count" class="metric-value">0 개</h3>
-                            <span class="metric-sub">(광고 완전 제외)</span>
+                            <span id="ov-total-sub" class="metric-sub">고유 상품 수 확인 중</span>
                         </div>
                     </div>
                 </section>
@@ -150,8 +151,8 @@
 
                     <div class="card chart-card">
                         <div class="card-title">
-                            <h3><i class="fa-solid fa-chart-pie"></i> 주요 제조 브랜드 점유율</h3>
-                            <span>제조 브랜드 분포</span>
+                            <h3><i class="fa-solid fa-chart-pie"></i> 카카오 표시 브랜드 분포</h3>
+                            <span>선택 범위 내 노출 건수</span>
                         </div>
                         <div class="chart-wrapper">
                             <canvas id="brandChart"></canvas>
@@ -182,7 +183,7 @@
                         <button class="cat-tab" data-cat="팬시/문구/취미 (IP핵심)">🧸 팬시/문구/취미</button>
                         <button class="cat-tab" data-cat="침구/패브릭">🛏️ 침구/패브릭</button>
                         <button class="cat-tab" data-cat="주방/식기">🍳 주방/식기</button>
-                        <button class="cat-tab" data-cat="전체">🌐 전체 통합</button>
+                        <button class="cat-tab" data-cat="all">🌐 전체 통합</button>
                     </div>
                 </section>
 
@@ -262,17 +263,17 @@
                 <section class="category-filter-section card">
                     <span class="filter-label"><i class="fa-solid fa-layer-group"></i> 카테고리 선택:</span>
                     <div class="category-tabs" id="cat-tabs-table">
-                        <button class="cat-tab active" data-cat="all">전체 수집 (200개)</button>
-                        <button class="cat-tab" data-cat="리빙 전체">🏠 리빙 전체 (1~50위)</button>
-                        <button class="cat-tab" data-cat="팬시/문구/취미 (IP핵심)">🧸 팬시/문구/취미 (1~50위)</button>
-                        <button class="cat-tab" data-cat="침구/패브릭">🛏️ 침구/패브릭 (1~50위)</button>
-                        <button class="cat-tab" data-cat="주방/식기">🍳 주방/식기 (1~50위)</button>
+                        <button class="cat-tab active" data-cat="all">전체 통합</button>
+                        <button class="cat-tab" data-cat="리빙 전체">🏠 리빙 전체</button>
+                        <button class="cat-tab" data-cat="팬시/문구/취미 (IP핵심)">🧸 팬시/문구/취미</button>
+                        <button class="cat-tab" data-cat="침구/패브릭">🛏️ 침구/패브릭</button>
+                        <button class="cat-tab" data-cat="주방/식기">🍳 주방/식기</button>
                     </div>
                 </section>
 
                 <section class="table-section card">
                     <div class="section-header table-header">
-                        <h2><i class="fa-solid fa-list-ol"></i> <span id="table-view-title">전체</span> 랭킹 명세 (Top 1 ~ Top 50)</h2>
+                        <h2><i class="fa-solid fa-list-ol"></i> <span id="table-view-title">전체</span> 랭킹 명세</h2>
                         <div class="table-tools">
                             <div class="search-input">
                                 <i class="fa-solid fa-magnifying-glass"></i>
@@ -303,6 +304,7 @@
         </main>
     </div>
 
-    <script src="app.js?v=3"></script>
+    <script src="metrics.js?v=1"></script>
+    <script src="app.js?v=4"></script>
 </body>
 </html>
