@@ -217,51 +217,34 @@ document.addEventListener('DOMContentLoaded', () => {
         const lastUpdated = rawProductsData[0]?.scraped_at || new Date().toLocaleString('ko-KR');
         document.getElementById('last-updated').textContent = `최근 수집 시각: ${lastUpdated}`;
         
-        const catLabelText = activeCategory === 'all' ? '전체 4개 카테고리 (200개)' : activeCategory;
-        if (document.getElementById('ov-cards-label')) document.getElementById('ov-cards-label').textContent = catLabelText;
-        if (document.getElementById('table-view-title')) document.getElementById('table-view-title').textContent = catLabelText;
-
-        // Aggregations
-        const ipCounts = {};
-        const brandCounts = {};
-        let ipProductCount = 0;
-        let totalIpPrice = 0;
-
-        products.forEach(p => {
-            const ip = p.character_ip || '일반/비IP 상품';
-            if (ip !== '일반/비IP 상품') {
-                ipProductCount++;
-                const rawPrice = parseInt((p.price || '').replace(/[^0-9]/g, ''), 10);
-                if (rawPrice) totalIpPrice += rawPrice;
-
-                const ipList = ip.split(', ');
-                ipList.forEach(item => {
-                    ipCounts[item] = (ipCounts[item] || 0) + 1;
-                });
-            }
-
-            if (p.brand) {
-                brandCounts[p.brand] = (brandCounts[p.brand] || 0) + 1;
-            }
+        const summary = DashboardMetrics.summarize(products);
+        const categoryCount = new Set(rawProductsData.map(p => p.category || '리빙 전체')).size;
+        const catLabelText = activeCategory === 'all' ? `전체 ${categoryCount}개 카테고리 (${products.length}건)` : activeCategory;
+        document.getElementById('ov-cards-label').textContent = catLabelText;
+        document.getElementById('table-view-title').textContent = catLabelText;
+        document.querySelectorAll('.cat-tab').forEach(button => {
+            const cat = button.getAttribute('data-cat');
+            const rows = cat === 'all' ? rawProductsData : rawProductsData.filter(p => (p.category || '리빙 전체') === cat);
+            button.textContent = `${cat === 'all' ? '전체 통합' : cat.replace(' (IP핵심)', '')} (${rows.length}건)`;
+            button.classList.toggle('active', cat === activeCategory);
         });
+        document.getElementById('scope-note').textContent =
+            `${catLabelText} · 랭킹 노출 ${summary.total}건 / 식별된 고유 상품 ${summary.uniqueCount}개` +
+            (summary.unidentifiedCount ? ` / 상품 ID 미확인 ${summary.unidentifiedCount}건` : '') +
+            ' · 동일 상품의 카테고리별 노출을 각각 집계합니다. IP 비중은 개별 IP명이 분류된 기록 기준이며, 미분류는 제외합니다. 매출·시장 점유율이 아닙니다.';
 
-        // Overview Metrics
-        const ipSharePct = products.length > 0 ? roundToOneDecimal((ipProductCount / products.length) * 100) : 0;
-        document.getElementById('ov-ip-share').textContent = `${ipSharePct} %`;
-        document.getElementById('ov-ip-sub').textContent = `${products.length}개 항목 중 ${ipProductCount}개 IP 상품`;
-
-        const sortedIps = Object.entries(ipCounts).sort((a, b) => b[1] - a[1]);
-        if (sortedIps.length > 0) {
-            document.getElementById('ov-top-ip').textContent = sortedIps[0][0];
-            document.getElementById('ov-top-ip-sub').textContent = `선택 영역 내 ${sortedIps[0][1]}개 노출 중`;
-        } else {
-            document.getElementById('ov-top-ip').textContent = 'IP 없음';
-            document.getElementById('ov-top-ip-sub').textContent = '일반 상품 위주';
-        }
-
-        const avgIpPrice = ipProductCount > 0 ? Math.round(totalIpPrice / ipProductCount) : 0;
-        document.getElementById('ov-avg-price').textContent = `${avgIpPrice.toLocaleString()} 원`;
-        document.getElementById('ov-total-count').textContent = `${products.length} 개`;
+        const brandCounts = {};
+        products.forEach(p => {
+            if (p.brand) brandCounts[p.brand] = (brandCounts[p.brand] || 0) + 1;
+        });
+        const sortedIps = Object.entries(summary.ipCounts).sort((a, b) => b[1] - a[1]);
+        document.getElementById('ov-ip-share').textContent = `${summary.share} %`;
+        document.getElementById('ov-ip-sub').textContent = `${summary.total}건 중 IP 분류 ${summary.ipCount}건 · 미분류 ${summary.pendingCount}건`;
+        document.getElementById('ov-top-ip').textContent = sortedIps[0]?.[0] || '분류된 IP 없음';
+        document.getElementById('ov-top-ip-sub').textContent = sortedIps.length ? `${sortedIps[0][1]}건 노출 · 미분류 제외` : 'IP 분류 검토 필요';
+        document.getElementById('ov-avg-price').textContent = summary.avgIpPrice === null ? '가격 정보 없음' : `${summary.avgIpPrice.toLocaleString()} 원`;
+        document.getElementById('ov-total-count').textContent = `${summary.total} 건`;
+        document.getElementById('ov-total-sub').textContent = `식별된 고유 상품 ${summary.uniqueCount}개`;
 
         // Render Page 1 Components
         try { renderIpChart(sortedIps.slice(0, 8)); } catch (e) { console.warn('ipChart err:', e); }
@@ -275,7 +258,7 @@ document.addEventListener('DOMContentLoaded', () => {
         try { renderB2BCards(); } catch (e) { console.error('B2B Cards rendering error:', e); }
 
         // Render Page 2 Components (IP Strategy Hub)
-        try { renderIpStrategyPage(rawProductsData, sortedIps); } catch (e) { console.warn('ipStrategy err:', e); }
+        try { renderIpStrategyPage(products, sortedIps); } catch (e) { console.warn('ipStrategy err:', e); }
         try { renderTrendChart(); } catch (e) { console.warn('trendChart err:', e); }
 
         // Render Page 3 Table Components
@@ -286,8 +269,7 @@ document.addEventListener('DOMContentLoaded', () => {
         if (!products || products.length === 0) return {};
 
         const totalCnt = products.length;
-        const ipProds = products.filter(p => p.character_ip && p.character_ip !== '일반/비IP 상품');
-        const ipShare = `${roundToOneDecimal((ipProds.length / totalCnt) * 100)}%`;
+        const ipShare = `${DashboardMetrics.summarize(products).share}%`;
 
         let pkgCount = 0, engCount = 0, excCount = 0, totalPrice = 0;
         const brandCounts = {};
@@ -339,12 +321,13 @@ document.addEventListener('DOMContentLoaded', () => {
                 '2p', '3p', '4p', '5p', '1p', 'set', 'h2', '887ml', '591ml', '360ml', '450ml', '400ml',
                 '퀜처', '플로우스테이트', '루프', '플립', '스트로', '트래블', '고블렛', '세트', '옵션', '상품', '제품', '선물세트'
             ];
-            const tokens = (p.product_name || '').replace(/\[.*?\]|\(.*?\)|[^\w\s]/g, ' ').split(/\s+/).filter(t => t.length >= 2 && !['선물', '추천', '선택', '1', '2', '3', '종', '택'].includes(t) && !noiseNouns.includes(t.toLowerCase()));
+            const tokens = (p.product_name || '').replace(/\[.*?\]|\(.*?\)|[^\p{L}\p{N}\s]/gu, ' ').split(/\s+/).filter(t => t.length >= 2 && !['선물', '추천', '선택', '1', '2', '3', '종', '택'].includes(t) && !noiseNouns.includes(t.toLowerCase()));
             top30Tokens.push(...tokens);
 
             if (p.is_new_entry || (p.rank_delta && p.rank_delta >= 10)) {
                 risingStars.push({
                     rank: p.rank,
+                    url: p.url,
                     brand: p.brand || '-',
                     product_name: p.product_name,
                     price: p.price,
@@ -410,8 +393,8 @@ document.addEventListener('DOMContentLoaded', () => {
         const container = document.getElementById('b2b-cards-container');
         if (!container) return;
 
-        const targetCat = (activeCategory === 'all') ? '리빙 전체' : activeCategory;
-        let cardData = insightCardsData[targetCat] || insightCardsData['리빙 전체'];
+        const targetCat = (activeCategory === 'all') ? '전체' : activeCategory;
+        let cardData = insightCardsData[targetCat];
 
         if (!cardData || !cardData.card_1_sov) {
             const filteredProds = getFilteredProducts();
@@ -425,7 +408,8 @@ document.addEventListener('DOMContentLoaded', () => {
             return;
         }
 
-        const sov = cardData.card_1_sov || {};
+        const summary = DashboardMetrics.summarize(getFilteredProducts());
+        const sov = { top_ip_share: `${summary.share}%` };
         const priceUsp = cardData.card_2_price_and_usp || {};
         const kw = cardData.card_3_recommended_keywords || {};
         const rising = cardData.card_4_rising_stars || [];
@@ -438,9 +422,9 @@ document.addEventListener('DOMContentLoaded', () => {
                 <div class="card metric-card">
                     <div class="card-icon icon-yellow"><i class="fa-solid fa-face-smile"></i></div>
                     <div class="metric-info">
-                        <span class="metric-label">Card 1: IP 점유율 (SOV)</span>
+                        <span class="metric-label">개별 IP 분류 상품 비중</span>
                         <h3 class="metric-value">${sov.top_ip_share || '0%'}</h3>
-                        <span class="metric-sub">분석 대상: ${cardData.analyzed_count || 0}개 상품</span>
+                        <span class="metric-sub">${summary.total}건 중 IP 분류 ${summary.ipCount}건 · 미분류 ${summary.pendingCount}건</span>
                     </div>
                 </div>
                 <div class="card metric-card">
@@ -473,7 +457,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 <!-- Price Tier White Space Matrix Card -->
                 <div class="card">
                     <div class="card-title">
-                        <h3><i class="fa-solid fa-chart-simple highlight-yellow"></i> Card 2: 가격대별 Market White Space 매트릭스</h3>
+                        <h3><i class="fa-solid fa-chart-simple highlight-yellow"></i> 가격대별 랭킹 노출 분포</h3>
                         <span>평균 가격: ${(priceUsp.avg_price || 0).toLocaleString()}원</span>
                     </div>
                     <div class="table-container" style="margin-top: 15px;">
@@ -505,18 +489,18 @@ document.addEventListener('DOMContentLoaded', () => {
                 <!-- Recommended Keywords Card -->
                 <div class="card">
                     <div class="card-title">
-                        <h3><i class="fa-solid fa-key highlight-rose"></i> Card 3: 노출 추천 상품명 키워드</h3>
-                        <span>카테고리 전체 통합 필수 포함 추천 키워드</span>
+                        <h3><i class="fa-solid fa-key highlight-rose"></i> 상위 상품의 IP·키워드 참고</h3>
+                        <span>빈도 참고용 · 상품과 관련된 표현만 사용</span>
                     </div>
                     <div style="margin-top: 15px; display: flex; flex-direction: column; gap: 12px;">
                         <div style="background: rgba(255,255,255,0.03); padding: 14px; border-radius: 10px; border-left: 4px solid #FEE500;">
-                            <div style="font-weight: 700; color: #FEE500; font-size: 14px; margin-bottom: 8px;">🔑 카테고리 필수 추천 상품명 키워드 (Top 10)</div>
+                            <div style="font-weight: 700; color: #FEE500; font-size: 14px; margin-bottom: 8px;">상위 상품의 IP·표현</div>
                             <div style="font-size: 13px; color: #E2E8F0; display: flex; flex-wrap: wrap; gap: 6px;">
                                 ${(kw.essential_title_keywords || kw.stable_keywords_top30 || []).map(k => `<span class="badge-brand" style="font-size:13px; padding: 4px 10px;">#${k}</span>`).join(' ')}
                             </div>
                         </div>
                         <div style="background: rgba(255,255,255,0.03); padding: 12px; border-radius: 8px;">
-                            <div style="font-weight: 700; color: #A5B4FC; font-size: 12px; margin-bottom: 6px;">🎯 키워드 성격별 추천 Top 5</div>
+                            <div style="font-weight: 700; color: #A5B4FC; font-size: 12px; margin-bottom: 6px;">상품명 작성 참고 예시 (빈도 순위 아님)</div>
                             <div style="font-size: 12px; color: #94A3B8; line-height: 1.8;">
                                 <div><strong>[속성/혜택]</strong>: ${(kwTypes.attributes || []).join(', ')}</div>
                                 <div><strong>[타깃/시즌]</strong>: ${(kwTypes.target_season || []).join(', ')}</div>
@@ -579,31 +563,30 @@ document.addEventListener('DOMContentLoaded', () => {
         const categories = ["리빙 전체", "팬시/문구/취미 (IP핵심)", "침구/패브릭", "주방/식기"];
         
         categories.forEach(c => {
-            const catProds = allProducts.filter(p => p.category === c);
-            const ipProds = catProds.filter(p => p.character_ip && p.character_ip !== '일반/비IP 상품');
-            const pct = catProds.length > 0 ? roundToOneDecimal((ipProds.length / catProds.length) * 100) : 0;
-            catShareList.push({ category: c, total: catProds.length, ipCount: ipProds.length, ratio: pct });
+            const catProds = rawProductsData.filter(p => (p.category || '리빙 전체') === c);
+            const summary = DashboardMetrics.summarize(catProds);
+            catShareList.push({ category: c, total: summary.total, ipCount: summary.ipCount, pending: summary.pendingCount, ratio: summary.share });
         });
 
         strategyBox.innerHTML = `
             <div class="insight-item">
-                <h4><i class="fa-solid fa-fire"></i> 세부 카테고리별 IP 침투 밀도 현황</h4>
+                <h4><i class="fa-solid fa-fire"></i> 카테고리별 개별 IP 분류 비중</h4>
                 <ul>
-                    ${catShareList.map(c => `<li><strong>[${c.category}]</strong>: IP 점유율 <strong>${c.ratio}%</strong> (${c.total}개 중 ${c.ipCount}개)</li>`).join('')}
+                    ${catShareList.map(c => `<li><strong>[${c.category}]</strong>: IP 분류 비중 <strong>${c.ratio}%</strong> (${c.total}건 중 ${c.ipCount}건 · 미분류 ${c.pending}건)</li>`).join('')}
                 </ul>
             </div>
             <div class="insight-item">
-                <h4><i class="fa-solid fa-bullseye"></i> 굿즈 제조사 핵심 추천 구역</h4>
+                <h4><i class="fa-solid fa-bullseye"></i> 분류와 비교 기준</h4>
                 <ul>
-                    <li><strong>침구/패브릭 (70.0%)</strong> & <strong>팬시/문구 (56.7%)</strong> 카테고리가 IP 상품의 최다 유입 구역입니다.</li>
-                    <li>바디필로우, 핸드워머 쿠션, 마우스패드, 파우치 폼팩터 출시 시 즉각적인 소비자 반응 촉발.</li>
+                    <li>기타 캐릭터/팬시 등 미분류 그룹은 개별 IP 순위에서 제외합니다. 자동 분류 결과는 상품 단위 검토가 필요합니다.</li>
+                    <li>콜라보 상품은 각 IP에 1건씩 집계하므로 IP별 비중의 합계는 전체 IP 상품 비중과 다를 수 있습니다.</li>
                 </ul>
             </div>
             <div class="insight-item">
-                <h4><i class="fa-solid fa-lightbulb"></i> 가격 & 단독 패키징 셀링 포인트</h4>
+                <h4><i class="fa-solid fa-lightbulb"></i> 기획 검토 시 확인할 항목</h4>
                 <ul>
-                    <li>소비자 구매 결제 평균 적정가: <strong>18,000원 ~ 34,800원</strong></li>
-                    <li>상품 타이틀 <code>[단독/선런칭]</code> 및 <code>사은품 증정</code> 세팅 필수.</li>
+                    <li>가격은 수집 당시 표시가격입니다. 실제 결제가격이나 소비자 수용 적정가를 의미하지 않습니다.</li>
+                    <li>순위 변화와 함께 상품 구성·패키지·프로모션을 확인하세요. 랭킹만으로 출시 성과를 예측할 수 없습니다.</li>
                 </ul>
             </div>
         `;
@@ -613,7 +596,7 @@ document.addEventListener('DOMContentLoaded', () => {
         tbody.innerHTML = '';
 
         sortedIps.forEach(([ipName, count]) => {
-            const ipProds = allProducts.filter(p => p.character_ip && p.character_ip.includes(ipName));
+            const ipProds = allProducts.filter(p => DashboardMetrics.ipNames(p).includes(ipName));
             const bestProduct = ipProds.sort((a, b) => a.rank - b.rank)[0];
             const ratioPct = roundToOneDecimal((count / allProducts.length) * 100);
 
