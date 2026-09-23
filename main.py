@@ -70,10 +70,13 @@ def export_static_web_dataset(df_latest, latest_cards_dict):
             # 각 날짜의 카드도 "오늘자 카드"를 재사용하지 않고, 그 날짜 자체의 데이터로 새로 계산해서
             # 날짜를 바꿨을 때 B2B 인사이트 카드도 실제로 그 날짜 기준으로 바뀌도록 함.
             try:
-                df_day = pd.read_csv(f).fillna("")
-                if d == datetime.now().strftime("%Y%m%d"):
+                today_str = datetime.now().strftime("%Y%m%d")
+                if d == today_str:
                     day_cards = latest_cards_dict
+                    day_records = df_latest.fillna("").to_dict(orient="records")
                 else:
+                    df_day = pd.read_csv(f).fillna("")
+                    day_records = df_day.to_dict(orient="records")
                     try:
                         day_cards = generate_all_dashboard_cards(df_day, top_n=len(df_day))
                     except Exception as card_ex:
@@ -81,7 +84,7 @@ def export_static_web_dataset(df_latest, latest_cards_dict):
                         day_cards = {}
                 day_json_path = os.path.join(WEB_DIR, f"data_{d}.json")
                 day_payload = {
-                    "records": df_day.to_dict(orient="records"),
+                    "records": day_records,
                     "cards": day_cards
                 }
                 with open(day_json_path, "w", encoding="utf-8") as out_f:

@@ -13,7 +13,7 @@
       "price_numeric": 24500,
       "price_tier": "2만원대",
       "usp": "단독구성",
-      "rank_delta": "1",
+      "rank_delta": 1,
       "is_new_entry": false,
       "rank_comparison_status": "compared"
     },
@@ -30,7 +30,7 @@
       "price_numeric": 49000,
       "price_tier": "4만원대",
       "usp": "일반구성",
-      "rank_delta": "2",
+      "rank_delta": 2,
       "is_new_entry": false,
       "rank_comparison_status": "compared"
     },
@@ -47,7 +47,7 @@
       "price_numeric": 16300,
       "price_tier": "1만원대",
       "usp": "일반구성",
-      "rank_delta": "2",
+      "rank_delta": 2,
       "is_new_entry": false,
       "rank_comparison_status": "compared"
     },
@@ -64,7 +64,7 @@
       "price_numeric": 18000,
       "price_tier": "1만원대",
       "usp": "선물포장, 단독구성",
-      "rank_delta": "-3",
+      "rank_delta": -3,
       "is_new_entry": false,
       "rank_comparison_status": "compared"
     },
@@ -81,7 +81,7 @@
       "price_numeric": 30600,
       "price_tier": "3만원대",
       "usp": "단독구성",
-      "rank_delta": "-2",
+      "rank_delta": -2,
       "is_new_entry": false,
       "rank_comparison_status": "compared"
     },
@@ -98,7 +98,7 @@
       "price_numeric": 33000,
       "price_tier": "3만원대",
       "usp": "단독구성",
-      "rank_delta": "1",
+      "rank_delta": 1,
       "is_new_entry": false,
       "rank_comparison_status": "compared"
     },
@@ -115,7 +115,7 @@
       "price_numeric": 34800,
       "price_tier": "3만원대",
       "usp": "단독구성",
-      "rank_delta": "-1",
+      "rank_delta": -1,
       "is_new_entry": false,
       "rank_comparison_status": "compared"
     },
@@ -132,7 +132,7 @@
       "price_numeric": 22900,
       "price_tier": "2만원대",
       "usp": "일반구성",
-      "rank_delta": "4",
+      "rank_delta": 4,
       "is_new_entry": false,
       "rank_comparison_status": "compared"
     },
@@ -149,7 +149,7 @@
       "price_numeric": 12000,
       "price_tier": "1만원대",
       "usp": "일반구성",
-      "rank_delta": "-1",
+      "rank_delta": -1,
       "is_new_entry": false,
       "rank_comparison_status": "compared"
     },
@@ -166,7 +166,7 @@
       "price_numeric": 29900,
       "price_tier": "2만원대",
       "usp": "일반구성",
-      "rank_delta": "0",
+      "rank_delta": 0,
       "is_new_entry": false,
       "rank_comparison_status": "compared"
     },
@@ -183,7 +183,7 @@
       "price_numeric": 12800,
       "price_tier": "1만원대",
       "usp": "일반구성",
-      "rank_delta": "3",
+      "rank_delta": 3,
       "is_new_entry": false,
       "rank_comparison_status": "compared"
     },
@@ -200,7 +200,7 @@
       "price_numeric": 34800,
       "price_tier": "3만원대",
       "usp": "단독구성",
-      "rank_delta": "1",
+      "rank_delta": 1,
       "is_new_entry": false,
       "rank_comparison_status": "compared"
     },
@@ -234,7 +234,7 @@
       "price_numeric": 46500,
       "price_tier": "4만원대",
       "usp": "선물포장",
-      "rank_delta": "2",
+      "rank_delta": 2,
       "is_new_entry": false,
       "rank_comparison_status": "compared"
     },
@@ -251,7 +251,7 @@
       "price_numeric": 44000,
       "price_tier": "4만원대",
       "usp": "일반구성",
-      "rank_delta": "-4",
+      "rank_delta": -4,
       "is_new_entry": false,
       "rank_comparison_status": "compared"
     },
@@ -268,7 +268,7 @@
       "price_numeric": 8900,
       "price_tier": "1만원 미만",
       "usp": "일반구성",
-      "rank_delta": "5",
+      "rank_delta": 5,
       "is_new_entry": false,
       "rank_comparison_status": "compared"
     },
@@ -302,7 +302,7 @@
       "price_numeric": 15000,
       "price_tier": "1만원대",
       "usp": "일반구성",
-      "rank_delta": "10",
+      "rank_delta": 10,
       "is_new_entry": false,
       "rank_comparison_status": "compared"
     },
@@ -319,7 +319,7 @@
       "price_numeric": 29900,
       "price_tier": "2만원대",
       "usp": "일반구성",
-      "rank_delta": "15",
+      "rank_delta": 15,
       "is_new_entry": false,
       "rank_comparison_status": "compared"
     },
@@ -336,7 +336,7 @@
       "price_numeric": 42500,
       "price_tier": "4만원대",
       "usp": "단독구성",
-      "rank_delta": "15",
+      "rank_delta": 15,
       "is_new_entry": false,
       "rank_comparison_status": "compared"
     },
@@ -353,7 +353,7 @@
       "price_numeric": 35000,
       "price_tier": "3만원대",
       "usp": "일반구성",
-      "rank_delta": "12",
+      "rank_delta": 12,
       "is_new_entry": false,
       "rank_comparison_status": "compared"
     },
@@ -370,7 +370,7 @@
       "price_numeric": 31500,
       "price_tier": "3만원대",
       "usp": "각인/자수",
-      "rank_delta": "18",
+      "rank_delta": 18,
       "is_new_entry": false,
       "rank_comparison_status": "compared"
     },
@@ -387,7 +387,7 @@
       "price_numeric": 36000,
       "price_tier": "3만원대",
       "usp": "단독구성",
-      "rank_delta": "-6",
+      "rank_delta": -6,
       "is_new_entry": false,
       "rank_comparison_status": "compared"
     },
@@ -404,7 +404,7 @@
       "price_numeric": 21500,
       "price_tier": "2만원대",
       "usp": "일반구성",
-      "rank_delta": "19",
+      "rank_delta": 19,
       "is_new_entry": false,
       "rank_comparison_status": "compared"
     },
@@ -421,7 +421,7 @@
       "price_numeric": 17800,
       "price_tier": "1만원대",
       "usp": "일반구성",
-      "rank_delta": "7",
+      "rank_delta": 7,
       "is_new_entry": false,
       "rank_comparison_status": "compared"
     },
@@ -438,7 +438,7 @@
       "price_numeric": 36500,
       "price_tier": "3만원대",
       "usp": "단독구성",
-      "rank_delta": "5",
+      "rank_delta": 5,
       "is_new_entry": false,
       "rank_comparison_status": "compared"
     },
@@ -455,7 +455,7 @@
       "price_numeric": 46000,
       "price_tier": "4만원대",
       "usp": "일반구성",
-      "rank_delta": "-4",
+      "rank_delta": -4,
       "is_new_entry": false,
       "rank_comparison_status": "compared"
     },
@@ -472,7 +472,7 @@
       "price_numeric": 46550,
       "price_tier": "4만원대",
       "usp": "일반구성",
-      "rank_delta": "10",
+      "rank_delta": 10,
       "is_new_entry": false,
       "rank_comparison_status": "compared"
     },
@@ -489,7 +489,7 @@
       "price_numeric": 32400,
       "price_tier": "3만원대",
       "usp": "단독구성",
-      "rank_delta": "-4",
+      "rank_delta": -4,
       "is_new_entry": false,
       "rank_comparison_status": "compared"
     },
@@ -506,7 +506,7 @@
       "price_numeric": 13800,
       "price_tier": "1만원대",
       "usp": "일반구성",
-      "rank_delta": "-3",
+      "rank_delta": -3,
       "is_new_entry": false,
       "rank_comparison_status": "compared"
     },
@@ -523,7 +523,7 @@
       "price_numeric": 54000,
       "price_tier": "5만원 이상",
       "usp": "일반구성",
-      "rank_delta": "-1",
+      "rank_delta": -1,
       "is_new_entry": false,
       "rank_comparison_status": "compared"
     },
@@ -540,7 +540,7 @@
       "price_numeric": 39000,
       "price_tier": "3만원대",
       "usp": "단독구성",
-      "rank_delta": "15",
+      "rank_delta": 15,
       "is_new_entry": false,
       "rank_comparison_status": "compared"
     },
@@ -557,7 +557,7 @@
       "price_numeric": 29800,
       "price_tier": "2만원대",
       "usp": "단독구성",
-      "rank_delta": "11",
+      "rank_delta": 11,
       "is_new_entry": false,
       "rank_comparison_status": "compared"
     },
@@ -574,7 +574,7 @@
       "price_numeric": 44900,
       "price_tier": "4만원대",
       "usp": "단독구성",
-      "rank_delta": "-12",
+      "rank_delta": -12,
       "is_new_entry": false,
       "rank_comparison_status": "compared"
     },
@@ -591,7 +591,7 @@
       "price_numeric": 54900,
       "price_tier": "5만원 이상",
       "usp": "단독구성",
-      "rank_delta": "26",
+      "rank_delta": 26,
       "is_new_entry": false,
       "rank_comparison_status": "compared"
     },
@@ -608,7 +608,7 @@
       "price_numeric": 49000,
       "price_tier": "4만원대",
       "usp": "일반구성",
-      "rank_delta": "-16",
+      "rank_delta": -16,
       "is_new_entry": false,
       "rank_comparison_status": "compared"
     },
@@ -625,7 +625,7 @@
       "price_numeric": 51000,
       "price_tier": "5만원 이상",
       "usp": "단독구성",
-      "rank_delta": "-22",
+      "rank_delta": -22,
       "is_new_entry": false,
       "rank_comparison_status": "compared"
     },
@@ -642,7 +642,7 @@
       "price_numeric": 33900,
       "price_tier": "3만원대",
       "usp": "선물포장, 단독구성",
-      "rank_delta": "11",
+      "rank_delta": 11,
       "is_new_entry": false,
       "rank_comparison_status": "compared"
     },
@@ -659,7 +659,7 @@
       "price_numeric": 37000,
       "price_tier": "3만원대",
       "usp": "일반구성",
-      "rank_delta": "-20",
+      "rank_delta": -20,
       "is_new_entry": false,
       "rank_comparison_status": "compared"
     },
@@ -676,7 +676,7 @@
       "price_numeric": 38000,
       "price_tier": "3만원대",
       "usp": "단독구성",
-      "rank_delta": "-16",
+      "rank_delta": -16,
       "is_new_entry": false,
       "rank_comparison_status": "compared"
     },
@@ -693,7 +693,7 @@
       "price_numeric": 9900,
       "price_tier": "1만원 미만",
       "usp": "단독구성",
-      "rank_delta": "13",
+      "rank_delta": 13,
       "is_new_entry": false,
       "rank_comparison_status": "compared"
     },
@@ -710,7 +710,7 @@
       "price_numeric": 12800,
       "price_tier": "1만원대",
       "usp": "일반구성",
-      "rank_delta": "-3",
+      "rank_delta": -3,
       "is_new_entry": false,
       "rank_comparison_status": "compared"
     },
@@ -727,7 +727,7 @@
       "price_numeric": 57900,
       "price_tier": "5만원 이상",
       "usp": "단독구성",
-      "rank_delta": "-25",
+      "rank_delta": -25,
       "is_new_entry": false,
       "rank_comparison_status": "compared"
     },
@@ -744,7 +744,7 @@
       "price_numeric": 33300,
       "price_tier": "3만원대",
       "usp": "일반구성",
-      "rank_delta": "-7",
+      "rank_delta": -7,
       "is_new_entry": false,
       "rank_comparison_status": "compared"
     },
@@ -761,7 +761,7 @@
       "price_numeric": 34000,
       "price_tier": "3만원대",
       "usp": "단독구성",
-      "rank_delta": "-19",
+      "rank_delta": -19,
       "is_new_entry": false,
       "rank_comparison_status": "compared"
     },
@@ -778,7 +778,7 @@
       "price_numeric": 16900,
       "price_tier": "1만원대",
       "usp": "일반구성",
-      "rank_delta": "9",
+      "rank_delta": 9,
       "is_new_entry": false,
       "rank_comparison_status": "compared"
     },
@@ -795,7 +795,7 @@
       "price_numeric": 37900,
       "price_tier": "3만원대",
       "usp": "단독구성",
-      "rank_delta": "9",
+      "rank_delta": 9,
       "is_new_entry": false,
       "rank_comparison_status": "compared"
     },
@@ -812,7 +812,7 @@
       "price_numeric": 28900,
       "price_tier": "2만원대",
       "usp": "단독구성",
-      "rank_delta": "34",
+      "rank_delta": 34,
       "is_new_entry": false,
       "rank_comparison_status": "compared"
     },
@@ -829,7 +829,7 @@
       "price_numeric": 42000,
       "price_tier": "4만원대",
       "usp": "일반구성",
-      "rank_delta": "-20",
+      "rank_delta": -20,
       "is_new_entry": false,
       "rank_comparison_status": "compared"
     },
@@ -846,7 +846,7 @@
       "price_numeric": 56400,
       "price_tier": "5만원 이상",
       "usp": "일반구성",
-      "rank_delta": "-8",
+      "rank_delta": -8,
       "is_new_entry": false,
       "rank_comparison_status": "compared"
     },
@@ -863,7 +863,7 @@
       "price_numeric": 32800,
       "price_tier": "3만원대",
       "usp": "단독구성",
-      "rank_delta": "7",
+      "rank_delta": 7,
       "is_new_entry": false,
       "rank_comparison_status": "compared"
     },
@@ -897,7 +897,7 @@
       "price_numeric": 16800,
       "price_tier": "1만원대",
       "usp": "일반구성",
-      "rank_delta": "24",
+      "rank_delta": 24,
       "is_new_entry": false,
       "rank_comparison_status": "compared"
     },
@@ -914,7 +914,7 @@
       "price_numeric": 16900,
       "price_tier": "1만원대",
       "usp": "일반구성",
-      "rank_delta": "3",
+      "rank_delta": 3,
       "is_new_entry": false,
       "rank_comparison_status": "compared"
     },
@@ -931,7 +931,7 @@
       "price_numeric": 8800,
       "price_tier": "1만원 미만",
       "usp": "일반구성",
-      "rank_delta": "33",
+      "rank_delta": 33,
       "is_new_entry": false,
       "rank_comparison_status": "compared"
     },
@@ -948,7 +948,7 @@
       "price_numeric": 59800,
       "price_tier": "5만원 이상",
       "usp": "단독구성",
-      "rank_delta": "15",
+      "rank_delta": 15,
       "is_new_entry": false,
       "rank_comparison_status": "compared"
     },
@@ -965,7 +965,7 @@
       "price_numeric": 46000,
       "price_tier": "4만원대",
       "usp": "단독구성",
-      "rank_delta": "24",
+      "rank_delta": 24,
       "is_new_entry": false,
       "rank_comparison_status": "compared"
     },
@@ -982,7 +982,7 @@
       "price_numeric": 54150,
       "price_tier": "5만원 이상",
       "usp": "일반구성",
-      "rank_delta": "-13",
+      "rank_delta": -13,
       "is_new_entry": false,
       "rank_comparison_status": "compared"
     },
@@ -999,7 +999,7 @@
       "price_numeric": 15800,
       "price_tier": "1만원대",
       "usp": "단독구성",
-      "rank_delta": "5",
+      "rank_delta": 5,
       "is_new_entry": false,
       "rank_comparison_status": "compared"
     },
@@ -1016,7 +1016,7 @@
       "price_numeric": 34500,
       "price_tier": "3만원대",
       "usp": "단독구성",
-      "rank_delta": "-19",
+      "rank_delta": -19,
       "is_new_entry": false,
       "rank_comparison_status": "compared"
     },
@@ -1033,7 +1033,7 @@
       "price_numeric": 36000,
       "price_tier": "3만원대",
       "usp": "일반구성",
-      "rank_delta": "11",
+      "rank_delta": 11,
       "is_new_entry": false,
       "rank_comparison_status": "compared"
     },
@@ -1050,7 +1050,7 @@
       "price_numeric": 44000,
       "price_tier": "4만원대",
       "usp": "일반구성",
-      "rank_delta": "-9",
+      "rank_delta": -9,
       "is_new_entry": false,
       "rank_comparison_status": "compared"
     },
@@ -1084,7 +1084,7 @@
       "price_numeric": 14800,
       "price_tier": "1만원대",
       "usp": "일반구성",
-      "rank_delta": "-1",
+      "rank_delta": -1,
       "is_new_entry": false,
       "rank_comparison_status": "compared"
     },
@@ -1101,7 +1101,7 @@
       "price_numeric": 9900,
       "price_tier": "1만원 미만",
       "usp": "일반구성",
-      "rank_delta": "-5",
+      "rank_delta": -5,
       "is_new_entry": false,
       "rank_comparison_status": "compared"
     },
@@ -1118,7 +1118,7 @@
       "price_numeric": 29900,
       "price_tier": "2만원대",
       "usp": "단독구성",
-      "rank_delta": "-7",
+      "rank_delta": -7,
       "is_new_entry": false,
       "rank_comparison_status": "compared"
     },
@@ -1135,7 +1135,7 @@
       "price_numeric": 22000,
       "price_tier": "2만원대",
       "usp": "일반구성",
-      "rank_delta": "-19",
+      "rank_delta": -19,
       "is_new_entry": false,
       "rank_comparison_status": "compared"
     },
@@ -1152,7 +1152,7 @@
       "price_numeric": 47700,
       "price_tier": "4만원대",
       "usp": "단독구성",
-      "rank_delta": "-17",
+      "rank_delta": -17,
       "is_new_entry": false,
       "rank_comparison_status": "compared"
     },
@@ -1169,7 +1169,7 @@
       "price_numeric": 38000,
       "price_tier": "3만원대",
       "usp": "일반구성",
-      "rank_delta": "-23",
+      "rank_delta": -23,
       "is_new_entry": false,
       "rank_comparison_status": "compared"
     },
@@ -1203,7 +1203,7 @@
       "price_numeric": 48000,
       "price_tier": "4만원대",
       "usp": "일반구성",
-      "rank_delta": "-6",
+      "rank_delta": -6,
       "is_new_entry": false,
       "rank_comparison_status": "compared"
     },
@@ -1220,7 +1220,7 @@
       "price_numeric": 18800,
       "price_tier": "1만원대",
       "usp": "단독구성",
-      "rank_delta": "-22",
+      "rank_delta": -22,
       "is_new_entry": false,
       "rank_comparison_status": "compared"
     },
@@ -1237,7 +1237,7 @@
       "price_numeric": 44900,
       "price_tier": "4만원대",
       "usp": "단독구성",
-      "rank_delta": "-11",
+      "rank_delta": -11,
       "is_new_entry": false,
       "rank_comparison_status": "compared"
     },
@@ -1254,7 +1254,7 @@
       "price_numeric": 19800,
       "price_tier": "1만원대",
       "usp": "일반구성",
-      "rank_delta": "-8",
+      "rank_delta": -8,
       "is_new_entry": false,
       "rank_comparison_status": "compared"
     },
@@ -1271,7 +1271,7 @@
       "price_numeric": 13800,
       "price_tier": "1만원대",
       "usp": "일반구성",
-      "rank_delta": "4",
+      "rank_delta": 4,
       "is_new_entry": false,
       "rank_comparison_status": "compared"
     },
@@ -1288,7 +1288,7 @@
       "price_numeric": 14800,
       "price_tier": "1만원대",
       "usp": "일반구성",
-      "rank_delta": "13",
+      "rank_delta": 13,
       "is_new_entry": false,
       "rank_comparison_status": "compared"
     },
@@ -1305,7 +1305,7 @@
       "price_numeric": 12900,
       "price_tier": "1만원대",
       "usp": "일반구성",
-      "rank_delta": "-1",
+      "rank_delta": -1,
       "is_new_entry": false,
       "rank_comparison_status": "compared"
     },
@@ -1322,7 +1322,7 @@
       "price_numeric": 30000,
       "price_tier": "3만원대",
       "usp": "일반구성",
-      "rank_delta": "-26",
+      "rank_delta": -26,
       "is_new_entry": false,
       "rank_comparison_status": "compared"
     },
@@ -1339,7 +1339,7 @@
       "price_numeric": 43800,
       "price_tier": "4만원대",
       "usp": "각인/자수",
-      "rank_delta": "-43",
+      "rank_delta": -43,
       "is_new_entry": false,
       "rank_comparison_status": "compared"
     },
@@ -1356,7 +1356,7 @@
       "price_numeric": 35800,
       "price_tier": "3만원대",
       "usp": "단독구성",
-      "rank_delta": "7",
+      "rank_delta": 7,
       "is_new_entry": false,
       "rank_comparison_status": "compared"
     },
@@ -1373,7 +1373,7 @@
       "price_numeric": 27800,
       "price_tier": "2만원대",
       "usp": "단독구성",
-      "rank_delta": "14",
+      "rank_delta": 14,
       "is_new_entry": false,
       "rank_comparison_status": "compared"
     },
@@ -1390,7 +1390,7 @@
       "price_numeric": 16900,
       "price_tier": "1만원대",
       "usp": "일반구성",
-      "rank_delta": "-12",
+      "rank_delta": -12,
       "is_new_entry": false,
       "rank_comparison_status": "compared"
     },
@@ -1407,7 +1407,7 @@
       "price_numeric": 16300,
       "price_tier": "1만원대",
       "usp": "일반구성",
-      "rank_delta": "-8",
+      "rank_delta": -8,
       "is_new_entry": false,
       "rank_comparison_status": "compared"
     },
@@ -1424,7 +1424,7 @@
       "price_numeric": 16900,
       "price_tier": "1만원대",
       "usp": "일반구성",
-      "rank_delta": "10",
+      "rank_delta": 10,
       "is_new_entry": false,
       "rank_comparison_status": "compared"
     },
@@ -1441,7 +1441,7 @@
       "price_numeric": 15800,
       "price_tier": "1만원대",
       "usp": "일반구성",
-      "rank_delta": "-7",
+      "rank_delta": -7,
       "is_new_entry": false,
       "rank_comparison_status": "compared"
     },
@@ -1458,7 +1458,7 @@
       "price_numeric": 9900,
       "price_tier": "1만원 미만",
       "usp": "일반구성",
-      "rank_delta": "4",
+      "rank_delta": 4,
       "is_new_entry": false,
       "rank_comparison_status": "compared"
     },
@@ -1475,7 +1475,7 @@
       "price_numeric": 16900,
       "price_tier": "1만원대",
       "usp": "단독구성",
-      "rank_delta": "-7",
+      "rank_delta": -7,
       "is_new_entry": false,
       "rank_comparison_status": "compared"
     },
@@ -1509,7 +1509,7 @@
       "price_numeric": 32000,
       "price_tier": "3만원대",
       "usp": "일반구성",
-      "rank_delta": "7",
+      "rank_delta": 7,
       "is_new_entry": false,
       "rank_comparison_status": "compared"
     },
@@ -1594,7 +1594,7 @@
       "price_numeric": 17900,
       "price_tier": "1만원대",
       "usp": "일반구성",
-      "rank_delta": "-10",
+      "rank_delta": -10,
       "is_new_entry": false,
       "rank_comparison_status": "compared"
     },
@@ -1611,7 +1611,7 @@
       "price_numeric": 29900,
       "price_tier": "2만원대",
       "usp": "단독구성",
-      "rank_delta": "-27",
+      "rank_delta": -27,
       "is_new_entry": false,
       "rank_comparison_status": "compared"
     },
@@ -1628,7 +1628,7 @@
       "price_numeric": 14900,
       "price_tier": "1만원대",
       "usp": "단독구성",
-      "rank_delta": "2",
+      "rank_delta": 2,
       "is_new_entry": false,
       "rank_comparison_status": "compared"
     },
@@ -1645,7 +1645,7 @@
       "price_numeric": 15800,
       "price_tier": "1만원대",
       "usp": "단독구성",
-      "rank_delta": "-30",
+      "rank_delta": -30,
       "is_new_entry": false,
       "rank_comparison_status": "compared"
     },
@@ -1679,7 +1679,7 @@
       "price_numeric": 15000,
       "price_tier": "1만원대",
       "usp": "일반구성",
-      "rank_delta": "0",
+      "rank_delta": 0,
       "is_new_entry": false,
       "rank_comparison_status": "compared"
     },
@@ -1696,7 +1696,7 @@
       "price_numeric": 42500,
       "price_tier": "4만원대",
       "usp": "단독구성",
-      "rank_delta": "-3",
+      "rank_delta": -3,
       "is_new_entry": false,
       "rank_comparison_status": "compared"
     },
@@ -1713,7 +1713,7 @@
       "price_numeric": 16300,
       "price_tier": "1만원대",
       "usp": "일반구성",
-      "rank_delta": "0",
+      "rank_delta": 0,
       "is_new_entry": false,
       "rank_comparison_status": "compared"
     },
@@ -1730,7 +1730,7 @@
       "price_numeric": 12000,
       "price_tier": "1만원대",
       "usp": "일반구성",
-      "rank_delta": "0",
+      "rank_delta": 0,
       "is_new_entry": false,
       "rank_comparison_status": "compared"
     },
@@ -1747,7 +1747,7 @@
       "price_numeric": 12800,
       "price_tier": "1만원대",
       "usp": "일반구성",
-      "rank_delta": "0",
+      "rank_delta": 0,
       "is_new_entry": false,
       "rank_comparison_status": "compared"
     },
@@ -1781,7 +1781,7 @@
       "price_numeric": 8900,
       "price_tier": "1만원 미만",
       "usp": "일반구성",
-      "rank_delta": "-1",
+      "rank_delta": -1,
       "is_new_entry": false,
       "rank_comparison_status": "compared"
     },
@@ -1815,7 +1815,7 @@
       "price_numeric": 12800,
       "price_tier": "1만원대",
       "usp": "일반구성",
-      "rank_delta": "-1",
+      "rank_delta": -1,
       "is_new_entry": false,
       "rank_comparison_status": "compared"
     },
@@ -1832,7 +1832,7 @@
       "price_numeric": 16900,
       "price_tier": "1만원대",
       "usp": "일반구성",
-      "rank_delta": "-1",
+      "rank_delta": -1,
       "is_new_entry": false,
       "rank_comparison_status": "compared"
     },
@@ -1849,7 +1849,7 @@
       "price_numeric": 8800,
       "price_tier": "1만원 미만",
       "usp": "일반구성",
-      "rank_delta": "2",
+      "rank_delta": 2,
       "is_new_entry": false,
       "rank_comparison_status": "compared"
     },
@@ -1866,7 +1866,7 @@
       "price_numeric": 9900,
       "price_tier": "1만원 미만",
       "usp": "일반구성",
-      "rank_delta": "-2",
+      "rank_delta": -2,
       "is_new_entry": false,
       "rank_comparison_status": "compared"
     },
@@ -1883,7 +1883,7 @@
       "price_numeric": 12900,
       "price_tier": "1만원대",
       "usp": "일반구성",
-      "rank_delta": "6",
+      "rank_delta": 6,
       "is_new_entry": false,
       "rank_comparison_status": "compared"
     },
@@ -1900,7 +1900,7 @@
       "price_numeric": 14800,
       "price_tier": "1만원대",
       "usp": "일반구성",
-      "rank_delta": "0",
+      "rank_delta": 0,
       "is_new_entry": false,
       "rank_comparison_status": "compared"
     },
@@ -1917,7 +1917,7 @@
       "price_numeric": 43800,
       "price_tier": "4만원대",
       "usp": "각인/자수",
-      "rank_delta": "-8",
+      "rank_delta": -8,
       "is_new_entry": false,
       "rank_comparison_status": "compared"
     },
@@ -1934,7 +1934,7 @@
       "price_numeric": 16300,
       "price_tier": "1만원대",
       "usp": "일반구성",
-      "rank_delta": "-5",
+      "rank_delta": -5,
       "is_new_entry": false,
       "rank_comparison_status": "compared"
     },
@@ -1951,7 +1951,7 @@
       "price_numeric": 16900,
       "price_tier": "1만원대",
       "usp": "선물포장, 단독구성",
-      "rank_delta": "0",
+      "rank_delta": 0,
       "is_new_entry": false,
       "rank_comparison_status": "compared"
     },
@@ -1968,7 +1968,7 @@
       "price_numeric": 35000,
       "price_tier": "3만원대",
       "usp": "일반구성",
-      "rank_delta": "2",
+      "rank_delta": 2,
       "is_new_entry": false,
       "rank_comparison_status": "compared"
     },
@@ -1985,7 +1985,7 @@
       "price_numeric": 15000,
       "price_tier": "1만원대",
       "usp": "일반구성",
-      "rank_delta": "-3",
+      "rank_delta": -3,
       "is_new_entry": false,
       "rank_comparison_status": "compared"
     },
@@ -2002,7 +2002,7 @@
       "price_numeric": 20000,
       "price_tier": "2만원대",
       "usp": "단독구성",
-      "rank_delta": "-8",
+      "rank_delta": -8,
       "is_new_entry": false,
       "rank_comparison_status": "compared"
     },
@@ -2019,7 +2019,7 @@
       "price_numeric": 7800,
       "price_tier": "1만원 미만",
       "usp": "일반구성",
-      "rank_delta": "-6",
+      "rank_delta": -6,
       "is_new_entry": false,
       "rank_comparison_status": "compared"
     },
@@ -2036,7 +2036,7 @@
       "price_numeric": 7200,
       "price_tier": "1만원 미만",
       "usp": "일반구성",
-      "rank_delta": "4",
+      "rank_delta": 4,
       "is_new_entry": false,
       "rank_comparison_status": "compared"
     },
@@ -2053,7 +2053,7 @@
       "price_numeric": 16300,
       "price_tier": "1만원대",
       "usp": "일반구성",
-      "rank_delta": "0",
+      "rank_delta": 0,
       "is_new_entry": false,
       "rank_comparison_status": "compared"
     },
@@ -2070,7 +2070,7 @@
       "price_numeric": 20000,
       "price_tier": "2만원대",
       "usp": "일반구성",
-      "rank_delta": "11",
+      "rank_delta": 11,
       "is_new_entry": false,
       "rank_comparison_status": "compared"
     },
@@ -2087,7 +2087,7 @@
       "price_numeric": 17900,
       "price_tier": "1만원대",
       "usp": "일반구성",
-      "rank_delta": "7",
+      "rank_delta": 7,
       "is_new_entry": false,
       "rank_comparison_status": "compared"
     },
@@ -2104,7 +2104,7 @@
       "price_numeric": 16900,
       "price_tier": "1만원대",
       "usp": "일반구성",
-      "rank_delta": "-2",
+      "rank_delta": -2,
       "is_new_entry": false,
       "rank_comparison_status": "compared"
     },
@@ -2121,7 +2121,7 @@
       "price_numeric": 13900,
       "price_tier": "1만원대",
       "usp": "일반구성",
-      "rank_delta": "32",
+      "rank_delta": 32,
       "is_new_entry": false,
       "rank_comparison_status": "compared"
     },
@@ -2138,7 +2138,7 @@
       "price_numeric": 16000,
       "price_tier": "1만원대",
       "usp": "일반구성",
-      "rank_delta": "-6",
+      "rank_delta": -6,
       "is_new_entry": false,
       "rank_comparison_status": "compared"
     },
@@ -2155,7 +2155,7 @@
       "price_numeric": 14800,
       "price_tier": "1만원대",
       "usp": "일반구성",
-      "rank_delta": "-4",
+      "rank_delta": -4,
       "is_new_entry": false,
       "rank_comparison_status": "compared"
     },
@@ -2172,7 +2172,7 @@
       "price_numeric": 18800,
       "price_tier": "1만원대",
       "usp": "단독구성",
-      "rank_delta": "-1",
+      "rank_delta": -1,
       "is_new_entry": false,
       "rank_comparison_status": "compared"
     },
@@ -2189,7 +2189,7 @@
       "price_numeric": 16600,
       "price_tier": "1만원대",
       "usp": "일반구성",
-      "rank_delta": "-13",
+      "rank_delta": -13,
       "is_new_entry": false,
       "rank_comparison_status": "compared"
     },
@@ -2206,7 +2206,7 @@
       "price_numeric": 18000,
       "price_tier": "1만원대",
       "usp": "일반구성",
-      "rank_delta": "6",
+      "rank_delta": 6,
       "is_new_entry": false,
       "rank_comparison_status": "compared"
     },
@@ -2223,7 +2223,7 @@
       "price_numeric": 8500,
       "price_tier": "1만원 미만",
       "usp": "일반구성",
-      "rank_delta": "27",
+      "rank_delta": 27,
       "is_new_entry": false,
       "rank_comparison_status": "compared"
     },
@@ -2240,7 +2240,7 @@
       "price_numeric": 5400,
       "price_tier": "1만원 미만",
       "usp": "일반구성",
-      "rank_delta": "2",
+      "rank_delta": 2,
       "is_new_entry": false,
       "rank_comparison_status": "compared"
     },
@@ -2257,7 +2257,7 @@
       "price_numeric": 5000,
       "price_tier": "1만원 미만",
       "usp": "일반구성",
-      "rank_delta": "-14",
+      "rank_delta": -14,
       "is_new_entry": false,
       "rank_comparison_status": "compared"
     },
@@ -2274,7 +2274,7 @@
       "price_numeric": 9900,
       "price_tier": "1만원 미만",
       "usp": "일반구성",
-      "rank_delta": "3",
+      "rank_delta": 3,
       "is_new_entry": false,
       "rank_comparison_status": "compared"
     },
@@ -2291,7 +2291,7 @@
       "price_numeric": 18000,
       "price_tier": "1만원대",
       "usp": "일반구성",
-      "rank_delta": "-9",
+      "rank_delta": -9,
       "is_new_entry": false,
       "rank_comparison_status": "compared"
     },
@@ -2308,7 +2308,7 @@
       "price_numeric": 8900,
       "price_tier": "1만원 미만",
       "usp": "일반구성",
-      "rank_delta": "56",
+      "rank_delta": 56,
       "is_new_entry": false,
       "rank_comparison_status": "compared"
     },
@@ -2342,7 +2342,7 @@
       "price_numeric": 18000,
       "price_tier": "1만원대",
       "usp": "일반구성",
-      "rank_delta": "-9",
+      "rank_delta": -9,
       "is_new_entry": false,
       "rank_comparison_status": "compared"
     },
@@ -2359,7 +2359,7 @@
       "price_numeric": 34000,
       "price_tier": "3만원대",
       "usp": "일반구성",
-      "rank_delta": "-11",
+      "rank_delta": -11,
       "is_new_entry": false,
       "rank_comparison_status": "compared"
     },
@@ -2376,7 +2376,7 @@
       "price_numeric": 8900,
       "price_tier": "1만원 미만",
       "usp": "일반구성",
-      "rank_delta": "-8",
+      "rank_delta": -8,
       "is_new_entry": false,
       "rank_comparison_status": "compared"
     },
@@ -2393,7 +2393,7 @@
       "price_numeric": 15000,
       "price_tier": "1만원대",
       "usp": "일반구성",
-      "rank_delta": "7",
+      "rank_delta": 7,
       "is_new_entry": false,
       "rank_comparison_status": "compared"
     },
@@ -2410,7 +2410,7 @@
       "price_numeric": 12300,
       "price_tier": "1만원대",
       "usp": "단독구성",
-      "rank_delta": "29",
+      "rank_delta": 29,
       "is_new_entry": false,
       "rank_comparison_status": "compared"
     },
@@ -2427,7 +2427,7 @@
       "price_numeric": 15400,
       "price_tier": "1만원대",
       "usp": "각인/자수",
-      "rank_delta": "-5",
+      "rank_delta": -5,
       "is_new_entry": false,
       "rank_comparison_status": "compared"
     },
@@ -2444,7 +2444,7 @@
       "price_numeric": 20000,
       "price_tier": "2만원대",
       "usp": "일반구성",
-      "rank_delta": "-19",
+      "rank_delta": -19,
       "is_new_entry": false,
       "rank_comparison_status": "compared"
     },
@@ -2461,7 +2461,7 @@
       "price_numeric": 18900,
       "price_tier": "1만원대",
       "usp": "일반구성",
-      "rank_delta": "14",
+      "rank_delta": 14,
       "is_new_entry": false,
       "rank_comparison_status": "compared"
     },
@@ -2478,7 +2478,7 @@
       "price_numeric": 9900,
       "price_tier": "1만원 미만",
       "usp": "일반구성",
-      "rank_delta": "-5",
+      "rank_delta": -5,
       "is_new_entry": false,
       "rank_comparison_status": "compared"
     },
@@ -2495,7 +2495,7 @@
       "price_numeric": 8000,
       "price_tier": "1만원 미만",
       "usp": "일반구성",
-      "rank_delta": "17",
+      "rank_delta": 17,
       "is_new_entry": false,
       "rank_comparison_status": "compared"
     },
@@ -2512,7 +2512,7 @@
       "price_numeric": 8800,
       "price_tier": "1만원 미만",
       "usp": "일반구성",
-      "rank_delta": "-17",
+      "rank_delta": -17,
       "is_new_entry": false,
       "rank_comparison_status": "compared"
     },
@@ -2529,7 +2529,7 @@
       "price_numeric": 16000,
       "price_tier": "1만원대",
       "usp": "일반구성",
-      "rank_delta": "-2",
+      "rank_delta": -2,
       "is_new_entry": false,
       "rank_comparison_status": "compared"
     },
@@ -2546,7 +2546,7 @@
       "price_numeric": 7900,
       "price_tier": "1만원 미만",
       "usp": "일반구성",
-      "rank_delta": "-7",
+      "rank_delta": -7,
       "is_new_entry": false,
       "rank_comparison_status": "compared"
     },
@@ -2563,7 +2563,7 @@
       "price_numeric": 36000,
       "price_tier": "3만원대",
       "usp": "선물포장",
-      "rank_delta": "-9",
+      "rank_delta": -9,
       "is_new_entry": false,
       "rank_comparison_status": "compared"
     },
@@ -2580,7 +2580,7 @@
       "price_numeric": 15000,
       "price_tier": "1만원대",
       "usp": "일반구성",
-      "rank_delta": "28",
+      "rank_delta": 28,
       "is_new_entry": false,
       "rank_comparison_status": "compared"
     },
@@ -2597,7 +2597,7 @@
       "price_numeric": 31800,
       "price_tier": "3만원대",
       "usp": "일반구성",
-      "rank_delta": "-4",
+      "rank_delta": -4,
       "is_new_entry": false,
       "rank_comparison_status": "compared"
     },
@@ -2614,7 +2614,7 @@
       "price_numeric": 12900,
       "price_tier": "1만원대",
       "usp": "일반구성",
-      "rank_delta": "-19",
+      "rank_delta": -19,
       "is_new_entry": false,
       "rank_comparison_status": "compared"
     },
@@ -2631,7 +2631,7 @@
       "price_numeric": 5900,
       "price_tier": "1만원 미만",
       "usp": "일반구성",
-      "rank_delta": "-9",
+      "rank_delta": -9,
       "is_new_entry": false,
       "rank_comparison_status": "compared"
     },
@@ -2648,7 +2648,7 @@
       "price_numeric": 7600,
       "price_tier": "1만원 미만",
       "usp": "일반구성",
-      "rank_delta": "-11",
+      "rank_delta": -11,
       "is_new_entry": false,
       "rank_comparison_status": "compared"
     },
@@ -2665,7 +2665,7 @@
       "price_numeric": 39800,
       "price_tier": "3만원대",
       "usp": "일반구성",
-      "rank_delta": "34",
+      "rank_delta": 34,
       "is_new_entry": false,
       "rank_comparison_status": "compared"
     },
@@ -2682,7 +2682,7 @@
       "price_numeric": 18000,
       "price_tier": "1만원대",
       "usp": "일반구성",
-      "rank_delta": "-7",
+      "rank_delta": -7,
       "is_new_entry": false,
       "rank_comparison_status": "compared"
     },
@@ -2699,7 +2699,7 @@
       "price_numeric": 6900,
       "price_tier": "1만원 미만",
       "usp": "단독구성",
-      "rank_delta": "8",
+      "rank_delta": 8,
       "is_new_entry": false,
       "rank_comparison_status": "compared"
     },
@@ -2716,7 +2716,7 @@
       "price_numeric": 16900,
       "price_tier": "1만원대",
       "usp": "일반구성",
-      "rank_delta": "10",
+      "rank_delta": 10,
       "is_new_entry": false,
       "rank_comparison_status": "compared"
     },
@@ -2733,7 +2733,7 @@
       "price_numeric": 9900,
       "price_tier": "1만원 미만",
       "usp": "일반구성",
-      "rank_delta": "-17",
+      "rank_delta": -17,
       "is_new_entry": false,
       "rank_comparison_status": "compared"
     },
@@ -2750,7 +2750,7 @@
       "price_numeric": 7900,
       "price_tier": "1만원 미만",
       "usp": "일반구성",
-      "rank_delta": "12",
+      "rank_delta": 12,
       "is_new_entry": false,
       "rank_comparison_status": "compared"
     },
@@ -2767,7 +2767,7 @@
       "price_numeric": 15900,
       "price_tier": "1만원대",
       "usp": "일반구성",
-      "rank_delta": "15",
+      "rank_delta": 15,
       "is_new_entry": false,
       "rank_comparison_status": "compared"
     },
@@ -2784,7 +2784,7 @@
       "price_numeric": 13600,
       "price_tier": "1만원대",
       "usp": "일반구성",
-      "rank_delta": "-2",
+      "rank_delta": -2,
       "is_new_entry": false,
       "rank_comparison_status": "compared"
     },
@@ -2801,7 +2801,7 @@
       "price_numeric": 20000,
       "price_tier": "2만원대",
       "usp": "일반구성",
-      "rank_delta": "-15",
+      "rank_delta": -15,
       "is_new_entry": false,
       "rank_comparison_status": "compared"
     },
@@ -2818,7 +2818,7 @@
       "price_numeric": 20000,
       "price_tier": "2만원대",
       "usp": "일반구성",
-      "rank_delta": "28",
+      "rank_delta": 28,
       "is_new_entry": false,
       "rank_comparison_status": "compared"
     },
@@ -2835,7 +2835,7 @@
       "price_numeric": 29900,
       "price_tier": "2만원대",
       "usp": "일반구성",
-      "rank_delta": "10",
+      "rank_delta": 10,
       "is_new_entry": false,
       "rank_comparison_status": "compared"
     },
@@ -2852,7 +2852,7 @@
       "price_numeric": 19500,
       "price_tier": "1만원대",
       "usp": "일반구성",
-      "rank_delta": "-2",
+      "rank_delta": -2,
       "is_new_entry": false,
       "rank_comparison_status": "compared"
     },
@@ -2869,7 +2869,7 @@
       "price_numeric": 12900,
       "price_tier": "1만원대",
       "usp": "일반구성",
-      "rank_delta": "3",
+      "rank_delta": 3,
       "is_new_entry": false,
       "rank_comparison_status": "compared"
     },
@@ -2886,7 +2886,7 @@
       "price_numeric": 13000,
       "price_tier": "1만원대",
       "usp": "일반구성",
-      "rank_delta": "-15",
+      "rank_delta": -15,
       "is_new_entry": false,
       "rank_comparison_status": "compared"
     },
@@ -2920,7 +2920,7 @@
       "price_numeric": 17000,
       "price_tier": "1만원대",
       "usp": "일반구성",
-      "rank_delta": "15",
+      "rank_delta": 15,
       "is_new_entry": false,
       "rank_comparison_status": "compared"
     },
@@ -2937,7 +2937,7 @@
       "price_numeric": 7200,
       "price_tier": "1만원 미만",
       "usp": "일반구성",
-      "rank_delta": "-10",
+      "rank_delta": -10,
       "is_new_entry": false,
       "rank_comparison_status": "compared"
     },
@@ -2954,7 +2954,7 @@
       "price_numeric": 4500,
       "price_tier": "1만원 미만",
       "usp": "일반구성",
-      "rank_delta": "-35",
+      "rank_delta": -35,
       "is_new_entry": false,
       "rank_comparison_status": "compared"
     },
@@ -2988,7 +2988,7 @@
       "price_numeric": 18000,
       "price_tier": "1만원대",
       "usp": "일반구성",
-      "rank_delta": "-11",
+      "rank_delta": -11,
       "is_new_entry": false,
       "rank_comparison_status": "compared"
     },
@@ -3005,7 +3005,7 @@
       "price_numeric": 38000,
       "price_tier": "3만원대",
       "usp": "단독구성",
-      "rank_delta": "-9",
+      "rank_delta": -9,
       "is_new_entry": false,
       "rank_comparison_status": "compared"
     },
@@ -3022,7 +3022,7 @@
       "price_numeric": 7900,
       "price_tier": "1만원 미만",
       "usp": "일반구성",
-      "rank_delta": "-26",
+      "rank_delta": -26,
       "is_new_entry": false,
       "rank_comparison_status": "compared"
     },
@@ -3073,7 +3073,7 @@
       "price_numeric": 7900,
       "price_tier": "1만원 미만",
       "usp": "단독구성",
-      "rank_delta": "-28",
+      "rank_delta": -28,
       "is_new_entry": false,
       "rank_comparison_status": "compared"
     },
@@ -3090,7 +3090,7 @@
       "price_numeric": 12900,
       "price_tier": "1만원대",
       "usp": "일반구성",
-      "rank_delta": "2",
+      "rank_delta": 2,
       "is_new_entry": false,
       "rank_comparison_status": "compared"
     },
@@ -3141,7 +3141,7 @@
       "price_numeric": 9200,
       "price_tier": "1만원 미만",
       "usp": "일반구성",
-      "rank_delta": "-31",
+      "rank_delta": -31,
       "is_new_entry": false,
       "rank_comparison_status": "compared"
     },
@@ -3192,7 +3192,7 @@
       "price_numeric": 25000,
       "price_tier": "2만원대",
       "usp": "단독구성",
-      "rank_delta": "-15",
+      "rank_delta": -15,
       "is_new_entry": false,
       "rank_comparison_status": "compared"
     },
@@ -3243,7 +3243,7 @@
       "price_numeric": 12900,
       "price_tier": "1만원대",
       "usp": "선물포장, 단독구성",
-      "rank_delta": "-16",
+      "rank_delta": -16,
       "is_new_entry": false,
       "rank_comparison_status": "compared"
     },
@@ -3294,7 +3294,7 @@
       "price_numeric": 12800,
       "price_tier": "1만원대",
       "usp": "일반구성",
-      "rank_delta": "-18",
+      "rank_delta": -18,
       "is_new_entry": false,
       "rank_comparison_status": "compared"
     },
@@ -3328,7 +3328,7 @@
       "price_numeric": 14000,
       "price_tier": "1만원대",
       "usp": "일반구성",
-      "rank_delta": "-27",
+      "rank_delta": -27,
       "is_new_entry": false,
       "rank_comparison_status": "compared"
     },
@@ -3362,7 +3362,7 @@
       "price_numeric": 7900,
       "price_tier": "1만원 미만",
       "usp": "일반구성",
-      "rank_delta": "-58",
+      "rank_delta": -58,
       "is_new_entry": false,
       "rank_comparison_status": "compared"
     },
@@ -3379,7 +3379,7 @@
       "price_numeric": 9900,
       "price_tier": "1만원 미만",
       "usp": "일반구성",
-      "rank_delta": "-20",
+      "rank_delta": -20,
       "is_new_entry": false,
       "rank_comparison_status": "compared"
     },
@@ -3396,7 +3396,7 @@
       "price_numeric": 12900,
       "price_tier": "1만원대",
       "usp": "일반구성",
-      "rank_delta": "-17",
+      "rank_delta": -17,
       "is_new_entry": false,
       "rank_comparison_status": "compared"
     },
@@ -3413,7 +3413,7 @@
       "price_numeric": 22900,
       "price_tier": "2만원대",
       "usp": "일반구성",
-      "rank_delta": "1",
+      "rank_delta": 1,
       "is_new_entry": false,
       "rank_comparison_status": "compared"
     },
@@ -3430,7 +3430,7 @@
       "price_numeric": 29900,
       "price_tier": "2만원대",
       "usp": "일반구성",
-      "rank_delta": "-1",
+      "rank_delta": -1,
       "is_new_entry": false,
       "rank_comparison_status": "compared"
     },
@@ -3447,7 +3447,7 @@
       "price_numeric": 34800,
       "price_tier": "3만원대",
       "usp": "단독구성",
-      "rank_delta": "0",
+      "rank_delta": 0,
       "is_new_entry": false,
       "rank_comparison_status": "compared"
     },
@@ -3464,7 +3464,7 @@
       "price_numeric": 17800,
       "price_tier": "1만원대",
       "usp": "일반구성",
-      "rank_delta": "1",
+      "rank_delta": 1,
       "is_new_entry": false,
       "rank_comparison_status": "compared"
     },
@@ -3481,7 +3481,7 @@
       "price_numeric": 29800,
       "price_tier": "2만원대",
       "usp": "단독구성",
-      "rank_delta": "1",
+      "rank_delta": 1,
       "is_new_entry": false,
       "rank_comparison_status": "compared"
     },
@@ -3498,7 +3498,7 @@
       "price_numeric": 44900,
       "price_tier": "4만원대",
       "usp": "단독구성",
-      "rank_delta": "-2",
+      "rank_delta": -2,
       "is_new_entry": false,
       "rank_comparison_status": "compared"
     },
@@ -3515,7 +3515,7 @@
       "price_numeric": 16900,
       "price_tier": "1만원대",
       "usp": "일반구성",
-      "rank_delta": "0",
+      "rank_delta": 0,
       "is_new_entry": false,
       "rank_comparison_status": "compared"
     },
@@ -3532,7 +3532,7 @@
       "price_numeric": 37900,
       "price_tier": "3만원대",
       "usp": "단독구성",
-      "rank_delta": "0",
+      "rank_delta": 0,
       "is_new_entry": false,
       "rank_comparison_status": "compared"
     },
@@ -3549,7 +3549,7 @@
       "price_numeric": 29900,
       "price_tier": "2만원대",
       "usp": "단독구성",
-      "rank_delta": "0",
+      "rank_delta": 0,
       "is_new_entry": false,
       "rank_comparison_status": "compared"
     },
@@ -3566,7 +3566,7 @@
       "price_numeric": 13800,
       "price_tier": "1만원대",
       "usp": "일반구성",
-      "rank_delta": "0",
+      "rank_delta": 0,
       "is_new_entry": false,
       "rank_comparison_status": "compared"
     },
@@ -3583,7 +3583,7 @@
       "price_numeric": 17900,
       "price_tier": "1만원대",
       "usp": "일반구성",
-      "rank_delta": "0",
+      "rank_delta": 0,
       "is_new_entry": false,
       "rank_comparison_status": "compared"
     },
@@ -3600,7 +3600,7 @@
       "price_numeric": 18800,
       "price_tier": "1만원대",
       "usp": "일반구성",
-      "rank_delta": "1",
+      "rank_delta": 1,
       "is_new_entry": false,
       "rank_comparison_status": "compared"
     },
@@ -3617,7 +3617,7 @@
       "price_numeric": 15900,
       "price_tier": "1만원대",
       "usp": "일반구성",
-      "rank_delta": "4",
+      "rank_delta": 4,
       "is_new_entry": false,
       "rank_comparison_status": "compared"
     },
@@ -3634,7 +3634,7 @@
       "price_numeric": 29900,
       "price_tier": "2만원대",
       "usp": "단독구성",
-      "rank_delta": "4",
+      "rank_delta": 4,
       "is_new_entry": false,
       "rank_comparison_status": "compared"
     },
@@ -3651,7 +3651,7 @@
       "price_numeric": 15900,
       "price_tier": "1만원대",
       "usp": "단독구성",
-      "rank_delta": "5",
+      "rank_delta": 5,
       "is_new_entry": false,
       "rank_comparison_status": "compared"
     },
@@ -3668,7 +3668,7 @@
       "price_numeric": 32800,
       "price_tier": "3만원대",
       "usp": "일반구성",
-      "rank_delta": "3",
+      "rank_delta": 3,
       "is_new_entry": false,
       "rank_comparison_status": "compared"
     },
@@ -3685,7 +3685,7 @@
       "price_numeric": 39900,
       "price_tier": "3만원대",
       "usp": "단독구성",
-      "rank_delta": "8",
+      "rank_delta": 8,
       "is_new_entry": false,
       "rank_comparison_status": "compared"
     },
@@ -3702,7 +3702,7 @@
       "price_numeric": 19900,
       "price_tier": "1만원대",
       "usp": "일반구성",
-      "rank_delta": "18",
+      "rank_delta": 18,
       "is_new_entry": false,
       "rank_comparison_status": "compared"
     },
@@ -3719,7 +3719,7 @@
       "price_numeric": 21800,
       "price_tier": "2만원대",
       "usp": "단독구성",
-      "rank_delta": "3",
+      "rank_delta": 3,
       "is_new_entry": false,
       "rank_comparison_status": "compared"
     },
@@ -3736,7 +3736,7 @@
       "price_numeric": 14900,
       "price_tier": "1만원대",
       "usp": "일반구성",
-      "rank_delta": "9",
+      "rank_delta": 9,
       "is_new_entry": false,
       "rank_comparison_status": "compared"
     },
@@ -3753,7 +3753,7 @@
       "price_numeric": 21800,
       "price_tier": "2만원대",
       "usp": "일반구성",
-      "rank_delta": "-6",
+      "rank_delta": -6,
       "is_new_entry": false,
       "rank_comparison_status": "compared"
     },
@@ -3770,7 +3770,7 @@
       "price_numeric": 29000,
       "price_tier": "2만원대",
       "usp": "일반구성",
-      "rank_delta": "8",
+      "rank_delta": 8,
       "is_new_entry": false,
       "rank_comparison_status": "compared"
     },
@@ -3787,7 +3787,7 @@
       "price_numeric": 13900,
       "price_tier": "1만원대",
       "usp": "일반구성",
-      "rank_delta": "-2",
+      "rank_delta": -2,
       "is_new_entry": false,
       "rank_comparison_status": "compared"
     },
@@ -3804,7 +3804,7 @@
       "price_numeric": 29900,
       "price_tier": "2만원대",
       "usp": "일반구성",
-      "rank_delta": "4",
+      "rank_delta": 4,
       "is_new_entry": false,
       "rank_comparison_status": "compared"
     },
@@ -3821,7 +3821,7 @@
       "price_numeric": 23000,
       "price_tier": "2만원대",
       "usp": "일반구성",
-      "rank_delta": "-13",
+      "rank_delta": -13,
       "is_new_entry": false,
       "rank_comparison_status": "compared"
     },
@@ -3838,7 +3838,7 @@
       "price_numeric": 15900,
       "price_tier": "1만원대",
       "usp": "단독구성",
-      "rank_delta": "11",
+      "rank_delta": 11,
       "is_new_entry": false,
       "rank_comparison_status": "compared"
     },
@@ -3855,7 +3855,7 @@
       "price_numeric": 19900,
       "price_tier": "1만원대",
       "usp": "일반구성",
-      "rank_delta": "-1",
+      "rank_delta": -1,
       "is_new_entry": false,
       "rank_comparison_status": "compared"
     },
@@ -3872,7 +3872,7 @@
       "price_numeric": 22900,
       "price_tier": "2만원대",
       "usp": "단독구성",
-      "rank_delta": "20",
+      "rank_delta": 20,
       "is_new_entry": false,
       "rank_comparison_status": "compared"
     },
@@ -3889,7 +3889,7 @@
       "price_numeric": 24800,
       "price_tier": "2만원대",
       "usp": "일반구성",
-      "rank_delta": "2",
+      "rank_delta": 2,
       "is_new_entry": false,
       "rank_comparison_status": "compared"
     },
@@ -3906,7 +3906,7 @@
       "price_numeric": 19800,
       "price_tier": "1만원대",
       "usp": "일반구성",
-      "rank_delta": "-6",
+      "rank_delta": -6,
       "is_new_entry": false,
       "rank_comparison_status": "compared"
     },
@@ -3923,7 +3923,7 @@
       "price_numeric": 22900,
       "price_tier": "2만원대",
       "usp": "일반구성",
-      "rank_delta": "37",
+      "rank_delta": 37,
       "is_new_entry": false,
       "rank_comparison_status": "compared"
     },
@@ -3940,7 +3940,7 @@
       "price_numeric": 13900,
       "price_tier": "1만원대",
       "usp": "단독구성",
-      "rank_delta": "6",
+      "rank_delta": 6,
       "is_new_entry": false,
       "rank_comparison_status": "compared"
     },
@@ -3957,7 +3957,7 @@
       "price_numeric": 39000,
       "price_tier": "3만원대",
       "usp": "일반구성",
-      "rank_delta": "11",
+      "rank_delta": 11,
       "is_new_entry": false,
       "rank_comparison_status": "compared"
     },
@@ -3974,7 +3974,7 @@
       "price_numeric": 21800,
       "price_tier": "2만원대",
       "usp": "단독구성",
-      "rank_delta": "8",
+      "rank_delta": 8,
       "is_new_entry": false,
       "rank_comparison_status": "compared"
     },
@@ -3991,7 +3991,7 @@
       "price_numeric": 58650,
       "price_tier": "5만원 이상",
       "usp": "단독구성",
-      "rank_delta": "-12",
+      "rank_delta": -12,
       "is_new_entry": false,
       "rank_comparison_status": "compared"
     },
@@ -4008,7 +4008,7 @@
       "price_numeric": 9900,
       "price_tier": "1만원 미만",
       "usp": "일반구성",
-      "rank_delta": "-1",
+      "rank_delta": -1,
       "is_new_entry": false,
       "rank_comparison_status": "compared"
     },
@@ -4025,7 +4025,7 @@
       "price_numeric": 29800,
       "price_tier": "2만원대",
       "usp": "단독구성",
-      "rank_delta": "-5",
+      "rank_delta": -5,
       "is_new_entry": false,
       "rank_comparison_status": "compared"
     },
@@ -4042,7 +4042,7 @@
       "price_numeric": 16900,
       "price_tier": "1만원대",
       "usp": "일반구성",
-      "rank_delta": "29",
+      "rank_delta": 29,
       "is_new_entry": false,
       "rank_comparison_status": "compared"
     },
@@ -4059,7 +4059,7 @@
       "price_numeric": 79000,
       "price_tier": "5만원 이상",
       "usp": "선물포장",
-      "rank_delta": "44",
+      "rank_delta": 44,
       "is_new_entry": false,
       "rank_comparison_status": "compared"
     },
@@ -4076,7 +4076,7 @@
       "price_numeric": 36900,
       "price_tier": "3만원대",
       "usp": "일반구성",
-      "rank_delta": "24",
+      "rank_delta": 24,
       "is_new_entry": false,
       "rank_comparison_status": "compared"
     },
@@ -4093,7 +4093,7 @@
       "price_numeric": 15900,
       "price_tier": "1만원대",
       "usp": "일반구성",
-      "rank_delta": "5",
+      "rank_delta": 5,
       "is_new_entry": false,
       "rank_comparison_status": "compared"
     },
@@ -4110,7 +4110,7 @@
       "price_numeric": 9800,
       "price_tier": "1만원 미만",
       "usp": "일반구성",
-      "rank_delta": "-3",
+      "rank_delta": -3,
       "is_new_entry": false,
       "rank_comparison_status": "compared"
     },
@@ -4127,7 +4127,7 @@
       "price_numeric": 23900,
       "price_tier": "2만원대",
       "usp": "일반구성",
-      "rank_delta": "-10",
+      "rank_delta": -10,
       "is_new_entry": false,
       "rank_comparison_status": "compared"
     },
@@ -4144,7 +4144,7 @@
       "price_numeric": 29900,
       "price_tier": "2만원대",
       "usp": "단독구성",
-      "rank_delta": "-10",
+      "rank_delta": -10,
       "is_new_entry": false,
       "rank_comparison_status": "compared"
     },
@@ -4161,7 +4161,7 @@
       "price_numeric": 29800,
       "price_tier": "2만원대",
       "usp": "일반구성",
-      "rank_delta": "16",
+      "rank_delta": 16,
       "is_new_entry": false,
       "rank_comparison_status": "compared"
     },
@@ -4178,7 +4178,7 @@
       "price_numeric": 32000,
       "price_tier": "3만원대",
       "usp": "단독구성",
-      "rank_delta": "17",
+      "rank_delta": 17,
       "is_new_entry": false,
       "rank_comparison_status": "compared"
     },
@@ -4212,7 +4212,7 @@
       "price_numeric": 13900,
       "price_tier": "1만원대",
       "usp": "일반구성",
-      "rank_delta": "10",
+      "rank_delta": 10,
       "is_new_entry": false,
       "rank_comparison_status": "compared"
     },
@@ -4229,7 +4229,7 @@
       "price_numeric": 64800,
       "price_tier": "5만원 이상",
       "usp": "단독구성",
-      "rank_delta": "-33",
+      "rank_delta": -33,
       "is_new_entry": false,
       "rank_comparison_status": "compared"
     },
@@ -4246,7 +4246,7 @@
       "price_numeric": 16900,
       "price_tier": "1만원대",
       "usp": "일반구성",
-      "rank_delta": "-3",
+      "rank_delta": -3,
       "is_new_entry": false,
       "rank_comparison_status": "compared"
     },
@@ -4263,7 +4263,7 @@
       "price_numeric": 9900,
       "price_tier": "1만원 미만",
       "usp": "일반구성",
-      "rank_delta": "-1",
+      "rank_delta": -1,
       "is_new_entry": false,
       "rank_comparison_status": "compared"
     },
@@ -4280,7 +4280,7 @@
       "price_numeric": 39000,
       "price_tier": "3만원대",
       "usp": "일반구성",
-      "rank_delta": "17",
+      "rank_delta": 17,
       "is_new_entry": false,
       "rank_comparison_status": "compared"
     },
@@ -4297,7 +4297,7 @@
       "price_numeric": 13900,
       "price_tier": "1만원대",
       "usp": "일반구성",
-      "rank_delta": "3",
+      "rank_delta": 3,
       "is_new_entry": false,
       "rank_comparison_status": "compared"
     },
@@ -4314,7 +4314,7 @@
       "price_numeric": 24800,
       "price_tier": "2만원대",
       "usp": "일반구성",
-      "rank_delta": "31",
+      "rank_delta": 31,
       "is_new_entry": false,
       "rank_comparison_status": "compared"
     },
@@ -4331,7 +4331,7 @@
       "price_numeric": 22000,
       "price_tier": "2만원대",
       "usp": "일반구성",
-      "rank_delta": "5",
+      "rank_delta": 5,
       "is_new_entry": false,
       "rank_comparison_status": "compared"
     },
@@ -4348,7 +4348,7 @@
       "price_numeric": 33900,
       "price_tier": "3만원대",
       "usp": "일반구성",
-      "rank_delta": "14",
+      "rank_delta": 14,
       "is_new_entry": false,
       "rank_comparison_status": "compared"
     },
@@ -4382,7 +4382,7 @@
       "price_numeric": 29900,
       "price_tier": "2만원대",
       "usp": "일반구성",
-      "rank_delta": "-3",
+      "rank_delta": -3,
       "is_new_entry": false,
       "rank_comparison_status": "compared"
     },
@@ -4399,7 +4399,7 @@
       "price_numeric": 33900,
       "price_tier": "3만원대",
       "usp": "일반구성",
-      "rank_delta": "-10",
+      "rank_delta": -10,
       "is_new_entry": false,
       "rank_comparison_status": "compared"
     },
@@ -4416,7 +4416,7 @@
       "price_numeric": 23800,
       "price_tier": "2만원대",
       "usp": "일반구성",
-      "rank_delta": "15",
+      "rank_delta": 15,
       "is_new_entry": false,
       "rank_comparison_status": "compared"
     },
@@ -4433,7 +4433,7 @@
       "price_numeric": 21800,
       "price_tier": "2만원대",
       "usp": "일반구성",
-      "rank_delta": "-20",
+      "rank_delta": -20,
       "is_new_entry": false,
       "rank_comparison_status": "compared"
     },
@@ -4467,7 +4467,7 @@
       "price_numeric": 17900,
       "price_tier": "1만원대",
       "usp": "일반구성",
-      "rank_delta": "34",
+      "rank_delta": 34,
       "is_new_entry": false,
       "rank_comparison_status": "compared"
     },
@@ -4501,7 +4501,7 @@
       "price_numeric": 22000,
       "price_tier": "2만원대",
       "usp": "일반구성",
-      "rank_delta": "-25",
+      "rank_delta": -25,
       "is_new_entry": false,
       "rank_comparison_status": "compared"
     },
@@ -4518,7 +4518,7 @@
       "price_numeric": 29000,
       "price_tier": "2만원대",
       "usp": "일반구성",
-      "rank_delta": "-9",
+      "rank_delta": -9,
       "is_new_entry": false,
       "rank_comparison_status": "compared"
     },
@@ -4535,7 +4535,7 @@
       "price_numeric": 25000,
       "price_tier": "2만원대",
       "usp": "일반구성",
-      "rank_delta": "-24",
+      "rank_delta": -24,
       "is_new_entry": false,
       "rank_comparison_status": "compared"
     },
@@ -4552,7 +4552,7 @@
       "price_numeric": 28900,
       "price_tier": "2만원대",
       "usp": "일반구성",
-      "rank_delta": "-9",
+      "rank_delta": -9,
       "is_new_entry": false,
       "rank_comparison_status": "compared"
     },
@@ -4569,7 +4569,7 @@
       "price_numeric": 39000,
       "price_tier": "3만원대",
       "usp": "단독구성",
-      "rank_delta": "9",
+      "rank_delta": 9,
       "is_new_entry": false,
       "rank_comparison_status": "compared"
     },
@@ -4586,7 +4586,7 @@
       "price_numeric": 25000,
       "price_tier": "2만원대",
       "usp": "일반구성",
-      "rank_delta": "-4",
+      "rank_delta": -4,
       "is_new_entry": false,
       "rank_comparison_status": "compared"
     },
@@ -4603,7 +4603,7 @@
       "price_numeric": 35900,
       "price_tier": "3만원대",
       "usp": "일반구성",
-      "rank_delta": "-6",
+      "rank_delta": -6,
       "is_new_entry": false,
       "rank_comparison_status": "compared"
     },
@@ -4654,7 +4654,7 @@
       "price_numeric": 32900,
       "price_tier": "3만원대",
       "usp": "일반구성",
-      "rank_delta": "15",
+      "rank_delta": 15,
       "is_new_entry": false,
       "rank_comparison_status": "compared"
     },
@@ -4705,7 +4705,7 @@
       "price_numeric": 9900,
       "price_tier": "1만원 미만",
       "usp": "단독구성",
-      "rank_delta": "-26",
+      "rank_delta": -26,
       "is_new_entry": false,
       "rank_comparison_status": "compared"
     },
@@ -4739,7 +4739,7 @@
       "price_numeric": 14900,
       "price_tier": "1만원대",
       "usp": "일반구성",
-      "rank_delta": "-3",
+      "rank_delta": -3,
       "is_new_entry": false,
       "rank_comparison_status": "compared"
     },
@@ -4756,7 +4756,7 @@
       "price_numeric": 9590,
       "price_tier": "1만원 미만",
       "usp": "일반구성",
-      "rank_delta": "-3",
+      "rank_delta": -3,
       "is_new_entry": false,
       "rank_comparison_status": "compared"
     },
@@ -4790,7 +4790,7 @@
       "price_numeric": 33000,
       "price_tier": "3만원대",
       "usp": "일반구성",
-      "rank_delta": "-1",
+      "rank_delta": -1,
       "is_new_entry": false,
       "rank_comparison_status": "compared"
     },
@@ -4807,7 +4807,7 @@
       "price_numeric": 35000,
       "price_tier": "3만원대",
       "usp": "일반구성",
-      "rank_delta": "10",
+      "rank_delta": 10,
       "is_new_entry": false,
       "rank_comparison_status": "compared"
     },
@@ -4824,7 +4824,7 @@
       "price_numeric": 19000,
       "price_tier": "1만원대",
       "usp": "일반구성",
-      "rank_delta": "12",
+      "rank_delta": 12,
       "is_new_entry": false,
       "rank_comparison_status": "compared"
     },
@@ -4858,7 +4858,7 @@
       "price_numeric": 19900,
       "price_tier": "1만원대",
       "usp": "일반구성",
-      "rank_delta": "-24",
+      "rank_delta": -24,
       "is_new_entry": false,
       "rank_comparison_status": "compared"
     },
@@ -4875,7 +4875,7 @@
       "price_numeric": 43200,
       "price_tier": "4만원대",
       "usp": "단독구성",
-      "rank_delta": "-60",
+      "rank_delta": -60,
       "is_new_entry": false,
       "rank_comparison_status": "compared"
     },
@@ -4909,7 +4909,7 @@
       "price_numeric": 39900,
       "price_tier": "3만원대",
       "usp": "일반구성",
-      "rank_delta": "-17",
+      "rank_delta": -17,
       "is_new_entry": false,
       "rank_comparison_status": "compared"
     },
@@ -4977,7 +4977,7 @@
       "price_numeric": 22800,
       "price_tier": "2만원대",
       "usp": "일반구성",
-      "rank_delta": "-40",
+      "rank_delta": -40,
       "is_new_entry": false,
       "rank_comparison_status": "compared"
     },
@@ -5011,7 +5011,7 @@
       "price_numeric": 32000,
       "price_tier": "3만원대",
       "usp": "일반구성",
-      "rank_delta": "-3",
+      "rank_delta": -3,
       "is_new_entry": false,
       "rank_comparison_status": "compared"
     },
@@ -5028,7 +5028,7 @@
       "price_numeric": 13900,
       "price_tier": "1만원대",
       "usp": "일반구성",
-      "rank_delta": "-9",
+      "rank_delta": -9,
       "is_new_entry": false,
       "rank_comparison_status": "compared"
     },
@@ -5079,7 +5079,7 @@
       "price_numeric": 39000,
       "price_tier": "3만원대",
       "usp": "일반구성",
-      "rank_delta": "-19",
+      "rank_delta": -19,
       "is_new_entry": false,
       "rank_comparison_status": "compared"
     },
@@ -5113,7 +5113,7 @@
       "price_numeric": 24500,
       "price_tier": "2만원대",
       "usp": "단독구성",
-      "rank_delta": "0",
+      "rank_delta": 0,
       "is_new_entry": false,
       "rank_comparison_status": "compared"
     },
@@ -5130,7 +5130,7 @@
       "price_numeric": 49000,
       "price_tier": "4만원대",
       "usp": "일반구성",
-      "rank_delta": "0",
+      "rank_delta": 0,
       "is_new_entry": false,
       "rank_comparison_status": "compared"
     },
@@ -5147,7 +5147,7 @@
       "price_numeric": 44000,
       "price_tier": "4만원대",
       "usp": "일반구성",
-      "rank_delta": "0",
+      "rank_delta": 0,
       "is_new_entry": false,
       "rank_comparison_status": "compared"
     },
@@ -5164,7 +5164,7 @@
       "price_numeric": 35000,
       "price_tier": "3만원대",
       "usp": "일반구성",
-      "rank_delta": "10",
+      "rank_delta": 10,
       "is_new_entry": false,
       "rank_comparison_status": "compared"
     },
@@ -5181,7 +5181,7 @@
       "price_numeric": 31500,
       "price_tier": "3만원대",
       "usp": "각인/자수",
-      "rank_delta": "10",
+      "rank_delta": 10,
       "is_new_entry": false,
       "rank_comparison_status": "compared"
     },
@@ -5198,7 +5198,7 @@
       "price_numeric": 36500,
       "price_tier": "3만원대",
       "usp": "단독구성",
-      "rank_delta": "7",
+      "rank_delta": 7,
       "is_new_entry": false,
       "rank_comparison_status": "compared"
     },
@@ -5215,7 +5215,7 @@
       "price_numeric": 46000,
       "price_tier": "4만원대",
       "usp": "일반구성",
-      "rank_delta": "1",
+      "rank_delta": 1,
       "is_new_entry": false,
       "rank_comparison_status": "compared"
     },
@@ -5232,7 +5232,7 @@
       "price_numeric": 13800,
       "price_tier": "1만원대",
       "usp": "일반구성",
-      "rank_delta": "2",
+      "rank_delta": 2,
       "is_new_entry": false,
       "rank_comparison_status": "compared"
     },
@@ -5249,7 +5249,7 @@
       "price_numeric": 54000,
       "price_tier": "5만원 이상",
       "usp": "일반구성",
-      "rank_delta": "3",
+      "rank_delta": 3,
       "is_new_entry": false,
       "rank_comparison_status": "compared"
     },
@@ -5266,7 +5266,7 @@
       "price_numeric": 39000,
       "price_tier": "3만원대",
       "usp": "단독구성",
-      "rank_delta": "7",
+      "rank_delta": 7,
       "is_new_entry": false,
       "rank_comparison_status": "compared"
     },
@@ -5283,7 +5283,7 @@
       "price_numeric": 49000,
       "price_tier": "4만원대",
       "usp": "일반구성",
-      "rank_delta": "-4",
+      "rank_delta": -4,
       "is_new_entry": false,
       "rank_comparison_status": "compared"
     },
@@ -5300,7 +5300,7 @@
       "price_numeric": 51000,
       "price_tier": "5만원 이상",
       "usp": "단독구성",
-      "rank_delta": "-8",
+      "rank_delta": -8,
       "is_new_entry": false,
       "rank_comparison_status": "compared"
     },
@@ -5317,7 +5317,7 @@
       "price_numeric": 37000,
       "price_tier": "3만원대",
       "usp": "일반구성",
-      "rank_delta": "-7",
+      "rank_delta": -7,
       "is_new_entry": false,
       "rank_comparison_status": "compared"
     },
@@ -5334,7 +5334,7 @@
       "price_numeric": 57900,
       "price_tier": "5만원 이상",
       "usp": "단독구성",
-      "rank_delta": "-9",
+      "rank_delta": -9,
       "is_new_entry": false,
       "rank_comparison_status": "compared"
     },
@@ -5351,7 +5351,7 @@
       "price_numeric": 34000,
       "price_tier": "3만원대",
       "usp": "단독구성",
-      "rank_delta": "-6",
+      "rank_delta": -6,
       "is_new_entry": false,
       "rank_comparison_status": "compared"
     },
@@ -5368,7 +5368,7 @@
       "price_numeric": 42000,
       "price_tier": "4만원대",
       "usp": "일반구성",
-      "rank_delta": "-5",
+      "rank_delta": -5,
       "is_new_entry": false,
       "rank_comparison_status": "compared"
     },
@@ -5402,7 +5402,7 @@
       "price_numeric": 16800,
       "price_tier": "1만원대",
       "usp": "일반구성",
-      "rank_delta": "6",
+      "rank_delta": 6,
       "is_new_entry": false,
       "rank_comparison_status": "compared"
     },
@@ -5419,7 +5419,7 @@
       "price_numeric": 59800,
       "price_tier": "5만원 이상",
       "usp": "단독구성",
-      "rank_delta": "4",
+      "rank_delta": 4,
       "is_new_entry": false,
       "rank_comparison_status": "compared"
     },
@@ -5436,7 +5436,7 @@
       "price_numeric": 46000,
       "price_tier": "4만원대",
       "usp": "단독구성",
-      "rank_delta": "6",
+      "rank_delta": 6,
       "is_new_entry": false,
       "rank_comparison_status": "compared"
     },
@@ -5453,7 +5453,7 @@
       "price_numeric": 44000,
       "price_tier": "4만원대",
       "usp": "일반구성",
-      "rank_delta": "-2",
+      "rank_delta": -2,
       "is_new_entry": false,
       "rank_comparison_status": "compared"
     },
@@ -5470,7 +5470,7 @@
       "price_numeric": 47700,
       "price_tier": "4만원대",
       "usp": "단독구성",
-      "rank_delta": "-4",
+      "rank_delta": -4,
       "is_new_entry": false,
       "rank_comparison_status": "compared"
     },
@@ -5487,7 +5487,7 @@
       "price_numeric": 38000,
       "price_tier": "3만원대",
       "usp": "일반구성",
-      "rank_delta": "-7",
+      "rank_delta": -7,
       "is_new_entry": false,
       "rank_comparison_status": "compared"
     },
@@ -5504,7 +5504,7 @@
       "price_numeric": 48000,
       "price_tier": "4만원대",
       "usp": "일반구성",
-      "rank_delta": "-4",
+      "rank_delta": -4,
       "is_new_entry": false,
       "rank_comparison_status": "compared"
     },
@@ -5521,7 +5521,7 @@
       "price_numeric": 35800,
       "price_tier": "3만원대",
       "usp": "단독구성",
-      "rank_delta": "4",
+      "rank_delta": 4,
       "is_new_entry": false,
       "rank_comparison_status": "compared"
     },
@@ -5538,7 +5538,7 @@
       "price_numeric": 16900,
       "price_tier": "1만원대",
       "usp": "일반구성",
-      "rank_delta": "6",
+      "rank_delta": 6,
       "is_new_entry": false,
       "rank_comparison_status": "compared"
     },
@@ -5555,7 +5555,7 @@
       "price_numeric": 16900,
       "price_tier": "1만원대",
       "usp": "단독구성",
-      "rank_delta": "-2",
+      "rank_delta": -2,
       "is_new_entry": false,
       "rank_comparison_status": "compared"
     },
@@ -5572,7 +5572,7 @@
       "price_numeric": 32000,
       "price_tier": "3만원대",
       "usp": "일반구성",
-      "rank_delta": "5",
+      "rank_delta": 5,
       "is_new_entry": false,
       "rank_comparison_status": "compared"
     },
@@ -5589,7 +5589,7 @@
       "price_numeric": 24400,
       "price_tier": "2만원대",
       "usp": "단독구성",
-      "rank_delta": "12",
+      "rank_delta": 12,
       "is_new_entry": false,
       "rank_comparison_status": "compared"
     },
@@ -5606,7 +5606,7 @@
       "price_numeric": 29800,
       "price_tier": "2만원대",
       "usp": "단독구성",
-      "rank_delta": "15",
+      "rank_delta": 15,
       "is_new_entry": false,
       "rank_comparison_status": "compared"
     },
@@ -5623,7 +5623,7 @@
       "price_numeric": 29900,
       "price_tier": "2만원대",
       "usp": "단독구성",
-      "rank_delta": "-9",
+      "rank_delta": -9,
       "is_new_entry": false,
       "rank_comparison_status": "compared"
     },
@@ -5640,7 +5640,7 @@
       "price_numeric": 14900,
       "price_tier": "1만원대",
       "usp": "단독구성",
-      "rank_delta": "3",
+      "rank_delta": 3,
       "is_new_entry": false,
       "rank_comparison_status": "compared"
     },
@@ -5657,7 +5657,7 @@
       "price_numeric": 15800,
       "price_tier": "1만원대",
       "usp": "단독구성",
-      "rank_delta": "-12",
+      "rank_delta": -12,
       "is_new_entry": false,
       "rank_comparison_status": "compared"
     },
@@ -5674,7 +5674,7 @@
       "price_numeric": 42500,
       "price_tier": "4만원대",
       "usp": "단독구성",
-      "rank_delta": "0",
+      "rank_delta": 0,
       "is_new_entry": false,
       "rank_comparison_status": "compared"
     },
@@ -5691,7 +5691,7 @@
       "price_numeric": 44000,
       "price_tier": "4만원대",
       "usp": "일반구성",
-      "rank_delta": "4",
+      "rank_delta": 4,
       "is_new_entry": false,
       "rank_comparison_status": "compared"
     },
@@ -5708,7 +5708,7 @@
       "price_numeric": 17800,
       "price_tier": "1만원대",
       "usp": "단독구성",
-      "rank_delta": "14",
+      "rank_delta": 14,
       "is_new_entry": false,
       "rank_comparison_status": "compared"
     },
@@ -5725,7 +5725,7 @@
       "price_numeric": 46000,
       "price_tier": "4만원대",
       "usp": "일반구성",
-      "rank_delta": "-7",
+      "rank_delta": -7,
       "is_new_entry": false,
       "rank_comparison_status": "compared"
     },
@@ -5742,7 +5742,7 @@
       "price_numeric": 67200,
       "price_tier": "5만원 이상",
       "usp": "단독구성",
-      "rank_delta": "27",
+      "rank_delta": 27,
       "is_new_entry": false,
       "rank_comparison_status": "compared"
     },
@@ -5759,7 +5759,7 @@
       "price_numeric": 12900,
       "price_tier": "1만원대",
       "usp": "단독구성",
-      "rank_delta": "-11",
+      "rank_delta": -11,
       "is_new_entry": false,
       "rank_comparison_status": "compared"
     },
@@ -5793,7 +5793,7 @@
       "price_numeric": 9900,
       "price_tier": "1만원 미만",
       "usp": "일반구성",
-      "rank_delta": "20",
+      "rank_delta": 20,
       "is_new_entry": false,
       "rank_comparison_status": "compared"
     },
@@ -5810,7 +5810,7 @@
       "price_numeric": 27000,
       "price_tier": "2만원대",
       "usp": "일반구성",
-      "rank_delta": "21",
+      "rank_delta": 21,
       "is_new_entry": false,
       "rank_comparison_status": "compared"
     },
@@ -5827,7 +5827,7 @@
       "price_numeric": 22800,
       "price_tier": "2만원대",
       "usp": "단독구성",
-      "rank_delta": "-3",
+      "rank_delta": -3,
       "is_new_entry": false,
       "rank_comparison_status": "compared"
     },
@@ -5844,7 +5844,7 @@
       "price_numeric": 9900,
       "price_tier": "1만원 미만",
       "usp": "일반구성",
-      "rank_delta": "11",
+      "rank_delta": 11,
       "is_new_entry": false,
       "rank_comparison_status": "compared"
     },
@@ -5861,7 +5861,7 @@
       "price_numeric": 25900,
       "price_tier": "2만원대",
       "usp": "단독구성",
-      "rank_delta": "3",
+      "rank_delta": 3,
       "is_new_entry": false,
       "rank_comparison_status": "compared"
     },
@@ -5878,7 +5878,7 @@
       "price_numeric": 15800,
       "price_tier": "1만원대",
       "usp": "단독구성",
-      "rank_delta": "13",
+      "rank_delta": 13,
       "is_new_entry": false,
       "rank_comparison_status": "compared"
     },
@@ -5895,7 +5895,7 @@
       "price_numeric": 26900,
       "price_tier": "2만원대",
       "usp": "일반구성",
-      "rank_delta": "6",
+      "rank_delta": 6,
       "is_new_entry": false,
       "rank_comparison_status": "compared"
     },
@@ -5912,7 +5912,7 @@
       "price_numeric": 36000,
       "price_tier": "3만원대",
       "usp": "단독구성",
-      "rank_delta": "-17",
+      "rank_delta": -17,
       "is_new_entry": false,
       "rank_comparison_status": "compared"
     },
@@ -5929,7 +5929,7 @@
       "price_numeric": 29500,
       "price_tier": "2만원대",
       "usp": "일반구성",
-      "rank_delta": "30",
+      "rank_delta": 30,
       "is_new_entry": false,
       "rank_comparison_status": "compared"
     },
@@ -5946,7 +5946,7 @@
       "price_numeric": 18990,
       "price_tier": "1만원대",
       "usp": "단독구성",
-      "rank_delta": "-6",
+      "rank_delta": -6,
       "is_new_entry": false,
       "rank_comparison_status": "compared"
     },
@@ -5963,7 +5963,7 @@
       "price_numeric": 57000,
       "price_tier": "5만원 이상",
       "usp": "단독구성",
-      "rank_delta": "-24",
+      "rank_delta": -24,
       "is_new_entry": false,
       "rank_comparison_status": "compared"
     },
@@ -5980,7 +5980,7 @@
       "price_numeric": 43200,
       "price_tier": "4만원대",
       "usp": "일반구성",
-      "rank_delta": "25",
+      "rank_delta": 25,
       "is_new_entry": false,
       "rank_comparison_status": "compared"
     },
@@ -5997,7 +5997,7 @@
       "price_numeric": 34000,
       "price_tier": "3만원대",
       "usp": "단독구성",
-      "rank_delta": "-16",
+      "rank_delta": -16,
       "is_new_entry": false,
       "rank_comparison_status": "compared"
     },
@@ -6014,7 +6014,7 @@
       "price_numeric": 47000,
       "price_tier": "4만원대",
       "usp": "일반구성",
-      "rank_delta": "4",
+      "rank_delta": 4,
       "is_new_entry": false,
       "rank_comparison_status": "compared"
     },
@@ -6048,7 +6048,7 @@
       "price_numeric": 38000,
       "price_tier": "3만원대",
       "usp": "일반구성",
-      "rank_delta": "11",
+      "rank_delta": 11,
       "is_new_entry": false,
       "rank_comparison_status": "compared"
     },
@@ -6065,7 +6065,7 @@
       "price_numeric": 32000,
       "price_tier": "3만원대",
       "usp": "단독구성",
-      "rank_delta": "-10",
+      "rank_delta": -10,
       "is_new_entry": false,
       "rank_comparison_status": "compared"
     },
@@ -6082,7 +6082,7 @@
       "price_numeric": 14800,
       "price_tier": "1만원대",
       "usp": "단독구성",
-      "rank_delta": "-22",
+      "rank_delta": -22,
       "is_new_entry": false,
       "rank_comparison_status": "compared"
     },
@@ -6099,7 +6099,7 @@
       "price_numeric": 25000,
       "price_tier": "2만원대",
       "usp": "단독구성",
-      "rank_delta": "5",
+      "rank_delta": 5,
       "is_new_entry": false,
       "rank_comparison_status": "compared"
     },
@@ -6116,7 +6116,7 @@
       "price_numeric": 43900,
       "price_tier": "4만원대",
       "usp": "단독구성",
-      "rank_delta": "-22",
+      "rank_delta": -22,
       "is_new_entry": false,
       "rank_comparison_status": "compared"
     },
@@ -6133,7 +6133,7 @@
       "price_numeric": 45000,
       "price_tier": "4만원대",
       "usp": "단독구성",
-      "rank_delta": "-19",
+      "rank_delta": -19,
       "is_new_entry": false,
       "rank_comparison_status": "compared"
     },
@@ -6167,7 +6167,7 @@
       "price_numeric": 38000,
       "price_tier": "3만원대",
       "usp": "일반구성",
-      "rank_delta": "8",
+      "rank_delta": 8,
       "is_new_entry": false,
       "rank_comparison_status": "compared"
     },
@@ -6184,7 +6184,7 @@
       "price_numeric": 52000,
       "price_tier": "5만원 이상",
       "usp": "일반구성",
-      "rank_delta": "11",
+      "rank_delta": 11,
       "is_new_entry": false,
       "rank_comparison_status": "compared"
     },
@@ -6201,7 +6201,7 @@
       "price_numeric": 28000,
       "price_tier": "2만원대",
       "usp": "일반구성",
-      "rank_delta": "1",
+      "rank_delta": 1,
       "is_new_entry": false,
       "rank_comparison_status": "compared"
     },
@@ -6218,7 +6218,7 @@
       "price_numeric": 24900,
       "price_tier": "2만원대",
       "usp": "단독구성",
-      "rank_delta": "-12",
+      "rank_delta": -12,
       "is_new_entry": false,
       "rank_comparison_status": "compared"
     },
@@ -6235,7 +6235,7 @@
       "price_numeric": 34000,
       "price_tier": "3만원대",
       "usp": "단독구성",
-      "rank_delta": "13",
+      "rank_delta": 13,
       "is_new_entry": false,
       "rank_comparison_status": "compared"
     },
@@ -6252,7 +6252,7 @@
       "price_numeric": 21000,
       "price_tier": "2만원대",
       "usp": "일반구성",
-      "rank_delta": "0",
+      "rank_delta": 0,
       "is_new_entry": false,
       "rank_comparison_status": "compared"
     },
@@ -6269,7 +6269,7 @@
       "price_numeric": 58800,
       "price_tier": "5만원 이상",
       "usp": "단독구성",
-      "rank_delta": "20",
+      "rank_delta": 20,
       "is_new_entry": false,
       "rank_comparison_status": "compared"
     },
@@ -6286,7 +6286,7 @@
       "price_numeric": 49000,
       "price_tier": "4만원대",
       "usp": "일반구성",
-      "rank_delta": "-21",
+      "rank_delta": -21,
       "is_new_entry": false,
       "rank_comparison_status": "compared"
     },
@@ -6303,7 +6303,7 @@
       "price_numeric": 29800,
       "price_tier": "2만원대",
       "usp": "단독구성",
-      "rank_delta": "12",
+      "rank_delta": 12,
       "is_new_entry": false,
       "rank_comparison_status": "compared"
     },
@@ -6320,7 +6320,7 @@
       "price_numeric": 129000,
       "price_tier": "5만원 이상",
       "usp": "일반구성",
-      "rank_delta": "-26",
+      "rank_delta": -26,
       "is_new_entry": false,
       "rank_comparison_status": "compared"
     },
@@ -6337,7 +6337,7 @@
       "price_numeric": 19900,
       "price_tier": "1만원대",
       "usp": "일반구성",
-      "rank_delta": "-21",
+      "rank_delta": -21,
       "is_new_entry": false,
       "rank_comparison_status": "compared"
     },
@@ -6354,7 +6354,7 @@
       "price_numeric": 29800,
       "price_tier": "2만원대",
       "usp": "단독구성",
-      "rank_delta": "22",
+      "rank_delta": 22,
       "is_new_entry": false,
       "rank_comparison_status": "compared"
     },
@@ -6371,7 +6371,7 @@
       "price_numeric": 38000,
       "price_tier": "3만원대",
       "usp": "단독구성",
-      "rank_delta": "-13",
+      "rank_delta": -13,
       "is_new_entry": false,
       "rank_comparison_status": "compared"
     },
@@ -6388,7 +6388,7 @@
       "price_numeric": 16800,
       "price_tier": "1만원대",
       "usp": "단독구성",
-      "rank_delta": "24",
+      "rank_delta": 24,
       "is_new_entry": false,
       "rank_comparison_status": "compared"
     },
@@ -6405,7 +6405,7 @@
       "price_numeric": 22800,
       "price_tier": "2만원대",
       "usp": "단독구성",
-      "rank_delta": "22",
+      "rank_delta": 22,
       "is_new_entry": false,
       "rank_comparison_status": "compared"
     },
@@ -6422,7 +6422,7 @@
       "price_numeric": 14900,
       "price_tier": "1만원대",
       "usp": "일반구성",
-      "rank_delta": "-21",
+      "rank_delta": -21,
       "is_new_entry": false,
       "rank_comparison_status": "compared"
     },
@@ -6456,7 +6456,7 @@
       "price_numeric": 40800,
       "price_tier": "4만원대",
       "usp": "단독구성",
-      "rank_delta": "8",
+      "rank_delta": 8,
       "is_new_entry": false,
       "rank_comparison_status": "compared"
     },
@@ -6575,7 +6575,7 @@
       "price_numeric": 68000,
       "price_tier": "5만원 이상",
       "usp": "일반구성",
-      "rank_delta": "-6",
+      "rank_delta": -6,
       "is_new_entry": false,
       "rank_comparison_status": "compared"
     },
@@ -6609,7 +6609,7 @@
       "price_numeric": 26100,
       "price_tier": "2만원대",
       "usp": "단독구성",
-      "rank_delta": "-5",
+      "rank_delta": -5,
       "is_new_entry": false,
       "rank_comparison_status": "compared"
     },
@@ -6626,7 +6626,7 @@
       "price_numeric": 39000,
       "price_tier": "3만원대",
       "usp": "단독구성",
-      "rank_delta": "5",
+      "rank_delta": 5,
       "is_new_entry": false,
       "rank_comparison_status": "compared"
     },
@@ -6694,7 +6694,7 @@
       "price_numeric": 4900,
       "price_tier": "1만원 미만",
       "usp": "일반구성",
-      "rank_delta": "-34",
+      "rank_delta": -34,
       "is_new_entry": false,
       "rank_comparison_status": "compared"
     },
@@ -6762,7 +6762,7 @@
       "price_numeric": 25900,
       "price_tier": "2만원대",
       "usp": "단독구성",
-      "rank_delta": "-6",
+      "rank_delta": -6,
       "is_new_entry": false,
       "rank_comparison_status": "compared"
     },
@@ -6796,7 +6796,7 @@
       "price_numeric": 50000,
       "price_tier": "5만원 이상",
       "usp": "단독구성",
-      "rank_delta": "-22",
+      "rank_delta": -22,
       "is_new_entry": false,
       "rank_comparison_status": "compared"
     }
