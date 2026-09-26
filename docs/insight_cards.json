@@ -2,31 +2,31 @@
   "전체": {
     "analyzed_count": 200,
     "card_1_sov": {
-      "top_ip_share": "36.5%",
+      "top_ip_share": "37.5%",
       "top_ip_name": "가나디",
-      "ip_product_count": 73,
+      "ip_product_count": 75,
       "total_count": 200
     },
     "card_2_price_and_usp": {
-      "avg_price": 27197,
-      "packaging_ratio": 2.5,
+      "avg_price": 26909,
+      "packaging_ratio": 1.5,
       "engraving_ratio": 2.0,
-      "exclusive_ratio": 34.5,
+      "exclusive_ratio": 35.0,
       "price_tier_matrix": {
         "1만원 미만": {
-          "count": 21,
-          "share": 10.5,
-          "avg_price": 8414,
+          "count": 20,
+          "share": 10.0,
+          "avg_price": 8605,
           "top_brands": [
             "알럽하우스(소품)",
             "제이블룸(팬시)",
-            "인형"
+            "레토(생활)"
           ]
         },
         "1만원대": {
-          "count": 63,
-          "share": 31.5,
-          "avg_price": 15693,
+          "count": 64,
+          "share": 32.0,
+          "avg_price": 15950,
           "top_brands": [
             "가나디",
             "캐릭터침구",
@@ -34,29 +34,29 @@
           ]
         },
         "2만원대": {
-          "count": 40,
-          "share": 20.0,
-          "avg_price": 25862,
+          "count": 41,
+          "share": 20.5,
+          "avg_price": 25775,
           "top_brands": [
             "캐릭터침구",
-            "가나디",
+            "리브맘",
             "프렌즈인형/피규어"
           ]
         },
         "3만원대": {
-          "count": 39,
-          "share": 19.5,
-          "avg_price": 35105,
+          "count": 41,
+          "share": 20.5,
+          "avg_price": 35309,
           "top_brands": [
             "캐릭터침구",
-            "레고트",
-            "스탠리"
+            "스탠리",
+            "앨리건트테이블"
           ]
         },
         "4만원대": {
           "count": 23,
           "share": 11.5,
-          "avg_price": 45602,
+          "avg_price": 45704,
           "top_brands": [
             "스탠리",
             "렉슨",
@@ -64,13 +64,13 @@
           ]
         },
         "5만원 이상": {
-          "count": 14,
-          "share": 7.0,
-          "avg_price": 58689,
+          "count": 11,
+          "share": 5.5,
+          "avg_price": 57572,
           "top_brands": [
-            "웨지우드",
             "빌레로이앤보흐",
-            "센느파리"
+            "센느파리",
+            "웨지우드"
           ]
         }
       }
@@ -80,13 +80,13 @@
         "가나디",
         "먼작귀/치이카와",
         "기타 캐릭터/팬시",
-        "산리오"
+        "리락쿠마"
       ],
       "rising_keywords_top31_100": [
         "기타 캐릭터/팬시",
+        "가나디",
         "리락쿠마",
-        "카카오프렌즈",
-        "먼작귀/치이카와"
+        "카카오프렌즈, 짱구"
       ],
       "top_options": [
         "선물포장",
@@ -122,14 +122,14 @@
   "리빙 전체": {
     "analyzed_count": 50,
     "card_1_sov": {
-      "top_ip_share": "26.0%",
+      "top_ip_share": "28.0%",
       "top_ip_name": "가나디",
-      "ip_product_count": 13,
+      "ip_product_count": 14,
       "total_count": 50
     },
     "card_2_price_and_usp": {
-      "avg_price": 32116,
-      "packaging_ratio": 6.0,
+      "avg_price": 30152,
+      "packaging_ratio": 4.0,
       "engraving_ratio": 2.0,
       "exclusive_ratio": 46.0,
       "price_tier_matrix": {
@@ -143,9 +143,9 @@
           ]
         },
         "1만원대": {
-          "count": 11,
-          "share": 22.0,
-          "avg_price": 15554,
+          "count": 12,
+          "share": 24.0,
+          "avg_price": 15575,
           "top_brands": [
             "가나디",
             "그랑핸드",
@@ -153,19 +153,19 @@
           ]
         },
         "2만원대": {
-          "count": 8,
-          "share": 16.0,
-          "avg_price": 27162,
+          "count": 10,
+          "share": 20.0,
+          "avg_price": 26320,
           "top_brands": [
             "캐릭터침구",
             "캐릭터주방",
-            "오셀픽(리빙)"
+            "리브맘"
           ]
         },
         "3만원대": {
           "count": 16,
           "share": 32.0,
-          "avg_price": 34393,
+          "avg_price": 34743,
           "top_brands": [
             "오브제바이쿤달(디퓨저)",
             "로에",
@@ -175,7 +175,7 @@
         "4만원대": {
           "count": 7,
           "share": 14.0,
-          "avg_price": 45221,
+          "avg_price": 45571,
           "top_brands": [
             "스탠리",
             "렉슨",
@@ -183,9 +183,9 @@
           ]
         },
         "5만원 이상": {
-          "count": 6,
-          "share": 12.0,
-          "avg_price": 55291,
+          "count": 3,
+          "share": 6.0,
+          "avg_price": 54600,
           "top_brands": [
             "빌레로이앤보흐",
             "센느파리",
@@ -198,14 +198,13 @@
       "stable_keywords_top30": [
         "가나디",
         "먼작귀/치이카와",
-        "리락쿠마",
-        "산리오"
+        "리락쿠마"
       ],
       "rising_keywords_top31_100": [
+        "가나디",
         "캐릭터/팬시-침구",
-        "먼작귀/치이카와",
-        "산리오",
-        "가나디"
+        "캐릭터/팬시-팬시굿즈",
+        "캐릭터/팬시-주방"
       ],
       "top_options": [
         "선물포장",
@@ -241,31 +240,31 @@
   "팬시/문구/취미 (IP핵심)": {
     "analyzed_count": 50,
     "card_1_sov": {
-      "top_ip_share": "60.0%",
+      "top_ip_share": "58.0%",
       "top_ip_name": "가나디",
-      "ip_product_count": 30,
+      "ip_product_count": 29,
       "total_count": 50
     },
     "card_2_price_and_usp": {
-      "avg_price": 16318,
+      "avg_price": 16670,
       "packaging_ratio": 2.0,
       "engraving_ratio": 4.0,
       "exclusive_ratio": 8.0,
       "price_tier_matrix": {
         "1만원 미만": {
-          "count": 15,
-          "share": 30.0,
-          "avg_price": 8220,
+          "count": 16,
+          "share": 32.0,
+          "avg_price": 8343,
           "top_brands": [
             "알럽하우스(소품)",
-            "인형",
-            "굴강"
+            "제이블룸(팬시)",
+            "레토(생활)"
           ]
         },
         "1만원대": {
-          "count": 26,
-          "share": 52.0,
-          "avg_price": 15115,
+          "count": 25,
+          "share": 50.0,
+          "avg_price": 15456,
           "top_brands": [
             "가나디",
             "굴강",
@@ -273,23 +272,22 @@
           ]
         },
         "2만원대": {
-          "count": 4,
-          "share": 8.0,
-          "avg_price": 21750,
+          "count": 3,
+          "share": 6.0,
+          "avg_price": 22333,
           "top_brands": [
             "프렌즈인형/피규어",
-            "블루 아카이브",
-            "삼공방"
+            "블루 아카이브"
           ]
         },
         "3만원대": {
-          "count": 3,
-          "share": 6.0,
-          "avg_price": 34933,
+          "count": 4,
+          "share": 8.0,
+          "avg_price": 34700,
           "top_brands": [
             "캐릭터침구",
-            "블루 아카이브",
-            "가나디"
+            "가나디",
+            "헬로키티x지수"
           ]
         },
         "4만원대": {
@@ -313,15 +311,15 @@
     "card_3_recommended_keywords": {
       "stable_keywords_top30": [
         "가나디",
-        "블루 아카이브",
         "기타 캐릭터/팬시",
+        "블루 아카이브",
         "먼작귀/치이카와"
       ],
       "rising_keywords_top31_100": [
         "기타 캐릭터/팬시",
-        "리락쿠마",
         "카카오프렌즈, 짱구",
-        "몬치치"
+        "산리오",
+        "블루 아카이브"
       ],
       "top_options": [
         "선물포장",
@@ -357,14 +355,14 @@
   "침구/패브릭": {
     "analyzed_count": 50,
     "card_1_sov": {
-      "top_ip_share": "46.0%",
+      "top_ip_share": "50.0%",
       "top_ip_name": "가나디",
-      "ip_product_count": 23,
+      "ip_product_count": 25,
       "total_count": 50
     },
     "card_2_price_and_usp": {
-      "avg_price": 24862,
-      "packaging_ratio": 2.0,
+      "avg_price": 24080,
+      "packaging_ratio": 0.0,
       "engraving_ratio": 0.0,
       "exclusive_ratio": 32.0,
       "price_tier_matrix": {
@@ -390,21 +388,21 @@
         "2만원대": {
           "count": 21,
           "share": 42.0,
-          "avg_price": 26014,
+          "avg_price": 26057,
           "top_brands": [
             "캐릭터침구",
             "가나디",
-            "리브맘"
+            "굿나잇데이브(굿즈)"
           ]
         },
         "3만원대": {
-          "count": 7,
-          "share": 14.0,
-          "avg_price": 36185,
+          "count": 8,
+          "share": 16.0,
+          "avg_price": 36537,
           "top_brands": [
             "캐릭터침구",
             "바나코(인테리어)",
-            "잔망루피(굿즈)"
+            "데이니즈"
           ]
         },
         "4만원대": {
@@ -416,27 +414,25 @@
           ]
         },
         "5만원 이상": {
-          "count": 1,
-          "share": 2.0,
-          "avg_price": 79000,
-          "top_brands": [
-            "드브르베"
-          ]
+          "count": 0,
+          "share": 0.0,
+          "avg_price": 0,
+          "top_brands": []
         }
       }
     },
     "card_3_recommended_keywords": {
       "stable_keywords_top30": [
-        "가나디",
         "먼작귀/치이카와",
-        "기타 캐릭터/팬시",
-        "캐릭터/팬시-침구"
+        "가나디",
+        "캐릭터/팬시-침구",
+        "기타 캐릭터/팬시"
       ],
       "rising_keywords_top31_100": [
         "기타 캐릭터/팬시",
         "리락쿠마",
-        "카카오프렌즈",
-        "캐릭터/팬시-침구"
+        "캐릭터/팬시-침구",
+        "산리오"
       ],
       "top_options": [
         "선물포장",
@@ -478,24 +474,21 @@
       "total_count": 50
     },
     "card_2_price_and_usp": {
-      "avg_price": 35494,
+      "avg_price": 36736,
       "packaging_ratio": 0.0,
       "engraving_ratio": 2.0,
-      "exclusive_ratio": 52.0,
+      "exclusive_ratio": 54.0,
       "price_tier_matrix": {
         "1만원 미만": {
-          "count": 2,
-          "share": 4.0,
-          "avg_price": 7400,
-          "top_brands": [
-            "제이블룸",
-            "바쏠"
-          ]
+          "count": 0,
+          "share": 0.0,
+          "avg_price": 0,
+          "top_brands": []
         },
         "1만원대": {
-          "count": 8,
-          "share": 16.0,
-          "avg_price": 15600,
+          "count": 9,
+          "share": 18.0,
+          "avg_price": 16411,
           "top_brands": [
             "캐릭터주방",
             "바쏠",
@@ -505,11 +498,11 @@
         "2만원대": {
           "count": 7,
           "share": 14.0,
-          "avg_price": 26271,
+          "avg_price": 25628,
           "top_brands": [
             "캐릭터주방",
             "타블도트",
-            "보퀴진"
+            "앨리건트테이블"
           ]
         },
         "3만원대": {
@@ -517,15 +510,15 @@
           "share": 26.0,
           "avg_price": 35438,
           "top_brands": [
-            "레고트",
             "스탠리",
-            "앨리건트테이블"
+            "레고트",
+            "스타벅스(공식스토어)"
           ]
         },
         "4만원대": {
           "count": 14,
           "share": 28.0,
-          "avg_price": 45971,
+          "avg_price": 45964,
           "top_brands": [
             "스탠리",
             "블루보틀",
@@ -533,9 +526,9 @@
           ]
         },
         "5만원 이상": {
-          "count": 6,
-          "share": 12.0,
-          "avg_price": 57816,
+          "count": 7,
+          "share": 14.0,
+          "avg_price": 57928,
           "top_brands": [
             "웨지우드",
             "빌레로이앤보흐",
@@ -548,12 +541,13 @@
       "stable_keywords_top30": [
         "산리오",
         "리락쿠마",
-        "가나디",
-        "캐릭터/팬시-주방"
+        "캐릭터/팬시-주방",
+        "가나디"
       ],
       "rising_keywords_top31_100": [
+        "캐릭터/팬시-주방",
         "카카오프렌즈",
-        "캐릭터/팬시-팬시굿즈"
+        "메이플스토리"
       ],
       "top_options": [
         "선물포장",
