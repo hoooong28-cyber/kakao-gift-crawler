@@ -92,6 +92,19 @@ def export_static_web_dataset(df_latest, latest_cards_dict):
             except Exception as ex:
                 print(f"  ⚠️ 과거 날짜({d}) 정적 JSON 생성 실패: {ex}")
                 
+    # 1-1. data/ 폴더가 비어있는 환경(GitHub Actions 등 매번 새로 시작하는 러너)에서도
+    #      이미 docs/에 쌓여있는 과거 날짜들이 dates.json에서 누락되지 않도록 보강한다.
+    #      (data/*.csv는 .gitignore 대상이라 CI 환경에서 매 실행마다 사라질 수 있음)
+    known_dates = {d["date_key"] for d in dates_list}
+    existing_web_files = glob.glob(os.path.join(WEB_DIR, "data_????????.json"))
+    for f in sorted(existing_web_files, reverse=True):
+        m = re.search(r'data_(\d{8})\.json', f)
+        if m and m.group(1) not in known_dates:
+            d = m.group(1)
+            dates_list.append({"date_key": d, "label": f"{d[:4]}-{d[4:6]}-{d[6:8]}"})
+            known_dates.add(d)
+    dates_list.sort(key=lambda x: x["date_key"], reverse=True)
+
     # 2. dates.json 내보내기 (날짜 선택 셀렉트박스용)
     dates_json_path = os.path.join(WEB_DIR, "dates.json")
     with open(dates_json_path, "w", encoding="utf-8") as f:

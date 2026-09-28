@@ -4,10 +4,11 @@ env/
 __pycache__/
 *.pyc
 *.log
-data/*.csv
 .env
 # 루트 레벨 json만 제외 (web/ 폴더의 json은 GitHub Pages 배포에 필요)
 /*.json
-data/*.json
 repair-backup-*/
 .repair-runtime/
+# data/*.csv, data/*.json은 더 이상 무시하지 않음: GitHub Actions 러너는 매번
+# 새 컨테이너로 시작해서 이 폴더가 커밋되어 있지 않으면 전날 데이터를 전혀
+# 못 봐서 날짜 목록/순위 비교가 매번 리셋되는 버그가 생김 (2026-09-26 발생).

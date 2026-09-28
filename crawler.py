@@ -230,11 +230,14 @@ def scrape_all_categories(top_n=50):
                     for btn in buttons:
                         txt = btn.inner_text().strip()
                         if btn_keyword in txt and len(txt) < 15:
-                            btn.click(force=True)
+                            try:
+                                btn.scroll_into_view_if_needed(timeout=5000)
+                                btn.click(timeout=5000)
+                            except Exception:
+                                btn.evaluate("el => el.click()")
                             page.wait_for_timeout(2000)
                             clicked = True
                             break
-                    
                     if not clicked:
                         raise RuntimeError(f"Category tab not found: {cat_label}")
 
