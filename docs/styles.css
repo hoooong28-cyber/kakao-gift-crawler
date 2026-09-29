@@ -665,9 +665,207 @@ body {
     text-decoration: underline;
 }
 
+/* IP Clickable & Modal Styling */
+.ip-clickable {
+    cursor: pointer;
+    transition: var(--transition);
+    border-bottom: 1px dashed rgba(254, 229, 0, 0.4);
+    display: inline-block;
+}
+
+.ip-clickable:hover {
+    color: var(--accent-yellow) !important;
+    background: rgba(254, 229, 0, 0.15) !important;
+    border-radius: 4px;
+    padding: 0 4px;
+}
+
+.modal-backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(8, 11, 20, 0.85);
+    backdrop-filter: blur(12px);
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.modal-backdrop.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.modal-container {
+    background: var(--bg-card);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: var(--radius-lg);
+    width: 90%;
+    max-width: 920px;
+    max-height: 90vh;
+    overflow-y: auto;
+    box-shadow: 0 24px 60px rgba(0, 0, 0, 0.7);
+    transform: translateY(20px) scale(0.96);
+    transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    display: flex;
+    flex-direction: column;
+}
+
+.modal-backdrop.active .modal-container {
+    transform: translateY(0) scale(1);
+}
+
+.modal-header {
+    padding: 20px 28px;
+    border-bottom: 1px solid var(--border-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    background: rgba(17, 24, 39, 0.85);
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.modal-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 4px 10px;
+    background: rgba(254, 229, 0, 0.15);
+    color: var(--accent-yellow);
+    font-size: 11px;
+    font-weight: 700;
+    border-radius: 20px;
+    margin-bottom: 6px;
+}
+
+.modal-header h2 {
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: var(--text-primary);
+    margin: 0;
+}
+
+.modal-subtitle {
+    font-size: 0.85rem;
+    color: var(--text-muted);
+}
+
+.modal-close-btn {
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid var(--border-color);
+    color: var(--text-secondary);
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    transition: var(--transition);
+}
+
+.modal-close-btn:hover {
+    background: rgba(239, 68, 68, 0.2);
+    color: #ef4444;
+}
+
+.modal-body {
+    padding: 28px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.modal-kpi-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+}
+
+.modal-kpi-card {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-md);
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.kpi-label {
+    font-size: 12px;
+    color: var(--text-muted);
+}
+
+.kpi-value {
+    font-size: 18px;
+    font-weight: 800;
+    color: var(--accent-yellow);
+}
+
+.insight-banner {
+    background: linear-gradient(135deg, rgba(254, 229, 0, 0.08), rgba(99, 102, 241, 0.08));
+    border: 1px solid rgba(254, 229, 0, 0.25);
+    border-radius: var(--radius-md);
+    padding: 20px;
+}
+
+.insight-banner h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 1.05rem;
+}
+
+.takeaway-text {
+    font-size: 13.5px;
+    line-height: 1.7;
+    color: var(--text-secondary);
+}
+
+.modal-grid-2col {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.card-inner {
+    background: rgba(255, 255, 255, 0.02);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-md);
+    padding: 20px;
+}
+
+.collab-chip {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    background: rgba(99, 102, 241, 0.15);
+    color: var(--accent-indigo);
+    border: 1px solid rgba(99, 102, 241, 0.3);
+    padding: 5px 12px;
+    border-radius: 16px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.modal-table {
+    font-size: 12px;
+}
+
 @media (max-width: 1024px) {
     .sidebar { width: 80px; padding: 20px 12px; }
     .brand-text, .nav-item span, .schedule-info { display: none; }
     .main-content { margin-left: 80px; padding: 20px; }
     .charts-grid { grid-template-columns: 1fr; }
+    .modal-kpi-grid { grid-template-columns: repeat(2, 1fr); }
+    .modal-grid-2col { grid-template-columns: 1fr; }
 }

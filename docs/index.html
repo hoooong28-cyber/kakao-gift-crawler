@@ -304,7 +304,115 @@
         </main>
     </div>
 
+    <!-- ================================================================= -->
+    <!-- IP DETAIL INSIGHT MODAL (IP 딥다이브 마케팅 인사이트 팝업) -->
+    <!-- ================================================================= -->
+    <div id="ip-detail-modal" class="modal-backdrop" aria-hidden="true">
+        <div class="modal-container">
+            <!-- Modal Header -->
+            <div class="modal-header">
+                <div class="modal-title-group">
+                    <div class="modal-badge"><i class="fa-solid fa-gem"></i> IP Deep Dive</div>
+                    <h2 id="modal-ip-title">캐릭터 IP 명칭</h2>
+                    <span id="modal-ip-subtitle" class="modal-subtitle">B2B 마케팅 &amp; 상품 인사이트 딥다이브 리포트</span>
+                </div>
+                <button id="modal-close-btn" class="modal-close-btn" aria-label="닫기">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+            </div>
+
+            <!-- Modal Body -->
+            <div class="modal-body">
+                <!-- Top Metric Cards -->
+                <div class="modal-kpi-grid">
+                    <div class="modal-kpi-card">
+                        <span class="kpi-label"><i class="fa-solid fa-award"></i> 카테고리 랭킹</span>
+                        <span class="kpi-value" id="modal-kpi-rank">-</span>
+                    </div>
+                    <div class="modal-kpi-card">
+                        <span class="kpi-label"><i class="fa-solid fa-box-open"></i> 관측 상품 수</span>
+                        <span class="kpi-value" id="modal-kpi-count">-</span>
+                    </div>
+                    <div class="modal-kpi-card">
+                        <span class="kpi-label"><i class="fa-solid fa-chart-pie"></i> 카테고리 점유율</span>
+                        <span class="kpi-value" id="modal-kpi-share">-</span>
+                    </div>
+                    <div class="modal-kpi-card">
+                        <span class="kpi-label"><i class="fa-solid fa-coins"></i> 평균 판매 가격</span>
+                        <span class="kpi-value" id="modal-kpi-price">-</span>
+                    </div>
+                </div>
+
+                <!-- Marketing Strategy Key Takeaways Banner -->
+                <div class="modal-section insight-banner">
+                    <h3><i class="fa-solid fa-lightbulb highlight-yellow"></i> IP 핵심 마케팅 &amp; 기획 인사이트 (Takeaways)</h3>
+                    <div id="modal-marketing-takeaways" class="takeaway-text">
+                        <!-- Dynamic Marketing Takeaways Text -->
+                    </div>
+                </div>
+
+                <!-- Grid Layout for Specs & Stats -->
+                <div class="modal-grid-2col">
+                    <!-- Column 1: Price Tier -->
+                    <div class="modal-section card-inner">
+                        <h3><i class="fa-solid fa-tags"></i> 주력 가격대 분포</h3>
+                        <div id="modal-price-matrix">
+                            <!-- Dynamic price tiers -->
+                        </div>
+                    </div>
+
+                    <!-- Column 2: Category Breakdown -->
+                    <div class="modal-section card-inner">
+                        <h3><i class="fa-solid fa-layer-group"></i> 카테고리별 상품 노출 분포</h3>
+                        <div id="modal-cat-matrix">
+                            <!-- Dynamic category breakdown -->
+                        </div>
+                    </div>
+                </div>
+
+                <!-- IP News & Marketing Highlights Section -->
+                <div class="modal-section card-inner" style="border-left: 4px solid var(--accent-cyan); margin-top: 14px;">
+                    <h3><i class="fa-solid fa-newspaper highlight-cyan"></i> 📰 최신 IP 마케팅 &amp; 팝업스토어/콜라보 뉴스</h3>
+                    <div id="modal-ip-news-list" style="display:flex; flex-direction:column; gap:12px; margin-top:12px;">
+                        <!-- Dynamic IP news items -->
+                    </div>
+                </div>
+
+                <!-- Collab Brands Section -->
+                <div class="modal-section card-inner" style="margin-top: 14px;">
+                    <h3><i class="fa-solid fa-handshake"></i> 주요 콜라보 / 입점 브랜드 리스트</h3>
+                    <div id="modal-collab-brands" style="display:flex; flex-wrap:wrap; gap:6px; margin-top:10px;">
+                        <!-- Dynamic brand chips -->
+                    </div>
+                </div>
+
+                <!-- Best Selling Products List -->
+                <div class="modal-section">
+                    <h3><i class="fa-solid fa-fire highlight-rose"></i> 최근 잘 나가는 IP Top 상품 리스트</h3>
+                    <div class="table-container">
+                        <table class="custom-table modal-table">
+                            <thead>
+                                <tr>
+                                    <th style="width: 60px;">순위</th>
+                                    <th style="width: 140px;">카테고리</th>
+                                    <th style="width: 120px;">브랜드</th>
+                                    <th>상품명</th>
+                                    <th style="width: 100px;">가격</th>
+                                    <th style="width: 120px;">속성 뱃지</th>
+                                    <th style="width: 70px;">링크</th>
+                                </tr>
+                            </thead>
+                            <tbody id="modal-products-tbody">
+                                <!-- Dynamic Product Rows -->
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <script src="metrics.js?v=1"></script>
-    <script src="app.js?v=4"></script>
+    <script src="app.js?v=5"></script>
 </body>
 </html>

@@ -106,7 +106,20 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
+    let ipNewsData = {};
+    async function loadIpNewsData() {
+        try {
+            const res = await fetchFresh('ip_news.json');
+            if (res.ok) {
+                ipNewsData = await res.json();
+            }
+        } catch (e) {
+            console.warn('IP news load failed:', e);
+        }
+    }
+
     async function loadData() {
+        loadIpNewsData();
         try {
             let resJson;
             const url = selectedDate ? `/api/data?date=${selectedDate}` : '/api/data';
@@ -602,7 +615,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
             const tr = document.createElement('tr');
             tr.innerHTML = `
-                <td><strong style="color:#FEE500; font-size:14px;">${ipName}</strong></td>
+                <td><strong class="${ipName !== '미분류' && ipName !== '기타 캐릭터/팬시' ? 'ip-clickable' : ''}" data-ip="${ipName}" style="color:#FEE500; font-size:14px;">${ipName} ${ipName !== '미분류' && ipName !== '기타 캐릭터/팬시' ? '<i class="fa-solid fa-arrow-up-right-from-square" style="font-size:10px; margin-left:4px; opacity:0.7;"></i>' : ''}</strong></td>
                 <td><span class="badge-brand">${count}개</span></td>
                 <td><span style="color:#6366F1; font-weight:700;">${ratioPct}%</span></td>
                 <td class="badge-rank">${bestProduct ? bestProduct.rank + '위' : '-'}</td>
@@ -870,8 +883,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 <td><span class="badge-cat">${catStr}</span></td>
                 <td class="badge-rank">${p.rank}위 ${deltaBadge}</td>
                 <td>
-                    <span style="${isIpProduct ? 'background: rgba(254, 229, 0, 0.15); color: #FEE500; border: 1px solid rgba(254, 229, 0, 0.3);' : 'background: rgba(255, 255, 255, 0.05); color: #94A3B8;'} padding: 3px 8px; border-radius: 4px; font-size: 11px; font-weight: 600;">
-                        ${ipStr}
+                    <span class="${isIpProduct && ipStr !== '기타 캐릭터/팬시' ? 'ip-clickable' : ''}" data-ip="${ipStr}" style="${isIpProduct ? 'background: rgba(254, 229, 0, 0.15); color: #FEE500; border: 1px solid rgba(254, 229, 0, 0.3);' : 'background: rgba(255, 255, 255, 0.05); color: #94A3B8;'} padding: 3px 8px; border-radius: 4px; font-size: 11px; font-weight: 600;">
+                        ${ipStr} ${isIpProduct && ipStr !== '기타 캐릭터/팬시' ? '<i class="fa-solid fa-magnifying-glass-chart" style="font-size:9px; margin-left:3px;"></i>' : ''}
                     </span>
                 </td>
                 <td><span class="badge-brand">${brandStr}</span></td>
@@ -903,6 +916,228 @@ document.addEventListener('DOMContentLoaded', () => {
     refreshBtn.addEventListener('click', () => {
         loadData();
     });
+
+    // ── IP DETAIL INSIGHT MODAL LOGIC ──────────────────────────────────
+    const ipModal = document.getElementById('ip-detail-modal');
+    const modalCloseBtn = document.getElementById('modal-close-btn');
+
+    function closeIpDetailModal() {
+        if (ipModal) {
+            ipModal.classList.remove('active');
+            ipModal.setAttribute('aria-hidden', 'true');
+        }
+    }
+
+    if (modalCloseBtn) {
+        modalCloseBtn.addEventListener('click', closeIpDetailModal);
+    }
+    if (ipModal) {
+        ipModal.addEventListener('click', (e) => {
+            if (e.target === ipModal) closeIpDetailModal();
+        });
+    }
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && ipModal && ipModal.classList.contains('active')) {
+            closeIpDetailModal();
+        }
+    });
+
+    document.addEventListener('click', (e) => {
+        const clickable = e.target.closest('.ip-clickable');
+        if (clickable) {
+            const ipName = clickable.getAttribute('data-ip');
+            if (ipName && ipName !== '일반/비IP 상품' && ipName !== '미분류' && ipName !== '기타 캐릭터/팬시') {
+                openIpDetailModal(ipName);
+            }
+        }
+    });
+
+    function openIpDetailModal(ipName) {
+        if (!ipModal || !ipName) return;
+
+        const ipProducts = rawProductsData.filter(p => p.character_ip && p.character_ip.includes(ipName));
+
+        if (!ipProducts || ipProducts.length === 0) return;
+
+        document.getElementById('modal-ip-title').textContent = ipName;
+        document.getElementById('modal-ip-subtitle').textContent = `${ipName} IP B2B 마케팅 & 상품 인사이트 딥다이브 리포트`;
+
+        const totalCount = ipProducts.length;
+        const totalAllProducts = rawProductsData.length;
+        const share = totalAllProducts > 0 ? ((totalCount / totalAllProducts) * 100).toFixed(1) : 0;
+
+        let totalPrice = 0;
+        let priceCount = 0;
+        ipProducts.forEach(p => {
+            const pNum = parseInt((p.price || '').replace(/[^\d]/g, ''), 10);
+            if (pNum && !isNaN(pNum)) {
+                totalPrice += pNum;
+                priceCount++;
+            }
+        });
+        const avgPrice = priceCount > 0 ? Math.round(totalPrice / priceCount) : 0;
+        const minRank = Math.min(...ipProducts.map(p => p.rank || 999));
+
+        document.getElementById('modal-kpi-rank').textContent = minRank < 999 ? `최고 ${minRank}위` : '-';
+        document.getElementById('modal-kpi-count').textContent = `${totalCount}개`;
+        document.getElementById('modal-kpi-share').textContent = `${share}%`;
+        document.getElementById('modal-kpi-price').textContent = `${avgPrice.toLocaleString()}원`;
+
+        const tierCounts = {};
+        ipProducts.forEach(p => {
+            const tier = p.price_tier || '미분류';
+            tierCounts[tier] = (tierCounts[tier] || 0) + 1;
+        });
+
+        const tierHtml = Object.entries(tierCounts).map(([tier, count]) => {
+            const pct = ((count / totalCount) * 100).toFixed(0);
+            return `
+                <div style="display:flex; justify-content:space-between; align-items:center; font-size:12.5px; margin-bottom:4px;">
+                    <span style="color:#FEE500; font-weight:600;">${tier}</span>
+                    <span>${count}개 (${pct}%)</span>
+                </div>
+                <div style="background:rgba(255,255,255,0.06); height:6px; border-radius:3px; overflow:hidden; margin-bottom:10px;">
+                    <div style="background:#6366F1; width:${pct}%; height:100%;"></div>
+                </div>
+            `;
+        }).join('');
+        document.getElementById('modal-price-matrix').innerHTML = tierHtml;
+
+        // 3. Category Breakdown
+        const catCounts = {};
+        ipProducts.forEach(p => {
+            const cat = p.category || '기타';
+            catCounts[cat] = (catCounts[cat] || 0) + 1;
+        });
+
+        const catHtml = Object.entries(catCounts).map(([cat, count]) => {
+            const pct = ((count / totalCount) * 100).toFixed(0);
+            return `
+                <div style="display:flex; justify-content:space-between; align-items:center; font-size:12.5px; margin-bottom:4px;">
+                    <span style="color:#60A5FA; font-weight:600;">${cat}</span>
+                    <span>${count}개 (${pct}%)</span>
+                </div>
+                <div style="background:rgba(255,255,255,0.06); height:6px; border-radius:3px; overflow:hidden; margin-bottom:10px;">
+                    <div style="background:#06B6D4; width:${pct}%; height:100%;"></div>
+                </div>
+            `;
+        }).join('');
+        document.getElementById('modal-cat-matrix').innerHTML = catHtml;
+
+        // 4. IP News & Marketing Highlights (100% IP Coverage)
+        let newsItems = [];
+        const cleanName = ipName.split('(')[0].split('/')[0].trim();
+        for (const [k, items] of Object.entries(ipNewsData)) {
+            const cleanK = k.split('(')[0].split('/')[0].trim();
+            if (ipName.includes(k) || k.includes(ipName) || cleanName.includes(cleanK) || cleanK.includes(cleanName)) {
+                newsItems = newsItems.concat(items);
+            }
+        }
+
+        // 중복 제거
+        const seenTitles = new Set();
+        newsItems = newsItems.filter(item => {
+            if (seenTitles.has(item.title)) return false;
+            seenTitles.add(item.title);
+            return true;
+        });
+
+        if (newsItems.length === 0) {
+            newsItems = [
+                {
+                    "title": `[카카오 선물하기] ${ipName} 모바일 굿즈 및 선물하기 랭킹 실시간 집계 중`,
+                    "source": "카카오 선물하기 트래킹",
+                    "date": "2026.03",
+                    "summary": `${ipName} IP 관련 상품이 선물 기획전 및 랭킹 상위권에 수집되어 시장 모니터링이 진행 중입니다.`
+                }
+            ];
+        }
+
+        const newsContainer = document.getElementById('modal-ip-news-list');
+        if (newsContainer) {
+            newsContainer.innerHTML = newsItems.map(item => {
+                const isVerified = item.verified === true;
+                const borderColor = isVerified ? 'rgba(56,189,248,0.25)' : 'rgba(255,255,255,0.07)';
+                const titleColor = isVerified ? '#38BDF8' : '#94A3B8';
+                const badge = isVerified
+                    ? `<span style="font-size:10px; background:rgba(56,189,248,0.15); color:#38BDF8; border:1px solid rgba(56,189,248,0.3); padding:1px 6px; border-radius:4px; white-space:nowrap; flex-shrink:0;">📰 검증된 기사</span>`
+                    : `<span style="font-size:10px; background:rgba(148,163,184,0.1); color:#64748B; border:1px solid rgba(148,163,184,0.2); padding:1px 6px; border-radius:4px; white-space:nowrap; flex-shrink:0;">📊 트렌드 분석</span>`;
+                return `
+                <div style="background:rgba(255,255,255,0.02); border:1px solid ${borderColor}; border-radius:8px; padding:12px 16px;">
+                    <div style="display:flex; justify-content:space-between; align-items:flex-start; margin-bottom:6px; gap:10px;">
+                        <span style="font-weight:${isVerified ? '700' : '500'}; color:${titleColor}; font-size:13px; line-height:1.4;">${item.title}</span>
+                        <div style="display:flex; flex-direction:column; align-items:flex-end; gap:4px; flex-shrink:0;">
+                            ${badge}
+                            <span style="font-size:10px; color:#64748B; white-space:nowrap;">${item.source} · ${item.date}</span>
+                        </div>
+                    </div>
+                    <div style="font-size:12.5px; color:${isVerified ? '#CBD5E1' : '#64748B'}; line-height:1.6;">${item.summary}</div>
+                </div>`;
+            }).join('');
+        }
+
+        // 5. Collab Brands
+        const brandCounts = {};
+        ipProducts.forEach(p => {
+            if (p.brand && p.brand !== '-' && p.brand !== 'Kakao Gift') {
+                brandCounts[p.brand] = (brandCounts[p.brand] || 0) + 1;
+            }
+        });
+        const sortedBrands = Object.entries(brandCounts).sort((a, b) => b[1] - a[1]);
+        const collabHtml = sortedBrands.length > 0
+            ? sortedBrands.map(([bName, bCnt]) => `<span class="collab-chip">${bName} (${bCnt})</span>`).join('')
+            : `<span style="color:#94A3B8; font-size:12px;">단독 출품 브랜드 중심</span>`;
+        document.getElementById('modal-collab-brands').innerHTML = collabHtml;
+
+        // 6. Marketing Takeaways Text
+        const topTier = Object.entries(tierCounts).sort((a, b) => b[1] - a[1])[0];
+        const topTierName = topTier ? topTier[0] : '2만원대';
+
+        const topCat = Object.entries(catCounts).sort((a, b) => b[1] - a[1])[0];
+        const topCatName = topCat ? topCat[0] : '카테고리';
+
+        let takeaways = `
+            🎯 <strong>[가격 & 포지셔닝]</strong> <strong>${ipName}</strong> IP는 <strong>${topTierName}</strong> 가격대(평균가 ${avgPrice.toLocaleString()}원) 상품군에 높은 밀도로 진입해 있습니다.<br>
+            📂 <strong>[주력 카테고리 장배]</strong> <strong>${topCatName}</strong> 분야(${topCat ? topCat[1] : 0}개 상품)에서 가장 높은 노출을 보이며 점유율을 이끌고 있습니다.<br>
+        `;
+        if (sortedBrands.length > 0) {
+            takeaways += `🤝 <strong>[주요 입점/콜라보 브랜드]</strong> <strong>${sortedBrands.slice(0, 3).map(b => b[0]).join(', ')}</strong> 등의 파트너 브랜드가 해당 IP 제품을 라이브하고 있습니다.`;
+        }
+        document.getElementById('modal-marketing-takeaways').innerHTML = takeaways;
+
+        const sortedProds = [...ipProducts].sort((a, b) => a.rank - b.rank);
+        const tbody = document.getElementById('modal-products-tbody');
+        tbody.innerHTML = '';
+
+        sortedProds.forEach(p => {
+            let badges = '';
+            if (p.is_exclusive) badges += `<span style="background:rgba(99,102,241,0.2); color:#A5B4FC; padding:1px 5px; border-radius:3px; font-size:10px; margin-right:3px;">단독</span>`;
+            if (p.has_packaging) badges += `<span style="background:rgba(236,72,153,0.2); color:#F472B6; padding:1px 5px; border-radius:3px; font-size:10px; margin-right:3px;">포장</span>`;
+            if (p.has_engraving) badges += `<span style="background:rgba(16,185,129,0.2); color:#34D399; padding:1px 5px; border-radius:3px; font-size:10px; margin-right:3px;">각인</span>`;
+
+            let deltaBadge = '';
+            if (p.is_new_entry) {
+                deltaBadge = `<span style="background:#EF4444; color:#FFF; font-size:9px; padding:1px 4px; border-radius:3px; margin-left:3px;">NEW</span>`;
+            } else if (p.rank_delta && p.rank_delta > 0) {
+                deltaBadge = `<span style="color:#10B981; font-size:10px; margin-left:3px;"><i class="fa-solid fa-caret-up"></i>${p.rank_delta}</span>`;
+            }
+
+            const tr = document.createElement('tr');
+            tr.innerHTML = `
+                <td><strong style="color:#FEE500;">${p.rank}위</strong> ${deltaBadge}</td>
+                <td><span class="badge-cat">${p.category || '리빙'}</span></td>
+                <td><span class="badge-brand">${p.brand || '-'}</span></td>
+                <td style="color:#F8FAFC; font-weight:500;">${p.product_name}</td>
+                <td style="color:#FEE500; font-weight:600;">${p.price}</td>
+                <td>${badges || '-'}</td>
+                <td>${p.url ? `<a href="${p.url}" target="_blank" class="product-link-btn">이동 <i class="fa-solid fa-chevron-right" style="font-size:10px;"></i></a>` : '-'}</td>
+            `;
+            tbody.appendChild(tr);
+        });
+
+        ipModal.classList.add('active');
+        ipModal.setAttribute('aria-hidden', 'false');
+    }
 
     loadAvailableDates().then(() => loadData());
 });
