@@ -2,21 +2,21 @@
   "전체": {
     "analyzed_count": 200,
     "card_1_sov": {
-      "top_ip_share": "34.5%",
+      "top_ip_share": "37.5%",
       "top_ip_name": "가나디",
-      "ip_product_count": 69,
+      "ip_product_count": 75,
       "total_count": 200
     },
     "card_2_price_and_usp": {
-      "avg_price": 26272,
-      "packaging_ratio": 2.5,
-      "engraving_ratio": 2.0,
+      "avg_price": 28508,
+      "packaging_ratio": 3.0,
+      "engraving_ratio": 1.5,
       "exclusive_ratio": 31.5,
       "price_tier_matrix": {
         "1만원 미만": {
-          "count": 20,
-          "share": 10.0,
-          "avg_price": 8165,
+          "count": 18,
+          "share": 9.0,
+          "avg_price": 8577,
           "top_brands": [
             "알럽하우스(소품)",
             "인형",
@@ -24,9 +24,9 @@
           ]
         },
         "1만원대": {
-          "count": 65,
-          "share": 32.5,
-          "avg_price": 15730,
+          "count": 59,
+          "share": 29.5,
+          "avg_price": 16044,
           "top_brands": [
             "가나디",
             "캐릭터침구",
@@ -34,43 +34,43 @@
           ]
         },
         "2만원대": {
-          "count": 41,
-          "share": 20.5,
-          "avg_price": 26124,
+          "count": 37,
+          "share": 18.5,
+          "avg_price": 25375,
           "top_brands": [
             "캐릭터침구",
-            "캐릭터주방",
-            "가나디"
+            "프렌즈인형/피규어",
+            "캐릭터주방"
           ]
         },
         "3만원대": {
-          "count": 42,
-          "share": 21.0,
-          "avg_price": 34969,
+          "count": 44,
+          "share": 22.0,
+          "avg_price": 35225,
           "top_brands": [
             "캐릭터침구",
             "스탠리",
-            "오덴세"
+            "레고트"
           ]
         },
         "4만원대": {
-          "count": 24,
-          "share": 12.0,
-          "avg_price": 44885,
+          "count": 30,
+          "share": 15.0,
+          "avg_price": 45326,
           "top_brands": [
             "스탠리",
-            "탬버린즈",
-            "렉슨"
+            "Monchhichi",
+            "블루보틀"
           ]
         },
         "5만원 이상": {
-          "count": 8,
-          "share": 4.0,
-          "avg_price": 56450,
+          "count": 12,
+          "share": 6.0,
+          "avg_price": 62679,
           "top_brands": [
-            "빌레로이앤보흐",
+            "Monchhichi",
             "센느파리",
-            "일광전구"
+            "빌레로이앤보흐"
           ]
         }
       }
@@ -78,14 +78,186 @@
     "card_3_recommended_keywords": {
       "stable_keywords_top30": [
         "가나디",
-        "기타 캐릭터/팬시",
         "먼작귀/치이카와",
-        "카카오프렌즈"
+        "리락쿠마",
+        "기타 캐릭터/팬시"
       ],
       "rising_keywords_top31_100": [
         "기타 캐릭터/팬시",
         "산리오",
-        "리락쿠마",
+        "가나디",
+        "카카오프렌즈"
+      ],
+      "top_options": [
+        "선물포장",
+        "각인",
+        "단독구성"
+      ],
+      "by_type": {
+        "attributes": [
+          "단독",
+          "선물포장",
+          "각인",
+          "쇼핑백",
+          "전용패키지"
+        ],
+        "target_season": [
+          "생일",
+          "집들이",
+          "응원",
+          "답례품",
+          "기념일"
+        ],
+        "concept": [
+          "귀여운",
+          "감성",
+          "신박한",
+          "쓸데없는",
+          "인테리어"
+        ]
+      }
+    },
+    "card_4_rising_stars": [
+      {
+        "brand": "Monchhichi",
+        "product_name": "몬치치 X 원피스-루피 몬치치 키체인",
+        "rank": 1,
+        "rank_delta": "NEW",
+        "category": "리빙 전체",
+        "price": "48,000원",
+        "character_ip": "잔망루피/뽀로로, 몬치치",
+        "url": "https://gift.kakao.com/product/14221849",
+        "is_new_entry": true
+      },
+      {
+        "brand": "Monchhichi",
+        "product_name": "몬치치 X 원피스-루피 몬치치 키체인",
+        "rank": 1,
+        "rank_delta": "NEW",
+        "category": "팬시/문구/취미 (IP핵심)",
+        "price": "48,000원",
+        "character_ip": "잔망루피/뽀로로, 몬치치",
+        "url": "https://gift.kakao.com/product/14221849",
+        "is_new_entry": true
+      },
+      {
+        "brand": "스탠리",
+        "product_name": "[스탠리공식유통사] 퀜처 프로투어 플립 스트로 텀블러 591ml 25%",
+        "rank": 2,
+        "rank_delta": 11,
+        "category": "리빙 전체",
+        "price": "36,000원",
+        "character_ip": "일반/비IP 상품",
+        "url": "https://gift.kakao.com/product/11801920",
+        "is_new_entry": false
+      },
+      {
+        "brand": "Monchhichi",
+        "product_name": "몬치치 X 원피스-루피 몬치치 S",
+        "rank": 4,
+        "rank_delta": "NEW",
+        "category": "팬시/문구/취미 (IP핵심)",
+        "price": "80,000원",
+        "character_ip": "잔망루피/뽀로로, 몬치치",
+        "url": "https://gift.kakao.com/product/14221850",
+        "is_new_entry": true
+      },
+      {
+        "brand": "레고트",
+        "product_name": "루프 텀블러 멀티 600ml (7 colors) 24%",
+        "rank": 6,
+        "rank_delta": 19,
+        "category": "리빙 전체",
+        "price": "33,800원",
+        "character_ip": "일반/비IP 상품",
+        "url": "https://gift.kakao.com/product/11264836",
+        "is_new_entry": false
+      }
+    ]
+  },
+  "리빙 전체": {
+    "analyzed_count": 50,
+    "card_1_sov": {
+      "top_ip_share": "22.0%",
+      "top_ip_name": "가나디",
+      "ip_product_count": 11,
+      "total_count": 50
+    },
+    "card_2_price_and_usp": {
+      "avg_price": 35681,
+      "packaging_ratio": 6.0,
+      "engraving_ratio": 2.0,
+      "exclusive_ratio": 38.0,
+      "price_tier_matrix": {
+        "1만원 미만": {
+          "count": 1,
+          "share": 2.0,
+          "avg_price": 8900,
+          "top_brands": [
+            "알럽하우스(소품)"
+          ]
+        },
+        "1만원대": {
+          "count": 7,
+          "share": 14.0,
+          "avg_price": 15942,
+          "top_brands": [
+            "가나디",
+            "그랑핸드",
+            "캐릭터침구"
+          ]
+        },
+        "2만원대": {
+          "count": 7,
+          "share": 14.0,
+          "avg_price": 25214,
+          "top_brands": [
+            "캐릭터침구",
+            "캐릭터주방",
+            "명퉤"
+          ]
+        },
+        "3만원대": {
+          "count": 18,
+          "share": 36.0,
+          "avg_price": 34955,
+          "top_brands": [
+            "스탠리",
+            "레고트",
+            "리베르"
+          ]
+        },
+        "4만원대": {
+          "count": 12,
+          "share": 24.0,
+          "avg_price": 45483,
+          "top_brands": [
+            "스탠리",
+            "Monchhichi",
+            "탬버린즈"
+          ]
+        },
+        "5만원 이상": {
+          "count": 5,
+          "share": 10.0,
+          "avg_price": 62410,
+          "top_brands": [
+            "일광전구",
+            "Monchhichi",
+            "빌레로이앤보흐"
+          ]
+        }
+      }
+    },
+    "card_3_recommended_keywords": {
+      "stable_keywords_top30": [
+        "가나디",
+        "잔망루피/뽀로로, 몬치치",
+        "먼작귀/치이카와",
+        "리락쿠마"
+      ],
+      "rising_keywords_top31_100": [
+        "가나디",
         "먼작귀/치이카와"
       ],
       "top_options": [
@@ -119,217 +291,21 @@
     },
     "card_4_rising_stars": [
       {
-        "brand": "스탠리",
-        "product_name": "[스탠리공식유통사] 퀜처 프로투어 플립 스트로 텀블러 591ml 25%",
-        "rank": 3,
-        "rank_delta": 21,
-        "category": "주방/식기",
-        "price": "36,000원",
-        "character_ip": "일반/비IP 상품",
-        "url": "https://gift.kakao.com/product/11801920",
-        "is_new_entry": false
-      },
-      {
-        "brand": "명퉤",
-        "product_name": "명퉤 길운 오행 염주",
-        "rank": 7,
-        "rank_delta": 12,
-        "category": "리빙 전체",
-        "price": "29,900원",
-        "character_ip": "일반/비IP 상품",
-        "url": "https://gift.kakao.com/product/12639125",
-        "is_new_entry": false
-      },
-      {
-        "brand": "일광전구",
-        "product_name": "코루비 PICK! [리뷰이벤트] 스노우맨8 포터블 결혼 집들이 신혼 출산 수유등 캠핑 피크닉 8% 셀럽픽 코루비",
-        "rank": 10,
-        "rank_delta": 51,
-        "category": "리빙 전체",
-        "price": "36,800원",
-        "character_ip": "일반/비IP 상품",
-        "url": "https://gift.kakao.com/product/10927891",
-        "is_new_entry": false
-      },
-      {
-        "brand": "오도르",
-        "product_name": "향수본품 [새차선물] 오도르 차량용 방향제 무광 송풍구 클립형 1개 향기블럭 2개 세트 향수 본품 !",
-        "rank": 12,
+        "brand": "Monchhichi",
+        "product_name": "몬치치 X 원피스-루피 몬치치 키체인",
+        "rank": 1,
         "rank_delta": "NEW",
         "category": "리빙 전체",
-        "price": "33,500원",
-        "character_ip": "일반/비IP 상품",
-        "url": "https://gift.kakao.com/product/10712025",
-        "is_new_entry": true
-      },
-      {
-        "brand": "굴강",
-        "product_name": "\"명령하지 마라\" 마라 티셔츠 [6종 택1] 자신감 직장인 친구 명령하지 꺼드럭대지 마라 자취 응원 재미있는 웃긴 쓸모없는 쓸데없는 신박한 선물",
-        "rank": 12,
-        "rank_delta": 12,
-        "category": "팬시/문구/취미 (IP핵심)",
-        "price": "16,900원",
-        "character_ip": "일반/비IP 상품",
-        "url": "https://gift.kakao.com/product/12059249",
-        "is_new_entry": false
-      }
-    ]
-  },
-  "리빙 전체": {
-    "analyzed_count": 50,
-    "card_1_sov": {
-      "top_ip_share": "26.0%",
-      "top_ip_name": "가나디",
-      "ip_product_count": 13,
-      "total_count": 50
-    },
-    "card_2_price_and_usp": {
-      "avg_price": 32631,
-      "packaging_ratio": 6.0,
-      "engraving_ratio": 2.0,
-      "exclusive_ratio": 40.0,
-      "price_tier_matrix": {
-        "1만원 미만": {
-          "count": 1,
-          "share": 2.0,
-          "avg_price": 8900,
-          "top_brands": [
-            "알럽하우스(소품)"
-          ]
-        },
-        "1만원대": {
-          "count": 9,
-          "share": 18.0,
-          "avg_price": 15588,
-          "top_brands": [
-            "가나디",
-            "그랑핸드",
-            "캐릭터침구"
-          ]
-        },
-        "2만원대": {
-          "count": 8,
-          "share": 16.0,
-          "avg_price": 26715,
-          "top_brands": [
-            "캐릭터침구",
-            "캐릭터주방",
-            "명퉤"
-          ]
-        },
-        "3만원대": {
-          "count": 21,
-          "share": 42.0,
-          "avg_price": 34923,
-          "top_brands": [
-            "일광전구",
-            "스탠리",
-            "오브제바이쿤달(디퓨저)"
-          ]
-        },
-        "4만원대": {
-          "count": 8,
-          "share": 16.0,
-          "avg_price": 44668,
-          "top_brands": [
-            "스탠리",
-            "탬버린즈",
-            "렉슨"
-          ]
-        },
-        "5만원 이상": {
-          "count": 3,
-          "share": 6.0,
-          "avg_price": 59300,
-          "top_brands": [
-            "일광전구",
-            "빌레로이앤보흐",
-            "센느파리"
-          ]
-        }
-      }
-    },
-    "card_3_recommended_keywords": {
-      "stable_keywords_top30": [
-        "가나디",
-        "먼작귀/치이카와",
-        "리락쿠마",
-        "몬치치"
-      ],
-      "rising_keywords_top31_100": [
-        "먼작귀/치이카와",
-        "가나디",
-        "캐릭터/팬시-침구",
-        "산리오"
-      ],
-      "top_options": [
-        "선물포장",
-        "각인",
-        "단독구성"
-      ],
-      "by_type": {
-        "attributes": [
-          "단독",
-          "선물포장",
-          "각인",
-          "쇼핑백",
-          "전용패키지"
-        ],
-        "target_season": [
-          "생일",
-          "집들이",
-          "응원",
-          "답례품",
-          "기념일"
-        ],
-        "concept": [
-          "귀여운",
-          "감성",
-          "신박한",
-          "쓸데없는",
-          "인테리어"
-        ]
-      }
-    },
-    "card_4_rising_stars": [
-      {
-        "brand": "명퉤",
-        "product_name": "명퉤 길운 오행 염주",
-        "rank": 7,
-        "rank_delta": 12,
-        "category": "리빙 전체",
-        "price": "29,900원",
-        "character_ip": "일반/비IP 상품",
-        "url": "https://gift.kakao.com/product/12639125",
-        "is_new_entry": false
-      },
-      {
-        "brand": "일광전구",
-        "product_name": "코루비 PICK! [리뷰이벤트] 스노우맨8 포터블 결혼 집들이 신혼 출산 수유등 캠핑 피크닉 8% 셀럽픽 코루비",
-        "rank": 10,
-        "rank_delta": 51,
-        "category": "리빙 전체",
-        "price": "36,800원",
-        "character_ip": "일반/비IP 상품",
-        "url": "https://gift.kakao.com/product/10927891",
-        "is_new_entry": false
-      },
-      {
-        "brand": "오도르",
-        "product_name": "향수본품 [새차선물] 오도르 차량용 방향제 무광 송풍구 클립형 1개 향기블럭 2개 세트 향수 본품 !",
-        "rank": 12,
-        "rank_delta": "NEW",
-        "category": "리빙 전체",
-        "price": "33,500원",
-        "character_ip": "일반/비IP 상품",
-        "url": "https://gift.kakao.com/product/10712025",
+        "price": "48,000원",
+        "character_ip": "잔망루피/뽀로로, 몬치치",
+        "url": "https://gift.kakao.com/product/14221849",
         "is_new_entry": true
       },
       {
         "brand": "스탠리",
         "product_name": "[스탠리공식유통사] 퀜처 프로투어 플립 스트로 텀블러 591ml 25%",
-        "rank": 13,
-        "rank_delta": 58,
+        "rank": 2,
+        "rank_delta": 11,
         "category": "리빙 전체",
         "price": "36,000원",
         "character_ip": "일반/비IP 상품",
@@ -337,59 +313,80 @@
         "is_new_entry": false
       },
       {
-        "brand": "옵타움",
-        "product_name": "스트레스 케어 [단독/] 필로우 미스트 & 드림캐처 선물세트 (+가든 마켓백 ) 가든 마켓 백 , 9,708",
-        "rank": 17,
+        "brand": "레고트",
+        "product_name": "루프 텀블러 멀티 600ml (7 colors) 24%",
+        "rank": 6,
+        "rank_delta": 19,
+        "category": "리빙 전체",
+        "price": "33,800원",
+        "character_ip": "일반/비IP 상품",
+        "url": "https://gift.kakao.com/product/11264836",
+        "is_new_entry": false
+      },
+      {
+        "brand": "생귄",
+        "product_name": "[차안에 두는 향수] 생귄 베톰 카 디퓨저 차량용 방향제 새차선물 리필 1+1 센트 세라믹 추가",
+        "rank": 11,
         "rank_delta": "NEW",
         "category": "리빙 전체",
-        "price": "30,000원",
+        "price": "32,800원",
         "character_ip": "일반/비IP 상품",
-        "url": "https://gift.kakao.com/product/7433630",
+        "url": "https://gift.kakao.com/product/13689474",
         "is_new_entry": true
+      },
+      {
+        "brand": "스탠리",
+        "product_name": "[스탠리공식유통사] 카페 투 고 트래블 머그 354ml",
+        "rank": 12,
+        "rank_delta": 12,
+        "category": "리빙 전체",
+        "price": "35,000원",
+        "character_ip": "일반/비IP 상품",
+        "url": "https://gift.kakao.com/product/11483949",
+        "is_new_entry": false
       }
     ]
   },
   "팬시/문구/취미 (IP핵심)": {
     "analyzed_count": 50,
     "card_1_sov": {
-      "top_ip_share": "52.0%",
+      "top_ip_share": "62.0%",
       "top_ip_name": "가나디",
-      "ip_product_count": 26,
+      "ip_product_count": 31,
       "total_count": 50
     },
     "card_2_price_and_usp": {
-      "avg_price": 15164,
+      "avg_price": 18140,
       "packaging_ratio": 4.0,
-      "engraving_ratio": 4.0,
-      "exclusive_ratio": 8.0,
+      "engraving_ratio": 2.0,
+      "exclusive_ratio": 10.0,
       "price_tier_matrix": {
         "1만원 미만": {
-          "count": 15,
-          "share": 30.0,
-          "avg_price": 7926,
+          "count": 13,
+          "share": 26.0,
+          "avg_price": 8153,
           "top_brands": [
-            "알럽하우스(소품)",
             "인형",
+            "알럽하우스(소품)",
             "굴강"
           ]
         },
         "1만원대": {
-          "count": 28,
-          "share": 56.0,
-          "avg_price": 15171,
+          "count": 26,
+          "share": 52.0,
+          "avg_price": 15400,
           "top_brands": [
             "가나디",
             "굴강",
-            "프렌즈인형/피규어"
+            "Monchhichi"
           ]
         },
         "2만원대": {
-          "count": 3,
-          "share": 6.0,
-          "avg_price": 23300,
+          "count": 4,
+          "share": 8.0,
+          "avg_price": 20000,
           "top_brands": [
             "프렌즈인형/피규어",
-            "굴강",
             "삼공방"
           ]
         },
@@ -404,18 +401,21 @@
           ]
         },
         "4만원대": {
-          "count": 1,
-          "share": 2.0,
-          "avg_price": 43800,
+          "count": 3,
+          "share": 6.0,
+          "avg_price": 46600,
           "top_brands": [
+            "Monchhichi",
             "잼먹"
           ]
         },
         "5만원 이상": {
-          "count": 0,
-          "share": 0.0,
-          "avg_price": 0,
-          "top_brands": []
+          "count": 1,
+          "share": 2.0,
+          "avg_price": 80000,
+          "top_brands": [
+            "Monchhichi"
+          ]
         }
       }
     },
@@ -423,14 +423,14 @@
       "stable_keywords_top30": [
         "가나디",
         "기타 캐릭터/팬시",
-        "캐릭터/팬시-팬시굿즈",
-        "카카오프렌즈"
+        "몬치치",
+        "잔망루피/뽀로로, 몬치치"
       ],
       "rising_keywords_top31_100": [
         "기타 캐릭터/팬시",
         "가나디",
-        "카카오프렌즈, 짱구",
-        "리락쿠마"
+        "리락쿠마",
+        "카카오프렌즈, 짱구"
       ],
       "top_options": [
         "선물포장",
@@ -463,89 +463,90 @@
     },
     "card_4_rising_stars": [
       {
-        "brand": "굴강",
-        "product_name": "\"명령하지 마라\" 마라 티셔츠 [6종 택1] 자신감 직장인 친구 명령하지 꺼드럭대지 마라 자취 응원 재미있는 웃긴 쓸모없는 쓸데없는 신박한 선물",
-        "rank": 12,
-        "rank_delta": 12,
-        "category": "팬시/문구/취미 (IP핵심)",
-        "price": "16,900원",
-        "character_ip": "일반/비IP 상품",
-        "url": "https://gift.kakao.com/product/12059249",
-        "is_new_entry": false
-      },
-      {
-        "brand": "인형",
-        "product_name": "리락쿠마 미니 파우치",
-        "rank": 18,
-        "rank_delta": 29,
-        "category": "팬시/문구/취미 (IP핵심)",
-        "price": "8,000원",
-        "character_ip": "리락쿠마",
-        "url": "https://gift.kakao.com/product/14191242",
-        "is_new_entry": false
-      },
-      {
-        "brand": "굴강",
-        "product_name": "\"작고 하찮은\" 원숭이 관절 인형 자취 귀여운 여자선물 재미있는 웃긴 쓸데없는 쓸모없는 신박한 선물 , 3,321",
-        "rank": 21,
-        "rank_delta": 13,
-        "category": "팬시/문구/취미 (IP핵심)",
-        "price": "9,900원",
-        "character_ip": "기타 캐릭터/팬시",
-        "url": "https://gift.kakao.com/product/12365669",
-        "is_new_entry": false
-      },
-      {
-        "brand": "실바니안",
-        "product_name": "5872-실바니안 블라인드백 15차(아기 숲속요정)",
-        "rank": 22,
+        "brand": "Monchhichi",
+        "product_name": "몬치치 X 원피스-루피 몬치치 키체인",
+        "rank": 1,
         "rank_delta": "NEW",
         "category": "팬시/문구/취미 (IP핵심)",
-        "price": "13,800원",
-        "character_ip": "실바니안패밀리",
-        "url": "https://gift.kakao.com/product/13261774",
+        "price": "48,000원",
+        "character_ip": "잔망루피/뽀로로, 몬치치",
+        "url": "https://gift.kakao.com/product/14221849",
         "is_new_entry": true
       },
       {
-        "brand": "가나디",
-        "product_name": "여름휴가준비 가나디 레디백 (기내용/미니캐리어/캠핑/차박/여행가방) , 6,544",
-        "rank": 23,
-        "rank_delta": 30,
+        "brand": "Monchhichi",
+        "product_name": "몬치치 X 원피스-루피 몬치치 S",
+        "rank": 4,
+        "rank_delta": "NEW",
         "category": "팬시/문구/취미 (IP핵심)",
-        "price": "31,800원",
-        "character_ip": "가나디",
-        "url": "https://gift.kakao.com/product/13450660",
+        "price": "80,000원",
+        "character_ip": "잔망루피/뽀로로, 몬치치",
+        "url": "https://gift.kakao.com/product/14221850",
+        "is_new_entry": true
+      },
+      {
+        "brand": "Monchhichi",
+        "product_name": "몬치치 X 원피스-쵸파 키체인",
+        "rank": 8,
+        "rank_delta": "NEW",
+        "category": "팬시/문구/취미 (IP핵심)",
+        "price": "48,000원",
+        "character_ip": "몬치치",
+        "url": "https://gift.kakao.com/product/14221845",
+        "is_new_entry": true
+      },
+      {
+        "brand": "더 문",
+        "product_name": "[5천원의행복] 귀여운 미니미 \"크로버 키링\" 우정템 커플템 / 럭키빵행운의바다거북스트랩키링 , 5,188",
+        "rank": 20,
+        "rank_delta": 10,
+        "category": "팬시/문구/취미 (IP핵심)",
+        "price": "5,000원",
+        "character_ip": "일반/비IP 상품",
+        "url": "https://gift.kakao.com/product/12222102",
         "is_new_entry": false
+      },
+      {
+        "brand": "프렌즈인형/피규어",
+        "product_name": "\"짱구와 춘식이의 유쾌한 고구마 농장 이야기\" 짱구는 못말려X카카오프렌즈 랜덤 피규어_춘식이",
+        "rank": 23,
+        "rank_delta": "NEW",
+        "category": "팬시/문구/취미 (IP핵심)",
+        "price": "20,000원",
+        "character_ip": "카카오프렌즈, 짱구",
+        "url": "https://gift.kakao.com/product/14169756",
+        "is_new_entry": true
       }
     ]
   },
   "침구/패브릭": {
     "analyzed_count": 50,
     "card_1_sov": {
-      "top_ip_share": "46.0%",
+      "top_ip_share": "54.0%",
       "top_ip_name": "먼작귀/치이카와",
-      "ip_product_count": 23,
+      "ip_product_count": 27,
       "total_count": 50
     },
     "card_2_price_and_usp": {
-      "avg_price": 23248,
-      "packaging_ratio": 0.0,
+      "avg_price": 25656,
+      "packaging_ratio": 2.0,
       "engraving_ratio": 0.0,
-      "exclusive_ratio": 30.0,
+      "exclusive_ratio": 32.0,
       "price_tier_matrix": {
         "1만원 미만": {
-          "count": 2,
-          "share": 4.0,
-          "avg_price": 9850,
+          "count": 3,
+          "share": 6.0,
+          "avg_price": 9866,
           "top_brands": [
-            "부카즈(소품)",
-            "말랑필로우"
+            "프렌즈리빙LC",
+            "말랑필로우",
+            "부카즈(소품)"
           ]
         },
         "1만원대": {
-          "count": 20,
-          "share": 40.0,
-          "avg_price": 16630,
+          "count": 17,
+          "share": 34.0,
+          "avg_price": 17052,
           "top_brands": [
             "캐릭터침구",
             "가나디",
@@ -553,19 +554,19 @@
           ]
         },
         "2만원대": {
-          "count": 20,
-          "share": 40.0,
-          "avg_price": 25930,
+          "count": 17,
+          "share": 34.0,
+          "avg_price": 26058,
           "top_brands": [
             "캐릭터침구",
             "가나디",
-            "리브맘"
+            "쉬즈홈"
           ]
         },
         "3만원대": {
-          "count": 7,
-          "share": 14.0,
-          "avg_price": 35228,
+          "count": 10,
+          "share": 20.0,
+          "avg_price": 35250,
           "top_brands": [
             "캐릭터침구",
             "바나코(인테리어)",
@@ -573,33 +574,36 @@
           ]
         },
         "4만원대": {
-          "count": 1,
-          "share": 2.0,
-          "avg_price": 44900,
+          "count": 2,
+          "share": 4.0,
+          "avg_price": 44400,
           "top_brands": [
-            "바자르"
+            "바자르",
+            "플로라"
           ]
         },
         "5만원 이상": {
-          "count": 0,
-          "share": 0.0,
-          "avg_price": 0,
-          "top_brands": []
+          "count": 1,
+          "share": 2.0,
+          "avg_price": 79000,
+          "top_brands": [
+            "드브르베"
+          ]
         }
       }
     },
     "card_3_recommended_keywords": {
       "stable_keywords_top30": [
+        "리락쿠마",
         "가나디",
-        "기타 캐릭터/팬시",
         "먼작귀/치이카와",
-        "캐릭터/팬시-침구"
+        "기타 캐릭터/팬시"
       ],
       "rising_keywords_top31_100": [
         "기타 캐릭터/팬시",
-        "리락쿠마",
+        "산리오",
         "캐릭터/팬시-침구",
-        "산리오"
+        "먼작귀/치이카와"
       ],
       "top_options": [
         "선물포장",
@@ -632,129 +636,128 @@
     },
     "card_4_rising_stars": [
       {
-        "brand": "가나디",
-        "product_name": "가나디 핸드워머 쿠션 2종 (생일/집들이/인테리어/응원/귀여운/유쾌한)",
-        "rank": 14,
-        "rank_delta": 11,
-        "category": "침구/패브릭",
-        "price": "23,000원",
-        "character_ip": "가나디",
-        "url": "https://gift.kakao.com/product/12693742",
-        "is_new_entry": false
-      },
-      {
-        "brand": "리브맘",
-        "product_name": "[1+1/총2개] 3zone 메모리폼 바른자세 경추베개 , 6,032",
-        "rank": 16,
-        "rank_delta": "NEW",
-        "category": "침구/패브릭",
-        "price": "25,900원",
-        "character_ip": "일반/비IP 상품",
-        "url": "https://gift.kakao.com/product/11035192",
-        "is_new_entry": true
-      },
-      {
-        "brand": "프렌즈리빙LC",
-        "product_name": "[단독] \"볼록한 배가 귀여운\" New 춘식이 배빵빵 모찌 바디필로우 80cm",
-        "rank": 21,
-        "rank_delta": 16,
-        "category": "침구/패브릭",
-        "price": "29,800원",
-        "character_ip": "카카오프렌즈",
-        "url": "https://gift.kakao.com/product/7025670",
-        "is_new_entry": false
-      },
-      {
-        "brand": "부카즈(소품)",
-        "product_name": "생일/자취/집들이 대왕고래 바디필로우 인형 쿠션 55cm / 생일 동물 집들이 선물 꿀잠 애착 인형 긴 대형 베개 동물 , 3,313",
-        "rank": 28,
-        "rank_delta": 14,
-        "category": "침구/패브릭",
-        "price": "9,800원",
-        "character_ip": "기타 캐릭터/팬시",
-        "url": "https://gift.kakao.com/product/11781718",
-        "is_new_entry": false
-      },
-      {
         "brand": "쉬즈홈",
         "product_name": "[단독컬러] \"집들이선물\" 집순이 맞춤! 슬리브 등받이 삼각쿠션 필로우 베개 등쿠션 (대형) 18종택1",
-        "rank": 31,
-        "rank_delta": 13,
+        "rank": 16,
+        "rank_delta": 15,
         "category": "침구/패브릭",
         "price": "29,900원",
         "character_ip": "일반/비IP 상품",
         "url": "https://gift.kakao.com/product/1242861",
         "is_new_entry": false
+      },
+      {
+        "brand": "캐릭터침구",
+        "product_name": "\"생일/집들이선물\" 리락쿠마 낮잠쿠션 2종옵션 택1 캐릭터쿠션 핸드워머 사무실 학교 집들이 기념일 선물 , 2,895",
+        "rank": 19,
+        "rank_delta": 14,
+        "category": "침구/패브릭",
+        "price": "22,900원",
+        "character_ip": "리락쿠마",
+        "url": "https://gift.kakao.com/product/13983870",
+        "is_new_entry": false
+      },
+      {
+        "brand": "플로라",
+        "product_name": "NEW컬러추가! 자취/집들이/기숙사 플로라 BEST 먼지없는 사계절 차렵이불 베개세트 (SS/Q균일가) 모음 17종 택1",
+        "rank": 26,
+        "rank_delta": "NEW",
+        "category": "침구/패브릭",
+        "price": "43,900원",
+        "character_ip": "일반/비IP 상품",
+        "url": "https://gift.kakao.com/product/2363306",
+        "is_new_entry": true
+      },
+      {
+        "brand": "캐릭터침구",
+        "product_name": "\"생일/집들이선물\" 리락쿠마 삼각등쿠션 2종옵션 택1 집들이 선물 집순이 필수템 필로우 베개 포켓 솜포함 , 6,051",
+        "rank": 27,
+        "rank_delta": "NEW",
+        "category": "침구/패브릭",
+        "price": "36,900원",
+        "character_ip": "리락쿠마",
+        "url": "https://gift.kakao.com/product/13983873",
+        "is_new_entry": true
+      },
+      {
+        "brand": "프로젝트슬립",
+        "product_name": "롱바디필로우/베개 [단독] \"털털냥\",쿨쿨냥 보온 바디필로우 모찌 냉감 바디필로우 베개 35%",
+        "rank": 31,
+        "rank_delta": "NEW",
+        "category": "침구/패브릭",
+        "price": "39,000원",
+        "character_ip": "캐릭터/팬시-침구",
+        "url": "https://gift.kakao.com/product/13417129",
+        "is_new_entry": true
       }
     ]
   },
   "주방/식기": {
     "analyzed_count": 50,
     "card_1_sov": {
-      "top_ip_share": "14.0%",
-      "top_ip_name": "카카오프렌즈",
-      "ip_product_count": 7,
+      "top_ip_share": "12.0%",
+      "top_ip_name": "산리오",
+      "ip_product_count": 6,
       "total_count": 50
     },
     "card_2_price_and_usp": {
-      "avg_price": 34046,
+      "avg_price": 34558,
       "packaging_ratio": 0.0,
       "engraving_ratio": 2.0,
-      "exclusive_ratio": 48.0,
+      "exclusive_ratio": 46.0,
       "price_tier_matrix": {
         "1만원 미만": {
-          "count": 2,
-          "share": 4.0,
-          "avg_price": 7900,
+          "count": 1,
+          "share": 2.0,
+          "avg_price": 9900,
           "top_brands": [
-            "바쏠",
-            "제이블룸"
+            "바쏠"
           ]
         },
         "1만원대": {
-          "count": 8,
-          "share": 16.0,
-          "avg_price": 15600,
+          "count": 9,
+          "share": 18.0,
+          "avg_price": 16077,
           "top_brands": [
             "캐릭터주방",
             "바쏠",
-            "안경만두"
+            "알럽하우스"
           ]
         },
         "2만원대": {
-          "count": 10,
-          "share": 20.0,
-          "avg_price": 26890,
+          "count": 9,
+          "share": 18.0,
+          "avg_price": 26600,
           "top_brands": [
             "캐릭터주방",
-            "프렌즈리빙",
-            "앨리건트테이블"
+            "레고트",
+            "타블도트"
           ]
         },
         "3만원대": {
-          "count": 11,
-          "share": 22.0,
-          "avg_price": 35263,
+          "count": 13,
+          "share": 26.0,
+          "avg_price": 35953,
           "top_brands": [
             "스탠리",
-            "앨리건트테이블",
-            "오덴세"
+            "레고트",
+            "앨리건트테이블"
           ]
         },
         "4만원대": {
-          "count": 14,
-          "share": 28.0,
-          "avg_price": 45085,
+          "count": 13,
+          "share": 26.0,
+          "avg_price": 45030,
           "top_brands": [
             "스탠리",
             "블루보틀",
-            "광주요"
+            "스타벅스(공식스토어)"
           ]
         },
         "5만원 이상": {
           "count": 5,
           "share": 10.0,
-          "avg_price": 54740,
+          "avg_price": 56220,
           "top_brands": [
             "빌레로이앤보흐",
             "센느파리",
@@ -765,14 +768,15 @@
     },
     "card_3_recommended_keywords": {
       "stable_keywords_top30": [
-        "카카오프렌즈",
         "리락쿠마",
-        "가나디",
-        "캐릭터/팬시-주방"
+        "산리오",
+        "가나디"
       ],
       "rising_keywords_top31_100": [
+        "캐릭터/팬시-주방",
+        "미피",
         "산리오",
-        "캐릭터/팬시-팬시굿즈"
+        "카카오프렌즈"
       ],
       "top_options": [
         "선물포장",
@@ -806,57 +810,57 @@
     "card_4_rising_stars": [
       {
         "brand": "스탠리",
-        "product_name": "[스탠리공식유통사] 퀜처 프로투어 플립 스트로 텀블러 591ml 25%",
-        "rank": 3,
-        "rank_delta": 21,
+        "product_name": "[스탠리공식유통사] 퀜처 H2.0 플로우스테이트 텀블러 1.18L 25%",
+        "rank": 14,
+        "rank_delta": 26,
         "category": "주방/식기",
-        "price": "36,000원",
+        "price": "48,000원",
         "character_ip": "일반/비IP 상품",
-        "url": "https://gift.kakao.com/product/11801920",
+        "url": "https://gift.kakao.com/product/7868571",
         "is_new_entry": false
       },
       {
-        "brand": "캐릭터주방",
-        "product_name": "\"1인 라면 그릇 선물 추천\" 담곰이 면기 세트 (스푼 포함 구성)",
-        "rank": 22,
+        "brand": "레고트",
+        "product_name": "루프 텀블러 멀티 400ml (6 colors) 25% , 8,417",
+        "rank": 20,
+        "rank_delta": 23,
+        "category": "주방/식기",
+        "price": "29,200원",
+        "character_ip": "일반/비IP 상품",
+        "url": "https://gift.kakao.com/product/11264832",
+        "is_new_entry": false
+      },
+      {
+        "brand": "오덴세",
+        "product_name": "[카카오단독컬러] 투웨이 루프 텀블러 450ml (9 colors) 20%",
+        "rank": 21,
         "rank_delta": 11,
         "category": "주방/식기",
-        "price": "15,800원",
-        "character_ip": "캐릭터/팬시-주방",
-        "url": "https://gift.kakao.com/product/10468609",
-        "is_new_entry": false
-      },
-      {
-        "brand": "메디테디",
-        "product_name": "취향저격 선물템 레트로 타원 볼 접시2P 선물세트 파스타 그릇 신혼부부 홈카페 홈파티 집들이 이사 생일 자취 커플 선물 , 2,406",
-        "rank": 23,
-        "rank_delta": 30,
-        "category": "주방/식기",
-        "price": "34,000원",
-        "character_ip": "일반/비IP 상품",
-        "url": "https://gift.kakao.com/product/12747894",
-        "is_new_entry": false
-      },
-      {
-        "brand": "크로우캐년",
-        "product_name": "집들이 선물 1위 [단독] 마블/스파클 머그 2P 세트 20% 크로우캐년 주방세제",
-        "rank": 25,
-        "rank_delta": 36,
-        "category": "주방/식기",
         "price": "36,000원",
         "character_ip": "일반/비IP 상품",
-        "url": "https://gift.kakao.com/product/4907401",
+        "url": "https://gift.kakao.com/product/12694900",
         "is_new_entry": false
       },
       {
-        "brand": "프렌즈리빙LC",
-        "product_name": "[단독] \"먹방 꿈나무\" 춘식이 손잡이 앞접시 2P 세트",
-        "rank": 26,
-        "rank_delta": 32,
+        "brand": "스탠리",
+        "product_name": "[스탠리공식유통사] 플로우스테이트 스프링 보틀 591ml , 8,643",
+        "rank": 22,
+        "rank_delta": 12,
         "category": "주방/식기",
-        "price": "14,800원",
-        "character_ip": "카카오프렌즈",
-        "url": "https://gift.kakao.com/product/5468690",
+        "price": "46,000원",
+        "character_ip": "일반/비IP 상품",
+        "url": "https://gift.kakao.com/product/13421555",
+        "is_new_entry": false
+      },
+      {
+        "brand": "앨리건트테이블",
+        "product_name": "[우드티포크2p이벤트] 은설 무광 홈술세트 4p선물세트 신혼 집들이 결혼 선물",
+        "rank": 25,
+        "rank_delta": 11,
+        "category": "주방/식기",
+        "price": "33,800원",
+        "character_ip": "일반/비IP 상품",
+        "url": "https://gift.kakao.com/product/9675371",
         "is_new_entry": false
       }
     ]
