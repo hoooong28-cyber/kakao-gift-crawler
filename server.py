@@ -16,7 +16,7 @@ if sys.platform == "win32":
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 DATA_DIR = os.path.join(BASE_DIR, "data")
-WEB_DIR = os.path.join(BASE_DIR, "web")
+WEB_DIR = os.path.join(BASE_DIR, "docs")
 
 def get_available_dates():
     """사용 가능한 날짜 목록 반환 (내림차순)"""
@@ -103,12 +103,12 @@ class DashboardHTTPRequestHandler(SimpleHTTPRequestHandler):
         pass  # 로그 출력 억제
 
 
-def run_server(port=8500):
-    # 최신 데이터로 data.json 갱신
-    data = get_data_by_date()
+def run_server(port=8000):
     data_json_path = os.path.join(WEB_DIR, "data.json")
-    with open(data_json_path, "w", encoding="utf-8") as f:
-        json.dump(data, f, ensure_ascii=False, indent=2)
+    if not os.path.exists(data_json_path):
+        data = get_data_by_date()
+        with open(data_json_path, "w", encoding="utf-8") as f:
+            json.dump({"records": data, "cards": {}}, f, ensure_ascii=False, indent=2)
 
     server_address = ("", port)
     httpd = HTTPServer(server_address, DashboardHTTPRequestHandler)
