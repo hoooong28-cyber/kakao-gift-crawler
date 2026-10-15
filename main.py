@@ -120,8 +120,13 @@ def export_static_web_dataset(df_latest, latest_cards_dict):
             with open(history_json_path, "w", encoding="utf-8") as f:
                 json.dump(df_master.to_dict(orient="records"), f, ensure_ascii=False, indent=2)
             print(f"  ✅ [history.json 저장 완료]: 마스터 누적 데이터 {len(df_master)}개 레코드")
+
         except Exception as ex:
-            print(f"  ⚠️ history.json 생성 실패: {ex}")
+            print(f"  ⚠️ history/insights 생성 실패: {ex}")
+    # Daily JSON snapshots survive fresh CI checkouts; the local CSV master may not.
+    from analytics import export_period_insights
+    export_period_insights(WEB_DIR)
+
 
 def print_b2b_insight_report(cards_dict, top_n):
     print("\n" + "="*70)

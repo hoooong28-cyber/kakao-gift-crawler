@@ -37,8 +37,26 @@ document.addEventListener('DOMContentLoaded', () => {
         renderDashboard();
     });
 
-    // Category Filter Bar Listener (Overview, B2B & Table Views)
+    // Category Filter Bar Listener (Overview, B2B, Period & Table Views)
     document.addEventListener('click', (e) => {
+        const periodTypeBtn = e.target.closest('#period-type-tabs .cat-tab');
+        if (periodTypeBtn) {
+            document.querySelectorAll('#period-type-tabs .cat-tab').forEach(b => b.classList.remove('active'));
+            periodTypeBtn.classList.add('active');
+            activePeriodType = periodTypeBtn.getAttribute('data-period');
+            renderPeriodInsights();
+            return;
+        }
+
+        const periodCatBtn = e.target.closest('#cat-tabs-period .cat-tab');
+        if (periodCatBtn) {
+            document.querySelectorAll('#cat-tabs-period .cat-tab').forEach(b => b.classList.remove('active'));
+            periodCatBtn.classList.add('active');
+            activePeriodCat = periodCatBtn.getAttribute('data-cat');
+            renderPeriodInsights();
+            return;
+        }
+
         const tabBtn = e.target.closest('.cat-tab');
         if (!tabBtn) return;
 
@@ -107,6 +125,11 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     let ipNewsData = {};
+    let weeklyInsightsData = {};
+    let monthlyInsightsData = {};
+    let activePeriodType = 'weekly';
+    let activePeriodCat = 'all';
+
     async function loadIpNewsData() {
         try {
             const res = await fetchFresh('ip_news.json');
@@ -118,8 +141,22 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
+    async function loadPeriodInsightsData() {
+        try {
+            const [resW, resM] = await Promise.all([
+                fetchFresh('weekly_insights.json'),
+                fetchFresh('monthly_insights.json')
+            ]);
+            weeklyInsightsData = resW.ok ? await resW.json() : {};
+            monthlyInsightsData = resM.ok ? await resM.json() : {};
+        } catch (e) {
+            console.warn('Period insights load failed:', e);
+        }
+    }
+
     async function loadData() {
         loadIpNewsData();
+        await loadPeriodInsightsData();
         try {
             let resJson;
             const url = selectedDate ? `/api/data?date=${selectedDate}` : '/api/data';
@@ -223,7 +260,86 @@ document.addEventListener('DOMContentLoaded', () => {
         return rawProductsData.filter(p => (p.category || '리빙 전체') === activeCategory);
     }
 
+    function periodText(value) {
+        return String(value ?? '').replace(/[&<>"']/g, char => ({
+            '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;'
+        })[char]);
+    }
+
+    function renderPeriodInsights() {
+        const periodData = (activePeriodType === 'weekly') ? weeklyInsightsData : monthlyInsightsData;
+        const dateRangeLabel = document.getElementById('period-date-range-label');
+        if (dateRangeLabel) {
+            dateRangeLabel.textContent = periodData ? (periodData.period_label || '') : '';
+        }
+
+        const periodSubtitle = document.getElementById('period-ip-subtitle');
+        if (periodSubtitle) {
+            const daysText = activePeriodType === 'weekly' ? '주간 (7일)' : '월간 (30일)';
+            periodSubtitle.textContent = `${daysText} 랭킹 노출 비중 및 건수 · 최신 수집일 기준 (상단 날짜 선택과 별도)`;
+        }
+
+        if (!periodData || !periodData.categories) {
+            document.getElementById('period-top-ips-container').textContent = '기간 데이터를 불러올 수 없습니다. 새로고침으로 다시 시도해 주세요.';
+            document.getElementById('period-steady-products-container').textContent = '';
+            return;
+        }
+
+        const catData = periodData.categories[activePeriodCat === 'all' ? '전체' : activePeriodCat] || {};
+
+        // 1. Top IPs Ranking
+        const ipContainer = document.getElementById('period-top-ips-container');
+        if (ipContainer) {
+            const topIps = catData.top_ips || [];
+            if (topIps.length === 0) {
+                ipContainer.innerHTML = '<p style="color:var(--text-muted); padding:16px; text-align:center;">기간 내 데이터가 없습니다.</p>';
+            } else {
+                ipContainer.innerHTML = topIps.map((item, idx) => `
+                    <div style="margin-bottom:14px; padding:8px 12px; background:rgba(255,255,255,0.02); border-radius:8px; border:1px solid rgba(255,255,255,0.05);">
+                        <div style="display:flex; justify-content:space-between; margin-bottom:6px; font-size:0.9rem; align-items:center;">
+                            <span><strong style="color:var(--accent-yellow); margin-right:8px; font-size:1.05rem;">${idx + 1}위</strong> <strong style="color:var(--text-primary); font-size:0.95rem;">${periodText(item.ip_name)}</strong></span>
+                            <span style="color:var(--accent-cyan); font-weight:700; font-size:0.9rem;">${item.share} <span style="color:var(--text-muted); font-weight:400; font-size:0.8rem;">(${item.count}회)</span></span>
+                        </div>
+                        <div style="width:100%; height:8px; background:rgba(255,255,255,0.1); border-radius:4px; overflow:hidden;">
+                            <div style="width:${Math.max(parseFloat(item.share) || 5, 4)}%; height:100%; background:linear-gradient(90deg, #FEE500, #F59E0B); border-radius:4px;"></div>
+                        </div>
+                    </div>
+                `).join('');
+            }
+        }
+
+        // 2. Steady Long-run Products
+        const steadyContainer = document.getElementById('period-steady-products-container');
+        if (steadyContainer) {
+            const steadyProds = catData.steady_products || [];
+            if (steadyProds.length === 0) {
+                steadyContainer.innerHTML = '<p style="color:var(--text-muted); padding:16px; text-align:center;">기간 내 데이터가 없습니다.</p>';
+            } else {
+                steadyContainer.innerHTML = steadyProds.map((item, idx) => `
+                    <div style="display:flex; align-items:center; justify-content:space-between; padding:12px; background:rgba(255,255,255,0.03); border-radius:8px; margin-bottom:10px; gap:12px; border:1px solid rgba(255,255,255,0.05);">
+                        <div style="display:flex; align-items:center; gap:12px; flex:1; min-width:0;">
+                            <span style="font-weight:800; color:var(--accent-yellow); font-size:1.1rem; width:26px; text-align:center;">${idx + 1}</span>
+                            <div style="overflow:hidden; text-overflow:ellipsis; white-space:nowrap;">
+                                <div style="font-size:0.8rem; color:var(--text-muted); margin-bottom:2px;">${periodText(item.brand)} | <span style="color:#A5B4FC; font-weight:600;">${periodText(item.character_ip)}</span></div>
+                                <div style="font-size:0.9rem; font-weight:600; color:var(--text-primary); overflow:hidden; text-overflow:ellipsis; white-space:nowrap;">${periodText(item.product_name)}</div>
+                            </div>
+                        </div>
+                        <div style="text-align:right; flex-shrink:0;">
+                            <div style="font-size:0.9rem; font-weight:700; color:var(--accent-yellow); margin-bottom:2px;">${periodText(item.price)}</div>
+                            <div style="font-size:0.78rem; color:#34D399; font-weight:600; background:rgba(52,211,153,0.15); padding:2px 8px; border-radius:4px;"><i class="fa-solid fa-calendar-check"></i> ${item.appearance_days}일 노출</div>
+                        </div>
+                    </div>
+                `).join('');
+            }
+        }
+    }
+
     function renderDashboard() {
+        if (activePage === 'page-period-insights') {
+            renderPeriodInsights();
+            return;
+        }
+
         const products = getFilteredProducts();
         if (!products) return;
 
@@ -237,6 +353,7 @@ document.addEventListener('DOMContentLoaded', () => {
         document.getElementById('table-view-title').textContent = catLabelText;
         document.querySelectorAll('.cat-tab').forEach(button => {
             const cat = button.getAttribute('data-cat');
+            if (!cat || button.closest('#cat-tabs-period')) return;
             const rows = cat === 'all' ? rawProductsData : rawProductsData.filter(p => (p.category || '리빙 전체') === cat);
             button.textContent = `${cat === 'all' ? '전체 통합' : cat.replace(' (IP핵심)', '')} (${rows.length}건)`;
             button.classList.toggle('active', cat === activeCategory);

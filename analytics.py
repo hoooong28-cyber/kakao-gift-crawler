@@ -172,3 +172,73 @@ def generate_all_dashboard_cards(df_enriched, top_n=100):
         }
         
     return cards
+
+def generate_period_insights(df_master, days=30, end_date=None):
+    """Inclusive calendar window, with collection days reported separately."""
+    if days not in (7, 30):
+        raise ValueError("days must be 7 or 30")
+    if df_master.empty or 'scraped_at' not in df_master.columns:
+        return {}
+    df = df_master.copy()
+    df['date_key'] = pd.to_datetime(df['scraped_at'], errors='coerce').dt.normalize()
+    end = pd.Timestamp(end_date).normalize() if end_date else df['date_key'].max()
+    if pd.isna(end):
+        return {}
+    start = end - pd.Timedelta(days=days - 1)
+    df = df[df['date_key'].between(start, end)].copy()
+    observed = int(df['date_key'].nunique())
+    results = dict(period_days=days, observed_days=observed,
+                   start_date=start.strftime('%Y%m%d'), end_date=end.strftime('%Y%m%d'),
+                   period_label=f"최근 {days}일 ({start:%Y%m%d} ~ {end:%Y%m%d}) · 수집 {observed}일",
+                   categories={})
+    excluded = {'일반/비IP 상품', '기타 캐릭터/팬시', '캐릭터/팬시-침구',
+                '캐릭터/팬시-팬시굿즈', '캐릭터/팬시-주방', '__미분류__', '미분류'}
+    for cat in ['전체', '리빙 전체', '팬시/문구/취미 (IP핵심)', '침구/패브릭', '주방/식기']:
+        rows = df if cat == '전체' else df[df['category'] == cat]
+        counts = {}
+        for label in rows['character_ip'].fillna(''):
+            for ip in set(name.strip() for name in str(label).split(',')) - excluded - {''}:
+                counts[ip] = counts.get(ip, 0) + 1
+        top_ips = [dict(ip_name=ip, count=count, share=f"{round(count / len(rows) * 100, 1)}%")
+                   for ip, count in sorted(counts.items(), key=lambda item: (-item[1], item[0]))[:10]]
+        # Count distinct observed dates per stable product ID, even if titles/prices change.
+        products = {}
+        from rank_comparison import product_key
+        for record in rows.sort_values('date_key').to_dict(orient='records'):
+            key = product_key(record)
+            identity = key[1] if key else None
+            if not identity:
+                continue
+            entry = products.setdefault(identity, {'dates': set()})
+            entry['dates'].add(record['date_key'])
+            entry['record'] = record
+        steady = []
+        for identity, entry in sorted(products.items(), key=lambda item: (-len(item[1]['dates']), item[0]))[:5]:
+            record = entry['record']
+            steady.append(dict(product_id=identity, appearance_days=len(entry['dates']),
+                               **{key: str(record.get(key, '') or '') for key in ['product_name', 'brand', 'character_ip', 'price']}))
+        results['categories'][cat] = dict(total_records=len(rows), top_ips=top_ips, steady_products=steady)
+    return results
+
+
+def export_period_insights(web_dir):
+    """Read preserved daily snapshots so CI reports include all collected days."""
+    import json
+    from pathlib import Path
+    root = Path(web_dir)
+    records = []
+    for file in sorted(root.glob('data_????????.json')):
+        key = file.stem[5:]
+        if len(key) != 8 or not key.isdigit():
+            continue
+        data = json.loads(file.read_text(encoding='utf-8'))
+        rows = data if isinstance(data, list) else data['records']
+        if any(str(row.get('scraped_at', ''))[:10].replace('-', '') != key for row in rows):
+            raise ValueError(f"Snapshot date mismatch: {file.name}")
+        records.extend(rows)
+    if not records:
+        return
+    frame = pd.DataFrame(records)
+    for label, days in [('weekly', 7), ('monthly', 30)]:
+        result = generate_period_insights(frame, days)
+        (root / f'{label}_insights.json').write_text(json.dumps(result, ensure_ascii=False, indent=2), encoding='utf-8')
