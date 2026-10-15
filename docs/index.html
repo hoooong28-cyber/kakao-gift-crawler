@@ -11,7 +11,7 @@
     <!-- Chart.js & FontAwesome -->
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css?v=2">
 </head>
 <body>
     <div class="dashboard-container">
@@ -200,7 +200,7 @@
                     </div>
                 </section>
 
-                <div class="metrics-grid" style="grid-template-columns: 1fr 1fr; gap: 20px; margin-top:20px;">
+                <div class="period-report-grid">
                     <!-- Card 1: Top Popular IPs Ranking -->
                     <div class="card" style="padding: 20px;">
                         <div class="card-title" style="margin-bottom: 16px;">
@@ -215,8 +215,8 @@
                     <!-- Card 2: Long-run Steady Sellers -->
                     <div class="card" style="padding: 20px;">
                         <div class="card-title" style="margin-bottom: 16px;">
-                            <h3><i class="fa-solid fa-fire highlight-rose"></i> 기간 내 꾸준히 노출된 상품</h3>
-                            <span>상품 ID별 중복 제거한 수집일 수 · 매출 순위 아님</span>
+                            <h3><i class="fa-solid fa-fire highlight-rose"></i> 기간 내 꾸준히 노출된 IP 상품</h3>
+                            <span>개별 IP 확인 상품만 · 일반/비IP·미분류 제외 · 상품 ID별 수집일 수</span>
                         </div>
                         <div id="period-steady-products-container">
                             <!-- Dynamic steady products list -->
@@ -467,6 +467,6 @@
     </div>
 
     <script src="metrics.js?v=1"></script>
-    <script src="app.js?v=6"></script>
+    <script src="app.js?v=7"></script>
 </body>
 </html>

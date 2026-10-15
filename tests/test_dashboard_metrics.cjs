@@ -135,3 +135,21 @@ test('recovered period tab renders weekly/monthly reports and exact category ins
     assert.ok(app.elements.get('period-top-ips-container').innerHTML.includes(monthly.categories['주방/식기'].top_ips[0].ip_name));
     assert.deepEqual(app.errors, []);
 });
+
+
+test('period product cards hide legacy non-IP and unclassified report entries', async () => {
+    const snapshot = JSON.parse(fs.readFileSync(path.join(docs, 'data.json')));
+    const report = { period_label: 'test', categories: { '전체': { top_ips: [], steady_products: [
+        { product_name: 'SHOW_ME_IP', character_ip: '산리오', appearance_days: 2 },
+        { product_name: 'HIDE_NON_IP', character_ip: '일반/비IP 상품' },
+        { product_name: 'HIDE_UNCLASSIFIED', character_ip: '기타 캐릭터/팬시' },
+        { product_name: 'HIDE_MISSING' }
+    ] } } };
+    const app = dashboard(snapshot, { weekly: report });
+    await new Promise(resolve => setImmediate(resolve));
+    app.navigate('page-period-insights');
+    const html = app.elements.get('period-steady-products-container').innerHTML;
+    assert.ok(html.includes('SHOW_ME_IP'));
+    assert.ok(!html.includes('HIDE_'));
+    assert.deepEqual(app.errors, []);
+});

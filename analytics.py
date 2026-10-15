@@ -193,11 +193,16 @@ def generate_period_insights(df_master, days=30, end_date=None):
                    categories={})
     excluded = {'일반/비IP 상품', '기타 캐릭터/팬시', '캐릭터/팬시-침구',
                 '캐릭터/팬시-팬시굿즈', '캐릭터/팬시-주방', '__미분류__', '미분류'}
+    def classified_names(label):
+        if not isinstance(label, str):
+            return set()
+        return set(name.strip() for name in label.split(',')) - excluded - {''}
+
     for cat in ['전체', '리빙 전체', '팬시/문구/취미 (IP핵심)', '침구/패브릭', '주방/식기']:
         rows = df if cat == '전체' else df[df['category'] == cat]
         counts = {}
         for label in rows['character_ip'].fillna(''):
-            for ip in set(name.strip() for name in str(label).split(',')) - excluded - {''}:
+            for ip in classified_names(label):
                 counts[ip] = counts.get(ip, 0) + 1
         top_ips = [dict(ip_name=ip, count=count, share=f"{round(count / len(rows) * 100, 1)}%")
                    for ip, count in sorted(counts.items(), key=lambda item: (-item[1], item[0]))[:10]]
@@ -205,6 +210,9 @@ def generate_period_insights(df_master, days=30, end_date=None):
         products = {}
         from rank_comparison import product_key
         for record in rows.sort_values('date_key').to_dict(orient='records'):
+            # Only dates on which a specific IP was classified count as IP exposure.
+            if not classified_names(record.get('character_ip', '')):
+                continue
             key = product_key(record)
             identity = key[1] if key else None
             if not identity:
