@@ -44,6 +44,21 @@ class PeriodInsightsTests(unittest.TestCase):
         self.assertEqual(result['침구/패브릭']['total_records'], 1)
         self.assertEqual(result['주방/식기']['steady_products'], [])
 
+    def test_steady_products_exclude_non_ip_and_unclassified_rows_before_top_five(self):
+        labels = ['일반/비IP 상품', '기타 캐릭터/팬시', '캐릭터/팬시-침구',
+                  '캐릭터/팬시-팬시굿즈', '캐릭터/팬시-주방', '__미분류__', '미분류', '', None, float('nan')]
+        records = [row(date, pid=str(index + 10), ip=label)
+                   for index, label in enumerate(labels) for date in ['2026-10-09', '2026-10-15']]
+        records += [row('2026-10-15', pid='1', ip='산리오'),
+                    row('2026-10-15', pid='2', ip='기타 캐릭터/팬시, 카카오프렌즈')]
+        for days in [7, 30]:
+            result = generate_period_insights(pd.DataFrame(records), days)['categories']['전체']
+            self.assertEqual({item['product_id'] for item in result['steady_products']}, {'1', '2'})
+            self.assertEqual({item['appearance_days'] for item in result['steady_products']}, {1})
+            self.assertEqual(len(result['top_ips']), 2)
+        only_non_ip = generate_period_insights(pd.DataFrame(records[:-2]), 7)
+        self.assertEqual(only_non_ip['categories']['전체']['steady_products'], [])
+
     def test_empty_and_invalid_period(self):
         self.assertEqual(generate_period_insights(pd.DataFrame(), 7), {})
         with self.assertRaises(ValueError):

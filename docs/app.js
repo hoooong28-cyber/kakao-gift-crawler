@@ -296,9 +296,9 @@ document.addEventListener('DOMContentLoaded', () => {
             } else {
                 ipContainer.innerHTML = topIps.map((item, idx) => `
                     <div style="margin-bottom:14px; padding:8px 12px; background:rgba(255,255,255,0.02); border-radius:8px; border:1px solid rgba(255,255,255,0.05);">
-                        <div style="display:flex; justify-content:space-between; margin-bottom:6px; font-size:0.9rem; align-items:center;">
+                        <div class="period-ip-summary">
                             <span><strong style="color:var(--accent-yellow); margin-right:8px; font-size:1.05rem;">${idx + 1}위</strong> <strong style="color:var(--text-primary); font-size:0.95rem;">${periodText(item.ip_name)}</strong></span>
-                            <span style="color:var(--accent-cyan); font-weight:700; font-size:0.9rem;">${item.share} <span style="color:var(--text-muted); font-weight:400; font-size:0.8rem;">(${item.count}회)</span></span>
+                            <span class="period-ip-stats">${item.share} <span style="color:var(--text-muted); font-weight:400; font-size:0.8rem;">(${item.count}회)</span></span>
                         </div>
                         <div style="width:100%; height:8px; background:rgba(255,255,255,0.1); border-radius:4px; overflow:hidden;">
                             <div style="width:${Math.max(parseFloat(item.share) || 5, 4)}%; height:100%; background:linear-gradient(90deg, #FEE500, #F59E0B); border-radius:4px;"></div>
@@ -311,22 +311,20 @@ document.addEventListener('DOMContentLoaded', () => {
         // 2. Steady Long-run Products
         const steadyContainer = document.getElementById('period-steady-products-container');
         if (steadyContainer) {
-            const steadyProds = catData.steady_products || [];
+            const steadyProds = (catData.steady_products || []).filter(item => DashboardMetrics.ipNames(item).length);
             if (steadyProds.length === 0) {
-                steadyContainer.innerHTML = '<p style="color:var(--text-muted); padding:16px; text-align:center;">기간 내 데이터가 없습니다.</p>';
+                steadyContainer.innerHTML = '<p style="color:var(--text-muted); padding:16px; text-align:center;">기간 내 개별 IP가 확인된 상품이 없습니다.</p>';
             } else {
                 steadyContainer.innerHTML = steadyProds.map((item, idx) => `
-                    <div style="display:flex; align-items:center; justify-content:space-between; padding:12px; background:rgba(255,255,255,0.03); border-radius:8px; margin-bottom:10px; gap:12px; border:1px solid rgba(255,255,255,0.05);">
-                        <div style="display:flex; align-items:center; gap:12px; flex:1; min-width:0;">
-                            <span style="font-weight:800; color:var(--accent-yellow); font-size:1.1rem; width:26px; text-align:center;">${idx + 1}</span>
-                            <div style="overflow:hidden; text-overflow:ellipsis; white-space:nowrap;">
-                                <div style="font-size:0.8rem; color:var(--text-muted); margin-bottom:2px;">${periodText(item.brand)} | <span style="color:#A5B4FC; font-weight:600;">${periodText(item.character_ip)}</span></div>
-                                <div style="font-size:0.9rem; font-weight:600; color:var(--text-primary); overflow:hidden; text-overflow:ellipsis; white-space:nowrap;">${periodText(item.product_name)}</div>
-                            </div>
+                    <div class="period-product">
+                        <span class="period-product-rank">${idx + 1}</span>
+                        <div class="period-product-info">
+                            <div class="period-product-meta">${periodText(item.brand)} | <span>${periodText(item.character_ip)}</span></div>
+                            <div class="period-product-name" title="${periodText(item.product_name)}">${periodText(item.product_name)}</div>
                         </div>
-                        <div style="text-align:right; flex-shrink:0;">
-                            <div style="font-size:0.9rem; font-weight:700; color:var(--accent-yellow); margin-bottom:2px;">${periodText(item.price)}</div>
-                            <div style="font-size:0.78rem; color:#34D399; font-weight:600; background:rgba(52,211,153,0.15); padding:2px 8px; border-radius:4px;"><i class="fa-solid fa-calendar-check"></i> ${item.appearance_days}일 노출</div>
+                        <div class="period-product-stats">
+                            <div class="period-product-price">${periodText(item.price)}</div>
+                            <div class="period-product-days"><i class="fa-solid fa-calendar-check"></i> ${item.appearance_days}일 노출</div>
                         </div>
                     </div>
                 `).join('');

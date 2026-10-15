@@ -61,22 +61,6 @@
       ],
       "steady_products": [
         {
-          "product_id": "10819633",
-          "appearance_days": 27,
-          "product_name": "배추 보낸다 김장준비완료 배추담요 [빅사이즈] 웃긴 직장동료 생일 연인 커플 합격 응원 집들이 결혼 선물 귀여운 자취 쓸데없는 신박한 행운 , 3,165",
-          "brand": "알럽하우스(소품)",
-          "character_ip": "일반/비IP 상품",
-          "price": "14,900원"
-        },
-        {
-          "product_id": "10841578",
-          "appearance_days": 27,
-          "product_name": "\"BEST 선물추천 \"NEW 컬러\"센느파리 크리스탈 와인잔 고블렛잔 2P세트 (7종) 신혼/집들이/생일/이사 홈파티 위스키잔 커피잔 연말 답례품 26% 프리미엄 더스트백+쇼핑백",
-          "brand": "센느파리",
-          "character_ip": "일반/비IP 상품",
-          "price": "57,900원"
-        },
-        {
           "product_id": "10962112",
           "appearance_days": 27,
           "product_name": "팝업스토어 굿즈 먼작귀 스노우담요 140x100 집순이 극세사 블랭킷 차량용 사무실 캠핑 차박 무릎담요 , 2,507",
@@ -85,20 +69,36 @@
           "price": "19,900원"
         },
         {
-          "product_id": "10974656",
+          "product_id": "11566569",
           "appearance_days": 27,
-          "product_name": "의외로 찐시원해 힐링 휴대용 마사지 귀여운 문어괄사 옥토캔 생일 직장동료 건강 행운 친구 합격 부적 퇴사 응원 시험 수능 쓸데없는신박한 맛사지",
-          "brand": "알럽하우스(소품)",
-          "character_ip": "일반/비IP 상품",
-          "price": "8,900원"
+          "product_name": "[단독] \"행운과 평안을 기원한다냥\" 액막이 명태_그레이춘식이/춘식이/라이언/어피치/죠르디 (+고체방향제/자석고리 포함)",
+          "brand": "프렌즈인형/피규어",
+          "character_ip": "카카오프렌즈(춘식이), 카카오프렌즈(라이언), 카카오프렌즈(어피치), 카카오프렌즈(죠르디)",
+          "price": "20,000원"
         },
         {
-          "product_id": "10998140",
+          "product_id": "11734230",
           "appearance_days": 27,
-          "product_name": "\"집에서 기다릴게\" 새끼 고릴라 인형 [품절대란] 자취 쿠션 힐링 애착 귀여운 웃긴 재미있는 쓸데없는 쓸모없는 신박한 선물",
-          "brand": "굴강",
-          "character_ip": "기타 캐릭터/팬시",
-          "price": "13,900원"
+          "product_name": "귀여운 선물 가나디 인형 키링 7종 택1 (생일/귀여운/우정/커플 선물)",
+          "brand": "가나디",
+          "character_ip": "가나디",
+          "price": "16,300원"
+        },
+        {
+          "product_id": "11743570",
+          "appearance_days": 27,
+          "product_name": "선물만족도 BEST [단독] 가나디 바디필로우 2종 (나안아/라잉) 숙면 베개 애착 쿠션 집들이 대형필로우",
+          "brand": "캐릭터침구",
+          "character_ip": "가나디",
+          "price": "34,800원"
+        },
+        {
+          "product_id": "12345352",
+          "appearance_days": 27,
+          "product_name": "가나디 털 실내화 2size (룸슈즈/층간소음/사무실/학생/직장인)",
+          "brand": "가나디",
+          "character_ip": "가나디",
+          "price": "16,800원"
         }
       ]
     },
@@ -158,30 +158,6 @@
       ],
       "steady_products": [
         {
-          "product_id": "11106499",
-          "appearance_days": 27,
-          "product_name": "[스탠리공식유통사] 퀜처 H2.0 플로우스테이트 텀블러 887ml 10%",
-          "brand": "스탠리",
-          "character_ip": "일반/비IP 상품",
-          "price": "44,100원"
-        },
-        {
-          "product_id": "11264836",
-          "appearance_days": 27,
-          "product_name": "[카카오단독] 루프 텀블러 멀티 600ml (8 colors) 22% 치키 PVC 키링",
-          "brand": "레고트",
-          "character_ip": "일반/비IP 상품",
-          "price": "35,000원"
-        },
-        {
-          "product_id": "11483949",
-          "appearance_days": 27,
-          "product_name": "[스탠리공식유통사] 카페 투 고 트래블 머그 354ml",
-          "brand": "스탠리",
-          "character_ip": "일반/비IP 상품",
-          "price": "35,000원"
-        },
-        {
           "product_id": "11743570",
           "appearance_days": 27,
           "product_name": "선물만족도 BEST [단독] 가나디 바디필로우 2종 (나안아/라잉) 숙면 베개 애착 쿠션 집들이 대형필로우",
@@ -190,12 +166,36 @@
           "price": "34,800원"
         },
         {
-          "product_id": "11779291",
+          "product_id": "12345352",
           "appearance_days": 27,
-          "product_name": "[스탠리공식유통사] 퀜처 H2.0 플로우스테이트 텀블러 591ml 손잡이형",
-          "brand": "스탠리",
-          "character_ip": "일반/비IP 상품",
-          "price": "46,000원"
+          "product_name": "가나디 털 실내화 2size (룸슈즈/층간소음/사무실/학생/직장인)",
+          "brand": "가나디",
+          "character_ip": "가나디",
+          "price": "16,800원"
+        },
+        {
+          "product_id": "13261876",
+          "appearance_days": 27,
+          "product_name": "귀여운 선물 가나디 복조리 파우치 (귀여운/휴대용/다용도파우치/생일)",
+          "brand": "가나디",
+          "character_ip": "가나디",
+          "price": "12,000원"
+        },
+        {
+          "product_id": "13772143",
+          "appearance_days": 27,
+          "product_name": "[단독] 리락쿠마 페이스 머그 텀블러 360ml 보온 보냉 캐릭터 10%",
+          "brand": "캐릭터주방",
+          "character_ip": "리락쿠마",
+          "price": "22,050원"
+        },
+        {
+          "product_id": "14096838",
+          "appearance_days": 27,
+          "product_name": "가나디 마우스 손목 패드 (데스크테리어/생일/귀여운/우정/커플 선물)",
+          "brand": "가나디",
+          "character_ip": "가나디",
+          "price": "12,800원"
         }
       ]
     },
@@ -255,22 +255,6 @@
       ],
       "steady_products": [
         {
-          "product_id": "10974656",
-          "appearance_days": 27,
-          "product_name": "의외로 찐시원해 힐링 휴대용 마사지 귀여운 문어괄사 옥토캔 생일 직장동료 건강 행운 친구 합격 부적 퇴사 응원 시험 수능 쓸데없는신박한 맛사지",
-          "brand": "알럽하우스(소품)",
-          "character_ip": "일반/비IP 상품",
-          "price": "8,900원"
-        },
-        {
-          "product_id": "11368084",
-          "appearance_days": 27,
-          "product_name": "하드케이스 \"생일/선물추천\" 잼먹 라벨프린터 휴대용 라벨기 라벨프린터기 네임스티커",
-          "brand": "잼먹",
-          "character_ip": "일반/비IP 상품",
-          "price": "39,800원"
-        },
-        {
           "product_id": "11566569",
           "appearance_days": 27,
           "product_name": "[단독] \"행운과 평안을 기원한다냥\" 액막이 명태_그레이춘식이/춘식이/라이언/어피치/죠르디 (+고체방향제/자석고리 포함)",
@@ -287,12 +271,28 @@
           "price": "16,300원"
         },
         {
-          "product_id": "12059249",
+          "product_id": "13261876",
           "appearance_days": 27,
-          "product_name": "\"명령하지 마라\" 마라 티셔츠 [6종 택1] 자신감 직장인 친구 명령하지 꺼드럭대지 마라 자취 응원 재미있는 웃긴 쓸모없는 쓸데없는 신박한 선물",
-          "brand": "굴강",
-          "character_ip": "일반/비IP 상품",
-          "price": "16,900원"
+          "product_name": "귀여운 선물 가나디 복조리 파우치 (귀여운/휴대용/다용도파우치/생일)",
+          "brand": "가나디",
+          "character_ip": "가나디",
+          "price": "12,000원"
+        },
+        {
+          "product_id": "13697772",
+          "appearance_days": 27,
+          "product_name": "몬치치 미니 사각 파우치 5종 택1 , 2,765",
+          "brand": "Monchhichi",
+          "character_ip": "몬치치",
+          "price": "15,000원"
+        },
+        {
+          "product_id": "13881169",
+          "appearance_days": 27,
+          "product_name": "가나디 홀더 키링 (귀여운/휴대용컵홀더/다용도/키링) , 8,823",
+          "brand": "가나디",
+          "character_ip": "가나디",
+          "price": "16,300원"
         }
       ]
     },
@@ -352,14 +352,6 @@
       ],
       "steady_products": [
         {
-          "product_id": "10819633",
-          "appearance_days": 27,
-          "product_name": "배추 보낸다 김장준비완료 배추담요 [빅사이즈] 웃긴 직장동료 생일 연인 커플 합격 응원 집들이 결혼 선물 귀여운 자취 쓸데없는 신박한 행운 , 3,165",
-          "brand": "알럽하우스(소품)",
-          "character_ip": "일반/비IP 상품",
-          "price": "14,900원"
-        },
-        {
           "product_id": "10962112",
           "appearance_days": 27,
           "product_name": "팝업스토어 굿즈 먼작귀 스노우담요 140x100 집순이 극세사 블랭킷 차량용 사무실 캠핑 차박 무릎담요 , 2,507",
@@ -368,28 +360,36 @@
           "price": "19,900원"
         },
         {
-          "product_id": "10998140",
-          "appearance_days": 27,
-          "product_name": "\"집에서 기다릴게\" 새끼 고릴라 인형 [품절대란] 자취 쿠션 힐링 애착 귀여운 웃긴 재미있는 쓸데없는 쓸모없는 신박한 선물",
-          "brand": "굴강",
-          "character_ip": "기타 캐릭터/팬시",
-          "price": "13,900원"
-        },
-        {
-          "product_id": "11539740",
-          "appearance_days": 27,
-          "product_name": "나도 이제 멍집사 강아지 바디필로우 안고자는 긴 쿠션 베개 동물 모찌 롱 대형 애착 인형 꿀잠 이상한 선물 귀여운 쓸데없는 쓸모없는 신박한 8%",
-          "brand": "말랑필로우",
-          "character_ip": "기타 캐릭터/팬시",
-          "price": "21,800원"
-        },
-        {
           "product_id": "11743570",
           "appearance_days": 27,
           "product_name": "선물만족도 BEST [단독] 가나디 바디필로우 2종 (나안아/라잉) 숙면 베개 애착 쿠션 집들이 대형필로우",
           "brand": "캐릭터침구",
           "character_ip": "가나디",
           "price": "34,800원"
+        },
+        {
+          "product_id": "12617143",
+          "appearance_days": 27,
+          "product_name": "\"품절대란\" 테토남 빵빵이 팔베개 쿠션 [품절대란] 여자친구 웃긴 침구 쓸데없는 자취 바디필로우 인형 쓸모없는 신박한 선물",
+          "brand": "굴강",
+          "character_ip": "빵빵이",
+          "price": "17,900원"
+        },
+        {
+          "product_id": "12693742",
+          "appearance_days": 27,
+          "product_name": "가나디 핸드워머 쿠션 2종 (생일/집들이/인테리어/응원/귀여운/유쾌한)",
+          "brand": "가나디",
+          "character_ip": "가나디",
+          "price": "23,000원"
+        },
+        {
+          "product_id": "12818996",
+          "appearance_days": 27,
+          "product_name": "가나디 꿀잠 팔쿠션 (학교/사무실/인테리어/응원/귀여운/유쾌한) , 8,359",
+          "brand": "가나디",
+          "character_ip": "가나디",
+          "price": "19,800원"
         }
       ]
     },
@@ -449,44 +449,44 @@
       ],
       "steady_products": [
         {
-          "product_id": "10468609",
+          "product_id": "12820960",
           "appearance_days": 26,
-          "product_name": "\"1인 라면 그릇 선물 추천\" 담곰이 면기 세트 (스푼 포함 구성)",
+          "product_name": "가나디 페이스 머그 (자취/생일/홈카페/집들이/응원선물)",
           "brand": "캐릭터주방",
-          "character_ip": "캐릭터/팬시-주방",
-          "price": "15,800원"
+          "character_ip": "가나디",
+          "price": "16,800원"
         },
         {
-          "product_id": "10841578",
+          "product_id": "13772143",
           "appearance_days": 26,
-          "product_name": "\"BEST 선물추천 \"NEW 컬러\"센느파리 크리스탈 와인잔 고블렛잔 2P세트 (7종) 신혼/집들이/생일/이사 홈파티 위스키잔 커피잔 연말 답례품 26% 프리미엄 더스트백+쇼핑백",
-          "brand": "센느파리",
-          "character_ip": "일반/비IP 상품",
-          "price": "57,900원"
+          "product_name": "[단독] 리락쿠마 페이스 머그 텀블러 360ml 보온 보냉 캐릭터 10%",
+          "brand": "캐릭터주방",
+          "character_ip": "리락쿠마",
+          "price": "22,050원"
         },
         {
-          "product_id": "11106499",
-          "appearance_days": 26,
-          "product_name": "[스탠리공식유통사] 퀜처 H2.0 플로우스테이트 텀블러 887ml 10%",
-          "brand": "스탠리",
-          "character_ip": "일반/비IP 상품",
-          "price": "44,100원"
+          "product_id": "10626781",
+          "appearance_days": 22,
+          "product_name": "자취/집들이선물 [보퀴진] 산리오 헬로키티 빈티지 1인식기 머그컵 집들이 홈카페 세트 7% , 8,161",
+          "brand": "보퀴진",
+          "character_ip": "산리오(헬로키티), 산리오(기타/통합)",
+          "price": "23,900원"
         },
         {
-          "product_id": "11144932",
-          "appearance_days": 26,
-          "product_name": "[스탠리공식유통사] 퀜처 프로투어 플립 스트로 텀블러 887ml 25%",
-          "brand": "스탠리",
-          "character_ip": "일반/비IP 상품",
-          "price": "40,500원"
+          "product_id": "12455527",
+          "appearance_days": 20,
+          "product_name": "생일에는 정품이지 산리오 한교동 도자기 시리얼볼 요거트볼 예쁜 그릇 컵 자취 생일 집들이 행운 직장동료 가벼운 홈카페 밥그릇",
+          "brand": "알럽하우스",
+          "character_ip": "산리오(한교동), 산리오(기타/통합)",
+          "price": "13,800원"
         },
         {
-          "product_id": "11264832",
-          "appearance_days": 26,
-          "product_name": "루프 텀블러 멀티 400ml (6 colors) 23% , 8,819",
-          "brand": "레고트",
-          "character_ip": "일반/비IP 상품",
-          "price": "30,000원"
+          "product_id": "5468690",
+          "appearance_days": 16,
+          "product_name": "[단독] \"먹방 꿈나무\" 춘식이 손잡이 앞접시 2P 세트",
+          "brand": "프렌즈리빙LC",
+          "character_ip": "카카오프렌즈(춘식이)",
+          "price": "14,800원"
         }
       ]
     }

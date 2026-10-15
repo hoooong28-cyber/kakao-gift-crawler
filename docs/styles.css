@@ -869,3 +869,76 @@ body {
     .modal-kpi-grid { grid-template-columns: repeat(2, 1fr); }
     .modal-grid-2col { grid-template-columns: 1fr; }
 }
+
+
+/* Period reports must shrink within their grid tracks, even with long product names. */
+.period-report-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
+    margin: 20px 0 28px;
+}
+.period-report-grid > .card,
+.period-product-info { min-width: 0; }
+.period-report-grid .card-title { margin-bottom: 16px; }
+.period-report-grid .card-title h3 { font-size: 1rem; overflow-wrap: anywhere; }
+.period-report-grid .card-title > span {
+    display: block;
+    margin-top: 6px;
+    color: var(--text-secondary);
+    font-size: 0.8rem;
+    line-height: 1.6;
+}
+.period-ip-summary {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 4px 12px;
+    margin-bottom: 6px;
+    font-size: 0.9rem;
+}
+.period-ip-summary > span:first-child { min-width: 0; overflow-wrap: anywhere; }
+.period-ip-stats { color: var(--accent-cyan); font-weight: 700; white-space: nowrap; }
+.period-product {
+    display: grid;
+    grid-template-columns: 26px minmax(0, 1fr) auto;
+    align-items: center;
+    gap: 12px;
+    padding: 12px;
+    margin-bottom: 10px;
+    background: rgba(255,255,255,0.03);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+}
+.period-product-rank { font-weight: 800; color: var(--kakao-yellow); text-align: center; }
+.period-product-meta { color: var(--text-muted); font-size: 0.8rem; overflow-wrap: anywhere; }
+.period-product-meta span { color: #A5B4FC; font-weight: 600; }
+.period-product-name {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    overflow-wrap: anywhere;
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+.period-product-stats { text-align: right; white-space: nowrap; }
+.period-product-price { font-size: 0.9rem; font-weight: 700; color: var(--kakao-yellow); margin-bottom: 4px; }
+.period-product-days {
+    font-size: 0.78rem;
+    font-weight: 600;
+    color: #34D399;
+    background: rgba(52,211,153,0.15);
+    padding: 2px 8px;
+    border-radius: 4px;
+}
+@media (max-width: 1100px) {
+    .period-report-grid { grid-template-columns: minmax(0, 1fr); }
+}
+@media (max-width: 600px) {
+    .period-report-grid > .card { padding: 16px !important; }
+    .period-product { grid-template-columns: 22px minmax(0, 1fr); gap: 8px; }
+    .period-product-stats { grid-column: 2; display: flex; gap: 12px; align-items: center; text-align: left; flex-wrap: wrap; white-space: normal; }
+    .period-product-price { margin-bottom: 0; }
+}
