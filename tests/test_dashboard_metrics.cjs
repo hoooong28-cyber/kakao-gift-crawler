@@ -6,13 +6,13 @@ const { test } = require('node:test');
 const metrics = require('../docs/metrics.js');
 const docs = path.join(__dirname, '../docs');
 
-function dashboard(snapshot) {
+function dashboard(snapshot, reports = {}) {
     const elements = new Map();
     const errors = [];
     function element() {
         return { textContent: '', innerHTML: '', value: '', children: [],
             classList: { add() {}, remove() {}, toggle() {} },
-            addEventListener() {}, appendChild(child) { this.children.push(child); },
+            listeners: {}, addEventListener(name, callback) { this.listeners[name] = callback; }, appendChild(child) { this.children.push(child); },
             insertAdjacentHTML(position, html) { this.innerHTML += html; },
             getContext() { return {}; }, querySelector() { return element(); } };
     }
@@ -23,12 +23,14 @@ function dashboard(snapshot) {
         getElementById(id) { if (!elements.has(id)) elements.set(id, element()); return elements.get(id); },
         querySelectorAll(selector) { return selector === '.cat-tab' ? tabs : []; },
         createElement: element,
-        addEventListener(name, callback) { callbacks[name] = callback; }
+        addEventListener(name, callback) { (callbacks[name] ||= []).push(callback); }
     };
     const context = vm.createContext({ document, DashboardMetrics: metrics, Date, Set,
         console: { warn: (...args) => errors.push(args), error: (...args) => errors.push(args) },
         Chart: function () { this.destroy = () => {}; },
         fetch: async url => ({ ok: true, json: async () => {
+            if (url.includes('weekly_insights')) return reports.weekly || {};
+            if (url.includes('monthly_insights')) return reports.monthly || {};
             if (url.includes('dates')) return [];
             if (url.includes('ip_trends')) return {};
             if (url.includes('cards')) return snapshot.cards || {};
@@ -36,10 +38,20 @@ function dashboard(snapshot) {
         } })
     });
     vm.runInContext(fs.readFileSync(path.join(docs, 'app.js'), 'utf8'), context);
-    callbacks.DOMContentLoaded();
-    return { elements, errors, select(cat) {
+    callbacks.DOMContentLoaded.forEach(callback => callback());
+    return { elements, errors,
+      navigate(page) {
+        elements.get('main-nav-menu').listeners.click({ target: { closest: () => ({
+            classList: { add() {} }, getAttribute: () => page
+        }) } });
+      },
+      period(type, cat) {
+        const selector = type ? '#period-type-tabs .cat-tab' : '#cat-tabs-period .cat-tab';
+        const button = { classList: { add() {} }, getAttribute: () => type || cat };
+        callbacks.click.forEach(callback => callback({ target: { closest: query => query === selector ? button : null } }));
+      }, select(cat) {
         const tab = tabs.find(t => t.getAttribute() === cat);
-        callbacks.click({ target: { closest: () => tab } });
+        callbacks.click.forEach(callback => callback({ target: { closest: selector => selector === '.cat-tab' ? tab : null } }));
     } };
 }
 
@@ -70,14 +82,14 @@ test('deduplicates product identity across categories and excludes unknown price
     assert.equal(metrics.summarize([]).avgIpPrice, null);
 });
 
-test('September 22 regression: 400 observations, 339 products, bedding 39% plus 38 pending', () => {
+test('September 22 regression: 400 observations, 339 products, bedding 40% plus 39 pending (current saved labels)', () => {
     const records = JSON.parse(fs.readFileSync(path.join(docs, 'data_20260922.json'))).records;
     const all = metrics.summarize(records);
     assert.equal(all.total, 400);
     assert.equal(all.uniqueCount, 339);
     const bedding = metrics.summarize(records.filter(p => p.category === '침구/패브릭'));
-    assert.equal(bedding.share, 39);
-    assert.equal(bedding.pendingCount, 38);
+    assert.equal(bedding.share, 40);
+    assert.equal(bedding.pendingCount, 39);
 });
 
 test('every saved date and category renders matching overview, B2B and strategy denominators', async () => {
@@ -105,4 +117,21 @@ test('every saved date and category renders matching overview, B2B and strategy 
         }
         assert.deepEqual(app.errors, [], file);
     }
+});
+
+
+test('recovered period tab renders weekly/monthly reports and exact category instead of all fallback', async () => {
+    const snapshot = JSON.parse(fs.readFileSync(path.join(docs, 'data.json')));
+    const weekly = JSON.parse(fs.readFileSync(path.join(docs, 'weekly_insights.json')));
+    const monthly = JSON.parse(fs.readFileSync(path.join(docs, 'monthly_insights.json')));
+    const app = dashboard(snapshot, { weekly, monthly });
+    await new Promise(resolve => setImmediate(resolve));
+    app.navigate('page-period-insights');
+    assert.equal(app.elements.get('period-date-range-label').textContent, weekly.period_label);
+    assert.ok(app.elements.get('period-top-ips-container').innerHTML.includes(weekly.categories['전체'].top_ips[0].ip_name));
+    app.period('monthly');
+    assert.equal(app.elements.get('period-date-range-label').textContent, monthly.period_label);
+    app.period(null, '주방/식기');
+    assert.ok(app.elements.get('period-top-ips-container').innerHTML.includes(monthly.categories['주방/식기'].top_ips[0].ip_name));
+    assert.deepEqual(app.errors, []);
 });
