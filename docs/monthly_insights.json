@@ -1,61 +1,61 @@
 {
   "period_days": 30,
   "observed_days": 27,
-  "start_date": "20260916",
-  "end_date": "20261015",
-  "period_label": "최근 30일 (20260916 ~ 20261015) · 수집 27일",
+  "start_date": "20260917",
+  "end_date": "20261016",
+  "period_label": "최근 30일 (20260917 ~ 20261016) · 수집 27일",
   "categories": {
     "전체": {
-      "total_records": 6600,
+      "total_records": 6400,
       "top_ips": [
         {
           "ip_name": "가나디",
-          "count": 748,
-          "share": "11.3%"
+          "count": 739,
+          "share": "11.5%"
         },
         {
           "ip_name": "먼작귀/치이카와",
-          "count": 445,
-          "share": "6.7%"
+          "count": 466,
+          "share": "7.3%"
         },
         {
           "ip_name": "카카오프렌즈(춘식이)",
-          "count": 272,
+          "count": 265,
           "share": "4.1%"
         },
         {
           "ip_name": "리락쿠마",
-          "count": 263,
+          "count": 259,
           "share": "4.0%"
         },
         {
           "ip_name": "산리오(기타/통합)",
-          "count": 202,
-          "share": "3.1%"
-        },
-        {
-          "ip_name": "산리오(헬로키티)",
-          "count": 133,
-          "share": "2.0%"
+          "count": 193,
+          "share": "3.0%"
         },
         {
           "ip_name": "짱구",
-          "count": 128,
+          "count": 126,
+          "share": "2.0%"
+        },
+        {
+          "ip_name": "산리오(헬로키티)",
+          "count": 124,
           "share": "1.9%"
         },
         {
           "ip_name": "카카오프렌즈(기타/통합)",
-          "count": 112,
+          "count": 111,
           "share": "1.7%"
         },
         {
           "ip_name": "산리오(한교동)",
-          "count": 88,
+          "count": 86,
           "share": "1.3%"
         },
         {
           "ip_name": "몬치치",
-          "count": 79,
+          "count": 77,
           "share": "1.2%"
         }
       ],
@@ -63,7 +63,7 @@
         {
           "product_id": "10962112",
           "appearance_days": 27,
-          "product_name": "팝업스토어 굿즈 먼작귀 스노우담요 140x100 집순이 극세사 블랭킷 차량용 사무실 캠핑 차박 무릎담요 , 2,507",
+          "product_name": "팝업스토어 굿즈 먼작귀 스노우담요 140x100 집순이 극세사 블랭킷 차량용 사무실 캠핑 차박 무릎담요 , 2,549",
           "brand": "캐릭터침구",
           "character_ip": "먼작귀/치이카와",
           "price": "19,900원"
@@ -103,37 +103,37 @@
       ]
     },
     "리빙 전체": {
-      "total_records": 1650,
+      "total_records": 1600,
       "top_ips": [
         {
           "ip_name": "가나디",
-          "count": 240,
-          "share": "14.5%"
+          "count": 230,
+          "share": "14.4%"
         },
         {
           "ip_name": "먼작귀/치이카와",
-          "count": 113,
-          "share": "6.8%"
+          "count": 116,
+          "share": "7.2%"
         },
         {
           "ip_name": "리락쿠마",
           "count": 40,
-          "share": "2.4%"
+          "share": "2.5%"
         },
         {
           "ip_name": "산리오(기타/통합)",
-          "count": 29,
-          "share": "1.8%"
+          "count": 26,
+          "share": "1.6%"
         },
         {
           "ip_name": "카카오프렌즈(춘식이)",
-          "count": 24,
-          "share": "1.5%"
+          "count": 23,
+          "share": "1.4%"
         },
         {
           "ip_name": "카카오프렌즈(기타/통합)",
-          "count": 19,
-          "share": "1.2%"
+          "count": 18,
+          "share": "1.1%"
         },
         {
           "ip_name": "짱구",
@@ -147,12 +147,12 @@
         },
         {
           "ip_name": "산리오(한교동)",
-          "count": 11,
-          "share": "0.7%"
+          "count": 10,
+          "share": "0.6%"
         },
         {
           "ip_name": "카카오프렌즈(라이언)",
-          "count": 10,
+          "count": 9,
           "share": "0.6%"
         }
       ],
@@ -190,67 +190,67 @@
           "price": "22,050원"
         },
         {
-          "product_id": "14096838",
+          "product_id": "6986025",
           "appearance_days": 27,
-          "product_name": "가나디 마우스 손목 패드 (데스크테리어/생일/귀여운/우정/커플 선물)",
-          "brand": "가나디",
-          "character_ip": "가나디",
-          "price": "12,800원"
+          "product_name": "\"생일/기념일선물\" (10월말 재입고) 먼작귀 꿀잠바디쿠션4종 택1 치이카와 가르마 토끼 굿즈 극세사 긴베개 안고자는 바디필로우 캐릭터 굿즈 인형",
+          "brand": "캐릭터침구",
+          "character_ip": "먼작귀/치이카와",
+          "price": "29,900원"
         }
       ]
     },
     "팬시/문구/취미 (IP핵심)": {
-      "total_records": 1650,
+      "total_records": 1600,
       "top_ips": [
         {
           "ip_name": "가나디",
-          "count": 316,
-          "share": "19.2%"
+          "count": 318,
+          "share": "19.9%"
         },
         {
           "ip_name": "카카오프렌즈(춘식이)",
-          "count": 140,
-          "share": "8.5%"
+          "count": 138,
+          "share": "8.6%"
         },
         {
           "ip_name": "먼작귀/치이카와",
-          "count": 119,
-          "share": "7.2%"
+          "count": 131,
+          "share": "8.2%"
         },
         {
           "ip_name": "리락쿠마",
-          "count": 82,
-          "share": "5.0%"
+          "count": 81,
+          "share": "5.1%"
         },
         {
           "ip_name": "카카오프렌즈(기타/통합)",
-          "count": 71,
-          "share": "4.3%"
+          "count": 73,
+          "share": "4.6%"
         },
         {
           "ip_name": "짱구",
-          "count": 66,
-          "share": "4.0%"
+          "count": 67,
+          "share": "4.2%"
         },
         {
           "ip_name": "몬치치",
-          "count": 65,
+          "count": 63,
           "share": "3.9%"
         },
         {
           "ip_name": "스폰지밥",
           "count": 54,
-          "share": "3.3%"
+          "share": "3.4%"
         },
         {
           "ip_name": "카카오프렌즈(라이언)",
-          "count": 33,
-          "share": "2.0%"
+          "count": 31,
+          "share": "1.9%"
         },
         {
           "ip_name": "산리오(헬로키티)",
-          "count": 32,
-          "share": "1.9%"
+          "count": 29,
+          "share": "1.8%"
         }
       ],
       "steady_products": [
@@ -281,7 +281,7 @@
         {
           "product_id": "13697772",
           "appearance_days": 27,
-          "product_name": "몬치치 미니 사각 파우치 5종 택1 , 2,765",
+          "product_name": "몬치치 미니 사각 파우치 5종 택1 , 2,768",
           "brand": "Monchhichi",
           "character_ip": "몬치치",
           "price": "15,000원"
@@ -289,7 +289,7 @@
         {
           "product_id": "13881169",
           "appearance_days": 27,
-          "product_name": "가나디 홀더 키링 (귀여운/휴대용컵홀더/다용도/키링) , 8,823",
+          "product_name": "가나디 홀더 키링 (귀여운/휴대용컵홀더/다용도/키링) , 8,837",
           "brand": "가나디",
           "character_ip": "가나디",
           "price": "16,300원"
@@ -297,52 +297,52 @@
       ]
     },
     "침구/패브릭": {
-      "total_records": 1650,
+      "total_records": 1600,
       "top_ips": [
         {
           "ip_name": "먼작귀/치이카와",
-          "count": 185,
-          "share": "11.2%"
+          "count": 190,
+          "share": "11.9%"
         },
         {
           "ip_name": "가나디",
           "count": 154,
-          "share": "9.3%"
+          "share": "9.6%"
         },
         {
           "ip_name": "산리오(기타/통합)",
-          "count": 100,
-          "share": "6.1%"
+          "count": 95,
+          "share": "5.9%"
         },
         {
           "ip_name": "리락쿠마",
-          "count": 95,
+          "count": 92,
           "share": "5.8%"
         },
         {
           "ip_name": "카카오프렌즈(춘식이)",
-          "count": 78,
-          "share": "4.7%"
+          "count": 77,
+          "share": "4.8%"
         },
         {
           "ip_name": "산리오(헬로키티)",
-          "count": 69,
-          "share": "4.2%"
+          "count": 66,
+          "share": "4.1%"
         },
         {
           "ip_name": "산리오(한교동)",
           "count": 46,
-          "share": "2.8%"
+          "share": "2.9%"
         },
         {
           "ip_name": "짱구",
-          "count": 39,
-          "share": "2.4%"
+          "count": 37,
+          "share": "2.3%"
         },
         {
           "ip_name": "빵빵이",
           "count": 30,
-          "share": "1.8%"
+          "share": "1.9%"
         },
         {
           "ip_name": "카카오프렌즈(라이언)",
@@ -354,7 +354,7 @@
         {
           "product_id": "10962112",
           "appearance_days": 27,
-          "product_name": "팝업스토어 굿즈 먼작귀 스노우담요 140x100 집순이 극세사 블랭킷 차량용 사무실 캠핑 차박 무릎담요 , 2,507",
+          "product_name": "팝업스토어 굿즈 먼작귀 스노우담요 140x100 집순이 극세사 블랭킷 차량용 사무실 캠핑 차박 무릎담요 , 2,549",
           "brand": "캐릭터침구",
           "character_ip": "먼작귀/치이카와",
           "price": "19,900원"
@@ -386,7 +386,7 @@
         {
           "product_id": "12818996",
           "appearance_days": 27,
-          "product_name": "가나디 꿀잠 팔쿠션 (학교/사무실/인테리어/응원/귀여운/유쾌한) , 8,359",
+          "product_name": "가나디 꿀잠 팔쿠션 (학교/사무실/인테리어/응원/귀여운/유쾌한) , 8,369",
           "brand": "가나디",
           "character_ip": "가나디",
           "price": "19,800원"
@@ -394,42 +394,37 @@
       ]
     },
     "주방/식기": {
-      "total_records": 1650,
+      "total_records": 1600,
       "top_ips": [
         {
           "ip_name": "산리오(기타/통합)",
-          "count": 72,
+          "count": 71,
           "share": "4.4%"
         },
         {
           "ip_name": "리락쿠마",
           "count": 46,
-          "share": "2.8%"
+          "share": "2.9%"
         },
         {
           "ip_name": "가나디",
-          "count": 38,
+          "count": 37,
           "share": "2.3%"
         },
         {
-          "ip_name": "카카오프렌즈(춘식이)",
-          "count": 30,
+          "ip_name": "먼작귀/치이카와",
+          "count": 29,
           "share": "1.8%"
         },
         {
-          "ip_name": "먼작귀/치이카와",
-          "count": 28,
-          "share": "1.7%"
-        },
-        {
           "ip_name": "산리오(헬로키티)",
-          "count": 28,
+          "count": 27,
           "share": "1.7%"
         },
         {
-          "ip_name": "산리오(한교동)",
+          "ip_name": "카카오프렌즈(춘식이)",
           "count": 27,
-          "share": "1.6%"
+          "share": "1.7%"
         },
         {
           "ip_name": "산리오(포차코)",
@@ -437,13 +432,18 @@
           "share": "1.6%"
         },
         {
+          "ip_name": "산리오(한교동)",
+          "count": 26,
+          "share": "1.6%"
+        },
+        {
           "ip_name": "산리오(폼폼푸린)",
           "count": 17,
-          "share": "1.0%"
+          "share": "1.1%"
         },
         {
           "ip_name": "미피",
-          "count": 14,
+          "count": 13,
           "share": "0.8%"
         }
       ],
@@ -467,14 +467,14 @@
         {
           "product_id": "10626781",
           "appearance_days": 22,
-          "product_name": "자취/집들이선물 [보퀴진] 산리오 헬로키티 빈티지 1인식기 머그컵 집들이 홈카페 세트 7% , 8,161",
+          "product_name": "자취/집들이선물 [보퀴진] 산리오 헬로키티 빈티지 1인식기 머그컵 집들이 홈카페 세트 7% , 8,226",
           "brand": "보퀴진",
           "character_ip": "산리오(헬로키티), 산리오(기타/통합)",
           "price": "23,900원"
         },
         {
           "product_id": "12455527",
-          "appearance_days": 20,
+          "appearance_days": 19,
           "product_name": "생일에는 정품이지 산리오 한교동 도자기 시리얼볼 요거트볼 예쁜 그릇 컵 자취 생일 집들이 행운 직장동료 가벼운 홈카페 밥그릇",
           "brand": "알럽하우스",
           "character_ip": "산리오(한교동), 산리오(기타/통합)",
@@ -482,7 +482,7 @@
         },
         {
           "product_id": "5468690",
-          "appearance_days": 16,
+          "appearance_days": 15,
           "product_name": "[단독] \"먹방 꿈나무\" 춘식이 손잡이 앞접시 2P 세트",
           "brand": "프렌즈리빙LC",
           "character_ip": "카카오프렌즈(춘식이)",
