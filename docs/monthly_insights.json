@@ -1,62 +1,62 @@
 {
   "period_days": 30,
   "observed_days": 29,
-  "start_date": "20260923",
-  "end_date": "20261022",
-  "period_label": "최근 30일 (20260923 ~ 20261022) · 수집 29일",
+  "start_date": "20260924",
+  "end_date": "20261023",
+  "period_label": "최근 30일 (20260924 ~ 20261023) · 수집 29일",
   "categories": {
     "전체": {
-      "total_records": 6000,
+      "total_records": 5800,
       "top_ips": [
         {
           "ip_name": "가나디",
-          "count": 730,
-          "share": "12.2%"
+          "count": 719,
+          "share": "12.4%"
         },
         {
           "ip_name": "먼작귀/치이카와",
-          "count": 619,
-          "share": "10.3%"
+          "count": 643,
+          "share": "11.1%"
         },
         {
           "ip_name": "리락쿠마",
-          "count": 246,
+          "count": 238,
           "share": "4.1%"
         },
         {
           "ip_name": "카카오프렌즈(춘식이)",
-          "count": 213,
-          "share": "3.5%"
+          "count": 196,
+          "share": "3.4%"
         },
         {
           "ip_name": "산리오(기타/통합)",
-          "count": 155,
-          "share": "2.6%"
+          "count": 147,
+          "share": "2.5%"
         },
         {
           "ip_name": "산리오(헬로키티)",
-          "count": 107,
+          "count": 104,
           "share": "1.8%"
         },
         {
-          "ip_name": "짱구",
-          "count": 80,
-          "share": "1.3%"
-        },
-        {
           "ip_name": "산리오(한교동)",
-          "count": 76,
-          "share": "1.3%"
-        },
-        {
-          "ip_name": "몬치치",
-          "count": 70,
+          "count": 72,
           "share": "1.2%"
         },
         {
-          "ip_name": "카카오프렌즈(기타/통합)",
-          "count": 69,
+          "ip_name": "짱구",
+          "count": 66,
           "share": "1.1%"
+        },
+        {
+          "ip_name": "몬치치",
+          "count": 65,
+          "share": "1.1%"
+        },
+        {
+          "ip_name": "카카오프렌즈(기타/통합)",
+          "count": 58,
+          "share": "1.0%"
         }
       ],
       "steady_products": [
@@ -103,31 +103,31 @@
       ]
     },
     "리빙 전체": {
-      "total_records": 1500,
+      "total_records": 1450,
       "top_ips": [
         {
           "ip_name": "가나디",
-          "count": 199,
-          "share": "13.3%"
+          "count": 191,
+          "share": "13.2%"
         },
         {
           "ip_name": "먼작귀/치이카와",
-          "count": 155,
-          "share": "10.3%"
+          "count": 163,
+          "share": "11.2%"
         },
         {
           "ip_name": "리락쿠마",
           "count": 42,
-          "share": "2.8%"
+          "share": "2.9%"
         },
         {
           "ip_name": "산리오(기타/통합)",
-          "count": 18,
+          "count": 17,
           "share": "1.2%"
         },
         {
           "ip_name": "몬치치",
-          "count": 12,
+          "count": 11,
           "share": "0.8%"
         },
         {
@@ -141,19 +141,19 @@
           "share": "0.5%"
         },
         {
+          "ip_name": "산리오",
+          "count": 5,
+          "share": "0.3%"
+        },
+        {
           "ip_name": "산리오(한교동)",
-          "count": 6,
-          "share": "0.4%"
+          "count": 5,
+          "share": "0.3%"
         },
         {
-          "ip_name": "짱구",
-          "count": 6,
-          "share": "0.4%"
-        },
-        {
-          "ip_name": "카카오프렌즈(기타/통합)",
-          "count": 6,
-          "share": "0.4%"
+          "ip_name": "산리오(헬로키티)",
+          "count": 5,
+          "share": "0.3%"
         }
       ],
       "steady_products": [
@@ -184,8 +184,8 @@
         {
           "product_id": "7355950",
           "appearance_days": 29,
-          "product_name": "생일/기념일선물추천 먼작귀 페이스 핸드워머 낮잠쿠션 6종옵션 택1 생일 기념일 집들이 선물 추천",
-          "brand": "캐릭터침구",
+          "product_name": "캐릭터침구 생일/기념일선물추천 먼작귀 페이스 핸드워머 낮잠쿠션 6종옵션 택1 생일 기념일 집들이 선물 추천",
+          "brand": "최근 구매 106명",
           "character_ip": "먼작귀/치이카와",
           "price": "22,900원"
         },
@@ -200,56 +200,56 @@
       ]
     },
     "팬시/문구/취미 (IP핵심)": {
-      "total_records": 1500,
+      "total_records": 1450,
       "top_ips": [
         {
           "ip_name": "가나디",
           "count": 338,
-          "share": "22.5%"
+          "share": "23.3%"
         },
         {
           "ip_name": "먼작귀/치이카와",
-          "count": 200,
-          "share": "13.3%"
+          "count": 210,
+          "share": "14.5%"
         },
         {
           "ip_name": "카카오프렌즈(춘식이)",
-          "count": 122,
-          "share": "8.1%"
+          "count": 112,
+          "share": "7.7%"
         },
         {
           "ip_name": "리락쿠마",
-          "count": 74,
-          "share": "4.9%"
+          "count": 70,
+          "share": "4.8%"
         },
         {
           "ip_name": "몬치치",
-          "count": 57,
-          "share": "3.8%"
+          "count": 54,
+          "share": "3.7%"
         },
         {
           "ip_name": "스폰지밥",
-          "count": 54,
+          "count": 52,
           "share": "3.6%"
         },
         {
           "ip_name": "카카오프렌즈(기타/통합)",
-          "count": 51,
-          "share": "3.4%"
+          "count": 43,
+          "share": "3.0%"
         },
         {
           "ip_name": "짱구",
-          "count": 43,
-          "share": "2.9%"
+          "count": 35,
+          "share": "2.4%"
         },
         {
           "ip_name": "실바니안패밀리",
-          "count": 29,
-          "share": "1.9%"
+          "count": 30,
+          "share": "2.1%"
         },
         {
           "ip_name": "카카오프렌즈(라이언)",
-          "count": 29,
+          "count": 28,
           "share": "1.9%"
         }
       ],
@@ -263,6 +263,14 @@
           "price": "20,000원"
         },
         {
+          "product_id": "13261774",
+          "appearance_days": 29,
+          "product_name": "5872-실바니안 블라인드백 15차(아기 숲속요정) , 2,126",
+          "brand": "실바니안",
+          "character_ip": "실바니안패밀리",
+          "price": "13,800원"
+        },
+        {
           "product_id": "13261876",
           "appearance_days": 29,
           "product_name": "귀여운 선물 가나디 복조리 파우치 (귀여운/휴대용/다용도파우치/생일)",
@@ -273,7 +281,7 @@
         {
           "product_id": "14051995",
           "appearance_days": 29,
-          "product_name": "스폰지밥 근육빵빵 랜덤 키링 못생긴 인형 키링 선물 리뷰인증시 아아! , 5,207",
+          "product_name": "스폰지밥 근육빵빵 랜덤 키링 못생긴 인형 키링 선물 리뷰인증시 아아! , 5,314",
           "brand": "레토(생활)",
           "character_ip": "스폰지밥",
           "price": "8,900원"
@@ -281,73 +289,65 @@
         {
           "product_id": "14096676",
           "appearance_days": 29,
-          "product_name": "가나디 미니 피규어 탁상 시계 (데스크테리어/생일/친구/응원) , 5,077",
+          "product_name": "가나디 미니 피규어 탁상 시계 (데스크테리어/생일/친구/응원) , 5,102",
           "brand": "가나디",
           "character_ip": "가나디",
           "price": "14,800원"
-        },
-        {
-          "product_id": "14096838",
-          "appearance_days": 29,
-          "product_name": "가나디 마우스 손목 패드 (데스크테리어/생일/귀여운/우정/커플 선물)",
-          "brand": "가나디",
-          "character_ip": "가나디",
-          "price": "12,800원"
         }
       ]
     },
     "침구/패브릭": {
-      "total_records": 1500,
+      "total_records": 1450,
       "top_ips": [
         {
           "ip_name": "먼작귀/치이카와",
-          "count": 230,
-          "share": "15.3%"
+          "count": 236,
+          "share": "16.3%"
         },
         {
           "ip_name": "가나디",
-          "count": 156,
-          "share": "10.4%"
+          "count": 155,
+          "share": "10.7%"
         },
         {
           "ip_name": "리락쿠마",
-          "count": 85,
+          "count": 82,
           "share": "5.7%"
         },
         {
-          "ip_name": "산리오(기타/통합)",
-          "count": 71,
-          "share": "4.7%"
+          "ip_name": "카카오프렌즈(춘식이)",
+          "count": 67,
+          "share": "4.6%"
         },
         {
-          "ip_name": "카카오프렌즈(춘식이)",
-          "count": 70,
-          "share": "4.7%"
+          "ip_name": "산리오(기타/통합)",
+          "count": 66,
+          "share": "4.6%"
         },
         {
           "ip_name": "산리오(헬로키티)",
-          "count": 60,
+          "count": 58,
           "share": "4.0%"
         },
         {
           "ip_name": "산리오(한교동)",
-          "count": 40,
+          "count": 39,
           "share": "2.7%"
         },
         {
-          "ip_name": "짱구",
-          "count": 29,
-          "share": "1.9%"
+          "ip_name": "빵빵이",
+          "count": 26,
+          "share": "1.8%"
         },
         {
-          "ip_name": "빵빵이",
-          "count": 27,
+          "ip_name": "짱구",
+          "count": 26,
           "share": "1.8%"
         },
         {
           "ip_name": "카카오프렌즈(라이언)",
           "count": 26,
-          "share": "1.7%"
+          "share": "1.8%"
         }
       ],
       "steady_products": [
@@ -378,7 +378,7 @@
         {
           "product_id": "13808817",
           "appearance_days": 29,
-          "product_name": "생일/기념일선물추천 리락쿠마반달대쿠션 4종옵션 택1 알러지케어원단 캐릭터 침구 기념일 선물 , 7,653",
+          "product_name": "생일/기념일선물추천 리락쿠마반달대쿠션 4종옵션 택1 알러지케어원단 캐릭터 침구 기념일 선물 , 7,667",
           "brand": "캐릭터침구",
           "character_ip": "리락쿠마",
           "price": "29,900원"
@@ -394,22 +394,22 @@
       ]
     },
     "주방/식기": {
-      "total_records": 1500,
+      "total_records": 1450,
       "top_ips": [
         {
           "ip_name": "산리오(기타/통합)",
-          "count": 65,
-          "share": "4.3%"
+          "count": 64,
+          "share": "4.4%"
         },
         {
           "ip_name": "리락쿠마",
-          "count": 45,
+          "count": 44,
           "share": "3.0%"
         },
         {
           "ip_name": "가나디",
-          "count": 37,
-          "share": "2.5%"
+          "count": 35,
+          "share": "2.4%"
         },
         {
           "ip_name": "먼작귀/치이카와",
@@ -424,22 +424,22 @@
         {
           "ip_name": "산리오(포차코)",
           "count": 26,
-          "share": "1.7%"
+          "share": "1.8%"
         },
         {
           "ip_name": "산리오(헬로키티)",
-          "count": 21,
-          "share": "1.4%"
+          "count": 22,
+          "share": "1.5%"
         },
         {
           "ip_name": "산리오(폼폼푸린)",
           "count": 17,
-          "share": "1.1%"
+          "share": "1.2%"
         },
         {
           "ip_name": "카카오프렌즈(춘식이)",
-          "count": 15,
-          "share": "1.0%"
+          "count": 12,
+          "share": "0.8%"
         },
         {
           "ip_name": "산리오(시나모롤)",
@@ -458,7 +458,7 @@
         },
         {
           "product_id": "12820960",
-          "appearance_days": 23,
+          "appearance_days": 22,
           "product_name": "가나디 페이스 머그 (자취/생일/홈카페/집들이/응원선물)",
           "brand": "캐릭터주방",
           "character_ip": "가나디",
@@ -467,15 +467,15 @@
         {
           "product_id": "12455527",
           "appearance_days": 21,
-          "product_name": "생일에는 정품이지 산리오 한교동 도자기 시리얼볼 요거트볼 예쁜 그릇 컵 자취 생일 집들이 행운 직장동료 가벼운 홈카페 밥그릇",
+          "product_name": "선물은 정품이지 산리오 한교동 도자기 시리얼볼 요거트볼 예쁜 그릇 컵 자취 생일 교동이 집들이 행운 직장동료 가벼운 홈카페 밥그릇",
           "brand": "알럽하우스",
           "character_ip": "산리오(한교동), 산리오(기타/통합)",
-          "price": "13,800원"
+          "price": "14,800원"
         },
         {
           "product_id": "10626781",
           "appearance_days": 19,
-          "product_name": "자취/집들이선물 [보퀴진] 산리오 헬로키티 빈티지 1인식기 머그컵 집들이 홈카페 세트 7% , 8,354",
+          "product_name": "자취/집들이선물 [보퀴진] 산리오 헬로키티 빈티지 1인식기 머그컵 집들이 홈카페 세트 7% , 8,407",
           "brand": "보퀴진",
           "character_ip": "산리오(헬로키티), 산리오(기타/통합)",
           "price": "23,900원"
@@ -483,7 +483,7 @@
         {
           "product_id": "12014190",
           "appearance_days": 15,
-          "product_name": "댕귀욥 릴팡 먼작귀 이지스텍 라면기 , 2,451",
+          "product_name": "댕귀욥 릴팡 먼작귀 이지스텍 라면기 , 2,609",
           "brand": "릴팡 캐릭터",
           "character_ip": "먼작귀/치이카와",
           "price": "14,000원"

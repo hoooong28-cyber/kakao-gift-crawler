@@ -1,22 +1,22 @@
 {
   "period_days": 7,
   "observed_days": 7,
-  "start_date": "20261016",
-  "end_date": "20261022",
-  "period_label": "최근 7일 (20261016 ~ 20261022) · 수집 7일",
+  "start_date": "20261017",
+  "end_date": "20261023",
+  "period_label": "최근 7일 (20261017 ~ 20261023) · 수집 7일",
   "categories": {
     "전체": {
       "total_records": 1400,
       "top_ips": [
         {
           "ip_name": "먼작귀/치이카와",
-          "count": 231,
-          "share": "16.5%"
+          "count": 237,
+          "share": "16.9%"
         },
         {
           "ip_name": "가나디",
-          "count": 152,
-          "share": "10.9%"
+          "count": 147,
+          "share": "10.5%"
         },
         {
           "ip_name": "카카오프렌즈(춘식이)",
@@ -30,13 +30,13 @@
         },
         {
           "ip_name": "산리오(헬로키티)",
-          "count": 27,
-          "share": "1.9%"
+          "count": 30,
+          "share": "2.1%"
         },
         {
           "ip_name": "산리오(기타/통합)",
-          "count": 25,
-          "share": "1.8%"
+          "count": 26,
+          "share": "1.9%"
         },
         {
           "ip_name": "산리오(한교동)",
@@ -61,17 +61,9 @@
       ],
       "steady_products": [
         {
-          "product_id": "10089432",
-          "appearance_days": 7,
-          "product_name": "직장동료/친구선물 먼작귀 메모리폼 방석 40x40cm 치이카와 가르마 캐릭터 굿즈 바른자세 메모리폼 거실 쇼파 의자 학교 학생 사무실 허리 , 1,668",
-          "brand": "캐릭터침구",
-          "character_ip": "먼작귀/치이카와",
-          "price": "19,900원"
-        },
-        {
           "product_id": "10782325",
           "appearance_days": 7,
-          "product_name": "한교동 응원선물 산리오캐릭터즈 한교동 바디필로우 퍼니 + 한교동 테이블매트 20% , 6,102",
+          "product_name": "한교동 응원선물 산리오캐릭터즈 한교동 바디필로우 퍼니 + 한교동 테이블매트 20% , 6,111",
           "brand": "캐릭터침구",
           "character_ip": "산리오(한교동), 산리오(기타/통합)",
           "price": "31,000원"
@@ -79,7 +71,7 @@
         {
           "product_id": "10801580",
           "appearance_days": 7,
-          "product_name": "학교/사무실담요추천 먼작귀 해피스커트담요 125x85 집순이 극세사 블랭킷 차량용 사무실 캠핑 차박 무릎담요 , 2,359",
+          "product_name": "학교/사무실담요추천 먼작귀 해피스커트담요 125x85 집순이 극세사 블랭킷 차량용 사무실 캠핑 차박 무릎담요 , 2,418",
           "brand": "캐릭터침구",
           "character_ip": "먼작귀/치이카와",
           "price": "19,900원"
@@ -99,6 +91,14 @@
           "brand": "캐릭터침구",
           "character_ip": "가나디",
           "price": "34,800원"
+        },
+        {
+          "product_id": "12017600",
+          "appearance_days": 7,
+          "product_name": "먼작귀 치이카와 페이스 에폭시 그립 톡 스마트톡 귀여운 캐릭터 , 2,078",
+          "brand": "먼작귀(치이카와)",
+          "character_ip": "먼작귀/치이카와",
+          "price": "9,800원"
         }
       ]
     },
@@ -107,28 +107,33 @@
       "top_ips": [
         {
           "ip_name": "먼작귀/치이카와",
-          "count": 57,
-          "share": "16.3%"
+          "count": 63,
+          "share": "18.0%"
         },
         {
           "ip_name": "가나디",
-          "count": 29,
-          "share": "8.3%"
+          "count": 27,
+          "share": "7.7%"
         },
         {
           "ip_name": "리락쿠마",
-          "count": 8,
-          "share": "2.3%"
+          "count": 9,
+          "share": "2.6%"
         },
         {
           "ip_name": "산리오(헬로키티)",
-          "count": 4,
-          "share": "1.1%"
+          "count": 5,
+          "share": "1.4%"
         },
         {
           "ip_name": "라인프렌즈/BT21",
-          "count": 3,
-          "share": "0.9%"
+          "count": 2,
+          "share": "0.6%"
+        },
+        {
+          "ip_name": "산리오(기타/통합)",
+          "count": 1,
+          "share": "0.3%"
         }
       ],
       "steady_products": [
@@ -143,7 +148,7 @@
         {
           "product_id": "12319916",
           "appearance_days": 7,
-          "product_name": "친구/직장동료선물 11월 중순 재입고 - 먼작귀 온천가습기 미니가습기 USB 탁상용 사무실 캐릭터 가습기 , 6,777",
+          "product_name": "친구/직장동료선물 11월 중순 재입고 - 먼작귀 온천가습기 미니가습기 USB 탁상용 사무실 캐릭터 가습기 , 7,002",
           "brand": "먼작귀(팬시)",
           "character_ip": "먼작귀/치이카와",
           "price": "35,000원"
@@ -159,7 +164,7 @@
         {
           "product_id": "13881428",
           "appearance_days": 7,
-          "product_name": "먼작귀 치이카와 헤어브러쉬 캐릭터 머리빗 , 6,085",
+          "product_name": "먼작귀 치이카와 헤어브러쉬 캐릭터 머리빗 , 6,246",
           "brand": "이젠돌스",
           "character_ip": "먼작귀/치이카와",
           "price": "11,900원"
@@ -167,7 +172,7 @@
         {
           "product_id": "14465253",
           "appearance_days": 7,
-          "product_name": "(11월 중 재입고) 먼작귀 스트레스볼 키링 3종 치이카와 가르마 하치와레 우사기 토끼 , 8,215",
+          "product_name": "(11월 중 재입고) 먼작귀 스트레스볼 키링 3종 치이카와 가르마 하치와레 우사기 토끼 , 9,029",
           "brand": "먼작귀(팬시)",
           "character_ip": "먼작귀/치이카와",
           "price": "12,000원"
@@ -179,13 +184,13 @@
       "top_ips": [
         {
           "ip_name": "먼작귀/치이카와",
-          "count": 96,
-          "share": "27.4%"
+          "count": 95,
+          "share": "27.1%"
         },
         {
           "ip_name": "가나디",
-          "count": 82,
-          "share": "23.4%"
+          "count": 81,
+          "share": "23.1%"
         },
         {
           "ip_name": "카카오프렌즈(춘식이)",
@@ -199,13 +204,13 @@
         },
         {
           "ip_name": "스폰지밥",
-          "count": 12,
-          "share": "3.4%"
+          "count": 11,
+          "share": "3.1%"
         },
         {
           "ip_name": "리락쿠마",
-          "count": 10,
-          "share": "2.9%"
+          "count": 9,
+          "share": "2.6%"
         },
         {
           "ip_name": "실바니안패밀리",
@@ -240,7 +245,7 @@
         {
           "product_id": "12017600",
           "appearance_days": 7,
-          "product_name": "먼작귀 치이카와 페이스 에폭시 그립 톡 스마트톡 귀여운 캐릭터 , 2,042",
+          "product_name": "먼작귀 치이카와 페이스 에폭시 그립 톡 스마트톡 귀여운 캐릭터 , 2,078",
           "brand": "먼작귀(치이카와)",
           "character_ip": "먼작귀/치이카와",
           "price": "9,800원"
@@ -248,7 +253,7 @@
         {
           "product_id": "12017607",
           "appearance_days": 7,
-          "product_name": "먼작귀 맥세이프 에폭시 그립 톡 스마트톡 거치대 치이카와, 하치와레, 우사기 , 3,687",
+          "product_name": "먼작귀 맥세이프 에폭시 그립 톡 스마트톡 거치대 치이카와, 하치와레, 우사기 , 3,710",
           "brand": "먼작귀(치이카와)",
           "character_ip": "먼작귀/치이카와",
           "price": "13,900원"
@@ -256,7 +261,7 @@
         {
           "product_id": "12319916",
           "appearance_days": 7,
-          "product_name": "친구/직장동료선물 11월 중순 재입고 - 먼작귀 온천가습기 미니가습기 USB 탁상용 사무실 캐릭터 가습기 , 6,777",
+          "product_name": "친구/직장동료선물 11월 중순 재입고 - 먼작귀 온천가습기 미니가습기 USB 탁상용 사무실 캐릭터 가습기 , 7,002",
           "brand": "먼작귀(팬시)",
           "character_ip": "먼작귀/치이카와",
           "price": "35,000원"
@@ -264,7 +269,7 @@
         {
           "product_id": "13261774",
           "appearance_days": 7,
-          "product_name": "5872-실바니안 블라인드백 15차(아기 숲속요정) , 2,072",
+          "product_name": "5872-실바니안 블라인드백 15차(아기 숲속요정) , 2,126",
           "brand": "실바니안",
           "character_ip": "실바니안패밀리",
           "price": "13,800원"
@@ -276,18 +281,18 @@
       "top_ips": [
         {
           "ip_name": "먼작귀/치이카와",
-          "count": 71,
-          "share": "20.3%"
+          "count": 72,
+          "share": "20.6%"
         },
         {
           "ip_name": "가나디",
-          "count": 32,
-          "share": "9.1%"
+          "count": 31,
+          "share": "8.9%"
         },
         {
           "ip_name": "산리오(기타/통합)",
-          "count": 17,
-          "share": "4.9%"
+          "count": 16,
+          "share": "4.6%"
         },
         {
           "ip_name": "리락쿠마",
@@ -300,19 +305,14 @@
           "share": "4.3%"
         },
         {
-          "ip_name": "산리오(한교동)",
-          "count": 12,
-          "share": "3.4%"
-        },
-        {
           "ip_name": "산리오(헬로키티)",
           "count": 12,
           "share": "3.4%"
         },
         {
-          "ip_name": "호빵맨",
-          "count": 8,
-          "share": "2.3%"
+          "ip_name": "산리오(한교동)",
+          "count": 11,
+          "share": "3.1%"
         },
         {
           "ip_name": "잔망루피",
@@ -323,21 +323,18 @@
           "ip_name": "카카오프렌즈(라이언)",
           "count": 7,
           "share": "2.0%"
+        },
+        {
+          "ip_name": "카카오프렌즈(어피치)",
+          "count": 7,
+          "share": "2.0%"
         }
       ],
       "steady_products": [
         {
-          "product_id": "10089432",
-          "appearance_days": 7,
-          "product_name": "직장동료/친구선물 먼작귀 메모리폼 방석 40x40cm 치이카와 가르마 캐릭터 굿즈 바른자세 메모리폼 거실 쇼파 의자 학교 학생 사무실 허리 , 1,668",
-          "brand": "캐릭터침구",
-          "character_ip": "먼작귀/치이카와",
-          "price": "19,900원"
-        },
-        {
           "product_id": "10782325",
           "appearance_days": 7,
-          "product_name": "한교동 응원선물 산리오캐릭터즈 한교동 바디필로우 퍼니 + 한교동 테이블매트 20% , 6,102",
+          "product_name": "한교동 응원선물 산리오캐릭터즈 한교동 바디필로우 퍼니 + 한교동 테이블매트 20% , 6,111",
           "brand": "캐릭터침구",
           "character_ip": "산리오(한교동), 산리오(기타/통합)",
           "price": "31,000원"
@@ -345,7 +342,7 @@
         {
           "product_id": "10801580",
           "appearance_days": 7,
-          "product_name": "학교/사무실담요추천 먼작귀 해피스커트담요 125x85 집순이 극세사 블랭킷 차량용 사무실 캠핑 차박 무릎담요 , 2,359",
+          "product_name": "학교/사무실담요추천 먼작귀 해피스커트담요 125x85 집순이 극세사 블랭킷 차량용 사무실 캠핑 차박 무릎담요 , 2,418",
           "brand": "캐릭터침구",
           "character_ip": "먼작귀/치이카와",
           "price": "19,900원"
@@ -361,7 +358,15 @@
         {
           "product_id": "12320574",
           "appearance_days": 7,
-          "product_name": "\"생일/기념일선물\" 먼작귀 치이카와패턴담요 양털 극세사 무릎담요 포근한 겨울 보온 소프트 블랭킷 , 1,980",
+          "product_name": "\"생일/기념일선물\" 먼작귀 치이카와패턴담요 양털 극세사 무릎담요 포근한 겨울 보온 소프트 블랭킷 , 2,191",
+          "brand": "캐릭터침구",
+          "character_ip": "먼작귀/치이카와",
+          "price": "27,900원"
+        },
+        {
+          "product_id": "12320575",
+          "appearance_days": 7,
+          "product_name": "\"생일/기념일선물\" 먼작귀 너굴쉐르파담요 양털 극세사 무릎담요 포근한 겨울 보온 소프트 블랭킷 , 4,557",
           "brand": "캐릭터침구",
           "character_ip": "먼작귀/치이카와",
           "price": "27,900원"
@@ -372,17 +377,17 @@
       "total_records": 350,
       "top_ips": [
         {
-          "ip_name": "가나디",
-          "count": 9,
-          "share": "2.6%"
-        },
-        {
           "ip_name": "리락쿠마",
           "count": 9,
           "share": "2.6%"
         },
         {
           "ip_name": "산리오(기타/통합)",
+          "count": 9,
+          "share": "2.6%"
+        },
+        {
+          "ip_name": "가나디",
           "count": 8,
           "share": "2.3%"
         },
@@ -393,16 +398,24 @@
         },
         {
           "ip_name": "산리오(한교동)",
-          "count": 6,
-          "share": "1.7%"
+          "count": 7,
+          "share": "2.0%"
         },
         {
           "ip_name": "산리오(헬로키티)",
-          "count": 6,
-          "share": "1.7%"
+          "count": 7,
+          "share": "2.0%"
         }
       ],
       "steady_products": [
+        {
+          "product_id": "12455527",
+          "appearance_days": 7,
+          "product_name": "선물은 정품이지 산리오 한교동 도자기 시리얼볼 요거트볼 예쁜 그릇 컵 자취 생일 교동이 집들이 행운 직장동료 가벼운 홈카페 밥그릇",
+          "brand": "알럽하우스",
+          "character_ip": "산리오(한교동), 산리오(기타/통합)",
+          "price": "14,800원"
+        },
         {
           "product_id": "12821252",
           "appearance_days": 7,
@@ -420,12 +433,12 @@
           "price": "17,150원"
         },
         {
-          "product_id": "12455527",
-          "appearance_days": 6,
-          "product_name": "생일에는 정품이지 산리오 한교동 도자기 시리얼볼 요거트볼 예쁜 그릇 컵 자취 생일 집들이 행운 직장동료 가벼운 홈카페 밥그릇",
-          "brand": "알럽하우스",
-          "character_ip": "산리오(한교동), 산리오(기타/통합)",
-          "price": "13,800원"
+          "product_id": "14385553",
+          "appearance_days": 5,
+          "product_name": "[단독] 레고트 X 헬로키티 루프 텀블러 핸디 700ml (웰니스,리차지) , 7,087",
+          "brand": "레고트",
+          "character_ip": "산리오(헬로키티)",
+          "price": "39,000원"
         },
         {
           "product_id": "14470383",
@@ -434,14 +447,6 @@
           "brand": "디자인핏",
           "character_ip": "먼작귀/치이카와",
           "price": "12,900원"
-        },
-        {
-          "product_id": "14385553",
-          "appearance_days": 4,
-          "product_name": "[단독] 레고트 X 헬로키티 루프 텀블러 핸디 700ml (웰니스,리차지) , 6,416",
-          "brand": "레고트",
-          "character_ip": "산리오(헬로키티)",
-          "price": "39,000원"
         }
       ]
     }
