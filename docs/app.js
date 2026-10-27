@@ -57,6 +57,15 @@ document.addEventListener('DOMContentLoaded', () => {
             return;
         }
 
+        const momentumTypeBtn = e.target.closest('#momentum-type-tabs .cat-tab');
+        if (momentumTypeBtn) {
+            document.querySelectorAll('#momentum-type-tabs .cat-tab').forEach(b => b.classList.remove('active'));
+            momentumTypeBtn.classList.add('active');
+            activeMomentumType = momentumTypeBtn.getAttribute('data-momentum');
+            renderPeriodInsights();
+            return;
+        }
+
         const tabBtn = e.target.closest('.cat-tab');
         if (!tabBtn) return;
 
@@ -129,6 +138,7 @@ document.addEventListener('DOMContentLoaded', () => {
     let monthlyInsightsData = {};
     let activePeriodType = 'weekly';
     let activePeriodCat = 'all';
+    let activeMomentumType = 'rising';
 
     async function loadIpNewsData() {
         try {
@@ -330,6 +340,96 @@ document.addEventListener('DOMContentLoaded', () => {
                 `).join('');
             }
         }
+
+        // 3. P4: IP Growth/Falling Momentum Cards with Evidence Products
+        const momentumContainer = document.getElementById('period-momentum-container');
+        if (momentumContainer) {
+            const momentum = catData.momentum || {};
+            const comparison = momentum.comparison || {};
+            const compSubtitle = document.getElementById('period-momentum-subtitle');
+            if (compSubtitle) {
+                compSubtitle.textContent = comparison.note || comparison.comparison_note || '직전 기간 대비 순위 가중 점수 변동 비교';
+            }
+
+            if (comparison.status === 'insufficient_data') {
+                momentumContainer.innerHTML = `
+                    <div style="padding:24px; text-align:center; background:rgba(239,68,68,0.06); border:1px dashed rgba(239,68,68,0.3); border-radius:8px; color:var(--text-muted);">
+                        <i class="fa-solid fa-triangle-exclamation" style="color:#EF4444; font-size:1.4rem; margin-bottom:8px; display:block;"></i>
+                        <strong style="color:var(--text-primary); font-size:0.95rem;">비교 데이터 부족으로 산출 불가</strong>
+                        <p style="margin-top:4px; font-size:0.85rem;">${periodText(comparison.note || comparison.comparison_note || '직전 기간 수집 데이터가 부족합니다.')}</p>
+                    </div>
+                `;
+            } else {
+                let items = [];
+                if (activeMomentumType === 'rising') items = momentum.rising_ips || [];
+                else if (activeMomentumType === 'new_entry') items = momentum.new_entry_ips || [];
+                else if (activeMomentumType === 'stable') items = momentum.stable_ips || [];
+                else if (activeMomentumType === 'falling') items = momentum.falling_ips || [];
+
+                if (!items || items.length === 0) {
+                    const labels = { rising: '급상승', new_entry: '관측상 신규', stable: '안정적 강세', falling: '하락세' };
+                    momentumContainer.innerHTML = `
+                        <p style="color:var(--text-muted); padding:24px; text-align:center;">해당 조건(${labels[activeMomentumType] || ''})에 부합하는 IP가 없습니다.</p>
+                    `;
+                } else {
+                    momentumContainer.innerHTML = `
+                        <div class="momentum-cards-grid">
+                            ${items.map((item, idx) => {
+                                const badgeColor = item.momentum_type === 'RISING' ? '#10B981' :
+                                                   item.momentum_type === 'NEW_ENTRY' ? '#F59E0B' :
+                                                   item.momentum_type === 'STABLE' ? '#3B82F6' : '#EF4444';
+                                const badgeBg = item.momentum_type === 'RISING' ? 'rgba(16,185,129,0.15)' :
+                                                item.momentum_type === 'NEW_ENTRY' ? 'rgba(245,158,11,0.15)' :
+                                                item.momentum_type === 'STABLE' ? 'rgba(59,130,246,0.15)' : 'rgba(239,68,68,0.15)';
+                                const scoreDeltaText = item.score_delta > 0 ? `+${item.score_delta}` : `${item.score_delta}`;
+                                const evidenceList = (item.evidence_products || []).slice(0, 2);
+
+                                return `
+                                    <div class="momentum-card">
+                                        <div class="momentum-card-header">
+                                            <div style="display:flex; align-items:center; gap:8px;">
+                                                <span class="momentum-badge" style="background:${badgeBg}; color:${badgeColor}; border:1px solid ${badgeColor}40;">
+                                                    ${periodText(item.momentum_badge || item.momentum_type)}
+                                                </span>
+                                                <strong class="momentum-ip-title">${idx + 1}. ${periodText(item.ip_name)}</strong>
+                                            </div>
+                                            <div style="text-align:right;">
+                                                <span style="font-weight:700; font-size:1.05rem; color:${badgeColor};">${periodText(item.growth_rate)}</span>
+                                                <div style="font-size:0.75rem; color:var(--text-muted);">점수변동: ${scoreDeltaText}p</div>
+                                            </div>
+                                        </div>
+                                        <div class="momentum-card-metrics">
+                                            <div class="momentum-metric-box">
+                                                <span class="metric-k">평균 순위점수</span>
+                                                <span class="metric-v" style="color:var(--accent-yellow);">${item.curr_score}점 <small style="color:var(--text-muted); font-size:0.75rem;">(이전 ${item.prev_score}점)</small></span>
+                                            </div>
+                                            <div class="momentum-metric-box">
+                                                <span class="metric-k">노출일수 / Top 10</span>
+                                                <span class="metric-v">${item.appearance_days}일 출현 / ${item.top10_count || 0}회</span>
+                                            </div>
+                                        </div>
+                                        ${evidenceList.length > 0 ? `
+                                            <div class="momentum-evidence-box">
+                                                <div class="evidence-title"><i class="fa-solid fa-bullseye"></i> 대표 견인 상품</div>
+                                                ${evidenceList.map(p => `
+                                                    <div class="evidence-product-item">
+                                                        <div class="evidence-product-name" title="${periodText(p.product_name)}">
+                                                            <span class="evidence-rank-pill">최고 ${p.best_rank ? p.best_rank + '위' : '-'}</span>
+                                                            <span style="color:var(--text-muted); font-size:0.78rem;">${periodText(p.brand)}</span> ${periodText(p.product_name)}
+                                                        </div>
+                                                        <div class="evidence-product-price">${periodText(p.price)}</div>
+                                                    </div>
+                                                `).join('')}
+                                            </div>
+                                        ` : ''}
+                                    </div>
+                                `;
+                            }).join('')}
+                        </div>
+                    `;
+                }
+            }
+        }
     }
 
     function renderDashboard() {
@@ -351,7 +451,7 @@ document.addEventListener('DOMContentLoaded', () => {
         document.getElementById('table-view-title').textContent = catLabelText;
         document.querySelectorAll('.cat-tab').forEach(button => {
             const cat = button.getAttribute('data-cat');
-            if (!cat || button.closest('#cat-tabs-period')) return;
+            if (!cat || button.closest('#cat-tabs-period') || button.closest('#momentum-type-tabs') || button.closest('#period-type-tabs')) return;
             const rows = cat === 'all' ? rawProductsData : rawProductsData.filter(p => (p.category || '리빙 전체') === cat);
             button.textContent = `${cat === 'all' ? '전체 통합' : cat.replace(' (IP핵심)', '')} (${rows.length}건)`;
             button.classList.toggle('active', cat === activeCategory);

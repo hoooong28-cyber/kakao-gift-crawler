@@ -222,6 +222,25 @@
                             <!-- Dynamic steady products list -->
                         </div>
                     </div>
+
+                    <!-- Card 3: P4 Momentum (Rising / Falling / Stable IP Cards & Evidence Products) -->
+                    <div class="card" style="padding: 20px; grid-column: 1 / -1; margin-top: 10px;">
+                        <div class="card-title" style="margin-bottom: 16px; display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 10px;">
+                            <div>
+                                <h3 style="margin-bottom: 4px;"><i class="fa-solid fa-chart-line highlight-cyan"></i> 직전 기간 대비 캐릭터 IP 성장·하락 모멘텀</h3>
+                                <span id="period-momentum-subtitle" style="font-size:0.85rem; color:var(--text-muted);">직전 동일 기간 대비 순위 가중 점수 및 노출 변동 비교</span>
+                            </div>
+                            <div class="category-tabs" id="momentum-type-tabs" style="font-size:0.85rem;">
+                                <button class="cat-tab active" data-momentum="rising"><i class="fa-solid fa-arrow-trend-up" style="color:#10B981;"></i> 급상승 IP</button>
+                                <button class="cat-tab" data-momentum="new_entry"><i class="fa-solid fa-sparkles" style="color:#F59E0B;"></i> 관측상 신규</button>
+                                <button class="cat-tab" data-momentum="stable"><i class="fa-solid fa-shield-halved" style="color:#3B82F6;"></i> 안정적 강세</button>
+                                <button class="cat-tab" data-momentum="falling"><i class="fa-solid fa-arrow-trend-down" style="color:#EF4444;"></i> 하락세 IP</button>
+                            </div>
+                        </div>
+                        <div id="period-momentum-container">
+                            <!-- Dynamic Momentum IP cards with evidence products -->
+                        </div>
+                    </div>
                 </div>
             </div>
 
