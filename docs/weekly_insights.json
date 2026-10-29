@@ -1,41 +1,41 @@
 {
   "period_days": 7,
   "observed_days": 7,
-  "start_date": "20261022",
-  "end_date": "20261028",
-  "period_label": "최근 7일 (20261022 ~ 20261028) · 수집 7일",
+  "start_date": "20261023",
+  "end_date": "20261029",
+  "period_label": "최근 7일 (20261023 ~ 20261029) · 수집 7일",
   "categories": {
     "전체": {
       "total_records": 1400,
       "top_ips": [
         {
           "ip_name": "먼작귀/치이카와",
-          "count": 258,
-          "share": "18.4%"
+          "count": 259,
+          "share": "18.5%"
         },
         {
           "ip_name": "가나디",
-          "count": 126,
-          "share": "9.0%"
+          "count": 135,
+          "share": "9.6%"
         },
         {
           "ip_name": "리락쿠마",
-          "count": 46,
-          "share": "3.3%"
+          "count": 44,
+          "share": "3.1%"
         },
         {
           "ip_name": "카카오프렌즈(기타/통합)",
-          "count": 37,
-          "share": "2.6%"
+          "count": 38,
+          "share": "2.7%"
         },
         {
           "ip_name": "산리오(헬로키티)",
-          "count": 30,
-          "share": "2.1%"
+          "count": 28,
+          "share": "2.0%"
         },
         {
           "ip_name": "카카오프렌즈(춘식이)",
-          "count": 27,
+          "count": 26,
           "share": "1.9%"
         },
         {
@@ -45,8 +45,8 @@
         },
         {
           "ip_name": "카카오프렌즈(라이언)",
-          "count": 11,
-          "share": "0.8%"
+          "count": 12,
+          "share": "0.9%"
         },
         {
           "ip_name": "카카오프렌즈(어피치)",
@@ -79,7 +79,7 @@
         {
           "product_id": "12014190",
           "appearance_days": 7,
-          "product_name": "댕귀욥 릴팡 먼작귀 이지스텍 라면기 , 3,278",
+          "product_name": "댕귀욥 릴팡 먼작귀 이지스텍 라면기 , 3,379",
           "brand": "릴팡 캐릭터",
           "character_ip": "먼작귀/치이카와",
           "price": "14,000원"
@@ -87,7 +87,7 @@
         {
           "product_id": "12319916",
           "appearance_days": 7,
-          "product_name": "친구/직장동료선물 11월 중순 재입고 - 먼작귀 온천가습기 미니가습기 USB 탁상용 사무실 캐릭터 가습기 , 7,932",
+          "product_name": "친구/직장동료선물 11월 중순 재입고 - 먼작귀 온천가습기 미니가습기 USB 탁상용 사무실 캐릭터 가습기 , 8,106",
           "brand": "먼작귀(팬시)",
           "character_ip": "먼작귀/치이카와",
           "price": "35,000원"
@@ -95,7 +95,7 @@
         {
           "product_id": "12320574",
           "appearance_days": 7,
-          "product_name": "\"생일/기념일선물\" 먼작귀 치이카와패턴담요 양털 극세사 무릎담요 포근한 겨울 보온 소프트 블랭킷 , 3,084",
+          "product_name": "\"생일/기념일선물\" 먼작귀 치이카와패턴담요 양털 극세사 무릎담요 포근한 겨울 보온 소프트 블랭킷 , 3,202",
           "brand": "캐릭터침구",
           "character_ip": "먼작귀/치이카와",
           "price": "27,900원"
@@ -107,18 +107,18 @@
       "top_ips": [
         {
           "ip_name": "먼작귀/치이카와",
-          "count": 77,
-          "share": "22.0%"
+          "count": 78,
+          "share": "22.3%"
         },
         {
           "ip_name": "가나디",
-          "count": 23,
-          "share": "6.6%"
+          "count": 29,
+          "share": "8.3%"
         },
         {
           "ip_name": "리락쿠마",
-          "count": 9,
-          "share": "2.6%"
+          "count": 8,
+          "share": "2.3%"
         },
         {
           "ip_name": "산리오(헬로키티)",
@@ -153,7 +153,7 @@
         {
           "product_id": "12319916",
           "appearance_days": 7,
-          "product_name": "친구/직장동료선물 11월 중순 재입고 - 먼작귀 온천가습기 미니가습기 USB 탁상용 사무실 캐릭터 가습기 , 7,932",
+          "product_name": "친구/직장동료선물 11월 중순 재입고 - 먼작귀 온천가습기 미니가습기 USB 탁상용 사무실 캐릭터 가습기 , 8,106",
           "brand": "먼작귀(팬시)",
           "character_ip": "먼작귀/치이카와",
           "price": "35,000원"
@@ -161,7 +161,7 @@
         {
           "product_id": "12320574",
           "appearance_days": 7,
-          "product_name": "\"생일/기념일선물\" 먼작귀 치이카와패턴담요 양털 극세사 무릎담요 포근한 겨울 보온 소프트 블랭킷 , 3,084",
+          "product_name": "\"생일/기념일선물\" 먼작귀 치이카와패턴담요 양털 극세사 무릎담요 포근한 겨울 보온 소프트 블랭킷 , 3,202",
           "brand": "캐릭터침구",
           "character_ip": "먼작귀/치이카와",
           "price": "27,900원"
@@ -169,7 +169,7 @@
         {
           "product_id": "13772143",
           "appearance_days": 7,
-          "product_name": "[단독] 리락쿠마 페이스 머그 텀블러 360ml 보온 보냉 캐릭터",
+          "product_name": "[단독] 리락쿠마 페이스 머그 텀블러 360ml 보온 보냉 캐릭터 포토리뷰 작성 시 커피",
           "brand": "캐릭터주방",
           "character_ip": "리락쿠마",
           "price": "24,500원"
@@ -189,23 +189,23 @@
       "top_ips": [
         {
           "ip_name": "먼작귀/치이카와",
-          "count": 102,
-          "share": "29.1%"
+          "count": 104,
+          "share": "29.7%"
         },
         {
           "ip_name": "가나디",
-          "count": 64,
-          "share": "18.3%"
+          "count": 63,
+          "share": "18.0%"
         },
         {
           "ip_name": "카카오프렌즈(기타/통합)",
-          "count": 33,
-          "share": "9.4%"
+          "count": 34,
+          "share": "9.7%"
         },
         {
           "ip_name": "카카오프렌즈(춘식이)",
-          "count": 13,
-          "share": "3.7%"
+          "count": 12,
+          "share": "3.4%"
         },
         {
           "ip_name": "리락쿠마",
@@ -218,7 +218,7 @@
           "share": "2.0%"
         },
         {
-          "ip_name": "스폰지밥",
+          "ip_name": "카카오프렌즈(라이언)",
           "count": 6,
           "share": "1.7%"
         },
@@ -228,7 +228,7 @@
           "share": "1.4%"
         },
         {
-          "ip_name": "카카오프렌즈(라이언)",
+          "ip_name": "스폰지밥",
           "count": 5,
           "share": "1.4%"
         },
@@ -250,7 +250,7 @@
         {
           "product_id": "12319916",
           "appearance_days": 7,
-          "product_name": "친구/직장동료선물 11월 중순 재입고 - 먼작귀 온천가습기 미니가습기 USB 탁상용 사무실 캐릭터 가습기 , 7,932",
+          "product_name": "친구/직장동료선물 11월 중순 재입고 - 먼작귀 온천가습기 미니가습기 USB 탁상용 사무실 캐릭터 가습기 , 8,106",
           "brand": "먼작귀(팬시)",
           "character_ip": "먼작귀/치이카와",
           "price": "35,000원"
@@ -258,7 +258,7 @@
         {
           "product_id": "13261774",
           "appearance_days": 7,
-          "product_name": "5872-실바니안 블라인드백 15차(아기 숲속요정) , 2,385",
+          "product_name": "5872-실바니안 블라인드백 15차(아기 숲속요정) , 2,451",
           "brand": "실바니안",
           "character_ip": "실바니안패밀리",
           "price": "13,800원"
@@ -274,7 +274,7 @@
         {
           "product_id": "13838069",
           "appearance_days": 7,
-          "product_name": "리락쿠마 조리개 파우치 4종 , 3,674",
+          "product_name": "리락쿠마 조리개 파우치 4종 , 3,757",
           "brand": "인형",
           "character_ip": "리락쿠마",
           "price": "8,800원"
@@ -286,18 +286,18 @@
       "top_ips": [
         {
           "ip_name": "먼작귀/치이카와",
-          "count": 71,
-          "share": "20.3%"
+          "count": 69,
+          "share": "19.7%"
         },
         {
           "ip_name": "가나디",
-          "count": 31,
-          "share": "8.9%"
+          "count": 34,
+          "share": "9.7%"
         },
         {
           "ip_name": "리락쿠마",
-          "count": 18,
-          "share": "5.1%"
+          "count": 17,
+          "share": "4.9%"
         },
         {
           "ip_name": "카카오프렌즈(춘식이)",
@@ -311,8 +311,8 @@
         },
         {
           "ip_name": "산리오(헬로키티)",
-          "count": 9,
-          "share": "2.6%"
+          "count": 8,
+          "share": "2.3%"
         },
         {
           "ip_name": "잔망루피",
@@ -347,7 +347,7 @@
         {
           "product_id": "12320574",
           "appearance_days": 7,
-          "product_name": "\"생일/기념일선물\" 먼작귀 치이카와패턴담요 양털 극세사 무릎담요 포근한 겨울 보온 소프트 블랭킷 , 3,084",
+          "product_name": "\"생일/기념일선물\" 먼작귀 치이카와패턴담요 양털 극세사 무릎담요 포근한 겨울 보온 소프트 블랭킷 , 3,202",
           "brand": "캐릭터침구",
           "character_ip": "먼작귀/치이카와",
           "price": "27,900원"
@@ -355,7 +355,7 @@
         {
           "product_id": "12320575",
           "appearance_days": 7,
-          "product_name": "\"생일/기념일선물\" 먼작귀 너굴쉐르파담요 양털 극세사 무릎담요 포근한 겨울 보온 소프트 블랭킷 , 4,878",
+          "product_name": "\"생일/기념일선물\" 먼작귀 너굴쉐르파담요 양털 극세사 무릎담요 포근한 겨울 보온 소프트 블랭킷 , 4,924",
           "brand": "캐릭터침구",
           "character_ip": "먼작귀/치이카와",
           "price": "27,900원"
@@ -393,8 +393,8 @@
         },
         {
           "ip_name": "가나디",
-          "count": 8,
-          "share": "2.3%"
+          "count": 9,
+          "share": "2.6%"
         },
         {
           "ip_name": "먼작귀/치이카와",
@@ -410,13 +410,18 @@
           "ip_name": "산리오(한교동)",
           "count": 3,
           "share": "0.9%"
+        },
+        {
+          "ip_name": "라인프렌즈/BT21",
+          "count": 1,
+          "share": "0.3%"
         }
       ],
       "steady_products": [
         {
           "product_id": "12014190",
           "appearance_days": 7,
-          "product_name": "댕귀욥 릴팡 먼작귀 이지스텍 라면기 , 3,278",
+          "product_name": "댕귀욥 릴팡 먼작귀 이지스텍 라면기 , 3,379",
           "brand": "릴팡 캐릭터",
           "character_ip": "먼작귀/치이카와",
           "price": "14,000원"
@@ -432,7 +437,7 @@
         {
           "product_id": "13772143",
           "appearance_days": 7,
-          "product_name": "[단독] 리락쿠마 페이스 머그 텀블러 360ml 보온 보냉 캐릭터",
+          "product_name": "[단독] 리락쿠마 페이스 머그 텀블러 360ml 보온 보냉 캐릭터 포토리뷰 작성 시 커피",
           "brand": "캐릭터주방",
           "character_ip": "리락쿠마",
           "price": "24,500원"
@@ -440,18 +445,18 @@
         {
           "product_id": "14385553",
           "appearance_days": 7,
-          "product_name": "[단독] 레고트 X 헬로키티 루프 텀블러 핸디 700ml (웰니스,리차지) , 9,756",
+          "product_name": "[단독] 레고트 X 헬로키티 루프 텀블러 핸디 700ml (웰니스,리차지) , 9,864",
           "brand": "레고트",
           "character_ip": "산리오(헬로키티)",
           "price": "39,000원"
         },
         {
-          "product_id": "14382794",
-          "appearance_days": 5,
-          "product_name": "[단독/선런칭] NEW 리락쿠마 대용량 텀블러 600ml 2종 택1 손잡이 빨대 보온 보냉",
-          "brand": "캐릭터주방",
-          "character_ip": "리락쿠마",
-          "price": "28,500원"
+          "product_id": "10626781",
+          "appearance_days": 4,
+          "product_name": "자취/집들이선물 [보퀴진] 산리오 헬로키티 빈티지 1인식기 머그컵 집들이 홈카페 세트 , 8,515",
+          "brand": "보퀴진",
+          "character_ip": "산리오(헬로키티), 산리오(기타/통합)",
+          "price": "25,900원"
         }
       ]
     }
