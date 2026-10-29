@@ -3524,57 +3524,132 @@
         {
           "brand": "최근 구매 106명",
           "product_name": "도로롱(니케) 단독 유령 변신머그 DORO 도로 공식 굿즈 승리의 여신 니케 할로윈 변온 머그컵",
-          "rank": 1,
-          "rank_delta": "NEW",
-          "category": "주방/식기",
           "price": "19,000원",
           "character_ip": "일반/비IP 상품",
           "url": "https://gift.kakao.com/product/14500965",
-          "is_new_entry": true
-        },
-        {
-          "brand": "도로롱(니케)",
-          "product_name": "단독 금속 책갈피 할로윈 레드후드 승리의 여신 니케 공식 굿즈",
-          "rank": 2,
           "rank_delta": "NEW",
-          "category": "팬시/문구/취미 (IP핵심)",
-          "price": "19,800원",
-          "character_ip": "일반/비IP 상품",
-          "url": "https://gift.kakao.com/product/14518698",
-          "is_new_entry": true
+          "is_new_entry": true,
+          "product_id": "14500965",
+          "rank": 1,
+          "category": "주방/식기",
+          "ranking_contexts": [
+            {
+              "category": "주방/식기",
+              "rank": 1,
+              "rank_delta": "NEW",
+              "is_new_entry": true
+            },
+            {
+              "category": "리빙 전체",
+              "rank": 7,
+              "rank_delta": "NEW",
+              "is_new_entry": true
+            }
+          ]
         },
         {
           "brand": "최근 구매 107명",
           "product_name": "도로롱(니케) 단독 후드 담요 DORO 도로 승리의 여신 니케 공식 굿즈 AGF 필수템 코스프레",
-          "rank": 2,
+          "price": "45,000원",
+          "character_ip": "일반/비IP 상품",
+          "url": "https://gift.kakao.com/product/14499237",
           "rank_delta": "NEW",
+          "is_new_entry": true,
+          "product_id": "14499237",
+          "rank": 2,
           "category": "침구/패브릭",
-          "price": "45,000원",
-          "character_ip": "일반/비IP 상품",
-          "url": "https://gift.kakao.com/product/14499237",
-          "is_new_entry": true
-        },
-        {
-          "brand": "최근 구매 107명",
-          "product_name": "도로롱(니케) 단독 후드 담요 DORO 도로 승리의 여신 니케 공식 굿즈 AGF 필수템 코스프레",
-          "rank": 3,
-          "rank_delta": "NEW",
-          "category": "리빙 전체",
-          "price": "45,000원",
-          "character_ip": "일반/비IP 상품",
-          "url": "https://gift.kakao.com/product/14499237",
-          "is_new_entry": true
+          "ranking_contexts": [
+            {
+              "category": "침구/패브릭",
+              "rank": 2,
+              "rank_delta": "NEW",
+              "is_new_entry": true
+            },
+            {
+              "category": "리빙 전체",
+              "rank": 3,
+              "rank_delta": "NEW",
+              "is_new_entry": true
+            }
+          ]
         },
         {
           "brand": "도로롱(니케)",
           "product_name": "단독 금속 책갈피 할로윈 레드후드 승리의 여신 니케 공식 굿즈",
-          "rank": 5,
-          "rank_delta": "NEW",
-          "category": "리빙 전체",
           "price": "19,800원",
           "character_ip": "일반/비IP 상품",
           "url": "https://gift.kakao.com/product/14518698",
-          "is_new_entry": true
+          "rank_delta": "NEW",
+          "is_new_entry": true,
+          "product_id": "14518698",
+          "rank": 2,
+          "category": "팬시/문구/취미 (IP핵심)",
+          "ranking_contexts": [
+            {
+              "category": "팬시/문구/취미 (IP핵심)",
+              "rank": 2,
+              "rank_delta": "NEW",
+              "is_new_entry": true
+            },
+            {
+              "category": "리빙 전체",
+              "rank": 5,
+              "rank_delta": "NEW",
+              "is_new_entry": true
+            }
+          ]
+        },
+        {
+          "brand": "도로롱(니케)",
+          "product_name": "단독 미니간판 LED 마그넷 1+1 DORO 도로 공식 굿즈 승리의 여신 니케 할로윈 2개 세트 냉장고 자석",
+          "price": "18,000원",
+          "character_ip": "일반/비IP 상품",
+          "url": "https://gift.kakao.com/product/14501115",
+          "rank_delta": "NEW",
+          "is_new_entry": true,
+          "product_id": "14501115",
+          "rank": 6,
+          "category": "팬시/문구/취미 (IP핵심)",
+          "ranking_contexts": [
+            {
+              "category": "팬시/문구/취미 (IP핵심)",
+              "rank": 6,
+              "rank_delta": "NEW",
+              "is_new_entry": true
+            },
+            {
+              "category": "리빙 전체",
+              "rank": 15,
+              "rank_delta": "NEW",
+              "is_new_entry": true
+            }
+          ]
+        },
+        {
+          "brand": "도로롱(니케)",
+          "product_name": "단독 유령 스탬프 DORO 도로 공식 굿즈 승리의 여신 니케 도장",
+          "price": "15,800원",
+          "character_ip": "일반/비IP 상품",
+          "url": "https://gift.kakao.com/product/14519193",
+          "rank_delta": "NEW",
+          "is_new_entry": true,
+          "product_id": "14519193",
+          "rank": 7,
+          "category": "팬시/문구/취미 (IP핵심)",
+          "ranking_contexts": [
+            {
+              "category": "팬시/문구/취미 (IP핵심)",
+              "rank": 7,
+              "rank_delta": "NEW",
+              "is_new_entry": true
+            },
+            {
+              "category": "리빙 전체",
+              "rank": 20,
+              "rank_delta": "NEW",
+              "is_new_entry": true
+            }
+          ]
         }
       ]
     },
@@ -3697,57 +3772,102 @@
         {
           "brand": "최근 구매 107명",
           "product_name": "도로롱(니케) 단독 후드 담요 DORO 도로 승리의 여신 니케 공식 굿즈 AGF 필수템 코스프레",
-          "rank": 3,
-          "rank_delta": "NEW",
-          "category": "리빙 전체",
           "price": "45,000원",
           "character_ip": "일반/비IP 상품",
           "url": "https://gift.kakao.com/product/14499237",
-          "is_new_entry": true
+          "rank_delta": "NEW",
+          "is_new_entry": true,
+          "product_id": "14499237",
+          "rank": 3,
+          "category": "리빙 전체",
+          "ranking_contexts": [
+            {
+              "category": "리빙 전체",
+              "rank": 3,
+              "rank_delta": "NEW",
+              "is_new_entry": true
+            }
+          ]
         },
         {
           "brand": "도로롱(니케)",
           "product_name": "단독 금속 책갈피 할로윈 레드후드 승리의 여신 니케 공식 굿즈",
-          "rank": 5,
-          "rank_delta": "NEW",
-          "category": "리빙 전체",
           "price": "19,800원",
           "character_ip": "일반/비IP 상품",
           "url": "https://gift.kakao.com/product/14518698",
-          "is_new_entry": true
+          "rank_delta": "NEW",
+          "is_new_entry": true,
+          "product_id": "14518698",
+          "rank": 5,
+          "category": "리빙 전체",
+          "ranking_contexts": [
+            {
+              "category": "리빙 전체",
+              "rank": 5,
+              "rank_delta": "NEW",
+              "is_new_entry": true
+            }
+          ]
         },
         {
           "brand": "최근 구매 106명",
           "product_name": "도로롱(니케) 단독 유령 변신머그 DORO 도로 공식 굿즈 승리의 여신 니케 할로윈 변온 머그컵",
-          "rank": 7,
-          "rank_delta": "NEW",
-          "category": "리빙 전체",
           "price": "19,000원",
           "character_ip": "일반/비IP 상품",
           "url": "https://gift.kakao.com/product/14500965",
-          "is_new_entry": true
+          "rank_delta": "NEW",
+          "is_new_entry": true,
+          "product_id": "14500965",
+          "rank": 7,
+          "category": "리빙 전체",
+          "ranking_contexts": [
+            {
+              "category": "리빙 전체",
+              "rank": 7,
+              "rank_delta": "NEW",
+              "is_new_entry": true
+            }
+          ]
         },
         {
           "brand": "도로롱(니케)",
           "product_name": "단독 미니간판 LED 마그넷 1+1 DORO 도로 공식 굿즈 승리의 여신 니케 할로윈 2개 세트 냉장고 자석",
-          "rank": 15,
-          "rank_delta": "NEW",
-          "category": "리빙 전체",
           "price": "18,000원",
           "character_ip": "일반/비IP 상품",
           "url": "https://gift.kakao.com/product/14501115",
-          "is_new_entry": true
+          "rank_delta": "NEW",
+          "is_new_entry": true,
+          "product_id": "14501115",
+          "rank": 15,
+          "category": "리빙 전체",
+          "ranking_contexts": [
+            {
+              "category": "리빙 전체",
+              "rank": 15,
+              "rank_delta": "NEW",
+              "is_new_entry": true
+            }
+          ]
         },
         {
           "brand": "도로롱(니케)",
           "product_name": "단독 유령 스탬프 DORO 도로 공식 굿즈 승리의 여신 니케 도장",
-          "rank": 20,
-          "rank_delta": "NEW",
-          "category": "리빙 전체",
           "price": "15,800원",
           "character_ip": "일반/비IP 상품",
           "url": "https://gift.kakao.com/product/14519193",
-          "is_new_entry": true
+          "rank_delta": "NEW",
+          "is_new_entry": true,
+          "product_id": "14519193",
+          "rank": 20,
+          "category": "리빙 전체",
+          "ranking_contexts": [
+            {
+              "category": "리빙 전체",
+              "rank": 20,
+              "rank_delta": "NEW",
+              "is_new_entry": true
+            }
+          ]
         }
       ]
     },
@@ -3867,57 +3987,102 @@
         {
           "brand": "도로롱(니케)",
           "product_name": "단독 금속 책갈피 할로윈 레드후드 승리의 여신 니케 공식 굿즈",
-          "rank": 2,
-          "rank_delta": "NEW",
-          "category": "팬시/문구/취미 (IP핵심)",
           "price": "19,800원",
           "character_ip": "일반/비IP 상품",
           "url": "https://gift.kakao.com/product/14518698",
-          "is_new_entry": true
+          "rank_delta": "NEW",
+          "is_new_entry": true,
+          "product_id": "14518698",
+          "rank": 2,
+          "category": "팬시/문구/취미 (IP핵심)",
+          "ranking_contexts": [
+            {
+              "category": "팬시/문구/취미 (IP핵심)",
+              "rank": 2,
+              "rank_delta": "NEW",
+              "is_new_entry": true
+            }
+          ]
         },
         {
           "brand": "도로롱(니케)",
           "product_name": "단독 미니간판 LED 마그넷 1+1 DORO 도로 공식 굿즈 승리의 여신 니케 할로윈 2개 세트 냉장고 자석",
-          "rank": 6,
-          "rank_delta": "NEW",
-          "category": "팬시/문구/취미 (IP핵심)",
           "price": "18,000원",
           "character_ip": "일반/비IP 상품",
           "url": "https://gift.kakao.com/product/14501115",
-          "is_new_entry": true
+          "rank_delta": "NEW",
+          "is_new_entry": true,
+          "product_id": "14501115",
+          "rank": 6,
+          "category": "팬시/문구/취미 (IP핵심)",
+          "ranking_contexts": [
+            {
+              "category": "팬시/문구/취미 (IP핵심)",
+              "rank": 6,
+              "rank_delta": "NEW",
+              "is_new_entry": true
+            }
+          ]
         },
         {
           "brand": "도로롱(니케)",
           "product_name": "단독 유령 스탬프 DORO 도로 공식 굿즈 승리의 여신 니케 도장",
-          "rank": 7,
-          "rank_delta": "NEW",
-          "category": "팬시/문구/취미 (IP핵심)",
           "price": "15,800원",
           "character_ip": "일반/비IP 상품",
           "url": "https://gift.kakao.com/product/14519193",
-          "is_new_entry": true
+          "rank_delta": "NEW",
+          "is_new_entry": true,
+          "product_id": "14519193",
+          "rank": 7,
+          "category": "팬시/문구/취미 (IP핵심)",
+          "ranking_contexts": [
+            {
+              "category": "팬시/문구/취미 (IP핵심)",
+              "rank": 7,
+              "rank_delta": "NEW",
+              "is_new_entry": true
+            }
+          ]
         },
         {
           "brand": "도로롱(니케)",
           "product_name": "단독 이모티콘 리무버블 스티커팩(9종 1set) DORO 도로 공식 굿즈 승리의 여신 니케 할로윈",
-          "rank": 14,
-          "rank_delta": "NEW",
-          "category": "팬시/문구/취미 (IP핵심)",
           "price": "9,000원",
           "character_ip": "일반/비IP 상품",
           "url": "https://gift.kakao.com/product/14501371",
-          "is_new_entry": true
+          "rank_delta": "NEW",
+          "is_new_entry": true,
+          "product_id": "14501371",
+          "rank": 14,
+          "category": "팬시/문구/취미 (IP핵심)",
+          "ranking_contexts": [
+            {
+              "category": "팬시/문구/취미 (IP핵심)",
+              "rank": 14,
+              "rank_delta": "NEW",
+              "is_new_entry": true
+            }
+          ]
         },
         {
           "brand": "도로롱(니케)",
           "product_name": "단독 디오라마 아크릴 스탠드 DORO 도로 공식 굿즈 승리의 여신 니케 할로윈 피규어",
-          "rank": 15,
-          "rank_delta": "NEW",
-          "category": "팬시/문구/취미 (IP핵심)",
           "price": "19,000원",
           "character_ip": "일반/비IP 상품",
           "url": "https://gift.kakao.com/product/14501088",
-          "is_new_entry": true
+          "rank_delta": "NEW",
+          "is_new_entry": true,
+          "product_id": "14501088",
+          "rank": 15,
+          "category": "팬시/문구/취미 (IP핵심)",
+          "ranking_contexts": [
+            {
+              "category": "팬시/문구/취미 (IP핵심)",
+              "rank": 15,
+              "rank_delta": "NEW",
+              "is_new_entry": true
+            }
+          ]
         }
       ]
     },
@@ -4039,57 +4204,102 @@
         {
           "brand": "최근 구매 107명",
           "product_name": "도로롱(니케) 단독 후드 담요 DORO 도로 승리의 여신 니케 공식 굿즈 AGF 필수템 코스프레",
-          "rank": 2,
-          "rank_delta": "NEW",
-          "category": "침구/패브릭",
           "price": "45,000원",
           "character_ip": "일반/비IP 상품",
           "url": "https://gift.kakao.com/product/14499237",
-          "is_new_entry": true
+          "rank_delta": "NEW",
+          "is_new_entry": true,
+          "product_id": "14499237",
+          "rank": 2,
+          "category": "침구/패브릭",
+          "ranking_contexts": [
+            {
+              "category": "침구/패브릭",
+              "rank": 2,
+              "rank_delta": "NEW",
+              "is_new_entry": true
+            }
+          ]
         },
         {
           "brand": "프로젝트슬립",
           "product_name": "여배우PICK \"양면안대\" 빅사이즈 수면안대 온열안대 눈찜질 아이마스크 귀마개 48% , 5,148",
-          "rank": 29,
-          "rank_delta": "NEW",
-          "category": "침구/패브릭",
           "price": "30,900원",
           "character_ip": "캐릭터/팬시-침구",
           "url": "https://gift.kakao.com/product/1290131",
-          "is_new_entry": true
+          "rank_delta": "NEW",
+          "is_new_entry": true,
+          "product_id": "1290131",
+          "rank": 29,
+          "category": "침구/패브릭",
+          "ranking_contexts": [
+            {
+              "category": "침구/패브릭",
+              "rank": 29,
+              "rank_delta": "NEW",
+              "is_new_entry": true
+            }
+          ]
         },
         {
           "brand": "말랑필로우",
           "product_name": "뭘보냥 안고자는 고양이 바디필로우 80cm 롱 쿠션 긴 베개 인형 쿠션 인테리어 모찌 추천 애착 대형 동물 선물 이상한 여자 친구 22% 리뷰인증시 커피 ! , 6,482",
-          "rank": 36,
-          "rank_delta": "NEW",
-          "category": "침구/패브릭",
           "price": "9,900원",
           "character_ip": "기타 캐릭터/팬시",
           "url": "https://gift.kakao.com/product/11546351",
-          "is_new_entry": true
+          "rank_delta": "NEW",
+          "is_new_entry": true,
+          "product_id": "11546351",
+          "rank": 36,
+          "category": "침구/패브릭",
+          "ranking_contexts": [
+            {
+              "category": "침구/패브릭",
+              "rank": 36,
+              "rank_delta": "NEW",
+              "is_new_entry": true
+            }
+          ]
         },
         {
           "brand": "오늘의귀여움",
           "product_name": "부실감자의 꿈나라 부실감자의 꿈나라로.. 페이스쿠션! 애착인형 모찌쿠션 자취선물 친구 연인 생일 소품 포근한 말랑 폭신 커플 , 1,725",
-          "rank": 37,
-          "rank_delta": "NEW",
-          "category": "침구/패브릭",
           "price": "15,900원",
           "character_ip": "기타 캐릭터/팬시",
           "url": "https://gift.kakao.com/product/12440455",
-          "is_new_entry": true
+          "rank_delta": "NEW",
+          "is_new_entry": true,
+          "product_id": "12440455",
+          "rank": 37,
+          "category": "침구/패브릭",
+          "ranking_contexts": [
+            {
+              "category": "침구/패브릭",
+              "rank": 37,
+              "rank_delta": "NEW",
+              "is_new_entry": true
+            }
+          ]
         },
         {
           "brand": "루시아이(침구)",
           "product_name": "취향 저격 선물이야 [생일/자취선물]3colors 뽀글이 곰돌이 후드 담요 입는 담요 망토 집순이 커플 양털 방콕 학생 공부 여자선물 , 9,317",
-          "rank": 39,
-          "rank_delta": "NEW",
-          "category": "침구/패브릭",
           "price": "13,900원",
           "character_ip": "일반/비IP 상품",
           "url": "https://gift.kakao.com/product/6660850",
-          "is_new_entry": true
+          "rank_delta": "NEW",
+          "is_new_entry": true,
+          "product_id": "6660850",
+          "rank": 39,
+          "category": "침구/패브릭",
+          "ranking_contexts": [
+            {
+              "category": "침구/패브릭",
+              "rank": 39,
+              "rank_delta": "NEW",
+              "is_new_entry": true
+            }
+          ]
         }
       ]
     },
@@ -4209,57 +4419,102 @@
         {
           "brand": "최근 구매 106명",
           "product_name": "도로롱(니케) 단독 유령 변신머그 DORO 도로 공식 굿즈 승리의 여신 니케 할로윈 변온 머그컵",
-          "rank": 1,
-          "rank_delta": "NEW",
-          "category": "주방/식기",
           "price": "19,000원",
           "character_ip": "일반/비IP 상품",
           "url": "https://gift.kakao.com/product/14500965",
-          "is_new_entry": true
+          "rank_delta": "NEW",
+          "is_new_entry": true,
+          "product_id": "14500965",
+          "rank": 1,
+          "category": "주방/식기",
+          "ranking_contexts": [
+            {
+              "category": "주방/식기",
+              "rank": 1,
+              "rank_delta": "NEW",
+              "is_new_entry": true
+            }
+          ]
         },
         {
           "brand": "데이즈룸",
           "product_name": "센스 있는 선물 [개별박스] 도요사사키 미스트 사케잔 3type 선물세트 집들이선물 포그 반투명 술잔 유리컵 , 1,362",
-          "rank": 29,
-          "rank_delta": "NEW",
-          "category": "주방/식기",
           "price": "22,900원",
           "character_ip": "일반/비IP 상품",
           "url": "https://gift.kakao.com/product/12591760",
-          "is_new_entry": true
+          "rank_delta": "NEW",
+          "is_new_entry": true,
+          "product_id": "12591760",
+          "rank": 29,
+          "category": "주방/식기",
+          "ranking_contexts": [
+            {
+              "category": "주방/식기",
+              "rank": 29,
+              "rank_delta": "NEW",
+              "is_new_entry": true
+            }
+          ]
         },
         {
           "brand": "타블도트",
           "product_name": "1인 브런치 홈세트 [] 슬로우 3단 머그 홈카페 세트 3P 5color",
-          "rank": 34,
-          "rank_delta": "NEW",
-          "category": "주방/식기",
           "price": "43,900원",
           "character_ip": "일반/비IP 상품",
           "url": "https://gift.kakao.com/product/11413779",
-          "is_new_entry": true
+          "rank_delta": "NEW",
+          "is_new_entry": true,
+          "product_id": "11413779",
+          "rank": 34,
+          "category": "주방/식기",
+          "ranking_contexts": [
+            {
+              "category": "주방/식기",
+              "rank": 34,
+              "rank_delta": "NEW",
+              "is_new_entry": true
+            }
+          ]
         },
         {
           "brand": "타블도트",
           "product_name": "기분좋은 선물 [] 타블도트 쿠쿠 레트로 접시+글라스컵 세트 8type , 5,805",
-          "rank": 37,
-          "rank_delta": "NEW",
-          "category": "주방/식기",
           "price": "24,400원",
           "character_ip": "일반/비IP 상품",
           "url": "https://gift.kakao.com/product/11434780",
-          "is_new_entry": true
+          "rank_delta": "NEW",
+          "is_new_entry": true,
+          "product_id": "11434780",
+          "rank": 37,
+          "category": "주방/식기",
+          "ranking_contexts": [
+            {
+              "category": "주방/식기",
+              "rank": 37,
+              "rank_delta": "NEW",
+              "is_new_entry": true
+            }
+          ]
         },
         {
           "brand": "알라바스터",
           "product_name": "[쇼핑백]알라바스터 접시 21cm [색상선택 가능] , 6,560",
-          "rank": 38,
-          "rank_delta": "NEW",
-          "category": "주방/식기",
           "price": "26,000원",
           "character_ip": "일반/비IP 상품",
           "url": "https://gift.kakao.com/product/11344307",
-          "is_new_entry": true
+          "rank_delta": "NEW",
+          "is_new_entry": true,
+          "product_id": "11344307",
+          "rank": 38,
+          "category": "주방/식기",
+          "ranking_contexts": [
+            {
+              "category": "주방/식기",
+              "rank": 38,
+              "rank_delta": "NEW",
+              "is_new_entry": true
+            }
+          ]
         }
       ]
     }

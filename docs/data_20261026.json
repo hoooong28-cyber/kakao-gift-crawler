@@ -3524,57 +3524,132 @@
         {
           "brand": "오늘의귀여움",
           "product_name": "민음사 X 부실감자 2027 명심보감 주간달력 엽서형 한정수량 시즌그리팅 캘린더",
-          "rank": 1,
+          "price": "25,000원",
+          "character_ip": "일반/비IP 상품",
+          "url": "https://gift.kakao.com/product/14485007",
           "rank_delta": "NEW",
+          "is_new_entry": true,
+          "product_id": "14485007",
+          "rank": 1,
           "category": "리빙 전체",
-          "price": "25,000원",
-          "character_ip": "일반/비IP 상품",
-          "url": "https://gift.kakao.com/product/14485007",
-          "is_new_entry": true
-        },
-        {
-          "brand": "오늘의귀여움",
-          "product_name": "민음사 X 부실감자 2027 명심보감 주간달력 엽서형 한정수량 시즌그리팅 캘린더",
-          "rank": 1,
-          "rank_delta": "NEW",
-          "category": "팬시/문구/취미 (IP핵심)",
-          "price": "25,000원",
-          "character_ip": "일반/비IP 상품",
-          "url": "https://gift.kakao.com/product/14485007",
-          "is_new_entry": true
+          "ranking_contexts": [
+            {
+              "category": "리빙 전체",
+              "rank": 1,
+              "rank_delta": "NEW",
+              "is_new_entry": true
+            },
+            {
+              "category": "팬시/문구/취미 (IP핵심)",
+              "rank": 1,
+              "rank_delta": "NEW",
+              "is_new_entry": true
+            }
+          ]
         },
         {
           "brand": "오늘의귀여움",
           "product_name": "민음사 X 오늘의귀여움 깜자&낭고 북커버+북마크 공예가제작 독서용품 선물",
-          "rank": 2,
+          "price": "39,900원",
+          "character_ip": "일반/비IP 상품",
+          "url": "https://gift.kakao.com/product/14485029",
           "rank_delta": "NEW",
+          "is_new_entry": true,
+          "product_id": "14485029",
+          "rank": 2,
           "category": "리빙 전체",
-          "price": "39,900원",
-          "character_ip": "일반/비IP 상품",
-          "url": "https://gift.kakao.com/product/14485029",
-          "is_new_entry": true
-        },
-        {
-          "brand": "오늘의귀여움",
-          "product_name": "민음사 X 오늘의귀여움 깜자&낭고 북커버+북마크 공예가제작 독서용품 선물",
-          "rank": 2,
-          "rank_delta": "NEW",
-          "category": "팬시/문구/취미 (IP핵심)",
-          "price": "39,900원",
-          "character_ip": "일반/비IP 상품",
-          "url": "https://gift.kakao.com/product/14485029",
-          "is_new_entry": true
+          "ranking_contexts": [
+            {
+              "category": "리빙 전체",
+              "rank": 2,
+              "rank_delta": "NEW",
+              "is_new_entry": true
+            },
+            {
+              "category": "팬시/문구/취미 (IP핵심)",
+              "rank": 2,
+              "rank_delta": "NEW",
+              "is_new_entry": true
+            }
+          ]
         },
         {
           "brand": "오늘의귀여움",
           "product_name": "민음사 X 깜자 사랑에 대하여 세트(패러렐도서+무지노트+도무송엽서) 세계문학전집",
-          "rank": 4,
-          "rank_delta": "NEW",
-          "category": "팬시/문구/취미 (IP핵심)",
           "price": "21,900원",
           "character_ip": "카카오프렌즈(기타/통합)",
           "url": "https://gift.kakao.com/product/14484990",
-          "is_new_entry": true
+          "rank_delta": "NEW",
+          "is_new_entry": true,
+          "product_id": "14484990",
+          "rank": 4,
+          "category": "팬시/문구/취미 (IP핵심)",
+          "ranking_contexts": [
+            {
+              "category": "팬시/문구/취미 (IP핵심)",
+              "rank": 4,
+              "rank_delta": "NEW",
+              "is_new_entry": true
+            },
+            {
+              "category": "리빙 전체",
+              "rank": 7,
+              "rank_delta": "NEW",
+              "is_new_entry": true
+            }
+          ]
+        },
+        {
+          "brand": "오늘의귀여움",
+          "product_name": "(1+1) 민음사 머그컵 2개 세계문학전집 선물 집들이 홈카페 사무실 커플선물 독서",
+          "price": "26,900원",
+          "character_ip": "일반/비IP 상품",
+          "url": "https://gift.kakao.com/product/14484886",
+          "rank_delta": "NEW",
+          "is_new_entry": true,
+          "product_id": "14484886",
+          "rank": 5,
+          "category": "주방/식기",
+          "ranking_contexts": [
+            {
+              "category": "주방/식기",
+              "rank": 5,
+              "rank_delta": "NEW",
+              "is_new_entry": true
+            },
+            {
+              "category": "리빙 전체",
+              "rank": 15,
+              "rank_delta": "NEW",
+              "is_new_entry": true
+            }
+          ]
+        },
+        {
+          "brand": "오늘의귀여움",
+          "product_name": "민음사 X 몰티즈 크리스마스 캐럴 세트(패러렐도서+무지노트+도무송엽서) 세계문학전집",
+          "price": "20,900원",
+          "character_ip": "카카오프렌즈(기타/통합)",
+          "url": "https://gift.kakao.com/product/14484995",
+          "rank_delta": "NEW",
+          "is_new_entry": true,
+          "product_id": "14484995",
+          "rank": 6,
+          "category": "팬시/문구/취미 (IP핵심)",
+          "ranking_contexts": [
+            {
+              "category": "팬시/문구/취미 (IP핵심)",
+              "rank": 6,
+              "rank_delta": "NEW",
+              "is_new_entry": true
+            },
+            {
+              "category": "리빙 전체",
+              "rank": 20,
+              "rank_delta": "NEW",
+              "is_new_entry": true
+            }
+          ]
         }
       ]
     },
@@ -3696,57 +3771,102 @@
         {
           "brand": "오늘의귀여움",
           "product_name": "민음사 X 부실감자 2027 명심보감 주간달력 엽서형 한정수량 시즌그리팅 캘린더",
-          "rank": 1,
-          "rank_delta": "NEW",
-          "category": "리빙 전체",
           "price": "25,000원",
           "character_ip": "일반/비IP 상품",
           "url": "https://gift.kakao.com/product/14485007",
-          "is_new_entry": true
+          "rank_delta": "NEW",
+          "is_new_entry": true,
+          "product_id": "14485007",
+          "rank": 1,
+          "category": "리빙 전체",
+          "ranking_contexts": [
+            {
+              "category": "리빙 전체",
+              "rank": 1,
+              "rank_delta": "NEW",
+              "is_new_entry": true
+            }
+          ]
         },
         {
           "brand": "오늘의귀여움",
           "product_name": "민음사 X 오늘의귀여움 깜자&낭고 북커버+북마크 공예가제작 독서용품 선물",
-          "rank": 2,
-          "rank_delta": "NEW",
-          "category": "리빙 전체",
           "price": "39,900원",
           "character_ip": "일반/비IP 상품",
           "url": "https://gift.kakao.com/product/14485029",
-          "is_new_entry": true
+          "rank_delta": "NEW",
+          "is_new_entry": true,
+          "product_id": "14485029",
+          "rank": 2,
+          "category": "리빙 전체",
+          "ranking_contexts": [
+            {
+              "category": "리빙 전체",
+              "rank": 2,
+              "rank_delta": "NEW",
+              "is_new_entry": true
+            }
+          ]
         },
         {
           "brand": "오늘의귀여움",
           "product_name": "민음사 X 깜자 사랑에 대하여 세트(패러렐도서+무지노트+도무송엽서) 세계문학전집",
-          "rank": 7,
-          "rank_delta": "NEW",
-          "category": "리빙 전체",
           "price": "21,900원",
           "character_ip": "카카오프렌즈(기타/통합)",
           "url": "https://gift.kakao.com/product/14484990",
-          "is_new_entry": true
+          "rank_delta": "NEW",
+          "is_new_entry": true,
+          "product_id": "14484990",
+          "rank": 7,
+          "category": "리빙 전체",
+          "ranking_contexts": [
+            {
+              "category": "리빙 전체",
+              "rank": 7,
+              "rank_delta": "NEW",
+              "is_new_entry": true
+            }
+          ]
         },
         {
           "brand": "오늘의귀여움",
           "product_name": "(1+1) 민음사 머그컵 2개 세계문학전집 선물 집들이 홈카페 사무실 커플선물 독서",
-          "rank": 15,
-          "rank_delta": "NEW",
-          "category": "리빙 전체",
           "price": "26,900원",
           "character_ip": "일반/비IP 상품",
           "url": "https://gift.kakao.com/product/14484886",
-          "is_new_entry": true
+          "rank_delta": "NEW",
+          "is_new_entry": true,
+          "product_id": "14484886",
+          "rank": 15,
+          "category": "리빙 전체",
+          "ranking_contexts": [
+            {
+              "category": "리빙 전체",
+              "rank": 15,
+              "rank_delta": "NEW",
+              "is_new_entry": true
+            }
+          ]
         },
         {
           "brand": "오늘의귀여움",
           "product_name": "민음사 X 몰티즈 크리스마스 캐럴 세트(패러렐도서+무지노트+도무송엽서) 세계문학전집",
-          "rank": 20,
-          "rank_delta": "NEW",
-          "category": "리빙 전체",
           "price": "20,900원",
           "character_ip": "카카오프렌즈(기타/통합)",
           "url": "https://gift.kakao.com/product/14484995",
-          "is_new_entry": true
+          "rank_delta": "NEW",
+          "is_new_entry": true,
+          "product_id": "14484995",
+          "rank": 20,
+          "category": "리빙 전체",
+          "ranking_contexts": [
+            {
+              "category": "리빙 전체",
+              "rank": 20,
+              "rank_delta": "NEW",
+              "is_new_entry": true
+            }
+          ]
         }
       ]
     },
@@ -3864,57 +3984,102 @@
         {
           "brand": "오늘의귀여움",
           "product_name": "민음사 X 부실감자 2027 명심보감 주간달력 엽서형 한정수량 시즌그리팅 캘린더",
-          "rank": 1,
-          "rank_delta": "NEW",
-          "category": "팬시/문구/취미 (IP핵심)",
           "price": "25,000원",
           "character_ip": "일반/비IP 상품",
           "url": "https://gift.kakao.com/product/14485007",
-          "is_new_entry": true
+          "rank_delta": "NEW",
+          "is_new_entry": true,
+          "product_id": "14485007",
+          "rank": 1,
+          "category": "팬시/문구/취미 (IP핵심)",
+          "ranking_contexts": [
+            {
+              "category": "팬시/문구/취미 (IP핵심)",
+              "rank": 1,
+              "rank_delta": "NEW",
+              "is_new_entry": true
+            }
+          ]
         },
         {
           "brand": "오늘의귀여움",
           "product_name": "민음사 X 오늘의귀여움 깜자&낭고 북커버+북마크 공예가제작 독서용품 선물",
-          "rank": 2,
-          "rank_delta": "NEW",
-          "category": "팬시/문구/취미 (IP핵심)",
           "price": "39,900원",
           "character_ip": "일반/비IP 상품",
           "url": "https://gift.kakao.com/product/14485029",
-          "is_new_entry": true
+          "rank_delta": "NEW",
+          "is_new_entry": true,
+          "product_id": "14485029",
+          "rank": 2,
+          "category": "팬시/문구/취미 (IP핵심)",
+          "ranking_contexts": [
+            {
+              "category": "팬시/문구/취미 (IP핵심)",
+              "rank": 2,
+              "rank_delta": "NEW",
+              "is_new_entry": true
+            }
+          ]
         },
         {
           "brand": "오늘의귀여움",
           "product_name": "민음사 X 깜자 사랑에 대하여 세트(패러렐도서+무지노트+도무송엽서) 세계문학전집",
-          "rank": 4,
-          "rank_delta": "NEW",
-          "category": "팬시/문구/취미 (IP핵심)",
           "price": "21,900원",
           "character_ip": "카카오프렌즈(기타/통합)",
           "url": "https://gift.kakao.com/product/14484990",
-          "is_new_entry": true
+          "rank_delta": "NEW",
+          "is_new_entry": true,
+          "product_id": "14484990",
+          "rank": 4,
+          "category": "팬시/문구/취미 (IP핵심)",
+          "ranking_contexts": [
+            {
+              "category": "팬시/문구/취미 (IP핵심)",
+              "rank": 4,
+              "rank_delta": "NEW",
+              "is_new_entry": true
+            }
+          ]
         },
         {
           "brand": "오늘의귀여움",
           "product_name": "민음사 X 몰티즈 크리스마스 캐럴 세트(패러렐도서+무지노트+도무송엽서) 세계문학전집",
-          "rank": 6,
-          "rank_delta": "NEW",
-          "category": "팬시/문구/취미 (IP핵심)",
           "price": "20,900원",
           "character_ip": "카카오프렌즈(기타/통합)",
           "url": "https://gift.kakao.com/product/14484995",
-          "is_new_entry": true
+          "rank_delta": "NEW",
+          "is_new_entry": true,
+          "product_id": "14484995",
+          "rank": 6,
+          "category": "팬시/문구/취미 (IP핵심)",
+          "ranking_contexts": [
+            {
+              "category": "팬시/문구/취미 (IP핵심)",
+              "rank": 6,
+              "rank_delta": "NEW",
+              "is_new_entry": true
+            }
+          ]
         },
         {
           "brand": "오늘의귀여움",
           "product_name": "민음사 X 오늘의귀여움 DIY 아크릴키링 11종 택1 세계문학전집 귀여운선물 독서 단독",
-          "rank": 7,
-          "rank_delta": "NEW",
-          "category": "팬시/문구/취미 (IP핵심)",
           "price": "9,900원",
           "character_ip": "일반/비IP 상품",
           "url": "https://gift.kakao.com/product/14484911",
-          "is_new_entry": true
+          "rank_delta": "NEW",
+          "is_new_entry": true,
+          "product_id": "14484911",
+          "rank": 7,
+          "category": "팬시/문구/취미 (IP핵심)",
+          "ranking_contexts": [
+            {
+              "category": "팬시/문구/취미 (IP핵심)",
+              "rank": 7,
+              "rank_delta": "NEW",
+              "is_new_entry": true
+            }
+          ]
         }
       ]
     },
@@ -4033,57 +4198,102 @@
         {
           "brand": "캐릭터침구",
           "product_name": "직장동료/친구선물 먼작귀 메모리폼 방석 40x40cm 치이카와 가르마 캐릭터 굿즈 바른자세 메모리폼 거실 쇼파 의자 학교 학생 사무실 허리 , 1,744",
-          "rank": 37,
-          "rank_delta": "NEW",
-          "category": "침구/패브릭",
           "price": "19,900원",
           "character_ip": "먼작귀/치이카와",
           "url": "https://gift.kakao.com/product/10089432",
-          "is_new_entry": true
+          "rank_delta": "NEW",
+          "is_new_entry": true,
+          "product_id": "10089432",
+          "rank": 37,
+          "category": "침구/패브릭",
+          "ranking_contexts": [
+            {
+              "category": "침구/패브릭",
+              "rank": 37,
+              "rank_delta": "NEW",
+              "is_new_entry": true
+            }
+          ]
         },
         {
           "brand": "말랑필로우",
           "product_name": "나도 이제 멍집사 강아지 바디필로우 안고자는 긴 쿠션 베개 동물 모찌 롱 대형 애착 인형 꿀잠 이상한 선물 귀여운 쓸데없는 쓸모없는 신박한 8% 리뷰인증시 커피 !",
-          "rank": 40,
-          "rank_delta": "NEW",
-          "category": "침구/패브릭",
           "price": "21,800원",
           "character_ip": "기타 캐릭터/팬시",
           "url": "https://gift.kakao.com/product/11539740",
-          "is_new_entry": true
+          "rank_delta": "NEW",
+          "is_new_entry": true,
+          "product_id": "11539740",
+          "rank": 40,
+          "category": "침구/패브릭",
+          "ranking_contexts": [
+            {
+              "category": "침구/패브릭",
+              "rank": 40,
+              "rank_delta": "NEW",
+              "is_new_entry": true
+            }
+          ]
         },
         {
           "brand": "캐릭터침구",
           "product_name": "잠이 술술 참이슬 후레쉬 소주병 바디필로우 L , 5,947",
-          "rank": 44,
-          "rank_delta": "NEW",
-          "category": "침구/패브릭",
           "price": "39,900원",
           "character_ip": "캐릭터/팬시-침구",
           "url": "https://gift.kakao.com/product/9570334",
-          "is_new_entry": true
+          "rank_delta": "NEW",
+          "is_new_entry": true,
+          "product_id": "9570334",
+          "rank": 44,
+          "category": "침구/패브릭",
+          "ranking_contexts": [
+            {
+              "category": "침구/패브릭",
+              "rank": 44,
+              "rank_delta": "NEW",
+              "is_new_entry": true
+            }
+          ]
         },
         {
           "brand": "바자르",
           "product_name": "[단독] 신상컬러! 포근한 노팅힐 양털 극세사 차렵이불세트 - 4컬러 겨울이불 집들이선물 자취선물",
-          "rank": 46,
-          "rank_delta": "NEW",
-          "category": "침구/패브릭",
           "price": "57,900원",
           "character_ip": "일반/비IP 상품",
           "url": "https://gift.kakao.com/product/12349222",
-          "is_new_entry": true
+          "rank_delta": "NEW",
+          "is_new_entry": true,
+          "product_id": "12349222",
+          "rank": 46,
+          "category": "침구/패브릭",
+          "ranking_contexts": [
+            {
+              "category": "침구/패브릭",
+              "rank": 46,
+              "rank_delta": "NEW",
+              "is_new_entry": true
+            }
+          ]
         },
         {
           "brand": "가나디",
           "product_name": "가나디 목쿠션&수면 안대 세트 (수면용품/생일/귀여운/우정/커플/여행 선물) , 1,869",
-          "rank": 47,
-          "rank_delta": "NEW",
-          "category": "침구/패브릭",
           "price": "21,800원",
           "character_ip": "가나디",
           "url": "https://gift.kakao.com/product/14257180",
-          "is_new_entry": true
+          "rank_delta": "NEW",
+          "is_new_entry": true,
+          "product_id": "14257180",
+          "rank": 47,
+          "category": "침구/패브릭",
+          "ranking_contexts": [
+            {
+              "category": "침구/패브릭",
+              "rank": 47,
+              "rank_delta": "NEW",
+              "is_new_entry": true
+            }
+          ]
         }
       ]
     },
@@ -4202,57 +4412,102 @@
         {
           "brand": "오늘의귀여움",
           "product_name": "(1+1) 민음사 머그컵 2개 세계문학전집 선물 집들이 홈카페 사무실 커플선물 독서",
-          "rank": 5,
-          "rank_delta": "NEW",
-          "category": "주방/식기",
           "price": "26,900원",
           "character_ip": "일반/비IP 상품",
           "url": "https://gift.kakao.com/product/14484886",
-          "is_new_entry": true
+          "rank_delta": "NEW",
+          "is_new_entry": true,
+          "product_id": "14484886",
+          "rank": 5,
+          "category": "주방/식기",
+          "ranking_contexts": [
+            {
+              "category": "주방/식기",
+              "rank": 5,
+              "rank_delta": "NEW",
+              "is_new_entry": true
+            }
+          ]
         },
         {
           "brand": "오늘의귀여움",
           "product_name": "민음사 X 복심이 머그컵 악수도 없이 헤어졌다 세계문학전집 선물 집들이 홈카페 사무실",
-          "rank": 32,
-          "rank_delta": "NEW",
-          "category": "주방/식기",
           "price": "17,900원",
           "character_ip": "일반/비IP 상품",
           "url": "https://gift.kakao.com/product/14484859",
-          "is_new_entry": true
+          "rank_delta": "NEW",
+          "is_new_entry": true,
+          "product_id": "14484859",
+          "rank": 32,
+          "category": "주방/식기",
+          "ranking_contexts": [
+            {
+              "category": "주방/식기",
+              "rank": 32,
+              "rank_delta": "NEW",
+              "is_new_entry": true
+            }
+          ]
         },
         {
           "brand": "알라바스터",
           "product_name": "[쇼핑백]알라바스터 접시 16cm [색상선택 가능] , 9,301",
-          "rank": 34,
-          "rank_delta": "NEW",
-          "category": "주방/식기",
           "price": "21,000원",
           "character_ip": "일반/비IP 상품",
           "url": "https://gift.kakao.com/product/11344221",
-          "is_new_entry": true
+          "rank_delta": "NEW",
+          "is_new_entry": true,
+          "product_id": "11344221",
+          "rank": 34,
+          "category": "주방/식기",
+          "ranking_contexts": [
+            {
+              "category": "주방/식기",
+              "rank": 34,
+              "rank_delta": "NEW",
+              "is_new_entry": true
+            }
+          ]
         },
         {
           "brand": "스타벅스(공식스토어)",
           "product_name": "[각인] SS 코튼캔디 스탠리 켄처 텀블러 1183ml +에코텀블러음료쿠폰()",
-          "rank": 41,
-          "rank_delta": "NEW",
-          "category": "주방/식기",
           "price": "68,000원",
           "character_ip": "일반/비IP 상품",
           "url": "https://gift.kakao.com/product/13239227",
-          "is_new_entry": true
+          "rank_delta": "NEW",
+          "is_new_entry": true,
+          "product_id": "13239227",
+          "rank": 41,
+          "category": "주방/식기",
+          "ranking_contexts": [
+            {
+              "category": "주방/식기",
+              "rank": 41,
+              "rank_delta": "NEW",
+              "is_new_entry": true
+            }
+          ]
         },
         {
           "brand": "웨지우드",
           "product_name": "[단독] 웨지우드 티타임 선물 세트 3종 택1 (커피잔 2인+TEA 16입)",
-          "rank": 42,
-          "rank_delta": "NEW",
-          "category": "주방/식기",
           "price": "67,200원",
           "character_ip": "일반/비IP 상품",
           "url": "https://gift.kakao.com/product/10779048",
-          "is_new_entry": true
+          "rank_delta": "NEW",
+          "is_new_entry": true,
+          "product_id": "10779048",
+          "rank": 42,
+          "category": "주방/식기",
+          "ranking_contexts": [
+            {
+              "category": "주방/식기",
+              "rank": 42,
+              "rank_delta": "NEW",
+              "is_new_entry": true
+            }
+          ]
         }
       ]
     }

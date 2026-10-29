@@ -1,5 +1,6 @@
 """Validate the published date index, current records and matching day snapshot."""
 import json
+from rising_stars import select_rising_stars
 from datetime import datetime
 from pathlib import Path
 
@@ -18,6 +19,13 @@ def main():
     daily = json.loads((root / f"data_{today}.json").read_text(encoding="utf-8"))
     if daily != latest:
         raise RuntimeError("Daily snapshot differs from latest data")
+    for category, card in latest['cards'].items():
+        if not card:
+            continue
+        rows = latest['records'] if category == '전체' else [
+            row for row in latest['records'] if row['category'] == category]
+        if card.get('card_4_rising_stars') != select_rising_stars(rows):
+            raise RuntimeError(f"Rising products or category contexts differ: {category}")
     for item in dates:
         if not (root / f"data_{item['date_key']}.json").is_file():
             raise RuntimeError("Date index points to a missing snapshot")

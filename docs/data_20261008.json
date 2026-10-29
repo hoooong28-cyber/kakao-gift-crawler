@@ -3524,57 +3524,132 @@
         {
           "brand": "가나디",
           "product_name": "가나디 2027 다이어리&캘린더 세트 (일기장/응원/수능/친구/직장인/입학/새학기)",
-          "rank": 1,
-          "rank_delta": "NEW",
-          "category": "팬시/문구/취미 (IP핵심)",
           "price": "27,800원",
           "character_ip": "가나디",
           "url": "https://gift.kakao.com/product/14396291",
-          "is_new_entry": true
-        },
-        {
-          "brand": "가나디",
-          "product_name": "가나디 2027 탁상형 캘린더 (탁상달력/응원/수능/친구/직장인/새해/신년선물)",
-          "rank": 3,
           "rank_delta": "NEW",
+          "is_new_entry": true,
+          "product_id": "14396291",
+          "rank": 1,
           "category": "팬시/문구/취미 (IP핵심)",
-          "price": "12,000원",
-          "character_ip": "가나디",
-          "url": "https://gift.kakao.com/product/14396305",
-          "is_new_entry": true
+          "ranking_contexts": [
+            {
+              "category": "팬시/문구/취미 (IP핵심)",
+              "rank": 1,
+              "rank_delta": "NEW",
+              "is_new_entry": true
+            },
+            {
+              "category": "리빙 전체",
+              "rank": 4,
+              "rank_delta": "NEW",
+              "is_new_entry": true
+            }
+          ]
         },
         {
           "brand": "가나디",
           "product_name": "가나디 쿠션 방석 (사무실/학교/생일/귀여운/우정/커플/선물추천)",
-          "rank": 3,
-          "rank_delta": "NEW",
-          "category": "침구/패브릭",
           "price": "29,800원",
           "character_ip": "가나디",
           "url": "https://gift.kakao.com/product/14396984",
-          "is_new_entry": true
+          "rank_delta": "NEW",
+          "is_new_entry": true,
+          "product_id": "14396984",
+          "rank": 3,
+          "category": "침구/패브릭",
+          "ranking_contexts": [
+            {
+              "category": "침구/패브릭",
+              "rank": 3,
+              "rank_delta": "NEW",
+              "is_new_entry": true
+            },
+            {
+              "category": "리빙 전체",
+              "rank": 5,
+              "rank_delta": "NEW",
+              "is_new_entry": true
+            }
+          ]
         },
         {
           "brand": "가나디",
-          "product_name": "가나디 2027 다이어리&캘린더 세트 (일기장/응원/수능/친구/직장인/입학/새학기)",
-          "rank": 4,
-          "rank_delta": "NEW",
-          "category": "리빙 전체",
-          "price": "27,800원",
+          "product_name": "가나디 2027 탁상형 캘린더 (탁상달력/응원/수능/친구/직장인/새해/신년선물)",
+          "price": "12,000원",
           "character_ip": "가나디",
-          "url": "https://gift.kakao.com/product/14396291",
-          "is_new_entry": true
+          "url": "https://gift.kakao.com/product/14396305",
+          "rank_delta": "NEW",
+          "is_new_entry": true,
+          "product_id": "14396305",
+          "rank": 3,
+          "category": "팬시/문구/취미 (IP핵심)",
+          "ranking_contexts": [
+            {
+              "category": "팬시/문구/취미 (IP핵심)",
+              "rank": 3,
+              "rank_delta": "NEW",
+              "is_new_entry": true
+            },
+            {
+              "category": "리빙 전체",
+              "rank": 9,
+              "rank_delta": "NEW",
+              "is_new_entry": true
+            }
+          ]
         },
         {
           "brand": "곽철이",
           "product_name": "곽철이 신상품 풀세트 에디션 32%",
-          "rank": 4,
-          "rank_delta": "NEW",
-          "category": "팬시/문구/취미 (IP핵심)",
           "price": "59,900원",
           "character_ip": "일반/비IP 상품",
           "url": "https://gift.kakao.com/product/14401679",
-          "is_new_entry": true
+          "rank_delta": "NEW",
+          "is_new_entry": true,
+          "product_id": "14401679",
+          "rank": 4,
+          "category": "팬시/문구/취미 (IP핵심)",
+          "ranking_contexts": [
+            {
+              "category": "팬시/문구/취미 (IP핵심)",
+              "rank": 4,
+              "rank_delta": "NEW",
+              "is_new_entry": true
+            },
+            {
+              "category": "리빙 전체",
+              "rank": 10,
+              "rank_delta": "NEW",
+              "is_new_entry": true
+            }
+          ]
+        },
+        {
+          "brand": "곽철이",
+          "product_name": "곽철이 스마트폰 피규어 2종 택 1 8%",
+          "price": "14,500원",
+          "character_ip": "일반/비IP 상품",
+          "url": "https://gift.kakao.com/product/14400791",
+          "rank_delta": "NEW",
+          "is_new_entry": true,
+          "product_id": "14400791",
+          "rank": 5,
+          "category": "팬시/문구/취미 (IP핵심)",
+          "ranking_contexts": [
+            {
+              "category": "팬시/문구/취미 (IP핵심)",
+              "rank": 5,
+              "rank_delta": "NEW",
+              "is_new_entry": true
+            },
+            {
+              "category": "리빙 전체",
+              "rank": 14,
+              "rank_delta": "NEW",
+              "is_new_entry": true
+            }
+          ]
         }
       ]
     },
@@ -3698,57 +3773,102 @@
         {
           "brand": "가나디",
           "product_name": "가나디 2027 다이어리&캘린더 세트 (일기장/응원/수능/친구/직장인/입학/새학기)",
-          "rank": 4,
-          "rank_delta": "NEW",
-          "category": "리빙 전체",
           "price": "27,800원",
           "character_ip": "가나디",
           "url": "https://gift.kakao.com/product/14396291",
-          "is_new_entry": true
+          "rank_delta": "NEW",
+          "is_new_entry": true,
+          "product_id": "14396291",
+          "rank": 4,
+          "category": "리빙 전체",
+          "ranking_contexts": [
+            {
+              "category": "리빙 전체",
+              "rank": 4,
+              "rank_delta": "NEW",
+              "is_new_entry": true
+            }
+          ]
         },
         {
           "brand": "가나디",
           "product_name": "가나디 쿠션 방석 (사무실/학교/생일/귀여운/우정/커플/선물추천)",
-          "rank": 5,
-          "rank_delta": "NEW",
-          "category": "리빙 전체",
           "price": "29,800원",
           "character_ip": "가나디",
           "url": "https://gift.kakao.com/product/14396984",
-          "is_new_entry": true
+          "rank_delta": "NEW",
+          "is_new_entry": true,
+          "product_id": "14396984",
+          "rank": 5,
+          "category": "리빙 전체",
+          "ranking_contexts": [
+            {
+              "category": "리빙 전체",
+              "rank": 5,
+              "rank_delta": "NEW",
+              "is_new_entry": true
+            }
+          ]
         },
         {
           "brand": "가나디",
           "product_name": "가나디 2027 탁상형 캘린더 (탁상달력/응원/수능/친구/직장인/새해/신년선물)",
-          "rank": 9,
-          "rank_delta": "NEW",
-          "category": "리빙 전체",
           "price": "12,000원",
           "character_ip": "가나디",
           "url": "https://gift.kakao.com/product/14396305",
-          "is_new_entry": true
+          "rank_delta": "NEW",
+          "is_new_entry": true,
+          "product_id": "14396305",
+          "rank": 9,
+          "category": "리빙 전체",
+          "ranking_contexts": [
+            {
+              "category": "리빙 전체",
+              "rank": 9,
+              "rank_delta": "NEW",
+              "is_new_entry": true
+            }
+          ]
         },
         {
           "brand": "곽철이",
           "product_name": "곽철이 신상품 풀세트 에디션 32%",
-          "rank": 10,
-          "rank_delta": "NEW",
-          "category": "리빙 전체",
           "price": "59,900원",
           "character_ip": "일반/비IP 상품",
           "url": "https://gift.kakao.com/product/14401679",
-          "is_new_entry": true
+          "rank_delta": "NEW",
+          "is_new_entry": true,
+          "product_id": "14401679",
+          "rank": 10,
+          "category": "리빙 전체",
+          "ranking_contexts": [
+            {
+              "category": "리빙 전체",
+              "rank": 10,
+              "rank_delta": "NEW",
+              "is_new_entry": true
+            }
+          ]
         },
         {
           "brand": "곽철이",
           "product_name": "곽철이 스마트폰 피규어 2종 택 1 8%",
-          "rank": 14,
-          "rank_delta": "NEW",
-          "category": "리빙 전체",
           "price": "14,500원",
           "character_ip": "일반/비IP 상품",
           "url": "https://gift.kakao.com/product/14400791",
-          "is_new_entry": true
+          "rank_delta": "NEW",
+          "is_new_entry": true,
+          "product_id": "14400791",
+          "rank": 14,
+          "category": "리빙 전체",
+          "ranking_contexts": [
+            {
+              "category": "리빙 전체",
+              "rank": 14,
+              "rank_delta": "NEW",
+              "is_new_entry": true
+            }
+          ]
         }
       ]
     },
@@ -3870,57 +3990,102 @@
         {
           "brand": "가나디",
           "product_name": "가나디 2027 다이어리&캘린더 세트 (일기장/응원/수능/친구/직장인/입학/새학기)",
-          "rank": 1,
-          "rank_delta": "NEW",
-          "category": "팬시/문구/취미 (IP핵심)",
           "price": "27,800원",
           "character_ip": "가나디",
           "url": "https://gift.kakao.com/product/14396291",
-          "is_new_entry": true
+          "rank_delta": "NEW",
+          "is_new_entry": true,
+          "product_id": "14396291",
+          "rank": 1,
+          "category": "팬시/문구/취미 (IP핵심)",
+          "ranking_contexts": [
+            {
+              "category": "팬시/문구/취미 (IP핵심)",
+              "rank": 1,
+              "rank_delta": "NEW",
+              "is_new_entry": true
+            }
+          ]
         },
         {
           "brand": "가나디",
           "product_name": "가나디 2027 탁상형 캘린더 (탁상달력/응원/수능/친구/직장인/새해/신년선물)",
-          "rank": 3,
-          "rank_delta": "NEW",
-          "category": "팬시/문구/취미 (IP핵심)",
           "price": "12,000원",
           "character_ip": "가나디",
           "url": "https://gift.kakao.com/product/14396305",
-          "is_new_entry": true
+          "rank_delta": "NEW",
+          "is_new_entry": true,
+          "product_id": "14396305",
+          "rank": 3,
+          "category": "팬시/문구/취미 (IP핵심)",
+          "ranking_contexts": [
+            {
+              "category": "팬시/문구/취미 (IP핵심)",
+              "rank": 3,
+              "rank_delta": "NEW",
+              "is_new_entry": true
+            }
+          ]
         },
         {
           "brand": "곽철이",
           "product_name": "곽철이 신상품 풀세트 에디션 32%",
-          "rank": 4,
-          "rank_delta": "NEW",
-          "category": "팬시/문구/취미 (IP핵심)",
           "price": "59,900원",
           "character_ip": "일반/비IP 상품",
           "url": "https://gift.kakao.com/product/14401679",
-          "is_new_entry": true
+          "rank_delta": "NEW",
+          "is_new_entry": true,
+          "product_id": "14401679",
+          "rank": 4,
+          "category": "팬시/문구/취미 (IP핵심)",
+          "ranking_contexts": [
+            {
+              "category": "팬시/문구/취미 (IP핵심)",
+              "rank": 4,
+              "rank_delta": "NEW",
+              "is_new_entry": true
+            }
+          ]
         },
         {
           "brand": "곽철이",
           "product_name": "곽철이 스마트폰 피규어 2종 택 1 8%",
-          "rank": 5,
-          "rank_delta": "NEW",
-          "category": "팬시/문구/취미 (IP핵심)",
           "price": "14,500원",
           "character_ip": "일반/비IP 상품",
           "url": "https://gift.kakao.com/product/14400791",
-          "is_new_entry": true
+          "rank_delta": "NEW",
+          "is_new_entry": true,
+          "product_id": "14400791",
+          "rank": 5,
+          "category": "팬시/문구/취미 (IP핵심)",
+          "ranking_contexts": [
+            {
+              "category": "팬시/문구/취미 (IP핵심)",
+              "rank": 5,
+              "rank_delta": "NEW",
+              "is_new_entry": true
+            }
+          ]
         },
         {
           "brand": "가나디",
           "product_name": "가나디 2027 다이어리 (일기장/응원/수능/친구/직장인/입학/새학기)",
-          "rank": 9,
-          "rank_delta": "NEW",
-          "category": "팬시/문구/취미 (IP핵심)",
           "price": "23,000원",
           "character_ip": "가나디",
           "url": "https://gift.kakao.com/product/14396301",
-          "is_new_entry": true
+          "rank_delta": "NEW",
+          "is_new_entry": true,
+          "product_id": "14396301",
+          "rank": 9,
+          "category": "팬시/문구/취미 (IP핵심)",
+          "ranking_contexts": [
+            {
+              "category": "팬시/문구/취미 (IP핵심)",
+              "rank": 9,
+              "rank_delta": "NEW",
+              "is_new_entry": true
+            }
+          ]
         }
       ]
     },
@@ -4039,57 +4204,102 @@
         {
           "brand": "가나디",
           "product_name": "가나디 쿠션 방석 (사무실/학교/생일/귀여운/우정/커플/선물추천)",
-          "rank": 3,
-          "rank_delta": "NEW",
-          "category": "침구/패브릭",
           "price": "29,800원",
           "character_ip": "가나디",
           "url": "https://gift.kakao.com/product/14396984",
-          "is_new_entry": true
+          "rank_delta": "NEW",
+          "is_new_entry": true,
+          "product_id": "14396984",
+          "rank": 3,
+          "category": "침구/패브릭",
+          "ranking_contexts": [
+            {
+              "category": "침구/패브릭",
+              "rank": 3,
+              "rank_delta": "NEW",
+              "is_new_entry": true
+            }
+          ]
         },
         {
           "brand": "곽철이",
           "product_name": "직장인 선물 추천 곽철이 체력소진 프린팅 극세사 담요 11%",
-          "rank": 6,
-          "rank_delta": "NEW",
-          "category": "침구/패브릭",
           "price": "15,900원",
           "character_ip": "일반/비IP 상품",
           "url": "https://gift.kakao.com/product/14394255",
-          "is_new_entry": true
+          "rank_delta": "NEW",
+          "is_new_entry": true,
+          "product_id": "14394255",
+          "rank": 6,
+          "category": "침구/패브릭",
+          "ranking_contexts": [
+            {
+              "category": "침구/패브릭",
+              "rank": 6,
+              "rank_delta": "NEW",
+              "is_new_entry": true
+            }
+          ]
         },
         {
           "brand": "프렌즈리빙LC",
           "product_name": "낮잠자도 팔안저려 낮잠 필수템 말랑쫀득 춘식이 꿀잠 팔쿠션",
-          "rank": 34,
-          "rank_delta": "NEW",
-          "category": "침구/패브릭",
           "price": "9,900원",
           "character_ip": "카카오프렌즈(춘식이)",
           "url": "https://gift.kakao.com/product/7280480",
-          "is_new_entry": true
+          "rank_delta": "NEW",
+          "is_new_entry": true,
+          "product_id": "7280480",
+          "rank": 34,
+          "category": "침구/패브릭",
+          "ranking_contexts": [
+            {
+              "category": "침구/패브릭",
+              "rank": 34,
+              "rank_delta": "NEW",
+              "is_new_entry": true
+            }
+          ]
         },
         {
           "brand": "데일리라이크(침구)",
           "product_name": "자취/집들이선물 \"집꾸 필수템\" 푹신보들 마이 버디 발매트(미니러그) 33종 (택1) 인테리어 이사 독립 응원 결혼 생일 자취 집들이 선물",
-          "rank": 42,
-          "rank_delta": "NEW",
-          "category": "침구/패브릭",
           "price": "15,900원",
           "character_ip": "일반/비IP 상품",
           "url": "https://gift.kakao.com/product/2488205",
-          "is_new_entry": true
+          "rank_delta": "NEW",
+          "is_new_entry": true,
+          "product_id": "2488205",
+          "rank": 42,
+          "category": "침구/패브릭",
+          "ranking_contexts": [
+            {
+              "category": "침구/패브릭",
+              "rank": 42,
+              "rank_delta": "NEW",
+              "is_new_entry": true
+            }
+          ]
         },
         {
           "brand": "최고심",
           "product_name": "사은품 엽서카드 No 스트레스!! [최고심] 스트레스볼 최곰돌 , 2,871",
-          "rank": 46,
-          "rank_delta": "NEW",
-          "category": "침구/패브릭",
           "price": "17,900원",
           "character_ip": "최고심",
           "url": "https://gift.kakao.com/product/11303523",
-          "is_new_entry": true
+          "rank_delta": "NEW",
+          "is_new_entry": true,
+          "product_id": "11303523",
+          "rank": 46,
+          "category": "침구/패브릭",
+          "ranking_contexts": [
+            {
+              "category": "침구/패브릭",
+              "rank": 46,
+              "rank_delta": "NEW",
+              "is_new_entry": true
+            }
+          ]
         }
       ]
     },
@@ -4211,57 +4421,102 @@
         {
           "brand": "스탠리",
           "product_name": "[스탠리공식유통사] 퀜처 H2.0 플로우스테이트 텀블러 1.18L",
-          "rank": 34,
-          "rank_delta": "NEW",
-          "category": "주방/식기",
           "price": "64,000원",
           "character_ip": "일반/비IP 상품",
           "url": "https://gift.kakao.com/product/7868571",
-          "is_new_entry": true
+          "rank_delta": "NEW",
+          "is_new_entry": true,
+          "product_id": "7868571",
+          "rank": 34,
+          "category": "주방/식기",
+          "ranking_contexts": [
+            {
+              "category": "주방/식기",
+              "rank": 34,
+              "rank_delta": "NEW",
+              "is_new_entry": true
+            }
+          ]
         },
         {
           "brand": "타블도트",
           "product_name": "1인 브런치 홈세트 [] 슬로우 3단 머그 홈카페 세트 3P 4color",
-          "rank": 36,
-          "rank_delta": "NEW",
-          "category": "주방/식기",
           "price": "43,900원",
           "character_ip": "일반/비IP 상품",
           "url": "https://gift.kakao.com/product/11413779",
-          "is_new_entry": true
+          "rank_delta": "NEW",
+          "is_new_entry": true,
+          "product_id": "11413779",
+          "rank": 36,
+          "category": "주방/식기",
+          "ranking_contexts": [
+            {
+              "category": "주방/식기",
+              "rank": 36,
+              "rank_delta": "NEW",
+              "is_new_entry": true
+            }
+          ]
         },
         {
           "brand": "대원미디어(daewon)",
           "product_name": "[리락쿠마] 핸들 접시 플레이트 2P 세트",
-          "rank": 43,
-          "rank_delta": "NEW",
-          "category": "주방/식기",
           "price": "24,500원",
           "character_ip": "리락쿠마",
           "url": "https://gift.kakao.com/product/14412985",
-          "is_new_entry": true
+          "rank_delta": "NEW",
+          "is_new_entry": true,
+          "product_id": "14412985",
+          "rank": 43,
+          "category": "주방/식기",
+          "ranking_contexts": [
+            {
+              "category": "주방/식기",
+              "rank": 43,
+              "rank_delta": "NEW",
+              "is_new_entry": true
+            }
+          ]
         },
         {
           "brand": "알럽하우스",
           "product_name": "생일에는 정품이지 산리오 한교동 도자기 시리얼볼 요거트볼 예쁜 그릇 컵 자취 생일 집들이 행운 직장동료 가벼운 홈카페 밥그릇",
-          "rank": 46,
-          "rank_delta": "NEW",
-          "category": "주방/식기",
           "price": "13,800원",
           "character_ip": "산리오(한교동), 산리오(기타/통합)",
           "url": "https://gift.kakao.com/product/12455527",
-          "is_new_entry": true
+          "rank_delta": "NEW",
+          "is_new_entry": true,
+          "product_id": "12455527",
+          "rank": 46,
+          "category": "주방/식기",
+          "ranking_contexts": [
+            {
+              "category": "주방/식기",
+              "rank": 46,
+              "rank_delta": "NEW",
+              "is_new_entry": true
+            }
+          ]
         },
         {
           "brand": "프렌즈리빙LC",
           "product_name": "[단독] \"먹방 꿈나무\" 춘식이 손잡이 앞접시 2P 세트",
-          "rank": 48,
-          "rank_delta": "NEW",
-          "category": "주방/식기",
           "price": "14,800원",
           "character_ip": "카카오프렌즈(춘식이)",
           "url": "https://gift.kakao.com/product/5468690",
-          "is_new_entry": true
+          "rank_delta": "NEW",
+          "is_new_entry": true,
+          "product_id": "5468690",
+          "rank": 48,
+          "category": "주방/식기",
+          "ranking_contexts": [
+            {
+              "category": "주방/식기",
+              "rank": 48,
+              "rank_delta": "NEW",
+              "is_new_entry": true
+            }
+          ]
         }
       ]
     }

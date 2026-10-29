@@ -3524,57 +3524,114 @@
         {
           "brand": "캐릭터침구",
           "product_name": "\"생일/기념일선물\" (추석 이후 입고) 먼작귀 꿀잠바디쿠션4종 택1 치이카와 가르마 토끼 굿즈 극세사 긴베개 안고자는 바디필로우 캐릭터 굿즈 인형",
+          "price": "29,900원",
+          "character_ip": "먼작귀/치이카와",
+          "url": "https://gift.kakao.com/product/6986025",
+          "rank_delta": "NEW",
+          "is_new_entry": true,
+          "product_id": "6986025",
           "rank": 3,
-          "rank_delta": "NEW",
           "category": "침구/패브릭",
-          "price": "29,900원",
-          "character_ip": "먼작귀/치이카와",
-          "url": "https://gift.kakao.com/product/6986025",
-          "is_new_entry": true
+          "ranking_contexts": [
+            {
+              "category": "침구/패브릭",
+              "rank": 3,
+              "rank_delta": "NEW",
+              "is_new_entry": true
+            },
+            {
+              "category": "리빙 전체",
+              "rank": 18,
+              "rank_delta": "NEW",
+              "is_new_entry": true
+            }
+          ]
         },
         {
           "brand": "스타벅스(공식스토어)",
           "product_name": "\"피너츠 스트로 캡 포인트\" 펌킨 피너츠 글라스 콜드컵 591ml +에코텀블러음료쿠폰() (친구/귀여운 선물)",
+          "price": "52,000원",
+          "character_ip": "스누피/피너츠",
+          "url": "https://gift.kakao.com/product/14276887",
+          "rank_delta": "NEW",
+          "is_new_entry": true,
+          "product_id": "14276887",
           "rank": 10,
-          "rank_delta": "NEW",
           "category": "주방/식기",
-          "price": "52,000원",
-          "character_ip": "스누피/피너츠",
-          "url": "https://gift.kakao.com/product/14276887",
-          "is_new_entry": true
-        },
-        {
-          "brand": "캐릭터침구",
-          "product_name": "\"생일/기념일선물\" (추석 이후 입고) 먼작귀 꿀잠바디쿠션4종 택1 치이카와 가르마 토끼 굿즈 극세사 긴베개 안고자는 바디필로우 캐릭터 굿즈 인형",
-          "rank": 18,
-          "rank_delta": "NEW",
-          "category": "리빙 전체",
-          "price": "29,900원",
-          "character_ip": "먼작귀/치이카와",
-          "url": "https://gift.kakao.com/product/6986025",
-          "is_new_entry": true
-        },
-        {
-          "brand": "스타벅스(공식스토어)",
-          "product_name": "\"피너츠 스트로 캡 포인트\" 펌킨 피너츠 글라스 콜드컵 591ml +에코텀블러음료쿠폰() (친구/귀여운 선물)",
-          "rank": 22,
-          "rank_delta": "NEW",
-          "category": "리빙 전체",
-          "price": "52,000원",
-          "character_ip": "스누피/피너츠",
-          "url": "https://gift.kakao.com/product/14276887",
-          "is_new_entry": true
+          "ranking_contexts": [
+            {
+              "category": "주방/식기",
+              "rank": 10,
+              "rank_delta": "NEW",
+              "is_new_entry": true
+            },
+            {
+              "category": "리빙 전체",
+              "rank": 22,
+              "rank_delta": "NEW",
+              "is_new_entry": true
+            }
+          ]
         },
         {
           "brand": "캐릭터침구",
           "product_name": "\"생일/집들이선물\" 리락쿠마 낮잠쿠션 2종옵션 택1 캐릭터쿠션 핸드워머 사무실 학교 집들이 기념일 선물 , 1,209",
-          "rank": 22,
-          "rank_delta": "NEW",
-          "category": "침구/패브릭",
           "price": "22,900원",
           "character_ip": "리락쿠마",
           "url": "https://gift.kakao.com/product/13983870",
-          "is_new_entry": true
+          "rank_delta": "NEW",
+          "is_new_entry": true,
+          "product_id": "13983870",
+          "rank": 22,
+          "category": "침구/패브릭",
+          "ranking_contexts": [
+            {
+              "category": "침구/패브릭",
+              "rank": 22,
+              "rank_delta": "NEW",
+              "is_new_entry": true
+            }
+          ]
+        },
+        {
+          "brand": "굴강",
+          "product_name": "\"주님 도와주세요\" 예수님 인형 팔베개 쿠션 안정감 친구 신박한 선물",
+          "price": "17,900원",
+          "character_ip": "기타 캐릭터/팬시",
+          "url": "https://gift.kakao.com/product/13781031",
+          "rank_delta": "NEW",
+          "is_new_entry": true,
+          "product_id": "13781031",
+          "rank": 28,
+          "category": "팬시/문구/취미 (IP핵심)",
+          "ranking_contexts": [
+            {
+              "category": "팬시/문구/취미 (IP핵심)",
+              "rank": 28,
+              "rank_delta": "NEW",
+              "is_new_entry": true
+            }
+          ]
+        },
+        {
+          "brand": "잼먹",
+          "product_name": "하드케이스 \"생일/선물추천\" 잼먹 라벨프린터 휴대용 라벨기 라벨프린터기 네임스티커",
+          "price": "39,800원",
+          "character_ip": "일반/비IP 상품",
+          "url": "https://gift.kakao.com/product/11368084",
+          "rank_delta": "NEW",
+          "is_new_entry": true,
+          "product_id": "11368084",
+          "rank": 36,
+          "category": "리빙 전체",
+          "ranking_contexts": [
+            {
+              "category": "리빙 전체",
+              "rank": 36,
+              "rank_delta": "NEW",
+              "is_new_entry": true
+            }
+          ]
         }
       ]
     },
@@ -3697,57 +3754,102 @@
         {
           "brand": "캐릭터침구",
           "product_name": "\"생일/기념일선물\" (추석 이후 입고) 먼작귀 꿀잠바디쿠션4종 택1 치이카와 가르마 토끼 굿즈 극세사 긴베개 안고자는 바디필로우 캐릭터 굿즈 인형",
-          "rank": 18,
-          "rank_delta": "NEW",
-          "category": "리빙 전체",
           "price": "29,900원",
           "character_ip": "먼작귀/치이카와",
           "url": "https://gift.kakao.com/product/6986025",
-          "is_new_entry": true
+          "rank_delta": "NEW",
+          "is_new_entry": true,
+          "product_id": "6986025",
+          "rank": 18,
+          "category": "리빙 전체",
+          "ranking_contexts": [
+            {
+              "category": "리빙 전체",
+              "rank": 18,
+              "rank_delta": "NEW",
+              "is_new_entry": true
+            }
+          ]
         },
         {
           "brand": "스타벅스(공식스토어)",
           "product_name": "\"피너츠 스트로 캡 포인트\" 펌킨 피너츠 글라스 콜드컵 591ml +에코텀블러음료쿠폰() (친구/귀여운 선물)",
-          "rank": 22,
-          "rank_delta": "NEW",
-          "category": "리빙 전체",
           "price": "52,000원",
           "character_ip": "스누피/피너츠",
           "url": "https://gift.kakao.com/product/14276887",
-          "is_new_entry": true
+          "rank_delta": "NEW",
+          "is_new_entry": true,
+          "product_id": "14276887",
+          "rank": 22,
+          "category": "리빙 전체",
+          "ranking_contexts": [
+            {
+              "category": "리빙 전체",
+              "rank": 22,
+              "rank_delta": "NEW",
+              "is_new_entry": true
+            }
+          ]
         },
         {
           "brand": "잼먹",
           "product_name": "하드케이스 \"생일/선물추천\" 잼먹 라벨프린터 휴대용 라벨기 라벨프린터기 네임스티커",
-          "rank": 36,
-          "rank_delta": "NEW",
-          "category": "리빙 전체",
           "price": "39,800원",
           "character_ip": "일반/비IP 상품",
           "url": "https://gift.kakao.com/product/11368084",
-          "is_new_entry": true
+          "rank_delta": "NEW",
+          "is_new_entry": true,
+          "product_id": "11368084",
+          "rank": 36,
+          "category": "리빙 전체",
+          "ranking_contexts": [
+            {
+              "category": "리빙 전체",
+              "rank": 36,
+              "rank_delta": "NEW",
+              "is_new_entry": true
+            }
+          ]
         },
         {
           "brand": "가나디",
           "product_name": "가나디 홀더 키링 (귀여운/휴대용컵홀더/다용도/키링) , 7,325",
-          "rank": 39,
-          "rank_delta": "NEW",
-          "category": "리빙 전체",
           "price": "16,300원",
           "character_ip": "가나디",
           "url": "https://gift.kakao.com/product/13881169",
-          "is_new_entry": true
+          "rank_delta": "NEW",
+          "is_new_entry": true,
+          "product_id": "13881169",
+          "rank": 39,
+          "category": "리빙 전체",
+          "ranking_contexts": [
+            {
+              "category": "리빙 전체",
+              "rank": 39,
+              "rank_delta": "NEW",
+              "is_new_entry": true
+            }
+          ]
         },
         {
           "brand": "매직캔",
           "product_name": "선착순!리필3롤 [매직캔] 냄새차단 쓰레기통 휴지통 히포2 크롬 오토실링 27L 19% 전용리필 3롤 , 2,966",
-          "rank": 44,
-          "rank_delta": "NEW",
-          "category": "리빙 전체",
           "price": "65,900원",
           "character_ip": "일반/비IP 상품",
           "url": "https://gift.kakao.com/product/5575413",
-          "is_new_entry": true
+          "rank_delta": "NEW",
+          "is_new_entry": true,
+          "product_id": "5575413",
+          "rank": 44,
+          "category": "리빙 전체",
+          "ranking_contexts": [
+            {
+              "category": "리빙 전체",
+              "rank": 44,
+              "rank_delta": "NEW",
+              "is_new_entry": true
+            }
+          ]
         }
       ]
     },
@@ -3863,57 +3965,102 @@
         {
           "brand": "굴강",
           "product_name": "\"주님 도와주세요\" 예수님 인형 팔베개 쿠션 안정감 친구 신박한 선물",
-          "rank": 28,
-          "rank_delta": "NEW",
-          "category": "팬시/문구/취미 (IP핵심)",
           "price": "17,900원",
           "character_ip": "기타 캐릭터/팬시",
           "url": "https://gift.kakao.com/product/13781031",
-          "is_new_entry": true
+          "rank_delta": "NEW",
+          "is_new_entry": true,
+          "product_id": "13781031",
+          "rank": 28,
+          "category": "팬시/문구/취미 (IP핵심)",
+          "ranking_contexts": [
+            {
+              "category": "팬시/문구/취미 (IP핵심)",
+              "rank": 28,
+              "rank_delta": "NEW",
+              "is_new_entry": true
+            }
+          ]
         },
         {
           "brand": "엔젤이",
           "product_name": "엔젤이 후드 담요 엔젤이 자수 뱃지",
-          "rank": 41,
-          "rank_delta": "NEW",
-          "category": "팬시/문구/취미 (IP핵심)",
           "price": "30,000원",
           "character_ip": "일반/비IP 상품",
           "url": "https://gift.kakao.com/product/14242122",
-          "is_new_entry": true
+          "rank_delta": "NEW",
+          "is_new_entry": true,
+          "product_id": "14242122",
+          "rank": 41,
+          "category": "팬시/문구/취미 (IP핵심)",
+          "ranking_contexts": [
+            {
+              "category": "팬시/문구/취미 (IP핵심)",
+              "rank": 41,
+              "rank_delta": "NEW",
+              "is_new_entry": true
+            }
+          ]
         },
         {
           "brand": "마인크래프트",
           "product_name": "마인크래프트 피규어 키링 S2(랜덤발송) , 3,138",
-          "rank": 42,
-          "rank_delta": "NEW",
-          "category": "팬시/문구/취미 (IP핵심)",
           "price": "7,900원",
           "character_ip": "일반/비IP 상품",
           "url": "https://gift.kakao.com/product/10941248",
-          "is_new_entry": true
+          "rank_delta": "NEW",
+          "is_new_entry": true,
+          "product_id": "10941248",
+          "rank": 42,
+          "category": "팬시/문구/취미 (IP핵심)",
+          "ranking_contexts": [
+            {
+              "category": "팬시/문구/취미 (IP핵심)",
+              "rank": 42,
+              "rank_delta": "NEW",
+              "is_new_entry": true
+            }
+          ]
         },
         {
           "brand": "다다랜드",
           "product_name": "집들이 자취템 추천 고양이 캣 100cm 바디필로우(대형 큰인형 안고자는 베개 쿠션 집순이 숙면 애착 선물 집들이 이사 자취 필로우 직장 동료) , 5,760",
-          "rank": 45,
-          "rank_delta": "NEW",
-          "category": "팬시/문구/취미 (IP핵심)",
           "price": "9,900원",
           "character_ip": "기타 캐릭터/팬시",
           "url": "https://gift.kakao.com/product/8207423",
-          "is_new_entry": true
+          "rank_delta": "NEW",
+          "is_new_entry": true,
+          "product_id": "8207423",
+          "rank": 45,
+          "category": "팬시/문구/취미 (IP핵심)",
+          "ranking_contexts": [
+            {
+              "category": "팬시/문구/취미 (IP핵심)",
+              "rank": 45,
+              "rank_delta": "NEW",
+              "is_new_entry": true
+            }
+          ]
         },
         {
           "brand": "빛내는사람들(팬시)",
           "product_name": "+키링 선물 다소GOAT한 키링 [평온한 젠틀돌멩이] 키링 인형 귀여운 학생 남자 여자 친구 웃긴 생일 이상한 선물 합격 행운 졸업 수능 네잎클로버 취업 응원 , 8,630",
-          "rank": 47,
-          "rank_delta": "NEW",
-          "category": "팬시/문구/취미 (IP핵심)",
           "price": "7,500원",
           "character_ip": "기타 캐릭터/팬시",
           "url": "https://gift.kakao.com/product/10293933",
-          "is_new_entry": true
+          "rank_delta": "NEW",
+          "is_new_entry": true,
+          "product_id": "10293933",
+          "rank": 47,
+          "category": "팬시/문구/취미 (IP핵심)",
+          "ranking_contexts": [
+            {
+              "category": "팬시/문구/취미 (IP핵심)",
+              "rank": 47,
+              "rank_delta": "NEW",
+              "is_new_entry": true
+            }
+          ]
         }
       ]
     },
@@ -4033,57 +4180,102 @@
         {
           "brand": "캐릭터침구",
           "product_name": "\"생일/기념일선물\" (추석 이후 입고) 먼작귀 꿀잠바디쿠션4종 택1 치이카와 가르마 토끼 굿즈 극세사 긴베개 안고자는 바디필로우 캐릭터 굿즈 인형",
-          "rank": 3,
-          "rank_delta": "NEW",
-          "category": "침구/패브릭",
           "price": "29,900원",
           "character_ip": "먼작귀/치이카와",
           "url": "https://gift.kakao.com/product/6986025",
-          "is_new_entry": true
+          "rank_delta": "NEW",
+          "is_new_entry": true,
+          "product_id": "6986025",
+          "rank": 3,
+          "category": "침구/패브릭",
+          "ranking_contexts": [
+            {
+              "category": "침구/패브릭",
+              "rank": 3,
+              "rank_delta": "NEW",
+              "is_new_entry": true
+            }
+          ]
         },
         {
           "brand": "캐릭터침구",
           "product_name": "\"생일/집들이선물\" 리락쿠마 낮잠쿠션 2종옵션 택1 캐릭터쿠션 핸드워머 사무실 학교 집들이 기념일 선물 , 1,209",
-          "rank": 22,
-          "rank_delta": "NEW",
-          "category": "침구/패브릭",
           "price": "22,900원",
           "character_ip": "리락쿠마",
           "url": "https://gift.kakao.com/product/13983870",
-          "is_new_entry": true
+          "rank_delta": "NEW",
+          "is_new_entry": true,
+          "product_id": "13983870",
+          "rank": 22,
+          "category": "침구/패브릭",
+          "ranking_contexts": [
+            {
+              "category": "침구/패브릭",
+              "rank": 22,
+              "rank_delta": "NEW",
+              "is_new_entry": true
+            }
+          ]
         },
         {
           "brand": "캐릭터침구",
           "product_name": "산리오 헬로키티 티슈커버 티슈케이스 레드클래식 , 1,100",
-          "rank": 43,
-          "rank_delta": "NEW",
-          "category": "침구/패브릭",
           "price": "19,000원",
           "character_ip": "산리오(헬로키티), 산리오(기타/통합)",
           "url": "https://gift.kakao.com/product/13551705",
-          "is_new_entry": true
+          "rank_delta": "NEW",
+          "is_new_entry": true,
+          "product_id": "13551705",
+          "rank": 43,
+          "category": "침구/패브릭",
+          "ranking_contexts": [
+            {
+              "category": "침구/패브릭",
+              "rank": 43,
+              "rank_delta": "NEW",
+              "is_new_entry": true
+            }
+          ]
         },
         {
           "brand": "캐릭터침구",
           "product_name": "잠이 술술 참이슬 후레쉬 소주병 바디필로우 L 19% , 5,692",
-          "rank": 45,
-          "rank_delta": "NEW",
-          "category": "침구/패브릭",
           "price": "32,000원",
           "character_ip": "캐릭터/팬시-침구",
           "url": "https://gift.kakao.com/product/9570334",
-          "is_new_entry": true
+          "rank_delta": "NEW",
+          "is_new_entry": true,
+          "product_id": "9570334",
+          "rank": 45,
+          "category": "침구/패브릭",
+          "ranking_contexts": [
+            {
+              "category": "침구/패브릭",
+              "rank": 45,
+              "rank_delta": "NEW",
+              "is_new_entry": true
+            }
+          ]
         },
         {
           "brand": "말랑필로우",
           "product_name": "킹받는 선물 생선 인형 바디필로우 롱 대형 쿠션 [웃긴 애착 신박한 안고자는 모찌 베개 여자 친구 학생 사무실 학교 이상한 쓸데없는 10% , 4,265",
-          "rank": 47,
-          "rank_delta": "NEW",
-          "category": "침구/패브릭",
           "price": "17,800원",
           "character_ip": "기타 캐릭터/팬시",
           "url": "https://gift.kakao.com/product/6841023",
-          "is_new_entry": true
+          "rank_delta": "NEW",
+          "is_new_entry": true,
+          "product_id": "6841023",
+          "rank": 47,
+          "category": "침구/패브릭",
+          "ranking_contexts": [
+            {
+              "category": "침구/패브릭",
+              "rank": 47,
+              "rank_delta": "NEW",
+              "is_new_entry": true
+            }
+          ]
         }
       ]
     },
@@ -4208,24 +4400,42 @@
         {
           "brand": "스타벅스(공식스토어)",
           "product_name": "\"피너츠 스트로 캡 포인트\" 펌킨 피너츠 글라스 콜드컵 591ml +에코텀블러음료쿠폰() (친구/귀여운 선물)",
-          "rank": 10,
-          "rank_delta": "NEW",
-          "category": "주방/식기",
           "price": "52,000원",
           "character_ip": "스누피/피너츠",
           "url": "https://gift.kakao.com/product/14276887",
-          "is_new_entry": true
+          "rank_delta": "NEW",
+          "is_new_entry": true,
+          "product_id": "14276887",
+          "rank": 10,
+          "category": "주방/식기",
+          "ranking_contexts": [
+            {
+              "category": "주방/식기",
+              "rank": 10,
+              "rank_delta": "NEW",
+              "is_new_entry": true
+            }
+          ]
         },
         {
           "brand": "스타벅스(공식스토어)",
           "product_name": "\"귀여움이 넘치는\" 펌킨 피너츠 머그 414ml (기념일/생일/집들이)",
-          "rank": 47,
-          "rank_delta": "NEW",
-          "category": "주방/식기",
           "price": "32,000원",
           "character_ip": "스누피/피너츠",
           "url": "https://gift.kakao.com/product/14277595",
-          "is_new_entry": true
+          "rank_delta": "NEW",
+          "is_new_entry": true,
+          "product_id": "14277595",
+          "rank": 47,
+          "category": "주방/식기",
+          "ranking_contexts": [
+            {
+              "category": "주방/식기",
+              "rank": 47,
+              "rank_delta": "NEW",
+              "is_new_entry": true
+            }
+          ]
         }
       ]
     }

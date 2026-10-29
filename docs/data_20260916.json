@@ -6924,57 +6924,126 @@
         {
           "brand": "가나디",
           "product_name": "가나디 머그 인형 봉제 연필꽂이 (귀여운/생일/가벼운 선물) , 1,110",
-          "rank": 1,
-          "rank_delta": "NEW",
-          "category": "팬시/문구/취미 (IP핵심)",
           "price": "12,800원",
           "character_ip": "가나디",
           "url": "https://gift.kakao.com/product/14256681",
-          "is_new_entry": true
-        },
-        {
-          "brand": "가나디",
-          "product_name": "가나디 인형 뱃지 2종 택1 (생일/친구/귀여운/우정/커플/선물 추천)",
-          "rank": 4,
           "rank_delta": "NEW",
+          "is_new_entry": true,
+          "product_id": "14256681",
+          "rank": 1,
           "category": "팬시/문구/취미 (IP핵심)",
-          "price": "7,800원",
-          "character_ip": "가나디",
-          "url": "https://gift.kakao.com/product/14257107",
-          "is_new_entry": true
+          "ranking_contexts": [
+            {
+              "category": "팬시/문구/취미 (IP핵심)",
+              "rank": 1,
+              "rank_delta": "NEW",
+              "is_new_entry": true
+            },
+            {
+              "category": "리빙 전체",
+              "rank": 5,
+              "rank_delta": "NEW",
+              "is_new_entry": true
+            }
+          ]
         },
         {
           "brand": "가나디",
           "product_name": "가나디 목쿠션&수면 안대 세트 (수면용품/생일/귀여운/우정/커플/여행 선물)",
-          "rank": 4,
-          "rank_delta": "NEW",
-          "category": "침구/패브릭",
           "price": "21,800원",
           "character_ip": "가나디",
           "url": "https://gift.kakao.com/product/14257180",
-          "is_new_entry": true
+          "rank_delta": "NEW",
+          "is_new_entry": true,
+          "product_id": "14257180",
+          "rank": 4,
+          "category": "침구/패브릭",
+          "ranking_contexts": [
+            {
+              "category": "침구/패브릭",
+              "rank": 4,
+              "rank_delta": "NEW",
+              "is_new_entry": true
+            },
+            {
+              "category": "리빙 전체",
+              "rank": 22,
+              "rank_delta": "NEW",
+              "is_new_entry": true
+            }
+          ]
         },
         {
           "brand": "가나디",
-          "product_name": "가나디 머그 인형 봉제 연필꽂이 (귀여운/생일/가벼운 선물) , 1,110",
-          "rank": 5,
-          "rank_delta": "NEW",
-          "category": "리빙 전체",
-          "price": "12,800원",
+          "product_name": "가나디 인형 뱃지 2종 택1 (생일/친구/귀여운/우정/커플/선물 추천)",
+          "price": "7,800원",
           "character_ip": "가나디",
-          "url": "https://gift.kakao.com/product/14256681",
-          "is_new_entry": true
+          "url": "https://gift.kakao.com/product/14257107",
+          "rank_delta": "NEW",
+          "is_new_entry": true,
+          "product_id": "14257107",
+          "rank": 4,
+          "category": "팬시/문구/취미 (IP핵심)",
+          "ranking_contexts": [
+            {
+              "category": "팬시/문구/취미 (IP핵심)",
+              "rank": 4,
+              "rank_delta": "NEW",
+              "is_new_entry": true
+            },
+            {
+              "category": "리빙 전체",
+              "rank": 19,
+              "rank_delta": "NEW",
+              "is_new_entry": true
+            }
+          ]
         },
         {
           "brand": "가나디",
           "product_name": "가나디 미니 배낭 파우치 키링 (생일/귀여운/우정/커플/가벼운 선물)",
-          "rank": 5,
-          "rank_delta": "NEW",
-          "category": "팬시/문구/취미 (IP핵심)",
           "price": "14,800원",
           "character_ip": "가나디",
           "url": "https://gift.kakao.com/product/14256740",
-          "is_new_entry": true
+          "rank_delta": "NEW",
+          "is_new_entry": true,
+          "product_id": "14256740",
+          "rank": 5,
+          "category": "팬시/문구/취미 (IP핵심)",
+          "ranking_contexts": [
+            {
+              "category": "팬시/문구/취미 (IP핵심)",
+              "rank": 5,
+              "rank_delta": "NEW",
+              "is_new_entry": true
+            },
+            {
+              "category": "리빙 전체",
+              "rank": 26,
+              "rank_delta": "NEW",
+              "is_new_entry": true
+            }
+          ]
+        },
+        {
+          "brand": "라인프렌즈스퀘어(캐릭터)",
+          "product_name": "\"요즘 내 표정\" 누가사 인형 키링 , 2,544",
+          "price": "16,000원",
+          "character_ip": "라인프렌즈/BT21",
+          "url": "https://gift.kakao.com/product/13177497",
+          "rank_delta": "NEW",
+          "is_new_entry": true,
+          "product_id": "13177497",
+          "rank": 16,
+          "category": "팬시/문구/취미 (IP핵심)",
+          "ranking_contexts": [
+            {
+              "category": "팬시/문구/취미 (IP핵심)",
+              "rank": 16,
+              "rank_delta": "NEW",
+              "is_new_entry": true
+            }
+          ]
         }
       ]
     },
@@ -7099,57 +7168,102 @@
         {
           "brand": "가나디",
           "product_name": "가나디 머그 인형 봉제 연필꽂이 (귀여운/생일/가벼운 선물) , 1,110",
-          "rank": 5,
-          "rank_delta": "NEW",
-          "category": "리빙 전체",
           "price": "12,800원",
           "character_ip": "가나디",
           "url": "https://gift.kakao.com/product/14256681",
-          "is_new_entry": true
+          "rank_delta": "NEW",
+          "is_new_entry": true,
+          "product_id": "14256681",
+          "rank": 5,
+          "category": "리빙 전체",
+          "ranking_contexts": [
+            {
+              "category": "리빙 전체",
+              "rank": 5,
+              "rank_delta": "NEW",
+              "is_new_entry": true
+            }
+          ]
         },
         {
           "brand": "가나디",
           "product_name": "가나디 인형 뱃지 2종 택1 (생일/친구/귀여운/우정/커플/선물 추천)",
-          "rank": 19,
-          "rank_delta": "NEW",
-          "category": "리빙 전체",
           "price": "7,800원",
           "character_ip": "가나디",
           "url": "https://gift.kakao.com/product/14257107",
-          "is_new_entry": true
+          "rank_delta": "NEW",
+          "is_new_entry": true,
+          "product_id": "14257107",
+          "rank": 19,
+          "category": "리빙 전체",
+          "ranking_contexts": [
+            {
+              "category": "리빙 전체",
+              "rank": 19,
+              "rank_delta": "NEW",
+              "is_new_entry": true
+            }
+          ]
         },
         {
           "brand": "가나디",
           "product_name": "가나디 목쿠션&수면 안대 세트 (수면용품/생일/귀여운/우정/커플/여행 선물)",
-          "rank": 22,
-          "rank_delta": "NEW",
-          "category": "리빙 전체",
           "price": "21,800원",
           "character_ip": "가나디",
           "url": "https://gift.kakao.com/product/14257180",
-          "is_new_entry": true
+          "rank_delta": "NEW",
+          "is_new_entry": true,
+          "product_id": "14257180",
+          "rank": 22,
+          "category": "리빙 전체",
+          "ranking_contexts": [
+            {
+              "category": "리빙 전체",
+              "rank": 22,
+              "rank_delta": "NEW",
+              "is_new_entry": true
+            }
+          ]
         },
         {
           "brand": "가나디",
           "product_name": "가나디 미니 배낭 파우치 키링 (생일/귀여운/우정/커플/가벼운 선물)",
-          "rank": 26,
-          "rank_delta": "NEW",
-          "category": "리빙 전체",
           "price": "14,800원",
           "character_ip": "가나디",
           "url": "https://gift.kakao.com/product/14256740",
-          "is_new_entry": true
+          "rank_delta": "NEW",
+          "is_new_entry": true,
+          "product_id": "14256740",
+          "rank": 26,
+          "category": "리빙 전체",
+          "ranking_contexts": [
+            {
+              "category": "리빙 전체",
+              "rank": 26,
+              "rank_delta": "NEW",
+              "is_new_entry": true
+            }
+          ]
         },
         {
           "brand": "브라운물티슈",
           "product_name": "생분해 원단 브라운 네이처 밤부 1등급 아기물티슈 70매 캡형 10+10팩 브라운물티슈 31%",
-          "rank": 34,
-          "rank_delta": "NEW",
-          "category": "리빙 전체",
           "price": "42,900원",
           "character_ip": "라인프렌즈/BT21",
           "url": "https://gift.kakao.com/product/8214105",
-          "is_new_entry": true
+          "rank_delta": "NEW",
+          "is_new_entry": true,
+          "product_id": "8214105",
+          "rank": 34,
+          "category": "리빙 전체",
+          "ranking_contexts": [
+            {
+              "category": "리빙 전체",
+              "rank": 34,
+              "rank_delta": "NEW",
+              "is_new_entry": true
+            }
+          ]
         }
       ]
     },
@@ -7269,57 +7383,102 @@
         {
           "brand": "가나디",
           "product_name": "가나디 머그 인형 봉제 연필꽂이 (귀여운/생일/가벼운 선물) , 1,110",
-          "rank": 1,
-          "rank_delta": "NEW",
-          "category": "팬시/문구/취미 (IP핵심)",
           "price": "12,800원",
           "character_ip": "가나디",
           "url": "https://gift.kakao.com/product/14256681",
-          "is_new_entry": true
+          "rank_delta": "NEW",
+          "is_new_entry": true,
+          "product_id": "14256681",
+          "rank": 1,
+          "category": "팬시/문구/취미 (IP핵심)",
+          "ranking_contexts": [
+            {
+              "category": "팬시/문구/취미 (IP핵심)",
+              "rank": 1,
+              "rank_delta": "NEW",
+              "is_new_entry": true
+            }
+          ]
         },
         {
           "brand": "가나디",
           "product_name": "가나디 인형 뱃지 2종 택1 (생일/친구/귀여운/우정/커플/선물 추천)",
-          "rank": 4,
-          "rank_delta": "NEW",
-          "category": "팬시/문구/취미 (IP핵심)",
           "price": "7,800원",
           "character_ip": "가나디",
           "url": "https://gift.kakao.com/product/14257107",
-          "is_new_entry": true
+          "rank_delta": "NEW",
+          "is_new_entry": true,
+          "product_id": "14257107",
+          "rank": 4,
+          "category": "팬시/문구/취미 (IP핵심)",
+          "ranking_contexts": [
+            {
+              "category": "팬시/문구/취미 (IP핵심)",
+              "rank": 4,
+              "rank_delta": "NEW",
+              "is_new_entry": true
+            }
+          ]
         },
         {
           "brand": "가나디",
           "product_name": "가나디 미니 배낭 파우치 키링 (생일/귀여운/우정/커플/가벼운 선물)",
-          "rank": 5,
-          "rank_delta": "NEW",
-          "category": "팬시/문구/취미 (IP핵심)",
           "price": "14,800원",
           "character_ip": "가나디",
           "url": "https://gift.kakao.com/product/14256740",
-          "is_new_entry": true
+          "rank_delta": "NEW",
+          "is_new_entry": true,
+          "product_id": "14256740",
+          "rank": 5,
+          "category": "팬시/문구/취미 (IP핵심)",
+          "ranking_contexts": [
+            {
+              "category": "팬시/문구/취미 (IP핵심)",
+              "rank": 5,
+              "rank_delta": "NEW",
+              "is_new_entry": true
+            }
+          ]
         },
         {
           "brand": "라인프렌즈스퀘어(캐릭터)",
           "product_name": "\"요즘 내 표정\" 누가사 인형 키링 , 2,544",
-          "rank": 16,
-          "rank_delta": "NEW",
-          "category": "팬시/문구/취미 (IP핵심)",
           "price": "16,000원",
           "character_ip": "라인프렌즈/BT21",
           "url": "https://gift.kakao.com/product/13177497",
-          "is_new_entry": true
+          "rank_delta": "NEW",
+          "is_new_entry": true,
+          "product_id": "13177497",
+          "rank": 16,
+          "category": "팬시/문구/취미 (IP핵심)",
+          "ranking_contexts": [
+            {
+              "category": "팬시/문구/취미 (IP핵심)",
+              "rank": 16,
+              "rank_delta": "NEW",
+              "is_new_entry": true
+            }
+          ]
         },
         {
           "brand": "인형",
           "product_name": "리락쿠마 조리개 파우치 4종",
-          "rank": 30,
-          "rank_delta": "NEW",
-          "category": "팬시/문구/취미 (IP핵심)",
           "price": "8,800원",
           "character_ip": "리락쿠마",
           "url": "https://gift.kakao.com/product/13838069",
-          "is_new_entry": true
+          "rank_delta": "NEW",
+          "is_new_entry": true,
+          "product_id": "13838069",
+          "rank": 30,
+          "category": "팬시/문구/취미 (IP핵심)",
+          "ranking_contexts": [
+            {
+              "category": "팬시/문구/취미 (IP핵심)",
+              "rank": 30,
+              "rank_delta": "NEW",
+              "is_new_entry": true
+            }
+          ]
         }
       ]
     },
@@ -7444,57 +7603,102 @@
         {
           "brand": "가나디",
           "product_name": "가나디 목쿠션&수면 안대 세트 (수면용품/생일/귀여운/우정/커플/여행 선물)",
-          "rank": 4,
-          "rank_delta": "NEW",
-          "category": "침구/패브릭",
           "price": "21,800원",
           "character_ip": "가나디",
           "url": "https://gift.kakao.com/product/14257180",
-          "is_new_entry": true
+          "rank_delta": "NEW",
+          "is_new_entry": true,
+          "product_id": "14257180",
+          "rank": 4,
+          "category": "침구/패브릭",
+          "ranking_contexts": [
+            {
+              "category": "침구/패브릭",
+              "rank": 4,
+              "rank_delta": "NEW",
+              "is_new_entry": true
+            }
+          ]
         },
         {
           "brand": "말랑필로우",
           "product_name": "뭘보냥 안고자는 고양이 바디필로우 80cm 롱 쿠션 긴 베개 인형 쿠션 인테리어 모찌 추천 애착 대형 동물 선물 이상한 여자 친구 22% , 6,312",
-          "rank": 30,
-          "rank_delta": "NEW",
-          "category": "침구/패브릭",
           "price": "9,900원",
           "character_ip": "기타 캐릭터/팬시",
           "url": "https://gift.kakao.com/product/11546351",
-          "is_new_entry": true
+          "rank_delta": "NEW",
+          "is_new_entry": true,
+          "product_id": "11546351",
+          "rank": 30,
+          "category": "침구/패브릭",
+          "ranking_contexts": [
+            {
+              "category": "침구/패브릭",
+              "rank": 30,
+              "rank_delta": "NEW",
+              "is_new_entry": true
+            }
+          ]
         },
         {
           "brand": "캐릭터침구",
           "product_name": "한교동러버 선물추천 산리오 한교동 빅바디필로우 롱쿠션 롱베개 롱필로우 퍼니 23% , 5,929",
-          "rank": 33,
-          "rank_delta": "NEW",
-          "category": "침구/패브릭",
           "price": "30,000원",
           "character_ip": "산리오(한교동), 산리오(기타/통합)",
           "url": "https://gift.kakao.com/product/11972964",
-          "is_new_entry": true
+          "rank_delta": "NEW",
+          "is_new_entry": true,
+          "product_id": "11972964",
+          "rank": 33,
+          "category": "침구/패브릭",
+          "ranking_contexts": [
+            {
+              "category": "침구/패브릭",
+              "rank": 33,
+              "rank_delta": "NEW",
+              "is_new_entry": true
+            }
+          ]
         },
         {
           "brand": "가나디",
           "product_name": "귀여운 선물 가나디 중형 시팅 인형 2종 (생일/집들이/인테리어/응원/귀여운)",
-          "rank": 39,
-          "rank_delta": "NEW",
-          "category": "침구/패브릭",
           "price": "23,800원",
           "character_ip": "가나디",
           "url": "https://gift.kakao.com/product/11744430",
-          "is_new_entry": true
+          "rank_delta": "NEW",
+          "is_new_entry": true,
+          "product_id": "11744430",
+          "rank": 39,
+          "category": "침구/패브릭",
+          "ranking_contexts": [
+            {
+              "category": "침구/패브릭",
+              "rank": 39,
+              "rank_delta": "NEW",
+              "is_new_entry": true
+            }
+          ]
         },
         {
           "brand": "오셀픽(리빙)",
           "product_name": "집꾸 필수템 [자취/집들이선물] 오셀픽 오브제 반원형 빨아쓰는 규조토 발매트 41% , 8,504",
-          "rank": 41,
-          "rank_delta": "NEW",
-          "category": "침구/패브릭",
           "price": "13,900원",
           "character_ip": "일반/비IP 상품",
           "url": "https://gift.kakao.com/product/11073954",
-          "is_new_entry": true
+          "rank_delta": "NEW",
+          "is_new_entry": true,
+          "product_id": "11073954",
+          "rank": 41,
+          "category": "침구/패브릭",
+          "ranking_contexts": [
+            {
+              "category": "침구/패브릭",
+              "rank": 41,
+              "rank_delta": "NEW",
+              "is_new_entry": true
+            }
+          ]
         }
       ]
     },
@@ -7619,57 +7823,102 @@
         {
           "brand": "스탠리",
           "product_name": "[스탠리공식유통사] 트랜짓 플립탑 473ml 25%",
-          "rank": 20,
-          "rank_delta": "NEW",
-          "category": "주방/식기",
           "price": "34,500원",
           "character_ip": "일반/비IP 상품",
           "url": "https://gift.kakao.com/product/12627079",
-          "is_new_entry": true
+          "rank_delta": "NEW",
+          "is_new_entry": true,
+          "product_id": "12627079",
+          "rank": 20,
+          "category": "주방/식기",
+          "ranking_contexts": [
+            {
+              "category": "주방/식기",
+              "rank": 20,
+              "rank_delta": "NEW",
+              "is_new_entry": true
+            }
+          ]
         },
         {
           "brand": "레고트",
           "product_name": "[카카오단독] 루프 텀블러 미니 200ml (5 colors) 20% 튜브 키링 1P , 8,283",
-          "rank": 37,
-          "rank_delta": "NEW",
-          "category": "주방/식기",
           "price": "23,200원",
           "character_ip": "카카오프렌즈(기타/통합)",
           "url": "https://gift.kakao.com/product/13923057",
-          "is_new_entry": true
+          "rank_delta": "NEW",
+          "is_new_entry": true,
+          "product_id": "13923057",
+          "rank": 37,
+          "category": "주방/식기",
+          "ranking_contexts": [
+            {
+              "category": "주방/식기",
+              "rank": 37,
+              "rank_delta": "NEW",
+              "is_new_entry": true
+            }
+          ]
         },
         {
           "brand": "이딸라",
           "product_name": "리뷰이벤트 [][이딸라] 가스테헬미 유니버설 글래스 260ml (2P)(색상 선택) 22%",
-          "rank": 39,
-          "rank_delta": "NEW",
-          "category": "주방/식기",
           "price": "47,000원",
           "character_ip": "일반/비IP 상품",
           "url": "https://gift.kakao.com/product/2125081",
-          "is_new_entry": true
+          "rank_delta": "NEW",
+          "is_new_entry": true,
+          "product_id": "2125081",
+          "rank": 39,
+          "category": "주방/식기",
+          "ranking_contexts": [
+            {
+              "category": "주방/식기",
+              "rank": 39,
+              "rank_delta": "NEW",
+              "is_new_entry": true
+            }
+          ]
         },
         {
           "brand": "보아르",
           "product_name": "50시간 보냉 [직장인/취업선물] 보아르 투웨이텀블러 1.18L대용량 손잡이 스테인리스 스텐 보온 보냉 차량용 대형 2종 빨대구성 생일 친구 13%",
-          "rank": 40,
-          "rank_delta": "NEW",
-          "category": "주방/식기",
           "price": "19,900원",
           "character_ip": "일반/비IP 상품",
           "url": "https://gift.kakao.com/product/10756773",
-          "is_new_entry": true
+          "rank_delta": "NEW",
+          "is_new_entry": true,
+          "product_id": "10756773",
+          "rank": 40,
+          "category": "주방/식기",
+          "ranking_contexts": [
+            {
+              "category": "주방/식기",
+              "rank": 40,
+              "rank_delta": "NEW",
+              "is_new_entry": true
+            }
+          ]
         },
         {
           "brand": "댄꼼마",
           "product_name": "\"집들이 선물 추천\" 짱구 식기세트(4P) [밥그릇, 국그릇, 컵, 미니그릇 세트/정품인증] , 6,647",
-          "rank": 41,
-          "rank_delta": "NEW",
-          "category": "주방/식기",
           "price": "29,900원",
           "character_ip": "짱구",
           "url": "https://gift.kakao.com/product/12786916",
-          "is_new_entry": true
+          "rank_delta": "NEW",
+          "is_new_entry": true,
+          "product_id": "12786916",
+          "rank": 41,
+          "category": "주방/식기",
+          "ranking_contexts": [
+            {
+              "category": "주방/식기",
+              "rank": 41,
+              "rank_delta": "NEW",
+              "is_new_entry": true
+            }
+          ]
         }
       ]
     }

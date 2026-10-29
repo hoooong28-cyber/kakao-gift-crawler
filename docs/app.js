@@ -512,7 +512,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
         const top30Tokens = [];
         const top31_100Tokens = [];
-        const risingStars = [];
 
         products.forEach(p => {
             if (p.has_packaging) pkgCount++;
@@ -552,18 +551,6 @@ document.addEventListener('DOMContentLoaded', () => {
             const tokens = (p.product_name || '').replace(/\[.*?\]|\(.*?\)|[^\p{L}\p{N}\s]/gu, ' ').split(/\s+/).filter(t => t.length >= 2 && !['선물', '추천', '선택', '1', '2', '3', '종', '택'].includes(t) && !noiseNouns.includes(t.toLowerCase()));
             top30Tokens.push(...tokens);
 
-            if (p.is_new_entry || (p.rank_delta && p.rank_delta >= 10)) {
-                risingStars.push({
-                    rank: p.rank,
-                    url: p.url,
-                    brand: p.brand || '-',
-                    product_name: p.product_name,
-                    price: p.price,
-                    rank_delta: p.is_new_entry ? 'NEW' : p.rank_delta,
-                    is_new_entry: !!p.is_new_entry,
-                    character_ip: p.character_ip || '일반/비IP 상품'
-                });
-            }
         });
 
         // Price Tier Matrix
@@ -613,7 +600,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     concept: ['귀여운', '감성', '신박한', '쓸데없는', '인테리어']
                 }
             },
-            card_4_rising_stars: risingStars
+            card_4_rising_stars: DashboardMetrics.risingStars(products)
         };
     }
 
@@ -640,7 +627,8 @@ document.addEventListener('DOMContentLoaded', () => {
         const sov = { top_ip_share: `${summary.share}%` };
         const priceUsp = cardData.card_2_price_and_usp || {};
         const kw = cardData.card_3_recommended_keywords || {};
-        const rising = cardData.card_4_rising_stars || [];
+        // Use the selected day's records, including for legacy cached card payloads.
+        const rising = DashboardMetrics.risingStars(getFilteredProducts());
 
         const tierMatrix = priceUsp.price_tier_matrix || {};
         const kwTypes = kw.by_type || {};
@@ -743,14 +731,14 @@ document.addEventListener('DOMContentLoaded', () => {
             <div class="card">
                 <div class="card-title">
                     <h3><i class="fa-solid fa-bolt highlight-cyan"></i> Card 4: 급상승 라이징 스타 (Rising Star Alert)</h3>
-                    <span>직전 수집일 대비 10계단 이상 상승 또는 이전 수집 범위 내 신규 진입 상품 · 상품명 클릭 시 카카오 선물하기 이동</span>
+                    <span>직전 수집일 대비 10계단 이상 상승 또는 수집 범위 내 신규 진입 · 동일 상품은 한 행 · 카테고리 순위 오름차순 최대 5개 · 번호는 표시 순서이며 통합 순위·공동 순위가 아닙니다.</span>
                 </div>
                 <div class="table-container" style="margin-top: 15px;">
                     <table class="custom-table">
                         <thead>
                             <tr>
-                                <th style="width: 70px;">순위</th>
-                                <th style="width: 100px;">변동폭</th>
+                                <th style="width: 70px;">번호</th>
+                                <th style="min-width: 240px;">카테고리별 순위 · 변동</th>
                                 <th style="width: 130px;">캐릭터 IP</th>
                                 <th style="width: 120px;">브랜드</th>
                                 <th>상품명</th>
@@ -758,11 +746,11 @@ document.addEventListener('DOMContentLoaded', () => {
                             </tr>
                         </thead>
                         <tbody>
-                            ${rising.length > 0 ? rising.map(r => `
+                            ${rising.length > 0 ? rising.map((r, idx) => `
                                 <tr>
-                                    <td class="badge-rank">${r.rank}위</td>
+                                    <td class="badge-rank">${idx + 1}</td>
                                     <td>
-                                        ${r.is_new_entry ? `<span style="background:#EF4444; color:#FFF; font-size:10px; padding:2px 6px; border-radius:4px; font-weight:700;">NEW</span>` : `<span style="color:#10B981; font-weight:700;"><i class="fa-solid fa-caret-up"></i> +${r.rank_delta}</span>`}
+                                        ${r.ranking_contexts.map(c => `<div>${c.category} · ${c.rank}위 <strong style="color:#10B981;">${c.is_new_entry ? 'NEW' : '+' + c.rank_delta}</strong></div>`).join('')}
                                     </td>
                                     <td><span style="background:rgba(254,229,0,0.1); color:#FEE500; padding:2px 6px; border-radius:4px; font-size:11px;">${r.character_ip || '일반/비IP'}</span></td>
                                     <td><span class="badge-brand">${r.brand}</span></td>

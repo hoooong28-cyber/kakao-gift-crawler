@@ -3524,57 +3524,102 @@
         {
           "brand": "브라운물티슈",
           "product_name": "[2026 카카오 단독] 프리미엄 옐로우 1등급 에디션 72매 캡형 10+10팩 브라운물티슈 31% , 2,473",
-          "rank": 5,
-          "rank_delta": "NEW",
-          "category": "리빙 전체",
           "price": "34,900원",
           "character_ip": "라인프렌즈/BT21",
           "url": "https://gift.kakao.com/product/11448277",
-          "is_new_entry": true
+          "rank_delta": "NEW",
+          "is_new_entry": true,
+          "product_id": "11448277",
+          "rank": 5,
+          "category": "리빙 전체",
+          "ranking_contexts": [
+            {
+              "category": "리빙 전체",
+              "rank": 5,
+              "rank_delta": "NEW",
+              "is_new_entry": true
+            }
+          ]
         },
         {
           "brand": "바자르",
           "product_name": "[단독] 신상컬러! 포근한 노팅힐 양털 극세사 차렵이불세트 - 4컬러 집들이선물 자취선물",
-          "rank": 14,
-          "rank_delta": "NEW",
-          "category": "침구/패브릭",
           "price": "52,690원",
           "character_ip": "일반/비IP 상품",
           "url": "https://gift.kakao.com/product/12349222",
-          "is_new_entry": true
+          "rank_delta": "NEW",
+          "is_new_entry": true,
+          "product_id": "12349222",
+          "rank": 14,
+          "category": "침구/패브릭",
+          "ranking_contexts": [
+            {
+              "category": "침구/패브릭",
+              "rank": 14,
+              "rank_delta": "NEW",
+              "is_new_entry": true
+            }
+          ]
         },
         {
           "brand": "캐릭터침구",
           "product_name": "먼가작고귀여운녀석들 먼작귀 패턴 담요 140x100 집순이 블랭킷 차박 학생 사무실 캐릭터담요 , 6,972",
-          "rank": 16,
-          "rank_delta": "NEW",
-          "category": "침구/패브릭",
           "price": "19,900원",
           "character_ip": "먼작귀/치이카와",
           "url": "https://gift.kakao.com/product/7898062",
-          "is_new_entry": true
+          "rank_delta": "NEW",
+          "is_new_entry": true,
+          "product_id": "7898062",
+          "rank": 16,
+          "category": "침구/패브릭",
+          "ranking_contexts": [
+            {
+              "category": "침구/패브릭",
+              "rank": 16,
+              "rank_delta": "NEW",
+              "is_new_entry": true
+            }
+          ]
         },
         {
           "brand": "삼공방",
           "product_name": "[키캡 키링] 4구 명패 키캡톡 주문제작 승진 취업 개업 축하 선물",
-          "rank": 21,
-          "rank_delta": "NEW",
-          "category": "팬시/문구/취미 (IP핵심)",
           "price": "20,000원",
           "character_ip": "일반/비IP 상품",
           "url": "https://gift.kakao.com/product/12831291",
-          "is_new_entry": true
+          "rank_delta": "NEW",
+          "is_new_entry": true,
+          "product_id": "12831291",
+          "rank": 21,
+          "category": "팬시/문구/취미 (IP핵심)",
+          "ranking_contexts": [
+            {
+              "category": "팬시/문구/취미 (IP핵심)",
+              "rank": 21,
+              "rank_delta": "NEW",
+              "is_new_entry": true
+            }
+          ]
         },
         {
           "brand": "타블도트",
           "product_name": "접시 세트포장 [SET] 타블도트 모닝 플레이트 3P 선물세트 종지 과일 야채모양 집들이선물",
-          "rank": 22,
-          "rank_delta": "NEW",
-          "category": "리빙 전체",
           "price": "25,900원",
           "character_ip": "일반/비IP 상품",
           "url": "https://gift.kakao.com/product/11850163",
-          "is_new_entry": true
+          "rank_delta": "NEW",
+          "is_new_entry": true,
+          "product_id": "11850163",
+          "rank": 22,
+          "category": "리빙 전체",
+          "ranking_contexts": [
+            {
+              "category": "리빙 전체",
+              "rank": 22,
+              "rank_delta": "NEW",
+              "is_new_entry": true
+            }
+          ]
         }
       ]
     },
@@ -3697,57 +3742,102 @@
         {
           "brand": "브라운물티슈",
           "product_name": "[2026 카카오 단독] 프리미엄 옐로우 1등급 에디션 72매 캡형 10+10팩 브라운물티슈 31% , 2,473",
-          "rank": 5,
-          "rank_delta": "NEW",
-          "category": "리빙 전체",
           "price": "34,900원",
           "character_ip": "라인프렌즈/BT21",
           "url": "https://gift.kakao.com/product/11448277",
-          "is_new_entry": true
+          "rank_delta": "NEW",
+          "is_new_entry": true,
+          "product_id": "11448277",
+          "rank": 5,
+          "category": "리빙 전체",
+          "ranking_contexts": [
+            {
+              "category": "리빙 전체",
+              "rank": 5,
+              "rank_delta": "NEW",
+              "is_new_entry": true
+            }
+          ]
         },
         {
           "brand": "타블도트",
           "product_name": "접시 세트포장 [SET] 타블도트 모닝 플레이트 3P 선물세트 종지 과일 야채모양 집들이선물",
-          "rank": 22,
-          "rank_delta": "NEW",
-          "category": "리빙 전체",
           "price": "25,900원",
           "character_ip": "일반/비IP 상품",
           "url": "https://gift.kakao.com/product/11850163",
-          "is_new_entry": true
+          "rank_delta": "NEW",
+          "is_new_entry": true,
+          "product_id": "11850163",
+          "rank": 22,
+          "category": "리빙 전체",
+          "ranking_contexts": [
+            {
+              "category": "리빙 전체",
+              "rank": 22,
+              "rank_delta": "NEW",
+              "is_new_entry": true
+            }
+          ]
         },
         {
           "brand": "입소문뷰티템",
           "product_name": "[생일/힐링선물]미누 룸&드레스 퍼퓸 + 사쉐 세트 (+미니퍼퓸) 섬유 향수 탈취제 룸스프레이 &차량용 방향제 샤쉐 집들이선물 미니 퍼퓸 15ml , 6,620",
-          "rank": 34,
-          "rank_delta": "NEW",
-          "category": "리빙 전체",
           "price": "22,900원",
           "character_ip": "일반/비IP 상품",
           "url": "https://gift.kakao.com/product/13831534",
-          "is_new_entry": true
+          "rank_delta": "NEW",
+          "is_new_entry": true,
+          "product_id": "13831534",
+          "rank": 34,
+          "category": "리빙 전체",
+          "ranking_contexts": [
+            {
+              "category": "리빙 전체",
+              "rank": 34,
+              "rank_delta": "NEW",
+              "is_new_entry": true
+            }
+          ]
         },
         {
           "brand": "로이체(인테리어)",
           "product_name": "몬치치 모니터 방향제",
-          "rank": 35,
-          "rank_delta": "NEW",
-          "category": "리빙 전체",
           "price": "29,900원",
           "character_ip": "몬치치",
           "url": "https://gift.kakao.com/product/14256350",
-          "is_new_entry": true
+          "rank_delta": "NEW",
+          "is_new_entry": true,
+          "product_id": "14256350",
+          "rank": 35,
+          "category": "리빙 전체",
+          "ranking_contexts": [
+            {
+              "category": "리빙 전체",
+              "rank": 35,
+              "rank_delta": "NEW",
+              "is_new_entry": true
+            }
+          ]
         },
         {
           "brand": "비아케이",
           "product_name": "선물하기단독 [체크 케이프 ] 밝기조절/3컬러 무선 터치 풍선 강아지&고양이 무드등 인테리어 소품 조명",
-          "rank": 36,
-          "rank_delta": "NEW",
-          "category": "리빙 전체",
           "price": "29,900원",
           "character_ip": "일반/비IP 상품",
           "url": "https://gift.kakao.com/product/10363042",
-          "is_new_entry": true
+          "rank_delta": "NEW",
+          "is_new_entry": true,
+          "product_id": "10363042",
+          "rank": 36,
+          "category": "리빙 전체",
+          "ranking_contexts": [
+            {
+              "category": "리빙 전체",
+              "rank": 36,
+              "rank_delta": "NEW",
+              "is_new_entry": true
+            }
+          ]
         }
       ]
     },
@@ -3868,57 +3958,102 @@
         {
           "brand": "삼공방",
           "product_name": "[키캡 키링] 4구 명패 키캡톡 주문제작 승진 취업 개업 축하 선물",
-          "rank": 21,
-          "rank_delta": "NEW",
-          "category": "팬시/문구/취미 (IP핵심)",
           "price": "20,000원",
           "character_ip": "일반/비IP 상품",
           "url": "https://gift.kakao.com/product/12831291",
-          "is_new_entry": true
+          "rank_delta": "NEW",
+          "is_new_entry": true,
+          "product_id": "12831291",
+          "rank": 21,
+          "category": "팬시/문구/취미 (IP핵심)",
+          "ranking_contexts": [
+            {
+              "category": "팬시/문구/취미 (IP핵심)",
+              "rank": 21,
+              "rank_delta": "NEW",
+              "is_new_entry": true
+            }
+          ]
         },
         {
           "brand": "프렌즈인형/피규어",
           "product_name": "\"승리요정 춘식이\" 프로야구단 승리요정 키링인형_춘식이 , 6,186",
-          "rank": 30,
-          "rank_delta": "NEW",
-          "category": "팬시/문구/취미 (IP핵심)",
           "price": "20,000원",
           "character_ip": "카카오프렌즈(춘식이)",
           "url": "https://gift.kakao.com/product/13589381",
-          "is_new_entry": true
+          "rank_delta": "NEW",
+          "is_new_entry": true,
+          "product_id": "13589381",
+          "rank": 30,
+          "category": "팬시/문구/취미 (IP핵심)",
+          "ranking_contexts": [
+            {
+              "category": "팬시/문구/취미 (IP핵심)",
+              "rank": 30,
+              "rank_delta": "NEW",
+              "is_new_entry": true
+            }
+          ]
         },
         {
           "brand": "가나디",
           "product_name": "학생/직장인선물추천 가나디 모니터 봉제 인형 2P 세트 (학생/직장인/데스크테리어/응원/취업/이직선물) , 9,244",
-          "rank": 34,
-          "rank_delta": "NEW",
-          "category": "팬시/문구/취미 (IP핵심)",
           "price": "18,800원",
           "character_ip": "가나디",
           "url": "https://gift.kakao.com/product/12820476",
-          "is_new_entry": true
+          "rank_delta": "NEW",
+          "is_new_entry": true,
+          "product_id": "12820476",
+          "rank": 34,
+          "category": "팬시/문구/취미 (IP핵심)",
+          "ranking_contexts": [
+            {
+              "category": "팬시/문구/취미 (IP핵심)",
+              "rank": 34,
+              "rank_delta": "NEW",
+              "is_new_entry": true
+            }
+          ]
         },
         {
           "brand": "프렌즈리빙LC",
           "product_name": "NEW 코스튬 춘식이 드레스업 인형 키링 의상 21종 택1 트렌치 키홀더 가방 열쇠고리 친구 응원 생일 커플 여자 응원 선물 , 8,378",
-          "rank": 40,
-          "rank_delta": "NEW",
-          "category": "팬시/문구/취미 (IP핵심)",
           "price": "12,900원",
           "character_ip": "카카오프렌즈(춘식이)",
           "url": "https://gift.kakao.com/product/7921281",
-          "is_new_entry": true
+          "rank_delta": "NEW",
+          "is_new_entry": true,
+          "product_id": "7921281",
+          "rank": 40,
+          "category": "팬시/문구/취미 (IP핵심)",
+          "ranking_contexts": [
+            {
+              "category": "팬시/문구/취미 (IP핵심)",
+              "rank": 40,
+              "rank_delta": "NEW",
+              "is_new_entry": true
+            }
+          ]
         },
         {
           "brand": "프렌즈인형/피규어",
           "product_name": "\"나만의 러닝 메이트\" 프렌즈런 러너 인형 키링_라이언/춘식이/어피치/무지/콘/네오/프로도/튜브/제이지/복심이",
-          "rank": 43,
-          "rank_delta": "NEW",
-          "category": "팬시/문구/취미 (IP핵심)",
           "price": "19,000원",
           "character_ip": "카카오프렌즈(춘식이), 카카오프렌즈(라이언), 카카오프렌즈(어피치), 카카오프렌즈(기타/통합)",
           "url": "https://gift.kakao.com/product/14389608",
-          "is_new_entry": true
+          "rank_delta": "NEW",
+          "is_new_entry": true,
+          "product_id": "14389608",
+          "rank": 43,
+          "category": "팬시/문구/취미 (IP핵심)",
+          "ranking_contexts": [
+            {
+              "category": "팬시/문구/취미 (IP핵심)",
+              "rank": 43,
+              "rank_delta": "NEW",
+              "is_new_entry": true
+            }
+          ]
         }
       ]
     },
@@ -4039,57 +4174,102 @@
         {
           "brand": "바자르",
           "product_name": "[단독] 신상컬러! 포근한 노팅힐 양털 극세사 차렵이불세트 - 4컬러 집들이선물 자취선물",
-          "rank": 14,
-          "rank_delta": "NEW",
-          "category": "침구/패브릭",
           "price": "52,690원",
           "character_ip": "일반/비IP 상품",
           "url": "https://gift.kakao.com/product/12349222",
-          "is_new_entry": true
+          "rank_delta": "NEW",
+          "is_new_entry": true,
+          "product_id": "12349222",
+          "rank": 14,
+          "category": "침구/패브릭",
+          "ranking_contexts": [
+            {
+              "category": "침구/패브릭",
+              "rank": 14,
+              "rank_delta": "NEW",
+              "is_new_entry": true
+            }
+          ]
         },
         {
           "brand": "캐릭터침구",
           "product_name": "먼가작고귀여운녀석들 먼작귀 패턴 담요 140x100 집순이 블랭킷 차박 학생 사무실 캐릭터담요 , 6,972",
-          "rank": 16,
-          "rank_delta": "NEW",
-          "category": "침구/패브릭",
           "price": "19,900원",
           "character_ip": "먼작귀/치이카와",
           "url": "https://gift.kakao.com/product/7898062",
-          "is_new_entry": true
+          "rank_delta": "NEW",
+          "is_new_entry": true,
+          "product_id": "7898062",
+          "rank": 16,
+          "category": "침구/패브릭",
+          "ranking_contexts": [
+            {
+              "category": "침구/패브릭",
+              "rank": 16,
+              "rank_delta": "NEW",
+              "is_new_entry": true
+            }
+          ]
         },
         {
           "brand": "바나코(인테리어)",
           "product_name": "집들이/이사/신혼 [러그+규조토매트] 바나코 모티프 발매트 기프트 세트 (8종 택1) 규조토 터프팅 결혼 여자 남자 친구 주방 친구 매트 선물 28% , 7,488",
-          "rank": 38,
-          "rank_delta": "NEW",
-          "category": "침구/패브릭",
           "price": "24,900원",
           "character_ip": "일반/비IP 상품",
           "url": "https://gift.kakao.com/product/14338254",
-          "is_new_entry": true
+          "rank_delta": "NEW",
+          "is_new_entry": true,
+          "product_id": "14338254",
+          "rank": 38,
+          "category": "침구/패브릭",
+          "ranking_contexts": [
+            {
+              "category": "침구/패브릭",
+              "rank": 38,
+              "rank_delta": "NEW",
+              "is_new_entry": true
+            }
+          ]
         },
         {
           "brand": "아이르",
           "product_name": "26FW 신상 \"학교/사무실/차박\" 따뜻포근선물 [소형1+1/대형/케이프] 부들부들 고밀도 5mm 극세사 밍크담요 20종 택1",
-          "rank": 41,
-          "rank_delta": "NEW",
-          "category": "침구/패브릭",
           "price": "16,900원",
           "character_ip": "일반/비IP 상품",
           "url": "https://gift.kakao.com/product/905813",
-          "is_new_entry": true
+          "rank_delta": "NEW",
+          "is_new_entry": true,
+          "product_id": "905813",
+          "rank": 41,
+          "category": "침구/패브릭",
+          "ranking_contexts": [
+            {
+              "category": "침구/패브릭",
+              "rank": 41,
+              "rank_delta": "NEW",
+              "is_new_entry": true
+            }
+          ]
         },
         {
           "brand": "프로젝트슬립",
           "product_name": "롱바디필로우/베개 [단독] \"털털냥\",쿨쿨냥 보온 바디필로우 모찌 냉감 바디필로우 베개 35%",
-          "rank": 45,
-          "rank_delta": "NEW",
-          "category": "침구/패브릭",
           "price": "39,000원",
           "character_ip": "캐릭터/팬시-침구",
           "url": "https://gift.kakao.com/product/13417129",
-          "is_new_entry": true
+          "rank_delta": "NEW",
+          "is_new_entry": true,
+          "product_id": "13417129",
+          "rank": 45,
+          "category": "침구/패브릭",
+          "ranking_contexts": [
+            {
+              "category": "침구/패브릭",
+              "rank": 45,
+              "rank_delta": "NEW",
+              "is_new_entry": true
+            }
+          ]
         }
       ]
     },
@@ -4211,57 +4391,102 @@
         {
           "brand": "블루보틀",
           "product_name": "포토리뷰이벤트 [쇼핑백] 데이오프 텀블러 (500ml) 에센셜 토트백",
-          "rank": 29,
-          "rank_delta": "NEW",
-          "category": "주방/식기",
           "price": "52,000원",
           "character_ip": "일반/비IP 상품",
           "url": "https://gift.kakao.com/product/6989471",
-          "is_new_entry": true
+          "rank_delta": "NEW",
+          "is_new_entry": true,
+          "product_id": "6989471",
+          "rank": 29,
+          "category": "주방/식기",
+          "ranking_contexts": [
+            {
+              "category": "주방/식기",
+              "rank": 29,
+              "rank_delta": "NEW",
+              "is_new_entry": true
+            }
+          ]
         },
         {
           "brand": "레고트",
           "product_name": "[카카오단독] 루프 텀블러 미니 200ml (5 colors) 20% , 8,019",
-          "rank": 36,
-          "rank_delta": "NEW",
-          "category": "주방/식기",
           "price": "23,200원",
           "character_ip": "일반/비IP 상품",
           "url": "https://gift.kakao.com/product/13923057",
-          "is_new_entry": true
+          "rank_delta": "NEW",
+          "is_new_entry": true,
+          "product_id": "13923057",
+          "rank": 36,
+          "category": "주방/식기",
+          "ranking_contexts": [
+            {
+              "category": "주방/식기",
+              "rank": 36,
+              "rank_delta": "NEW",
+              "is_new_entry": true
+            }
+          ]
         },
         {
           "brand": "헤이루미(키친)",
           "product_name": "[5종세트]5색 채소 미니 접시 세트|그릇 앞접시 브런치 자취 결혼 생일 집들이 이사 신혼 선물 , 7,763",
-          "rank": 40,
-          "rank_delta": "NEW",
-          "category": "주방/식기",
           "price": "16,900원",
           "character_ip": "일반/비IP 상품",
           "url": "https://gift.kakao.com/product/12698675",
-          "is_new_entry": true
+          "rank_delta": "NEW",
+          "is_new_entry": true,
+          "product_id": "12698675",
+          "rank": 40,
+          "category": "주방/식기",
+          "ranking_contexts": [
+            {
+              "category": "주방/식기",
+              "rank": 40,
+              "rank_delta": "NEW",
+              "is_new_entry": true
+            }
+          ]
         },
         {
           "brand": "스탠리",
           "product_name": "[스탠리공식유통사] 카페 투 고 트래블 머그 236ml , 3,673",
-          "rank": 45,
-          "rank_delta": "NEW",
-          "category": "주방/식기",
           "price": "28,000원",
           "character_ip": "일반/비IP 상품",
           "url": "https://gift.kakao.com/product/12647294",
-          "is_new_entry": true
+          "rank_delta": "NEW",
+          "is_new_entry": true,
+          "product_id": "12647294",
+          "rank": 45,
+          "category": "주방/식기",
+          "ranking_contexts": [
+            {
+              "category": "주방/식기",
+              "rank": 45,
+              "rank_delta": "NEW",
+              "is_new_entry": true
+            }
+          ]
         },
         {
           "brand": "스타벅스(공식스토어)",
           "product_name": "\"귀여움 수확 완료\" SS 파머스마켓 단테 텀블러 591ml +에코텀블러음료쿠폰() (대학생/직장인/생일/선물)",
-          "rank": 48,
-          "rank_delta": "NEW",
-          "category": "주방/식기",
           "price": "47,000원",
           "character_ip": "일반/비IP 상품",
           "url": "https://gift.kakao.com/product/14365526",
-          "is_new_entry": true
+          "rank_delta": "NEW",
+          "is_new_entry": true,
+          "product_id": "14365526",
+          "rank": 48,
+          "category": "주방/식기",
+          "ranking_contexts": [
+            {
+              "category": "주방/식기",
+              "rank": 48,
+              "rank_delta": "NEW",
+              "is_new_entry": true
+            }
+          ]
         }
       ]
     }

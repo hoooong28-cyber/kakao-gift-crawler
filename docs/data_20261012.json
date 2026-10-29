@@ -3524,57 +3524,120 @@
         {
           "brand": "스탠리",
           "product_name": "[스탠리공식유통사] 아이스플로우 플립 스트로 2.0 텀블러 887ml 30%",
-          "rank": 1,
-          "rank_delta": "NEW",
-          "category": "리빙 전체",
           "price": "34,300원",
           "character_ip": "일반/비IP 상품",
           "url": "https://gift.kakao.com/product/7868778",
-          "is_new_entry": true
+          "rank_delta": "NEW",
+          "is_new_entry": true,
+          "product_id": "7868778",
+          "rank": 1,
+          "category": "리빙 전체",
+          "ranking_contexts": [
+            {
+              "category": "리빙 전체",
+              "rank": 1,
+              "rank_delta": "NEW",
+              "is_new_entry": true
+            }
+          ]
         },
         {
           "brand": "프렌즈인형/피규어",
           "product_name": "\"짱구와 춘식이의 유쾌한 고구마 농장 이야기\" 짱구는 못말려X카카오프렌즈 랜덤 피규어_춘식이",
-          "rank": 2,
-          "rank_delta": "NEW",
-          "category": "팬시/문구/취미 (IP핵심)",
           "price": "20,000원",
           "character_ip": "카카오프렌즈(춘식이), 카카오프렌즈(기타/통합), 짱구",
           "url": "https://gift.kakao.com/product/14169756",
-          "is_new_entry": true
-        },
-        {
-          "brand": "이젠돌스",
-          "product_name": "먼작귀 치이카와 헤어브러쉬 캐릭터 머리빗 , 4,011",
-          "rank": 4,
           "rank_delta": "NEW",
+          "is_new_entry": true,
+          "product_id": "14169756",
+          "rank": 2,
           "category": "팬시/문구/취미 (IP핵심)",
-          "price": "11,900원",
-          "character_ip": "먼작귀/치이카와",
-          "url": "https://gift.kakao.com/product/13881428",
-          "is_new_entry": true
+          "ranking_contexts": [
+            {
+              "category": "팬시/문구/취미 (IP핵심)",
+              "rank": 2,
+              "rank_delta": "NEW",
+              "is_new_entry": true
+            },
+            {
+              "category": "리빙 전체",
+              "rank": 17,
+              "rank_delta": "NEW",
+              "is_new_entry": true
+            }
+          ]
         },
         {
           "brand": "프렌즈리빙",
           "product_name": "[따뜻한선물] \"짱구와 함께하는 포근한 휴식\" 짱구는 못말려X카카오프렌즈 대형 양털담요_프렌즈",
-          "rank": 4,
-          "rank_delta": "NEW",
-          "category": "침구/패브릭",
           "price": "29,000원",
           "character_ip": "카카오프렌즈(기타/통합), 짱구",
           "url": "https://gift.kakao.com/product/14170186",
-          "is_new_entry": true
+          "rank_delta": "NEW",
+          "is_new_entry": true,
+          "product_id": "14170186",
+          "rank": 4,
+          "category": "침구/패브릭",
+          "ranking_contexts": [
+            {
+              "category": "침구/패브릭",
+              "rank": 4,
+              "rank_delta": "NEW",
+              "is_new_entry": true
+            },
+            {
+              "category": "리빙 전체",
+              "rank": 13,
+              "rank_delta": "NEW",
+              "is_new_entry": true
+            }
+          ]
+        },
+        {
+          "brand": "이젠돌스",
+          "product_name": "먼작귀 치이카와 헤어브러쉬 캐릭터 머리빗 , 4,011",
+          "price": "11,900원",
+          "character_ip": "먼작귀/치이카와",
+          "url": "https://gift.kakao.com/product/13881428",
+          "rank_delta": "NEW",
+          "is_new_entry": true,
+          "product_id": "13881428",
+          "rank": 4,
+          "category": "팬시/문구/취미 (IP핵심)",
+          "ranking_contexts": [
+            {
+              "category": "팬시/문구/취미 (IP핵심)",
+              "rank": 4,
+              "rank_delta": "NEW",
+              "is_new_entry": true
+            },
+            {
+              "category": "리빙 전체",
+              "rank": 30,
+              "rank_delta": "NEW",
+              "is_new_entry": true
+            }
+          ]
         },
         {
           "brand": "스탠리",
           "product_name": "[스탠리공식유통사] 퀜처 H2.0 플로우스테이트 텀블러 591ml 30%",
-          "rank": 11,
-          "rank_delta": "NEW",
-          "category": "리빙 전체",
           "price": "30,800원",
           "character_ip": "일반/비IP 상품",
           "url": "https://gift.kakao.com/product/7868266",
-          "is_new_entry": true
+          "rank_delta": "NEW",
+          "is_new_entry": true,
+          "product_id": "7868266",
+          "rank": 11,
+          "category": "리빙 전체",
+          "ranking_contexts": [
+            {
+              "category": "리빙 전체",
+              "rank": 11,
+              "rank_delta": "NEW",
+              "is_new_entry": true
+            }
+          ]
         }
       ]
     },
@@ -3698,57 +3761,102 @@
         {
           "brand": "스탠리",
           "product_name": "[스탠리공식유통사] 아이스플로우 플립 스트로 2.0 텀블러 887ml 30%",
-          "rank": 1,
-          "rank_delta": "NEW",
-          "category": "리빙 전체",
           "price": "34,300원",
           "character_ip": "일반/비IP 상품",
           "url": "https://gift.kakao.com/product/7868778",
-          "is_new_entry": true
+          "rank_delta": "NEW",
+          "is_new_entry": true,
+          "product_id": "7868778",
+          "rank": 1,
+          "category": "리빙 전체",
+          "ranking_contexts": [
+            {
+              "category": "리빙 전체",
+              "rank": 1,
+              "rank_delta": "NEW",
+              "is_new_entry": true
+            }
+          ]
         },
         {
           "brand": "스탠리",
           "product_name": "[스탠리공식유통사] 퀜처 H2.0 플로우스테이트 텀블러 591ml 30%",
-          "rank": 11,
-          "rank_delta": "NEW",
-          "category": "리빙 전체",
           "price": "30,800원",
           "character_ip": "일반/비IP 상품",
           "url": "https://gift.kakao.com/product/7868266",
-          "is_new_entry": true
+          "rank_delta": "NEW",
+          "is_new_entry": true,
+          "product_id": "7868266",
+          "rank": 11,
+          "category": "리빙 전체",
+          "ranking_contexts": [
+            {
+              "category": "리빙 전체",
+              "rank": 11,
+              "rank_delta": "NEW",
+              "is_new_entry": true
+            }
+          ]
         },
         {
           "brand": "스탠리",
           "product_name": "[스탠리공식유통사] 아이스플로우 플립 스트로 2.0 텀블러 591ml 20%",
-          "rank": 12,
-          "rank_delta": "NEW",
-          "category": "리빙 전체",
           "price": "35,200원",
           "character_ip": "일반/비IP 상품",
           "url": "https://gift.kakao.com/product/7868895",
-          "is_new_entry": true
+          "rank_delta": "NEW",
+          "is_new_entry": true,
+          "product_id": "7868895",
+          "rank": 12,
+          "category": "리빙 전체",
+          "ranking_contexts": [
+            {
+              "category": "리빙 전체",
+              "rank": 12,
+              "rank_delta": "NEW",
+              "is_new_entry": true
+            }
+          ]
         },
         {
           "brand": "프렌즈리빙",
           "product_name": "[따뜻한선물] \"짱구와 함께하는 포근한 휴식\" 짱구는 못말려X카카오프렌즈 대형 양털담요_프렌즈",
-          "rank": 13,
-          "rank_delta": "NEW",
-          "category": "리빙 전체",
           "price": "29,000원",
           "character_ip": "카카오프렌즈(기타/통합), 짱구",
           "url": "https://gift.kakao.com/product/14170186",
-          "is_new_entry": true
+          "rank_delta": "NEW",
+          "is_new_entry": true,
+          "product_id": "14170186",
+          "rank": 13,
+          "category": "리빙 전체",
+          "ranking_contexts": [
+            {
+              "category": "리빙 전체",
+              "rank": 13,
+              "rank_delta": "NEW",
+              "is_new_entry": true
+            }
+          ]
         },
         {
           "brand": "크리넥스",
           "product_name": "혜택가 20,950원 크리넥스 3겹 울트라클린 화이트 25m24롤X2팩 휴지/화장지/집들이선물/이사선물 35% 27,500원 메가커피 2천원권 , 1,595",
-          "rank": 14,
-          "rank_delta": "NEW",
-          "category": "리빙 전체",
           "price": "20,950원",
           "character_ip": "일반/비IP 상품",
           "url": "https://gift.kakao.com/product/6934422",
-          "is_new_entry": true
+          "rank_delta": "NEW",
+          "is_new_entry": true,
+          "product_id": "6934422",
+          "rank": 14,
+          "category": "리빙 전체",
+          "ranking_contexts": [
+            {
+              "category": "리빙 전체",
+              "rank": 14,
+              "rank_delta": "NEW",
+              "is_new_entry": true
+            }
+          ]
         }
       ]
     },
@@ -3867,57 +3975,102 @@
         {
           "brand": "프렌즈인형/피규어",
           "product_name": "\"짱구와 춘식이의 유쾌한 고구마 농장 이야기\" 짱구는 못말려X카카오프렌즈 랜덤 피규어_춘식이",
-          "rank": 2,
-          "rank_delta": "NEW",
-          "category": "팬시/문구/취미 (IP핵심)",
           "price": "20,000원",
           "character_ip": "카카오프렌즈(춘식이), 카카오프렌즈(기타/통합), 짱구",
           "url": "https://gift.kakao.com/product/14169756",
-          "is_new_entry": true
+          "rank_delta": "NEW",
+          "is_new_entry": true,
+          "product_id": "14169756",
+          "rank": 2,
+          "category": "팬시/문구/취미 (IP핵심)",
+          "ranking_contexts": [
+            {
+              "category": "팬시/문구/취미 (IP핵심)",
+              "rank": 2,
+              "rank_delta": "NEW",
+              "is_new_entry": true
+            }
+          ]
         },
         {
           "brand": "이젠돌스",
           "product_name": "먼작귀 치이카와 헤어브러쉬 캐릭터 머리빗 , 4,011",
-          "rank": 4,
-          "rank_delta": "NEW",
-          "category": "팬시/문구/취미 (IP핵심)",
           "price": "11,900원",
           "character_ip": "먼작귀/치이카와",
           "url": "https://gift.kakao.com/product/13881428",
-          "is_new_entry": true
+          "rank_delta": "NEW",
+          "is_new_entry": true,
+          "product_id": "13881428",
+          "rank": 4,
+          "category": "팬시/문구/취미 (IP핵심)",
+          "ranking_contexts": [
+            {
+              "category": "팬시/문구/취미 (IP핵심)",
+              "rank": 4,
+              "rank_delta": "NEW",
+              "is_new_entry": true
+            }
+          ]
         },
         {
           "brand": "인형",
           "product_name": "리락쿠마 필통 파우치 , 1,989",
-          "rank": 35,
-          "rank_delta": "NEW",
-          "category": "팬시/문구/취미 (IP핵심)",
           "price": "8,500원",
           "character_ip": "리락쿠마",
           "url": "https://gift.kakao.com/product/13838085",
-          "is_new_entry": true
+          "rank_delta": "NEW",
+          "is_new_entry": true,
+          "product_id": "13838085",
+          "rank": 35,
+          "category": "팬시/문구/취미 (IP핵심)",
+          "ranking_contexts": [
+            {
+              "category": "팬시/문구/취미 (IP핵심)",
+              "rank": 35,
+              "rank_delta": "NEW",
+              "is_new_entry": true
+            }
+          ]
         },
         {
           "brand": "네이버웹툰(굿즈)",
           "product_name": "냐한남자 2027 데스크 캘린더",
-          "rank": 36,
-          "rank_delta": "NEW",
-          "category": "팬시/문구/취미 (IP핵심)",
           "price": "15,000원",
           "character_ip": "일반/비IP 상품",
           "url": "https://gift.kakao.com/product/14444683",
-          "is_new_entry": true
+          "rank_delta": "NEW",
+          "is_new_entry": true,
+          "product_id": "14444683",
+          "rank": 36,
+          "category": "팬시/문구/취미 (IP핵심)",
+          "ranking_contexts": [
+            {
+              "category": "팬시/문구/취미 (IP핵심)",
+              "rank": 36,
+              "rank_delta": "NEW",
+              "is_new_entry": true
+            }
+          ]
         },
         {
           "brand": "가나디",
           "product_name": "학생/직장인선물추천 가나디 모니터 봉제 인형 2P 세트 (학생/직장인/데스크테리어/응원/취업/이직선물) , 9,308",
-          "rank": 39,
-          "rank_delta": "NEW",
-          "category": "팬시/문구/취미 (IP핵심)",
           "price": "18,800원",
           "character_ip": "가나디",
           "url": "https://gift.kakao.com/product/12820476",
-          "is_new_entry": true
+          "rank_delta": "NEW",
+          "is_new_entry": true,
+          "product_id": "12820476",
+          "rank": 39,
+          "category": "팬시/문구/취미 (IP핵심)",
+          "ranking_contexts": [
+            {
+              "category": "팬시/문구/취미 (IP핵심)",
+              "rank": 39,
+              "rank_delta": "NEW",
+              "is_new_entry": true
+            }
+          ]
         }
       ]
     },
@@ -4036,57 +4189,102 @@
         {
           "brand": "프렌즈리빙",
           "product_name": "[따뜻한선물] \"짱구와 함께하는 포근한 휴식\" 짱구는 못말려X카카오프렌즈 대형 양털담요_프렌즈",
-          "rank": 4,
-          "rank_delta": "NEW",
-          "category": "침구/패브릭",
           "price": "29,000원",
           "character_ip": "카카오프렌즈(기타/통합), 짱구",
           "url": "https://gift.kakao.com/product/14170186",
-          "is_new_entry": true
+          "rank_delta": "NEW",
+          "is_new_entry": true,
+          "product_id": "14170186",
+          "rank": 4,
+          "category": "침구/패브릭",
+          "ranking_contexts": [
+            {
+              "category": "침구/패브릭",
+              "rank": 4,
+              "rank_delta": "NEW",
+              "is_new_entry": true
+            }
+          ]
         },
         {
           "brand": "가나디",
           "product_name": "귀여운 선물 가나디 중형 시팅 인형 2종 (생일/집들이/인테리어/응원/귀여운)",
-          "rank": 42,
-          "rank_delta": "NEW",
-          "category": "침구/패브릭",
           "price": "23,800원",
           "character_ip": "가나디",
           "url": "https://gift.kakao.com/product/11744430",
-          "is_new_entry": true
+          "rank_delta": "NEW",
+          "is_new_entry": true,
+          "product_id": "11744430",
+          "rank": 42,
+          "category": "침구/패브릭",
+          "ranking_contexts": [
+            {
+              "category": "침구/패브릭",
+              "rank": 42,
+              "rank_delta": "NEW",
+              "is_new_entry": true
+            }
+          ]
         },
         {
           "brand": "미니멀룸",
           "product_name": "나만의 맞춤 필로우 \"집들이선물\" 원하는대로 변신하는 인절미 바디필로우 , 7,083",
-          "rank": 44,
-          "rank_delta": "NEW",
-          "category": "침구/패브릭",
           "price": "29,900원",
           "character_ip": "일반/비IP 상품",
           "url": "https://gift.kakao.com/product/7744922",
-          "is_new_entry": true
+          "rank_delta": "NEW",
+          "is_new_entry": true,
+          "product_id": "7744922",
+          "rank": 44,
+          "category": "침구/패브릭",
+          "ranking_contexts": [
+            {
+              "category": "침구/패브릭",
+              "rank": 44,
+              "rank_delta": "NEW",
+              "is_new_entry": true
+            }
+          ]
         },
         {
           "brand": "드브르베",
           "product_name": "신혼/집들이 선물 [선물박스포장] 드브르베 방수 앞치마+티코스터 2p(선착순) 드브르베 티코스터 2p",
-          "rank": 45,
-          "rank_delta": "NEW",
-          "category": "침구/패브릭",
           "price": "79,000원",
           "character_ip": "일반/비IP 상품",
           "url": "https://gift.kakao.com/product/10127260",
-          "is_new_entry": true
+          "rank_delta": "NEW",
+          "is_new_entry": true,
+          "product_id": "10127260",
+          "rank": 45,
+          "category": "침구/패브릭",
+          "ranking_contexts": [
+            {
+              "category": "침구/패브릭",
+              "rank": 45,
+              "rank_delta": "NEW",
+              "is_new_entry": true
+            }
+          ]
         },
         {
           "brand": "본디자인랩",
           "product_name": "선물하기 단독 감성적인 미니러그 [센스있는 집들이 선물] \"19종 택1\" 빨아쓰는 워셔블 발매트 방석 러그 욕실 화장실 주방 발매트 논슬립 친구 생일 이사선물 스타벅스 아메리카노 , 7,854",
-          "rank": 47,
-          "rank_delta": "NEW",
-          "category": "침구/패브릭",
           "price": "21,800원",
           "character_ip": "일반/비IP 상품",
           "url": "https://gift.kakao.com/product/9583032",
-          "is_new_entry": true
+          "rank_delta": "NEW",
+          "is_new_entry": true,
+          "product_id": "9583032",
+          "rank": 47,
+          "category": "침구/패브릭",
+          "ranking_contexts": [
+            {
+              "category": "침구/패브릭",
+              "rank": 47,
+              "rank_delta": "NEW",
+              "is_new_entry": true
+            }
+          ]
         }
       ]
     },
@@ -4209,57 +4407,102 @@
         {
           "brand": "스타벅스(공식스토어)",
           "product_name": "\"메쉬 미니백 키링 \" SS 콩코드 사이렌 화이트 텀블러 591ml +에코텀블러음료쿠폰() 10% 메쉬 미니백 키링",
-          "rank": 26,
-          "rank_delta": "NEW",
-          "category": "주방/식기",
           "price": "31,500원",
           "character_ip": "일반/비IP 상품",
           "url": "https://gift.kakao.com/product/2244072",
-          "is_new_entry": true
+          "rank_delta": "NEW",
+          "is_new_entry": true,
+          "product_id": "2244072",
+          "rank": 26,
+          "category": "주방/식기",
+          "ranking_contexts": [
+            {
+              "category": "주방/식기",
+              "rank": 26,
+              "rank_delta": "NEW",
+              "is_new_entry": true
+            }
+          ]
         },
         {
           "brand": "스타벅스(공식스토어)",
           "product_name": "\"퍼스널컬러\" SS 단테 텀블러 710ml (4종 택 1) +에코텀블러음료쿠폰() 20%",
-          "rank": 32,
-          "rank_delta": "NEW",
-          "category": "주방/식기",
           "price": "39,200원",
           "character_ip": "일반/비IP 상품",
           "url": "https://gift.kakao.com/product/12109009",
-          "is_new_entry": true
+          "rank_delta": "NEW",
+          "is_new_entry": true,
+          "product_id": "12109009",
+          "rank": 32,
+          "category": "주방/식기",
+          "ranking_contexts": [
+            {
+              "category": "주방/식기",
+              "rank": 32,
+              "rank_delta": "NEW",
+              "is_new_entry": true
+            }
+          ]
         },
         {
           "brand": "스탠리",
           "product_name": "[스탠리공식유통사] 플로우스테이트 스프링 보틀 591ml , 8,370",
-          "rank": 39,
-          "rank_delta": "NEW",
-          "category": "주방/식기",
           "price": "54,000원",
           "character_ip": "일반/비IP 상품",
           "url": "https://gift.kakao.com/product/13421555",
-          "is_new_entry": true
+          "rank_delta": "NEW",
+          "is_new_entry": true,
+          "product_id": "13421555",
+          "rank": 39,
+          "category": "주방/식기",
+          "ranking_contexts": [
+            {
+              "category": "주방/식기",
+              "rank": 39,
+              "rank_delta": "NEW",
+              "is_new_entry": true
+            }
+          ]
         },
         {
           "brand": "스타벅스(공식스토어)",
           "product_name": "\"대용량 인기 텀블러\" SS 스탠리 켄처 텀블러 1183ml (3종 택 1) +에코텀블러음료쿠폰() 20%",
-          "rank": 40,
-          "rank_delta": "NEW",
-          "category": "주방/식기",
           "price": "54,400원",
           "character_ip": "일반/비IP 상품",
           "url": "https://gift.kakao.com/product/10151707",
-          "is_new_entry": true
+          "rank_delta": "NEW",
+          "is_new_entry": true,
+          "product_id": "10151707",
+          "rank": 40,
+          "category": "주방/식기",
+          "ranking_contexts": [
+            {
+              "category": "주방/식기",
+              "rank": 40,
+              "rank_delta": "NEW",
+              "is_new_entry": true
+            }
+          ]
         },
         {
           "brand": "타블도트",
           "product_name": "1인 브런치 홈세트 [] 슬로우 3단 머그 홈카페 세트 3P 4color 10%",
-          "rank": 43,
-          "rank_delta": "NEW",
-          "category": "주방/식기",
           "price": "39,500원",
           "character_ip": "일반/비IP 상품",
           "url": "https://gift.kakao.com/product/11413779",
-          "is_new_entry": true
+          "rank_delta": "NEW",
+          "is_new_entry": true,
+          "product_id": "11413779",
+          "rank": 43,
+          "category": "주방/식기",
+          "ranking_contexts": [
+            {
+              "category": "주방/식기",
+              "rank": 43,
+              "rank_delta": "NEW",
+              "is_new_entry": true
+            }
+          ]
         }
       ]
     }

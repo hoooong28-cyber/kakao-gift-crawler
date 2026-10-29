@@ -6924,57 +6924,126 @@
         {
           "brand": "프렌즈인형/피규어",
           "product_name": "\"짱구와 춘식이의 유쾌한 고구마 농장 이야기\" 짱구는 못말려X카카오프렌즈 랜덤 피규어_춘식이",
-          "rank": 4,
-          "rank_delta": "NEW",
-          "category": "팬시/문구/취미 (IP핵심)",
           "price": "20,000원",
           "character_ip": "카카오프렌즈(춘식이), 카카오프렌즈(기타/통합), 짱구",
           "url": "https://gift.kakao.com/product/14169756",
-          "is_new_entry": true
+          "rank_delta": "NEW",
+          "is_new_entry": true,
+          "product_id": "14169756",
+          "rank": 4,
+          "category": "팬시/문구/취미 (IP핵심)",
+          "ranking_contexts": [
+            {
+              "category": "팬시/문구/취미 (IP핵심)",
+              "rank": 4,
+              "rank_delta": "NEW",
+              "is_new_entry": true
+            },
+            {
+              "category": "리빙 전체",
+              "rank": 34,
+              "rank_delta": "NEW",
+              "is_new_entry": true
+            }
+          ]
         },
         {
           "brand": "프렌즈인형/피규어",
           "product_name": "\"짱구의 최애 과자 초코비의 마스코트\" 짱구는 못말려X카카오프렌즈 와니야마상 키링인형_춘식이",
-          "rank": 6,
-          "rank_delta": "NEW",
-          "category": "팬시/문구/취미 (IP핵심)",
           "price": "16,000원",
           "character_ip": "카카오프렌즈(춘식이), 카카오프렌즈(기타/통합), 짱구",
           "url": "https://gift.kakao.com/product/14169476",
-          "is_new_entry": true
+          "rank_delta": "NEW",
+          "is_new_entry": true,
+          "product_id": "14169476",
+          "rank": 6,
+          "category": "팬시/문구/취미 (IP핵심)",
+          "ranking_contexts": [
+            {
+              "category": "팬시/문구/취미 (IP핵심)",
+              "rank": 6,
+              "rank_delta": "NEW",
+              "is_new_entry": true
+            },
+            {
+              "category": "리빙 전체",
+              "rank": 44,
+              "rank_delta": "NEW",
+              "is_new_entry": true
+            }
+          ]
         },
         {
           "brand": "프렌즈인형/피규어",
           "product_name": "\"짱구와 춘식이와 함께 포근한 꿈나라\" 짱구는 못말려X카카오프렌즈 파자마 키링인형_짱구/춘식이",
-          "rank": 7,
-          "rank_delta": "NEW",
-          "category": "팬시/문구/취미 (IP핵심)",
           "price": "18,000원",
           "character_ip": "카카오프렌즈(춘식이), 카카오프렌즈(기타/통합), 짱구",
           "url": "https://gift.kakao.com/product/14169381",
-          "is_new_entry": true
+          "rank_delta": "NEW",
+          "is_new_entry": true,
+          "product_id": "14169381",
+          "rank": 7,
+          "category": "팬시/문구/취미 (IP핵심)",
+          "ranking_contexts": [
+            {
+              "category": "팬시/문구/취미 (IP핵심)",
+              "rank": 7,
+              "rank_delta": "NEW",
+              "is_new_entry": true
+            },
+            {
+              "category": "리빙 전체",
+              "rank": 47,
+              "rank_delta": "NEW",
+              "is_new_entry": true
+            }
+          ]
         },
         {
           "brand": "프렌즈리빙",
           "product_name": "[따뜻한선물] \"짱구와 함께하는 포근한 휴식\" 짱구는 못말려X카카오프렌즈 대형 양털담요_프렌즈",
-          "rank": 11,
-          "rank_delta": "NEW",
-          "category": "침구/패브릭",
           "price": "29,000원",
           "character_ip": "카카오프렌즈(기타/통합), 짱구",
           "url": "https://gift.kakao.com/product/14170186",
-          "is_new_entry": true
+          "rank_delta": "NEW",
+          "is_new_entry": true,
+          "product_id": "14170186",
+          "rank": 11,
+          "category": "침구/패브릭",
+          "ranking_contexts": [
+            {
+              "category": "침구/패브릭",
+              "rank": 11,
+              "rank_delta": "NEW",
+              "is_new_entry": true
+            }
+          ]
         },
         {
           "brand": "프렌즈인형/피규어",
           "product_name": "\"액션빔 발사!\" 짱구는 못말려X카카오프렌즈 LED 피규어 키링_춘식이",
-          "rank": 12,
-          "rank_delta": "NEW",
-          "category": "팬시/문구/취미 (IP핵심)",
           "price": "18,000원",
           "character_ip": "카카오프렌즈(춘식이), 카카오프렌즈(기타/통합), 짱구",
           "url": "https://gift.kakao.com/product/14169825",
-          "is_new_entry": true
+          "rank_delta": "NEW",
+          "is_new_entry": true,
+          "product_id": "14169825",
+          "rank": 12,
+          "category": "팬시/문구/취미 (IP핵심)",
+          "ranking_contexts": [
+            {
+              "category": "팬시/문구/취미 (IP핵심)",
+              "rank": 12,
+              "rank_delta": "NEW",
+              "is_new_entry": true
+            },
+            {
+              "category": "리빙 전체",
+              "rank": 69,
+              "rank_delta": "NEW",
+              "is_new_entry": true
+            }
+          ]
         }
       ]
     },
@@ -7100,57 +7169,102 @@
         {
           "brand": "리베르",
           "product_name": "더현대품절대란 [] 섬유향수 듀오 세트 5% 감사 카드",
-          "rank": 23,
-          "rank_delta": "NEW",
-          "category": "리빙 전체",
           "price": "30,000원",
           "character_ip": "일반/비IP 상품",
           "url": "https://gift.kakao.com/product/2250496",
-          "is_new_entry": true
+          "rank_delta": "NEW",
+          "is_new_entry": true,
+          "product_id": "2250496",
+          "rank": 23,
+          "category": "리빙 전체",
+          "ranking_contexts": [
+            {
+              "category": "리빙 전체",
+              "rank": 23,
+              "rank_delta": "NEW",
+              "is_new_entry": true
+            }
+          ]
         },
         {
           "brand": "오센트",
           "product_name": "오센트 메타몽 행잉 퍼퓸 SET(본품+추가 리필) , 9,213",
-          "rank": 28,
-          "rank_delta": "NEW",
-          "category": "리빙 전체",
           "price": "33,300원",
           "character_ip": "포켓몬",
           "url": "https://gift.kakao.com/product/13744909",
-          "is_new_entry": true
+          "rank_delta": "NEW",
+          "is_new_entry": true,
+          "product_id": "13744909",
+          "rank": 28,
+          "category": "리빙 전체",
+          "ranking_contexts": [
+            {
+              "category": "리빙 전체",
+              "rank": 28,
+              "rank_delta": "NEW",
+              "is_new_entry": true
+            }
+          ]
         },
         {
           "brand": "프렌즈인형/피규어",
           "product_name": "\"짱구와 춘식이의 유쾌한 고구마 농장 이야기\" 짱구는 못말려X카카오프렌즈 랜덤 피규어_춘식이",
-          "rank": 34,
-          "rank_delta": "NEW",
-          "category": "리빙 전체",
           "price": "20,000원",
           "character_ip": "카카오프렌즈(춘식이), 카카오프렌즈(기타/통합), 짱구",
           "url": "https://gift.kakao.com/product/14169756",
-          "is_new_entry": true
+          "rank_delta": "NEW",
+          "is_new_entry": true,
+          "product_id": "14169756",
+          "rank": 34,
+          "category": "리빙 전체",
+          "ranking_contexts": [
+            {
+              "category": "리빙 전체",
+              "rank": 34,
+              "rank_delta": "NEW",
+              "is_new_entry": true
+            }
+          ]
         },
         {
           "brand": "픽싯",
           "product_name": "픽싯 룸데오도란트 고체탈취제 470g 4개 (3종 택1) 33%",
-          "rank": 38,
-          "rank_delta": "NEW",
-          "category": "리빙 전체",
           "price": "100,900원",
           "character_ip": "일반/비IP 상품",
           "url": "https://gift.kakao.com/product/14050779",
-          "is_new_entry": true
+          "rank_delta": "NEW",
+          "is_new_entry": true,
+          "product_id": "14050779",
+          "rank": 38,
+          "category": "리빙 전체",
+          "ranking_contexts": [
+            {
+              "category": "리빙 전체",
+              "rank": 38,
+              "rank_delta": "NEW",
+              "is_new_entry": true
+            }
+          ]
         },
         {
           "brand": "프렌즈인형/피규어",
           "product_name": "\"짱구의 최애 과자 초코비의 마스코트\" 짱구는 못말려X카카오프렌즈 와니야마상 키링인형_춘식이",
-          "rank": 44,
-          "rank_delta": "NEW",
-          "category": "리빙 전체",
           "price": "16,000원",
           "character_ip": "카카오프렌즈(춘식이), 카카오프렌즈(기타/통합), 짱구",
           "url": "https://gift.kakao.com/product/14169476",
-          "is_new_entry": true
+          "rank_delta": "NEW",
+          "is_new_entry": true,
+          "product_id": "14169476",
+          "rank": 44,
+          "category": "리빙 전체",
+          "ranking_contexts": [
+            {
+              "category": "리빙 전체",
+              "rank": 44,
+              "rank_delta": "NEW",
+              "is_new_entry": true
+            }
+          ]
         }
       ]
     },
@@ -7270,57 +7384,102 @@
         {
           "brand": "프렌즈인형/피규어",
           "product_name": "\"짱구와 춘식이의 유쾌한 고구마 농장 이야기\" 짱구는 못말려X카카오프렌즈 랜덤 피규어_춘식이",
-          "rank": 4,
-          "rank_delta": "NEW",
-          "category": "팬시/문구/취미 (IP핵심)",
           "price": "20,000원",
           "character_ip": "카카오프렌즈(춘식이), 카카오프렌즈(기타/통합), 짱구",
           "url": "https://gift.kakao.com/product/14169756",
-          "is_new_entry": true
+          "rank_delta": "NEW",
+          "is_new_entry": true,
+          "product_id": "14169756",
+          "rank": 4,
+          "category": "팬시/문구/취미 (IP핵심)",
+          "ranking_contexts": [
+            {
+              "category": "팬시/문구/취미 (IP핵심)",
+              "rank": 4,
+              "rank_delta": "NEW",
+              "is_new_entry": true
+            }
+          ]
         },
         {
           "brand": "프렌즈인형/피규어",
           "product_name": "\"짱구의 최애 과자 초코비의 마스코트\" 짱구는 못말려X카카오프렌즈 와니야마상 키링인형_춘식이",
-          "rank": 6,
-          "rank_delta": "NEW",
-          "category": "팬시/문구/취미 (IP핵심)",
           "price": "16,000원",
           "character_ip": "카카오프렌즈(춘식이), 카카오프렌즈(기타/통합), 짱구",
           "url": "https://gift.kakao.com/product/14169476",
-          "is_new_entry": true
+          "rank_delta": "NEW",
+          "is_new_entry": true,
+          "product_id": "14169476",
+          "rank": 6,
+          "category": "팬시/문구/취미 (IP핵심)",
+          "ranking_contexts": [
+            {
+              "category": "팬시/문구/취미 (IP핵심)",
+              "rank": 6,
+              "rank_delta": "NEW",
+              "is_new_entry": true
+            }
+          ]
         },
         {
           "brand": "프렌즈인형/피규어",
           "product_name": "\"짱구와 춘식이와 함께 포근한 꿈나라\" 짱구는 못말려X카카오프렌즈 파자마 키링인형_짱구/춘식이",
-          "rank": 7,
-          "rank_delta": "NEW",
-          "category": "팬시/문구/취미 (IP핵심)",
           "price": "18,000원",
           "character_ip": "카카오프렌즈(춘식이), 카카오프렌즈(기타/통합), 짱구",
           "url": "https://gift.kakao.com/product/14169381",
-          "is_new_entry": true
+          "rank_delta": "NEW",
+          "is_new_entry": true,
+          "product_id": "14169381",
+          "rank": 7,
+          "category": "팬시/문구/취미 (IP핵심)",
+          "ranking_contexts": [
+            {
+              "category": "팬시/문구/취미 (IP핵심)",
+              "rank": 7,
+              "rank_delta": "NEW",
+              "is_new_entry": true
+            }
+          ]
         },
         {
           "brand": "프렌즈인형/피규어",
           "product_name": "\"액션빔 발사!\" 짱구는 못말려X카카오프렌즈 LED 피규어 키링_춘식이",
-          "rank": 12,
-          "rank_delta": "NEW",
-          "category": "팬시/문구/취미 (IP핵심)",
           "price": "18,000원",
           "character_ip": "카카오프렌즈(춘식이), 카카오프렌즈(기타/통합), 짱구",
           "url": "https://gift.kakao.com/product/14169825",
-          "is_new_entry": true
+          "rank_delta": "NEW",
+          "is_new_entry": true,
+          "product_id": "14169825",
+          "rank": 12,
+          "category": "팬시/문구/취미 (IP핵심)",
+          "ranking_contexts": [
+            {
+              "category": "팬시/문구/취미 (IP핵심)",
+              "rank": 12,
+              "rank_delta": "NEW",
+              "is_new_entry": true
+            }
+          ]
         },
         {
           "brand": "프렌즈인형/피규어",
           "product_name": "\"귀여움 100%! 당도 100%!\" 짱구는 못말려X카카오프렌즈 고구마 키링인형 세트_춘식이",
-          "rank": 13,
-          "rank_delta": "NEW",
-          "category": "팬시/문구/취미 (IP핵심)",
           "price": "38,000원",
           "character_ip": "카카오프렌즈(춘식이), 카카오프렌즈(기타/통합), 짱구",
           "url": "https://gift.kakao.com/product/14169155",
-          "is_new_entry": true
+          "rank_delta": "NEW",
+          "is_new_entry": true,
+          "product_id": "14169155",
+          "rank": 13,
+          "category": "팬시/문구/취미 (IP핵심)",
+          "ranking_contexts": [
+            {
+              "category": "팬시/문구/취미 (IP핵심)",
+              "rank": 13,
+              "rank_delta": "NEW",
+              "is_new_entry": true
+            }
+          ]
         }
       ]
     },
@@ -7445,57 +7604,102 @@
         {
           "brand": "프렌즈리빙",
           "product_name": "[따뜻한선물] \"짱구와 함께하는 포근한 휴식\" 짱구는 못말려X카카오프렌즈 대형 양털담요_프렌즈",
-          "rank": 11,
-          "rank_delta": "NEW",
-          "category": "침구/패브릭",
           "price": "29,000원",
           "character_ip": "카카오프렌즈(기타/통합), 짱구",
           "url": "https://gift.kakao.com/product/14170186",
-          "is_new_entry": true
+          "rank_delta": "NEW",
+          "is_new_entry": true,
+          "product_id": "14170186",
+          "rank": 11,
+          "category": "침구/패브릭",
+          "ranking_contexts": [
+            {
+              "category": "침구/패브릭",
+              "rank": 11,
+              "rank_delta": "NEW",
+              "is_new_entry": true
+            }
+          ]
         },
         {
           "brand": "캐릭터침구",
           "product_name": "집들이/자취/이사 산리오 폼폼푸린 클로버 3종 침구세트 (베개커버+차렵이불+패드) 15%",
-          "rank": 28,
-          "rank_delta": "NEW",
-          "category": "침구/패브릭",
           "price": "79,050원",
           "character_ip": "산리오(폼폼푸린), 산리오(기타/통합)",
           "url": "https://gift.kakao.com/product/13870010",
-          "is_new_entry": true
+          "rank_delta": "NEW",
+          "is_new_entry": true,
+          "product_id": "13870010",
+          "rank": 28,
+          "category": "침구/패브릭",
+          "ranking_contexts": [
+            {
+              "category": "침구/패브릭",
+              "rank": 28,
+              "rank_delta": "NEW",
+              "is_new_entry": true
+            }
+          ]
         },
         {
           "brand": "짱구(생활)",
           "product_name": "센스있는 선물! 짱구 돌멩이 맹구 콧물 티슈 케이스 휴지 물티슈 보관함 케이스 33% 리뷰인증시 아아!",
-          "rank": 48,
-          "rank_delta": "NEW",
-          "category": "침구/패브릭",
           "price": "19,900원",
           "character_ip": "짱구",
           "url": "https://gift.kakao.com/product/13802689",
-          "is_new_entry": true
+          "rank_delta": "NEW",
+          "is_new_entry": true,
+          "product_id": "13802689",
+          "rank": 48,
+          "category": "침구/패브릭",
+          "ranking_contexts": [
+            {
+              "category": "침구/패브릭",
+              "rank": 48,
+              "rank_delta": "NEW",
+              "is_new_entry": true
+            }
+          ]
         },
         {
           "brand": "캐릭터침구",
           "product_name": "한교동 응원선물 산리오캐릭터즈 한교동 바디필로우 퍼니 + 한교동 테이블매트 20% , 5,925",
-          "rank": 54,
-          "rank_delta": "NEW",
-          "category": "침구/패브릭",
           "price": "31,000원",
           "character_ip": "산리오(한교동), 산리오(기타/통합)",
           "url": "https://gift.kakao.com/product/10782325",
-          "is_new_entry": true
+          "rank_delta": "NEW",
+          "is_new_entry": true,
+          "product_id": "10782325",
+          "rank": 54,
+          "category": "침구/패브릭",
+          "ranking_contexts": [
+            {
+              "category": "침구/패브릭",
+              "rank": 54,
+              "rank_delta": "NEW",
+              "is_new_entry": true
+            }
+          ]
         },
         {
           "brand": "캐릭터침구",
           "product_name": "[단독] \"시원한 선물\" 펭귄 슈퍼쿨 냉감 바디필로우 3종택1 (블루/그레이/핑크)",
-          "rank": 58,
-          "rank_delta": "NEW",
-          "category": "침구/패브릭",
           "price": "29,900원",
           "character_ip": "캐릭터/팬시-침구",
           "url": "https://gift.kakao.com/product/2470751",
-          "is_new_entry": true
+          "rank_delta": "NEW",
+          "is_new_entry": true,
+          "product_id": "2470751",
+          "rank": 58,
+          "category": "침구/패브릭",
+          "ranking_contexts": [
+            {
+              "category": "침구/패브릭",
+              "rank": 58,
+              "rank_delta": "NEW",
+              "is_new_entry": true
+            }
+          ]
         }
       ]
     },
@@ -7621,57 +7825,102 @@
         {
           "brand": "스타벅스(공식스토어)",
           "product_name": "\"음료쿠폰 2장 \" [픽토그램 각인] SS 스탠리 시그니처 켄처 텀블러 887ml +에코텀블러음료쿠폰() , 8,588",
-          "rank": 49,
-          "rank_delta": "NEW",
-          "category": "주방/식기",
           "price": "58,000원",
           "character_ip": "일반/비IP 상품",
           "url": "https://gift.kakao.com/product/12136249",
-          "is_new_entry": true
+          "rank_delta": "NEW",
+          "is_new_entry": true,
+          "product_id": "12136249",
+          "rank": 49,
+          "category": "주방/식기",
+          "ranking_contexts": [
+            {
+              "category": "주방/식기",
+              "rank": 49,
+              "rank_delta": "NEW",
+              "is_new_entry": true
+            }
+          ]
         },
         {
           "brand": "먼작귀(팬시)",
           "product_name": "귀여운 선물추천 [먼작귀] 치이카와 스테인리스 텀블러 350ML (보온 보냉 이중 진공)(치이카와, 우사기, 하치와레) , 2,066",
-          "rank": 67,
-          "rank_delta": "NEW",
-          "category": "주방/식기",
           "price": "18,500원",
           "character_ip": "먼작귀/치이카와",
           "url": "https://gift.kakao.com/product/11520497",
-          "is_new_entry": true
+          "rank_delta": "NEW",
+          "is_new_entry": true,
+          "product_id": "11520497",
+          "rank": 67,
+          "category": "주방/식기",
+          "ranking_contexts": [
+            {
+              "category": "주방/식기",
+              "rank": 67,
+              "rank_delta": "NEW",
+              "is_new_entry": true
+            }
+          ]
         },
         {
           "brand": "스타우브",
           "product_name": "커리 플레이트 택1 파스타 접시 스프 접시 생일/결혼/집들이선물 41% 셀럽픽 문지애 , 1,130",
-          "rank": 71,
-          "rank_delta": "NEW",
-          "category": "주방/식기",
           "price": "43,000원",
           "character_ip": "일반/비IP 상품",
           "url": "https://gift.kakao.com/product/12192107",
-          "is_new_entry": true
+          "rank_delta": "NEW",
+          "is_new_entry": true,
+          "product_id": "12192107",
+          "rank": 71,
+          "category": "주방/식기",
+          "ranking_contexts": [
+            {
+              "category": "주방/식기",
+              "rank": 71,
+              "rank_delta": "NEW",
+              "is_new_entry": true
+            }
+          ]
         },
         {
           "brand": "스타벅스(공식스토어)",
           "product_name": "\"귀여움이 넘치는\" 펌킨 피너츠 머그 414ml (기념일/생일/집들이)",
-          "rank": 74,
-          "rank_delta": "NEW",
-          "category": "주방/식기",
           "price": "32,000원",
           "character_ip": "스누피/피너츠",
           "url": "https://gift.kakao.com/product/14277595",
-          "is_new_entry": true
+          "rank_delta": "NEW",
+          "is_new_entry": true,
+          "product_id": "14277595",
+          "rank": 74,
+          "category": "주방/식기",
+          "ranking_contexts": [
+            {
+              "category": "주방/식기",
+              "rank": 74,
+              "rank_delta": "NEW",
+              "is_new_entry": true
+            }
+          ]
         },
         {
           "brand": "크로우캐년",
           "product_name": "아침식사/신혼부부 마블 시리얼 세트 (18color) 크로우캐년 주방세제",
-          "rank": 75,
-          "rank_delta": "NEW",
-          "category": "주방/식기",
           "price": "34,000원",
           "character_ip": "일반/비IP 상품",
           "url": "https://gift.kakao.com/product/5364018",
-          "is_new_entry": true
+          "rank_delta": "NEW",
+          "is_new_entry": true,
+          "product_id": "5364018",
+          "rank": 75,
+          "category": "주방/식기",
+          "ranking_contexts": [
+            {
+              "category": "주방/식기",
+              "rank": 75,
+              "rank_delta": "NEW",
+              "is_new_entry": true
+            }
+          ]
         }
       ]
     }

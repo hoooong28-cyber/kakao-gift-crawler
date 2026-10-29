@@ -6,6 +6,25 @@ const { test } = require('node:test');
 const metrics = require('../docs/metrics.js');
 const docs = path.join(__dirname, '../docs');
 
+test('rising table merges cross-category products even with stale cards; category filter preserves movement', async () => {
+    const snapshot = JSON.parse(fs.readFileSync(path.join(docs, 'data_20261028.json')));
+    snapshot.cards['전체'].card_4_rising_stars = [{rank: 999, product_name: 'STALE_CARD'}];
+    const app = dashboard(snapshot);
+    await new Promise(resolve => setImmediate(resolve));
+    const html = app.elements.get('b2b-cards-container').innerHTML;
+    const rising = html.split('<!-- Card 4: Rising Stars Alert -->')[1];
+    assert.ok(rising.includes('카테고리별 순위 · 변동'));
+    assert.ok(!rising.includes('STALE_CARD'));
+    assert.equal((rising.match(/href="https:\/\/gift.kakao.com\/product\/11734230"/g) || []).length, 1);
+    assert.ok(rising.includes('리빙 전체 · 1위'));
+    assert.ok(rising.includes('팬시/문구/취미 (IP핵심) · 1위'));
+    assert.equal((rising.match(/class="badge-rank"/g) || []).length, 5);
+    app.select('리빙 전체');
+    const filtered = app.elements.get('b2b-cards-container').innerHTML.split('<!-- Card 4: Rising Stars Alert -->')[1];
+    assert.ok(!filtered.includes('팬시/문구/취미 (IP핵심) ·'));
+    assert.deepEqual(app.errors, []);
+});
+
 function dashboard(snapshot, reports = {}) {
     const elements = new Map();
     const errors = [];

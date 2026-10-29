@@ -121,57 +121,126 @@
       {
         "brand": "가나디",
         "product_name": "귀여운 선물 가나디 인형 키링 9종 택1 (생일/귀여운/우정/커플 선물)",
-        "rank": 1,
+        "price": "16,300원",
+        "character_ip": "가나디",
+        "url": "https://gift.kakao.com/product/11734230",
         "rank_delta": "NEW",
-        "category": "리빙 전체",
-        "price": "16,300원",
-        "character_ip": "가나디",
-        "url": "https://gift.kakao.com/product/11734230",
-        "is_new_entry": true
-      },
-      {
-        "brand": "가나디",
-        "product_name": "귀여운 선물 가나디 인형 키링 9종 택1 (생일/귀여운/우정/커플 선물)",
+        "is_new_entry": true,
+        "product_id": "11734230",
         "rank": 1,
-        "rank_delta": 32,
-        "category": "팬시/문구/취미 (IP핵심)",
-        "price": "16,300원",
-        "character_ip": "가나디",
-        "url": "https://gift.kakao.com/product/11734230",
-        "is_new_entry": false
+        "category": "리빙 전체",
+        "ranking_contexts": [
+          {
+            "category": "리빙 전체",
+            "rank": 1,
+            "rank_delta": "NEW",
+            "is_new_entry": true
+          },
+          {
+            "category": "팬시/문구/취미 (IP핵심)",
+            "rank": 1,
+            "rank_delta": 32,
+            "is_new_entry": false
+          }
+        ]
       },
       {
         "brand": "가나디",
         "product_name": "가나디 무릎 담요 (겨울/따뜻한/귀여운/우정/생일/친구/응원)",
+        "price": "14,800원",
+        "character_ip": "가나디",
+        "url": "https://gift.kakao.com/product/14506119",
+        "rank_delta": "NEW",
+        "is_new_entry": true,
+        "product_id": "14506119",
         "rank": 2,
-        "rank_delta": "NEW",
         "category": "침구/패브릭",
-        "price": "14,800원",
-        "character_ip": "가나디",
-        "url": "https://gift.kakao.com/product/14506119",
-        "is_new_entry": true
-      },
-      {
-        "brand": "가나디",
-        "product_name": "가나디 무릎 담요 (겨울/따뜻한/귀여운/우정/생일/친구/응원)",
-        "rank": 4,
-        "rank_delta": "NEW",
-        "category": "리빙 전체",
-        "price": "14,800원",
-        "character_ip": "가나디",
-        "url": "https://gift.kakao.com/product/14506119",
-        "is_new_entry": true
+        "ranking_contexts": [
+          {
+            "category": "침구/패브릭",
+            "rank": 2,
+            "rank_delta": "NEW",
+            "is_new_entry": true
+          },
+          {
+            "category": "리빙 전체",
+            "rank": 4,
+            "rank_delta": "NEW",
+            "is_new_entry": true
+          }
+        ]
       },
       {
         "brand": "알라바스터",
         "product_name": "[+쇼핑백] 접시 16cm 2P(색상선택가능) 11% , 6,914",
-        "rank": 8,
-        "rank_delta": 10,
-        "category": "주방/식기",
         "price": "39,000원",
         "character_ip": "일반/비IP 상품",
         "url": "https://gift.kakao.com/product/13428444",
-        "is_new_entry": false
+        "rank_delta": 10,
+        "is_new_entry": false,
+        "product_id": "13428444",
+        "rank": 8,
+        "category": "주방/식기",
+        "ranking_contexts": [
+          {
+            "category": "주방/식기",
+            "rank": 8,
+            "rank_delta": 10,
+            "is_new_entry": false
+          },
+          {
+            "category": "리빙 전체",
+            "rank": 29,
+            "rank_delta": "NEW",
+            "is_new_entry": true
+          }
+        ]
+      },
+      {
+        "brand": "캐릭터주방",
+        "product_name": "[단독] 리락쿠마 페이스 머그 텀블러 360ml 보온 보냉 캐릭터",
+        "price": "24,500원",
+        "character_ip": "리락쿠마",
+        "url": "https://gift.kakao.com/product/13772143",
+        "rank_delta": 10,
+        "is_new_entry": false,
+        "product_id": "13772143",
+        "rank": 9,
+        "category": "리빙 전체",
+        "ranking_contexts": [
+          {
+            "category": "리빙 전체",
+            "rank": 9,
+            "rank_delta": 10,
+            "is_new_entry": false
+          }
+        ]
+      },
+      {
+        "brand": "리브맘",
+        "product_name": "\"따뜻한 겨울준비\" 달콤 웜매트 S/SS 균일가 16% , 2,500",
+        "price": "24,900원",
+        "character_ip": "일반/비IP 상품",
+        "url": "https://gift.kakao.com/product/1261222",
+        "rank_delta": "NEW",
+        "is_new_entry": true,
+        "product_id": "1261222",
+        "rank": 9,
+        "category": "침구/패브릭",
+        "ranking_contexts": [
+          {
+            "category": "침구/패브릭",
+            "rank": 9,
+            "rank_delta": "NEW",
+            "is_new_entry": true
+          },
+          {
+            "category": "리빙 전체",
+            "rank": 48,
+            "rank_delta": "NEW",
+            "is_new_entry": true
+          }
+        ]
       }
     ]
   },
@@ -294,57 +363,102 @@
       {
         "brand": "가나디",
         "product_name": "귀여운 선물 가나디 인형 키링 9종 택1 (생일/귀여운/우정/커플 선물)",
-        "rank": 1,
-        "rank_delta": "NEW",
-        "category": "리빙 전체",
         "price": "16,300원",
         "character_ip": "가나디",
         "url": "https://gift.kakao.com/product/11734230",
-        "is_new_entry": true
+        "rank_delta": "NEW",
+        "is_new_entry": true,
+        "product_id": "11734230",
+        "rank": 1,
+        "category": "리빙 전체",
+        "ranking_contexts": [
+          {
+            "category": "리빙 전체",
+            "rank": 1,
+            "rank_delta": "NEW",
+            "is_new_entry": true
+          }
+        ]
       },
       {
         "brand": "가나디",
         "product_name": "가나디 무릎 담요 (겨울/따뜻한/귀여운/우정/생일/친구/응원)",
-        "rank": 4,
-        "rank_delta": "NEW",
-        "category": "리빙 전체",
         "price": "14,800원",
         "character_ip": "가나디",
         "url": "https://gift.kakao.com/product/14506119",
-        "is_new_entry": true
+        "rank_delta": "NEW",
+        "is_new_entry": true,
+        "product_id": "14506119",
+        "rank": 4,
+        "category": "리빙 전체",
+        "ranking_contexts": [
+          {
+            "category": "리빙 전체",
+            "rank": 4,
+            "rank_delta": "NEW",
+            "is_new_entry": true
+          }
+        ]
       },
       {
         "brand": "캐릭터주방",
         "product_name": "[단독] 리락쿠마 페이스 머그 텀블러 360ml 보온 보냉 캐릭터",
-        "rank": 9,
-        "rank_delta": 10,
-        "category": "리빙 전체",
         "price": "24,500원",
         "character_ip": "리락쿠마",
         "url": "https://gift.kakao.com/product/13772143",
-        "is_new_entry": false
+        "rank_delta": 10,
+        "is_new_entry": false,
+        "product_id": "13772143",
+        "rank": 9,
+        "category": "리빙 전체",
+        "ranking_contexts": [
+          {
+            "category": "리빙 전체",
+            "rank": 9,
+            "rank_delta": 10,
+            "is_new_entry": false
+          }
+        ]
       },
       {
         "brand": "알라바스터",
         "product_name": "[쇼핑백]알라바스터 접시 16cm [색상선택 가능] 14% , 9,997",
-        "rank": 14,
-        "rank_delta": 17,
-        "category": "리빙 전체",
         "price": "21,000원",
         "character_ip": "일반/비IP 상품",
         "url": "https://gift.kakao.com/product/11344221",
-        "is_new_entry": false
+        "rank_delta": 17,
+        "is_new_entry": false,
+        "product_id": "11344221",
+        "rank": 14,
+        "category": "리빙 전체",
+        "ranking_contexts": [
+          {
+            "category": "리빙 전체",
+            "rank": 14,
+            "rank_delta": 17,
+            "is_new_entry": false
+          }
+        ]
       },
       {
         "brand": "캐릭터팬시",
         "product_name": "먼작귀 2027 데스크 캘린더 달력 (새해/취업/응원/친구/신년/선물추천) , 2,889",
-        "rank": 16,
-        "rank_delta": 11,
-        "category": "리빙 전체",
         "price": "10,900원",
         "character_ip": "먼작귀/치이카와",
         "url": "https://gift.kakao.com/product/14472755",
-        "is_new_entry": false
+        "rank_delta": 11,
+        "is_new_entry": false,
+        "product_id": "14472755",
+        "rank": 16,
+        "category": "리빙 전체",
+        "ranking_contexts": [
+          {
+            "category": "리빙 전체",
+            "rank": 16,
+            "rank_delta": 11,
+            "is_new_entry": false
+          }
+        ]
       }
     ]
   },
@@ -465,57 +579,102 @@
       {
         "brand": "가나디",
         "product_name": "귀여운 선물 가나디 인형 키링 9종 택1 (생일/귀여운/우정/커플 선물)",
-        "rank": 1,
-        "rank_delta": 32,
-        "category": "팬시/문구/취미 (IP핵심)",
         "price": "16,300원",
         "character_ip": "가나디",
         "url": "https://gift.kakao.com/product/11734230",
-        "is_new_entry": false
+        "rank_delta": 32,
+        "is_new_entry": false,
+        "product_id": "11734230",
+        "rank": 1,
+        "category": "팬시/문구/취미 (IP핵심)",
+        "ranking_contexts": [
+          {
+            "category": "팬시/문구/취미 (IP핵심)",
+            "rank": 1,
+            "rank_delta": 32,
+            "is_new_entry": false
+          }
+        ]
       },
       {
         "brand": "굴강",
         "product_name": "베스트셀러 [누적판매15만] 웃긴 티셔츠(13종 택1) 재미있는 쓸데있는 옷 라운드 선글라스",
-        "rank": 14,
-        "rank_delta": 10,
-        "category": "팬시/문구/취미 (IP핵심)",
         "price": "16,900원",
         "character_ip": "일반/비IP 상품",
         "url": "https://gift.kakao.com/product/9235675",
-        "is_new_entry": false
+        "rank_delta": 10,
+        "is_new_entry": false,
+        "product_id": "9235675",
+        "rank": 14,
+        "category": "팬시/문구/취미 (IP핵심)",
+        "ranking_contexts": [
+          {
+            "category": "팬시/문구/취미 (IP핵심)",
+            "rank": 14,
+            "rank_delta": 10,
+            "is_new_entry": false
+          }
+        ]
       },
       {
         "brand": "가나디",
         "product_name": "가나디 마우스 손목 패드 (데스크테리어/생일/귀여운/우정/커플 선물)",
-        "rank": 17,
-        "rank_delta": 17,
-        "category": "팬시/문구/취미 (IP핵심)",
         "price": "12,800원",
         "character_ip": "가나디",
         "url": "https://gift.kakao.com/product/14096838",
-        "is_new_entry": false
+        "rank_delta": 17,
+        "is_new_entry": false,
+        "product_id": "14096838",
+        "rank": 17,
+        "category": "팬시/문구/취미 (IP핵심)",
+        "ranking_contexts": [
+          {
+            "category": "팬시/문구/취미 (IP핵심)",
+            "rank": 17,
+            "rank_delta": 17,
+            "is_new_entry": false
+          }
+        ]
       },
       {
         "brand": "캐릭터팬시",
         "product_name": "2시전 당일 발송! [아기자기 먼작귀] 먼작귀 랜덤 디오라마 6종 세트",
-        "rank": 19,
-        "rank_delta": 22,
-        "category": "팬시/문구/취미 (IP핵심)",
         "price": "60,000원",
         "character_ip": "먼작귀/치이카와",
         "url": "https://gift.kakao.com/product/14492314",
-        "is_new_entry": false
+        "rank_delta": 22,
+        "is_new_entry": false,
+        "product_id": "14492314",
+        "rank": 19,
+        "category": "팬시/문구/취미 (IP핵심)",
+        "ranking_contexts": [
+          {
+            "category": "팬시/문구/취미 (IP핵심)",
+            "rank": 19,
+            "rank_delta": 22,
+            "is_new_entry": false
+          }
+        ]
       },
       {
         "brand": "인형",
         "product_name": "리락쿠마 조리개 파우치 4종 , 3,674",
-        "rank": 23,
-        "rank_delta": 12,
-        "category": "팬시/문구/취미 (IP핵심)",
         "price": "8,800원",
         "character_ip": "리락쿠마",
         "url": "https://gift.kakao.com/product/13838069",
-        "is_new_entry": false
+        "rank_delta": 12,
+        "is_new_entry": false,
+        "product_id": "13838069",
+        "rank": 23,
+        "category": "팬시/문구/취미 (IP핵심)",
+        "ranking_contexts": [
+          {
+            "category": "팬시/문구/취미 (IP핵심)",
+            "rank": 23,
+            "rank_delta": 12,
+            "is_new_entry": false
+          }
+        ]
       }
     ]
   },
@@ -636,57 +795,102 @@
       {
         "brand": "가나디",
         "product_name": "가나디 무릎 담요 (겨울/따뜻한/귀여운/우정/생일/친구/응원)",
-        "rank": 2,
-        "rank_delta": "NEW",
-        "category": "침구/패브릭",
         "price": "14,800원",
         "character_ip": "가나디",
         "url": "https://gift.kakao.com/product/14506119",
-        "is_new_entry": true
+        "rank_delta": "NEW",
+        "is_new_entry": true,
+        "product_id": "14506119",
+        "rank": 2,
+        "category": "침구/패브릭",
+        "ranking_contexts": [
+          {
+            "category": "침구/패브릭",
+            "rank": 2,
+            "rank_delta": "NEW",
+            "is_new_entry": true
+          }
+        ]
       },
       {
         "brand": "리브맘",
         "product_name": "\"따뜻한 겨울준비\" 달콤 웜매트 S/SS 균일가 16% , 2,500",
-        "rank": 9,
-        "rank_delta": "NEW",
-        "category": "침구/패브릭",
         "price": "24,900원",
         "character_ip": "일반/비IP 상품",
         "url": "https://gift.kakao.com/product/1261222",
-        "is_new_entry": true
+        "rank_delta": "NEW",
+        "is_new_entry": true,
+        "product_id": "1261222",
+        "rank": 9,
+        "category": "침구/패브릭",
+        "ranking_contexts": [
+          {
+            "category": "침구/패브릭",
+            "rank": 9,
+            "rank_delta": "NEW",
+            "is_new_entry": true
+          }
+        ]
       },
       {
         "brand": "가나디",
         "product_name": "가나디 후드 담요 (겨울/따뜻한/귀여운/우정/생일/응원)",
-        "rank": 10,
-        "rank_delta": "NEW",
-        "category": "침구/패브릭",
         "price": "15,800원",
         "character_ip": "가나디",
         "url": "https://gift.kakao.com/product/12565680",
-        "is_new_entry": true
+        "rank_delta": "NEW",
+        "is_new_entry": true,
+        "product_id": "12565680",
+        "rank": 10,
+        "category": "침구/패브릭",
+        "ranking_contexts": [
+          {
+            "category": "침구/패브릭",
+            "rank": 10,
+            "rank_delta": "NEW",
+            "is_new_entry": true
+          }
+        ]
       },
       {
         "brand": "리브맘",
         "product_name": "\"따뜻한 온기유지\" 달콤 웜매트 Q/K 균일가 , 1,330",
-        "rank": 28,
-        "rank_delta": 17,
-        "category": "침구/패브릭",
         "price": "34,900원",
         "character_ip": "일반/비IP 상품",
         "url": "https://gift.kakao.com/product/12437786",
-        "is_new_entry": false
+        "rank_delta": 17,
+        "is_new_entry": false,
+        "product_id": "12437786",
+        "rank": 28,
+        "category": "침구/패브릭",
+        "ranking_contexts": [
+          {
+            "category": "침구/패브릭",
+            "rank": 28,
+            "rank_delta": 17,
+            "is_new_entry": false
+          }
+        ]
       },
       {
         "brand": "말랑필로우",
         "product_name": "나도 이제 멍집사 강아지 바디필로우 안고자는 긴 쿠션 베개 동물 모찌 롱 대형 애착 인형 꿀잠 이상한 선물 귀여운 쓸데없는 쓸모없는 신박한 8% 리뷰인증시 커피 !",
-        "rank": 37,
-        "rank_delta": 11,
-        "category": "침구/패브릭",
         "price": "21,800원",
         "character_ip": "기타 캐릭터/팬시",
         "url": "https://gift.kakao.com/product/11539740",
-        "is_new_entry": false
+        "rank_delta": 11,
+        "is_new_entry": false,
+        "product_id": "11539740",
+        "rank": 37,
+        "category": "침구/패브릭",
+        "ranking_contexts": [
+          {
+            "category": "침구/패브릭",
+            "rank": 37,
+            "rank_delta": 11,
+            "is_new_entry": false
+          }
+        ]
       }
     ]
   },
@@ -810,57 +1014,102 @@
       {
         "brand": "알라바스터",
         "product_name": "[+쇼핑백] 접시 16cm 2P(색상선택가능) 11% , 6,914",
-        "rank": 8,
-        "rank_delta": 10,
-        "category": "주방/식기",
         "price": "39,000원",
         "character_ip": "일반/비IP 상품",
         "url": "https://gift.kakao.com/product/13428444",
-        "is_new_entry": false
+        "rank_delta": 10,
+        "is_new_entry": false,
+        "product_id": "13428444",
+        "rank": 8,
+        "category": "주방/식기",
+        "ranking_contexts": [
+          {
+            "category": "주방/식기",
+            "rank": 8,
+            "rank_delta": 10,
+            "is_new_entry": false
+          }
+        ]
       },
       {
         "brand": "스타벅스(공식스토어)",
         "product_name": "\"히든 스트랩이 달린\" SS 베스트오브럭 투웨이 텀블러 473ml 그린 or 핑크 +에코텀블러음료쿠폰() (수능선물/캠핑/응원선물)",
-        "rank": 29,
-        "rank_delta": 12,
-        "category": "주방/식기",
         "price": "36,000원",
         "character_ip": "일반/비IP 상품",
         "url": "https://gift.kakao.com/product/14455515",
-        "is_new_entry": false
+        "rank_delta": 12,
+        "is_new_entry": false,
+        "product_id": "14455515",
+        "rank": 29,
+        "category": "주방/식기",
+        "ranking_contexts": [
+          {
+            "category": "주방/식기",
+            "rank": 29,
+            "rank_delta": 12,
+            "is_new_entry": false
+          }
+        ]
       },
       {
         "brand": "알럽하우스",
         "product_name": "선물은 정품이지 산리오 한교동 도자기 시리얼볼 요거트볼 예쁜 그릇 컵 자취 생일 교동이 집들이 행운 직장동료 가벼운 홈카페 밥그릇",
-        "rank": 34,
-        "rank_delta": "NEW",
-        "category": "주방/식기",
         "price": "14,800원",
         "character_ip": "산리오(한교동), 산리오(기타/통합)",
         "url": "https://gift.kakao.com/product/12455527",
-        "is_new_entry": true
+        "rank_delta": "NEW",
+        "is_new_entry": true,
+        "product_id": "12455527",
+        "rank": 34,
+        "category": "주방/식기",
+        "ranking_contexts": [
+          {
+            "category": "주방/식기",
+            "rank": 34,
+            "rank_delta": "NEW",
+            "is_new_entry": true
+          }
+        ]
       },
       {
         "brand": "알라바스터",
         "product_name": "[쇼핑백]알라바스터 샐러드디쉬 20cm [색상선택 가능] , 4,323",
-        "rank": 42,
-        "rank_delta": "NEW",
-        "category": "주방/식기",
         "price": "28,000원",
         "character_ip": "일반/비IP 상품",
         "url": "https://gift.kakao.com/product/11344519",
-        "is_new_entry": true
+        "rank_delta": "NEW",
+        "is_new_entry": true,
+        "product_id": "11344519",
+        "rank": 42,
+        "category": "주방/식기",
+        "ranking_contexts": [
+          {
+            "category": "주방/식기",
+            "rank": 42,
+            "rank_delta": "NEW",
+            "is_new_entry": true
+          }
+        ]
       },
       {
         "brand": "비아케이(주방)",
         "product_name": "집들이/생일 (+코스터 )[2P세트] 플로라 웨이브 플레이트 2종세트 (S사이즈+플래터) 12%",
-        "rank": 44,
-        "rank_delta": "NEW",
-        "category": "주방/식기",
         "price": "39,500원",
         "character_ip": "일반/비IP 상품",
         "url": "https://gift.kakao.com/product/12439693",
-        "is_new_entry": true
+        "rank_delta": "NEW",
+        "is_new_entry": true,
+        "product_id": "12439693",
+        "rank": 44,
+        "category": "주방/식기",
+        "ranking_contexts": [
+          {
+            "category": "주방/식기",
+            "rank": 44,
+            "rank_delta": "NEW",
+            "is_new_entry": true
+          }
+        ]
       }
     ]
   }

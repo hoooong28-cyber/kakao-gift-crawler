@@ -2,7 +2,7 @@ import os
 import sys
 import pandas as pd
 import numpy as np
-from numbers import Real
+from rising_stars import select_rising_stars
 from rank_comparison import compare_rankings
 
 PRICE_TIER_ORDER = ["1만원 미만", "1만원대", "2만원대", "3만원대", "4만원대", "5만원 이상"]
@@ -146,23 +146,8 @@ def generate_all_dashboard_cards(df_enriched, top_n=100):
         }
         
         # 4. Rising Stars
-        rising_items = []
-        for _, r in sub_df.iterrows():
-            if r.get('is_new_entry') or (isinstance(r.get('rank_delta'), Real) and r.get('rank_delta') >= 10):
-                rising_items.append({
-                    "brand": str(r.get('brand', '')),
-                    "product_name": str(r.get('product_name', '')),
-                    "rank": int(r.get('rank', 0)),
-                    "rank_delta": r.get('rank_delta'),
-                    "category": str(r.get('category', '')),
-                    "price": str(r.get('price', '')),
-                    "character_ip": str(r.get('character_ip', '')) or "일반/비IP 상품",
-                    "url": str(r.get('url', '')),
-                    "is_new_entry": bool(r.get('is_new_entry'))
-                })
-                
-        card_4 = sorted(rising_items, key=lambda x: x['rank'])[:5]
-        
+        card_4 = select_rising_stars(sub_df.to_dict(orient='records'))
+
         cards[cat] = {
             "analyzed_count": total_count,
             "card_1_sov": card_1,

@@ -3524,57 +3524,114 @@
         {
           "brand": "캐릭터침구",
           "product_name": "선물만족도 BEST [단독] 가나디 바디필로우 2종 (나안아/라잉) 숙면 베개 애착 쿠션 집들이 대형필로우",
-          "rank": 1,
-          "rank_delta": "NEW",
-          "category": "주방/식기",
           "price": "34,800원",
           "character_ip": "가나디",
           "url": "https://gift.kakao.com/product/11743570",
-          "is_new_entry": true
+          "rank_delta": "NEW",
+          "is_new_entry": true,
+          "product_id": "11743570",
+          "rank": 1,
+          "category": "주방/식기",
+          "ranking_contexts": [
+            {
+              "category": "주방/식기",
+              "rank": 1,
+              "rank_delta": "NEW",
+              "is_new_entry": true
+            }
+          ]
         },
         {
           "brand": "캐릭터침구",
           "product_name": "생일/기념일선물추천 먼작귀 페이스 핸드워머 낮잠쿠션 (치이카와/가르마/토끼/해달/하늘다람쥐/밤만쥬) 옵션 생일 기념일 집들이 선물 추천",
-          "rank": 2,
-          "rank_delta": "NEW",
-          "category": "주방/식기",
           "price": "22,900원",
           "character_ip": "먼작귀/치이카와",
           "url": "https://gift.kakao.com/product/7355950",
-          "is_new_entry": true
+          "rank_delta": "NEW",
+          "is_new_entry": true,
+          "product_id": "7355950",
+          "rank": 2,
+          "category": "주방/식기",
+          "ranking_contexts": [
+            {
+              "category": "주방/식기",
+              "rank": 2,
+              "rank_delta": "NEW",
+              "is_new_entry": true
+            }
+          ]
         },
         {
           "brand": "캐릭터침구",
           "product_name": "\"생일/기념일선물\" 먼작귀 꿀잠바디쿠션3종 택1 치이카와 가르마 토끼 굿즈 극세사 긴베개 안고자는 바디필로우 캐릭터 굿즈 인형",
-          "rank": 3,
-          "rank_delta": "NEW",
-          "category": "주방/식기",
           "price": "29,900원",
           "character_ip": "먼작귀/치이카와",
           "url": "https://gift.kakao.com/product/6986025",
-          "is_new_entry": true
+          "rank_delta": "NEW",
+          "is_new_entry": true,
+          "product_id": "6986025",
+          "rank": 3,
+          "category": "주방/식기",
+          "ranking_contexts": [
+            {
+              "category": "주방/식기",
+              "rank": 3,
+              "rank_delta": "NEW",
+              "is_new_entry": true
+            },
+            {
+              "category": "리빙 전체",
+              "rank": 32,
+              "rank_delta": "NEW",
+              "is_new_entry": true
+            }
+          ]
         },
         {
           "brand": "가나디",
           "product_name": "가나디 파자마 러그 (러그/미니러그/인테리어/자취/원룸/집들이선물) , 3,127",
-          "rank": 4,
-          "rank_delta": "NEW",
-          "category": "주방/식기",
           "price": "17,800원",
           "character_ip": "가나디",
           "url": "https://gift.kakao.com/product/14096524",
-          "is_new_entry": true
+          "rank_delta": "NEW",
+          "is_new_entry": true,
+          "product_id": "14096524",
+          "rank": 4,
+          "category": "주방/식기",
+          "ranking_contexts": [
+            {
+              "category": "주방/식기",
+              "rank": 4,
+              "rank_delta": "NEW",
+              "is_new_entry": true
+            }
+          ]
         },
         {
           "brand": "한일카페트",
           "product_name": "[1+1]집들이선물 순면 100% 베리 욕실주방 인테리어 발매트 미니러그 40x60 , 7,637",
-          "rank": 5,
-          "rank_delta": "NEW",
-          "category": "주방/식기",
           "price": "22,800원",
           "character_ip": "일반/비IP 상품",
           "url": "https://gift.kakao.com/product/13901557",
-          "is_new_entry": true
+          "rank_delta": "NEW",
+          "is_new_entry": true,
+          "product_id": "13901557",
+          "rank": 5,
+          "category": "주방/식기",
+          "ranking_contexts": [
+            {
+              "category": "주방/식기",
+              "rank": 5,
+              "rank_delta": "NEW",
+              "is_new_entry": true
+            },
+            {
+              "category": "리빙 전체",
+              "rank": 40,
+              "rank_delta": "NEW",
+              "is_new_entry": true
+            }
+          ]
         }
       ]
     },
@@ -3699,57 +3756,102 @@
         {
           "brand": "캐릭터주방",
           "product_name": "가나디 핸들 플레이트 2P 세트 (먹방필수템/커플세트/손잡이앞접시/생일/이사선물)",
-          "rank": 17,
-          "rank_delta": "NEW",
-          "category": "리빙 전체",
           "price": "16,800원",
           "character_ip": "가나디",
           "url": "https://gift.kakao.com/product/12821252",
-          "is_new_entry": true
+          "rank_delta": "NEW",
+          "is_new_entry": true,
+          "product_id": "12821252",
+          "rank": 17,
+          "category": "리빙 전체",
+          "ranking_contexts": [
+            {
+              "category": "리빙 전체",
+              "rank": 17,
+              "rank_delta": "NEW",
+              "is_new_entry": true
+            }
+          ]
         },
         {
           "brand": "스탠리",
           "product_name": "[스탠리공식유통사] 퀜처 프로투어 플립 스트로 텀블러 887ml",
-          "rank": 31,
-          "rank_delta": "NEW",
-          "category": "리빙 전체",
           "price": "54,000원",
           "character_ip": "일반/비IP 상품",
           "url": "https://gift.kakao.com/product/11144932",
-          "is_new_entry": true
+          "rank_delta": "NEW",
+          "is_new_entry": true,
+          "product_id": "11144932",
+          "rank": 31,
+          "category": "리빙 전체",
+          "ranking_contexts": [
+            {
+              "category": "리빙 전체",
+              "rank": 31,
+              "rank_delta": "NEW",
+              "is_new_entry": true
+            }
+          ]
         },
         {
           "brand": "캐릭터침구",
           "product_name": "\"생일/기념일선물\" 먼작귀 꿀잠바디쿠션3종 택1 치이카와 가르마 토끼 굿즈 극세사 긴베개 안고자는 바디필로우 캐릭터 굿즈 인형",
-          "rank": 32,
-          "rank_delta": "NEW",
-          "category": "리빙 전체",
           "price": "29,900원",
           "character_ip": "먼작귀/치이카와",
           "url": "https://gift.kakao.com/product/6986025",
-          "is_new_entry": true
+          "rank_delta": "NEW",
+          "is_new_entry": true,
+          "product_id": "6986025",
+          "rank": 32,
+          "category": "리빙 전체",
+          "ranking_contexts": [
+            {
+              "category": "리빙 전체",
+              "rank": 32,
+              "rank_delta": "NEW",
+              "is_new_entry": true
+            }
+          ]
         },
         {
           "brand": "한일카페트",
           "product_name": "[1+1]집들이선물 순면 100% 베리 욕실주방 인테리어 발매트 미니러그 40x60 , 7,637",
-          "rank": 40,
-          "rank_delta": "NEW",
-          "category": "리빙 전체",
           "price": "22,800원",
           "character_ip": "일반/비IP 상품",
           "url": "https://gift.kakao.com/product/13901557",
-          "is_new_entry": true
+          "rank_delta": "NEW",
+          "is_new_entry": true,
+          "product_id": "13901557",
+          "rank": 40,
+          "category": "리빙 전체",
+          "ranking_contexts": [
+            {
+              "category": "리빙 전체",
+              "rank": 40,
+              "rank_delta": "NEW",
+              "is_new_entry": true
+            }
+          ]
         },
         {
           "brand": "트렌디홈(키친)",
           "product_name": "귀여운선물 리본 키티캣 고블렛 유리컵 스펀지 400ml 글라스 카페컵 막걸리 맥주잔 위스키잔 , 1,923",
-          "rank": 43,
-          "rank_delta": "NEW",
-          "category": "리빙 전체",
           "price": "9,800원",
           "character_ip": "산리오(헬로키티)",
           "url": "https://gift.kakao.com/product/13884111",
-          "is_new_entry": true
+          "rank_delta": "NEW",
+          "is_new_entry": true,
+          "product_id": "13884111",
+          "rank": 43,
+          "category": "리빙 전체",
+          "ranking_contexts": [
+            {
+              "category": "리빙 전체",
+              "rank": 43,
+              "rank_delta": "NEW",
+              "is_new_entry": true
+            }
+          ]
         }
       ]
     },
@@ -3871,57 +3973,102 @@
         {
           "brand": "레토(생활)",
           "product_name": "스폰지밥 근육빵빵 랜덤 키링 못생긴 인형 키링 선물 리뷰인증시 아아!",
-          "rank": 25,
-          "rank_delta": "NEW",
-          "category": "팬시/문구/취미 (IP핵심)",
           "price": "9,900원",
           "character_ip": "스폰지밥",
           "url": "https://gift.kakao.com/product/14051995",
-          "is_new_entry": true
+          "rank_delta": "NEW",
+          "is_new_entry": true,
+          "product_id": "14051995",
+          "rank": 25,
+          "category": "팬시/문구/취미 (IP핵심)",
+          "ranking_contexts": [
+            {
+              "category": "팬시/문구/취미 (IP핵심)",
+              "rank": 25,
+              "rank_delta": "NEW",
+              "is_new_entry": true
+            }
+          ]
         },
         {
           "brand": "빛내는사람들(팬시)",
           "product_name": "액운방지 고양이 흑요석 액막이 키링 학생 응원 합격 시험 수능 선물 명태 행운 부적 생일 남자 여자 커플템 취업 졸업 귀여운 100일 베스트 6% , 3,021",
-          "rank": 28,
-          "rank_delta": "NEW",
-          "category": "팬시/문구/취미 (IP핵심)",
           "price": "9,200원",
           "character_ip": "일반/비IP 상품",
           "url": "https://gift.kakao.com/product/12522622",
-          "is_new_entry": true
+          "rank_delta": "NEW",
+          "is_new_entry": true,
+          "product_id": "12522622",
+          "rank": 28,
+          "category": "팬시/문구/취미 (IP핵심)",
+          "ranking_contexts": [
+            {
+              "category": "팬시/문구/취미 (IP핵심)",
+              "rank": 28,
+              "rank_delta": "NEW",
+              "is_new_entry": true
+            }
+          ]
         },
         {
           "brand": "굴강",
           "product_name": "\"디카 감성\" 요술봉 디지털 카메라(+SD카드) 공주님 자취 웃긴 재밌는 여자선물 쓸모없는 쓸데없는 신박한 선물 SD 카드",
-          "rank": 29,
-          "rank_delta": "NEW",
-          "category": "팬시/문구/취미 (IP핵심)",
           "price": "29,900원",
           "character_ip": "일반/비IP 상품",
           "url": "https://gift.kakao.com/product/10662968",
-          "is_new_entry": true
+          "rank_delta": "NEW",
+          "is_new_entry": true,
+          "product_id": "10662968",
+          "rank": 29,
+          "category": "팬시/문구/취미 (IP핵심)",
+          "ranking_contexts": [
+            {
+              "category": "팬시/문구/취미 (IP핵심)",
+              "rank": 29,
+              "rank_delta": "NEW",
+              "is_new_entry": true
+            }
+          ]
         },
         {
           "brand": "대원SHOP",
           "product_name": "귀여운 봉제 인형 [산엑스] 리락쿠마 인형 L , 2,073",
-          "rank": 31,
-          "rank_delta": "NEW",
-          "category": "팬시/문구/취미 (IP핵심)",
           "price": "72,000원",
           "character_ip": "리락쿠마",
           "url": "https://gift.kakao.com/product/13751545",
-          "is_new_entry": true
+          "rank_delta": "NEW",
+          "is_new_entry": true,
+          "product_id": "13751545",
+          "rank": 31,
+          "category": "팬시/문구/취미 (IP핵심)",
+          "ranking_contexts": [
+            {
+              "category": "팬시/문구/취미 (IP핵심)",
+              "rank": 31,
+              "rank_delta": "NEW",
+              "is_new_entry": true
+            }
+          ]
         },
         {
           "brand": "알럽하우스(소품)",
           "product_name": "친구/생일/인형키링 행운 키링 귀여운 고양이키링 카피바라 & 별고양이 네잎클로버 인형 키링 가방고리 생일 합격 부적 커플 응원 시험수능 쓸데없는",
-          "rank": 36,
-          "rank_delta": "NEW",
-          "category": "팬시/문구/취미 (IP핵심)",
           "price": "4,900원",
           "character_ip": "기타 캐릭터/팬시",
           "url": "https://gift.kakao.com/product/9578798",
-          "is_new_entry": true
+          "rank_delta": "NEW",
+          "is_new_entry": true,
+          "product_id": "9578798",
+          "rank": 36,
+          "category": "팬시/문구/취미 (IP핵심)",
+          "ranking_contexts": [
+            {
+              "category": "팬시/문구/취미 (IP핵심)",
+              "rank": 36,
+              "rank_delta": "NEW",
+              "is_new_entry": true
+            }
+          ]
         }
       ]
     },
@@ -4038,57 +4185,102 @@
         {
           "brand": "미니멀룸",
           "product_name": "\"행운이 떡하니 붙는다\" 찹쌀떡 쿠션 모찌모찌 필로우",
-          "rank": 20,
-          "rank_delta": "NEW",
-          "category": "침구/패브릭",
           "price": "29,900원",
           "character_ip": "기타 캐릭터/팬시",
           "url": "https://gift.kakao.com/product/2205514",
-          "is_new_entry": true
+          "rank_delta": "NEW",
+          "is_new_entry": true,
+          "product_id": "2205514",
+          "rank": 20,
+          "category": "침구/패브릭",
+          "ranking_contexts": [
+            {
+              "category": "침구/패브릭",
+              "rank": 20,
+              "rank_delta": "NEW",
+              "is_new_entry": true
+            }
+          ]
         },
         {
           "brand": "짱구(생활)",
           "product_name": "신박한 집들이선물! 맹구 콧물 휴지 케이스 물 티슈 케이스 커버 (두루마리/물티슈 겸용) 리뷰인증시 아아!",
-          "rank": 29,
-          "rank_delta": "NEW",
-          "category": "침구/패브릭",
           "price": "19,900원",
           "character_ip": "짱구",
           "url": "https://gift.kakao.com/product/11942947",
-          "is_new_entry": true
+          "rank_delta": "NEW",
+          "is_new_entry": true,
+          "product_id": "11942947",
+          "rank": 29,
+          "category": "침구/패브릭",
+          "ranking_contexts": [
+            {
+              "category": "침구/패브릭",
+              "rank": 29,
+              "rank_delta": "NEW",
+              "is_new_entry": true
+            }
+          ]
         },
         {
           "brand": "리브맘",
           "product_name": "[단독+선물패키지] 골드라벨 프리미엄 오가닉 3D 경추베개 (높낮이조절) 6%",
-          "rank": 33,
-          "rank_delta": "NEW",
-          "category": "침구/패브릭",
           "price": "27,900원",
           "character_ip": "일반/비IP 상품",
           "url": "https://gift.kakao.com/product/2176008",
-          "is_new_entry": true
+          "rank_delta": "NEW",
+          "is_new_entry": true,
+          "product_id": "2176008",
+          "rank": 33,
+          "category": "침구/패브릭",
+          "ranking_contexts": [
+            {
+              "category": "침구/패브릭",
+              "rank": 33,
+              "rank_delta": "NEW",
+              "is_new_entry": true
+            }
+          ]
         },
         {
           "brand": "루시아이(침구)",
           "product_name": "나 귀엽지 아나~ [자취/집들이선물] 단독사은품 토실토실 뱃살물범 인형 귀여운 바디필로우 애착 모찌 커플 방석 쿠션 기숙사 베개 집순이 방꾸미기",
-          "rank": 39,
-          "rank_delta": "NEW",
-          "category": "침구/패브릭",
           "price": "15,900원",
           "character_ip": "기타 캐릭터/팬시",
           "url": "https://gift.kakao.com/product/10609163",
-          "is_new_entry": true
+          "rank_delta": "NEW",
+          "is_new_entry": true,
+          "product_id": "10609163",
+          "rank": 39,
+          "category": "침구/패브릭",
+          "ranking_contexts": [
+            {
+              "category": "침구/패브릭",
+              "rank": 39,
+              "rank_delta": "NEW",
+              "is_new_entry": true
+            }
+          ]
         },
         {
           "brand": "오늘의귀여움",
           "product_name": "대빵 큰 베스트프랜드 깜자 바디필로우(활짝)! 모찌 애착 쿠션 휴식 생일 자취 집들이 귀여운 선물",
-          "rank": 40,
-          "rank_delta": "NEW",
-          "category": "침구/패브릭",
           "price": "29,800원",
           "character_ip": "기타 캐릭터/팬시",
           "url": "https://gift.kakao.com/product/9645248",
-          "is_new_entry": true
+          "rank_delta": "NEW",
+          "is_new_entry": true,
+          "product_id": "9645248",
+          "rank": 40,
+          "category": "침구/패브릭",
+          "ranking_contexts": [
+            {
+              "category": "침구/패브릭",
+              "rank": 40,
+              "rank_delta": "NEW",
+              "is_new_entry": true
+            }
+          ]
         }
       ]
     },
@@ -4205,57 +4397,102 @@
         {
           "brand": "캐릭터침구",
           "product_name": "선물만족도 BEST [단독] 가나디 바디필로우 2종 (나안아/라잉) 숙면 베개 애착 쿠션 집들이 대형필로우",
-          "rank": 1,
-          "rank_delta": "NEW",
-          "category": "주방/식기",
           "price": "34,800원",
           "character_ip": "가나디",
           "url": "https://gift.kakao.com/product/11743570",
-          "is_new_entry": true
+          "rank_delta": "NEW",
+          "is_new_entry": true,
+          "product_id": "11743570",
+          "rank": 1,
+          "category": "주방/식기",
+          "ranking_contexts": [
+            {
+              "category": "주방/식기",
+              "rank": 1,
+              "rank_delta": "NEW",
+              "is_new_entry": true
+            }
+          ]
         },
         {
           "brand": "캐릭터침구",
           "product_name": "생일/기념일선물추천 먼작귀 페이스 핸드워머 낮잠쿠션 (치이카와/가르마/토끼/해달/하늘다람쥐/밤만쥬) 옵션 생일 기념일 집들이 선물 추천",
-          "rank": 2,
-          "rank_delta": "NEW",
-          "category": "주방/식기",
           "price": "22,900원",
           "character_ip": "먼작귀/치이카와",
           "url": "https://gift.kakao.com/product/7355950",
-          "is_new_entry": true
+          "rank_delta": "NEW",
+          "is_new_entry": true,
+          "product_id": "7355950",
+          "rank": 2,
+          "category": "주방/식기",
+          "ranking_contexts": [
+            {
+              "category": "주방/식기",
+              "rank": 2,
+              "rank_delta": "NEW",
+              "is_new_entry": true
+            }
+          ]
         },
         {
           "brand": "캐릭터침구",
           "product_name": "\"생일/기념일선물\" 먼작귀 꿀잠바디쿠션3종 택1 치이카와 가르마 토끼 굿즈 극세사 긴베개 안고자는 바디필로우 캐릭터 굿즈 인형",
-          "rank": 3,
-          "rank_delta": "NEW",
-          "category": "주방/식기",
           "price": "29,900원",
           "character_ip": "먼작귀/치이카와",
           "url": "https://gift.kakao.com/product/6986025",
-          "is_new_entry": true
+          "rank_delta": "NEW",
+          "is_new_entry": true,
+          "product_id": "6986025",
+          "rank": 3,
+          "category": "주방/식기",
+          "ranking_contexts": [
+            {
+              "category": "주방/식기",
+              "rank": 3,
+              "rank_delta": "NEW",
+              "is_new_entry": true
+            }
+          ]
         },
         {
           "brand": "가나디",
           "product_name": "가나디 파자마 러그 (러그/미니러그/인테리어/자취/원룸/집들이선물) , 3,127",
-          "rank": 4,
-          "rank_delta": "NEW",
-          "category": "주방/식기",
           "price": "17,800원",
           "character_ip": "가나디",
           "url": "https://gift.kakao.com/product/14096524",
-          "is_new_entry": true
+          "rank_delta": "NEW",
+          "is_new_entry": true,
+          "product_id": "14096524",
+          "rank": 4,
+          "category": "주방/식기",
+          "ranking_contexts": [
+            {
+              "category": "주방/식기",
+              "rank": 4,
+              "rank_delta": "NEW",
+              "is_new_entry": true
+            }
+          ]
         },
         {
           "brand": "한일카페트",
           "product_name": "[1+1]집들이선물 순면 100% 베리 욕실주방 인테리어 발매트 미니러그 40x60 , 7,637",
-          "rank": 5,
-          "rank_delta": "NEW",
-          "category": "주방/식기",
           "price": "22,800원",
           "character_ip": "일반/비IP 상품",
           "url": "https://gift.kakao.com/product/13901557",
-          "is_new_entry": true
+          "rank_delta": "NEW",
+          "is_new_entry": true,
+          "product_id": "13901557",
+          "rank": 5,
+          "category": "주방/식기",
+          "ranking_contexts": [
+            {
+              "category": "주방/식기",
+              "rank": 5,
+              "rank_delta": "NEW",
+              "is_new_entry": true
+            }
+          ]
         }
       ]
     }
