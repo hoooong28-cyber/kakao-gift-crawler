@@ -31,6 +31,12 @@ class RisingStarsTests(unittest.TestCase):
         self.assertEqual(select_rising_stars(list(reversed(rows))), result)
         self.assertEqual(len(select_rising_stars(rows, 2)), 2)
 
+    def test_csv_numeric_string_movement(self):
+        rows = [dict(product_id=1, rank=1, category='A', rank_delta='32')]
+        self.assertEqual(select_rising_stars(rows)[0]['ranking_contexts'][0]['rank_delta'], '32')
+        for value in ['NEW', '', 'NaN', 'Infinity', True]:
+            self.assertEqual(select_rising_stars([dict(rows[0], rank_delta=value)]), [])
+
     def test_saved_snapshots_match_and_preserve_category_observations(self):
         for path in (ROOT / 'docs').glob('data*.json'):
             snapshot = json.loads(path.read_text(encoding='utf-8'))

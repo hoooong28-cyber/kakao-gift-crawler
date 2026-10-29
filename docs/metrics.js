@@ -57,7 +57,8 @@
     function risingStars(records, limit = 5) {
         const candidates = records.filter(p => productId(p) && String(p.category || '').trim() &&
             Number.isInteger(p.rank) && p.rank > 0 && p.rank_comparison_status !== 'unavailable' &&
-            (p.is_new_entry === true || (typeof p.rank_delta === 'number' && p.rank_delta >= 10)));
+            (p.is_new_entry === true || (['number', 'string'].includes(typeof p.rank_delta) &&
+                Number.isFinite(Number(p.rank_delta)) && Number(p.rank_delta) >= 10)));
         const compareText = (a, b) => a < b ? -1 : a > b ? 1 : 0;
         candidates.sort((a, b) => a.rank - b.rank ||
             compareText(a.category.trim(), b.category.trim()) || compareText(productId(a), productId(b)));

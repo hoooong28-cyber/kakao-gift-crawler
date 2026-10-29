@@ -1,5 +1,6 @@
 """Unique rising products; ranks and movements remain category observations."""
 from numbers import Real
+import math
 from rank_comparison import product_key, positive_integer
 
 
@@ -11,7 +12,11 @@ def select_rising_stars(records, limit=5):
         delta = row.get('rank_delta')
         if not key or not rank or row.get('rank_comparison_status') == 'unavailable':
             continue
-        if row.get('is_new_entry') is True or (isinstance(delta, Real) and not isinstance(delta, bool) and delta >= 10):
+        try:
+            numeric_delta = float(delta) if isinstance(delta, (Real, str)) and not isinstance(delta, bool) else float('nan')
+        except ValueError:
+            numeric_delta = float('nan')
+        if row.get('is_new_entry') is True or (math.isfinite(numeric_delta) and numeric_delta >= 10):
             candidates.append((rank, key[0], key[1], row))
     candidates.sort(key=lambda item: item[:3])
     products = {}

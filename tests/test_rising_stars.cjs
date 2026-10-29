@@ -4,6 +4,13 @@ const fs = require('node:fs');
 const path = require('node:path');
 const metrics = require('../docs/metrics.js');
 
+test('CSV numeric string movement remains eligible without treating invalid values as rising', () => {
+    const row = {product_id:1, category:'A', rank:1, rank_delta:'32'};
+    assert.equal(metrics.risingStars([row])[0].ranking_contexts[0].rank_delta, '32');
+    for (const value of ['NEW', '', 'NaN', 'Infinity', true])
+        assert.equal(metrics.risingStars([{...row, rank_delta:value}]).length, 0);
+});
+
 test('stable identity, category context, thresholds, missing IDs and cap', () => {
     const row = (id, category = 'A', delta = 10) => ({product_id: id, category,
         rank: 1, rank_delta: delta, product_name: 'same title'});
