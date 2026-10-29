@@ -76,6 +76,9 @@ class PeriodInsightsTests(unittest.TestCase):
                 result = json.loads((root / f'{label}_insights.json').read_text(encoding='utf-8'))
                 self.assertEqual(result['period_days'], days)
                 self.assertEqual(result['observed_days'], 2)
+                for data in result['categories'].values():
+                    self.assertIn('momentum', data)
+                    self.assertEqual(data['momentum']['comparison']['status'], 'insufficient_data')
             (root / 'data_20261015.json').write_text(json.dumps({'records': [row('2026-10-14')]}), encoding='utf-8')
             with self.assertRaises(ValueError):
                 export_period_insights(root)

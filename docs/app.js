@@ -351,7 +351,12 @@ document.addEventListener('DOMContentLoaded', () => {
                 compSubtitle.textContent = comparison.note || comparison.comparison_note || '직전 기간 대비 순위 가중 점수 변동 비교';
             }
 
-            if (comparison.status === 'insufficient_data') {
+            const momentumFields = ['rising_ips', 'new_entry_ips', 'stable_ips', 'falling_ips'];
+            if (!['available', 'insufficient_data'].includes(comparison.status) ||
+                momentumFields.some(field => !Array.isArray(momentum[field]))) {
+                if (compSubtitle) compSubtitle.textContent = '모멘텀 보고서 데이터가 누락되었습니다.';
+                momentumContainer.innerHTML = `<p style="padding:24px; text-align:center; color:var(--text-muted);">모멘텀 데이터가 아직 생성되지 않았습니다. 데이터 갱신 후에도 계속되면 보고서 생성 상태를 확인해 주세요.</p>`;
+            } else if (comparison.status === 'insufficient_data') {
                 momentumContainer.innerHTML = `
                     <div style="padding:24px; text-align:center; background:rgba(239,68,68,0.06); border:1px dashed rgba(239,68,68,0.3); border-radius:8px; color:var(--text-muted);">
                         <i class="fa-solid fa-triangle-exclamation" style="color:#EF4444; font-size:1.4rem; margin-bottom:8px; display:block;"></i>
@@ -400,7 +405,7 @@ document.addEventListener('DOMContentLoaded', () => {
                                         </div>
                                         <div class="momentum-card-metrics">
                                             <div class="momentum-metric-box">
-                                                <span class="metric-k">평균 순위점수</span>
+                                                <span class="metric-k">수집일당 평균 순위점수</span>
                                                 <span class="metric-v" style="color:var(--accent-yellow);">${item.curr_score}점 <small style="color:var(--text-muted); font-size:0.75rem;">(이전 ${item.prev_score}점)</small></span>
                                             </div>
                                             <div class="momentum-metric-box">
@@ -410,7 +415,7 @@ document.addEventListener('DOMContentLoaded', () => {
                                         </div>
                                         ${evidenceList.length > 0 ? `
                                             <div class="momentum-evidence-box">
-                                                <div class="evidence-title"><i class="fa-solid fa-bullseye"></i> 대표 견인 상품</div>
+                                                <div class="evidence-title"><i class="fa-solid fa-bullseye"></i> 대표 관측 상품${item.evidence_period === 'previous' ? ' (직전 기간)' : ''}</div>
                                                 ${evidenceList.map(p => `
                                                     <div class="evidence-product-item">
                                                         <div class="evidence-product-name" title="${periodText(p.product_name)}">

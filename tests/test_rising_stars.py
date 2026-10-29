@@ -11,8 +11,9 @@ class RisingStarsTests(unittest.TestCase):
         from datetime import datetime
         from unittest.mock import patch
         import verify_dashboard
+        latest_date = json.loads((ROOT / 'docs/dates.json').read_text(encoding='utf-8'))[0]['date_key']
         with patch('verify_dashboard.datetime') as clock:
-            clock.now.return_value = datetime(2026, 10, 28)
+            clock.now.return_value = datetime.strptime(latest_date, '%Y%m%d')
             verify_dashboard.main()
 
     def test_identity_context_threshold_and_order(self):

@@ -3,6 +3,7 @@ import sys
 import pandas as pd
 import numpy as np
 from rising_stars import select_rising_stars
+from period_momentum import generate_ip_momentum
 from rank_comparison import compare_rankings
 
 PRICE_TIER_ORDER = ["1만원 미만", "1만원대", "2만원대", "3만원대", "4만원대", "5만원 이상"]
@@ -170,6 +171,7 @@ def generate_period_insights(df_master, days=30, end_date=None):
     if pd.isna(end):
         return {}
     start = end - pd.Timedelta(days=days - 1)
+    comparison_records = df.to_dict(orient='records')
     df = df[df['date_key'].between(start, end)].copy()
     observed = int(df['date_key'].nunique())
     results = dict(period_days=days, observed_days=observed,
@@ -210,7 +212,10 @@ def generate_period_insights(df_master, days=30, end_date=None):
             record = entry['record']
             steady.append(dict(product_id=identity, appearance_days=len(entry['dates']),
                                **{key: str(record.get(key, '') or '') for key in ['product_name', 'brand', 'character_ip', 'price']}))
-        results['categories'][cat] = dict(total_records=len(rows), top_ips=top_ips, steady_products=steady)
+        momentum_categories = sorted(df['category'].dropna().unique()) if cat == '전체' else [cat]
+        momentum = generate_ip_momentum(comparison_records, days, end.date(), momentum_categories)
+        results['categories'][cat] = dict(total_records=len(rows), top_ips=top_ips,
+                                         steady_products=steady, momentum=momentum)
     return results
 
 

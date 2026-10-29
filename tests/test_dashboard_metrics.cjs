@@ -68,11 +68,55 @@ function dashboard(snapshot, reports = {}) {
         const selector = type ? '#period-type-tabs .cat-tab' : '#cat-tabs-period .cat-tab';
         const button = { classList: { add() {} }, getAttribute: () => type || cat };
         callbacks.click.forEach(callback => callback({ target: { closest: query => query === selector ? button : null } }));
+      }, momentum(type) {
+        const button = { classList: { add() {} }, getAttribute: () => type };
+        callbacks.click.forEach(callback => callback({target: {closest: query => query === '#momentum-type-tabs .cat-tab' ? button : null}}));
       }, select(cat) {
         const tab = tabs.find(t => t.getAttribute() === cat);
         callbacks.click.forEach(callback => callback({ target: { closest: selector => selector === '.cat-tab' ? tab : null } }));
     } };
 }
+
+test('weekly/monthly momentum tabs render calculated IPs and category evidence', async () => {
+    const snapshot = JSON.parse(fs.readFileSync(path.join(docs, 'data.json')));
+    const weekly = JSON.parse(fs.readFileSync(path.join(docs, 'weekly_insights.json')));
+    const monthly = JSON.parse(fs.readFileSync(path.join(docs, 'monthly_insights.json')));
+    const app = dashboard(snapshot, { weekly, monthly });
+    await new Promise(resolve => setImmediate(resolve));
+    app.navigate('page-period-insights');
+    for (const [period, report] of Object.entries({weekly, monthly})) {
+        app.period(period);
+        for (const [category, data] of Object.entries(report.categories)) {
+            app.period(null, category === '전체' ? 'all' : category);
+            for (const [type, field] of Object.entries({rising:'rising_ips', falling:'falling_ips', stable:'stable_ips', new_entry:'new_entry_ips'})) {
+                app.momentum(type);
+                const html = app.elements.get('period-momentum-container').innerHTML;
+                const items = data.momentum[field];
+                if (items.length) {
+                    assert.ok(html.includes(items[0].ip_name), `${period}/${category}/${type}`);
+                    assert.ok(html.includes('수집일당 평균 순위점수'));
+                    assert.ok(!html.includes('undefined') && !html.includes('NaN'));
+                } else assert.ok(html.includes('부합하는 IP가 없습니다'));
+            }
+        }
+    }
+    assert.deepEqual(app.errors, []);
+});
+
+test('momentum distinguishes missing report, insufficient coverage and valid empty result', async () => {
+    const snapshot = JSON.parse(fs.readFileSync(path.join(docs, 'data.json')));
+    for (const status of ['missing', 'insufficient_data', 'available']) {
+        const momentum = status === 'missing' ? undefined : {comparison:{status, note:'coverage note'},
+            rising_ips:[], new_entry_ips:[], stable_ips:[], falling_ips:[]};
+        const app = dashboard(snapshot, {weekly:{categories:{'전체':{top_ips:[], steady_products:[], momentum}}}});
+        await new Promise(resolve => setImmediate(resolve));
+        app.navigate('page-period-insights');
+        const html = app.elements.get('period-momentum-container').innerHTML;
+        assert.ok(html.includes(status === 'missing' ? '아직 생성되지 않았습니다' :
+            status === 'insufficient_data' ? '비교 데이터 부족' : '부합하는 IP가 없습니다'), status);
+        assert.deepEqual(app.errors, []);
+    }
+});
 
 test('separates specific IPs, unclassified labels, missing labels and non-IP', () => {
     const result = metrics.summarize([

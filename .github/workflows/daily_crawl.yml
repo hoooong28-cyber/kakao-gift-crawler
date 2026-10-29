@@ -30,6 +30,7 @@ jobs:
 
       - name: 랭킹 크롤러 및 대시보드 파이프라인 실행
         run: |
+          python -m unittest discover -s tests
           python main.py --top_n 50
           python verify_dashboard.py
 
