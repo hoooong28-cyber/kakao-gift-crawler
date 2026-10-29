@@ -351,7 +351,12 @@ document.addEventListener('DOMContentLoaded', () => {
                 compSubtitle.textContent = comparison.note || comparison.comparison_note || '직전 기간 대비 순위 가중 점수 변동 비교';
             }
 
-            if (comparison.status === 'insufficient_data') {
+            const momentumFields = ['rising_ips', 'new_entry_ips', 'stable_ips', 'falling_ips'];
+            if (!['available', 'insufficient_data'].includes(comparison.status) ||
+                momentumFields.some(field => !Array.isArray(momentum[field]))) {
+                if (compSubtitle) compSubtitle.textContent = '모멘텀 보고서 데이터가 누락되었습니다.';
+                momentumContainer.innerHTML = `<p style="padding:24px; text-align:center; color:var(--text-muted);">모멘텀 데이터가 아직 생성되지 않았습니다. 데이터 갱신 후에도 계속되면 보고서 생성 상태를 확인해 주세요.</p>`;
+            } else if (comparison.status === 'insufficient_data') {
                 momentumContainer.innerHTML = `
                     <div style="padding:24px; text-align:center; background:rgba(239,68,68,0.06); border:1px dashed rgba(239,68,68,0.3); border-radius:8px; color:var(--text-muted);">
                         <i class="fa-solid fa-triangle-exclamation" style="color:#EF4444; font-size:1.4rem; margin-bottom:8px; display:block;"></i>
@@ -400,7 +405,7 @@ document.addEventListener('DOMContentLoaded', () => {
                                         </div>
                                         <div class="momentum-card-metrics">
                                             <div class="momentum-metric-box">
-                                                <span class="metric-k">평균 순위점수</span>
+                                                <span class="metric-k">수집일당 평균 순위점수</span>
                                                 <span class="metric-v" style="color:var(--accent-yellow);">${item.curr_score}점 <small style="color:var(--text-muted); font-size:0.75rem;">(이전 ${item.prev_score}점)</small></span>
                                             </div>
                                             <div class="momentum-metric-box">
@@ -410,7 +415,7 @@ document.addEventListener('DOMContentLoaded', () => {
                                         </div>
                                         ${evidenceList.length > 0 ? `
                                             <div class="momentum-evidence-box">
-                                                <div class="evidence-title"><i class="fa-solid fa-bullseye"></i> 대표 견인 상품</div>
+                                                <div class="evidence-title"><i class="fa-solid fa-bullseye"></i> 대표 관측 상품${item.evidence_period === 'previous' ? ' (직전 기간)' : ''}</div>
                                                 ${evidenceList.map(p => `
                                                     <div class="evidence-product-item">
                                                         <div class="evidence-product-name" title="${periodText(p.product_name)}">
@@ -512,7 +517,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
         const top30Tokens = [];
         const top31_100Tokens = [];
-        const risingStars = [];
 
         products.forEach(p => {
             if (p.has_packaging) pkgCount++;
@@ -552,18 +556,6 @@ document.addEventListener('DOMContentLoaded', () => {
             const tokens = (p.product_name || '').replace(/\[.*?\]|\(.*?\)|[^\p{L}\p{N}\s]/gu, ' ').split(/\s+/).filter(t => t.length >= 2 && !['선물', '추천', '선택', '1', '2', '3', '종', '택'].includes(t) && !noiseNouns.includes(t.toLowerCase()));
             top30Tokens.push(...tokens);
 
-            if (p.is_new_entry || (p.rank_delta && p.rank_delta >= 10)) {
-                risingStars.push({
-                    rank: p.rank,
-                    url: p.url,
-                    brand: p.brand || '-',
-                    product_name: p.product_name,
-                    price: p.price,
-                    rank_delta: p.is_new_entry ? 'NEW' : p.rank_delta,
-                    is_new_entry: !!p.is_new_entry,
-                    character_ip: p.character_ip || '일반/비IP 상품'
-                });
-            }
         });
 
         // Price Tier Matrix
@@ -613,7 +605,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     concept: ['귀여운', '감성', '신박한', '쓸데없는', '인테리어']
                 }
             },
-            card_4_rising_stars: risingStars
+            card_4_rising_stars: DashboardMetrics.risingStars(products)
         };
     }
 
@@ -640,7 +632,8 @@ document.addEventListener('DOMContentLoaded', () => {
         const sov = { top_ip_share: `${summary.share}%` };
         const priceUsp = cardData.card_2_price_and_usp || {};
         const kw = cardData.card_3_recommended_keywords || {};
-        const rising = cardData.card_4_rising_stars || [];
+        // Use the selected day's records, including for legacy cached card payloads.
+        const rising = DashboardMetrics.risingStars(getFilteredProducts());
 
         const tierMatrix = priceUsp.price_tier_matrix || {};
         const kwTypes = kw.by_type || {};
@@ -743,14 +736,14 @@ document.addEventListener('DOMContentLoaded', () => {
             <div class="card">
                 <div class="card-title">
                     <h3><i class="fa-solid fa-bolt highlight-cyan"></i> Card 4: 급상승 라이징 스타 (Rising Star Alert)</h3>
-                    <span>직전 수집일 대비 10계단 이상 상승 또는 이전 수집 범위 내 신규 진입 상품 · 상품명 클릭 시 카카오 선물하기 이동</span>
+                    <span>직전 수집일 대비 10계단 이상 상승 또는 수집 범위 내 신규 진입 · 동일 상품은 한 행 · 카테고리 순위 오름차순 최대 5개 · 번호는 표시 순서이며 통합 순위·공동 순위가 아닙니다.</span>
                 </div>
                 <div class="table-container" style="margin-top: 15px;">
                     <table class="custom-table">
                         <thead>
                             <tr>
-                                <th style="width: 70px;">순위</th>
-                                <th style="width: 100px;">변동폭</th>
+                                <th style="width: 70px;">번호</th>
+                                <th style="min-width: 240px;">카테고리별 순위 · 변동</th>
                                 <th style="width: 130px;">캐릭터 IP</th>
                                 <th style="width: 120px;">브랜드</th>
                                 <th>상품명</th>
@@ -758,11 +751,11 @@ document.addEventListener('DOMContentLoaded', () => {
                             </tr>
                         </thead>
                         <tbody>
-                            ${rising.length > 0 ? rising.map(r => `
+                            ${rising.length > 0 ? rising.map((r, idx) => `
                                 <tr>
-                                    <td class="badge-rank">${r.rank}위</td>
+                                    <td class="badge-rank">${idx + 1}</td>
                                     <td>
-                                        ${r.is_new_entry ? `<span style="background:#EF4444; color:#FFF; font-size:10px; padding:2px 6px; border-radius:4px; font-weight:700;">NEW</span>` : `<span style="color:#10B981; font-weight:700;"><i class="fa-solid fa-caret-up"></i> +${r.rank_delta}</span>`}
+                                        ${r.ranking_contexts.map(c => `<div>${c.category} · ${c.rank}위 <strong style="color:#10B981;">${c.is_new_entry ? 'NEW' : '+' + c.rank_delta}</strong></div>`).join('')}
                                     </td>
                                     <td><span style="background:rgba(254,229,0,0.1); color:#FEE500; padding:2px 6px; border-radius:4px; font-size:11px;">${r.character_ip || '일반/비IP'}</span></td>
                                     <td><span class="badge-brand">${r.brand}</span></td>

@@ -6,6 +6,25 @@ const { test } = require('node:test');
 const metrics = require('../docs/metrics.js');
 const docs = path.join(__dirname, '../docs');
 
+test('rising table merges cross-category products even with stale cards; category filter preserves movement', async () => {
+    const snapshot = JSON.parse(fs.readFileSync(path.join(docs, 'data_20261028.json')));
+    snapshot.cards['전체'].card_4_rising_stars = [{rank: 999, product_name: 'STALE_CARD'}];
+    const app = dashboard(snapshot);
+    await new Promise(resolve => setImmediate(resolve));
+    const html = app.elements.get('b2b-cards-container').innerHTML;
+    const rising = html.split('<!-- Card 4: Rising Stars Alert -->')[1];
+    assert.ok(rising.includes('카테고리별 순위 · 변동'));
+    assert.ok(!rising.includes('STALE_CARD'));
+    assert.equal((rising.match(/href="https:\/\/gift.kakao.com\/product\/11734230"/g) || []).length, 1);
+    assert.ok(rising.includes('리빙 전체 · 1위'));
+    assert.ok(rising.includes('팬시/문구/취미 (IP핵심) · 1위'));
+    assert.equal((rising.match(/class="badge-rank"/g) || []).length, 5);
+    app.select('리빙 전체');
+    const filtered = app.elements.get('b2b-cards-container').innerHTML.split('<!-- Card 4: Rising Stars Alert -->')[1];
+    assert.ok(!filtered.includes('팬시/문구/취미 (IP핵심) ·'));
+    assert.deepEqual(app.errors, []);
+});
+
 function dashboard(snapshot, reports = {}) {
     const elements = new Map();
     const errors = [];
@@ -49,11 +68,55 @@ function dashboard(snapshot, reports = {}) {
         const selector = type ? '#period-type-tabs .cat-tab' : '#cat-tabs-period .cat-tab';
         const button = { classList: { add() {} }, getAttribute: () => type || cat };
         callbacks.click.forEach(callback => callback({ target: { closest: query => query === selector ? button : null } }));
+      }, momentum(type) {
+        const button = { classList: { add() {} }, getAttribute: () => type };
+        callbacks.click.forEach(callback => callback({target: {closest: query => query === '#momentum-type-tabs .cat-tab' ? button : null}}));
       }, select(cat) {
         const tab = tabs.find(t => t.getAttribute() === cat);
         callbacks.click.forEach(callback => callback({ target: { closest: selector => selector === '.cat-tab' ? tab : null } }));
     } };
 }
+
+test('weekly/monthly momentum tabs render calculated IPs and category evidence', async () => {
+    const snapshot = JSON.parse(fs.readFileSync(path.join(docs, 'data.json')));
+    const weekly = JSON.parse(fs.readFileSync(path.join(docs, 'weekly_insights.json')));
+    const monthly = JSON.parse(fs.readFileSync(path.join(docs, 'monthly_insights.json')));
+    const app = dashboard(snapshot, { weekly, monthly });
+    await new Promise(resolve => setImmediate(resolve));
+    app.navigate('page-period-insights');
+    for (const [period, report] of Object.entries({weekly, monthly})) {
+        app.period(period);
+        for (const [category, data] of Object.entries(report.categories)) {
+            app.period(null, category === '전체' ? 'all' : category);
+            for (const [type, field] of Object.entries({rising:'rising_ips', falling:'falling_ips', stable:'stable_ips', new_entry:'new_entry_ips'})) {
+                app.momentum(type);
+                const html = app.elements.get('period-momentum-container').innerHTML;
+                const items = data.momentum[field];
+                if (items.length) {
+                    assert.ok(html.includes(items[0].ip_name), `${period}/${category}/${type}`);
+                    assert.ok(html.includes('수집일당 평균 순위점수'));
+                    assert.ok(!html.includes('undefined') && !html.includes('NaN'));
+                } else assert.ok(html.includes('부합하는 IP가 없습니다'));
+            }
+        }
+    }
+    assert.deepEqual(app.errors, []);
+});
+
+test('momentum distinguishes missing report, insufficient coverage and valid empty result', async () => {
+    const snapshot = JSON.parse(fs.readFileSync(path.join(docs, 'data.json')));
+    for (const status of ['missing', 'insufficient_data', 'available']) {
+        const momentum = status === 'missing' ? undefined : {comparison:{status, note:'coverage note'},
+            rising_ips:[], new_entry_ips:[], stable_ips:[], falling_ips:[]};
+        const app = dashboard(snapshot, {weekly:{categories:{'전체':{top_ips:[], steady_products:[], momentum}}}});
+        await new Promise(resolve => setImmediate(resolve));
+        app.navigate('page-period-insights');
+        const html = app.elements.get('period-momentum-container').innerHTML;
+        assert.ok(html.includes(status === 'missing' ? '아직 생성되지 않았습니다' :
+            status === 'insufficient_data' ? '비교 데이터 부족' : '부합하는 IP가 없습니다'), status);
+        assert.deepEqual(app.errors, []);
+    }
+});
 
 test('separates specific IPs, unclassified labels, missing labels and non-IP', () => {
     const result = metrics.summarize([

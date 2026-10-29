@@ -2,7 +2,8 @@ import os
 import sys
 import pandas as pd
 import numpy as np
-from numbers import Real
+from rising_stars import select_rising_stars
+from period_momentum import generate_ip_momentum
 from rank_comparison import compare_rankings
 
 PRICE_TIER_ORDER = ["1만원 미만", "1만원대", "2만원대", "3만원대", "4만원대", "5만원 이상"]
@@ -146,23 +147,8 @@ def generate_all_dashboard_cards(df_enriched, top_n=100):
         }
         
         # 4. Rising Stars
-        rising_items = []
-        for _, r in sub_df.iterrows():
-            if r.get('is_new_entry') or (isinstance(r.get('rank_delta'), Real) and r.get('rank_delta') >= 10):
-                rising_items.append({
-                    "brand": str(r.get('brand', '')),
-                    "product_name": str(r.get('product_name', '')),
-                    "rank": int(r.get('rank', 0)),
-                    "rank_delta": r.get('rank_delta'),
-                    "category": str(r.get('category', '')),
-                    "price": str(r.get('price', '')),
-                    "character_ip": str(r.get('character_ip', '')) or "일반/비IP 상품",
-                    "url": str(r.get('url', '')),
-                    "is_new_entry": bool(r.get('is_new_entry'))
-                })
-                
-        card_4 = sorted(rising_items, key=lambda x: x['rank'])[:5]
-        
+        card_4 = select_rising_stars(sub_df.to_dict(orient='records'))
+
         cards[cat] = {
             "analyzed_count": total_count,
             "card_1_sov": card_1,
@@ -185,6 +171,7 @@ def generate_period_insights(df_master, days=30, end_date=None):
     if pd.isna(end):
         return {}
     start = end - pd.Timedelta(days=days - 1)
+    comparison_records = df.to_dict(orient='records')
     df = df[df['date_key'].between(start, end)].copy()
     observed = int(df['date_key'].nunique())
     results = dict(period_days=days, observed_days=observed,
@@ -225,7 +212,10 @@ def generate_period_insights(df_master, days=30, end_date=None):
             record = entry['record']
             steady.append(dict(product_id=identity, appearance_days=len(entry['dates']),
                                **{key: str(record.get(key, '') or '') for key in ['product_name', 'brand', 'character_ip', 'price']}))
-        results['categories'][cat] = dict(total_records=len(rows), top_ips=top_ips, steady_products=steady)
+        momentum_categories = sorted(df['category'].dropna().unique()) if cat == '전체' else [cat]
+        momentum = generate_ip_momentum(comparison_records, days, end.date(), momentum_categories)
+        results['categories'][cat] = dict(total_records=len(rows), top_ips=top_ips,
+                                         steady_products=steady, momentum=momentum)
     return results
 
 

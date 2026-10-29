@@ -44,7 +44,38 @@
         };
     }
 
-    const api = { ipNames, summarize };
+    function productId(product) {
+        const value = String(product.product_id ?? '').trim();
+        if (/^\d+(?:\.0+)?$/.test(value) && Number(value) > 0) return String(BigInt(value.split('.')[0]));
+        try {
+            const url = new URL(product.url);
+            const id = url.hostname === 'gift.kakao.com' && url.pathname.match(/^\/product\/(\d+)\/?$/)?.[1];
+            return id && BigInt(id) > 0 ? String(BigInt(id)) : null;
+        } catch { return null; }
+    }
+
+    function risingStars(records, limit = 5) {
+        const candidates = records.filter(p => productId(p) && String(p.category || '').trim() &&
+            Number.isInteger(p.rank) && p.rank > 0 && p.rank_comparison_status !== 'unavailable' &&
+            (p.is_new_entry === true || (['number', 'string'].includes(typeof p.rank_delta) &&
+                Number.isFinite(Number(p.rank_delta)) && Number(p.rank_delta) >= 10)));
+        const compareText = (a, b) => a < b ? -1 : a > b ? 1 : 0;
+        candidates.sort((a, b) => a.rank - b.rank ||
+            compareText(a.category.trim(), b.category.trim()) || compareText(productId(a), productId(b)));
+        const products = new Map();
+        candidates.forEach(p => {
+            const id = productId(p);
+            if (!products.has(id)) products.set(id, { ...p, product_id: id, ranking_contexts: [] });
+            const contexts = products.get(id).ranking_contexts;
+            const category = p.category.trim();
+            if (!contexts.some(c => c.category === category)) contexts.push({
+                category, rank: p.rank, rank_delta: p.rank_delta, is_new_entry: p.is_new_entry === true
+            });
+        });
+        return [...products.values()].slice(0, limit);
+    }
+
+    const api = { ipNames, summarize, productId, risingStars };
     if (typeof module !== 'undefined' && module.exports) module.exports = api;
     else root.DashboardMetrics = api;
 })(typeof globalThis !== 'undefined' ? globalThis : this);
