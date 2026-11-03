@@ -4,7 +4,7 @@ import glob
 import json
 import re
 import argparse
-from datetime import datetime, timedelta
+from datetime import datetime, timedelta, timezone
 import pandas as pd
 
 from crawler import scrape_all_categories, update_master_history, BASE_DIR, DATA_DIR, WEB_DIR
@@ -70,7 +70,7 @@ def export_static_web_dataset(df_latest, latest_cards_dict):
             # 각 날짜의 카드도 "오늘자 카드"를 재사용하지 않고, 그 날짜 자체의 데이터로 새로 계산해서
             # 날짜를 바꿨을 때 B2B 인사이트 카드도 실제로 그 날짜 기준으로 바뀌도록 함.
             try:
-                today_str = datetime.now().strftime("%Y%m%d")
+                today_str = datetime.now(timezone(timedelta(hours=9))).strftime("%Y%m%d")
                 if d == today_str:
                     day_cards = latest_cards_dict
                     day_records = df_latest.fillna("").to_dict(orient="records")
@@ -126,6 +126,8 @@ def export_static_web_dataset(df_latest, latest_cards_dict):
     # Daily JSON snapshots survive fresh CI checkouts; the local CSV master may not.
     from analytics import export_period_insights
     export_period_insights(WEB_DIR)
+    from trend_export import export_ip_trends
+    export_ip_trends(WEB_DIR)
 
 
 def print_b2b_insight_report(cards_dict, top_n):
@@ -161,23 +163,24 @@ def print_b2b_insight_report(cards_dict, top_n):
 
 def main():
     parser = argparse.ArgumentParser(description="카카오 선물하기 고도화 데이터 수집 & 인사이트 파이프라인")
-    parser.add_argument("--top_n", type=int, default=100, help="수집 및 분석 대상 랭킹 상한 (기본값: 100)")
+    parser.add_argument("--top_n", type=int, default=50, help="세부 카테고리 수집 상한 (기본값: 50)")
+    parser.add_argument("--living_top_n", type=int, default=200, help="리빙 전체 수집 상한 (기본값: 200)")
     parser.add_argument("--skip_scrape", action="store_true", help="수집을 건너뛰고 기존 최신 CSV 데이터로 가공만 진행")
     args = parser.parse_args()
 
-    today_str = datetime.now().strftime("%Y%m%d")
+    today_str = datetime.now(timezone(timedelta(hours=9))).strftime("%Y%m%d")
     csv_file = os.path.join(DATA_DIR, f"ranking_{today_str}.csv")
 
     # 1. 수집 또는 기존 데이터 로드
     if not args.skip_scrape:
-        print(f"[{datetime.now().strftime('%Y-%m-%d %H:%M:%S')}] 1. 크롤링 파이프라인 시작 (Top {args.top_n})...")
-        products = scrape_all_categories(top_n=args.top_n)
+        print(f"[{datetime.now(timezone(timedelta(hours=9))).strftime('%Y-%m-%d %H:%M:%S')}] 1. 크롤링 파이프라인 시작 (Top {args.top_n})...")
+        products = scrape_all_categories(top_n=args.top_n, living_top_n=args.living_top_n)
         if not products:
             print("[오류] 수집된 상품이 없습니다.")
             sys.exit(1)
         df_raw = pd.DataFrame(products)
     else:
-        print(f"[{datetime.now().strftime('%Y-%m-%d %H:%M:%S')}] 1. 스크랩 건너뛰기: 최신 CSV 읽기...")
+        print(f"[{datetime.now(timezone(timedelta(hours=9))).strftime('%Y-%m-%d %H:%M:%S')}] 1. 스크랩 건너뛰기: 최신 CSV 읽기...")
         if os.path.exists(csv_file):
             df_raw = pd.read_csv(csv_file)
         else:

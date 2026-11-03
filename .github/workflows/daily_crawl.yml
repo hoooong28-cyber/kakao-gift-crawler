@@ -1,10 +1,21 @@
 name: Daily Kakao Gift Ranking Crawl
 
 on:
+  push:
+    branches: [main]
+    paths:
+      - crawler.py
+      - ranking_api.py
+      - main.py
+      - .github/workflows/daily_crawl.yml
   schedule:
     # 매일 한국 시간 오전 9시 (UTC 00:00) 자동 실행
     - cron: '0 0 * * *'
   workflow_dispatch: # GitHub 웹 UI에서 수동으로도 즉시 실행 가능
+
+concurrency:
+  group: daily-ranking-crawl
+  cancel-in-progress: false
 
 jobs:
   crawl-and-deploy:
@@ -22,17 +33,22 @@ jobs:
         with:
           python-version: '3.10'
 
-      - name: 필수 패키지 및 Playwright 브라우저 설치
+      - name: 필수 패키지 설치
         run: |
           python -m pip install --upgrade pip
-          pip install pandas playwright requests beautifulsoup4 openpyxl
-          playwright install --with-deps chromium
+          pip install pandas requests beautifulsoup4 openpyxl
+
+      - name: Node 테스트 환경
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
 
       - name: 랭킹 크롤러 및 대시보드 파이프라인 실행
         run: |
           python -m unittest discover -s tests
-          python main.py --top_n 50
+          python main.py --top_n 50 --living_top_n 200
           python verify_dashboard.py
+          node --test tests/test_dashboard_metrics.cjs tests/test_rising_stars.cjs
 
       - name: 수집된 데이터 커밋 및 깃허브 푸시 (Push to GitHub)
         run: |
@@ -45,3 +61,22 @@ jobs:
             git commit -m "auto: 매일 선물하기 랭킹 자동 수집 업데이트 ($(date +'%Y-%m-%d'))"
             git push origin main
           fi
+
+      - name: 검증한 대시보드 배포 파일 업로드
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: docs
+
+  deploy:
+    needs: crawl-and-deploy
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: 검증한 대시보드 배포
+        id: deployment
+        uses: actions/deploy-pages@v4

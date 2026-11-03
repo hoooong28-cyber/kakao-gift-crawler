@@ -1,7 +1,7 @@
 """Validate the published date index, current records and matching day snapshot."""
 import json
 from rising_stars import select_rising_stars
-from datetime import datetime
+from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
 def validate_period_report(report, days, latest_date):
@@ -19,9 +19,9 @@ def validate_period_report(report, days, latest_date):
             if not isinstance(momentum.get(field), list):
                 raise RuntimeError(f'Momentum list is missing: {category}/{field}')
 
-def main():
+def main(expected_living_count=200):
     root = Path(__file__).resolve().parent / "docs"
-    today = datetime.now().strftime("%Y%m%d")
+    today = datetime.now(timezone(timedelta(hours=9))).strftime("%Y%m%d")
     dates = json.loads((root / "dates.json").read_text(encoding="utf-8"))
     latest = json.loads((root / "data.json").read_text(encoding="utf-8"))
     if not dates or dates[0]["date_key"] != today:
@@ -34,6 +34,11 @@ def main():
     daily = json.loads((root / f"data_{today}.json").read_text(encoding="utf-8"))
     if daily != latest:
         raise RuntimeError("Daily snapshot differs from latest data")
+    living = [row for row in latest['records'] if row.get('category') == '리빙 전체']
+    if (len(living) != expected_living_count
+            or sorted(row['rank'] for row in living) != list(range(1, expected_living_count + 1))
+            or len({str(row['product_id']) for row in living}) != expected_living_count):
+        raise RuntimeError(f'Living ranking must contain {expected_living_count} unique consecutive products')
     for category, card in latest['cards'].items():
         if not card:
             continue
