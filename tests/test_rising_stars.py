@@ -12,9 +12,11 @@ class RisingStarsTests(unittest.TestCase):
         from unittest.mock import patch
         import verify_dashboard
         latest_date = json.loads((ROOT / 'docs/dates.json').read_text(encoding='utf-8'))[0]['date_key']
+        saved = json.loads((ROOT / 'docs/data.json').read_text(encoding='utf-8'))
+        expected_depth = sum(row['category'] == '리빙 전체' for row in saved['records'])
         with patch('verify_dashboard.datetime') as clock:
             clock.now.return_value = datetime.strptime(latest_date, '%Y%m%d')
-            verify_dashboard.main()
+            verify_dashboard.main(expected_living_count=expected_depth)
 
     def test_identity_context_threshold_and_order(self):
         def row(pid, rank=1, category='A', delta=10, **kw):

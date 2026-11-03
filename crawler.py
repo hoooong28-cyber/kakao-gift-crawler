@@ -3,9 +3,8 @@ import sys
 import re
 import json
 import glob
-from datetime import datetime, timedelta
+from datetime import datetime, timedelta, timezone
 import pandas as pd
-from playwright.sync_api import sync_playwright
 
 if sys.platform == "win32":
     try:
@@ -219,7 +218,7 @@ def scrape_current_page_products(page, cat_label, top_n=50):
                     "character_ip": character_ip,
                     "url": full_url,
                     "product_id": product_id,
-                    "scraped_at": datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+                    "scraped_at": datetime.now(timezone(timedelta(hours=9))).strftime("%Y-%m-%d %H:%M:%S")
                 })
                 rank += 1
                 if rank > top_n: # 🔥 기본 50위까지 확장 수집!
@@ -232,50 +231,18 @@ def scrape_current_page_products(page, cat_label, top_n=50):
     print(f"  ✅ [{cat_label}] {len(products)}개 수집 완료 (기본 Top 50)")
     return products
 
-def scrape_all_categories(top_n=50):
-    print(f"[{datetime.now().strftime('%Y-%m-%d %H:%M:%S')}] 카카오 세부 카테고리 50위 확장 수집 시작...")
-    all_products = []
-    
-    with sync_playwright() as p:
-        browser = p.chromium.launch(headless=True)
-        context = browser.new_context(
-            user_agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
-        )
-        page = context.new_page()
+def scrape_all_categories(top_n=50, living_top_n=200):
+    from ranking_api import collect_category
+    targets = [('리빙 전체', None, living_top_n),
+               ('팬시/문구/취미 (IP핵심)', 329, top_n),
+               ('침구/패브릭', 185, top_n), ('주방/식기', 110, top_n)]
+    records = []
+    for category, sub_nav_id, depth in targets:
+        rows = collect_category(category, depth, detect_character_ip, sub_nav_id)
+        print(f'  {category}: {len(rows)}개 수집 완료')
+        records.extend(rows)
+    return records
 
-        print(f"메인 카테고리 접속 중: {MAIN_URL}")
-        page.goto(MAIN_URL, wait_until="networkidle", timeout=30000)
-        page.wait_for_timeout(2500)
-
-        for cat_label, btn_keyword in SUB_TAB_TARGETS:
-            try:
-                if cat_label != "리빙 전체":
-                    buttons = page.locator('button, a').all()
-                    clicked = False
-                    for btn in buttons:
-                        txt = btn.inner_text().strip()
-                        if btn_keyword in txt and len(txt) < 15:
-                            try:
-                                btn.scroll_into_view_if_needed(timeout=5000)
-                                btn.click(timeout=5000)
-                            except Exception:
-                                btn.evaluate("el => el.click()")
-                            page.wait_for_timeout(2000)
-                            clicked = True
-                            break
-                    if not clicked:
-                        raise RuntimeError(f"Category tab not found: {cat_label}")
-
-                prods = scrape_current_page_products(page, cat_label, top_n=top_n)
-                if not prods:
-                    raise RuntimeError(f"No products collected: {cat_label}")
-                all_products.extend(prods)
-            except Exception as e:
-                raise RuntimeError(f"Collection failed for {cat_label}") from e
-
-        browser.close()
-
-    return all_products
 
 def update_master_history(df_today):
     master_file = os.path.join(DATA_DIR, "ranking_master_history.csv")
@@ -283,7 +250,7 @@ def update_master_history(df_today):
     if os.path.exists(master_file):
         try:
             df_master = pd.read_csv(master_file)
-            today_date = datetime.now().strftime("%Y-%m-%d")
+            today_date = datetime.now(timezone(timedelta(hours=9))).strftime("%Y-%m-%d")
             df_master['date'] = df_master['scraped_at'].str.slice(0, 10)
             df_master = df_master[df_master['date'] != today_date].drop(columns=['date'], errors='ignore')
             

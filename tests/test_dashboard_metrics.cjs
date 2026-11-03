@@ -11,6 +11,7 @@ test('rising table merges cross-category products even with stale cards; categor
     snapshot.cards['전체'].card_4_rising_stars = [{rank: 999, product_name: 'STALE_CARD'}];
     const app = dashboard(snapshot);
     await new Promise(resolve => setImmediate(resolve));
+    app.select('all'); // Exercise aggregation independently of the overview's living default.
     const html = app.elements.get('b2b-cards-container').innerHTML;
     const rising = html.split('<!-- Card 4: Rising Stars Alert -->')[1];
     assert.ok(rising.includes('카테고리별 순위 · 변동'));
@@ -241,4 +242,29 @@ test('marketing opens with living, remembers its selection, and never inherits t
     const block = html.split('id="cat-tabs-b2b"')[1].split('</div>')[0];
     assert.ok(!block.includes('data-cat="all"'));
     assert.equal((block.match(/data-cat=/g) || []).length, 4);
+});
+
+test('overview defaults to the actual living depth and keeps its selection without a combined tab', async () => {
+    const snapshot = JSON.parse(fs.readFileSync(path.join(docs, 'data.json')));
+    const rows = Array.isArray(snapshot) ? snapshot : snapshot.records;
+    const livingDepth = rows.filter(row => row.category === '리빙 전체').length;
+    const app = dashboard(snapshot);
+    await new Promise(resolve => setImmediate(resolve));
+    assert.equal(app.elements.get('ov-total-count').textContent, `${livingDepth} 건`);
+    assert.ok(app.elements.get('scope-note').textContent.startsWith('리빙 전체 ·'));
+    app.select('침구/패브릭');
+    app.navigate('page-ranking-table');
+    app.select('all');
+    app.navigate('page-overview');
+    assert.equal(app.elements.get('ov-total-count').textContent, '50 건');
+    assert.ok(app.elements.get('scope-note').textContent.startsWith('침구/패브릭 ·'));
+    app.select('리빙 전체');
+    assert.equal(app.elements.get('ov-total-count').textContent, `${livingDepth} 건`);
+    const html = fs.readFileSync(path.join(docs, 'index.html'),'utf8');
+    for (const id of ['cat-tabs-overview','cat-tabs-b2b']) {
+        const block = html.split('id="' + id + '"')[1].split('</div>')[0];
+        assert.ok(!block.includes('data-cat="all"'));
+        assert.equal((block.match(/data-cat=/g) || []).length, 4);
+    }
+    assert.deepEqual(app.errors, []);
 });
