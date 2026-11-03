@@ -71,6 +71,9 @@ def export_static_web_dataset(df_latest, latest_cards_dict):
             # 날짜를 바꿨을 때 B2B 인사이트 카드도 실제로 그 날짜 기준으로 바뀌도록 함.
             try:
                 today_str = datetime.now(timezone(timedelta(hours=9))).strftime("%Y%m%d")
+                # Historical observations retain their original collection scope and bytes.
+                if d != today_str and os.path.exists(os.path.join(WEB_DIR, f"data_{d}.json")):
+                    continue
                 if d == today_str:
                     day_cards = latest_cards_dict
                     day_records = df_latest.fillna("").to_dict(orient="records")
