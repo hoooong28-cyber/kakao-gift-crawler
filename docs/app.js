@@ -3,6 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
     let insightCardsData = {};
     let activeCategory = 'all';
     let activePage = 'page-overview';
+    let activeB2BCategory = '리빙 전체';
     let selectedDate = ''; // '' = 최신 날짜
 
     let ipChartInstance = null;
@@ -26,6 +27,7 @@ document.addEventListener('DOMContentLoaded', () => {
         btn.classList.add('active');
 
         activePage = btn.getAttribute('data-page');
+        if (activePage === 'page-b2b-insights') activeCategory = activeB2BCategory;
         document.querySelectorAll('.page-view').forEach(view => {
             if (view.id === activePage) {
                 view.classList.add('active');
@@ -76,6 +78,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
 
         activeCategory = tabBtn.getAttribute('data-cat');
+        if (activePage === 'page-b2b-insights') activeB2BCategory = activeCategory;
         
         // Sync active class across all category tab containers
         document.querySelectorAll('.cat-tab').forEach(b => {

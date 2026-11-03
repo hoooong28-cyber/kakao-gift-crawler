@@ -216,3 +216,29 @@ test('period product cards hide legacy non-IP and unclassified report entries', 
     assert.ok(!html.includes('HIDE_'));
     assert.deepEqual(app.errors, []);
 });
+
+test('marketing opens with living, remembers its selection, and never inherits the combined sample', async () => {
+    const snapshot = JSON.parse(fs.readFileSync(path.join(docs, 'data.json')));
+    const rows = Array.isArray(snapshot) ? snapshot : snapshot.records;
+    const app = dashboard(snapshot);
+    await new Promise(resolve => setImmediate(resolve));
+    const assertCategory = category => {
+        const expected = metrics.summarize(rows.filter(p => p.category === category));
+        assert.ok(app.elements.get('b2b-cards-container').innerHTML.includes(`${expected.total}건 중 IP 분류 ${expected.ipCount}건`));
+        assert.ok(app.elements.get('scope-note').textContent.startsWith(category + ' ·'));
+    };
+    app.select('all');
+    app.navigate('page-b2b-insights');
+    assertCategory('리빙 전체');
+    app.select('주방/식기');
+    assertCategory('주방/식기');
+    app.navigate('page-overview');
+    app.select('all');
+    app.navigate('page-b2b-insights');
+    assertCategory('주방/식기');
+    assert.deepEqual(app.errors, []);
+    const html = fs.readFileSync(path.join(docs, 'index.html'), 'utf8');
+    const block = html.split('id="cat-tabs-b2b"')[1].split('</div>')[0];
+    assert.ok(!block.includes('data-cat="all"'));
+    assert.equal((block.match(/data-cat=/g) || []).length, 4);
+});
