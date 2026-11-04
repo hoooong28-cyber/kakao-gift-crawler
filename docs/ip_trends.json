@@ -413,6 +413,13 @@
         "share": 1.7,
         "avg_price": 17917,
         "observed_depth": 350
+      },
+      {
+        "date": "20261104",
+        "count": 8,
+        "share": 2.3,
+        "avg_price": 20438,
+        "observed_depth": 350
       }
     ],
     "가나디": [
@@ -827,6 +834,13 @@
         "count": 29,
         "share": 8.3,
         "avg_price": 18648,
+        "observed_depth": 350
+      },
+      {
+        "date": "20261104",
+        "count": 36,
+        "share": 10.3,
+        "avg_price": 18681,
         "observed_depth": 350
       }
     ],
@@ -1539,6 +1553,13 @@
         "share": 12.9,
         "avg_price": 17696,
         "observed_depth": 350
+      },
+      {
+        "date": "20261104",
+        "count": 49,
+        "share": 14.0,
+        "avg_price": 17933,
+        "observed_depth": 350
       }
     ],
     "__미분류__": [
@@ -1954,6 +1975,13 @@
         "share": 7.7,
         "avg_price": 21893,
         "observed_depth": 350
+      },
+      {
+        "date": "20261104",
+        "count": 26,
+        "share": 7.4,
+        "avg_price": 19893,
+        "observed_depth": 350
       }
     ],
     "카카오프렌즈(라이언)": [
@@ -2348,399 +2376,12 @@
         "share": 1.4,
         "avg_price": 24360,
         "observed_depth": 350
-      }
-    ],
-    "카카오프렌즈(어피치)": [
-      {
-        "date": "20260827",
-        "count": 3,
-        "share": 1.5,
-        "avg_price": 26600,
-        "observed_depth": 200
       },
       {
-        "date": "20260828",
-        "count": 2,
-        "share": 1.0,
-        "avg_price": 24950,
-        "observed_depth": 200
-      },
-      {
-        "date": "20260831",
-        "count": 3,
-        "share": 1.5,
-        "avg_price": 26600,
-        "observed_depth": 200
-      },
-      {
-        "date": "20260901",
-        "count": 2,
-        "share": 1.0,
-        "avg_price": 24950,
-        "observed_depth": 200
-      },
-      {
-        "date": "20260902",
-        "count": 2,
-        "share": 1.0,
-        "avg_price": 24950,
-        "observed_depth": 200
-      },
-      {
-        "date": "20260903",
-        "count": 2,
-        "share": 1.0,
-        "avg_price": 24950,
-        "observed_depth": 200
-      },
-      {
-        "date": "20260904",
-        "count": 2,
-        "share": 1.0,
-        "avg_price": 24950,
-        "observed_depth": 200
-      },
-      {
-        "date": "20260907",
-        "count": 4,
-        "share": 1.0,
-        "avg_price": 20975,
-        "observed_depth": 400
-      },
-      {
-        "date": "20260908",
-        "count": 4,
-        "share": 1.0,
-        "avg_price": 20975,
-        "observed_depth": 400
-      },
-      {
-        "date": "20260909",
-        "count": 3,
-        "share": 0.8,
-        "avg_price": 23300,
-        "observed_depth": 400
-      },
-      {
-        "date": "20260910",
-        "count": 3,
-        "share": 0.8,
-        "avg_price": 23300,
-        "observed_depth": 400
-      },
-      {
-        "date": "20260911",
-        "count": 3,
-        "share": 0.8,
-        "avg_price": 23300,
-        "observed_depth": 400
-      },
-      {
-        "date": "20260915",
-        "count": 2,
-        "share": 1.0,
-        "avg_price": 24950,
-        "observed_depth": 200
-      },
-      {
-        "date": "20260916",
-        "count": 2,
-        "share": 0.5,
-        "avg_price": 24950,
-        "observed_depth": 400
-      },
-      {
-        "date": "20260917",
-        "count": 4,
-        "share": 1.0,
-        "avg_price": 20975,
-        "observed_depth": 400
-      },
-      {
-        "date": "20260918",
-        "count": 2,
-        "share": 0.5,
-        "avg_price": 24950,
-        "observed_depth": 400
-      },
-      {
-        "date": "20260921",
-        "count": 3,
-        "share": 0.8,
-        "avg_price": 23300,
-        "observed_depth": 400
-      },
-      {
-        "date": "20260922",
-        "count": 3,
-        "share": 0.8,
-        "avg_price": 23300,
-        "observed_depth": 400
-      },
-      {
-        "date": "20260923",
-        "count": 2,
-        "share": 0.5,
-        "avg_price": 24950,
-        "observed_depth": 400
-      },
-      {
-        "date": "20260928",
-        "count": 2,
-        "share": 1.0,
-        "avg_price": 24950,
-        "observed_depth": 200
-      },
-      {
-        "date": "20260929",
-        "count": 2,
-        "share": 1.0,
-        "avg_price": 24950,
-        "observed_depth": 200
-      },
-      {
-        "date": "20260930",
-        "count": 2,
-        "share": 1.0,
-        "avg_price": 24950,
-        "observed_depth": 200
-      },
-      {
-        "date": "20261001",
-        "count": 3,
-        "share": 1.5,
-        "avg_price": 22967,
-        "observed_depth": 200
-      },
-      {
-        "date": "20261002",
-        "count": 3,
-        "share": 1.5,
-        "avg_price": 22967,
-        "observed_depth": 200
-      },
-      {
-        "date": "20261003",
-        "count": 2,
-        "share": 1.0,
-        "avg_price": 24950,
-        "observed_depth": 200
-      },
-      {
-        "date": "20261004",
-        "count": 2,
-        "share": 1.0,
-        "avg_price": 24950,
-        "observed_depth": 200
-      },
-      {
-        "date": "20261005",
-        "count": 2,
-        "share": 1.0,
-        "avg_price": 24950,
-        "observed_depth": 200
-      },
-      {
-        "date": "20261006",
-        "count": 2,
-        "share": 1.0,
-        "avg_price": 24950,
-        "observed_depth": 200
-      },
-      {
-        "date": "20261007",
-        "count": 2,
-        "share": 1.0,
-        "avg_price": 24950,
-        "observed_depth": 200
-      },
-      {
-        "date": "20261008",
-        "count": 2,
-        "share": 1.0,
-        "avg_price": 24950,
-        "observed_depth": 200
-      },
-      {
-        "date": "20261009",
-        "count": 2,
-        "share": 1.0,
-        "avg_price": 24950,
-        "observed_depth": 200
-      },
-      {
-        "date": "20261010",
-        "count": 2,
-        "share": 1.0,
-        "avg_price": 24950,
-        "observed_depth": 200
-      },
-      {
-        "date": "20261011",
-        "count": 2,
-        "share": 1.0,
-        "avg_price": 24950,
-        "observed_depth": 200
-      },
-      {
-        "date": "20261012",
-        "count": 2,
-        "share": 1.0,
-        "avg_price": 24950,
-        "observed_depth": 200
-      },
-      {
-        "date": "20261013",
-        "count": 2,
-        "share": 1.0,
-        "avg_price": 24950,
-        "observed_depth": 200
-      },
-      {
-        "date": "20261014",
-        "count": 2,
-        "share": 1.0,
-        "avg_price": 24950,
-        "observed_depth": 200
-      },
-      {
-        "date": "20261015",
-        "count": 2,
-        "share": 1.0,
-        "avg_price": 24950,
-        "observed_depth": 200
-      },
-      {
-        "date": "20261016",
-        "count": 2,
-        "share": 1.0,
-        "avg_price": 24950,
-        "observed_depth": 200
-      },
-      {
-        "date": "20261017",
-        "count": 2,
-        "share": 1.0,
-        "avg_price": 24950,
-        "observed_depth": 200
-      },
-      {
-        "date": "20261018",
-        "count": 2,
-        "share": 1.0,
-        "avg_price": 24950,
-        "observed_depth": 200
-      },
-      {
-        "date": "20261019",
-        "count": 2,
-        "share": 1.0,
-        "avg_price": 24950,
-        "observed_depth": 200
-      },
-      {
-        "date": "20261020",
-        "count": 2,
-        "share": 1.0,
-        "avg_price": 24950,
-        "observed_depth": 200
-      },
-      {
-        "date": "20261021",
-        "count": 2,
-        "share": 1.0,
-        "avg_price": 24950,
-        "observed_depth": 200
-      },
-      {
-        "date": "20261022",
-        "count": 2,
-        "share": 1.0,
-        "avg_price": 24950,
-        "observed_depth": 200
-      },
-      {
-        "date": "20261023",
-        "count": 2,
-        "share": 1.0,
-        "avg_price": 24950,
-        "observed_depth": 200
-      },
-      {
-        "date": "20261024",
-        "count": 1,
-        "share": 0.5,
-        "avg_price": 20000,
-        "observed_depth": 200
-      },
-      {
-        "date": "20261025",
-        "count": 2,
-        "share": 1.0,
-        "avg_price": 24950,
-        "observed_depth": 200
-      },
-      {
-        "date": "20261026",
-        "count": 1,
-        "share": 0.5,
-        "avg_price": 29900,
-        "observed_depth": 200
-      },
-      {
-        "date": "20261027",
-        "count": 1,
-        "share": 0.5,
-        "avg_price": 29900,
-        "observed_depth": 200
-      },
-      {
-        "date": "20261028",
-        "count": 1,
-        "share": 0.5,
-        "avg_price": 29900,
-        "observed_depth": 200
-      },
-      {
-        "date": "20261029",
-        "count": 2,
-        "share": 1.0,
-        "avg_price": 24950,
-        "observed_depth": 200
-      },
-      {
-        "date": "20261030",
-        "count": 1,
-        "share": 0.5,
-        "avg_price": 29900,
-        "observed_depth": 200
-      },
-      {
-        "date": "20261031",
-        "count": 2,
-        "share": 1.0,
-        "avg_price": 24950,
-        "observed_depth": 200
-      },
-      {
-        "date": "20261101",
-        "count": 2,
-        "share": 1.0,
-        "avg_price": 24950,
-        "observed_depth": 200
-      },
-      {
-        "date": "20261102",
-        "count": 1,
-        "share": 0.5,
-        "avg_price": 20000,
-        "observed_depth": 200
-      },
-      {
-        "date": "20261103",
+        "date": "20261104",
         "count": 4,
         "share": 1.1,
-        "avg_price": 24950,
+        "avg_price": 22975,
         "observed_depth": 350
       }
     ],
@@ -3136,6 +2777,414 @@
         "share": 2.6,
         "avg_price": 24589,
         "observed_depth": 350
+      },
+      {
+        "date": "20261104",
+        "count": 7,
+        "share": 2.0,
+        "avg_price": 26800,
+        "observed_depth": 350
+      }
+    ],
+    "카카오프렌즈(어피치)": [
+      {
+        "date": "20260827",
+        "count": 3,
+        "share": 1.5,
+        "avg_price": 26600,
+        "observed_depth": 200
+      },
+      {
+        "date": "20260828",
+        "count": 2,
+        "share": 1.0,
+        "avg_price": 24950,
+        "observed_depth": 200
+      },
+      {
+        "date": "20260831",
+        "count": 3,
+        "share": 1.5,
+        "avg_price": 26600,
+        "observed_depth": 200
+      },
+      {
+        "date": "20260901",
+        "count": 2,
+        "share": 1.0,
+        "avg_price": 24950,
+        "observed_depth": 200
+      },
+      {
+        "date": "20260902",
+        "count": 2,
+        "share": 1.0,
+        "avg_price": 24950,
+        "observed_depth": 200
+      },
+      {
+        "date": "20260903",
+        "count": 2,
+        "share": 1.0,
+        "avg_price": 24950,
+        "observed_depth": 200
+      },
+      {
+        "date": "20260904",
+        "count": 2,
+        "share": 1.0,
+        "avg_price": 24950,
+        "observed_depth": 200
+      },
+      {
+        "date": "20260907",
+        "count": 4,
+        "share": 1.0,
+        "avg_price": 20975,
+        "observed_depth": 400
+      },
+      {
+        "date": "20260908",
+        "count": 4,
+        "share": 1.0,
+        "avg_price": 20975,
+        "observed_depth": 400
+      },
+      {
+        "date": "20260909",
+        "count": 3,
+        "share": 0.8,
+        "avg_price": 23300,
+        "observed_depth": 400
+      },
+      {
+        "date": "20260910",
+        "count": 3,
+        "share": 0.8,
+        "avg_price": 23300,
+        "observed_depth": 400
+      },
+      {
+        "date": "20260911",
+        "count": 3,
+        "share": 0.8,
+        "avg_price": 23300,
+        "observed_depth": 400
+      },
+      {
+        "date": "20260915",
+        "count": 2,
+        "share": 1.0,
+        "avg_price": 24950,
+        "observed_depth": 200
+      },
+      {
+        "date": "20260916",
+        "count": 2,
+        "share": 0.5,
+        "avg_price": 24950,
+        "observed_depth": 400
+      },
+      {
+        "date": "20260917",
+        "count": 4,
+        "share": 1.0,
+        "avg_price": 20975,
+        "observed_depth": 400
+      },
+      {
+        "date": "20260918",
+        "count": 2,
+        "share": 0.5,
+        "avg_price": 24950,
+        "observed_depth": 400
+      },
+      {
+        "date": "20260921",
+        "count": 3,
+        "share": 0.8,
+        "avg_price": 23300,
+        "observed_depth": 400
+      },
+      {
+        "date": "20260922",
+        "count": 3,
+        "share": 0.8,
+        "avg_price": 23300,
+        "observed_depth": 400
+      },
+      {
+        "date": "20260923",
+        "count": 2,
+        "share": 0.5,
+        "avg_price": 24950,
+        "observed_depth": 400
+      },
+      {
+        "date": "20260928",
+        "count": 2,
+        "share": 1.0,
+        "avg_price": 24950,
+        "observed_depth": 200
+      },
+      {
+        "date": "20260929",
+        "count": 2,
+        "share": 1.0,
+        "avg_price": 24950,
+        "observed_depth": 200
+      },
+      {
+        "date": "20260930",
+        "count": 2,
+        "share": 1.0,
+        "avg_price": 24950,
+        "observed_depth": 200
+      },
+      {
+        "date": "20261001",
+        "count": 3,
+        "share": 1.5,
+        "avg_price": 22967,
+        "observed_depth": 200
+      },
+      {
+        "date": "20261002",
+        "count": 3,
+        "share": 1.5,
+        "avg_price": 22967,
+        "observed_depth": 200
+      },
+      {
+        "date": "20261003",
+        "count": 2,
+        "share": 1.0,
+        "avg_price": 24950,
+        "observed_depth": 200
+      },
+      {
+        "date": "20261004",
+        "count": 2,
+        "share": 1.0,
+        "avg_price": 24950,
+        "observed_depth": 200
+      },
+      {
+        "date": "20261005",
+        "count": 2,
+        "share": 1.0,
+        "avg_price": 24950,
+        "observed_depth": 200
+      },
+      {
+        "date": "20261006",
+        "count": 2,
+        "share": 1.0,
+        "avg_price": 24950,
+        "observed_depth": 200
+      },
+      {
+        "date": "20261007",
+        "count": 2,
+        "share": 1.0,
+        "avg_price": 24950,
+        "observed_depth": 200
+      },
+      {
+        "date": "20261008",
+        "count": 2,
+        "share": 1.0,
+        "avg_price": 24950,
+        "observed_depth": 200
+      },
+      {
+        "date": "20261009",
+        "count": 2,
+        "share": 1.0,
+        "avg_price": 24950,
+        "observed_depth": 200
+      },
+      {
+        "date": "20261010",
+        "count": 2,
+        "share": 1.0,
+        "avg_price": 24950,
+        "observed_depth": 200
+      },
+      {
+        "date": "20261011",
+        "count": 2,
+        "share": 1.0,
+        "avg_price": 24950,
+        "observed_depth": 200
+      },
+      {
+        "date": "20261012",
+        "count": 2,
+        "share": 1.0,
+        "avg_price": 24950,
+        "observed_depth": 200
+      },
+      {
+        "date": "20261013",
+        "count": 2,
+        "share": 1.0,
+        "avg_price": 24950,
+        "observed_depth": 200
+      },
+      {
+        "date": "20261014",
+        "count": 2,
+        "share": 1.0,
+        "avg_price": 24950,
+        "observed_depth": 200
+      },
+      {
+        "date": "20261015",
+        "count": 2,
+        "share": 1.0,
+        "avg_price": 24950,
+        "observed_depth": 200
+      },
+      {
+        "date": "20261016",
+        "count": 2,
+        "share": 1.0,
+        "avg_price": 24950,
+        "observed_depth": 200
+      },
+      {
+        "date": "20261017",
+        "count": 2,
+        "share": 1.0,
+        "avg_price": 24950,
+        "observed_depth": 200
+      },
+      {
+        "date": "20261018",
+        "count": 2,
+        "share": 1.0,
+        "avg_price": 24950,
+        "observed_depth": 200
+      },
+      {
+        "date": "20261019",
+        "count": 2,
+        "share": 1.0,
+        "avg_price": 24950,
+        "observed_depth": 200
+      },
+      {
+        "date": "20261020",
+        "count": 2,
+        "share": 1.0,
+        "avg_price": 24950,
+        "observed_depth": 200
+      },
+      {
+        "date": "20261021",
+        "count": 2,
+        "share": 1.0,
+        "avg_price": 24950,
+        "observed_depth": 200
+      },
+      {
+        "date": "20261022",
+        "count": 2,
+        "share": 1.0,
+        "avg_price": 24950,
+        "observed_depth": 200
+      },
+      {
+        "date": "20261023",
+        "count": 2,
+        "share": 1.0,
+        "avg_price": 24950,
+        "observed_depth": 200
+      },
+      {
+        "date": "20261024",
+        "count": 1,
+        "share": 0.5,
+        "avg_price": 20000,
+        "observed_depth": 200
+      },
+      {
+        "date": "20261025",
+        "count": 2,
+        "share": 1.0,
+        "avg_price": 24950,
+        "observed_depth": 200
+      },
+      {
+        "date": "20261026",
+        "count": 1,
+        "share": 0.5,
+        "avg_price": 29900,
+        "observed_depth": 200
+      },
+      {
+        "date": "20261027",
+        "count": 1,
+        "share": 0.5,
+        "avg_price": 29900,
+        "observed_depth": 200
+      },
+      {
+        "date": "20261028",
+        "count": 1,
+        "share": 0.5,
+        "avg_price": 29900,
+        "observed_depth": 200
+      },
+      {
+        "date": "20261029",
+        "count": 2,
+        "share": 1.0,
+        "avg_price": 24950,
+        "observed_depth": 200
+      },
+      {
+        "date": "20261030",
+        "count": 1,
+        "share": 0.5,
+        "avg_price": 29900,
+        "observed_depth": 200
+      },
+      {
+        "date": "20261031",
+        "count": 2,
+        "share": 1.0,
+        "avg_price": 24950,
+        "observed_depth": 200
+      },
+      {
+        "date": "20261101",
+        "count": 2,
+        "share": 1.0,
+        "avg_price": 24950,
+        "observed_depth": 200
+      },
+      {
+        "date": "20261102",
+        "count": 1,
+        "share": 0.5,
+        "avg_price": 20000,
+        "observed_depth": 200
+      },
+      {
+        "date": "20261103",
+        "count": 4,
+        "share": 1.1,
+        "avg_price": 24950,
+        "observed_depth": 350
+      },
+      {
+        "date": "20261104",
+        "count": 3,
+        "share": 0.9,
+        "avg_price": 23300,
+        "observed_depth": 350
       }
     ],
     "카카오프렌즈(죠르디)": [
@@ -3502,6 +3551,13 @@
         "share": 0.6,
         "avg_price": 20000,
         "observed_depth": 350
+      },
+      {
+        "date": "20261104",
+        "count": 2,
+        "share": 0.6,
+        "avg_price": 20000,
+        "observed_depth": 350
       }
     ],
     "카카오프렌즈(기타/통합)": [
@@ -3836,6 +3892,13 @@
       },
       {
         "date": "20261103",
+        "count": 3,
+        "share": 0.9,
+        "avg_price": 27267,
+        "observed_depth": 350
+      },
+      {
+        "date": "20261104",
         "count": 3,
         "share": 0.9,
         "avg_price": 27267,
@@ -4749,6 +4812,13 @@
         "share": 0.9,
         "avg_price": 10933,
         "observed_depth": 350
+      },
+      {
+        "date": "20261104",
+        "count": 2,
+        "share": 0.6,
+        "avg_price": 8900,
+        "observed_depth": 350
       }
     ],
     "몬치치": [
@@ -5087,6 +5157,13 @@
         "share": 0.5,
         "avg_price": 15000,
         "observed_depth": 200
+      },
+      {
+        "date": "20261104",
+        "count": 1,
+        "share": 0.3,
+        "avg_price": 15000,
+        "observed_depth": 350
       }
     ],
     "명탐정 코난": [
@@ -5609,6 +5686,13 @@
         "share": 0.6,
         "avg_price": 13800,
         "observed_depth": 350
+      },
+      {
+        "date": "20261104",
+        "count": 2,
+        "share": 0.6,
+        "avg_price": 13800,
+        "observed_depth": 350
       }
     ],
     "산리오(헬로키티)": [
@@ -6002,6 +6086,13 @@
         "count": 5,
         "share": 1.4,
         "avg_price": 34180,
+        "observed_depth": 350
+      },
+      {
+        "date": "20261104",
+        "count": 5,
+        "share": 1.4,
+        "avg_price": 34600,
         "observed_depth": 350
       }
     ],
@@ -6404,6 +6495,13 @@
         "share": 0.6,
         "avg_price": 17900,
         "observed_depth": 350
+      },
+      {
+        "date": "20261104",
+        "count": 2,
+        "share": 0.6,
+        "avg_price": 17900,
+        "observed_depth": 350
       }
     ],
     "잔망루피": [
@@ -6790,6 +6888,386 @@
         "count": 1,
         "share": 0.3,
         "avg_price": 39900,
+        "observed_depth": 350
+      },
+      {
+        "date": "20261104",
+        "count": 2,
+        "share": 0.6,
+        "avg_price": 39900,
+        "observed_depth": 350
+      }
+    ],
+    "산리오(한교동)": [
+      {
+        "date": "20260827",
+        "count": 2,
+        "share": 1.0,
+        "avg_price": 32000,
+        "observed_depth": 200
+      },
+      {
+        "date": "20260828",
+        "count": 3,
+        "share": 1.5,
+        "avg_price": 25600,
+        "observed_depth": 200
+      },
+      {
+        "date": "20260831",
+        "count": 4,
+        "share": 2.0,
+        "avg_price": 39000,
+        "observed_depth": 200
+      },
+      {
+        "date": "20260901",
+        "count": 5,
+        "share": 2.5,
+        "avg_price": 22160,
+        "observed_depth": 200
+      },
+      {
+        "date": "20260902",
+        "count": 2,
+        "share": 1.0,
+        "avg_price": 22400,
+        "observed_depth": 200
+      },
+      {
+        "date": "20260903",
+        "count": 3,
+        "share": 1.5,
+        "avg_price": 24933,
+        "observed_depth": 200
+      },
+      {
+        "date": "20260904",
+        "count": 4,
+        "share": 2.0,
+        "avg_price": 23700,
+        "observed_depth": 200
+      },
+      {
+        "date": "20260907",
+        "count": 5,
+        "share": 1.2,
+        "avg_price": 25520,
+        "observed_depth": 400
+      },
+      {
+        "date": "20260908",
+        "count": 6,
+        "share": 1.5,
+        "avg_price": 25233,
+        "observed_depth": 400
+      },
+      {
+        "date": "20260909",
+        "count": 5,
+        "share": 1.2,
+        "avg_price": 25520,
+        "observed_depth": 400
+      },
+      {
+        "date": "20260910",
+        "count": 5,
+        "share": 1.2,
+        "avg_price": 25520,
+        "observed_depth": 400
+      },
+      {
+        "date": "20260911",
+        "count": 7,
+        "share": 1.8,
+        "avg_price": 25514,
+        "observed_depth": 400
+      },
+      {
+        "date": "20260915",
+        "count": 2,
+        "share": 1.0,
+        "avg_price": 13800,
+        "observed_depth": 200
+      },
+      {
+        "date": "20260916",
+        "count": 4,
+        "share": 1.0,
+        "avg_price": 26875,
+        "observed_depth": 400
+      },
+      {
+        "date": "20260917",
+        "count": 5,
+        "share": 1.2,
+        "avg_price": 19920,
+        "observed_depth": 400
+      },
+      {
+        "date": "20260918",
+        "count": 9,
+        "share": 2.2,
+        "avg_price": 21267,
+        "observed_depth": 400
+      },
+      {
+        "date": "20260921",
+        "count": 7,
+        "share": 1.8,
+        "avg_price": 26200,
+        "observed_depth": 400
+      },
+      {
+        "date": "20260922",
+        "count": 5,
+        "share": 1.2,
+        "avg_price": 25520,
+        "observed_depth": 400
+      },
+      {
+        "date": "20260923",
+        "count": 6,
+        "share": 1.5,
+        "avg_price": 20233,
+        "observed_depth": 400
+      },
+      {
+        "date": "20260928",
+        "count": 2,
+        "share": 1.0,
+        "avg_price": 22400,
+        "observed_depth": 200
+      },
+      {
+        "date": "20260929",
+        "count": 4,
+        "share": 2.0,
+        "avg_price": 19400,
+        "observed_depth": 200
+      },
+      {
+        "date": "20260930",
+        "count": 2,
+        "share": 1.0,
+        "avg_price": 21900,
+        "observed_depth": 200
+      },
+      {
+        "date": "20261001",
+        "count": 1,
+        "share": 0.5,
+        "avg_price": 13800,
+        "observed_depth": 200
+      },
+      {
+        "date": "20261002",
+        "count": 2,
+        "share": 1.0,
+        "avg_price": 22400,
+        "observed_depth": 200
+      },
+      {
+        "date": "20261003",
+        "count": 3,
+        "share": 1.5,
+        "avg_price": 24933,
+        "observed_depth": 200
+      },
+      {
+        "date": "20261004",
+        "count": 2,
+        "share": 1.0,
+        "avg_price": 22400,
+        "observed_depth": 200
+      },
+      {
+        "date": "20261005",
+        "count": 3,
+        "share": 1.5,
+        "avg_price": 25300,
+        "observed_depth": 200
+      },
+      {
+        "date": "20261006",
+        "count": 4,
+        "share": 2.0,
+        "avg_price": 22425,
+        "observed_depth": 200
+      },
+      {
+        "date": "20261007",
+        "count": 4,
+        "share": 2.0,
+        "avg_price": 22700,
+        "observed_depth": 200
+      },
+      {
+        "date": "20261008",
+        "count": 5,
+        "share": 2.5,
+        "avg_price": 20920,
+        "observed_depth": 200
+      },
+      {
+        "date": "20261009",
+        "count": 4,
+        "share": 2.0,
+        "avg_price": 22700,
+        "observed_depth": 200
+      },
+      {
+        "date": "20261010",
+        "count": 5,
+        "share": 2.5,
+        "avg_price": 20920,
+        "observed_depth": 200
+      },
+      {
+        "date": "20261011",
+        "count": 4,
+        "share": 2.0,
+        "avg_price": 22425,
+        "observed_depth": 200
+      },
+      {
+        "date": "20261012",
+        "count": 2,
+        "share": 1.0,
+        "avg_price": 22950,
+        "observed_depth": 200
+      },
+      {
+        "date": "20261013",
+        "count": 2,
+        "share": 1.0,
+        "avg_price": 17450,
+        "observed_depth": 200
+      },
+      {
+        "date": "20261014",
+        "count": 1,
+        "share": 0.5,
+        "avg_price": 31000,
+        "observed_depth": 200
+      },
+      {
+        "date": "20261015",
+        "count": 2,
+        "share": 1.0,
+        "avg_price": 22400,
+        "observed_depth": 200
+      },
+      {
+        "date": "20261016",
+        "count": 2,
+        "share": 1.0,
+        "avg_price": 30500,
+        "observed_depth": 200
+      },
+      {
+        "date": "20261017",
+        "count": 3,
+        "share": 1.5,
+        "avg_price": 24933,
+        "observed_depth": 200
+      },
+      {
+        "date": "20261018",
+        "count": 3,
+        "share": 1.5,
+        "avg_price": 24933,
+        "observed_depth": 200
+      },
+      {
+        "date": "20261019",
+        "count": 4,
+        "share": 2.0,
+        "avg_price": 23700,
+        "observed_depth": 200
+      },
+      {
+        "date": "20261020",
+        "count": 2,
+        "share": 1.0,
+        "avg_price": 22400,
+        "observed_depth": 200
+      },
+      {
+        "date": "20261021",
+        "count": 2,
+        "share": 1.0,
+        "avg_price": 22400,
+        "observed_depth": 200
+      },
+      {
+        "date": "20261022",
+        "count": 2,
+        "share": 1.0,
+        "avg_price": 22400,
+        "observed_depth": 200
+      },
+      {
+        "date": "20261023",
+        "count": 2,
+        "share": 1.0,
+        "avg_price": 22900,
+        "observed_depth": 200
+      },
+      {
+        "date": "20261024",
+        "count": 2,
+        "share": 1.0,
+        "avg_price": 30500,
+        "observed_depth": 200
+      },
+      {
+        "date": "20261028",
+        "count": 1,
+        "share": 0.5,
+        "avg_price": 14800,
+        "observed_depth": 200
+      },
+      {
+        "date": "20261029",
+        "count": 2,
+        "share": 1.0,
+        "avg_price": 26900,
+        "observed_depth": 200
+      },
+      {
+        "date": "20261030",
+        "count": 1,
+        "share": 0.5,
+        "avg_price": 14800,
+        "observed_depth": 200
+      },
+      {
+        "date": "20261031",
+        "count": 1,
+        "share": 0.5,
+        "avg_price": 14800,
+        "observed_depth": 200
+      },
+      {
+        "date": "20261102",
+        "count": 1,
+        "share": 0.5,
+        "avg_price": 33150,
+        "observed_depth": 200
+      },
+      {
+        "date": "20261103",
+        "count": 2,
+        "share": 0.6,
+        "avg_price": 14800,
+        "observed_depth": 350
+      },
+      {
+        "date": "20261104",
+        "count": 2,
+        "share": 0.6,
+        "avg_price": 23975,
         "observed_depth": 350
       }
     ],
@@ -7185,371 +7663,12 @@
         "share": 1.4,
         "avg_price": 23360,
         "observed_depth": 350
-      }
-    ],
-    "산리오(한교동)": [
-      {
-        "date": "20260827",
-        "count": 2,
-        "share": 1.0,
-        "avg_price": 32000,
-        "observed_depth": 200
       },
       {
-        "date": "20260828",
-        "count": 3,
-        "share": 1.5,
-        "avg_price": 25600,
-        "observed_depth": 200
-      },
-      {
-        "date": "20260831",
-        "count": 4,
-        "share": 2.0,
-        "avg_price": 39000,
-        "observed_depth": 200
-      },
-      {
-        "date": "20260901",
+        "date": "20261104",
         "count": 5,
-        "share": 2.5,
-        "avg_price": 22160,
-        "observed_depth": 200
-      },
-      {
-        "date": "20260902",
-        "count": 2,
-        "share": 1.0,
-        "avg_price": 22400,
-        "observed_depth": 200
-      },
-      {
-        "date": "20260903",
-        "count": 3,
-        "share": 1.5,
-        "avg_price": 24933,
-        "observed_depth": 200
-      },
-      {
-        "date": "20260904",
-        "count": 4,
-        "share": 2.0,
-        "avg_price": 23700,
-        "observed_depth": 200
-      },
-      {
-        "date": "20260907",
-        "count": 5,
-        "share": 1.2,
-        "avg_price": 25520,
-        "observed_depth": 400
-      },
-      {
-        "date": "20260908",
-        "count": 6,
-        "share": 1.5,
-        "avg_price": 25233,
-        "observed_depth": 400
-      },
-      {
-        "date": "20260909",
-        "count": 5,
-        "share": 1.2,
-        "avg_price": 25520,
-        "observed_depth": 400
-      },
-      {
-        "date": "20260910",
-        "count": 5,
-        "share": 1.2,
-        "avg_price": 25520,
-        "observed_depth": 400
-      },
-      {
-        "date": "20260911",
-        "count": 7,
-        "share": 1.8,
-        "avg_price": 25514,
-        "observed_depth": 400
-      },
-      {
-        "date": "20260915",
-        "count": 2,
-        "share": 1.0,
-        "avg_price": 13800,
-        "observed_depth": 200
-      },
-      {
-        "date": "20260916",
-        "count": 4,
-        "share": 1.0,
-        "avg_price": 26875,
-        "observed_depth": 400
-      },
-      {
-        "date": "20260917",
-        "count": 5,
-        "share": 1.2,
-        "avg_price": 19920,
-        "observed_depth": 400
-      },
-      {
-        "date": "20260918",
-        "count": 9,
-        "share": 2.2,
-        "avg_price": 21267,
-        "observed_depth": 400
-      },
-      {
-        "date": "20260921",
-        "count": 7,
-        "share": 1.8,
-        "avg_price": 26200,
-        "observed_depth": 400
-      },
-      {
-        "date": "20260922",
-        "count": 5,
-        "share": 1.2,
-        "avg_price": 25520,
-        "observed_depth": 400
-      },
-      {
-        "date": "20260923",
-        "count": 6,
-        "share": 1.5,
-        "avg_price": 20233,
-        "observed_depth": 400
-      },
-      {
-        "date": "20260928",
-        "count": 2,
-        "share": 1.0,
-        "avg_price": 22400,
-        "observed_depth": 200
-      },
-      {
-        "date": "20260929",
-        "count": 4,
-        "share": 2.0,
-        "avg_price": 19400,
-        "observed_depth": 200
-      },
-      {
-        "date": "20260930",
-        "count": 2,
-        "share": 1.0,
-        "avg_price": 21900,
-        "observed_depth": 200
-      },
-      {
-        "date": "20261001",
-        "count": 1,
-        "share": 0.5,
-        "avg_price": 13800,
-        "observed_depth": 200
-      },
-      {
-        "date": "20261002",
-        "count": 2,
-        "share": 1.0,
-        "avg_price": 22400,
-        "observed_depth": 200
-      },
-      {
-        "date": "20261003",
-        "count": 3,
-        "share": 1.5,
-        "avg_price": 24933,
-        "observed_depth": 200
-      },
-      {
-        "date": "20261004",
-        "count": 2,
-        "share": 1.0,
-        "avg_price": 22400,
-        "observed_depth": 200
-      },
-      {
-        "date": "20261005",
-        "count": 3,
-        "share": 1.5,
-        "avg_price": 25300,
-        "observed_depth": 200
-      },
-      {
-        "date": "20261006",
-        "count": 4,
-        "share": 2.0,
-        "avg_price": 22425,
-        "observed_depth": 200
-      },
-      {
-        "date": "20261007",
-        "count": 4,
-        "share": 2.0,
-        "avg_price": 22700,
-        "observed_depth": 200
-      },
-      {
-        "date": "20261008",
-        "count": 5,
-        "share": 2.5,
-        "avg_price": 20920,
-        "observed_depth": 200
-      },
-      {
-        "date": "20261009",
-        "count": 4,
-        "share": 2.0,
-        "avg_price": 22700,
-        "observed_depth": 200
-      },
-      {
-        "date": "20261010",
-        "count": 5,
-        "share": 2.5,
-        "avg_price": 20920,
-        "observed_depth": 200
-      },
-      {
-        "date": "20261011",
-        "count": 4,
-        "share": 2.0,
-        "avg_price": 22425,
-        "observed_depth": 200
-      },
-      {
-        "date": "20261012",
-        "count": 2,
-        "share": 1.0,
-        "avg_price": 22950,
-        "observed_depth": 200
-      },
-      {
-        "date": "20261013",
-        "count": 2,
-        "share": 1.0,
-        "avg_price": 17450,
-        "observed_depth": 200
-      },
-      {
-        "date": "20261014",
-        "count": 1,
-        "share": 0.5,
-        "avg_price": 31000,
-        "observed_depth": 200
-      },
-      {
-        "date": "20261015",
-        "count": 2,
-        "share": 1.0,
-        "avg_price": 22400,
-        "observed_depth": 200
-      },
-      {
-        "date": "20261016",
-        "count": 2,
-        "share": 1.0,
-        "avg_price": 30500,
-        "observed_depth": 200
-      },
-      {
-        "date": "20261017",
-        "count": 3,
-        "share": 1.5,
-        "avg_price": 24933,
-        "observed_depth": 200
-      },
-      {
-        "date": "20261018",
-        "count": 3,
-        "share": 1.5,
-        "avg_price": 24933,
-        "observed_depth": 200
-      },
-      {
-        "date": "20261019",
-        "count": 4,
-        "share": 2.0,
-        "avg_price": 23700,
-        "observed_depth": 200
-      },
-      {
-        "date": "20261020",
-        "count": 2,
-        "share": 1.0,
-        "avg_price": 22400,
-        "observed_depth": 200
-      },
-      {
-        "date": "20261021",
-        "count": 2,
-        "share": 1.0,
-        "avg_price": 22400,
-        "observed_depth": 200
-      },
-      {
-        "date": "20261022",
-        "count": 2,
-        "share": 1.0,
-        "avg_price": 22400,
-        "observed_depth": 200
-      },
-      {
-        "date": "20261023",
-        "count": 2,
-        "share": 1.0,
-        "avg_price": 22900,
-        "observed_depth": 200
-      },
-      {
-        "date": "20261024",
-        "count": 2,
-        "share": 1.0,
-        "avg_price": 30500,
-        "observed_depth": 200
-      },
-      {
-        "date": "20261028",
-        "count": 1,
-        "share": 0.5,
-        "avg_price": 14800,
-        "observed_depth": 200
-      },
-      {
-        "date": "20261029",
-        "count": 2,
-        "share": 1.0,
-        "avg_price": 26900,
-        "observed_depth": 200
-      },
-      {
-        "date": "20261030",
-        "count": 1,
-        "share": 0.5,
-        "avg_price": 14800,
-        "observed_depth": 200
-      },
-      {
-        "date": "20261031",
-        "count": 1,
-        "share": 0.5,
-        "avg_price": 14800,
-        "observed_depth": 200
-      },
-      {
-        "date": "20261102",
-        "count": 1,
-        "share": 0.5,
-        "avg_price": 33150,
-        "observed_depth": 200
-      },
-      {
-        "date": "20261103",
-        "count": 2,
-        "share": 0.6,
-        "avg_price": 14800,
+        "share": 1.4,
+        "avg_price": 27450,
         "observed_depth": 350
       }
     ],
@@ -8043,6 +8162,13 @@
       },
       {
         "date": "20261103",
+        "count": 1,
+        "share": 0.3,
+        "avg_price": 22000,
+        "observed_depth": 350
+      },
+      {
+        "date": "20261104",
         "count": 1,
         "share": 0.3,
         "avg_price": 22000,
@@ -8722,6 +8848,13 @@
         "date": "20261103",
         "count": 2,
         "share": 0.6,
+        "avg_price": 17280,
+        "observed_depth": 350
+      },
+      {
+        "date": "20261104",
+        "count": 1,
+        "share": 0.3,
         "avg_price": 17280,
         "observed_depth": 350
       }
@@ -9544,6 +9677,13 @@
         "share": 1.0,
         "avg_price": 15425,
         "observed_depth": 200
+      },
+      {
+        "date": "20261104",
+        "count": 3,
+        "share": 1.5,
+        "avg_price": 18450,
+        "observed_depth": 200
       }
     ],
     "가나디": [
@@ -9958,6 +10098,13 @@
         "count": 14,
         "share": 7.0,
         "avg_price": 18129,
+        "observed_depth": 200
+      },
+      {
+        "date": "20261104",
+        "count": 16,
+        "share": 8.0,
+        "avg_price": 18950,
         "observed_depth": 200
       }
     ],
@@ -10432,6 +10579,13 @@
         "share": 10.0,
         "avg_price": 16990,
         "observed_depth": 200
+      },
+      {
+        "date": "20261104",
+        "count": 24,
+        "share": 12.0,
+        "avg_price": 17254,
+        "observed_depth": 200
       }
     ],
     "__미분류__": [
@@ -10672,6 +10826,13 @@
         "share": 4.0,
         "avg_price": 23100,
         "observed_depth": 200
+      },
+      {
+        "date": "20261104",
+        "count": 8,
+        "share": 4.0,
+        "avg_price": 21362,
+        "observed_depth": 200
       }
     ],
     "산리오(기타/통합)": [
@@ -10898,6 +11059,13 @@
         "share": 1.5,
         "avg_price": 24667,
         "observed_depth": 200
+      },
+      {
+        "date": "20261104",
+        "count": 3,
+        "share": 1.5,
+        "avg_price": 25367,
+        "observed_depth": 200
       }
     ],
     "산리오(헬로키티)": [
@@ -11103,9 +11271,16 @@
         "share": 1.0,
         "avg_price": 32450,
         "observed_depth": 200
+      },
+      {
+        "date": "20261104",
+        "count": 2,
+        "share": 1.0,
+        "avg_price": 33500,
+        "observed_depth": 200
       }
     ],
-    "카카오프렌즈(기타/통합)": [
+    "톰과제리": [
       {
         "date": "20260901",
         "count": 1,
@@ -11150,16 +11325,16 @@
       },
       {
         "date": "20260918",
-        "count": 8,
-        "share": 8.0,
-        "avg_price": 21000,
+        "count": 1,
+        "share": 1.0,
+        "avg_price": 22000,
         "observed_depth": 100
       },
       {
         "date": "20260921",
-        "count": 2,
-        "share": 2.0,
-        "avg_price": 21000,
+        "count": 1,
+        "share": 1.0,
+        "avg_price": 22000,
         "observed_depth": 100
       },
       {
@@ -11177,10 +11352,10 @@
         "observed_depth": 100
       },
       {
-        "date": "20260930",
+        "date": "20260926",
         "count": 1,
         "share": 2.0,
-        "avg_price": 45000,
+        "avg_price": 22000,
         "observed_depth": 50
       },
       {
@@ -11191,31 +11366,17 @@
         "observed_depth": 50
       },
       {
-        "date": "20261012",
-        "count": 3,
-        "share": 6.0,
-        "avg_price": 24333,
-        "observed_depth": 50
-      },
-      {
-        "date": "20261026",
-        "count": 3,
-        "share": 6.0,
-        "avg_price": 20900,
-        "observed_depth": 50
-      },
-      {
-        "date": "20261027",
-        "count": 1,
-        "share": 2.0,
-        "avg_price": 21900,
-        "observed_depth": 50
-      },
-      {
         "date": "20261103",
-        "count": 2,
-        "share": 1.0,
-        "avg_price": 25950,
+        "count": 1,
+        "share": 0.5,
+        "avg_price": 22000,
+        "observed_depth": 200
+      },
+      {
+        "date": "20261104",
+        "count": 1,
+        "share": 0.5,
+        "avg_price": 22000,
         "observed_depth": 200
       }
     ],
@@ -11338,98 +11499,12 @@
         "share": 1.5,
         "avg_price": 23967,
         "observed_depth": 200
-      }
-    ],
-    "톰과제리": [
-      {
-        "date": "20260901",
-        "count": 1,
-        "share": 2.0,
-        "avg_price": 22000,
-        "observed_depth": 50
       },
       {
-        "date": "20260902",
-        "count": 1,
-        "share": 2.0,
-        "avg_price": 22000,
-        "observed_depth": 50
-      },
-      {
-        "date": "20260903",
-        "count": 1,
-        "share": 2.0,
-        "avg_price": 22000,
-        "observed_depth": 50
-      },
-      {
-        "date": "20260904",
-        "count": 1,
-        "share": 2.0,
-        "avg_price": 22000,
-        "observed_depth": 50
-      },
-      {
-        "date": "20260916",
-        "count": 1,
+        "date": "20261104",
+        "count": 2,
         "share": 1.0,
-        "avg_price": 22000,
-        "observed_depth": 100
-      },
-      {
-        "date": "20260917",
-        "count": 1,
-        "share": 1.0,
-        "avg_price": 22000,
-        "observed_depth": 100
-      },
-      {
-        "date": "20260918",
-        "count": 1,
-        "share": 1.0,
-        "avg_price": 22000,
-        "observed_depth": 100
-      },
-      {
-        "date": "20260921",
-        "count": 1,
-        "share": 1.0,
-        "avg_price": 22000,
-        "observed_depth": 100
-      },
-      {
-        "date": "20260922",
-        "count": 1,
-        "share": 1.0,
-        "avg_price": 22000,
-        "observed_depth": 100
-      },
-      {
-        "date": "20260923",
-        "count": 1,
-        "share": 1.0,
-        "avg_price": 22000,
-        "observed_depth": 100
-      },
-      {
-        "date": "20260926",
-        "count": 1,
-        "share": 2.0,
-        "avg_price": 22000,
-        "observed_depth": 50
-      },
-      {
-        "date": "20261003",
-        "count": 1,
-        "share": 2.0,
-        "avg_price": 22000,
-        "observed_depth": 50
-      },
-      {
-        "date": "20261103",
-        "count": 1,
-        "share": 0.5,
-        "avg_price": 22000,
+        "avg_price": 21000,
         "observed_depth": 200
       }
     ],
@@ -11573,6 +11648,134 @@
         "share": 2.0,
         "avg_price": 25450,
         "observed_depth": 200
+      },
+      {
+        "date": "20261104",
+        "count": 3,
+        "share": 1.5,
+        "avg_price": 23967,
+        "observed_depth": 200
+      }
+    ],
+    "카카오프렌즈(기타/통합)": [
+      {
+        "date": "20260901",
+        "count": 1,
+        "share": 2.0,
+        "avg_price": 22000,
+        "observed_depth": 50
+      },
+      {
+        "date": "20260902",
+        "count": 1,
+        "share": 2.0,
+        "avg_price": 22000,
+        "observed_depth": 50
+      },
+      {
+        "date": "20260903",
+        "count": 1,
+        "share": 2.0,
+        "avg_price": 22000,
+        "observed_depth": 50
+      },
+      {
+        "date": "20260904",
+        "count": 1,
+        "share": 2.0,
+        "avg_price": 22000,
+        "observed_depth": 50
+      },
+      {
+        "date": "20260916",
+        "count": 1,
+        "share": 1.0,
+        "avg_price": 22000,
+        "observed_depth": 100
+      },
+      {
+        "date": "20260917",
+        "count": 1,
+        "share": 1.0,
+        "avg_price": 22000,
+        "observed_depth": 100
+      },
+      {
+        "date": "20260918",
+        "count": 8,
+        "share": 8.0,
+        "avg_price": 21000,
+        "observed_depth": 100
+      },
+      {
+        "date": "20260921",
+        "count": 2,
+        "share": 2.0,
+        "avg_price": 21000,
+        "observed_depth": 100
+      },
+      {
+        "date": "20260922",
+        "count": 1,
+        "share": 1.0,
+        "avg_price": 22000,
+        "observed_depth": 100
+      },
+      {
+        "date": "20260923",
+        "count": 1,
+        "share": 1.0,
+        "avg_price": 22000,
+        "observed_depth": 100
+      },
+      {
+        "date": "20260930",
+        "count": 1,
+        "share": 2.0,
+        "avg_price": 45000,
+        "observed_depth": 50
+      },
+      {
+        "date": "20261003",
+        "count": 1,
+        "share": 2.0,
+        "avg_price": 22000,
+        "observed_depth": 50
+      },
+      {
+        "date": "20261012",
+        "count": 3,
+        "share": 6.0,
+        "avg_price": 24333,
+        "observed_depth": 50
+      },
+      {
+        "date": "20261026",
+        "count": 3,
+        "share": 6.0,
+        "avg_price": 20900,
+        "observed_depth": 50
+      },
+      {
+        "date": "20261027",
+        "count": 1,
+        "share": 2.0,
+        "avg_price": 21900,
+        "observed_depth": 50
+      },
+      {
+        "date": "20261103",
+        "count": 2,
+        "share": 1.0,
+        "avg_price": 25950,
+        "observed_depth": 200
+      },
+      {
+        "date": "20261104",
+        "count": 2,
+        "share": 1.0,
+        "avg_price": 25950,
+        "observed_depth": 200
       }
     ],
     "카카오프렌즈(어피치)": [
@@ -11638,6 +11841,13 @@
         "share": 1.0,
         "avg_price": 24950,
         "observed_depth": 200
+      },
+      {
+        "date": "20261104",
+        "count": 1,
+        "share": 0.5,
+        "avg_price": 20000,
+        "observed_depth": 200
       }
     ],
     "카카오프렌즈(죠르디)": [
@@ -11699,6 +11909,13 @@
       },
       {
         "date": "20261103",
+        "count": 1,
+        "share": 0.5,
+        "avg_price": 20000,
+        "observed_depth": 200
+      },
+      {
+        "date": "20261104",
         "count": 1,
         "share": 0.5,
         "avg_price": 20000,
@@ -11831,6 +12048,13 @@
         "share": 0.5,
         "avg_price": 14800,
         "observed_depth": 200
+      },
+      {
+        "date": "20261104",
+        "count": 1,
+        "share": 0.5,
+        "avg_price": 14800,
+        "observed_depth": 200
       }
     ],
     "빵빵이": [
@@ -11885,6 +12109,13 @@
       },
       {
         "date": "20261103",
+        "count": 1,
+        "share": 0.5,
+        "avg_price": 17900,
+        "observed_depth": 200
+      },
+      {
+        "date": "20261104",
         "count": 1,
         "share": 0.5,
         "avg_price": 17900,
@@ -12000,6 +12231,13 @@
         "share": 1.0,
         "avg_price": 39900,
         "observed_depth": 100
+      },
+      {
+        "date": "20261104",
+        "count": 1,
+        "share": 0.5,
+        "avg_price": 39900,
+        "observed_depth": 200
       }
     ],
     "스누피/피너츠": [
@@ -12295,6 +12533,13 @@
         "share": 0.5,
         "avg_price": 17280,
         "observed_depth": 200
+      },
+      {
+        "date": "20261104",
+        "count": 1,
+        "share": 0.5,
+        "avg_price": 17280,
+        "observed_depth": 200
       }
     ],
     "스폰지밥": [
@@ -12304,11 +12549,25 @@
         "share": 0.5,
         "avg_price": 8900,
         "observed_depth": 200
+      },
+      {
+        "date": "20261104",
+        "count": 1,
+        "share": 0.5,
+        "avg_price": 8900,
+        "observed_depth": 200
       }
     ],
     "실바니안패밀리": [
       {
         "date": "20261103",
+        "count": 1,
+        "share": 0.5,
+        "avg_price": 13800,
+        "observed_depth": 200
+      },
+      {
+        "date": "20261104",
         "count": 1,
         "share": 0.5,
         "avg_price": 13800,
@@ -12728,6 +12987,13 @@
         "date": "20261103",
         "count": 1,
         "share": 2.0,
+        "avg_price": 16800,
+        "observed_depth": 50
+      },
+      {
+        "date": "20261104",
+        "count": 2,
+        "share": 4.0,
         "avg_price": 16800,
         "observed_depth": 50
       }
@@ -13877,6 +14143,13 @@
         "share": 2.0,
         "avg_price": 22050,
         "observed_depth": 50
+      },
+      {
+        "date": "20261104",
+        "count": 2,
+        "share": 4.0,
+        "avg_price": 23275,
+        "observed_depth": 50
       }
     ],
     "빵빵이": [
@@ -13903,22 +14176,6 @@
       }
     ],
     "카카오프렌즈(라이언)": [
-      {
-        "date": "20260827",
-        "count": 1,
-        "share": 2.0,
-        "avg_price": 29900,
-        "observed_depth": 50
-      },
-      {
-        "date": "20260831",
-        "count": 1,
-        "share": 2.0,
-        "avg_price": 29900,
-        "observed_depth": 50
-      }
-    ],
-    "카카오프렌즈(어피치)": [
       {
         "date": "20260827",
         "count": 1,
@@ -14104,6 +14361,22 @@
         "observed_depth": 50
       }
     ],
+    "카카오프렌즈(어피치)": [
+      {
+        "date": "20260827",
+        "count": 1,
+        "share": 2.0,
+        "avg_price": 29900,
+        "observed_depth": 50
+      },
+      {
+        "date": "20260831",
+        "count": 1,
+        "share": 2.0,
+        "avg_price": 29900,
+        "observed_depth": 50
+      }
+    ],
     "잔망루피": [
       {
         "date": "20260827",
@@ -14117,6 +14390,344 @@
         "count": 1,
         "share": 2.0,
         "avg_price": 39900,
+        "observed_depth": 50
+      }
+    ],
+    "산리오(한교동)": [
+      {
+        "date": "20260827",
+        "count": 1,
+        "share": 2.0,
+        "avg_price": 32000,
+        "observed_depth": 50
+      },
+      {
+        "date": "20260828",
+        "count": 1,
+        "share": 2.0,
+        "avg_price": 13800,
+        "observed_depth": 50
+      },
+      {
+        "date": "20260831",
+        "count": 2,
+        "share": 4.0,
+        "avg_price": 39000,
+        "observed_depth": 50
+      },
+      {
+        "date": "20260901",
+        "count": 1,
+        "share": 2.0,
+        "avg_price": 13800,
+        "observed_depth": 50
+      },
+      {
+        "date": "20260902",
+        "count": 1,
+        "share": 2.0,
+        "avg_price": 13800,
+        "observed_depth": 50
+      },
+      {
+        "date": "20260903",
+        "count": 1,
+        "share": 2.0,
+        "avg_price": 13800,
+        "observed_depth": 50
+      },
+      {
+        "date": "20260904",
+        "count": 1,
+        "share": 2.0,
+        "avg_price": 13800,
+        "observed_depth": 50
+      },
+      {
+        "date": "20260907",
+        "count": 1,
+        "share": 1.0,
+        "avg_price": 13800,
+        "observed_depth": 100
+      },
+      {
+        "date": "20260908",
+        "count": 1,
+        "share": 1.0,
+        "avg_price": 13800,
+        "observed_depth": 100
+      },
+      {
+        "date": "20260909",
+        "count": 1,
+        "share": 1.0,
+        "avg_price": 13800,
+        "observed_depth": 100
+      },
+      {
+        "date": "20260910",
+        "count": 1,
+        "share": 1.0,
+        "avg_price": 13800,
+        "observed_depth": 100
+      },
+      {
+        "date": "20260911",
+        "count": 1,
+        "share": 1.0,
+        "avg_price": 13800,
+        "observed_depth": 100
+      },
+      {
+        "date": "20260915",
+        "count": 1,
+        "share": 2.0,
+        "avg_price": 13800,
+        "observed_depth": 50
+      },
+      {
+        "date": "20260916",
+        "count": 1,
+        "share": 1.0,
+        "avg_price": 13800,
+        "observed_depth": 100
+      },
+      {
+        "date": "20260917",
+        "count": 1,
+        "share": 1.0,
+        "avg_price": 13800,
+        "observed_depth": 100
+      },
+      {
+        "date": "20260918",
+        "count": 1,
+        "share": 1.0,
+        "avg_price": 13800,
+        "observed_depth": 100
+      },
+      {
+        "date": "20260921",
+        "count": 1,
+        "share": 1.0,
+        "avg_price": 13800,
+        "observed_depth": 100
+      },
+      {
+        "date": "20260922",
+        "count": 1,
+        "share": 1.0,
+        "avg_price": 13800,
+        "observed_depth": 100
+      },
+      {
+        "date": "20260923",
+        "count": 1,
+        "share": 1.0,
+        "avg_price": 13800,
+        "observed_depth": 100
+      },
+      {
+        "date": "20260928",
+        "count": 1,
+        "share": 2.0,
+        "avg_price": 13800,
+        "observed_depth": 50
+      },
+      {
+        "date": "20260929",
+        "count": 1,
+        "share": 2.0,
+        "avg_price": 13800,
+        "observed_depth": 50
+      },
+      {
+        "date": "20260930",
+        "count": 1,
+        "share": 2.0,
+        "avg_price": 13800,
+        "observed_depth": 50
+      },
+      {
+        "date": "20261001",
+        "count": 1,
+        "share": 2.0,
+        "avg_price": 13800,
+        "observed_depth": 50
+      },
+      {
+        "date": "20261002",
+        "count": 1,
+        "share": 2.0,
+        "avg_price": 13800,
+        "observed_depth": 50
+      },
+      {
+        "date": "20261003",
+        "count": 1,
+        "share": 2.0,
+        "avg_price": 13800,
+        "observed_depth": 50
+      },
+      {
+        "date": "20261004",
+        "count": 1,
+        "share": 2.0,
+        "avg_price": 13800,
+        "observed_depth": 50
+      },
+      {
+        "date": "20261005",
+        "count": 1,
+        "share": 2.0,
+        "avg_price": 14900,
+        "observed_depth": 50
+      },
+      {
+        "date": "20261006",
+        "count": 2,
+        "share": 4.0,
+        "avg_price": 14350,
+        "observed_depth": 50
+      },
+      {
+        "date": "20261007",
+        "count": 1,
+        "share": 2.0,
+        "avg_price": 14900,
+        "observed_depth": 50
+      },
+      {
+        "date": "20261008",
+        "count": 2,
+        "share": 4.0,
+        "avg_price": 14350,
+        "observed_depth": 50
+      },
+      {
+        "date": "20261009",
+        "count": 1,
+        "share": 2.0,
+        "avg_price": 14900,
+        "observed_depth": 50
+      },
+      {
+        "date": "20261010",
+        "count": 2,
+        "share": 4.0,
+        "avg_price": 14350,
+        "observed_depth": 50
+      },
+      {
+        "date": "20261011",
+        "count": 2,
+        "share": 4.0,
+        "avg_price": 14350,
+        "observed_depth": 50
+      },
+      {
+        "date": "20261012",
+        "count": 1,
+        "share": 2.0,
+        "avg_price": 14900,
+        "observed_depth": 50
+      },
+      {
+        "date": "20261013",
+        "count": 1,
+        "share": 2.0,
+        "avg_price": 14900,
+        "observed_depth": 50
+      },
+      {
+        "date": "20261015",
+        "count": 1,
+        "share": 2.0,
+        "avg_price": 13800,
+        "observed_depth": 50
+      },
+      {
+        "date": "20261017",
+        "count": 1,
+        "share": 2.0,
+        "avg_price": 13800,
+        "observed_depth": 50
+      },
+      {
+        "date": "20261018",
+        "count": 1,
+        "share": 2.0,
+        "avg_price": 13800,
+        "observed_depth": 50
+      },
+      {
+        "date": "20261019",
+        "count": 1,
+        "share": 2.0,
+        "avg_price": 13800,
+        "observed_depth": 50
+      },
+      {
+        "date": "20261020",
+        "count": 1,
+        "share": 2.0,
+        "avg_price": 13800,
+        "observed_depth": 50
+      },
+      {
+        "date": "20261021",
+        "count": 1,
+        "share": 2.0,
+        "avg_price": 13800,
+        "observed_depth": 50
+      },
+      {
+        "date": "20261022",
+        "count": 1,
+        "share": 2.0,
+        "avg_price": 13800,
+        "observed_depth": 50
+      },
+      {
+        "date": "20261023",
+        "count": 1,
+        "share": 2.0,
+        "avg_price": 14800,
+        "observed_depth": 50
+      },
+      {
+        "date": "20261028",
+        "count": 1,
+        "share": 2.0,
+        "avg_price": 14800,
+        "observed_depth": 50
+      },
+      {
+        "date": "20261029",
+        "count": 1,
+        "share": 2.0,
+        "avg_price": 14800,
+        "observed_depth": 50
+      },
+      {
+        "date": "20261030",
+        "count": 1,
+        "share": 2.0,
+        "avg_price": 14800,
+        "observed_depth": 50
+      },
+      {
+        "date": "20261031",
+        "count": 1,
+        "share": 2.0,
+        "avg_price": 14800,
+        "observed_depth": 50
+      },
+      {
+        "date": "20261103",
+        "count": 1,
+        "share": 2.0,
+        "avg_price": 14800,
         "observed_depth": 50
       }
     ],
@@ -14455,344 +15066,6 @@
         "count": 2,
         "share": 4.0,
         "avg_price": 20350,
-        "observed_depth": 50
-      },
-      {
-        "date": "20261029",
-        "count": 1,
-        "share": 2.0,
-        "avg_price": 14800,
-        "observed_depth": 50
-      },
-      {
-        "date": "20261030",
-        "count": 1,
-        "share": 2.0,
-        "avg_price": 14800,
-        "observed_depth": 50
-      },
-      {
-        "date": "20261031",
-        "count": 1,
-        "share": 2.0,
-        "avg_price": 14800,
-        "observed_depth": 50
-      },
-      {
-        "date": "20261103",
-        "count": 1,
-        "share": 2.0,
-        "avg_price": 14800,
-        "observed_depth": 50
-      }
-    ],
-    "산리오(한교동)": [
-      {
-        "date": "20260827",
-        "count": 1,
-        "share": 2.0,
-        "avg_price": 32000,
-        "observed_depth": 50
-      },
-      {
-        "date": "20260828",
-        "count": 1,
-        "share": 2.0,
-        "avg_price": 13800,
-        "observed_depth": 50
-      },
-      {
-        "date": "20260831",
-        "count": 2,
-        "share": 4.0,
-        "avg_price": 39000,
-        "observed_depth": 50
-      },
-      {
-        "date": "20260901",
-        "count": 1,
-        "share": 2.0,
-        "avg_price": 13800,
-        "observed_depth": 50
-      },
-      {
-        "date": "20260902",
-        "count": 1,
-        "share": 2.0,
-        "avg_price": 13800,
-        "observed_depth": 50
-      },
-      {
-        "date": "20260903",
-        "count": 1,
-        "share": 2.0,
-        "avg_price": 13800,
-        "observed_depth": 50
-      },
-      {
-        "date": "20260904",
-        "count": 1,
-        "share": 2.0,
-        "avg_price": 13800,
-        "observed_depth": 50
-      },
-      {
-        "date": "20260907",
-        "count": 1,
-        "share": 1.0,
-        "avg_price": 13800,
-        "observed_depth": 100
-      },
-      {
-        "date": "20260908",
-        "count": 1,
-        "share": 1.0,
-        "avg_price": 13800,
-        "observed_depth": 100
-      },
-      {
-        "date": "20260909",
-        "count": 1,
-        "share": 1.0,
-        "avg_price": 13800,
-        "observed_depth": 100
-      },
-      {
-        "date": "20260910",
-        "count": 1,
-        "share": 1.0,
-        "avg_price": 13800,
-        "observed_depth": 100
-      },
-      {
-        "date": "20260911",
-        "count": 1,
-        "share": 1.0,
-        "avg_price": 13800,
-        "observed_depth": 100
-      },
-      {
-        "date": "20260915",
-        "count": 1,
-        "share": 2.0,
-        "avg_price": 13800,
-        "observed_depth": 50
-      },
-      {
-        "date": "20260916",
-        "count": 1,
-        "share": 1.0,
-        "avg_price": 13800,
-        "observed_depth": 100
-      },
-      {
-        "date": "20260917",
-        "count": 1,
-        "share": 1.0,
-        "avg_price": 13800,
-        "observed_depth": 100
-      },
-      {
-        "date": "20260918",
-        "count": 1,
-        "share": 1.0,
-        "avg_price": 13800,
-        "observed_depth": 100
-      },
-      {
-        "date": "20260921",
-        "count": 1,
-        "share": 1.0,
-        "avg_price": 13800,
-        "observed_depth": 100
-      },
-      {
-        "date": "20260922",
-        "count": 1,
-        "share": 1.0,
-        "avg_price": 13800,
-        "observed_depth": 100
-      },
-      {
-        "date": "20260923",
-        "count": 1,
-        "share": 1.0,
-        "avg_price": 13800,
-        "observed_depth": 100
-      },
-      {
-        "date": "20260928",
-        "count": 1,
-        "share": 2.0,
-        "avg_price": 13800,
-        "observed_depth": 50
-      },
-      {
-        "date": "20260929",
-        "count": 1,
-        "share": 2.0,
-        "avg_price": 13800,
-        "observed_depth": 50
-      },
-      {
-        "date": "20260930",
-        "count": 1,
-        "share": 2.0,
-        "avg_price": 13800,
-        "observed_depth": 50
-      },
-      {
-        "date": "20261001",
-        "count": 1,
-        "share": 2.0,
-        "avg_price": 13800,
-        "observed_depth": 50
-      },
-      {
-        "date": "20261002",
-        "count": 1,
-        "share": 2.0,
-        "avg_price": 13800,
-        "observed_depth": 50
-      },
-      {
-        "date": "20261003",
-        "count": 1,
-        "share": 2.0,
-        "avg_price": 13800,
-        "observed_depth": 50
-      },
-      {
-        "date": "20261004",
-        "count": 1,
-        "share": 2.0,
-        "avg_price": 13800,
-        "observed_depth": 50
-      },
-      {
-        "date": "20261005",
-        "count": 1,
-        "share": 2.0,
-        "avg_price": 14900,
-        "observed_depth": 50
-      },
-      {
-        "date": "20261006",
-        "count": 2,
-        "share": 4.0,
-        "avg_price": 14350,
-        "observed_depth": 50
-      },
-      {
-        "date": "20261007",
-        "count": 1,
-        "share": 2.0,
-        "avg_price": 14900,
-        "observed_depth": 50
-      },
-      {
-        "date": "20261008",
-        "count": 2,
-        "share": 4.0,
-        "avg_price": 14350,
-        "observed_depth": 50
-      },
-      {
-        "date": "20261009",
-        "count": 1,
-        "share": 2.0,
-        "avg_price": 14900,
-        "observed_depth": 50
-      },
-      {
-        "date": "20261010",
-        "count": 2,
-        "share": 4.0,
-        "avg_price": 14350,
-        "observed_depth": 50
-      },
-      {
-        "date": "20261011",
-        "count": 2,
-        "share": 4.0,
-        "avg_price": 14350,
-        "observed_depth": 50
-      },
-      {
-        "date": "20261012",
-        "count": 1,
-        "share": 2.0,
-        "avg_price": 14900,
-        "observed_depth": 50
-      },
-      {
-        "date": "20261013",
-        "count": 1,
-        "share": 2.0,
-        "avg_price": 14900,
-        "observed_depth": 50
-      },
-      {
-        "date": "20261015",
-        "count": 1,
-        "share": 2.0,
-        "avg_price": 13800,
-        "observed_depth": 50
-      },
-      {
-        "date": "20261017",
-        "count": 1,
-        "share": 2.0,
-        "avg_price": 13800,
-        "observed_depth": 50
-      },
-      {
-        "date": "20261018",
-        "count": 1,
-        "share": 2.0,
-        "avg_price": 13800,
-        "observed_depth": 50
-      },
-      {
-        "date": "20261019",
-        "count": 1,
-        "share": 2.0,
-        "avg_price": 13800,
-        "observed_depth": 50
-      },
-      {
-        "date": "20261020",
-        "count": 1,
-        "share": 2.0,
-        "avg_price": 13800,
-        "observed_depth": 50
-      },
-      {
-        "date": "20261021",
-        "count": 1,
-        "share": 2.0,
-        "avg_price": 13800,
-        "observed_depth": 50
-      },
-      {
-        "date": "20261022",
-        "count": 1,
-        "share": 2.0,
-        "avg_price": 13800,
-        "observed_depth": 50
-      },
-      {
-        "date": "20261023",
-        "count": 1,
-        "share": 2.0,
-        "avg_price": 14800,
-        "observed_depth": 50
-      },
-      {
-        "date": "20261028",
-        "count": 1,
-        "share": 2.0,
-        "avg_price": 14800,
         "observed_depth": 50
       },
       {
@@ -15200,6 +15473,13 @@
       },
       {
         "date": "20261103",
+        "count": 1,
+        "share": 2.0,
+        "avg_price": 39000,
+        "observed_depth": 50
+      },
+      {
+        "date": "20261104",
         "count": 1,
         "share": 2.0,
         "avg_price": 39000,
@@ -16479,6 +16759,13 @@
         "share": 12.0,
         "avg_price": 23333,
         "observed_depth": 50
+      },
+      {
+        "date": "20261104",
+        "count": 7,
+        "share": 14.0,
+        "avg_price": 22829,
+        "observed_depth": 50
       }
     ],
     "먼작귀/치이카와": [
@@ -16893,6 +17180,13 @@
         "count": 9,
         "share": 18.0,
         "avg_price": 26678,
+        "observed_depth": 50
+      },
+      {
+        "date": "20261104",
+        "count": 8,
+        "share": 16.0,
+        "avg_price": 28400,
         "observed_depth": 50
       }
     ],
@@ -17309,6 +17603,13 @@
         "share": 30.0,
         "avg_price": 23653,
         "observed_depth": 50
+      },
+      {
+        "date": "20261104",
+        "count": 12,
+        "share": 24.0,
+        "avg_price": 22451,
+        "observed_depth": 50
       }
     ],
     "리락쿠마": [
@@ -17723,6 +18024,13 @@
         "count": 2,
         "share": 4.0,
         "avg_price": 22900,
+        "observed_depth": 50
+      },
+      {
+        "date": "20261104",
+        "count": 2,
+        "share": 4.0,
+        "avg_price": 26400,
         "observed_depth": 50
       }
     ],
@@ -18421,382 +18729,9 @@
         "share": 2.0,
         "avg_price": 29900,
         "observed_depth": 50
-      }
-    ],
-    "카카오프렌즈(어피치)": [
-      {
-        "date": "20260827",
-        "count": 1,
-        "share": 2.0,
-        "avg_price": 29900,
-        "observed_depth": 50
       },
       {
-        "date": "20260828",
-        "count": 1,
-        "share": 2.0,
-        "avg_price": 29900,
-        "observed_depth": 50
-      },
-      {
-        "date": "20260831",
-        "count": 1,
-        "share": 2.0,
-        "avg_price": 29900,
-        "observed_depth": 50
-      },
-      {
-        "date": "20260901",
-        "count": 1,
-        "share": 2.0,
-        "avg_price": 29900,
-        "observed_depth": 50
-      },
-      {
-        "date": "20260902",
-        "count": 1,
-        "share": 2.0,
-        "avg_price": 29900,
-        "observed_depth": 50
-      },
-      {
-        "date": "20260903",
-        "count": 1,
-        "share": 2.0,
-        "avg_price": 29900,
-        "observed_depth": 50
-      },
-      {
-        "date": "20260904",
-        "count": 1,
-        "share": 2.0,
-        "avg_price": 29900,
-        "observed_depth": 50
-      },
-      {
-        "date": "20260907",
-        "count": 1,
-        "share": 1.0,
-        "avg_price": 29900,
-        "observed_depth": 100
-      },
-      {
-        "date": "20260908",
-        "count": 1,
-        "share": 1.0,
-        "avg_price": 29900,
-        "observed_depth": 100
-      },
-      {
-        "date": "20260909",
-        "count": 1,
-        "share": 1.0,
-        "avg_price": 29900,
-        "observed_depth": 100
-      },
-      {
-        "date": "20260910",
-        "count": 1,
-        "share": 1.0,
-        "avg_price": 29900,
-        "observed_depth": 100
-      },
-      {
-        "date": "20260911",
-        "count": 1,
-        "share": 1.0,
-        "avg_price": 29900,
-        "observed_depth": 100
-      },
-      {
-        "date": "20260915",
-        "count": 1,
-        "share": 2.0,
-        "avg_price": 29900,
-        "observed_depth": 50
-      },
-      {
-        "date": "20260916",
-        "count": 1,
-        "share": 1.0,
-        "avg_price": 29900,
-        "observed_depth": 100
-      },
-      {
-        "date": "20260917",
-        "count": 1,
-        "share": 1.0,
-        "avg_price": 29900,
-        "observed_depth": 100
-      },
-      {
-        "date": "20260918",
-        "count": 1,
-        "share": 1.0,
-        "avg_price": 29900,
-        "observed_depth": 100
-      },
-      {
-        "date": "20260921",
-        "count": 1,
-        "share": 1.0,
-        "avg_price": 29900,
-        "observed_depth": 100
-      },
-      {
-        "date": "20260922",
-        "count": 1,
-        "share": 1.0,
-        "avg_price": 29900,
-        "observed_depth": 100
-      },
-      {
-        "date": "20260923",
-        "count": 1,
-        "share": 1.0,
-        "avg_price": 29900,
-        "observed_depth": 100
-      },
-      {
-        "date": "20260928",
-        "count": 1,
-        "share": 2.0,
-        "avg_price": 29900,
-        "observed_depth": 50
-      },
-      {
-        "date": "20260929",
-        "count": 1,
-        "share": 2.0,
-        "avg_price": 29900,
-        "observed_depth": 50
-      },
-      {
-        "date": "20260930",
-        "count": 1,
-        "share": 2.0,
-        "avg_price": 29900,
-        "observed_depth": 50
-      },
-      {
-        "date": "20261001",
-        "count": 1,
-        "share": 2.0,
-        "avg_price": 29900,
-        "observed_depth": 50
-      },
-      {
-        "date": "20261002",
-        "count": 1,
-        "share": 2.0,
-        "avg_price": 29900,
-        "observed_depth": 50
-      },
-      {
-        "date": "20261003",
-        "count": 1,
-        "share": 2.0,
-        "avg_price": 29900,
-        "observed_depth": 50
-      },
-      {
-        "date": "20261004",
-        "count": 1,
-        "share": 2.0,
-        "avg_price": 29900,
-        "observed_depth": 50
-      },
-      {
-        "date": "20261005",
-        "count": 1,
-        "share": 2.0,
-        "avg_price": 29900,
-        "observed_depth": 50
-      },
-      {
-        "date": "20261006",
-        "count": 1,
-        "share": 2.0,
-        "avg_price": 29900,
-        "observed_depth": 50
-      },
-      {
-        "date": "20261007",
-        "count": 1,
-        "share": 2.0,
-        "avg_price": 29900,
-        "observed_depth": 50
-      },
-      {
-        "date": "20261008",
-        "count": 1,
-        "share": 2.0,
-        "avg_price": 29900,
-        "observed_depth": 50
-      },
-      {
-        "date": "20261009",
-        "count": 1,
-        "share": 2.0,
-        "avg_price": 29900,
-        "observed_depth": 50
-      },
-      {
-        "date": "20261010",
-        "count": 1,
-        "share": 2.0,
-        "avg_price": 29900,
-        "observed_depth": 50
-      },
-      {
-        "date": "20261011",
-        "count": 1,
-        "share": 2.0,
-        "avg_price": 29900,
-        "observed_depth": 50
-      },
-      {
-        "date": "20261012",
-        "count": 1,
-        "share": 2.0,
-        "avg_price": 29900,
-        "observed_depth": 50
-      },
-      {
-        "date": "20261013",
-        "count": 1,
-        "share": 2.0,
-        "avg_price": 29900,
-        "observed_depth": 50
-      },
-      {
-        "date": "20261014",
-        "count": 1,
-        "share": 2.0,
-        "avg_price": 29900,
-        "observed_depth": 50
-      },
-      {
-        "date": "20261015",
-        "count": 1,
-        "share": 2.0,
-        "avg_price": 29900,
-        "observed_depth": 50
-      },
-      {
-        "date": "20261016",
-        "count": 1,
-        "share": 2.0,
-        "avg_price": 29900,
-        "observed_depth": 50
-      },
-      {
-        "date": "20261017",
-        "count": 1,
-        "share": 2.0,
-        "avg_price": 29900,
-        "observed_depth": 50
-      },
-      {
-        "date": "20261018",
-        "count": 1,
-        "share": 2.0,
-        "avg_price": 29900,
-        "observed_depth": 50
-      },
-      {
-        "date": "20261019",
-        "count": 1,
-        "share": 2.0,
-        "avg_price": 29900,
-        "observed_depth": 50
-      },
-      {
-        "date": "20261020",
-        "count": 1,
-        "share": 2.0,
-        "avg_price": 29900,
-        "observed_depth": 50
-      },
-      {
-        "date": "20261021",
-        "count": 1,
-        "share": 2.0,
-        "avg_price": 29900,
-        "observed_depth": 50
-      },
-      {
-        "date": "20261022",
-        "count": 1,
-        "share": 2.0,
-        "avg_price": 29900,
-        "observed_depth": 50
-      },
-      {
-        "date": "20261023",
-        "count": 1,
-        "share": 2.0,
-        "avg_price": 29900,
-        "observed_depth": 50
-      },
-      {
-        "date": "20261025",
-        "count": 1,
-        "share": 2.0,
-        "avg_price": 29900,
-        "observed_depth": 50
-      },
-      {
-        "date": "20261026",
-        "count": 1,
-        "share": 2.0,
-        "avg_price": 29900,
-        "observed_depth": 50
-      },
-      {
-        "date": "20261027",
-        "count": 1,
-        "share": 2.0,
-        "avg_price": 29900,
-        "observed_depth": 50
-      },
-      {
-        "date": "20261028",
-        "count": 1,
-        "share": 2.0,
-        "avg_price": 29900,
-        "observed_depth": 50
-      },
-      {
-        "date": "20261029",
-        "count": 1,
-        "share": 2.0,
-        "avg_price": 29900,
-        "observed_depth": 50
-      },
-      {
-        "date": "20261030",
-        "count": 1,
-        "share": 2.0,
-        "avg_price": 29900,
-        "observed_depth": 50
-      },
-      {
-        "date": "20261031",
-        "count": 1,
-        "share": 2.0,
-        "avg_price": 29900,
-        "observed_depth": 50
-      },
-      {
-        "date": "20261101",
-        "count": 1,
-        "share": 2.0,
-        "avg_price": 29900,
-        "observed_depth": 50
-      },
-      {
-        "date": "20261103",
+        "date": "20261104",
         "count": 1,
         "share": 2.0,
         "avg_price": 29900,
@@ -19195,6 +19130,400 @@
         "share": 6.0,
         "avg_price": 23200,
         "observed_depth": 50
+      },
+      {
+        "date": "20261104",
+        "count": 2,
+        "share": 4.0,
+        "avg_price": 32900,
+        "observed_depth": 50
+      }
+    ],
+    "카카오프렌즈(어피치)": [
+      {
+        "date": "20260827",
+        "count": 1,
+        "share": 2.0,
+        "avg_price": 29900,
+        "observed_depth": 50
+      },
+      {
+        "date": "20260828",
+        "count": 1,
+        "share": 2.0,
+        "avg_price": 29900,
+        "observed_depth": 50
+      },
+      {
+        "date": "20260831",
+        "count": 1,
+        "share": 2.0,
+        "avg_price": 29900,
+        "observed_depth": 50
+      },
+      {
+        "date": "20260901",
+        "count": 1,
+        "share": 2.0,
+        "avg_price": 29900,
+        "observed_depth": 50
+      },
+      {
+        "date": "20260902",
+        "count": 1,
+        "share": 2.0,
+        "avg_price": 29900,
+        "observed_depth": 50
+      },
+      {
+        "date": "20260903",
+        "count": 1,
+        "share": 2.0,
+        "avg_price": 29900,
+        "observed_depth": 50
+      },
+      {
+        "date": "20260904",
+        "count": 1,
+        "share": 2.0,
+        "avg_price": 29900,
+        "observed_depth": 50
+      },
+      {
+        "date": "20260907",
+        "count": 1,
+        "share": 1.0,
+        "avg_price": 29900,
+        "observed_depth": 100
+      },
+      {
+        "date": "20260908",
+        "count": 1,
+        "share": 1.0,
+        "avg_price": 29900,
+        "observed_depth": 100
+      },
+      {
+        "date": "20260909",
+        "count": 1,
+        "share": 1.0,
+        "avg_price": 29900,
+        "observed_depth": 100
+      },
+      {
+        "date": "20260910",
+        "count": 1,
+        "share": 1.0,
+        "avg_price": 29900,
+        "observed_depth": 100
+      },
+      {
+        "date": "20260911",
+        "count": 1,
+        "share": 1.0,
+        "avg_price": 29900,
+        "observed_depth": 100
+      },
+      {
+        "date": "20260915",
+        "count": 1,
+        "share": 2.0,
+        "avg_price": 29900,
+        "observed_depth": 50
+      },
+      {
+        "date": "20260916",
+        "count": 1,
+        "share": 1.0,
+        "avg_price": 29900,
+        "observed_depth": 100
+      },
+      {
+        "date": "20260917",
+        "count": 1,
+        "share": 1.0,
+        "avg_price": 29900,
+        "observed_depth": 100
+      },
+      {
+        "date": "20260918",
+        "count": 1,
+        "share": 1.0,
+        "avg_price": 29900,
+        "observed_depth": 100
+      },
+      {
+        "date": "20260921",
+        "count": 1,
+        "share": 1.0,
+        "avg_price": 29900,
+        "observed_depth": 100
+      },
+      {
+        "date": "20260922",
+        "count": 1,
+        "share": 1.0,
+        "avg_price": 29900,
+        "observed_depth": 100
+      },
+      {
+        "date": "20260923",
+        "count": 1,
+        "share": 1.0,
+        "avg_price": 29900,
+        "observed_depth": 100
+      },
+      {
+        "date": "20260928",
+        "count": 1,
+        "share": 2.0,
+        "avg_price": 29900,
+        "observed_depth": 50
+      },
+      {
+        "date": "20260929",
+        "count": 1,
+        "share": 2.0,
+        "avg_price": 29900,
+        "observed_depth": 50
+      },
+      {
+        "date": "20260930",
+        "count": 1,
+        "share": 2.0,
+        "avg_price": 29900,
+        "observed_depth": 50
+      },
+      {
+        "date": "20261001",
+        "count": 1,
+        "share": 2.0,
+        "avg_price": 29900,
+        "observed_depth": 50
+      },
+      {
+        "date": "20261002",
+        "count": 1,
+        "share": 2.0,
+        "avg_price": 29900,
+        "observed_depth": 50
+      },
+      {
+        "date": "20261003",
+        "count": 1,
+        "share": 2.0,
+        "avg_price": 29900,
+        "observed_depth": 50
+      },
+      {
+        "date": "20261004",
+        "count": 1,
+        "share": 2.0,
+        "avg_price": 29900,
+        "observed_depth": 50
+      },
+      {
+        "date": "20261005",
+        "count": 1,
+        "share": 2.0,
+        "avg_price": 29900,
+        "observed_depth": 50
+      },
+      {
+        "date": "20261006",
+        "count": 1,
+        "share": 2.0,
+        "avg_price": 29900,
+        "observed_depth": 50
+      },
+      {
+        "date": "20261007",
+        "count": 1,
+        "share": 2.0,
+        "avg_price": 29900,
+        "observed_depth": 50
+      },
+      {
+        "date": "20261008",
+        "count": 1,
+        "share": 2.0,
+        "avg_price": 29900,
+        "observed_depth": 50
+      },
+      {
+        "date": "20261009",
+        "count": 1,
+        "share": 2.0,
+        "avg_price": 29900,
+        "observed_depth": 50
+      },
+      {
+        "date": "20261010",
+        "count": 1,
+        "share": 2.0,
+        "avg_price": 29900,
+        "observed_depth": 50
+      },
+      {
+        "date": "20261011",
+        "count": 1,
+        "share": 2.0,
+        "avg_price": 29900,
+        "observed_depth": 50
+      },
+      {
+        "date": "20261012",
+        "count": 1,
+        "share": 2.0,
+        "avg_price": 29900,
+        "observed_depth": 50
+      },
+      {
+        "date": "20261013",
+        "count": 1,
+        "share": 2.0,
+        "avg_price": 29900,
+        "observed_depth": 50
+      },
+      {
+        "date": "20261014",
+        "count": 1,
+        "share": 2.0,
+        "avg_price": 29900,
+        "observed_depth": 50
+      },
+      {
+        "date": "20261015",
+        "count": 1,
+        "share": 2.0,
+        "avg_price": 29900,
+        "observed_depth": 50
+      },
+      {
+        "date": "20261016",
+        "count": 1,
+        "share": 2.0,
+        "avg_price": 29900,
+        "observed_depth": 50
+      },
+      {
+        "date": "20261017",
+        "count": 1,
+        "share": 2.0,
+        "avg_price": 29900,
+        "observed_depth": 50
+      },
+      {
+        "date": "20261018",
+        "count": 1,
+        "share": 2.0,
+        "avg_price": 29900,
+        "observed_depth": 50
+      },
+      {
+        "date": "20261019",
+        "count": 1,
+        "share": 2.0,
+        "avg_price": 29900,
+        "observed_depth": 50
+      },
+      {
+        "date": "20261020",
+        "count": 1,
+        "share": 2.0,
+        "avg_price": 29900,
+        "observed_depth": 50
+      },
+      {
+        "date": "20261021",
+        "count": 1,
+        "share": 2.0,
+        "avg_price": 29900,
+        "observed_depth": 50
+      },
+      {
+        "date": "20261022",
+        "count": 1,
+        "share": 2.0,
+        "avg_price": 29900,
+        "observed_depth": 50
+      },
+      {
+        "date": "20261023",
+        "count": 1,
+        "share": 2.0,
+        "avg_price": 29900,
+        "observed_depth": 50
+      },
+      {
+        "date": "20261025",
+        "count": 1,
+        "share": 2.0,
+        "avg_price": 29900,
+        "observed_depth": 50
+      },
+      {
+        "date": "20261026",
+        "count": 1,
+        "share": 2.0,
+        "avg_price": 29900,
+        "observed_depth": 50
+      },
+      {
+        "date": "20261027",
+        "count": 1,
+        "share": 2.0,
+        "avg_price": 29900,
+        "observed_depth": 50
+      },
+      {
+        "date": "20261028",
+        "count": 1,
+        "share": 2.0,
+        "avg_price": 29900,
+        "observed_depth": 50
+      },
+      {
+        "date": "20261029",
+        "count": 1,
+        "share": 2.0,
+        "avg_price": 29900,
+        "observed_depth": 50
+      },
+      {
+        "date": "20261030",
+        "count": 1,
+        "share": 2.0,
+        "avg_price": 29900,
+        "observed_depth": 50
+      },
+      {
+        "date": "20261031",
+        "count": 1,
+        "share": 2.0,
+        "avg_price": 29900,
+        "observed_depth": 50
+      },
+      {
+        "date": "20261101",
+        "count": 1,
+        "share": 2.0,
+        "avg_price": 29900,
+        "observed_depth": 50
+      },
+      {
+        "date": "20261103",
+        "count": 1,
+        "share": 2.0,
+        "avg_price": 29900,
+        "observed_depth": 50
+      },
+      {
+        "date": "20261104",
+        "count": 1,
+        "share": 2.0,
+        "avg_price": 29900,
+        "observed_depth": 50
       }
     ],
     "잔망루피": [
@@ -19581,6 +19910,344 @@
         "count": 1,
         "share": 2.0,
         "avg_price": 39900,
+        "observed_depth": 50
+      },
+      {
+        "date": "20261104",
+        "count": 1,
+        "share": 2.0,
+        "avg_price": 39900,
+        "observed_depth": 50
+      }
+    ],
+    "산리오(한교동)": [
+      {
+        "date": "20260827",
+        "count": 1,
+        "share": 2.0,
+        "avg_price": 32000,
+        "observed_depth": 50
+      },
+      {
+        "date": "20260828",
+        "count": 2,
+        "share": 4.0,
+        "avg_price": 31500,
+        "observed_depth": 50
+      },
+      {
+        "date": "20260831",
+        "count": 2,
+        "share": 4.0,
+        "avg_price": 39000,
+        "observed_depth": 50
+      },
+      {
+        "date": "20260901",
+        "count": 3,
+        "share": 6.0,
+        "avg_price": 27000,
+        "observed_depth": 50
+      },
+      {
+        "date": "20260902",
+        "count": 1,
+        "share": 2.0,
+        "avg_price": 31000,
+        "observed_depth": 50
+      },
+      {
+        "date": "20260903",
+        "count": 2,
+        "share": 4.0,
+        "avg_price": 30500,
+        "observed_depth": 50
+      },
+      {
+        "date": "20260904",
+        "count": 3,
+        "share": 6.0,
+        "avg_price": 27000,
+        "observed_depth": 50
+      },
+      {
+        "date": "20260907",
+        "count": 3,
+        "share": 3.0,
+        "avg_price": 33333,
+        "observed_depth": 100
+      },
+      {
+        "date": "20260908",
+        "count": 4,
+        "share": 4.0,
+        "avg_price": 30950,
+        "observed_depth": 100
+      },
+      {
+        "date": "20260909",
+        "count": 3,
+        "share": 3.0,
+        "avg_price": 33333,
+        "observed_depth": 100
+      },
+      {
+        "date": "20260910",
+        "count": 3,
+        "share": 3.0,
+        "avg_price": 33333,
+        "observed_depth": 100
+      },
+      {
+        "date": "20260911",
+        "count": 4,
+        "share": 4.0,
+        "avg_price": 33750,
+        "observed_depth": 100
+      },
+      {
+        "date": "20260916",
+        "count": 2,
+        "share": 2.0,
+        "avg_price": 39950,
+        "observed_depth": 100
+      },
+      {
+        "date": "20260917",
+        "count": 3,
+        "share": 3.0,
+        "avg_price": 24000,
+        "observed_depth": 100
+      },
+      {
+        "date": "20260918",
+        "count": 6,
+        "share": 6.0,
+        "avg_price": 24633,
+        "observed_depth": 100
+      },
+      {
+        "date": "20260921",
+        "count": 4,
+        "share": 4.0,
+        "avg_price": 34950,
+        "observed_depth": 100
+      },
+      {
+        "date": "20260922",
+        "count": 3,
+        "share": 3.0,
+        "avg_price": 33333,
+        "observed_depth": 100
+      },
+      {
+        "date": "20260923",
+        "count": 2,
+        "share": 2.0,
+        "avg_price": 30500,
+        "observed_depth": 100
+      },
+      {
+        "date": "20260928",
+        "count": 1,
+        "share": 2.0,
+        "avg_price": 31000,
+        "observed_depth": 50
+      },
+      {
+        "date": "20260929",
+        "count": 2,
+        "share": 4.0,
+        "avg_price": 25000,
+        "observed_depth": 50
+      },
+      {
+        "date": "20260930",
+        "count": 1,
+        "share": 2.0,
+        "avg_price": 30000,
+        "observed_depth": 50
+      },
+      {
+        "date": "20261002",
+        "count": 1,
+        "share": 2.0,
+        "avg_price": 31000,
+        "observed_depth": 50
+      },
+      {
+        "date": "20261003",
+        "count": 2,
+        "share": 4.0,
+        "avg_price": 30500,
+        "observed_depth": 50
+      },
+      {
+        "date": "20261004",
+        "count": 1,
+        "share": 2.0,
+        "avg_price": 31000,
+        "observed_depth": 50
+      },
+      {
+        "date": "20261005",
+        "count": 2,
+        "share": 4.0,
+        "avg_price": 30500,
+        "observed_depth": 50
+      },
+      {
+        "date": "20261006",
+        "count": 2,
+        "share": 4.0,
+        "avg_price": 30500,
+        "observed_depth": 50
+      },
+      {
+        "date": "20261007",
+        "count": 2,
+        "share": 4.0,
+        "avg_price": 30500,
+        "observed_depth": 50
+      },
+      {
+        "date": "20261008",
+        "count": 2,
+        "share": 4.0,
+        "avg_price": 30500,
+        "observed_depth": 50
+      },
+      {
+        "date": "20261009",
+        "count": 2,
+        "share": 4.0,
+        "avg_price": 30500,
+        "observed_depth": 50
+      },
+      {
+        "date": "20261010",
+        "count": 2,
+        "share": 4.0,
+        "avg_price": 30500,
+        "observed_depth": 50
+      },
+      {
+        "date": "20261011",
+        "count": 2,
+        "share": 4.0,
+        "avg_price": 30500,
+        "observed_depth": 50
+      },
+      {
+        "date": "20261012",
+        "count": 1,
+        "share": 2.0,
+        "avg_price": 31000,
+        "observed_depth": 50
+      },
+      {
+        "date": "20261013",
+        "count": 1,
+        "share": 2.0,
+        "avg_price": 20000,
+        "observed_depth": 50
+      },
+      {
+        "date": "20261014",
+        "count": 1,
+        "share": 2.0,
+        "avg_price": 31000,
+        "observed_depth": 50
+      },
+      {
+        "date": "20261015",
+        "count": 1,
+        "share": 2.0,
+        "avg_price": 31000,
+        "observed_depth": 50
+      },
+      {
+        "date": "20261016",
+        "count": 2,
+        "share": 4.0,
+        "avg_price": 30500,
+        "observed_depth": 50
+      },
+      {
+        "date": "20261017",
+        "count": 2,
+        "share": 4.0,
+        "avg_price": 30500,
+        "observed_depth": 50
+      },
+      {
+        "date": "20261018",
+        "count": 2,
+        "share": 4.0,
+        "avg_price": 30500,
+        "observed_depth": 50
+      },
+      {
+        "date": "20261019",
+        "count": 3,
+        "share": 6.0,
+        "avg_price": 27000,
+        "observed_depth": 50
+      },
+      {
+        "date": "20261020",
+        "count": 1,
+        "share": 2.0,
+        "avg_price": 31000,
+        "observed_depth": 50
+      },
+      {
+        "date": "20261021",
+        "count": 1,
+        "share": 2.0,
+        "avg_price": 31000,
+        "observed_depth": 50
+      },
+      {
+        "date": "20261022",
+        "count": 1,
+        "share": 2.0,
+        "avg_price": 31000,
+        "observed_depth": 50
+      },
+      {
+        "date": "20261023",
+        "count": 1,
+        "share": 2.0,
+        "avg_price": 31000,
+        "observed_depth": 50
+      },
+      {
+        "date": "20261024",
+        "count": 2,
+        "share": 4.0,
+        "avg_price": 30500,
+        "observed_depth": 50
+      },
+      {
+        "date": "20261029",
+        "count": 1,
+        "share": 2.0,
+        "avg_price": 39000,
+        "observed_depth": 50
+      },
+      {
+        "date": "20261102",
+        "count": 1,
+        "share": 2.0,
+        "avg_price": 33150,
+        "observed_depth": 50
+      },
+      {
+        "date": "20261104",
+        "count": 1,
+        "share": 2.0,
+        "avg_price": 33150,
         "observed_depth": 50
       }
     ],
@@ -19976,329 +20643,12 @@
         "share": 2.0,
         "avg_price": 28000,
         "observed_depth": 50
-      }
-    ],
-    "산리오(한교동)": [
-      {
-        "date": "20260827",
-        "count": 1,
-        "share": 2.0,
-        "avg_price": 32000,
-        "observed_depth": 50
       },
       {
-        "date": "20260828",
+        "date": "20261104",
         "count": 2,
         "share": 4.0,
-        "avg_price": 31500,
-        "observed_depth": 50
-      },
-      {
-        "date": "20260831",
-        "count": 2,
-        "share": 4.0,
-        "avg_price": 39000,
-        "observed_depth": 50
-      },
-      {
-        "date": "20260901",
-        "count": 3,
-        "share": 6.0,
-        "avg_price": 27000,
-        "observed_depth": 50
-      },
-      {
-        "date": "20260902",
-        "count": 1,
-        "share": 2.0,
-        "avg_price": 31000,
-        "observed_depth": 50
-      },
-      {
-        "date": "20260903",
-        "count": 2,
-        "share": 4.0,
-        "avg_price": 30500,
-        "observed_depth": 50
-      },
-      {
-        "date": "20260904",
-        "count": 3,
-        "share": 6.0,
-        "avg_price": 27000,
-        "observed_depth": 50
-      },
-      {
-        "date": "20260907",
-        "count": 3,
-        "share": 3.0,
-        "avg_price": 33333,
-        "observed_depth": 100
-      },
-      {
-        "date": "20260908",
-        "count": 4,
-        "share": 4.0,
-        "avg_price": 30950,
-        "observed_depth": 100
-      },
-      {
-        "date": "20260909",
-        "count": 3,
-        "share": 3.0,
-        "avg_price": 33333,
-        "observed_depth": 100
-      },
-      {
-        "date": "20260910",
-        "count": 3,
-        "share": 3.0,
-        "avg_price": 33333,
-        "observed_depth": 100
-      },
-      {
-        "date": "20260911",
-        "count": 4,
-        "share": 4.0,
-        "avg_price": 33750,
-        "observed_depth": 100
-      },
-      {
-        "date": "20260916",
-        "count": 2,
-        "share": 2.0,
-        "avg_price": 39950,
-        "observed_depth": 100
-      },
-      {
-        "date": "20260917",
-        "count": 3,
-        "share": 3.0,
-        "avg_price": 24000,
-        "observed_depth": 100
-      },
-      {
-        "date": "20260918",
-        "count": 6,
-        "share": 6.0,
-        "avg_price": 24633,
-        "observed_depth": 100
-      },
-      {
-        "date": "20260921",
-        "count": 4,
-        "share": 4.0,
-        "avg_price": 34950,
-        "observed_depth": 100
-      },
-      {
-        "date": "20260922",
-        "count": 3,
-        "share": 3.0,
-        "avg_price": 33333,
-        "observed_depth": 100
-      },
-      {
-        "date": "20260923",
-        "count": 2,
-        "share": 2.0,
-        "avg_price": 30500,
-        "observed_depth": 100
-      },
-      {
-        "date": "20260928",
-        "count": 1,
-        "share": 2.0,
-        "avg_price": 31000,
-        "observed_depth": 50
-      },
-      {
-        "date": "20260929",
-        "count": 2,
-        "share": 4.0,
-        "avg_price": 25000,
-        "observed_depth": 50
-      },
-      {
-        "date": "20260930",
-        "count": 1,
-        "share": 2.0,
-        "avg_price": 30000,
-        "observed_depth": 50
-      },
-      {
-        "date": "20261002",
-        "count": 1,
-        "share": 2.0,
-        "avg_price": 31000,
-        "observed_depth": 50
-      },
-      {
-        "date": "20261003",
-        "count": 2,
-        "share": 4.0,
-        "avg_price": 30500,
-        "observed_depth": 50
-      },
-      {
-        "date": "20261004",
-        "count": 1,
-        "share": 2.0,
-        "avg_price": 31000,
-        "observed_depth": 50
-      },
-      {
-        "date": "20261005",
-        "count": 2,
-        "share": 4.0,
-        "avg_price": 30500,
-        "observed_depth": 50
-      },
-      {
-        "date": "20261006",
-        "count": 2,
-        "share": 4.0,
-        "avg_price": 30500,
-        "observed_depth": 50
-      },
-      {
-        "date": "20261007",
-        "count": 2,
-        "share": 4.0,
-        "avg_price": 30500,
-        "observed_depth": 50
-      },
-      {
-        "date": "20261008",
-        "count": 2,
-        "share": 4.0,
-        "avg_price": 30500,
-        "observed_depth": 50
-      },
-      {
-        "date": "20261009",
-        "count": 2,
-        "share": 4.0,
-        "avg_price": 30500,
-        "observed_depth": 50
-      },
-      {
-        "date": "20261010",
-        "count": 2,
-        "share": 4.0,
-        "avg_price": 30500,
-        "observed_depth": 50
-      },
-      {
-        "date": "20261011",
-        "count": 2,
-        "share": 4.0,
-        "avg_price": 30500,
-        "observed_depth": 50
-      },
-      {
-        "date": "20261012",
-        "count": 1,
-        "share": 2.0,
-        "avg_price": 31000,
-        "observed_depth": 50
-      },
-      {
-        "date": "20261013",
-        "count": 1,
-        "share": 2.0,
-        "avg_price": 20000,
-        "observed_depth": 50
-      },
-      {
-        "date": "20261014",
-        "count": 1,
-        "share": 2.0,
-        "avg_price": 31000,
-        "observed_depth": 50
-      },
-      {
-        "date": "20261015",
-        "count": 1,
-        "share": 2.0,
-        "avg_price": 31000,
-        "observed_depth": 50
-      },
-      {
-        "date": "20261016",
-        "count": 2,
-        "share": 4.0,
-        "avg_price": 30500,
-        "observed_depth": 50
-      },
-      {
-        "date": "20261017",
-        "count": 2,
-        "share": 4.0,
-        "avg_price": 30500,
-        "observed_depth": 50
-      },
-      {
-        "date": "20261018",
-        "count": 2,
-        "share": 4.0,
-        "avg_price": 30500,
-        "observed_depth": 50
-      },
-      {
-        "date": "20261019",
-        "count": 3,
-        "share": 6.0,
-        "avg_price": 27000,
-        "observed_depth": 50
-      },
-      {
-        "date": "20261020",
-        "count": 1,
-        "share": 2.0,
-        "avg_price": 31000,
-        "observed_depth": 50
-      },
-      {
-        "date": "20261021",
-        "count": 1,
-        "share": 2.0,
-        "avg_price": 31000,
-        "observed_depth": 50
-      },
-      {
-        "date": "20261022",
-        "count": 1,
-        "share": 2.0,
-        "avg_price": 31000,
-        "observed_depth": 50
-      },
-      {
-        "date": "20261023",
-        "count": 1,
-        "share": 2.0,
-        "avg_price": 31000,
-        "observed_depth": 50
-      },
-      {
-        "date": "20261024",
-        "count": 2,
-        "share": 4.0,
-        "avg_price": 30500,
-        "observed_depth": 50
-      },
-      {
-        "date": "20261029",
-        "count": 1,
-        "share": 2.0,
-        "avg_price": 39000,
-        "observed_depth": 50
-      },
-      {
-        "date": "20261102",
-        "count": 1,
-        "share": 2.0,
-        "avg_price": 33150,
+        "avg_price": 30575,
         "observed_depth": 50
       }
     ],
@@ -20797,6 +21147,13 @@
       },
       {
         "date": "20261103",
+        "count": 2,
+        "share": 4.0,
+        "avg_price": 33500,
+        "observed_depth": 50
+      },
+      {
+        "date": "20261104",
         "count": 2,
         "share": 4.0,
         "avg_price": 33500,
@@ -22200,6 +22557,13 @@
         "share": 16.0,
         "avg_price": 16275,
         "observed_depth": 50
+      },
+      {
+        "date": "20261104",
+        "count": 11,
+        "share": 22.0,
+        "avg_price": 15991,
+        "observed_depth": 50
       }
     ],
     "__미분류__": [
@@ -22594,6 +22958,13 @@
         "share": 6.0,
         "avg_price": 11900,
         "observed_depth": 50
+      },
+      {
+        "date": "20261104",
+        "count": 6,
+        "share": 12.0,
+        "avg_price": 12817,
+        "observed_depth": 50
       }
     ],
     "카카오프렌즈(라이언)": [
@@ -22974,368 +23345,9 @@
         "share": 2.0,
         "avg_price": 20000,
         "observed_depth": 50
-      }
-    ],
-    "카카오프렌즈(어피치)": [
-      {
-        "date": "20260827",
-        "count": 1,
-        "share": 2.0,
-        "avg_price": 20000,
-        "observed_depth": 50
       },
       {
-        "date": "20260828",
-        "count": 1,
-        "share": 2.0,
-        "avg_price": 20000,
-        "observed_depth": 50
-      },
-      {
-        "date": "20260831",
-        "count": 1,
-        "share": 2.0,
-        "avg_price": 20000,
-        "observed_depth": 50
-      },
-      {
-        "date": "20260901",
-        "count": 1,
-        "share": 2.0,
-        "avg_price": 20000,
-        "observed_depth": 50
-      },
-      {
-        "date": "20260902",
-        "count": 1,
-        "share": 2.0,
-        "avg_price": 20000,
-        "observed_depth": 50
-      },
-      {
-        "date": "20260903",
-        "count": 1,
-        "share": 2.0,
-        "avg_price": 20000,
-        "observed_depth": 50
-      },
-      {
-        "date": "20260904",
-        "count": 1,
-        "share": 2.0,
-        "avg_price": 20000,
-        "observed_depth": 50
-      },
-      {
-        "date": "20260907",
-        "count": 2,
-        "share": 2.0,
-        "avg_price": 17000,
-        "observed_depth": 100
-      },
-      {
-        "date": "20260908",
-        "count": 2,
-        "share": 2.0,
-        "avg_price": 17000,
-        "observed_depth": 100
-      },
-      {
-        "date": "20260909",
-        "count": 1,
-        "share": 1.0,
-        "avg_price": 20000,
-        "observed_depth": 100
-      },
-      {
-        "date": "20260910",
-        "count": 1,
-        "share": 1.0,
-        "avg_price": 20000,
-        "observed_depth": 100
-      },
-      {
-        "date": "20260911",
-        "count": 1,
-        "share": 1.0,
-        "avg_price": 20000,
-        "observed_depth": 100
-      },
-      {
-        "date": "20260915",
-        "count": 1,
-        "share": 2.0,
-        "avg_price": 20000,
-        "observed_depth": 50
-      },
-      {
-        "date": "20260916",
-        "count": 1,
-        "share": 1.0,
-        "avg_price": 20000,
-        "observed_depth": 100
-      },
-      {
-        "date": "20260917",
-        "count": 2,
-        "share": 2.0,
-        "avg_price": 17000,
-        "observed_depth": 100
-      },
-      {
-        "date": "20260918",
-        "count": 1,
-        "share": 1.0,
-        "avg_price": 20000,
-        "observed_depth": 100
-      },
-      {
-        "date": "20260921",
-        "count": 1,
-        "share": 1.0,
-        "avg_price": 20000,
-        "observed_depth": 100
-      },
-      {
-        "date": "20260922",
-        "count": 1,
-        "share": 1.0,
-        "avg_price": 20000,
-        "observed_depth": 100
-      },
-      {
-        "date": "20260923",
-        "count": 1,
-        "share": 1.0,
-        "avg_price": 20000,
-        "observed_depth": 100
-      },
-      {
-        "date": "20260928",
-        "count": 1,
-        "share": 2.0,
-        "avg_price": 20000,
-        "observed_depth": 50
-      },
-      {
-        "date": "20260929",
-        "count": 1,
-        "share": 2.0,
-        "avg_price": 20000,
-        "observed_depth": 50
-      },
-      {
-        "date": "20260930",
-        "count": 1,
-        "share": 2.0,
-        "avg_price": 20000,
-        "observed_depth": 50
-      },
-      {
-        "date": "20261001",
-        "count": 2,
-        "share": 4.0,
-        "avg_price": 19500,
-        "observed_depth": 50
-      },
-      {
-        "date": "20261002",
-        "count": 2,
-        "share": 4.0,
-        "avg_price": 19500,
-        "observed_depth": 50
-      },
-      {
-        "date": "20261003",
-        "count": 1,
-        "share": 2.0,
-        "avg_price": 20000,
-        "observed_depth": 50
-      },
-      {
-        "date": "20261004",
-        "count": 1,
-        "share": 2.0,
-        "avg_price": 20000,
-        "observed_depth": 50
-      },
-      {
-        "date": "20261005",
-        "count": 1,
-        "share": 2.0,
-        "avg_price": 20000,
-        "observed_depth": 50
-      },
-      {
-        "date": "20261006",
-        "count": 1,
-        "share": 2.0,
-        "avg_price": 20000,
-        "observed_depth": 50
-      },
-      {
-        "date": "20261007",
-        "count": 1,
-        "share": 2.0,
-        "avg_price": 20000,
-        "observed_depth": 50
-      },
-      {
-        "date": "20261008",
-        "count": 1,
-        "share": 2.0,
-        "avg_price": 20000,
-        "observed_depth": 50
-      },
-      {
-        "date": "20261009",
-        "count": 1,
-        "share": 2.0,
-        "avg_price": 20000,
-        "observed_depth": 50
-      },
-      {
-        "date": "20261010",
-        "count": 1,
-        "share": 2.0,
-        "avg_price": 20000,
-        "observed_depth": 50
-      },
-      {
-        "date": "20261011",
-        "count": 1,
-        "share": 2.0,
-        "avg_price": 20000,
-        "observed_depth": 50
-      },
-      {
-        "date": "20261012",
-        "count": 1,
-        "share": 2.0,
-        "avg_price": 20000,
-        "observed_depth": 50
-      },
-      {
-        "date": "20261013",
-        "count": 1,
-        "share": 2.0,
-        "avg_price": 20000,
-        "observed_depth": 50
-      },
-      {
-        "date": "20261014",
-        "count": 1,
-        "share": 2.0,
-        "avg_price": 20000,
-        "observed_depth": 50
-      },
-      {
-        "date": "20261015",
-        "count": 1,
-        "share": 2.0,
-        "avg_price": 20000,
-        "observed_depth": 50
-      },
-      {
-        "date": "20261016",
-        "count": 1,
-        "share": 2.0,
-        "avg_price": 20000,
-        "observed_depth": 50
-      },
-      {
-        "date": "20261017",
-        "count": 1,
-        "share": 2.0,
-        "avg_price": 20000,
-        "observed_depth": 50
-      },
-      {
-        "date": "20261018",
-        "count": 1,
-        "share": 2.0,
-        "avg_price": 20000,
-        "observed_depth": 50
-      },
-      {
-        "date": "20261019",
-        "count": 1,
-        "share": 2.0,
-        "avg_price": 20000,
-        "observed_depth": 50
-      },
-      {
-        "date": "20261020",
-        "count": 1,
-        "share": 2.0,
-        "avg_price": 20000,
-        "observed_depth": 50
-      },
-      {
-        "date": "20261021",
-        "count": 1,
-        "share": 2.0,
-        "avg_price": 20000,
-        "observed_depth": 50
-      },
-      {
-        "date": "20261022",
-        "count": 1,
-        "share": 2.0,
-        "avg_price": 20000,
-        "observed_depth": 50
-      },
-      {
-        "date": "20261023",
-        "count": 1,
-        "share": 2.0,
-        "avg_price": 20000,
-        "observed_depth": 50
-      },
-      {
-        "date": "20261024",
-        "count": 1,
-        "share": 2.0,
-        "avg_price": 20000,
-        "observed_depth": 50
-      },
-      {
-        "date": "20261025",
-        "count": 1,
-        "share": 2.0,
-        "avg_price": 20000,
-        "observed_depth": 50
-      },
-      {
-        "date": "20261029",
-        "count": 1,
-        "share": 2.0,
-        "avg_price": 20000,
-        "observed_depth": 50
-      },
-      {
-        "date": "20261031",
-        "count": 1,
-        "share": 2.0,
-        "avg_price": 20000,
-        "observed_depth": 50
-      },
-      {
-        "date": "20261101",
-        "count": 1,
-        "share": 2.0,
-        "avg_price": 20000,
-        "observed_depth": 50
-      },
-      {
-        "date": "20261102",
-        "count": 1,
-        "share": 2.0,
-        "avg_price": 20000,
-        "observed_depth": 50
-      },
-      {
-        "date": "20261103",
+        "date": "20261104",
         "count": 1,
         "share": 2.0,
         "avg_price": 20000,
@@ -23720,6 +23732,386 @@
         "share": 4.0,
         "avg_price": 24950,
         "observed_depth": 50
+      },
+      {
+        "date": "20261104",
+        "count": 2,
+        "share": 4.0,
+        "avg_price": 24950,
+        "observed_depth": 50
+      }
+    ],
+    "카카오프렌즈(어피치)": [
+      {
+        "date": "20260827",
+        "count": 1,
+        "share": 2.0,
+        "avg_price": 20000,
+        "observed_depth": 50
+      },
+      {
+        "date": "20260828",
+        "count": 1,
+        "share": 2.0,
+        "avg_price": 20000,
+        "observed_depth": 50
+      },
+      {
+        "date": "20260831",
+        "count": 1,
+        "share": 2.0,
+        "avg_price": 20000,
+        "observed_depth": 50
+      },
+      {
+        "date": "20260901",
+        "count": 1,
+        "share": 2.0,
+        "avg_price": 20000,
+        "observed_depth": 50
+      },
+      {
+        "date": "20260902",
+        "count": 1,
+        "share": 2.0,
+        "avg_price": 20000,
+        "observed_depth": 50
+      },
+      {
+        "date": "20260903",
+        "count": 1,
+        "share": 2.0,
+        "avg_price": 20000,
+        "observed_depth": 50
+      },
+      {
+        "date": "20260904",
+        "count": 1,
+        "share": 2.0,
+        "avg_price": 20000,
+        "observed_depth": 50
+      },
+      {
+        "date": "20260907",
+        "count": 2,
+        "share": 2.0,
+        "avg_price": 17000,
+        "observed_depth": 100
+      },
+      {
+        "date": "20260908",
+        "count": 2,
+        "share": 2.0,
+        "avg_price": 17000,
+        "observed_depth": 100
+      },
+      {
+        "date": "20260909",
+        "count": 1,
+        "share": 1.0,
+        "avg_price": 20000,
+        "observed_depth": 100
+      },
+      {
+        "date": "20260910",
+        "count": 1,
+        "share": 1.0,
+        "avg_price": 20000,
+        "observed_depth": 100
+      },
+      {
+        "date": "20260911",
+        "count": 1,
+        "share": 1.0,
+        "avg_price": 20000,
+        "observed_depth": 100
+      },
+      {
+        "date": "20260915",
+        "count": 1,
+        "share": 2.0,
+        "avg_price": 20000,
+        "observed_depth": 50
+      },
+      {
+        "date": "20260916",
+        "count": 1,
+        "share": 1.0,
+        "avg_price": 20000,
+        "observed_depth": 100
+      },
+      {
+        "date": "20260917",
+        "count": 2,
+        "share": 2.0,
+        "avg_price": 17000,
+        "observed_depth": 100
+      },
+      {
+        "date": "20260918",
+        "count": 1,
+        "share": 1.0,
+        "avg_price": 20000,
+        "observed_depth": 100
+      },
+      {
+        "date": "20260921",
+        "count": 1,
+        "share": 1.0,
+        "avg_price": 20000,
+        "observed_depth": 100
+      },
+      {
+        "date": "20260922",
+        "count": 1,
+        "share": 1.0,
+        "avg_price": 20000,
+        "observed_depth": 100
+      },
+      {
+        "date": "20260923",
+        "count": 1,
+        "share": 1.0,
+        "avg_price": 20000,
+        "observed_depth": 100
+      },
+      {
+        "date": "20260928",
+        "count": 1,
+        "share": 2.0,
+        "avg_price": 20000,
+        "observed_depth": 50
+      },
+      {
+        "date": "20260929",
+        "count": 1,
+        "share": 2.0,
+        "avg_price": 20000,
+        "observed_depth": 50
+      },
+      {
+        "date": "20260930",
+        "count": 1,
+        "share": 2.0,
+        "avg_price": 20000,
+        "observed_depth": 50
+      },
+      {
+        "date": "20261001",
+        "count": 2,
+        "share": 4.0,
+        "avg_price": 19500,
+        "observed_depth": 50
+      },
+      {
+        "date": "20261002",
+        "count": 2,
+        "share": 4.0,
+        "avg_price": 19500,
+        "observed_depth": 50
+      },
+      {
+        "date": "20261003",
+        "count": 1,
+        "share": 2.0,
+        "avg_price": 20000,
+        "observed_depth": 50
+      },
+      {
+        "date": "20261004",
+        "count": 1,
+        "share": 2.0,
+        "avg_price": 20000,
+        "observed_depth": 50
+      },
+      {
+        "date": "20261005",
+        "count": 1,
+        "share": 2.0,
+        "avg_price": 20000,
+        "observed_depth": 50
+      },
+      {
+        "date": "20261006",
+        "count": 1,
+        "share": 2.0,
+        "avg_price": 20000,
+        "observed_depth": 50
+      },
+      {
+        "date": "20261007",
+        "count": 1,
+        "share": 2.0,
+        "avg_price": 20000,
+        "observed_depth": 50
+      },
+      {
+        "date": "20261008",
+        "count": 1,
+        "share": 2.0,
+        "avg_price": 20000,
+        "observed_depth": 50
+      },
+      {
+        "date": "20261009",
+        "count": 1,
+        "share": 2.0,
+        "avg_price": 20000,
+        "observed_depth": 50
+      },
+      {
+        "date": "20261010",
+        "count": 1,
+        "share": 2.0,
+        "avg_price": 20000,
+        "observed_depth": 50
+      },
+      {
+        "date": "20261011",
+        "count": 1,
+        "share": 2.0,
+        "avg_price": 20000,
+        "observed_depth": 50
+      },
+      {
+        "date": "20261012",
+        "count": 1,
+        "share": 2.0,
+        "avg_price": 20000,
+        "observed_depth": 50
+      },
+      {
+        "date": "20261013",
+        "count": 1,
+        "share": 2.0,
+        "avg_price": 20000,
+        "observed_depth": 50
+      },
+      {
+        "date": "20261014",
+        "count": 1,
+        "share": 2.0,
+        "avg_price": 20000,
+        "observed_depth": 50
+      },
+      {
+        "date": "20261015",
+        "count": 1,
+        "share": 2.0,
+        "avg_price": 20000,
+        "observed_depth": 50
+      },
+      {
+        "date": "20261016",
+        "count": 1,
+        "share": 2.0,
+        "avg_price": 20000,
+        "observed_depth": 50
+      },
+      {
+        "date": "20261017",
+        "count": 1,
+        "share": 2.0,
+        "avg_price": 20000,
+        "observed_depth": 50
+      },
+      {
+        "date": "20261018",
+        "count": 1,
+        "share": 2.0,
+        "avg_price": 20000,
+        "observed_depth": 50
+      },
+      {
+        "date": "20261019",
+        "count": 1,
+        "share": 2.0,
+        "avg_price": 20000,
+        "observed_depth": 50
+      },
+      {
+        "date": "20261020",
+        "count": 1,
+        "share": 2.0,
+        "avg_price": 20000,
+        "observed_depth": 50
+      },
+      {
+        "date": "20261021",
+        "count": 1,
+        "share": 2.0,
+        "avg_price": 20000,
+        "observed_depth": 50
+      },
+      {
+        "date": "20261022",
+        "count": 1,
+        "share": 2.0,
+        "avg_price": 20000,
+        "observed_depth": 50
+      },
+      {
+        "date": "20261023",
+        "count": 1,
+        "share": 2.0,
+        "avg_price": 20000,
+        "observed_depth": 50
+      },
+      {
+        "date": "20261024",
+        "count": 1,
+        "share": 2.0,
+        "avg_price": 20000,
+        "observed_depth": 50
+      },
+      {
+        "date": "20261025",
+        "count": 1,
+        "share": 2.0,
+        "avg_price": 20000,
+        "observed_depth": 50
+      },
+      {
+        "date": "20261029",
+        "count": 1,
+        "share": 2.0,
+        "avg_price": 20000,
+        "observed_depth": 50
+      },
+      {
+        "date": "20261031",
+        "count": 1,
+        "share": 2.0,
+        "avg_price": 20000,
+        "observed_depth": 50
+      },
+      {
+        "date": "20261101",
+        "count": 1,
+        "share": 2.0,
+        "avg_price": 20000,
+        "observed_depth": 50
+      },
+      {
+        "date": "20261102",
+        "count": 1,
+        "share": 2.0,
+        "avg_price": 20000,
+        "observed_depth": 50
+      },
+      {
+        "date": "20261103",
+        "count": 1,
+        "share": 2.0,
+        "avg_price": 20000,
+        "observed_depth": 50
+      },
+      {
+        "date": "20261104",
+        "count": 1,
+        "share": 2.0,
+        "avg_price": 20000,
+        "observed_depth": 50
       }
     ],
     "카카오프렌즈(죠르디)": [
@@ -24086,6 +24478,13 @@
         "share": 2.0,
         "avg_price": 20000,
         "observed_depth": 50
+      },
+      {
+        "date": "20261104",
+        "count": 1,
+        "share": 2.0,
+        "avg_price": 20000,
+        "observed_depth": 50
       }
     ],
     "카카오프렌즈(기타/통합)": [
@@ -24406,6 +24805,13 @@
       },
       {
         "date": "20261103",
+        "count": 1,
+        "share": 2.0,
+        "avg_price": 29900,
+        "observed_depth": 50
+      },
+      {
+        "date": "20261104",
         "count": 1,
         "share": 2.0,
         "avg_price": 29900,
@@ -25207,6 +25613,13 @@
         "share": 4.0,
         "avg_price": 11950,
         "observed_depth": 50
+      },
+      {
+        "date": "20261104",
+        "count": 1,
+        "share": 2.0,
+        "avg_price": 8900,
+        "observed_depth": 50
       }
     ],
     "몬치치": [
@@ -25541,6 +25954,13 @@
       },
       {
         "date": "20261102",
+        "count": 1,
+        "share": 2.0,
+        "avg_price": 15000,
+        "observed_depth": 50
+      },
+      {
+        "date": "20261104",
         "count": 1,
         "share": 2.0,
         "avg_price": 15000,
@@ -26363,6 +26783,13 @@
         "share": 2.0,
         "avg_price": 13800,
         "observed_depth": 50
+      },
+      {
+        "date": "20261104",
+        "count": 1,
+        "share": 2.0,
+        "avg_price": 13800,
+        "observed_depth": 50
       }
     ],
     "산리오(헬로키티)": [
@@ -27004,6 +27431,13 @@
         "share": 2.0,
         "avg_price": 8800,
         "observed_depth": 50
+      },
+      {
+        "date": "20261104",
+        "count": 1,
+        "share": 2.0,
+        "avg_price": 8800,
+        "observed_depth": 50
       }
     ],
     "먼작귀/치이카와": [
@@ -27419,6 +27853,13 @@
         "share": 32.0,
         "avg_price": 13525,
         "observed_depth": 50
+      },
+      {
+        "date": "20261104",
+        "count": 17,
+        "share": 34.0,
+        "avg_price": 13965,
+        "observed_depth": 50
       }
     ],
     "잔망루피": [
@@ -27650,6 +28091,13 @@
       },
       {
         "date": "20261103",
+        "count": 1,
+        "share": 2.0,
+        "avg_price": 17900,
+        "observed_depth": 50
+      },
+      {
+        "date": "20261104",
         "count": 1,
         "share": 2.0,
         "avg_price": 17900,
@@ -28197,15 +28645,6 @@
         "observed_depth": 50
       }
     ],
-    "산리오(포차코)": [
-      {
-        "date": "20260923",
-        "count": 1,
-        "share": 1.0,
-        "avg_price": 16800,
-        "observed_depth": 100
-      }
-    ],
     "산리오(마이멜로디)": [
       {
         "date": "20260923",
@@ -28216,6 +28655,15 @@
       }
     ],
     "산리오(시나모롤)": [
+      {
+        "date": "20260923",
+        "count": 1,
+        "share": 1.0,
+        "avg_price": 16800,
+        "observed_depth": 100
+      }
+    ],
+    "산리오(포차코)": [
       {
         "date": "20260923",
         "count": 1,
