@@ -1,42 +1,42 @@
 {
   "period_days": 7,
   "observed_days": 7,
-  "start_date": "20261103",
-  "end_date": "20261109",
-  "period_label": "최근 7일 (20261103 ~ 20261109) · 수집 7일",
+  "start_date": "20261104",
+  "end_date": "20261110",
+  "period_label": "최근 7일 (20261104 ~ 20261110) · 수집 7일",
   "categories": {
     "전체": {
       "total_records": 2450,
       "top_ips": [
         {
           "ip_name": "먼작귀/치이카와",
-          "count": 340,
+          "count": 341,
           "share": "13.9%"
         },
         {
           "ip_name": "가나디",
-          "count": 222,
-          "share": "9.1%"
+          "count": 225,
+          "share": "9.2%"
         },
         {
           "ip_name": "카카오프렌즈(춘식이)",
-          "count": 77,
-          "share": "3.1%"
+          "count": 81,
+          "share": "3.3%"
         },
         {
           "ip_name": "리락쿠마",
-          "count": 60,
-          "share": "2.4%"
+          "count": 62,
+          "share": "2.5%"
         },
         {
           "ip_name": "산리오(헬로키티)",
-          "count": 47,
-          "share": "1.9%"
+          "count": 51,
+          "share": "2.1%"
         },
         {
           "ip_name": "산리오(기타/통합)",
-          "count": 44,
-          "share": "1.8%"
+          "count": 46,
+          "share": "1.9%"
         },
         {
           "ip_name": "카카오프렌즈(라이언)",
@@ -44,18 +44,18 @@
           "share": "1.2%"
         },
         {
-          "ip_name": "카카오프렌즈(어피치)",
-          "count": 20,
-          "share": "0.8%"
+          "ip_name": "카카오프렌즈(기타/통합)",
+          "count": 18,
+          "share": "0.7%"
         },
         {
-          "ip_name": "카카오프렌즈(기타/통합)",
-          "count": 19,
-          "share": "0.8%"
+          "ip_name": "카카오프렌즈(어피치)",
+          "count": 18,
+          "share": "0.7%"
         },
         {
           "ip_name": "빵빵이",
-          "count": 17,
+          "count": 16,
           "share": "0.7%"
         }
       ],
@@ -67,6 +67,14 @@
           "brand": "프렌즈리빙",
           "character_ip": "카카오프렌즈(춘식이), 카카오프렌즈(라이언), 카카오프렌즈(기타/통합), 톰과제리",
           "price": "22,000원"
+        },
+        {
+          "product_id": "11117749",
+          "appearance_days": 7,
+          "product_name": "생일자취집들이 [단독] \"100cm 빅사이즈\" New 춘식이 대형 롱 바디필로우 인형 쿠션 모찌 베개 생일 친구 집들이 이사 자취 선물",
+          "brand": "프렌즈리빙LC",
+          "character_ip": "카카오프렌즈(춘식이)",
+          "price": "35,510원"
         },
         {
           "product_id": "11566569",
@@ -91,24 +99,16 @@
           "brand": "캐릭터침구",
           "character_ip": "가나디",
           "price": "34,800원"
-        },
-        {
-          "product_id": "12017600",
-          "appearance_days": 7,
-          "product_name": "먼작귀 치이카와 페이스 에폭시 그립 톡 스마트톡 귀여운 캐릭터",
-          "brand": "먼작귀(치이카와)",
-          "character_ip": "먼작귀/치이카와",
-          "price": "9,800원"
         }
       ],
       "momentum": {
         "comparison": {
           "status": "available",
           "period_days": 7,
-          "current_start_date": "20261103",
-          "current_end_date": "20261109",
-          "start_date": "20261027",
-          "end_date": "20261102",
+          "current_start_date": "20261104",
+          "current_end_date": "20261110",
+          "start_date": "20261028",
+          "end_date": "20261103",
           "current_observed_days": 7,
           "observed_days": 7,
           "minimum_observed_days": 4,
@@ -135,22 +135,22 @@
           "growth_threshold_percent": 10,
           "score_method": "카테고리별 공통 수집 범위 N에서 (N+1-순위)를 합산하고 해당 카테고리 수집일 수로 나눈 뒤 합계",
           "score_unit": "수집일당 평균 순위 가중 점수",
-          "note": "최근 7일 (20261103~20261109, 수집 7일) / 직전 7일 (20261027~20261102, 수집 7일). 카테고리별 공통 수집 범위·수집일당 평균으로 비교 · ±10% 기준 · 매출 성장률 아님."
+          "note": "최근 7일 (20261104~20261110, 수집 7일) / 직전 7일 (20261028~20261103, 수집 7일). 카테고리별 공통 수집 범위·수집일당 평균으로 비교 · ±10% 기준 · 매출 성장률 아님."
         },
         "rising_ips": [
           {
             "ip_name": "카카오프렌즈(춘식이)",
             "momentum_type": "RISING",
             "momentum_badge": "상승",
-            "curr_score": 141.6,
-            "prev_score": 51.7,
-            "score_delta": 89.9,
-            "growth_rate": "+173.8%",
-            "count": 52,
-            "prev_count": 22,
+            "curr_score": 148.3,
+            "prev_score": 63.3,
+            "score_delta": 85.0,
+            "growth_rate": "+134.3%",
+            "count": 56,
+            "prev_count": 25,
             "appearance_days": 7,
             "prev_appearance_days": 7,
-            "unique_products_count": 14,
+            "unique_products_count": 13,
             "top10_count": 4,
             "evidence_period": "current",
             "evidence_products": [
@@ -165,7 +165,7 @@
               {
                 "product_id": "11117749",
                 "best_rank": 7,
-                "appearance_days": 6,
+                "appearance_days": 7,
                 "product_name": "생일자취집들이 [단독] \"100cm 빅사이즈\" New 춘식이 대형 롱 바디필로우 인형 쿠션 모찌 베개 생일 친구 집들이 이사 자취 선물",
                 "brand": "프렌즈리빙LC",
                 "price": "35,510원"
@@ -173,7 +173,7 @@
               {
                 "product_id": "14368336",
                 "best_rank": 8,
-                "appearance_days": 2,
+                "appearance_days": 3,
                 "product_name": "춘식이 2027 시즌그리팅 세트 (달력+다이어리+펜+파우치+핀뱃지) 직장인 새해 수능 응원 선물",
                 "brand": "프렌즈리빙LC",
                 "price": "21,900원"
@@ -184,11 +184,11 @@
             "ip_name": "산리오(헬로키티)",
             "momentum_type": "RISING",
             "momentum_badge": "상승",
-            "curr_score": 139.0,
-            "prev_score": 105.1,
-            "score_delta": 33.9,
-            "growth_rate": "+32.2%",
-            "count": 31,
+            "curr_score": 142.4,
+            "prev_score": 104.4,
+            "score_delta": 38.0,
+            "growth_rate": "+36.4%",
+            "count": 32,
             "prev_count": 26,
             "appearance_days": 7,
             "prev_appearance_days": 7,
@@ -215,7 +215,7 @@
               {
                 "product_id": "9191293",
                 "best_rank": 37,
-                "appearance_days": 4,
+                "appearance_days": 3,
                 "product_name": "[집들이 선물,출산 선물,귀여운 선물]헬로키티 바디필로우 모찌촉감 베개,쿠션",
                 "brand": "데이니즈",
                 "price": "39,000원"
@@ -226,12 +226,12 @@
             "ip_name": "산리오(기타/통합)",
             "momentum_type": "RISING",
             "momentum_badge": "상승",
-            "curr_score": 51.9,
-            "prev_score": 28.1,
-            "score_delta": 23.7,
-            "growth_rate": "+84.3%",
-            "count": 21,
-            "prev_count": 15,
+            "curr_score": 60.3,
+            "prev_score": 25.1,
+            "score_delta": 35.1,
+            "growth_rate": "+139.8%",
+            "count": 23,
+            "prev_count": 14,
             "appearance_days": 7,
             "prev_appearance_days": 7,
             "unique_products_count": 6,
@@ -249,7 +249,7 @@
               {
                 "product_id": "12193401",
                 "best_rank": 24,
-                "appearance_days": 4,
+                "appearance_days": 5,
                 "product_name": "네편이 될게요 [+아몬드 빼빼로 증정] 산리오캐릭터즈 통통바디필로우 롱쿠션 롱베개 롱필로우 테디베어 2종 중 택1",
                 "brand": "캐릭터침구",
                 "price": "30,500원"
@@ -265,149 +265,13 @@
             ]
           },
           {
-            "ip_name": "카카오프렌즈(죠르디)",
-            "momentum_type": "RISING",
-            "momentum_badge": "상승",
-            "curr_score": 18.6,
-            "prev_score": 5.6,
-            "score_delta": 13.0,
-            "growth_rate": "+233.3%",
-            "count": 7,
-            "prev_count": 4,
-            "appearance_days": 7,
-            "prev_appearance_days": 4,
-            "unique_products_count": 1,
-            "top10_count": 0,
-            "evidence_period": "current",
-            "evidence_products": [
-              {
-                "product_id": "11566569",
-                "best_rank": 28,
-                "appearance_days": 7,
-                "product_name": "[단독] \"행운과 평안을 기원한다냥\" 액막이 명태_그레이춘식이/춘식이/라이언/어피치/죠르디 (+고체방향제/자석고리 포함)",
-                "brand": "프렌즈인형/피규어",
-                "price": "20,000원"
-              }
-            ]
-          },
-          {
-            "ip_name": "카카오프렌즈(어피치)",
-            "momentum_type": "RISING",
-            "momentum_badge": "상승",
-            "curr_score": 29.0,
-            "prev_score": 18.3,
-            "score_delta": 10.7,
-            "growth_rate": "+58.6%",
-            "count": 13,
-            "prev_count": 10,
-            "appearance_days": 7,
-            "prev_appearance_days": 7,
-            "unique_products_count": 2,
-            "top10_count": 0,
-            "evidence_period": "current",
-            "evidence_products": [
-              {
-                "product_id": "7025298",
-                "best_rank": 22,
-                "appearance_days": 6,
-                "product_name": "BEST [단독] \"메가급 귀여움\" 대형 바디필로우_춘식이/리틀라이언/리틀어피치",
-                "brand": "프렌즈인형/피규어",
-                "price": "29,900원"
-              },
-              {
-                "product_id": "11566569",
-                "best_rank": 28,
-                "appearance_days": 7,
-                "product_name": "[단독] \"행운과 평안을 기원한다냥\" 액막이 명태_그레이춘식이/춘식이/라이언/어피치/죠르디 (+고체방향제/자석고리 포함)",
-                "brand": "프렌즈인형/피규어",
-                "price": "20,000원"
-              }
-            ]
-          },
-          {
-            "ip_name": "빵빵이",
-            "momentum_type": "RISING",
-            "momentum_badge": "상승",
-            "curr_score": 30.3,
-            "prev_score": 20.9,
-            "score_delta": 9.4,
-            "growth_rate": "+45.2%",
-            "count": 10,
-            "prev_count": 6,
-            "appearance_days": 7,
-            "prev_appearance_days": 6,
-            "unique_products_count": 2,
-            "top10_count": 0,
-            "evidence_period": "current",
-            "evidence_products": [
-              {
-                "product_id": "12617143",
-                "best_rank": 20,
-                "appearance_days": 7,
-                "product_name": "\"품절대란\" 테토남 빵빵이 팔베개 쿠션 [품절대란] 여자친구 웃긴 침구 쓸데없는 자취 바디필로우 인형 쓸모없는 신박한 선물",
-                "brand": "굴강",
-                "price": "17,900원"
-              },
-              {
-                "product_id": "14505743",
-                "best_rank": 37,
-                "appearance_days": 3,
-                "product_name": "킹받는 선물 [예약판매] 떼쓰는 빵빵이 사운드 인형 키링 웃긴 선물 신박한 삐진 화내는 쓸데없는 쓸모없는 키홀더",
-                "brand": "굴강",
-                "price": "29,900원"
-              }
-            ]
-          },
-          {
-            "ip_name": "카카오프렌즈(라이언)",
-            "momentum_type": "RISING",
-            "momentum_badge": "상승",
-            "curr_score": 31.0,
-            "prev_score": 23.1,
-            "score_delta": 7.9,
-            "growth_rate": "+34.0%",
-            "count": 16,
-            "prev_count": 13,
-            "appearance_days": 7,
-            "prev_appearance_days": 7,
-            "unique_products_count": 4,
-            "top10_count": 0,
-            "evidence_period": "current",
-            "evidence_products": [
-              {
-                "product_id": "7025298",
-                "best_rank": 22,
-                "appearance_days": 6,
-                "product_name": "BEST [단독] \"메가급 귀여움\" 대형 바디필로우_춘식이/리틀라이언/리틀어피치",
-                "brand": "프렌즈인형/피규어",
-                "price": "29,900원"
-              },
-              {
-                "product_id": "11566569",
-                "best_rank": 28,
-                "appearance_days": 7,
-                "product_name": "[단독] \"행운과 평안을 기원한다냥\" 액막이 명태_그레이춘식이/춘식이/라이언/어피치/죠르디 (+고체방향제/자석고리 포함)",
-                "brand": "프렌즈인형/피규어",
-                "price": "20,000원"
-              },
-              {
-                "product_id": "12459270",
-                "best_rank": 45,
-                "appearance_days": 2,
-                "product_name": "\"롱롱 귀여운 라춘\" 롱롱필로우_라이언/춘식이",
-                "brand": "프렌즈인형/피규어",
-                "price": "35,000원"
-              }
-            ]
-          },
-          {
             "ip_name": "잔망루피",
             "momentum_type": "RISING",
             "momentum_badge": "상승",
-            "curr_score": 24.6,
-            "prev_score": 17.4,
-            "score_delta": 7.1,
-            "growth_rate": "+41.0%",
+            "curr_score": 25.7,
+            "prev_score": 15.7,
+            "score_delta": 10.0,
+            "growth_rate": "+63.6%",
             "count": 7,
             "prev_count": 7,
             "appearance_days": 7,
@@ -427,17 +291,43 @@
             ]
           },
           {
+            "ip_name": "카카오프렌즈(죠르디)",
+            "momentum_type": "RISING",
+            "momentum_badge": "상승",
+            "curr_score": 18.4,
+            "prev_score": 8.4,
+            "score_delta": 10.0,
+            "growth_rate": "+118.6%",
+            "count": 7,
+            "prev_count": 5,
+            "appearance_days": 7,
+            "prev_appearance_days": 5,
+            "unique_products_count": 1,
+            "top10_count": 0,
+            "evidence_period": "current",
+            "evidence_products": [
+              {
+                "product_id": "11566569",
+                "best_rank": 28,
+                "appearance_days": 7,
+                "product_name": "[단독] \"행운과 평안을 기원한다냥\" 액막이 명태_그레이춘식이/춘식이/라이언/어피치/죠르디 (+고체방향제/자석고리 포함)",
+                "brand": "프렌즈인형/피규어",
+                "price": "20,000원"
+              }
+            ]
+          },
+          {
             "ip_name": "라인프렌즈/BT21",
             "momentum_type": "RISING",
             "momentum_badge": "상승",
             "curr_score": 7.6,
-            "prev_score": 1.4,
-            "score_delta": 6.1,
-            "growth_rate": "+430.0%",
+            "prev_score": 0.1,
+            "score_delta": 7.4,
+            "growth_rate": "+5200.0%",
             "count": 2,
-            "prev_count": 2,
+            "prev_count": 1,
             "appearance_days": 2,
-            "prev_appearance_days": 2,
+            "prev_appearance_days": 1,
             "unique_products_count": 2,
             "top10_count": 1,
             "evidence_period": "current",
@@ -464,10 +354,10 @@
             "ip_name": "실바니안패밀리",
             "momentum_type": "RISING",
             "momentum_badge": "상승",
-            "curr_score": 28.0,
-            "prev_score": 23.7,
+            "curr_score": 29.4,
+            "prev_score": 25.1,
             "score_delta": 4.3,
-            "growth_rate": "+18.1%",
+            "growth_rate": "+17.0%",
             "count": 7,
             "prev_count": 7,
             "appearance_days": 7,
@@ -485,32 +375,142 @@
                 "price": "13,800원"
               }
             ]
+          },
+          {
+            "ip_name": "빵빵이",
+            "momentum_type": "RISING",
+            "momentum_badge": "상승",
+            "curr_score": 29.1,
+            "prev_score": 25.3,
+            "score_delta": 3.9,
+            "growth_rate": "+15.3%",
+            "count": 10,
+            "prev_count": 7,
+            "appearance_days": 7,
+            "prev_appearance_days": 7,
+            "unique_products_count": 2,
+            "top10_count": 0,
+            "evidence_period": "current",
+            "evidence_products": [
+              {
+                "product_id": "12617143",
+                "best_rank": 20,
+                "appearance_days": 7,
+                "product_name": "연말엔 웃긴 선물 테토남 빵빵이 팔베개 쿠션 [품절대란] 여자친구 웃긴 침구 쓸데없는 자취 바디필로우 인형 쓸모없는 신박한 선물",
+                "brand": "굴강",
+                "price": "17,900원"
+              },
+              {
+                "product_id": "14505743",
+                "best_rank": 37,
+                "appearance_days": 3,
+                "product_name": "킹받는 선물 [예약판매] 떼쓰는 빵빵이 사운드 인형 키링 웃긴 선물 신박한 삐진 화내는 쓸데없는 쓸모없는 키홀더",
+                "brand": "굴강",
+                "price": "29,900원"
+              }
+            ]
+          },
+          {
+            "ip_name": "몬치치",
+            "momentum_type": "RISING",
+            "momentum_badge": "상승",
+            "curr_score": 4.7,
+            "prev_score": 1.0,
+            "score_delta": 3.7,
+            "growth_rate": "+371.4%",
+            "count": 5,
+            "prev_count": 1,
+            "appearance_days": 5,
+            "prev_appearance_days": 1,
+            "unique_products_count": 2,
+            "top10_count": 0,
+            "evidence_period": "current",
+            "evidence_products": [
+              {
+                "product_id": "13697772",
+                "best_rank": 37,
+                "appearance_days": 4,
+                "product_name": "몬치치 미니 사각 파우치 5종 택1",
+                "brand": "Monchhichi",
+                "price": "15,000원"
+              },
+              {
+                "product_id": "14440098",
+                "best_rank": 41,
+                "appearance_days": 1,
+                "product_name": "[예약배송] 몬치치 2027 만년 다이어리&A4 탁상 캘린더 달력 세트 (플래너 스케줄 새해 신년 응원 직장인 선물 캐릭터)",
+                "brand": "캐릭터팬시",
+                "price": "29,800원"
+              }
+            ]
+          },
+          {
+            "ip_name": "카카오프렌즈(라이언)",
+            "momentum_type": "RISING",
+            "momentum_badge": "상승",
+            "curr_score": 30.9,
+            "prev_score": 27.7,
+            "score_delta": 3.1,
+            "growth_rate": "+11.3%",
+            "count": 17,
+            "prev_count": 14,
+            "appearance_days": 7,
+            "prev_appearance_days": 7,
+            "unique_products_count": 4,
+            "top10_count": 0,
+            "evidence_period": "current",
+            "evidence_products": [
+              {
+                "product_id": "11566569",
+                "best_rank": 28,
+                "appearance_days": 7,
+                "product_name": "[단독] \"행운과 평안을 기원한다냥\" 액막이 명태_그레이춘식이/춘식이/라이언/어피치/죠르디 (+고체방향제/자석고리 포함)",
+                "brand": "프렌즈인형/피규어",
+                "price": "20,000원"
+              },
+              {
+                "product_id": "12459270",
+                "best_rank": 28,
+                "appearance_days": 3,
+                "product_name": "\"롱롱 귀여운 라춘\" 롱롱필로우_라이언/춘식이",
+                "brand": "프렌즈인형/피규어",
+                "price": "35,000원"
+              },
+              {
+                "product_id": "7025298",
+                "best_rank": 36,
+                "appearance_days": 6,
+                "product_name": "BEST [단독] \"메가급 귀여움\" 대형 바디필로우_춘식이/리틀라이언/리틀어피치",
+                "brand": "프렌즈인형/피규어",
+                "price": "29,900원"
+              }
+            ]
           }
         ],
         "new_entry_ips": [
           {
-            "ip_name": "퍼글러",
+            "ip_name": "산리오(폼폼푸린)",
             "momentum_type": "NEW_ENTRY",
             "momentum_badge": "관측상 신규",
-            "curr_score": 1.6,
+            "curr_score": 1.7,
             "prev_score": 0,
-            "score_delta": 1.6,
+            "score_delta": 1.7,
             "growth_rate": "관측상 신규",
-            "count": 3,
+            "count": 2,
             "prev_count": 0,
-            "appearance_days": 3,
+            "appearance_days": 2,
             "prev_appearance_days": 0,
             "unique_products_count": 1,
             "top10_count": 0,
             "evidence_period": "current",
             "evidence_products": [
               {
-                "product_id": "12551938",
-                "best_rank": 46,
-                "appearance_days": 3,
-                "product_name": "퍼글러(FUGGLER) 스폰지밥 키링 (5종/택1)",
-                "brand": "퍼글러",
-                "price": "15,000원"
+                "product_id": "13869949",
+                "best_rank": 42,
+                "appearance_days": 2,
+                "product_name": "생일/기념일선물 [+아몬드 빼빼로 증정] 산리오 폼폼푸린 힐링쿠션 슬리핑",
+                "brand": "캐릭터침구",
+                "price": "31,500원"
               }
             ]
           },
@@ -537,32 +537,6 @@
                 "product_name": "[보퀴진] 미피 식빵 플레이트 앤 머그 세트",
                 "brand": "보퀴진",
                 "price": "25,000원"
-              }
-            ]
-          },
-          {
-            "ip_name": "산리오(폼폼푸린)",
-            "momentum_type": "NEW_ENTRY",
-            "momentum_badge": "관측상 신규",
-            "curr_score": 0.4,
-            "prev_score": 0,
-            "score_delta": 0.4,
-            "growth_rate": "관측상 신규",
-            "count": 1,
-            "prev_count": 0,
-            "appearance_days": 1,
-            "prev_appearance_days": 0,
-            "unique_products_count": 1,
-            "top10_count": 0,
-            "evidence_period": "current",
-            "evidence_products": [
-              {
-                "product_id": "13869949",
-                "best_rank": 48,
-                "appearance_days": 1,
-                "product_name": "생일/기념일선물 [+아몬드 빼빼로 증정] 산리오 폼폼푸린 힐링쿠션 슬리핑",
-                "brand": "캐릭터침구",
-                "price": "31,500원"
               }
             ]
           },
@@ -598,16 +572,16 @@
             "ip_name": "먼작귀/치이카와",
             "momentum_type": "STABLE",
             "momentum_badge": "안정적 강세",
-            "curr_score": 1188.4,
-            "prev_score": 1162.6,
-            "score_delta": 25.9,
-            "growth_rate": "+2.2%",
-            "count": 256,
-            "prev_count": 257,
+            "curr_score": 1177.6,
+            "prev_score": 1177.7,
+            "score_delta": -0.1,
+            "growth_rate": "-0.0%",
+            "count": 254,
+            "prev_count": 261,
             "appearance_days": 7,
             "prev_appearance_days": 7,
-            "unique_products_count": 34,
-            "top10_count": 100,
+            "unique_products_count": 35,
+            "top10_count": 101,
             "evidence_period": "current",
             "evidence_products": [
               {
@@ -640,12 +614,12 @@
             "ip_name": "가나디",
             "momentum_type": "STABLE",
             "momentum_badge": "안정적 강세",
-            "curr_score": 605.4,
-            "prev_score": 623.9,
-            "score_delta": -18.4,
-            "growth_rate": "-3.0%",
-            "count": 155,
-            "prev_count": 151,
+            "curr_score": 604.9,
+            "prev_score": 657.3,
+            "score_delta": -52.4,
+            "growth_rate": "-8.0%",
+            "count": 154,
+            "prev_count": 157,
             "appearance_days": 7,
             "prev_appearance_days": 7,
             "unique_products_count": 23,
@@ -669,12 +643,12 @@
                 "price": "15,800원"
               },
               {
-                "product_id": "14396291",
+                "product_id": "13261876",
                 "best_rank": 6,
                 "appearance_days": 7,
-                "product_name": "가나디 2027 다이어리&캘린더 세트 (일기장/응원/수능/친구/직장인/입학/새학기)",
+                "product_name": "귀여운 선물 [빼빼로데이] 가나디 복조리 파우치 (귀여운/휴대용/다용도파우치/생일)",
                 "brand": "가나디",
-                "price": "27,800원"
+                "price": "12,000원"
               }
             ]
           },
@@ -682,16 +656,16 @@
             "ip_name": "리락쿠마",
             "momentum_type": "STABLE",
             "momentum_badge": "안정적 강세",
-            "curr_score": 151.7,
-            "prev_score": 155.9,
-            "score_delta": -4.1,
-            "growth_rate": "-2.7%",
+            "curr_score": 149.9,
+            "prev_score": 159.1,
+            "score_delta": -9.3,
+            "growth_rate": "-5.8%",
             "count": 39,
             "prev_count": 37,
             "appearance_days": 7,
             "prev_appearance_days": 7,
-            "unique_products_count": 11,
-            "top10_count": 12,
+            "unique_products_count": 12,
+            "top10_count": 11,
             "evidence_period": "current",
             "evidence_products": [
               {
@@ -704,7 +678,7 @@
               },
               {
                 "product_id": "13838069",
-                "best_rank": 13,
+                "best_rank": 15,
                 "appearance_days": 7,
                 "product_name": "리락쿠마 조리개 파우치 4종",
                 "brand": "인형",
@@ -724,14 +698,14 @@
             "ip_name": "산리오(한교동)",
             "momentum_type": "STABLE",
             "momentum_badge": "안정적 강세",
-            "curr_score": 6.1,
-            "prev_score": 5.7,
-            "score_delta": 0.4,
-            "growth_rate": "+7.5%",
-            "count": 6,
-            "prev_count": 6,
-            "appearance_days": 6,
-            "prev_appearance_days": 5,
+            "curr_score": 6.0,
+            "prev_score": 5.9,
+            "score_delta": 0.1,
+            "growth_rate": "+2.4%",
+            "count": 5,
+            "prev_count": 7,
+            "appearance_days": 5,
+            "prev_appearance_days": 6,
             "unique_products_count": 2,
             "top10_count": 0,
             "evidence_period": "current",
@@ -747,7 +721,7 @@
               {
                 "product_id": "12455527",
                 "best_rank": 50,
-                "appearance_days": 2,
+                "appearance_days": 1,
                 "product_name": "선물은 정품이지 산리오 한교동 도자기 시리얼볼 요거트볼 예쁜 그릇 컵 자취 생일 교동이 집들이 행운 직장동료 가벼운 홈카페 밥그릇",
                 "brand": "알럽하우스",
                 "price": "14,800원"
@@ -757,67 +731,33 @@
         ],
         "falling_ips": [
           {
-            "ip_name": "카카오프렌즈(기타/통합)",
-            "momentum_type": "FALLING",
-            "momentum_badge": "하락",
-            "curr_score": 27.1,
-            "prev_score": 42.1,
-            "score_delta": -15.0,
-            "growth_rate": "-35.6%",
-            "count": 7,
-            "prev_count": 20,
-            "appearance_days": 6,
-            "prev_appearance_days": 5,
-            "unique_products_count": 2,
-            "top10_count": 0,
-            "evidence_period": "current",
-            "evidence_products": [
-              {
-                "product_id": "12406230",
-                "best_rank": 15,
-                "appearance_days": 6,
-                "product_name": "[단독] 카카오프렌즈 춘식이 랜덤박스 럭키박스",
-                "brand": "프렌즈리빙LC",
-                "price": "29,900원"
-              },
-              {
-                "product_id": "10383477",
-                "best_rank": 48,
-                "appearance_days": 1,
-                "product_name": "[새차선물/첫차선물] \"상쾌한 향기가 솔솔\" 톰과 제리X카카오프렌즈 차량방향제_라이언&춘식이",
-                "brand": "프렌즈리빙",
-                "price": "22,000원"
-              }
-            ]
-          },
-          {
             "ip_name": "스폰지밥",
             "momentum_type": "FALLING",
             "momentum_badge": "하락",
-            "curr_score": 9.0,
-            "prev_score": 13.1,
-            "score_delta": -4.1,
-            "growth_rate": "-31.5%",
-            "count": 7,
-            "prev_count": 6,
-            "appearance_days": 5,
-            "prev_appearance_days": 6,
+            "curr_score": 5.6,
+            "prev_score": 16.6,
+            "score_delta": -11.0,
+            "growth_rate": "-66.4%",
+            "count": 5,
+            "prev_count": 8,
+            "appearance_days": 4,
+            "prev_appearance_days": 7,
             "unique_products_count": 2,
             "top10_count": 0,
             "evidence_period": "current",
             "evidence_products": [
               {
                 "product_id": "14051995",
-                "best_rank": 32,
-                "appearance_days": 4,
+                "best_rank": 34,
+                "appearance_days": 3,
                 "product_name": "스폰지밥 근육빵빵 랜덤 키링 못생긴 인형 키링 선물",
                 "brand": "레토(생활)",
                 "price": "11,900원"
               },
               {
                 "product_id": "12551938",
-                "best_rank": 46,
-                "appearance_days": 3,
+                "best_rank": 47,
+                "appearance_days": 2,
                 "product_name": "퍼글러(FUGGLER) 스폰지밥 키링 (5종/택1)",
                 "brand": "퍼글러",
                 "price": "15,000원"
@@ -851,6 +791,32 @@
             ]
           },
           {
+            "ip_name": "메이플스토리",
+            "momentum_type": "FALLING",
+            "momentum_badge": "하락",
+            "curr_score": 1.9,
+            "prev_score": 3.1,
+            "score_delta": -1.3,
+            "growth_rate": "-40.9%",
+            "count": 2,
+            "prev_count": 2,
+            "appearance_days": 2,
+            "prev_appearance_days": 2,
+            "unique_products_count": 1,
+            "top10_count": 0,
+            "evidence_period": "current",
+            "evidence_products": [
+              {
+                "product_id": "10876183",
+                "best_rank": 44,
+                "appearance_days": 2,
+                "product_name": "기념일/생일/집들이 [선물포장] 시라쿠스 메이플 머그 2P 세트 (색상 교차선택 가능)",
+                "brand": "시라쿠스",
+                "price": "17,280원"
+              }
+            ]
+          },
+          {
             "ip_name": "짱구",
             "momentum_type": "FALLING",
             "momentum_badge": "하락",
@@ -875,32 +841,6 @@
                 "price": "19,900원"
               }
             ]
-          },
-          {
-            "ip_name": "포켓몬",
-            "momentum_type": "FALLING",
-            "momentum_badge": "하락",
-            "curr_score": 0,
-            "prev_score": 0.1,
-            "score_delta": -0.1,
-            "growth_rate": "-100.0%",
-            "count": 0,
-            "prev_count": 1,
-            "appearance_days": 0,
-            "prev_appearance_days": 1,
-            "unique_products_count": 0,
-            "top10_count": 0,
-            "evidence_period": "previous",
-            "evidence_products": [
-              {
-                "product_id": "13763303",
-                "best_rank": 50,
-                "appearance_days": 1,
-                "product_name": "\"포켓몬 탁상시계\" 포켓몬 테마시계 피규어 4종중 택1 , 2,465",
-                "brand": "포켓몬스터(완구)",
-                "price": "16,000원"
-              }
-            ]
           }
         ]
       }
@@ -910,13 +850,18 @@
       "top_ips": [
         {
           "ip_name": "먼작귀/치이카와",
-          "count": 164,
-          "share": "11.7%"
+          "count": 165,
+          "share": "11.8%"
         },
         {
           "ip_name": "가나디",
-          "count": 108,
-          "share": "7.7%"
+          "count": 110,
+          "share": "7.9%"
+        },
+        {
+          "ip_name": "리락쿠마",
+          "count": 30,
+          "share": "2.1%"
         },
         {
           "ip_name": "카카오프렌즈(춘식이)",
@@ -924,9 +869,9 @@
           "share": "2.1%"
         },
         {
-          "ip_name": "리락쿠마",
-          "count": 28,
-          "share": "2.0%"
+          "ip_name": "산리오(헬로키티)",
+          "count": 26,
+          "share": "1.9%"
         },
         {
           "ip_name": "산리오(기타/통합)",
@@ -934,27 +879,22 @@
           "share": "1.6%"
         },
         {
-          "ip_name": "산리오(헬로키티)",
-          "count": 23,
-          "share": "1.6%"
-        },
-        {
           "ip_name": "카카오프렌즈(라이언)",
-          "count": 14,
-          "share": "1.0%"
-        },
-        {
-          "ip_name": "카카오프렌즈(기타/통합)",
           "count": 13,
           "share": "0.9%"
         },
         {
-          "ip_name": "빵빵이",
+          "ip_name": "카카오프렌즈(기타/통합)",
+          "count": 12,
+          "share": "0.9%"
+        },
+        {
+          "ip_name": "실바니안패밀리",
           "count": 7,
           "share": "0.5%"
         },
         {
-          "ip_name": "실바니안패밀리",
+          "ip_name": "톰과제리",
           "count": 7,
           "share": "0.5%"
         }
@@ -1005,10 +945,10 @@
         "comparison": {
           "status": "available",
           "period_days": 7,
-          "current_start_date": "20261103",
-          "current_end_date": "20261109",
-          "start_date": "20261027",
-          "end_date": "20261102",
+          "current_start_date": "20261104",
+          "current_end_date": "20261110",
+          "start_date": "20261028",
+          "end_date": "20261103",
           "current_observed_days": 7,
           "observed_days": 7,
           "minimum_observed_days": 4,
@@ -1026,7 +966,7 @@
           "growth_threshold_percent": 10,
           "score_method": "카테고리별 공통 수집 범위 N에서 (N+1-순위)를 합산하고 해당 카테고리 수집일 수로 나눈 뒤 합계",
           "score_unit": "수집일당 평균 순위 가중 점수",
-          "note": "최근 7일 (20261103~20261109, 수집 7일) / 직전 7일 (20261027~20261102, 수집 7일). 카테고리별 공통 수집 범위·수집일당 평균으로 비교 · ±10% 기준 · 매출 성장률 아님."
+          "note": "최근 7일 (20261104~20261110, 수집 7일) / 직전 7일 (20261028~20261103, 수집 7일). 카테고리별 공통 수집 범위·수집일당 평균으로 비교 · ±10% 기준 · 매출 성장률 아님."
         },
         "rising_ips": [
           {
@@ -1126,6 +1066,32 @@
             ]
           },
           {
+            "ip_name": "카카오프렌즈(기타/통합)",
+            "momentum_type": "NEW_ENTRY",
+            "momentum_badge": "관측상 신규",
+            "curr_score": 0.4,
+            "prev_score": 0,
+            "score_delta": 0.4,
+            "growth_rate": "관측상 신규",
+            "count": 1,
+            "prev_count": 0,
+            "appearance_days": 1,
+            "prev_appearance_days": 0,
+            "unique_products_count": 1,
+            "top10_count": 0,
+            "evidence_period": "current",
+            "evidence_products": [
+              {
+                "product_id": "10383477",
+                "best_rank": 48,
+                "appearance_days": 1,
+                "product_name": "[새차선물/첫차선물] \"상쾌한 향기가 솔솔\" 톰과 제리X카카오프렌즈 차량방향제_라이언&춘식이",
+                "brand": "프렌즈리빙",
+                "price": "22,000원"
+              }
+            ]
+          },
+          {
             "ip_name": "카카오프렌즈(라이언)",
             "momentum_type": "NEW_ENTRY",
             "momentum_badge": "관측상 신규",
@@ -1183,11 +1149,11 @@
             "ip_name": "먼작귀/치이카와",
             "momentum_type": "STABLE",
             "momentum_badge": "안정적 강세",
-            "curr_score": 357.6,
-            "prev_score": 358.3,
-            "score_delta": -0.7,
-            "growth_rate": "-0.2%",
-            "count": 80,
+            "curr_score": 349.0,
+            "prev_score": 363.6,
+            "score_delta": -14.6,
+            "growth_rate": "-4.0%",
+            "count": 78,
             "prev_count": 76,
             "appearance_days": 7,
             "prev_appearance_days": 7,
@@ -1225,16 +1191,16 @@
             "ip_name": "리락쿠마",
             "momentum_type": "STABLE",
             "momentum_badge": "안정적 강세",
-            "curr_score": 41.1,
-            "prev_score": 40.4,
-            "score_delta": 0.7,
-            "growth_rate": "+1.8%",
+            "curr_score": 40.9,
+            "prev_score": 41.9,
+            "score_delta": -1.0,
+            "growth_rate": "-2.4%",
             "count": 7,
             "prev_count": 7,
             "appearance_days": 7,
             "prev_appearance_days": 7,
             "unique_products_count": 1,
-            "top10_count": 5,
+            "top10_count": 4,
             "evidence_period": "current",
             "evidence_products": [
               {
@@ -1253,12 +1219,12 @@
             "ip_name": "가나디",
             "momentum_type": "FALLING",
             "momentum_badge": "하락",
-            "curr_score": 121.0,
-            "prev_score": 151.9,
-            "score_delta": -30.9,
-            "growth_rate": "-20.3%",
-            "count": 41,
-            "prev_count": 42,
+            "curr_score": 119.3,
+            "prev_score": 159.9,
+            "score_delta": -40.6,
+            "growth_rate": "-25.4%",
+            "count": 39,
+            "prev_count": 45,
             "appearance_days": 7,
             "prev_appearance_days": 7,
             "unique_products_count": 8,
@@ -1283,63 +1249,11 @@
               },
               {
                 "product_id": "12345352",
-                "best_rank": 19,
+                "best_rank": 18,
                 "appearance_days": 7,
                 "product_name": "[빼빼로데이] 가나디 털 실내화 2size (룸슈즈/층간소음/사무실/학생/직장인)",
                 "brand": "가나디",
                 "price": "16,800원"
-              }
-            ]
-          },
-          {
-            "ip_name": "카카오프렌즈(기타/통합)",
-            "momentum_type": "FALLING",
-            "momentum_badge": "하락",
-            "curr_score": 0.4,
-            "prev_score": 3.1,
-            "score_delta": -2.7,
-            "growth_rate": "-86.4%",
-            "count": 1,
-            "prev_count": 1,
-            "appearance_days": 1,
-            "prev_appearance_days": 1,
-            "unique_products_count": 1,
-            "top10_count": 0,
-            "evidence_period": "current",
-            "evidence_products": [
-              {
-                "product_id": "10383477",
-                "best_rank": 48,
-                "appearance_days": 1,
-                "product_name": "[새차선물/첫차선물] \"상쾌한 향기가 솔솔\" 톰과 제리X카카오프렌즈 차량방향제_라이언&춘식이",
-                "brand": "프렌즈리빙",
-                "price": "22,000원"
-              }
-            ]
-          },
-          {
-            "ip_name": "산리오(기타/통합)",
-            "momentum_type": "FALLING",
-            "momentum_badge": "하락",
-            "curr_score": 0,
-            "prev_score": 1.1,
-            "score_delta": -1.1,
-            "growth_rate": "-100.0%",
-            "count": 0,
-            "prev_count": 1,
-            "appearance_days": 0,
-            "prev_appearance_days": 1,
-            "unique_products_count": 0,
-            "top10_count": 0,
-            "evidence_period": "previous",
-            "evidence_products": [
-              {
-                "product_id": "13015264",
-                "best_rank": 43,
-                "appearance_days": 1,
-                "product_name": "오센트 산리오캐릭터즈 행잉 퍼퓸 SET(본품+추가 리필)",
-                "brand": "오센트",
-                "price": "33,300원"
               }
             ]
           }
@@ -1356,13 +1270,13 @@
         },
         {
           "ip_name": "가나디",
-          "count": 67,
-          "share": "19.1%"
+          "count": 69,
+          "share": "19.7%"
         },
         {
           "ip_name": "카카오프렌즈(춘식이)",
-          "count": 21,
-          "share": "6.0%"
+          "count": 23,
+          "share": "6.6%"
         },
         {
           "ip_name": "빵빵이",
@@ -1373,11 +1287,6 @@
           "ip_name": "리락쿠마",
           "count": 8,
           "share": "2.3%"
-        },
-        {
-          "ip_name": "스폰지밥",
-          "count": 7,
-          "share": "2.0%"
         },
         {
           "ip_name": "실바니안패밀리",
@@ -1398,6 +1307,11 @@
           "ip_name": "카카오프렌즈(죠르디)",
           "count": 7,
           "share": "2.0%"
+        },
+        {
+          "ip_name": "카카오프렌즈(기타/통합)",
+          "count": 6,
+          "share": "1.7%"
         }
       ],
       "steady_products": [
@@ -1436,7 +1350,7 @@
         {
           "product_id": "12617143",
           "appearance_days": 7,
-          "product_name": "\"품절대란\" 테토남 빵빵이 팔베개 쿠션 [품절대란] 여자친구 웃긴 침구 쓸데없는 자취 바디필로우 인형 쓸모없는 신박한 선물",
+          "product_name": "연말엔 웃긴 선물 테토남 빵빵이 팔베개 쿠션 [품절대란] 여자친구 웃긴 침구 쓸데없는 자취 바디필로우 인형 쓸모없는 신박한 선물",
           "brand": "굴강",
           "character_ip": "빵빵이",
           "price": "17,900원"
@@ -1446,10 +1360,10 @@
         "comparison": {
           "status": "available",
           "period_days": 7,
-          "current_start_date": "20261103",
-          "current_end_date": "20261109",
-          "start_date": "20261027",
-          "end_date": "20261102",
+          "current_start_date": "20261104",
+          "current_end_date": "20261110",
+          "start_date": "20261028",
+          "end_date": "20261103",
           "current_observed_days": 7,
           "observed_days": 7,
           "minimum_observed_days": 4,
@@ -1467,21 +1381,21 @@
           "growth_threshold_percent": 10,
           "score_method": "카테고리별 공통 수집 범위 N에서 (N+1-순위)를 합산하고 해당 카테고리 수집일 수로 나눈 뒤 합계",
           "score_unit": "수집일당 평균 순위 가중 점수",
-          "note": "최근 7일 (20261103~20261109, 수집 7일) / 직전 7일 (20261027~20261102, 수집 7일). 카테고리별 공통 수집 범위·수집일당 평균으로 비교 · ±10% 기준 · 매출 성장률 아님."
+          "note": "최근 7일 (20261104~20261110, 수집 7일) / 직전 7일 (20261028~20261103, 수집 7일). 카테고리별 공통 수집 범위·수집일당 평균으로 비교 · ±10% 기준 · 매출 성장률 아님."
         },
         "rising_ips": [
           {
             "ip_name": "카카오프렌즈(춘식이)",
             "momentum_type": "RISING",
             "momentum_badge": "상승",
-            "curr_score": 63.6,
-            "prev_score": 13.6,
-            "score_delta": 50.0,
-            "growth_rate": "+368.4%",
-            "count": 21,
-            "prev_count": 9,
+            "curr_score": 68.1,
+            "prev_score": 21.6,
+            "score_delta": 46.6,
+            "growth_rate": "+215.9%",
+            "count": 23,
+            "prev_count": 11,
             "appearance_days": 7,
-            "prev_appearance_days": 6,
+            "prev_appearance_days": 7,
             "unique_products_count": 6,
             "top10_count": 1,
             "evidence_period": "current",
@@ -1489,10 +1403,18 @@
               {
                 "product_id": "14368336",
                 "best_rank": 8,
-                "appearance_days": 2,
+                "appearance_days": 3,
                 "product_name": "춘식이 2027 시즌그리팅 세트 (달력+다이어리+펜+파우치+핀뱃지) 직장인 새해 수능 응원 선물",
                 "brand": "프렌즈리빙LC",
                 "price": "21,900원"
+              },
+              {
+                "product_id": "12459459",
+                "best_rank": 14,
+                "appearance_days": 5,
+                "product_name": "[단독] \"너랑 나랑 하나씩\" 빼빼로 키링인형세트_춘식이 (키링 2P)",
+                "brand": "프렌즈인형/피규어",
+                "price": "24,000원"
               },
               {
                 "product_id": "12406230",
@@ -1501,7 +1423,25 @@
                 "product_name": "[단독] 카카오프렌즈 춘식이 랜덤박스 럭키박스",
                 "brand": "프렌즈리빙LC",
                 "price": "29,900원"
-              },
+              }
+            ]
+          },
+          {
+            "ip_name": "카카오프렌즈(어피치)",
+            "momentum_type": "RISING",
+            "momentum_badge": "상승",
+            "curr_score": 18.4,
+            "prev_score": 8.4,
+            "score_delta": 10.0,
+            "growth_rate": "+118.6%",
+            "count": 7,
+            "prev_count": 5,
+            "appearance_days": 7,
+            "prev_appearance_days": 5,
+            "unique_products_count": 1,
+            "top10_count": 0,
+            "evidence_period": "current",
+            "evidence_products": [
               {
                 "product_id": "11566569",
                 "best_rank": 28,
@@ -1513,19 +1453,281 @@
             ]
           },
           {
-            "ip_name": "먼작귀/치이카와",
+            "ip_name": "카카오프렌즈(죠르디)",
             "momentum_type": "RISING",
             "momentum_badge": "상승",
-            "curr_score": 505.7,
-            "prev_score": 457.1,
-            "score_delta": 48.6,
-            "growth_rate": "+10.6%",
+            "curr_score": 18.4,
+            "prev_score": 8.4,
+            "score_delta": 10.0,
+            "growth_rate": "+118.6%",
+            "count": 7,
+            "prev_count": 5,
+            "appearance_days": 7,
+            "prev_appearance_days": 5,
+            "unique_products_count": 1,
+            "top10_count": 0,
+            "evidence_period": "current",
+            "evidence_products": [
+              {
+                "product_id": "11566569",
+                "best_rank": 28,
+                "appearance_days": 7,
+                "product_name": "[단독] \"행운과 평안을 기원한다냥\" 액막이 명태_그레이춘식이/춘식이/라이언/어피치/죠르디 (+고체방향제/자석고리 포함)",
+                "brand": "프렌즈인형/피규어",
+                "price": "20,000원"
+              }
+            ]
+          },
+          {
+            "ip_name": "카카오프렌즈(라이언)",
+            "momentum_type": "RISING",
+            "momentum_badge": "상승",
+            "curr_score": 18.4,
+            "prev_score": 13.3,
+            "score_delta": 5.1,
+            "growth_rate": "+38.7%",
+            "count": 7,
+            "prev_count": 8,
+            "appearance_days": 7,
+            "prev_appearance_days": 7,
+            "unique_products_count": 1,
+            "top10_count": 0,
+            "evidence_period": "current",
+            "evidence_products": [
+              {
+                "product_id": "11566569",
+                "best_rank": 28,
+                "appearance_days": 7,
+                "product_name": "[단독] \"행운과 평안을 기원한다냥\" 액막이 명태_그레이춘식이/춘식이/라이언/어피치/죠르디 (+고체방향제/자석고리 포함)",
+                "brand": "프렌즈인형/피규어",
+                "price": "20,000원"
+              }
+            ]
+          },
+          {
+            "ip_name": "실바니안패밀리",
+            "momentum_type": "RISING",
+            "momentum_badge": "상승",
+            "curr_score": 29.4,
+            "prev_score": 25.1,
+            "score_delta": 4.3,
+            "growth_rate": "+17.0%",
+            "count": 7,
+            "prev_count": 7,
+            "appearance_days": 7,
+            "prev_appearance_days": 7,
+            "unique_products_count": 1,
+            "top10_count": 0,
+            "evidence_period": "current",
+            "evidence_products": [
+              {
+                "product_id": "13261774",
+                "best_rank": 17,
+                "appearance_days": 7,
+                "product_name": "5872-실바니안 블라인드백 15차(아기 숲속요정)",
+                "brand": "실바니안",
+                "price": "13,800원"
+              }
+            ]
+          },
+          {
+            "ip_name": "빵빵이",
+            "momentum_type": "RISING",
+            "momentum_badge": "상승",
+            "curr_score": 29.1,
+            "prev_score": 25.3,
+            "score_delta": 3.9,
+            "growth_rate": "+15.3%",
+            "count": 10,
+            "prev_count": 7,
+            "appearance_days": 7,
+            "prev_appearance_days": 7,
+            "unique_products_count": 2,
+            "top10_count": 0,
+            "evidence_period": "current",
+            "evidence_products": [
+              {
+                "product_id": "12617143",
+                "best_rank": 20,
+                "appearance_days": 7,
+                "product_name": "연말엔 웃긴 선물 테토남 빵빵이 팔베개 쿠션 [품절대란] 여자친구 웃긴 침구 쓸데없는 자취 바디필로우 인형 쓸모없는 신박한 선물",
+                "brand": "굴강",
+                "price": "17,900원"
+              },
+              {
+                "product_id": "14505743",
+                "best_rank": 37,
+                "appearance_days": 3,
+                "product_name": "킹받는 선물 [예약판매] 떼쓰는 빵빵이 사운드 인형 키링 웃긴 선물 신박한 삐진 화내는 쓸데없는 쓸모없는 키홀더",
+                "brand": "굴강",
+                "price": "29,900원"
+              }
+            ]
+          },
+          {
+            "ip_name": "몬치치",
+            "momentum_type": "RISING",
+            "momentum_badge": "상승",
+            "curr_score": 4.7,
+            "prev_score": 1.0,
+            "score_delta": 3.7,
+            "growth_rate": "+371.4%",
+            "count": 5,
+            "prev_count": 1,
+            "appearance_days": 5,
+            "prev_appearance_days": 1,
+            "unique_products_count": 2,
+            "top10_count": 0,
+            "evidence_period": "current",
+            "evidence_products": [
+              {
+                "product_id": "13697772",
+                "best_rank": 37,
+                "appearance_days": 4,
+                "product_name": "몬치치 미니 사각 파우치 5종 택1",
+                "brand": "Monchhichi",
+                "price": "15,000원"
+              },
+              {
+                "product_id": "14440098",
+                "best_rank": 41,
+                "appearance_days": 1,
+                "product_name": "[예약배송] 몬치치 2027 만년 다이어리&A4 탁상 캘린더 달력 세트 (플래너 스케줄 새해 신년 응원 직장인 선물 캐릭터)",
+                "brand": "캐릭터팬시",
+                "price": "29,800원"
+              }
+            ]
+          },
+          {
+            "ip_name": "카카오프렌즈(기타/통합)",
+            "momentum_type": "RISING",
+            "momentum_badge": "상승",
+            "curr_score": 24.6,
+            "prev_score": 22.3,
+            "score_delta": 2.3,
+            "growth_rate": "+10.3%",
+            "count": 6,
+            "prev_count": 10,
+            "appearance_days": 6,
+            "prev_appearance_days": 5,
+            "unique_products_count": 1,
+            "top10_count": 0,
+            "evidence_period": "current",
+            "evidence_products": [
+              {
+                "product_id": "12406230",
+                "best_rank": 15,
+                "appearance_days": 6,
+                "product_name": "[단독] 카카오프렌즈 춘식이 랜덤박스 럭키박스",
+                "brand": "프렌즈리빙LC",
+                "price": "29,900원"
+              }
+            ]
+          },
+          {
+            "ip_name": "포켓몬",
+            "momentum_type": "RISING",
+            "momentum_badge": "상승",
+            "curr_score": 0.7,
+            "prev_score": 0.1,
+            "score_delta": 0.6,
+            "growth_rate": "+400.0%",
+            "count": 1,
+            "prev_count": 1,
+            "appearance_days": 1,
+            "prev_appearance_days": 1,
+            "unique_products_count": 1,
+            "top10_count": 0,
+            "evidence_period": "current",
+            "evidence_products": [
+              {
+                "product_id": "13763303",
+                "best_rank": 46,
+                "appearance_days": 1,
+                "product_name": "\"포켓몬 탁상시계\" 포켓몬 테마시계 피규어 4종중 택1",
+                "brand": "포켓몬스터(완구)",
+                "price": "16,000원"
+              }
+            ]
+          },
+          {
+            "ip_name": "퍼글러",
+            "momentum_type": "RISING",
+            "momentum_badge": "상승",
+            "curr_score": 0.9,
+            "prev_score": 0.7,
+            "score_delta": 0.1,
+            "growth_rate": "+20.0%",
+            "count": 2,
+            "prev_count": 1,
+            "appearance_days": 2,
+            "prev_appearance_days": 1,
+            "unique_products_count": 1,
+            "top10_count": 0,
+            "evidence_period": "current",
+            "evidence_products": [
+              {
+                "product_id": "12551938",
+                "best_rank": 47,
+                "appearance_days": 2,
+                "product_name": "퍼글러(FUGGLER) 스폰지밥 키링 (5종/택1)",
+                "brand": "퍼글러",
+                "price": "15,000원"
+              }
+            ]
+          }
+        ],
+        "new_entry_ips": [
+          {
+            "ip_name": "산리오(헬로키티)",
+            "momentum_type": "NEW_ENTRY",
+            "momentum_badge": "관측상 신규",
+            "curr_score": 2.4,
+            "prev_score": 0,
+            "score_delta": 2.4,
+            "growth_rate": "관측상 신규",
+            "count": 4,
+            "prev_count": 0,
+            "appearance_days": 3,
+            "prev_appearance_days": 0,
+            "unique_products_count": 2,
+            "top10_count": 0,
+            "evidence_period": "current",
+            "evidence_products": [
+              {
+                "product_id": "13008650",
+                "best_rank": 43,
+                "appearance_days": 3,
+                "product_name": "헬로키티X지수 플러시키링 단품(랜덤 1종 발송)",
+                "brand": "헬로키티x지수",
+                "price": "34,000원"
+              },
+              {
+                "product_id": "12956735",
+                "best_rank": 48,
+                "appearance_days": 1,
+                "product_name": "귀여운선물 레트로 무드 데스크테리어! 스트라이프 키티 펜꽂이 브러쉬홀더 연필꽂이 책상정리",
+                "brand": "트렌디홈",
+                "price": "7,900원"
+              }
+            ]
+          }
+        ],
+        "stable_ips": [
+          {
+            "ip_name": "먼작귀/치이카와",
+            "momentum_type": "STABLE",
+            "momentum_badge": "안정적 강세",
+            "curr_score": 505.3,
+            "prev_score": 475.9,
+            "score_delta": 29.4,
+            "growth_rate": "+6.2%",
             "count": 117,
-            "prev_count": 110,
+            "prev_count": 115,
             "appearance_days": 7,
             "prev_appearance_days": 7,
             "unique_products_count": 23,
-            "top10_count": 37,
+            "top10_count": 38,
             "evidence_period": "current",
             "evidence_products": [
               {
@@ -1546,7 +1748,7 @@
               },
               {
                 "product_id": "12319916",
-                "best_rank": 4,
+                "best_rank": 5,
                 "appearance_days": 7,
                 "product_name": "친구/직장동료선물 11월 중순 재입고 - 먼작귀 온천가습기 미니가습기 USB 탁상용 사무실 캐릭터 가습기",
                 "brand": "먼작귀(팬시)",
@@ -1555,243 +1757,15 @@
             ]
           },
           {
-            "ip_name": "카카오프렌즈(어피치)",
-            "momentum_type": "RISING",
-            "momentum_badge": "상승",
-            "curr_score": 18.6,
-            "prev_score": 5.6,
-            "score_delta": 13.0,
-            "growth_rate": "+233.3%",
-            "count": 7,
-            "prev_count": 4,
-            "appearance_days": 7,
-            "prev_appearance_days": 4,
-            "unique_products_count": 1,
-            "top10_count": 0,
-            "evidence_period": "current",
-            "evidence_products": [
-              {
-                "product_id": "11566569",
-                "best_rank": 28,
-                "appearance_days": 7,
-                "product_name": "[단독] \"행운과 평안을 기원한다냥\" 액막이 명태_그레이춘식이/춘식이/라이언/어피치/죠르디 (+고체방향제/자석고리 포함)",
-                "brand": "프렌즈인형/피규어",
-                "price": "20,000원"
-              }
-            ]
-          },
-          {
-            "ip_name": "카카오프렌즈(죠르디)",
-            "momentum_type": "RISING",
-            "momentum_badge": "상승",
-            "curr_score": 18.6,
-            "prev_score": 5.6,
-            "score_delta": 13.0,
-            "growth_rate": "+233.3%",
-            "count": 7,
-            "prev_count": 4,
-            "appearance_days": 7,
-            "prev_appearance_days": 4,
-            "unique_products_count": 1,
-            "top10_count": 0,
-            "evidence_period": "current",
-            "evidence_products": [
-              {
-                "product_id": "11566569",
-                "best_rank": 28,
-                "appearance_days": 7,
-                "product_name": "[단독] \"행운과 평안을 기원한다냥\" 액막이 명태_그레이춘식이/춘식이/라이언/어피치/죠르디 (+고체방향제/자석고리 포함)",
-                "brand": "프렌즈인형/피규어",
-                "price": "20,000원"
-              }
-            ]
-          },
-          {
-            "ip_name": "빵빵이",
-            "momentum_type": "RISING",
-            "momentum_badge": "상승",
-            "curr_score": 30.3,
-            "prev_score": 20.9,
-            "score_delta": 9.4,
-            "growth_rate": "+45.2%",
-            "count": 10,
-            "prev_count": 6,
-            "appearance_days": 7,
-            "prev_appearance_days": 6,
-            "unique_products_count": 2,
-            "top10_count": 0,
-            "evidence_period": "current",
-            "evidence_products": [
-              {
-                "product_id": "12617143",
-                "best_rank": 20,
-                "appearance_days": 7,
-                "product_name": "\"품절대란\" 테토남 빵빵이 팔베개 쿠션 [품절대란] 여자친구 웃긴 침구 쓸데없는 자취 바디필로우 인형 쓸모없는 신박한 선물",
-                "brand": "굴강",
-                "price": "17,900원"
-              },
-              {
-                "product_id": "14505743",
-                "best_rank": 37,
-                "appearance_days": 3,
-                "product_name": "킹받는 선물 [예약판매] 떼쓰는 빵빵이 사운드 인형 키링 웃긴 선물 신박한 삐진 화내는 쓸데없는 쓸모없는 키홀더",
-                "brand": "굴강",
-                "price": "29,900원"
-              }
-            ]
-          },
-          {
-            "ip_name": "카카오프렌즈(라이언)",
-            "momentum_type": "RISING",
-            "momentum_badge": "상승",
-            "curr_score": 18.6,
-            "prev_score": 10.4,
-            "score_delta": 8.1,
-            "growth_rate": "+78.1%",
-            "count": 7,
-            "prev_count": 7,
-            "appearance_days": 7,
-            "prev_appearance_days": 6,
-            "unique_products_count": 1,
-            "top10_count": 0,
-            "evidence_period": "current",
-            "evidence_products": [
-              {
-                "product_id": "11566569",
-                "best_rank": 28,
-                "appearance_days": 7,
-                "product_name": "[단독] \"행운과 평안을 기원한다냥\" 액막이 명태_그레이춘식이/춘식이/라이언/어피치/죠르디 (+고체방향제/자석고리 포함)",
-                "brand": "프렌즈인형/피규어",
-                "price": "20,000원"
-              }
-            ]
-          },
-          {
-            "ip_name": "실바니안패밀리",
-            "momentum_type": "RISING",
-            "momentum_badge": "상승",
-            "curr_score": 28.0,
-            "prev_score": 23.7,
-            "score_delta": 4.3,
-            "growth_rate": "+18.1%",
-            "count": 7,
-            "prev_count": 7,
-            "appearance_days": 7,
-            "prev_appearance_days": 7,
-            "unique_products_count": 1,
-            "top10_count": 0,
-            "evidence_period": "current",
-            "evidence_products": [
-              {
-                "product_id": "13261774",
-                "best_rank": 17,
-                "appearance_days": 7,
-                "product_name": "5872-실바니안 블라인드백 15차(아기 숲속요정)",
-                "brand": "실바니안",
-                "price": "13,800원"
-              }
-            ]
-          },
-          {
-            "ip_name": "몬치치",
-            "momentum_type": "RISING",
-            "momentum_badge": "상승",
-            "curr_score": 3.3,
-            "prev_score": 1.0,
-            "score_delta": 2.3,
-            "growth_rate": "+228.6%",
-            "count": 4,
-            "prev_count": 1,
-            "appearance_days": 4,
-            "prev_appearance_days": 1,
-            "unique_products_count": 1,
-            "top10_count": 0,
-            "evidence_period": "current",
-            "evidence_products": [
-              {
-                "product_id": "13697772",
-                "best_rank": 37,
-                "appearance_days": 4,
-                "product_name": "몬치치 미니 사각 파우치 5종 택1",
-                "brand": "Monchhichi",
-                "price": "15,000원"
-              }
-            ]
-          }
-        ],
-        "new_entry_ips": [
-          {
-            "ip_name": "퍼글러",
-            "momentum_type": "NEW_ENTRY",
-            "momentum_badge": "관측상 신규",
-            "curr_score": 1.6,
-            "prev_score": 0,
-            "score_delta": 1.6,
-            "growth_rate": "관측상 신규",
-            "count": 3,
-            "prev_count": 0,
-            "appearance_days": 3,
-            "prev_appearance_days": 0,
-            "unique_products_count": 1,
-            "top10_count": 0,
-            "evidence_period": "current",
-            "evidence_products": [
-              {
-                "product_id": "12551938",
-                "best_rank": 46,
-                "appearance_days": 3,
-                "product_name": "퍼글러(FUGGLER) 스폰지밥 키링 (5종/택1)",
-                "brand": "퍼글러",
-                "price": "15,000원"
-              }
-            ]
-          },
-          {
-            "ip_name": "산리오(헬로키티)",
-            "momentum_type": "NEW_ENTRY",
-            "momentum_badge": "관측상 신규",
-            "curr_score": 1.3,
-            "prev_score": 0,
-            "score_delta": 1.3,
-            "growth_rate": "관측상 신규",
-            "count": 3,
-            "prev_count": 0,
-            "appearance_days": 2,
-            "prev_appearance_days": 0,
-            "unique_products_count": 2,
-            "top10_count": 0,
-            "evidence_period": "current",
-            "evidence_products": [
-              {
-                "product_id": "13008650",
-                "best_rank": 47,
-                "appearance_days": 2,
-                "product_name": "헬로키티X지수 플러시키링 단품(랜덤 1종 발송)",
-                "brand": "헬로키티x지수",
-                "price": "34,000원"
-              },
-              {
-                "product_id": "12956735",
-                "best_rank": 48,
-                "appearance_days": 1,
-                "product_name": "귀여운선물 레트로 무드 데스크테리어! 스트라이프 키티 펜꽂이 브러쉬홀더 연필꽂이 책상정리",
-                "brand": "트렌디홈",
-                "price": "7,900원"
-              }
-            ]
-          }
-        ],
-        "stable_ips": [
-          {
             "ip_name": "가나디",
             "momentum_type": "STABLE",
             "momentum_badge": "안정적 강세",
-            "curr_score": 283.0,
-            "prev_score": 260.0,
-            "score_delta": 23.0,
-            "growth_rate": "+8.8%",
-            "count": 67,
-            "prev_count": 61,
+            "curr_score": 289.9,
+            "prev_score": 275.3,
+            "score_delta": 14.6,
+            "growth_rate": "+5.3%",
+            "count": 69,
+            "prev_count": 62,
             "appearance_days": 7,
             "prev_appearance_days": 7,
             "unique_products_count": 13,
@@ -1807,20 +1781,20 @@
                 "price": "16,300원"
               },
               {
+                "product_id": "13261876",
+                "best_rank": 6,
+                "appearance_days": 7,
+                "product_name": "귀여운 선물 [빼빼로데이] 가나디 복조리 파우치 (귀여운/휴대용/다용도파우치/생일)",
+                "brand": "가나디",
+                "price": "12,000원"
+              },
+              {
                 "product_id": "14396291",
                 "best_rank": 6,
                 "appearance_days": 7,
                 "product_name": "가나디 2027 다이어리&캘린더 세트 (일기장/응원/수능/친구/직장인/입학/새학기)",
                 "brand": "가나디",
                 "price": "27,800원"
-              },
-              {
-                "product_id": "13261876",
-                "best_rank": 7,
-                "appearance_days": 7,
-                "product_name": "귀여운 선물 [빼빼로데이] 가나디 복조리 파우치 (귀여운/휴대용/다용도파우치/생일)",
-                "brand": "가나디",
-                "price": "12,000원"
               }
             ]
           },
@@ -1828,10 +1802,10 @@
             "ip_name": "리락쿠마",
             "momentum_type": "STABLE",
             "momentum_badge": "안정적 강세",
-            "curr_score": 34.1,
-            "prev_score": 31.7,
-            "score_delta": 2.4,
-            "growth_rate": "+7.7%",
+            "curr_score": 32.9,
+            "prev_score": 34.9,
+            "score_delta": -2.0,
+            "growth_rate": "-5.7%",
             "count": 8,
             "prev_count": 7,
             "appearance_days": 7,
@@ -1842,7 +1816,7 @@
             "evidence_products": [
               {
                 "product_id": "13838069",
-                "best_rank": 13,
+                "best_rank": 15,
                 "appearance_days": 7,
                 "product_name": "리락쿠마 조리개 파우치 4종",
                 "brand": "인형",
@@ -1861,114 +1835,36 @@
         ],
         "falling_ips": [
           {
-            "ip_name": "카카오프렌즈(기타/통합)",
-            "momentum_type": "FALLING",
-            "momentum_badge": "하락",
-            "curr_score": 26.7,
-            "prev_score": 39.0,
-            "score_delta": -12.3,
-            "growth_rate": "-31.5%",
-            "count": 6,
-            "prev_count": 19,
-            "appearance_days": 6,
-            "prev_appearance_days": 5,
-            "unique_products_count": 1,
-            "top10_count": 0,
-            "evidence_period": "current",
-            "evidence_products": [
-              {
-                "product_id": "12406230",
-                "best_rank": 15,
-                "appearance_days": 6,
-                "product_name": "[단독] 카카오프렌즈 춘식이 랜덤박스 럭키박스",
-                "brand": "프렌즈리빙LC",
-                "price": "29,900원"
-              }
-            ]
-          },
-          {
             "ip_name": "스폰지밥",
             "momentum_type": "FALLING",
             "momentum_badge": "하락",
-            "curr_score": 9.0,
-            "prev_score": 13.1,
-            "score_delta": -4.1,
-            "growth_rate": "-31.5%",
-            "count": 7,
-            "prev_count": 6,
-            "appearance_days": 5,
-            "prev_appearance_days": 6,
+            "curr_score": 5.6,
+            "prev_score": 16.6,
+            "score_delta": -11.0,
+            "growth_rate": "-66.4%",
+            "count": 5,
+            "prev_count": 8,
+            "appearance_days": 4,
+            "prev_appearance_days": 7,
             "unique_products_count": 2,
             "top10_count": 0,
             "evidence_period": "current",
             "evidence_products": [
               {
                 "product_id": "14051995",
-                "best_rank": 32,
-                "appearance_days": 4,
+                "best_rank": 34,
+                "appearance_days": 3,
                 "product_name": "스폰지밥 근육빵빵 랜덤 키링 못생긴 인형 키링 선물",
                 "brand": "레토(생활)",
                 "price": "11,900원"
               },
               {
                 "product_id": "12551938",
-                "best_rank": 46,
-                "appearance_days": 3,
+                "best_rank": 47,
+                "appearance_days": 2,
                 "product_name": "퍼글러(FUGGLER) 스폰지밥 키링 (5종/택1)",
                 "brand": "퍼글러",
                 "price": "15,000원"
-              }
-            ]
-          },
-          {
-            "ip_name": "라인프렌즈/BT21",
-            "momentum_type": "FALLING",
-            "momentum_badge": "하락",
-            "curr_score": 0,
-            "prev_score": 1.3,
-            "score_delta": -1.3,
-            "growth_rate": "-100.0%",
-            "count": 0,
-            "prev_count": 1,
-            "appearance_days": 0,
-            "prev_appearance_days": 1,
-            "unique_products_count": 0,
-            "top10_count": 0,
-            "evidence_period": "previous",
-            "evidence_products": [
-              {
-                "product_id": "14485006",
-                "best_rank": 42,
-                "appearance_days": 1,
-                "product_name": "민음사 X 오늘의귀여움 패러렐커버 무지노트 5종 세트 독서 선물 한정수량 오둥이 복슬이 강사장 브라운 두햄",
-                "brand": "오늘의귀여움",
-                "price": "19,900원"
-              }
-            ]
-          },
-          {
-            "ip_name": "포켓몬",
-            "momentum_type": "FALLING",
-            "momentum_badge": "하락",
-            "curr_score": 0,
-            "prev_score": 0.1,
-            "score_delta": -0.1,
-            "growth_rate": "-100.0%",
-            "count": 0,
-            "prev_count": 1,
-            "appearance_days": 0,
-            "prev_appearance_days": 1,
-            "unique_products_count": 0,
-            "top10_count": 0,
-            "evidence_period": "previous",
-            "evidence_products": [
-              {
-                "product_id": "13763303",
-                "best_rank": 50,
-                "appearance_days": 1,
-                "product_name": "\"포켓몬 탁상시계\" 포켓몬 테마시계 피규어 4종중 택1 , 2,465",
-                "brand": "포켓몬스터(완구)",
-                "price": "16,000원"
               }
             ]
           }
@@ -1980,23 +1876,23 @@
       "top_ips": [
         {
           "ip_name": "먼작귀/치이카와",
-          "count": 59,
-          "share": "16.9%"
+          "count": 58,
+          "share": "16.6%"
         },
         {
           "ip_name": "가나디",
-          "count": 39,
-          "share": "11.1%"
+          "count": 38,
+          "share": "10.9%"
         },
         {
           "ip_name": "카카오프렌즈(춘식이)",
-          "count": 26,
-          "share": "7.4%"
+          "count": 28,
+          "share": "8.0%"
         },
         {
           "ip_name": "산리오(기타/통합)",
-          "count": 16,
-          "share": "4.6%"
+          "count": 18,
+          "share": "5.1%"
         },
         {
           "ip_name": "리락쿠마",
@@ -2005,13 +1901,13 @@
         },
         {
           "ip_name": "산리오(헬로키티)",
-          "count": 11,
-          "share": "3.1%"
+          "count": 10,
+          "share": "2.9%"
         },
         {
           "ip_name": "카카오프렌즈(라이언)",
-          "count": 8,
-          "share": "2.3%"
+          "count": 9,
+          "share": "2.6%"
         },
         {
           "ip_name": "잔망루피",
@@ -2030,6 +1926,14 @@
         }
       ],
       "steady_products": [
+        {
+          "product_id": "11117749",
+          "appearance_days": 7,
+          "product_name": "생일자취집들이 [단독] \"100cm 빅사이즈\" New 춘식이 대형 롱 바디필로우 인형 쿠션 모찌 베개 생일 친구 집들이 이사 자취 선물",
+          "brand": "프렌즈리빙LC",
+          "character_ip": "카카오프렌즈(춘식이)",
+          "price": "35,510원"
+        },
         {
           "product_id": "11743570",
           "appearance_days": 7,
@@ -2061,24 +1965,16 @@
           "brand": "가나디",
           "character_ip": "가나디",
           "price": "15,800원"
-        },
-        {
-          "product_id": "12693742",
-          "appearance_days": 7,
-          "product_name": "가나디 핸드워머 쿠션 2종 (생일/집들이/인테리어/응원/귀여운/유쾌한)",
-          "brand": "가나디",
-          "character_ip": "가나디",
-          "price": "23,000원"
         }
       ],
       "momentum": {
         "comparison": {
           "status": "available",
           "period_days": 7,
-          "current_start_date": "20261103",
-          "current_end_date": "20261109",
-          "start_date": "20261027",
-          "end_date": "20261102",
+          "current_start_date": "20261104",
+          "current_end_date": "20261110",
+          "start_date": "20261028",
+          "end_date": "20261103",
           "current_observed_days": 7,
           "observed_days": 7,
           "minimum_observed_days": 4,
@@ -2096,18 +1992,18 @@
           "growth_threshold_percent": 10,
           "score_method": "카테고리별 공통 수집 범위 N에서 (N+1-순위)를 합산하고 해당 카테고리 수집일 수로 나눈 뒤 합계",
           "score_unit": "수집일당 평균 순위 가중 점수",
-          "note": "최근 7일 (20261103~20261109, 수집 7일) / 직전 7일 (20261027~20261102, 수집 7일). 카테고리별 공통 수집 범위·수집일당 평균으로 비교 · ±10% 기준 · 매출 성장률 아님."
+          "note": "최근 7일 (20261104~20261110, 수집 7일) / 직전 7일 (20261028~20261103, 수집 7일). 카테고리별 공통 수집 범위·수집일당 평균으로 비교 · ±10% 기준 · 매출 성장률 아님."
         },
         "rising_ips": [
           {
             "ip_name": "산리오(기타/통합)",
             "momentum_type": "RISING",
             "momentum_badge": "상승",
-            "curr_score": 48.7,
-            "prev_score": 21.9,
-            "score_delta": 26.9,
-            "growth_rate": "+122.9%",
-            "count": 16,
+            "curr_score": 55.7,
+            "prev_score": 20.4,
+            "score_delta": 35.3,
+            "growth_rate": "+172.7%",
+            "count": 18,
             "prev_count": 8,
             "appearance_days": 7,
             "prev_appearance_days": 7,
@@ -2126,7 +2022,7 @@
               {
                 "product_id": "12193401",
                 "best_rank": 24,
-                "appearance_days": 4,
+                "appearance_days": 5,
                 "product_name": "네편이 될게요 [+아몬드 빼빼로 증정] 산리오캐릭터즈 통통바디필로우 롱쿠션 롱베개 롱필로우 테디베어 2종 중 택1",
                 "brand": "캐릭터침구",
                 "price": "30,500원"
@@ -2145,15 +2041,15 @@
             "ip_name": "카카오프렌즈(춘식이)",
             "momentum_type": "RISING",
             "momentum_badge": "상승",
-            "curr_score": 64.6,
-            "prev_score": 38.1,
-            "score_delta": 26.4,
-            "growth_rate": "+69.3%",
-            "count": 26,
-            "prev_count": 13,
+            "curr_score": 66.7,
+            "prev_score": 41.7,
+            "score_delta": 25.0,
+            "growth_rate": "+59.9%",
+            "count": 28,
+            "prev_count": 14,
             "appearance_days": 7,
             "prev_appearance_days": 7,
-            "unique_products_count": 7,
+            "unique_products_count": 6,
             "top10_count": 3,
             "evidence_period": "current",
             "evidence_products": [
@@ -2168,18 +2064,18 @@
               {
                 "product_id": "11117749",
                 "best_rank": 7,
-                "appearance_days": 6,
+                "appearance_days": 7,
                 "product_name": "생일자취집들이 [단독] \"100cm 빅사이즈\" New 춘식이 대형 롱 바디필로우 인형 쿠션 모찌 베개 생일 친구 집들이 이사 자취 선물",
                 "brand": "프렌즈리빙LC",
                 "price": "35,510원"
               },
               {
-                "product_id": "7025298",
-                "best_rank": 22,
-                "appearance_days": 6,
-                "product_name": "BEST [단독] \"메가급 귀여움\" 대형 바디필로우_춘식이/리틀라이언/리틀어피치",
-                "brand": "프렌즈인형/피규어",
-                "price": "29,900원"
+                "product_id": "7280480",
+                "best_rank": 27,
+                "appearance_days": 5,
+                "product_name": "낮잠자도 팔안저려 [빼빼로데이] 낮잠 필수템 말랑쫀득 춘식이 꿀잠 팔쿠션",
+                "brand": "프렌즈리빙LC",
+                "price": "9,900원"
               }
             ]
           },
@@ -2187,12 +2083,12 @@
             "ip_name": "산리오(헬로키티)",
             "momentum_type": "RISING",
             "momentum_badge": "상승",
-            "curr_score": 38.4,
+            "curr_score": 39.1,
             "prev_score": 25.1,
-            "score_delta": 13.3,
-            "growth_rate": "+52.8%",
-            "count": 11,
-            "prev_count": 10,
+            "score_delta": 14.0,
+            "growth_rate": "+55.7%",
+            "count": 10,
+            "prev_count": 11,
             "appearance_days": 7,
             "prev_appearance_days": 7,
             "unique_products_count": 2,
@@ -2210,7 +2106,7 @@
               {
                 "product_id": "9191293",
                 "best_rank": 37,
-                "appearance_days": 4,
+                "appearance_days": 3,
                 "product_name": "[집들이 선물,출산 선물,귀여운 선물]헬로키티 바디필로우 모찌촉감 베개,쿠션",
                 "brand": "데이니즈",
                 "price": "39,000원"
@@ -2221,10 +2117,10 @@
             "ip_name": "잔망루피",
             "momentum_type": "RISING",
             "momentum_badge": "상승",
-            "curr_score": 24.6,
-            "prev_score": 17.4,
-            "score_delta": 7.1,
-            "growth_rate": "+41.0%",
+            "curr_score": 25.7,
+            "prev_score": 15.7,
+            "score_delta": 10.0,
+            "growth_rate": "+63.6%",
             "count": 7,
             "prev_count": 7,
             "appearance_days": 7,
@@ -2275,13 +2171,13 @@
             "ip_name": "산리오(폼폼푸린)",
             "momentum_type": "NEW_ENTRY",
             "momentum_badge": "관측상 신규",
-            "curr_score": 0.4,
+            "curr_score": 1.7,
             "prev_score": 0,
-            "score_delta": 0.4,
+            "score_delta": 1.7,
             "growth_rate": "관측상 신규",
-            "count": 1,
+            "count": 2,
             "prev_count": 0,
-            "appearance_days": 1,
+            "appearance_days": 2,
             "prev_appearance_days": 0,
             "unique_products_count": 1,
             "top10_count": 0,
@@ -2289,8 +2185,8 @@
             "evidence_products": [
               {
                 "product_id": "13869949",
-                "best_rank": 48,
-                "appearance_days": 1,
+                "best_rank": 42,
+                "appearance_days": 2,
                 "product_name": "생일/기념일선물 [+아몬드 빼빼로 증정] 산리오 폼폼푸린 힐링쿠션 슬리핑",
                 "brand": "캐릭터침구",
                 "price": "31,500원"
@@ -2303,11 +2199,11 @@
             "ip_name": "먼작귀/치이카와",
             "momentum_type": "STABLE",
             "momentum_badge": "안정적 강세",
-            "curr_score": 325.1,
-            "prev_score": 320.7,
-            "score_delta": 4.4,
-            "growth_rate": "+1.4%",
-            "count": 59,
+            "curr_score": 322.9,
+            "prev_score": 315.9,
+            "score_delta": 7.0,
+            "growth_rate": "+2.2%",
+            "count": 58,
             "prev_count": 61,
             "appearance_days": 7,
             "prev_appearance_days": 7,
@@ -2340,17 +2236,19 @@
                 "price": "27,900원"
               }
             ]
-          },
+          }
+        ],
+        "falling_ips": [
           {
             "ip_name": "가나디",
-            "momentum_type": "STABLE",
-            "momentum_badge": "안정적 강세",
-            "curr_score": 163.3,
-            "prev_score": 180.1,
-            "score_delta": -16.9,
-            "growth_rate": "-9.4%",
-            "count": 39,
-            "prev_count": 38,
+            "momentum_type": "FALLING",
+            "momentum_badge": "하락",
+            "curr_score": 158.4,
+            "prev_score": 188.4,
+            "score_delta": -30.0,
+            "growth_rate": "-15.9%",
+            "count": 38,
+            "prev_count": 40,
             "appearance_days": 7,
             "prev_appearance_days": 7,
             "unique_products_count": 7,
@@ -2384,54 +2282,18 @@
             ]
           },
           {
-            "ip_name": "카카오프렌즈(라이언)",
-            "momentum_type": "STABLE",
-            "momentum_badge": "안정적 강세",
-            "curr_score": 12.0,
-            "prev_score": 12.7,
-            "score_delta": -0.7,
-            "growth_rate": "-5.6%",
-            "count": 8,
-            "prev_count": 6,
-            "appearance_days": 7,
-            "prev_appearance_days": 6,
-            "unique_products_count": 2,
-            "top10_count": 0,
-            "evidence_period": "current",
-            "evidence_products": [
-              {
-                "product_id": "7025298",
-                "best_rank": 22,
-                "appearance_days": 6,
-                "product_name": "BEST [단독] \"메가급 귀여움\" 대형 바디필로우_춘식이/리틀라이언/리틀어피치",
-                "brand": "프렌즈인형/피규어",
-                "price": "29,900원"
-              },
-              {
-                "product_id": "12459270",
-                "best_rank": 45,
-                "appearance_days": 2,
-                "product_name": "\"롱롱 귀여운 라춘\" 롱롱필로우_라이언/춘식이",
-                "brand": "프렌즈인형/피규어",
-                "price": "35,000원"
-              }
-            ]
-          }
-        ],
-        "falling_ips": [
-          {
             "ip_name": "리락쿠마",
             "momentum_type": "FALLING",
             "momentum_badge": "하락",
-            "curr_score": 23.3,
-            "prev_score": 35.0,
-            "score_delta": -11.7,
-            "growth_rate": "-33.5%",
+            "curr_score": 23.1,
+            "prev_score": 33.3,
+            "score_delta": -10.1,
+            "growth_rate": "-30.5%",
             "count": 12,
             "prev_count": 15,
             "appearance_days": 6,
             "prev_appearance_days": 7,
-            "unique_products_count": 5,
+            "unique_products_count": 6,
             "top10_count": 0,
             "evidence_period": "current",
             "evidence_products": [
@@ -2452,12 +2314,12 @@
                 "price": "15,900원"
               },
               {
-                "product_id": "13808817",
-                "best_rank": 42,
-                "appearance_days": 3,
-                "product_name": "생일/기념일선물추천 리락쿠마반달대쿠션 4종옵션 택1 알러지케어원단 캐릭터 침구 기념일 선물",
+                "product_id": "14449220",
+                "best_rank": 32,
+                "appearance_days": 1,
+                "product_name": "\"생일/집들이선물\" 리락쿠마 핑크애플담요 150x100cm S사이즈 보들보들 따뜻한 밍크 극세사 무릎담요 포근한 겨울 보온 소프트 블랭킷",
                 "brand": "캐릭터침구",
-                "price": "29,900원"
+                "price": "22,900원"
               }
             ]
           },
@@ -2465,10 +2327,10 @@
             "ip_name": "카카오프렌즈(어피치)",
             "momentum_type": "FALLING",
             "momentum_badge": "하락",
-            "curr_score": 10.4,
-            "prev_score": 12.7,
-            "score_delta": -2.3,
-            "growth_rate": "-18.0%",
+            "curr_score": 7.1,
+            "prev_score": 14.4,
+            "score_delta": -7.3,
+            "growth_rate": "-50.5%",
             "count": 6,
             "prev_count": 6,
             "appearance_days": 6,
@@ -2479,7 +2341,41 @@
             "evidence_products": [
               {
                 "product_id": "7025298",
-                "best_rank": 22,
+                "best_rank": 36,
+                "appearance_days": 6,
+                "product_name": "BEST [단독] \"메가급 귀여움\" 대형 바디필로우_춘식이/리틀라이언/리틀어피치",
+                "brand": "프렌즈인형/피규어",
+                "price": "29,900원"
+              }
+            ]
+          },
+          {
+            "ip_name": "카카오프렌즈(라이언)",
+            "momentum_type": "FALLING",
+            "momentum_badge": "하락",
+            "curr_score": 12.0,
+            "prev_score": 14.4,
+            "score_delta": -2.4,
+            "growth_rate": "-16.8%",
+            "count": 9,
+            "prev_count": 6,
+            "appearance_days": 7,
+            "prev_appearance_days": 6,
+            "unique_products_count": 2,
+            "top10_count": 0,
+            "evidence_period": "current",
+            "evidence_products": [
+              {
+                "product_id": "12459270",
+                "best_rank": 28,
+                "appearance_days": 3,
+                "product_name": "\"롱롱 귀여운 라춘\" 롱롱필로우_라이언/춘식이",
+                "brand": "프렌즈인형/피규어",
+                "price": "35,000원"
+              },
+              {
+                "product_id": "7025298",
+                "best_rank": 36,
                 "appearance_days": 6,
                 "product_name": "BEST [단독] \"메가급 귀여움\" 대형 바디필로우_춘식이/리틀라이언/리틀어피치",
                 "brand": "프렌즈인형/피규어",
@@ -2552,8 +2448,8 @@
         },
         {
           "ip_name": "산리오(헬로키티)",
-          "count": 10,
-          "share": "2.9%"
+          "count": 11,
+          "share": "3.1%"
         },
         {
           "ip_name": "가나디",
@@ -2567,8 +2463,8 @@
         },
         {
           "ip_name": "메이플스토리",
-          "count": 3,
-          "share": "0.9%"
+          "count": 2,
+          "share": "0.6%"
         },
         {
           "ip_name": "미피",
@@ -2576,12 +2472,17 @@
           "share": "0.6%"
         },
         {
-          "ip_name": "산리오(한교동)",
-          "count": 2,
-          "share": "0.6%"
+          "ip_name": "라인프렌즈/BT21",
+          "count": 1,
+          "share": "0.3%"
         },
         {
-          "ip_name": "라인프렌즈/BT21",
+          "ip_name": "먼작귀/치이카와",
+          "count": 1,
+          "share": "0.3%"
+        },
+        {
+          "ip_name": "산리오(한교동)",
           "count": 1,
           "share": "0.3%"
         }
@@ -2613,7 +2514,7 @@
         },
         {
           "product_id": "10626781",
-          "appearance_days": 3,
+          "appearance_days": 4,
           "product_name": "자취/집들이선물 [보퀴진] 산리오 헬로키티 빈티지 1인식기 머그컵 집들이 홈카페 세트",
           "brand": "보퀴진",
           "character_ip": "산리오(헬로키티), 산리오(기타/통합)",
@@ -2621,7 +2522,7 @@
         },
         {
           "product_id": "10876183",
-          "appearance_days": 3,
+          "appearance_days": 2,
           "product_name": "기념일/생일/집들이 [선물포장] 시라쿠스 메이플 머그 2P 세트 (색상 교차선택 가능)",
           "brand": "시라쿠스",
           "character_ip": "메이플스토리",
@@ -2632,10 +2533,10 @@
         "comparison": {
           "status": "available",
           "period_days": 7,
-          "current_start_date": "20261103",
-          "current_end_date": "20261109",
-          "start_date": "20261027",
-          "end_date": "20261102",
+          "current_start_date": "20261104",
+          "current_end_date": "20261110",
+          "start_date": "20261028",
+          "end_date": "20261103",
           "current_observed_days": 7,
           "observed_days": 7,
           "minimum_observed_days": 4,
@@ -2653,17 +2554,51 @@
           "growth_threshold_percent": 10,
           "score_method": "카테고리별 공통 수집 범위 N에서 (N+1-순위)를 합산하고 해당 카테고리 수집일 수로 나눈 뒤 합계",
           "score_unit": "수집일당 평균 순위 가중 점수",
-          "note": "최근 7일 (20261103~20261109, 수집 7일) / 직전 7일 (20261027~20261102, 수집 7일). 카테고리별 공통 수집 범위·수집일당 평균으로 비교 · ±10% 기준 · 매출 성장률 아님."
+          "note": "최근 7일 (20261104~20261110, 수집 7일) / 직전 7일 (20261028~20261103, 수집 7일). 카테고리별 공통 수집 범위·수집일당 평균으로 비교 · ±10% 기준 · 매출 성장률 아님."
         },
         "rising_ips": [
+          {
+            "ip_name": "산리오(헬로키티)",
+            "momentum_type": "RISING",
+            "momentum_badge": "상승",
+            "curr_score": 54.0,
+            "prev_score": 47.1,
+            "score_delta": 6.9,
+            "growth_rate": "+14.5%",
+            "count": 11,
+            "prev_count": 8,
+            "appearance_days": 7,
+            "prev_appearance_days": 7,
+            "unique_products_count": 2,
+            "top10_count": 7,
+            "evidence_period": "current",
+            "evidence_products": [
+              {
+                "product_id": "14385553",
+                "best_rank": 1,
+                "appearance_days": 7,
+                "product_name": "[단독] 레고트 X 헬로키티 루프 텀블러 핸디 700ml (웰니스,리차지)",
+                "brand": "레고트",
+                "price": "39,000원"
+              },
+              {
+                "product_id": "10626781",
+                "best_rank": 39,
+                "appearance_days": 4,
+                "product_name": "자취/집들이선물 [보퀴진] 산리오 헬로키티 빈티지 1인식기 머그컵 집들이 홈카페 세트",
+                "brand": "보퀴진",
+                "price": "23,900원"
+              }
+            ]
+          },
           {
             "ip_name": "가나디",
             "momentum_type": "RISING",
             "momentum_badge": "상승",
-            "curr_score": 38.1,
-            "prev_score": 31.9,
-            "score_delta": 6.3,
-            "growth_rate": "+19.7%",
+            "curr_score": 37.3,
+            "prev_score": 33.7,
+            "score_delta": 3.6,
+            "growth_rate": "+10.6%",
             "count": 8,
             "prev_count": 10,
             "appearance_days": 7,
@@ -2687,32 +2622,6 @@
                 "product_name": "가나디 페이스 머그 (자취/생일/홈카페/집들이/응원선물)",
                 "brand": "캐릭터주방",
                 "price": "16,800원"
-              }
-            ]
-          },
-          {
-            "ip_name": "메이플스토리",
-            "momentum_type": "RISING",
-            "momentum_badge": "상승",
-            "curr_score": 3.4,
-            "prev_score": 1.6,
-            "score_delta": 1.9,
-            "growth_rate": "+118.2%",
-            "count": 3,
-            "prev_count": 1,
-            "appearance_days": 3,
-            "prev_appearance_days": 1,
-            "unique_products_count": 1,
-            "top10_count": 0,
-            "evidence_period": "current",
-            "evidence_products": [
-              {
-                "product_id": "10876183",
-                "best_rank": 40,
-                "appearance_days": 3,
-                "product_name": "기념일/생일/집들이 [선물포장] 시라쿠스 메이플 머그 2P 세트 (색상 교차선택 가능)",
-                "brand": "시라쿠스",
-                "price": "17,280원"
               }
             ]
           },
@@ -2776,10 +2685,10 @@
             "ip_name": "리락쿠마",
             "momentum_type": "STABLE",
             "momentum_badge": "안정적 강세",
-            "curr_score": 53.1,
-            "prev_score": 48.7,
-            "score_delta": 4.4,
-            "growth_rate": "+9.1%",
+            "curr_score": 53.0,
+            "prev_score": 49.1,
+            "score_delta": 3.9,
+            "growth_rate": "+7.8%",
             "count": 12,
             "prev_count": 8,
             "appearance_days": 7,
@@ -2815,117 +2724,13 @@
             ]
           },
           {
-            "ip_name": "산리오(헬로키티)",
+            "ip_name": "산리오(기타/통합)",
             "momentum_type": "STABLE",
             "momentum_badge": "안정적 강세",
-            "curr_score": 52.4,
-            "prev_score": 47.9,
-            "score_delta": 4.6,
-            "growth_rate": "+9.6%",
-            "count": 10,
-            "prev_count": 9,
-            "appearance_days": 7,
-            "prev_appearance_days": 7,
-            "unique_products_count": 2,
-            "top10_count": 7,
-            "evidence_period": "current",
-            "evidence_products": [
-              {
-                "product_id": "14385553",
-                "best_rank": 1,
-                "appearance_days": 7,
-                "product_name": "[단독] 레고트 X 헬로키티 루프 텀블러 핸디 700ml (웰니스,리차지)",
-                "brand": "레고트",
-                "price": "39,000원"
-              },
-              {
-                "product_id": "10626781",
-                "best_rank": 39,
-                "appearance_days": 3,
-                "product_name": "자취/집들이선물 [보퀴진] 산리오 헬로키티 빈티지 1인식기 머그컵 집들이 홈카페 세트",
-                "brand": "보퀴진",
-                "price": "23,900원"
-              }
-            ]
-          }
-        ],
-        "falling_ips": [
-          {
-            "ip_name": "먼작귀/치이카와",
-            "momentum_type": "FALLING",
-            "momentum_badge": "하락",
-            "curr_score": 0,
-            "prev_score": 26.4,
-            "score_delta": -26.4,
-            "growth_rate": "-100.0%",
-            "count": 0,
-            "prev_count": 10,
-            "appearance_days": 0,
-            "prev_appearance_days": 6,
-            "unique_products_count": 0,
-            "top10_count": 0,
-            "evidence_period": "previous",
-            "evidence_products": [
-              {
-                "product_id": "14401414",
-                "best_rank": 11,
-                "appearance_days": 3,
-                "product_name": "릴팡 먼작귀 포코 혼밥 세트 (원형접시19cm+소스볼+핸들머그380ml) , 1,234",
-                "brand": "릴팡 캐릭터",
-                "price": "38,000원"
-              },
-              {
-                "product_id": "12014190",
-                "best_rank": 17,
-                "appearance_days": 5,
-                "product_name": "댕귀욥 릴팡 먼작귀 이지스텍 라면기 , 3,517",
-                "brand": "릴팡 캐릭터",
-                "price": "14,000원"
-              },
-              {
-                "product_id": "12277720",
-                "best_rank": 38,
-                "appearance_days": 1,
-                "product_name": "릴팡 먼작귀 블링 투명점보컵 / MZ8469",
-                "brand": "릴팡 캐릭터",
-                "price": "6,900원"
-              }
-            ]
-          },
-          {
-            "ip_name": "산리오(한교동)",
-            "momentum_type": "FALLING",
-            "momentum_badge": "하락",
-            "curr_score": 0.3,
-            "prev_score": 3.9,
-            "score_delta": -3.6,
-            "growth_rate": "-92.6%",
-            "count": 2,
-            "prev_count": 4,
-            "appearance_days": 2,
-            "prev_appearance_days": 4,
-            "unique_products_count": 1,
-            "top10_count": 0,
-            "evidence_period": "current",
-            "evidence_products": [
-              {
-                "product_id": "12455527",
-                "best_rank": 50,
-                "appearance_days": 2,
-                "product_name": "선물은 정품이지 산리오 한교동 도자기 시리얼볼 요거트볼 예쁜 그릇 컵 자취 생일 교동이 집들이 행운 직장동료 가벼운 홈카페 밥그릇",
-                "brand": "알럽하우스",
-                "price": "14,800원"
-              }
-            ]
-          },
-          {
-            "ip_name": "산리오(기타/통합)",
-            "momentum_type": "FALLING",
-            "momentum_badge": "하락",
-            "curr_score": 3.1,
-            "prev_score": 5.1,
-            "score_delta": -2.0,
-            "growth_rate": "-38.9%",
+            "curr_score": 4.6,
+            "prev_score": 4.7,
+            "score_delta": -0.1,
+            "growth_rate": "-3.0%",
             "count": 5,
             "prev_count": 6,
             "appearance_days": 5,
@@ -2937,7 +2742,7 @@
               {
                 "product_id": "10626781",
                 "best_rank": 39,
-                "appearance_days": 3,
+                "appearance_days": 4,
                 "product_name": "자취/집들이선물 [보퀴진] 산리오 헬로키티 빈티지 1인식기 머그컵 집들이 홈카페 세트",
                 "brand": "보퀴진",
                 "price": "23,900원"
@@ -2945,10 +2750,90 @@
               {
                 "product_id": "12455527",
                 "best_rank": 50,
-                "appearance_days": 2,
+                "appearance_days": 1,
                 "product_name": "선물은 정품이지 산리오 한교동 도자기 시리얼볼 요거트볼 예쁜 그릇 컵 자취 생일 교동이 집들이 행운 직장동료 가벼운 홈카페 밥그릇",
                 "brand": "알럽하우스",
                 "price": "14,800원"
+              }
+            ]
+          }
+        ],
+        "falling_ips": [
+          {
+            "ip_name": "먼작귀/치이카와",
+            "momentum_type": "FALLING",
+            "momentum_badge": "하락",
+            "curr_score": 0.4,
+            "prev_score": 22.4,
+            "score_delta": -22.0,
+            "growth_rate": "-98.1%",
+            "count": 1,
+            "prev_count": 9,
+            "appearance_days": 1,
+            "prev_appearance_days": 5,
+            "unique_products_count": 1,
+            "top10_count": 0,
+            "evidence_period": "current",
+            "evidence_products": [
+              {
+                "product_id": "11520497",
+                "best_rank": 48,
+                "appearance_days": 1,
+                "product_name": "귀여운 선물추천 [먼작귀] 치이카와 스테인리스 텀블러 350ML (보온 보냉 이중 진공)(치이카와, 우사기, 하치와레)",
+                "brand": "먼작귀(팬시)",
+                "price": "18,500원"
+              }
+            ]
+          },
+          {
+            "ip_name": "산리오(한교동)",
+            "momentum_type": "FALLING",
+            "momentum_badge": "하락",
+            "curr_score": 0.1,
+            "prev_score": 4.0,
+            "score_delta": -3.9,
+            "growth_rate": "-96.4%",
+            "count": 1,
+            "prev_count": 5,
+            "appearance_days": 1,
+            "prev_appearance_days": 5,
+            "unique_products_count": 1,
+            "top10_count": 0,
+            "evidence_period": "current",
+            "evidence_products": [
+              {
+                "product_id": "12455527",
+                "best_rank": 50,
+                "appearance_days": 1,
+                "product_name": "선물은 정품이지 산리오 한교동 도자기 시리얼볼 요거트볼 예쁜 그릇 컵 자취 생일 교동이 집들이 행운 직장동료 가벼운 홈카페 밥그릇",
+                "brand": "알럽하우스",
+                "price": "14,800원"
+              }
+            ]
+          },
+          {
+            "ip_name": "메이플스토리",
+            "momentum_type": "FALLING",
+            "momentum_badge": "하락",
+            "curr_score": 1.9,
+            "prev_score": 3.1,
+            "score_delta": -1.3,
+            "growth_rate": "-40.9%",
+            "count": 2,
+            "prev_count": 2,
+            "appearance_days": 2,
+            "prev_appearance_days": 2,
+            "unique_products_count": 1,
+            "top10_count": 0,
+            "evidence_period": "current",
+            "evidence_products": [
+              {
+                "product_id": "10876183",
+                "best_rank": 44,
+                "appearance_days": 2,
+                "product_name": "기념일/생일/집들이 [선물포장] 시라쿠스 메이플 머그 2P 세트 (색상 교차선택 가능)",
+                "brand": "시라쿠스",
+                "price": "17,280원"
               }
             ]
           }
