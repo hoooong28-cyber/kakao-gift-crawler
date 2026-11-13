@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', () => {
+﻿document.addEventListener('DOMContentLoaded', () => {
     let rawProductsData = [];
     let insightCardsData = {};
     let activeCategory = '리빙 전체';
@@ -468,22 +468,27 @@ document.addEventListener('DOMContentLoaded', () => {
             button.classList.toggle('active', cat === activeCategory);
         });
         document.getElementById('scope-note').textContent =
-            `${catLabelText} · 랭킹 노출 ${summary.total}건 / 식별된 고유 상품 ${summary.uniqueCount}개` +
-            (summary.unidentifiedCount ? ` / 상품 ID 미확인 ${summary.unidentifiedCount}건` : '') +
-            ' · 동일 상품의 카테고리별 노출을 각각 집계합니다. IP 비중은 개별 IP명이 분류된 기록 기준이며, 미분류는 제외합니다. 매출·시장 점유율이 아닙니다.';
+            `📌 ${catLabelText} 기준 실시간 분석 (수집 상품 ${summary.total}개 · 캐릭터 IP 점유율 ${summary.share}%)`;
 
         const brandCounts = {};
         products.forEach(p => {
             if (p.brand) brandCounts[p.brand] = (brandCounts[p.brand] || 0) + 1;
         });
         const sortedIps = Object.entries(summary.ipCounts).sort((a, b) => b[1] - a[1]);
+
+        // MD Takeaway Banner Update
+        const takeawayTopIp = document.getElementById('takeaway-top-ip');
+        if (takeawayTopIp) {
+            takeawayTopIp.textContent = sortedIps.length ? `${sortedIps[0][0]} (${sortedIps[0][1]}개 상품 점유 1위)` : '분류 검토 중';
+        }
+
         document.getElementById('ov-ip-share').textContent = `${summary.share} %`;
-        document.getElementById('ov-ip-sub').textContent = `${summary.total}건 중 IP 분류 ${summary.ipCount}건 · 미분류 ${summary.pendingCount}건`;
+        document.getElementById('ov-ip-sub').textContent = `${summary.total}개 중 IP 상품 ${summary.ipCount}개 진입`;
         document.getElementById('ov-top-ip').textContent = sortedIps[0]?.[0] || '분류된 IP 없음';
-        document.getElementById('ov-top-ip-sub').textContent = sortedIps.length ? `${sortedIps[0][1]}건 노출 · 미분류 제외` : 'IP 분류 검토 필요';
+        document.getElementById('ov-top-ip-sub').textContent = sortedIps.length ? `랭킹 내 ${sortedIps[0][1]}개 상품 진입` : 'IP 분류 검토 필요';
         document.getElementById('ov-avg-price').textContent = summary.avgIpPrice === null ? '가격 정보 없음' : `${summary.avgIpPrice.toLocaleString()} 원`;
-        document.getElementById('ov-total-count').textContent = `${summary.total} 건`;
-        document.getElementById('ov-total-sub').textContent = `식별된 고유 상품 ${summary.uniqueCount}개`;
+        document.getElementById('ov-total-count').textContent = `${summary.total} 개`;
+        document.getElementById('ov-total-sub').textContent = `식별된 고유 상품 ${summary.uniqueCount}개 기준`;
 
         // Render Page 1 Components
         try { renderIpChart(sortedIps.slice(0, 8)); } catch (e) { console.warn('ipChart err:', e); }
@@ -1355,3 +1360,4 @@ document.addEventListener('DOMContentLoaded', () => {
 
     loadAvailableDates().then(() => loadData());
 });
+

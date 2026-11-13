@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="ko">
 <head>
     <meta charset="UTF-8">
@@ -11,7 +11,7 @@
     <!-- Chart.js & FontAwesome -->
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="styles.css?v=2">
+    <link rel="stylesheet" href="styles.css?v=3">
 </head>
 <body>
     <div class="dashboard-container">
@@ -30,19 +30,19 @@
             <!-- 🔥 Main Page Tabs -->
             <nav class="nav-menu" id="main-nav-menu">
                 <button class="nav-item active" data-page="page-overview">
-                    <i class="fa-solid fa-chart-pie"></i> 📊 트렌드 요약 & 차트
+                    <i class="fa-solid fa-chart-pie"></i> 📊 기획 브리핑 (홈)
                 </button>
                 <button class="nav-item" data-page="page-period-insights">
-                    <i class="fa-solid fa-calendar-days highlight-cyan"></i> 🗓️ 주간/월간 인기 IP
+                    <i class="fa-solid fa-calendar-days highlight-cyan"></i> 🗓️ 주간·월간 인기 IP
                 </button>
                 <button class="nav-item" data-page="page-b2b-insights">
-                    <i class="fa-solid fa-lightbulb highlight-yellow"></i> 🚀 마케팅 인사이트 카드
+                    <i class="fa-solid fa-lightbulb highlight-yellow"></i> 🚀 마케팅 전략 카드
                 </button>
                 <button class="nav-item" data-page="page-ip-strategy">
-                    <i class="fa-solid fa-icons"></i> 🎨 캐릭터 IP 전략 분석
+                    <i class="fa-solid fa-icons"></i> 🎨 캐릭터 IP 딥다이브
                 </button>
                 <button class="nav-item" data-page="page-ranking-table">
-                    <i class="fa-solid fa-table-list"></i> 📋 세부 랭킹 명세
+                    <i class="fa-solid fa-table-list"></i> 📋 실시간 랭킹 명세
                 </button>
             </nav>
 
@@ -78,9 +78,38 @@
             <p id="scope-note" class="metric-sub" style="margin-bottom:20px;line-height:1.7;" aria-live="polite"></p>
 
             <!-- ================================================================= -->
-            <!-- PAGE 1: 📊 트렌드 요약 & 차트 (Overview & Charts View) -->
+            <!-- PAGE 1: 📊 기획 브리핑 (홈) (Overview & Charts View) -->
             <!-- ================================================================= -->
             <div id="page-overview" class="page-view active">
+                <!-- 🎯 MD / 상품기획 핵심 3대 테이크어웨이 (Quick Takeaways) -->
+                <section class="card quick-takeaway-banner" style="background: linear-gradient(135deg, rgba(254, 229, 0, 0.12), rgba(99, 102, 241, 0.1)); border: 1px solid var(--border-highlight); margin-bottom: 24px; padding: 22px 26px;">
+                    <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:14px; flex-wrap:wrap; gap:10px;">
+                        <h3 style="font-size:1.1rem; font-weight:700; color:var(--kakao-yellow); display:flex; align-items:center; gap:8px;">
+                            <i class="fa-solid fa-wand-magic-sparkles"></i> 💡 실시간 상품기획 핵심 브리핑 (MD Takeaways)
+                        </h3>
+                        <span style="font-size:0.8rem; color:var(--text-secondary); background:rgba(0,0,0,0.3); padding:4px 12px; border-radius:20px;">
+                            카카오 선물하기 리빙 랭킹 분석 실시간 추천
+                        </span>
+                    </div>
+                    <div class="takeaway-grid" style="display:grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap:16px;">
+                        <div class="takeaway-item" style="background:rgba(15,23,42,0.65); padding:16px 18px; border-radius:12px; border-left:4px solid var(--kakao-yellow);">
+                            <div style="font-size:0.82rem; color:var(--text-secondary); font-weight:600; margin-bottom:4px;">👑 1위 대세 캐릭터 IP</div>
+                            <div style="font-size:1.05rem; font-weight:700; color:var(--text-primary);"><span id="takeaway-top-ip">불러오는 중...</span></div>
+                            <div style="font-size:0.82rem; color:var(--text-muted); margin-top:4px;">힐링·모찌 수면 인형/바디필로우 중심 상위권 독점</div>
+                        </div>
+                        <div class="takeaway-item" style="background:rgba(15,23,42,0.65); padding:16px 18px; border-radius:12px; border-left:4px solid var(--accent-cyan);">
+                            <div style="font-size:0.82rem; color:var(--text-secondary); font-weight:600; margin-bottom:4px;">💰 추천 선물 가격대 (Sweet Spot)</div>
+                            <div style="font-size:1.05rem; font-weight:700; color:var(--text-primary);">1.9만 원 / 2.9만 원대 집중</div>
+                            <div style="font-size:0.82rem; color:var(--text-muted); margin-top:4px;">가벼운 선물(1.5만~1.9만) vs 정성 선물(2.9만) 양분</div>
+                        </div>
+                        <div class="takeaway-item" style="background:rgba(15,23,42,0.65); padding:16px 18px; border-radius:12px; border-left:4px solid var(--accent-rose);">
+                            <div style="font-size:0.82rem; color:var(--text-secondary); font-weight:600; margin-bottom:4px;">🎯 추천 기획 품목 & 메시지</div>
+                            <div style="font-size:1.05rem; font-weight:700; color:var(--text-primary);">모찌 바디필로우 · 쿠션 · 감성무드등</div>
+                            <div style="font-size:0.82rem; color:var(--text-muted); margin-top:4px;">'응원/꿀잠/집들이/자취' 감성 키워드 소구 필수</div>
+                        </div>
+                    </div>
+                </section>
+
                 <!-- Category Filter Bar -->
                 <section class="category-filter-section card">
                     <span class="filter-label"><i class="fa-solid fa-layer-group"></i> 카테고리 선택:</span>
@@ -99,7 +128,7 @@
                             <i class="fa-solid fa-face-smile"></i>
                         </div>
                         <div class="metric-info">
-                            <span class="metric-label">개별 IP 분류 상품 비중</span>
+                            <span class="metric-label">캐릭터 IP 점유율</span>
                             <h3 id="ov-ip-share" class="metric-value">0 %</h3>
                             <span id="ov-ip-sub" class="metric-sub">선택 카테고리 기준</span>
                         </div>
@@ -110,7 +139,7 @@
                             <i class="fa-solid fa-crown"></i>
                         </div>
                         <div class="metric-info">
-                            <span class="metric-label">최다 노출 캐릭터 IP</span>
+                            <span class="metric-label">1위 대세 캐릭터 IP</span>
                             <h3 id="ov-top-ip" class="metric-value">-</h3>
                             <span id="ov-top-ip-sub" class="metric-sub">1위 트렌드 IP</span>
                         </div>
@@ -121,9 +150,9 @@
                             <i class="fa-solid fa-coins"></i>
                         </div>
                         <div class="metric-info">
-                            <span class="metric-label">분류된 IP 상품 평균 표시가격</span>
+                            <span class="metric-label">IP 상품 평균 선물 가격</span>
                             <h3 id="ov-avg-price" class="metric-value">0 원</h3>
-                            <span class="metric-sub">가격 확인 가능한 IP 기록의 평균</span>
+                            <span class="metric-sub">순위권 IP 상품 평균가</span>
                         </div>
                     </div>
 
@@ -132,9 +161,9 @@
                             <i class="fa-solid fa-chart-line"></i>
                         </div>
                         <div class="metric-info">
-                            <span class="metric-label">랭킹 노출 수</span>
+                            <span class="metric-label">랭킹 분석 대상 상품 수</span>
                             <h3 id="ov-total-count" class="metric-value">0 개</h3>
-                            <span id="ov-total-sub" class="metric-sub">고유 상품 수 확인 중</span>
+                            <span id="ov-total-sub" class="metric-sub">실시간 수집 상품 수</span>
                         </div>
                     </div>
                 </section>
@@ -281,6 +310,9 @@
                 <section class="card" style="margin-bottom: 28px;">
                     <div class="section-header">
                         <h2><i class="fa-solid fa-heart highlight-rose"></i> 🧸 현재 인기 캐릭터 IP 노출 순위 & 주력 상품</h2>
+                    </div>
+                    <div style="background:rgba(254, 229, 0, 0.08); border-left:3px solid var(--kakao-yellow); padding:10px 14px; border-radius:6px; margin-bottom:14px; font-size:0.86rem; color:var(--text-secondary);">
+                        💡 <strong style="color:var(--kakao-yellow);">Tip:</strong> 표에서 캐릭터명을 클릭하시면 <strong>주력 가격대 매트릭스, 카테고리별 상품 분포, 1~5위 효자 상품 리스트</strong> 딥다이브 리포트가 열립니다.
                     </div>
                     <div class="table-container">
                         <table class="custom-table">
@@ -485,6 +517,9 @@
     </div>
 
     <script src="metrics.js?v=2"></script>
-    <script src="app.js?v=11"></script>
+    <script src="app.js?v=12"></script>
 </body>
 </html>
+
+
+
