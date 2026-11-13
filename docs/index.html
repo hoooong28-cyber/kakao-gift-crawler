@@ -81,31 +81,44 @@
             <!-- PAGE 1: 📊 기획 브리핑 (홈) (Overview & Charts View) -->
             <!-- ================================================================= -->
             <div id="page-overview" class="page-view active">
-                <!-- 🎯 MD / 상품기획 핵심 3대 테이크어웨이 (Quick Takeaways) -->
-                <section class="card quick-takeaway-banner" style="background: linear-gradient(135deg, rgba(254, 229, 0, 0.12), rgba(99, 102, 241, 0.1)); border: 1px solid var(--border-highlight); margin-bottom: 24px; padding: 22px 26px;">
+                <!-- 🎯 MD / 상품기획 핵심 실시간 히트 트렌드 브리핑 -->
+                <section class="card quick-takeaway-banner" style="background: linear-gradient(135deg, rgba(254, 229, 0, 0.14), rgba(99, 102, 241, 0.12)); border: 1px solid var(--border-highlight); margin-bottom: 24px; padding: 22px 26px;">
                     <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:14px; flex-wrap:wrap; gap:10px;">
-                        <h3 style="font-size:1.1rem; font-weight:700; color:var(--kakao-yellow); display:flex; align-items:center; gap:8px;">
-                            <i class="fa-solid fa-wand-magic-sparkles"></i> 💡 실시간 상품기획 핵심 브리핑 (MD Takeaways)
+                        <h3 style="font-size:1.15rem; font-weight:700; color:var(--kakao-yellow); display:flex; align-items:center; gap:8px;">
+                            <i class="fa-solid fa-fire highlight-rose"></i> 🔥 이번 주 실시간 IP 히트 트렌드 &amp; 시즌 킬러 분석
                         </h3>
-                        <span style="font-size:0.8rem; color:var(--text-secondary); background:rgba(0,0,0,0.3); padding:4px 12px; border-radius:20px;">
-                            카카오 선물하기 리빙 랭킹 분석 실시간 추천
+                        <span style="font-size:0.8rem; color:var(--text-secondary); background:rgba(0,0,0,0.35); padding:4px 12px; border-radius:20px; font-weight:500;">
+                            실제 순위 데이터 기반 실시간 기획 인사이트
                         </span>
                     </div>
                     <div class="takeaway-grid" style="display:grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap:16px;">
-                        <div class="takeaway-item" style="background:rgba(15,23,42,0.65); padding:16px 18px; border-radius:12px; border-left:4px solid var(--kakao-yellow);">
-                            <div style="font-size:0.82rem; color:var(--text-secondary); font-weight:600; margin-bottom:4px;">👑 1위 대세 캐릭터 IP</div>
-                            <div style="font-size:1.05rem; font-weight:700; color:var(--text-primary);"><span id="takeaway-top-ip">불러오는 중...</span></div>
-                            <div style="font-size:0.82rem; color:var(--text-muted); margin-top:4px;">힐링·모찌 수면 인형/바디필로우 중심 상위권 독점</div>
+                        <div class="takeaway-item" style="background:rgba(15,23,42,0.7); padding:16px 18px; border-radius:12px; border-left:4px solid var(--kakao-yellow);">
+                            <div style="font-size:0.82rem; color:var(--text-secondary); font-weight:600; margin-bottom:4px;">👑 압도적 1위 독점 IP</div>
+                            <div style="font-size:1.08rem; font-weight:800; color:var(--kakao-yellow);">먼작귀(치이카와) 전방위 장악</div>
+                            <div style="font-size:0.82rem; color:var(--text-muted); margin-top:4px; line-height:1.4;">
+                                • <strong>1위:</strong> 스트레스볼 키링 (12,000원)<br>
+                                • <strong>4위:</strong> 핸드워머 낮잠쿠션 (22,900원)<br>
+                                • <strong>6위:</strong> 꿀잠 바디필로우 (29,900원)<br>
+                                • <strong>17위:</strong> 온천 미니가습기 (35,000원)
+                            </div>
                         </div>
-                        <div class="takeaway-item" style="background:rgba(15,23,42,0.65); padding:16px 18px; border-radius:12px; border-left:4px solid var(--accent-cyan);">
-                            <div style="font-size:0.82rem; color:var(--text-secondary); font-weight:600; margin-bottom:4px;">💰 추천 선물 가격대 (Sweet Spot)</div>
-                            <div style="font-size:1.05rem; font-weight:700; color:var(--text-primary);">1.9만 원 / 2.9만 원대 집중</div>
-                            <div style="font-size:0.82rem; color:var(--text-muted); margin-top:4px;">가벼운 선물(1.5만~1.9만) vs 정성 선물(2.9만) 양분</div>
+                        <div class="takeaway-item" style="background:rgba(15,23,42,0.7); padding:16px 18px; border-radius:12px; border-left:4px solid var(--accent-cyan);">
+                            <div style="font-size:0.82rem; color:var(--text-secondary); font-weight:600; margin-bottom:4px;">⚡ 급상승 폼팩터 1위</div>
+                            <div style="font-size:1.08rem; font-weight:800; color:var(--accent-cyan);">주무르는 '스트레스볼 / 모찌 키링'</div>
+                            <div style="font-size:0.82rem; color:var(--text-muted); margin-top:4px; line-height:1.4;">
+                                • 단순 인형키링을 넘어선 <strong>손맛 스퀴시/스트레스볼</strong> 대세<br>
+                                • 먼작귀(1위), 누가사(2위), 가나디(20위) 공통 히트<br>
+                                • 가격 저항선 없는 <strong>12,000원 ~ 18,000원대</strong> 집중
+                            </div>
                         </div>
-                        <div class="takeaway-item" style="background:rgba(15,23,42,0.65); padding:16px 18px; border-radius:12px; border-left:4px solid var(--accent-rose);">
-                            <div style="font-size:0.82rem; color:var(--text-secondary); font-weight:600; margin-bottom:4px;">🎯 추천 기획 품목 & 메시지</div>
-                            <div style="font-size:1.05rem; font-weight:700; color:var(--text-primary);">모찌 바디필로우 · 쿠션 · 감성무드등</div>
-                            <div style="font-size:0.82rem; color:var(--text-muted); margin-top:4px;">'응원/꿀잠/집들이/자취' 감성 키워드 소구 필수</div>
+                        <div class="takeaway-item" style="background:rgba(15,23,42,0.7); padding:16px 18px; border-radius:12px; border-left:4px solid var(--accent-rose);">
+                            <div style="font-size:0.82rem; color:var(--text-secondary); font-weight:600; margin-bottom:4px;">❄️ 11월 시즌성 킬러 품목</div>
+                            <div style="font-size:1.08rem; font-weight:800; color:var(--accent-rose);">겨울 방한 리빙 &amp; 캘린더 진입</div>
+                            <div style="font-size:0.82rem; color:var(--text-muted); margin-top:4px; line-height:1.4;">
+                                • <strong>손난로 쿠션:</strong> 페이스 핸드워머 (22,900원)<br>
+                                • <strong>방한 패브릭:</strong> 양털 극세사 담요, 털 실내화<br>
+                                • <strong>오피스/신년:</strong> 탁상용 미니 가습기, 2027 데스크 캘린더
+                            </div>
                         </div>
                     </div>
                 </section>
@@ -517,9 +530,10 @@
     </div>
 
     <script src="metrics.js?v=2"></script>
-    <script src="app.js?v=12"></script>
+    <script src="app.js?v=13"></script>
 </body>
 </html>
+
 
 
 
