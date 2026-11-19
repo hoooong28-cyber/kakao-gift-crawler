@@ -1,4 +1,4 @@
-﻿name: Daily Kakao Gift Ranking Crawl
+name: Daily Kakao Gift Ranking Crawl
 
 on:
   push:
@@ -52,8 +52,19 @@ jobs:
       - name: 3. 대시보드 검증
         run: python verify_dashboard.py
 
-      - name: 4. Node 대시보드 테스트
-        run: node --test tests/test_dashboard_metrics.cjs tests/test_rising_stars.cjs
+      - name: 4. Node 대시보드 메트릭 테스트
+        run: |
+          node --test tests/test_dashboard_metrics.cjs 2>&1 | tee metrics.log || {
+            python -c "log = open('metrics.log', encoding='utf-8', errors='ignore').read()[-3000:]; print('::error title=DashboardMetrics::' + log.replace('\r', '').replace('\n', '%0A'))"
+            exit 1
+          }
+
+      - name: 5. Node 라이징 스타 테스트
+        run: |
+          node --test tests/test_rising_stars.cjs 2>&1 | tee rising.log || {
+            python -c "log = open('rising.log', encoding='utf-8', errors='ignore').read()[-3000:]; print('::error title=RisingStars::' + log.replace('\r', '').replace('\n', '%0A'))"
+            exit 1
+          }
 
       - name: 수집된 데이터 커밋 및 깃허브 푸시 (Push to GitHub)
         run: |
