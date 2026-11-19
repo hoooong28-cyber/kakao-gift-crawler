@@ -1,4 +1,4 @@
-name: Daily Kakao Gift Ranking Crawl
+﻿name: Daily Kakao Gift Ranking Crawl
 
 on:
   push:
@@ -80,3 +80,5 @@ jobs:
       - name: 검증한 대시보드 배포
         id: deployment
         uses: actions/deploy-pages@v4
+# trigger crawl 2026-11-19
+
