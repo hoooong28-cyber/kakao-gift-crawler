@@ -43,12 +43,17 @@ jobs:
         with:
           node-version: '22'
 
-      - name: 랭킹 크롤러 및 대시보드 파이프라인 실행
-        run: |
-          python -m unittest discover -s tests
-          python main.py --top_n 50 --living_top_n 200
-          python verify_dashboard.py
-          node --test tests/test_dashboard_metrics.cjs tests/test_rising_stars.cjs
+      - name: 1. Python 유닛 테스트
+        run: python -m unittest discover -s tests
+
+      - name: 2. 랭킹 크롤러 실행
+        run: python main.py --top_n 50 --living_top_n 200
+
+      - name: 3. 대시보드 검증
+        run: python verify_dashboard.py
+
+      - name: 4. Node 대시보드 테스트
+        run: node --test tests/test_dashboard_metrics.cjs tests/test_rising_stars.cjs
 
       - name: 수집된 데이터 커밋 및 깃허브 푸시 (Push to GitHub)
         run: |
@@ -81,4 +86,5 @@ jobs:
         id: deployment
         uses: actions/deploy-pages@v4
 # trigger crawl 2026-11-19
+
 
