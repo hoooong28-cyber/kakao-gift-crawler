@@ -1,68 +1,68 @@
 {
   "period_days": 7,
-  "observed_days": 6,
-  "start_date": "20261118",
-  "end_date": "20261124",
-  "period_label": "최근 7일 (20261118 ~ 20261124) · 수집 6일",
+  "observed_days": 7,
+  "start_date": "20261119",
+  "end_date": "20261125",
+  "period_label": "최근 7일 (20261119 ~ 20261125) · 수집 7일",
   "categories": {
     "전체": {
-      "total_records": 2100,
+      "total_records": 2450,
       "top_ips": [
         {
           "ip_name": "먼작귀/치이카와",
-          "count": 225,
-          "share": "10.7%"
-        },
-        {
-          "ip_name": "산리오(기타/통합)",
-          "count": 201,
-          "share": "9.6%"
+          "count": 266,
+          "share": "10.9%"
         },
         {
           "ip_name": "가나디",
-          "count": 199,
-          "share": "9.5%"
+          "count": 238,
+          "share": "9.7%"
+        },
+        {
+          "ip_name": "산리오(기타/통합)",
+          "count": 207,
+          "share": "8.4%"
         },
         {
           "ip_name": "산리오(헬로키티)",
-          "count": 63,
-          "share": "3.0%"
+          "count": 70,
+          "share": "2.9%"
         },
         {
           "ip_name": "리락쿠마",
-          "count": 53,
-          "share": "2.5%"
+          "count": 60,
+          "share": "2.4%"
         },
         {
           "ip_name": "카카오프렌즈(춘식이)",
-          "count": 48,
+          "count": 56,
           "share": "2.3%"
         },
         {
           "ip_name": "카카오프렌즈(기타/통합)",
-          "count": 28,
+          "count": 31,
           "share": "1.3%"
         },
         {
           "ip_name": "몬치치",
-          "count": 23,
+          "count": 26,
           "share": "1.1%"
         },
         {
           "ip_name": "잔망루피",
-          "count": 18,
-          "share": "0.9%"
+          "count": 20,
+          "share": "0.8%"
         },
         {
-          "ip_name": "라인프렌즈/BT21",
-          "count": 15,
+          "ip_name": "카카오프렌즈(라이언)",
+          "count": 18,
           "share": "0.7%"
         }
       ],
       "steady_products": [
         {
           "product_id": "10383477",
-          "appearance_days": 6,
+          "appearance_days": 7,
           "product_name": "[새차선물/첫차선물] \"상쾌한 향기가 솔솔\" 톰과 제리X카카오프렌즈 차량방향제_라이언&춘식이",
           "brand": "프렌즈리빙",
           "character_ip": "카카오프렌즈(춘식이), 카카오프렌즈(라이언), 카카오프렌즈(기타/통합), 톰과제리",
@@ -70,23 +70,15 @@
         },
         {
           "product_id": "10626781",
-          "appearance_days": 6,
+          "appearance_days": 7,
           "product_name": "자취/집들이선물 [보퀴진] 산리오 헬로키티 빈티지 1인식기 머그컵 집들이 홈카페 세트",
           "brand": "보퀴진",
           "character_ip": "산리오(헬로키티), 산리오(기타/통합)",
           "price": "23,900원"
         },
         {
-          "product_id": "10999848",
-          "appearance_days": 6,
-          "product_name": "잔망루피 장갑 망토 담요",
-          "brand": "잔망루피(굿즈)",
-          "character_ip": "잔망루피",
-          "price": "22,900원"
-        },
-        {
           "product_id": "11734230",
-          "appearance_days": 6,
+          "appearance_days": 7,
           "product_name": "귀여운 선물 가나디 인형 키링 9종 택1 (생일/귀여운/우정/커플 선물)",
           "brand": "가나디",
           "character_ip": "가나디",
@@ -94,43 +86,51 @@
         },
         {
           "product_id": "11743570",
-          "appearance_days": 6,
+          "appearance_days": 7,
           "product_name": "선물만족도 BEST [단독] 가나디 바디필로우 2종 (나안아/라잉) 숙면 베개 애착 쿠션 집들이 대형필로우",
           "brand": "캐릭터침구",
           "character_ip": "가나디",
           "price": "34,800원"
+        },
+        {
+          "product_id": "12319916",
+          "appearance_days": 7,
+          "product_name": "친구/직장동료선물 먼작귀 온천가습기 미니가습기 USB 탁상용 사무실 캐릭터 가습기",
+          "brand": "먼작귀(팬시)",
+          "character_ip": "먼작귀/치이카와",
+          "price": "35,000원"
         }
       ],
       "momentum": {
         "comparison": {
           "status": "insufficient_data",
           "period_days": 7,
-          "current_start_date": "20261118",
-          "current_end_date": "20261124",
-          "start_date": "20261111",
-          "end_date": "20261117",
-          "current_observed_days": 6,
-          "observed_days": 3,
+          "current_start_date": "20261119",
+          "current_end_date": "20261125",
+          "start_date": "20261112",
+          "end_date": "20261118",
+          "current_observed_days": 7,
+          "observed_days": 2,
           "minimum_observed_days": 4,
           "category_observed_days": {
             "current": {
-              "리빙 전체": 6,
-              "주방/식기": 6,
-              "침구/패브릭": 6,
-              "팬시/문구/취미 (IP핵심)": 6
+              "리빙 전체": 7,
+              "주방/식기": 7,
+              "침구/패브릭": 7,
+              "팬시/문구/취미 (IP핵심)": 7
             },
             "previous": {
-              "리빙 전체": 3,
-              "주방/식기": 3,
-              "침구/패브릭": 3,
-              "팬시/문구/취미 (IP핵심)": 3
+              "리빙 전체": 2,
+              "주방/식기": 2,
+              "침구/패브릭": 2,
+              "팬시/문구/취미 (IP핵심)": 2
             }
           },
           "rank_depths": {},
           "growth_threshold_percent": 10,
           "score_method": "카테고리별 공통 수집 범위 N에서 (N+1-순위)를 합산하고 해당 카테고리 수집일 수로 나눈 뒤 합계",
           "score_unit": "수집일당 평균 순위 가중 점수",
-          "note": "최근·직전 7일의 각 카테고리에 최소 4일 수집이 필요합니다. 현재 6일 / 직전 3일 관측."
+          "note": "최근·직전 7일의 각 카테고리에 최소 4일 수집이 필요합니다. 현재 7일 / 직전 2일 관측."
         },
         "rising_ips": [],
         "new_entry_ips": [],
@@ -139,63 +139,63 @@
       }
     },
     "리빙 전체": {
-      "total_records": 1200,
+      "total_records": 1400,
       "top_ips": [
         {
           "ip_name": "먼작귀/치이카와",
-          "count": 111,
+          "count": 129,
           "share": "9.2%"
         },
         {
           "ip_name": "가나디",
-          "count": 107,
-          "share": "8.9%"
+          "count": 126,
+          "share": "9.0%"
         },
         {
           "ip_name": "산리오(기타/통합)",
-          "count": 107,
-          "share": "8.9%"
+          "count": 108,
+          "share": "7.7%"
         },
         {
           "ip_name": "산리오(헬로키티)",
-          "count": 30,
-          "share": "2.5%"
+          "count": 33,
+          "share": "2.4%"
         },
         {
           "ip_name": "리락쿠마",
-          "count": 21,
-          "share": "1.8%"
-        },
-        {
-          "ip_name": "카카오프렌즈(춘식이)",
-          "count": 20,
+          "count": 24,
           "share": "1.7%"
         },
         {
+          "ip_name": "카카오프렌즈(춘식이)",
+          "count": 22,
+          "share": "1.6%"
+        },
+        {
           "ip_name": "카카오프렌즈(기타/통합)",
-          "count": 17,
+          "count": 19,
           "share": "1.4%"
         },
         {
           "ip_name": "라인프렌즈/BT21",
-          "count": 11,
+          "count": 12,
           "share": "0.9%"
         },
         {
           "ip_name": "몬치치",
-          "count": 7,
+          "count": 8,
           "share": "0.6%"
         },
         {
-          "ip_name": "짱구",
-          "count": 6,
+          "ip_name": "카카오프렌즈(라이언)",
+          "count": 7,
           "share": "0.5%"
         }
       ],
       "steady_products": [
         {
           "product_id": "10383477",
-          "appearance_days": 6,
+          "appearance_days": 7,
           "product_name": "[새차선물/첫차선물] \"상쾌한 향기가 솔솔\" 톰과 제리X카카오프렌즈 차량방향제_라이언&춘식이",
           "brand": "프렌즈리빙",
           "character_ip": "카카오프렌즈(춘식이), 카카오프렌즈(라이언), 카카오프렌즈(기타/통합), 톰과제리",
@@ -203,7 +203,7 @@
         },
         {
           "product_id": "10626781",
-          "appearance_days": 6,
+          "appearance_days": 7,
           "product_name": "자취/집들이선물 [보퀴진] 산리오 헬로키티 빈티지 1인식기 머그컵 집들이 홈카페 세트",
           "brand": "보퀴진",
           "character_ip": "산리오(헬로키티), 산리오(기타/통합)",
@@ -211,7 +211,7 @@
         },
         {
           "product_id": "11734230",
-          "appearance_days": 6,
+          "appearance_days": 7,
           "product_name": "귀여운 선물 가나디 인형 키링 9종 택1 (생일/귀여운/우정/커플 선물)",
           "brand": "가나디",
           "character_ip": "가나디",
@@ -219,7 +219,7 @@
         },
         {
           "product_id": "11743570",
-          "appearance_days": 6,
+          "appearance_days": 7,
           "product_name": "선물만족도 BEST [단독] 가나디 바디필로우 2종 (나안아/라잉) 숙면 베개 애착 쿠션 집들이 대형필로우",
           "brand": "캐릭터침구",
           "character_ip": "가나디",
@@ -227,7 +227,7 @@
         },
         {
           "product_id": "12319916",
-          "appearance_days": 6,
+          "appearance_days": 7,
           "product_name": "친구/직장동료선물 먼작귀 온천가습기 미니가습기 USB 탁상용 사무실 캐릭터 가습기",
           "brand": "먼작귀(팬시)",
           "character_ip": "먼작귀/치이카와",
@@ -238,26 +238,26 @@
         "comparison": {
           "status": "insufficient_data",
           "period_days": 7,
-          "current_start_date": "20261118",
-          "current_end_date": "20261124",
-          "start_date": "20261111",
-          "end_date": "20261117",
-          "current_observed_days": 6,
-          "observed_days": 3,
+          "current_start_date": "20261119",
+          "current_end_date": "20261125",
+          "start_date": "20261112",
+          "end_date": "20261118",
+          "current_observed_days": 7,
+          "observed_days": 2,
           "minimum_observed_days": 4,
           "category_observed_days": {
             "current": {
-              "리빙 전체": 6
+              "리빙 전체": 7
             },
             "previous": {
-              "리빙 전체": 3
+              "리빙 전체": 2
             }
           },
           "rank_depths": {},
           "growth_threshold_percent": 10,
           "score_method": "카테고리별 공통 수집 범위 N에서 (N+1-순위)를 합산하고 해당 카테고리 수집일 수로 나눈 뒤 합계",
           "score_unit": "수집일당 평균 순위 가중 점수",
-          "note": "최근·직전 7일의 각 카테고리에 최소 4일 수집이 필요합니다. 현재 6일 / 직전 3일 관측."
+          "note": "최근·직전 7일의 각 카테고리에 최소 4일 수집이 필요합니다. 현재 7일 / 직전 2일 관측."
         },
         "rising_ips": [],
         "new_entry_ips": [],
@@ -266,63 +266,63 @@
       }
     },
     "팬시/문구/취미 (IP핵심)": {
-      "total_records": 300,
+      "total_records": 350,
       "top_ips": [
         {
-          "ip_name": "산리오(기타/통합)",
-          "count": 73,
-          "share": "24.3%"
+          "ip_name": "먼작귀/치이카와",
+          "count": 80,
+          "share": "22.9%"
         },
         {
-          "ip_name": "먼작귀/치이카와",
-          "count": 65,
-          "share": "21.7%"
+          "ip_name": "산리오(기타/통합)",
+          "count": 75,
+          "share": "21.4%"
         },
         {
           "ip_name": "가나디",
-          "count": 51,
-          "share": "17.0%"
+          "count": 63,
+          "share": "18.0%"
         },
         {
           "ip_name": "카카오프렌즈(춘식이)",
-          "count": 16,
-          "share": "5.3%"
+          "count": 19,
+          "share": "5.4%"
         },
         {
           "ip_name": "카카오프렌즈(기타/통합)",
-          "count": 11,
-          "share": "3.7%"
+          "count": 12,
+          "share": "3.4%"
         },
         {
           "ip_name": "몬치치",
-          "count": 9,
-          "share": "3.0%"
+          "count": 10,
+          "share": "2.9%"
         },
         {
           "ip_name": "리락쿠마",
-          "count": 6,
+          "count": 7,
           "share": "2.0%"
         },
         {
           "ip_name": "라인프렌즈/BT21",
-          "count": 3,
-          "share": "1.0%"
-        },
-        {
-          "ip_name": "스폰지밥",
-          "count": 3,
-          "share": "1.0%"
+          "count": 4,
+          "share": "1.1%"
         },
         {
           "ip_name": "짱구",
-          "count": 3,
-          "share": "1.0%"
+          "count": 4,
+          "share": "1.1%"
+        },
+        {
+          "ip_name": "카카오프렌즈(라이언)",
+          "count": 4,
+          "share": "1.1%"
         }
       ],
       "steady_products": [
         {
           "product_id": "12319916",
-          "appearance_days": 6,
+          "appearance_days": 7,
           "product_name": "친구/직장동료선물 먼작귀 온천가습기 미니가습기 USB 탁상용 사무실 캐릭터 가습기",
           "brand": "먼작귀(팬시)",
           "character_ip": "먼작귀/치이카와",
@@ -330,7 +330,7 @@
         },
         {
           "product_id": "13261876",
-          "appearance_days": 6,
+          "appearance_days": 7,
           "product_name": "귀여운 선물 가나디 복조리 파우치 (귀여운/휴대용/다용도파우치/생일)",
           "brand": "가나디",
           "character_ip": "가나디",
@@ -338,7 +338,7 @@
         },
         {
           "product_id": "13838069",
-          "appearance_days": 6,
+          "appearance_days": 7,
           "product_name": "리락쿠마 조리개 파우치 4종",
           "brand": "인형",
           "character_ip": "리락쿠마",
@@ -346,7 +346,7 @@
         },
         {
           "product_id": "13881148",
-          "appearance_days": 6,
+          "appearance_days": 7,
           "product_name": "인싸템 가나디 스트레스볼 인형 (모찌/말랑이/스트레스해소/스퀴시볼)",
           "brand": "가나디",
           "character_ip": "가나디",
@@ -354,7 +354,7 @@
         },
         {
           "product_id": "13881428",
-          "appearance_days": 6,
+          "appearance_days": 7,
           "product_name": "먼작귀 치이카와 헤어브러쉬 캐릭터 머리빗",
           "brand": "이젠돌스",
           "character_ip": "먼작귀/치이카와",
@@ -365,26 +365,26 @@
         "comparison": {
           "status": "insufficient_data",
           "period_days": 7,
-          "current_start_date": "20261118",
-          "current_end_date": "20261124",
-          "start_date": "20261111",
-          "end_date": "20261117",
-          "current_observed_days": 6,
-          "observed_days": 3,
+          "current_start_date": "20261119",
+          "current_end_date": "20261125",
+          "start_date": "20261112",
+          "end_date": "20261118",
+          "current_observed_days": 7,
+          "observed_days": 2,
           "minimum_observed_days": 4,
           "category_observed_days": {
             "current": {
-              "팬시/문구/취미 (IP핵심)": 6
+              "팬시/문구/취미 (IP핵심)": 7
             },
             "previous": {
-              "팬시/문구/취미 (IP핵심)": 3
+              "팬시/문구/취미 (IP핵심)": 2
             }
           },
           "rank_depths": {},
           "growth_threshold_percent": 10,
           "score_method": "카테고리별 공통 수집 범위 N에서 (N+1-순위)를 합산하고 해당 카테고리 수집일 수로 나눈 뒤 합계",
           "score_unit": "수집일당 평균 순위 가중 점수",
-          "note": "최근·직전 7일의 각 카테고리에 최소 4일 수집이 필요합니다. 현재 6일 / 직전 3일 관측."
+          "note": "최근·직전 7일의 각 카테고리에 최소 4일 수집이 필요합니다. 현재 7일 / 직전 2일 관측."
         },
         "rising_ips": [],
         "new_entry_ips": [],
@@ -393,71 +393,63 @@
       }
     },
     "침구/패브릭": {
-      "total_records": 300,
+      "total_records": 350,
       "top_ips": [
         {
           "ip_name": "먼작귀/치이카와",
-          "count": 45,
-          "share": "15.0%"
+          "count": 53,
+          "share": "15.1%"
         },
         {
           "ip_name": "가나디",
-          "count": 32,
-          "share": "10.7%"
+          "count": 39,
+          "share": "11.1%"
         },
         {
           "ip_name": "리락쿠마",
-          "count": 14,
-          "share": "4.7%"
+          "count": 16,
+          "share": "4.6%"
         },
         {
           "ip_name": "산리오(헬로키티)",
-          "count": 14,
-          "share": "4.7%"
+          "count": 16,
+          "share": "4.6%"
         },
         {
           "ip_name": "잔망루피",
-          "count": 14,
-          "share": "4.7%"
-        },
-        {
-          "ip_name": "산리오(기타/통합)",
-          "count": 12,
-          "share": "4.0%"
+          "count": 15,
+          "share": "4.3%"
         },
         {
           "ip_name": "카카오프렌즈(춘식이)",
-          "count": 12,
+          "count": 15,
+          "share": "4.3%"
+        },
+        {
+          "ip_name": "산리오(기타/통합)",
+          "count": 14,
           "share": "4.0%"
         },
         {
           "ip_name": "몬치치",
-          "count": 7,
+          "count": 8,
           "share": "2.3%"
         },
         {
           "ip_name": "카카오프렌즈(라이언)",
-          "count": 6,
+          "count": 7,
           "share": "2.0%"
         },
         {
           "ip_name": "카카오프렌즈(어피치)",
-          "count": 6,
+          "count": 7,
           "share": "2.0%"
         }
       ],
       "steady_products": [
         {
-          "product_id": "10999848",
-          "appearance_days": 6,
-          "product_name": "잔망루피 장갑 망토 담요",
-          "brand": "잔망루피(굿즈)",
-          "character_ip": "잔망루피",
-          "price": "22,900원"
-        },
-        {
           "product_id": "11743570",
-          "appearance_days": 6,
+          "appearance_days": 7,
           "product_name": "선물만족도 BEST [단독] 가나디 바디필로우 2종 (나안아/라잉) 숙면 베개 애착 쿠션 집들이 대형필로우",
           "brand": "캐릭터침구",
           "character_ip": "가나디",
@@ -465,7 +457,7 @@
         },
         {
           "product_id": "12320574",
-          "appearance_days": 6,
+          "appearance_days": 7,
           "product_name": "\"생일/기념일선물\" 먼작귀 치이카와패턴담요 양털 극세사 무릎담요 포근한 겨울 보온 소프트 블랭킷",
           "brand": "캐릭터침구",
           "character_ip": "먼작귀/치이카와",
@@ -473,7 +465,7 @@
         },
         {
           "product_id": "12320575",
-          "appearance_days": 6,
+          "appearance_days": 7,
           "product_name": "\"생일/기념일선물\" 먼작귀 너굴쉐르파담요 양털 극세사 무릎담요 포근한 겨울 보온 소프트 블랭킷",
           "brand": "캐릭터침구",
           "character_ip": "먼작귀/치이카와",
@@ -481,37 +473,45 @@
         },
         {
           "product_id": "12565680",
-          "appearance_days": 6,
+          "appearance_days": 7,
           "product_name": "가나디 후드 담요 (겨울/따뜻한/귀여운/우정/생일/응원)",
           "brand": "가나디",
           "character_ip": "가나디",
           "price": "15,800원"
+        },
+        {
+          "product_id": "12693742",
+          "appearance_days": 7,
+          "product_name": "가나디 핸드워머 쿠션 2종 (생일/집들이/인테리어/응원/귀여운/유쾌한)",
+          "brand": "가나디",
+          "character_ip": "가나디",
+          "price": "23,000원"
         }
       ],
       "momentum": {
         "comparison": {
           "status": "insufficient_data",
           "period_days": 7,
-          "current_start_date": "20261118",
-          "current_end_date": "20261124",
-          "start_date": "20261111",
-          "end_date": "20261117",
-          "current_observed_days": 6,
-          "observed_days": 3,
+          "current_start_date": "20261119",
+          "current_end_date": "20261125",
+          "start_date": "20261112",
+          "end_date": "20261118",
+          "current_observed_days": 7,
+          "observed_days": 2,
           "minimum_observed_days": 4,
           "category_observed_days": {
             "current": {
-              "침구/패브릭": 6
+              "침구/패브릭": 7
             },
             "previous": {
-              "침구/패브릭": 3
+              "침구/패브릭": 2
             }
           },
           "rank_depths": {},
           "growth_threshold_percent": 10,
           "score_method": "카테고리별 공통 수집 범위 N에서 (N+1-순위)를 합산하고 해당 카테고리 수집일 수로 나눈 뒤 합계",
           "score_unit": "수집일당 평균 순위 가중 점수",
-          "note": "최근·직전 7일의 각 카테고리에 최소 4일 수집이 필요합니다. 현재 6일 / 직전 3일 관측."
+          "note": "최근·직전 7일의 각 카테고리에 최소 4일 수집이 필요합니다. 현재 7일 / 직전 2일 관측."
         },
         "rising_ips": [],
         "new_entry_ips": [],
@@ -520,37 +520,37 @@
       }
     },
     "주방/식기": {
-      "total_records": 300,
+      "total_records": 350,
       "top_ips": [
         {
           "ip_name": "산리오(헬로키티)",
-          "count": 17,
-          "share": "5.7%"
+          "count": 19,
+          "share": "5.4%"
         },
         {
           "ip_name": "리락쿠마",
-          "count": 12,
-          "share": "4.0%"
+          "count": 13,
+          "share": "3.7%"
         },
         {
           "ip_name": "가나디",
-          "count": 9,
-          "share": "3.0%"
+          "count": 10,
+          "share": "2.9%"
         },
         {
           "ip_name": "산리오(기타/통합)",
-          "count": 9,
-          "share": "3.0%"
+          "count": 10,
+          "share": "2.9%"
         },
         {
           "ip_name": "먼작귀/치이카와",
           "count": 4,
-          "share": "1.3%"
+          "share": "1.1%"
         },
         {
           "ip_name": "산리오(한교동)",
           "count": 2,
-          "share": "0.7%"
+          "share": "0.6%"
         },
         {
           "ip_name": "라인프렌즈/BT21",
@@ -561,7 +561,7 @@
       "steady_products": [
         {
           "product_id": "10626781",
-          "appearance_days": 6,
+          "appearance_days": 7,
           "product_name": "자취/집들이선물 [보퀴진] 산리오 헬로키티 빈티지 1인식기 머그컵 집들이 홈카페 세트",
           "brand": "보퀴진",
           "character_ip": "산리오(헬로키티), 산리오(기타/통합)",
@@ -569,7 +569,7 @@
         },
         {
           "product_id": "12821252",
-          "appearance_days": 6,
+          "appearance_days": 7,
           "product_name": "가나디 핸들 플레이트 2P 세트 (먹방필수템/커플세트/손잡이앞접시/생일/이사선물)",
           "brand": "캐릭터주방",
           "character_ip": "가나디",
@@ -577,11 +577,19 @@
         },
         {
           "product_id": "13772143",
-          "appearance_days": 6,
+          "appearance_days": 7,
           "product_name": "[단독] 리락쿠마 페이스 머그 텀블러 360ml 보온 보냉 캐릭터 생일 수능 응원 학생 직장인 따뜻한 겨울 선물",
           "brand": "캐릭터주방",
           "character_ip": "리락쿠마",
           "price": "22,050원"
+        },
+        {
+          "product_id": "14385553",
+          "appearance_days": 7,
+          "product_name": "[단독] 레고트 X 헬로키티 루프 텀블러 핸디 700ml (웰니스,리차지)",
+          "brand": "레고트",
+          "character_ip": "산리오(헬로키티)",
+          "price": "35,100원"
         },
         {
           "product_id": "14382794",
@@ -590,40 +598,32 @@
           "brand": "캐릭터주방",
           "character_ip": "리락쿠마",
           "price": "21,370원"
-        },
-        {
-          "product_id": "14385553",
-          "appearance_days": 6,
-          "product_name": "[단독] 레고트 X 헬로키티 루프 텀블러 핸디 700ml (웰니스,리차지)",
-          "brand": "레고트",
-          "character_ip": "산리오(헬로키티)",
-          "price": "35,100원"
         }
       ],
       "momentum": {
         "comparison": {
           "status": "insufficient_data",
           "period_days": 7,
-          "current_start_date": "20261118",
-          "current_end_date": "20261124",
-          "start_date": "20261111",
-          "end_date": "20261117",
-          "current_observed_days": 6,
-          "observed_days": 3,
+          "current_start_date": "20261119",
+          "current_end_date": "20261125",
+          "start_date": "20261112",
+          "end_date": "20261118",
+          "current_observed_days": 7,
+          "observed_days": 2,
           "minimum_observed_days": 4,
           "category_observed_days": {
             "current": {
-              "주방/식기": 6
+              "주방/식기": 7
             },
             "previous": {
-              "주방/식기": 3
+              "주방/식기": 2
             }
           },
           "rank_depths": {},
           "growth_threshold_percent": 10,
           "score_method": "카테고리별 공통 수집 범위 N에서 (N+1-순위)를 합산하고 해당 카테고리 수집일 수로 나눈 뒤 합계",
           "score_unit": "수집일당 평균 순위 가중 점수",
-          "note": "최근·직전 7일의 각 카테고리에 최소 4일 수집이 필요합니다. 현재 6일 / 직전 3일 관측."
+          "note": "최근·직전 7일의 각 카테고리에 최소 4일 수집이 필요합니다. 현재 7일 / 직전 2일 관측."
         },
         "rising_ips": [],
         "new_entry_ips": [],
