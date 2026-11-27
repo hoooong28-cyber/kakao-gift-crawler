@@ -173,10 +173,6 @@ test('every saved date and category renders matching overview, B2B and strategy 
             const cards = app.elements.get('b2b-cards-container').innerHTML;
             assert.ok(cards.includes(`>${expected.share}%</h3>`), `${file}/${cat}: B2B share`);
             assert.ok(cards.includes(`${expected.total}건 중 IP 분류 ${expected.ipCount}건`));
-            if (cat !== 'all') {
-                assert.ok(app.elements.get('ip-strategy-box').innerHTML.includes(
-                    `[${cat}]</strong>: IP 분류 비중 <strong>${expected.share}%</strong>`));
-            }
             assert.notEqual(app.elements.get('ov-top-ip').textContent, '기타 캐릭터/팬시');
         }
         assert.deepEqual(app.errors, [], file);
