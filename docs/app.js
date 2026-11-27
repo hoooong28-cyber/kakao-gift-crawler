@@ -9,8 +9,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
     let ipChartInstance = null;
     let brandChartInstance = null;
+    let trendChartInstance = null;
+    let ipTrendsData = {};
+    let trendMetric = 'share';
+    let trendSelectedIps = null; // null이면 기본(상위 5개) 사용
 
     const refreshBtn = document.getElementById('refresh-btn');
+    const searchBox = document.getElementById('search-box');
     const mainNavMenu = document.getElementById('main-nav-menu');
     const dateSelector = document.getElementById('date-selector');
 
@@ -134,11 +139,23 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
+    let ipNewsData = {};
     let weeklyInsightsData = {};
     let monthlyInsightsData = {};
     let activePeriodType = 'weekly';
     let activePeriodCat = 'all';
     let activeMomentumType = 'rising';
+
+    async function loadIpNewsData() {
+        try {
+            const res = await fetchFresh('ip_news.json');
+            if (res.ok) {
+                ipNewsData = await res.json();
+            }
+        } catch (e) {
+            console.warn('IP news load failed:', e);
+        }
+    }
 
     async function loadPeriodInsightsData() {
         try {
@@ -154,6 +171,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     async function loadData() {
+        loadIpNewsData();
         await loadPeriodInsightsData();
         try {
             let resJson;
@@ -219,6 +237,16 @@ document.addEventListener('DOMContentLoaded', () => {
                 console.error('Data load error:', err);
                 return;
             }
+        }
+
+        // ip_trends.json은 날짜 선택과 무관하게 항상 전체 누적 시계열이므로 매번 최신으로 가져온다.
+        try {
+            const trendsRes = await fetchFresh('ip_trends.json');
+            if (trendsRes.ok) {
+                ipTrendsData = await trendsRes.json();
+            }
+        } catch (err) {
+            console.warn('ip_trends.json fetch failed', err);
         }
 
         // 사이드바 날짜 표시 업데이트
@@ -624,6 +652,10 @@ document.addEventListener('DOMContentLoaded', () => {
         // Render B2B Insights Cards Component
         try { renderB2BCards(); } catch (e) { console.error('B2B Cards rendering error:', e); }
 
+        // Render Page 2 Components (IP Strategy Hub)
+        try { renderIpStrategyPage(products, sortedIps); } catch (e) { console.warn('ipStrategy err:', e); }
+        try { renderTrendChart(); } catch (e) { console.warn('trendChart err:', e); }
+
         // Render Page 3 Table Components
         try { renderTable(products); } catch (e) { console.warn('table err:', e); }
     }
@@ -906,6 +938,63 @@ document.addEventListener('DOMContentLoaded', () => {
         return Math.round(num * 10) / 10;
     }
 
+    function renderIpStrategyPage(allProducts, sortedIps) {
+        const strategyBox = document.getElementById('ip-strategy-box');
+        
+        // Category IP Share Calculation
+        const catShareList = [];
+        const categories = ["리빙 전체", "팬시/문구/취미 (IP핵심)", "침구/패브릭", "주방/식기"];
+        
+        categories.forEach(c => {
+            const catProds = rawProductsData.filter(p => (p.category || '리빙 전체') === c);
+            const summary = DashboardMetrics.summarize(catProds);
+            catShareList.push({ category: c, total: summary.total, ipCount: summary.ipCount, pending: summary.pendingCount, ratio: summary.share });
+        });
+
+        strategyBox.innerHTML = `
+            <div class="insight-item">
+                <h4><i class="fa-solid fa-fire"></i> 카테고리별 개별 IP 분류 비중</h4>
+                <ul>
+                    ${catShareList.map(c => `<li><strong>[${c.category}]</strong>: IP 분류 비중 <strong>${c.ratio}%</strong> (${c.total}건 중 ${c.ipCount}건 · 미분류 ${c.pending}건)</li>`).join('')}
+                </ul>
+            </div>
+            <div class="insight-item">
+                <h4><i class="fa-solid fa-bullseye"></i> 분류와 비교 기준</h4>
+                <ul>
+                    <li>기타 캐릭터/팬시 등 미분류 그룹은 개별 IP 순위에서 제외합니다. 자동 분류 결과는 상품 단위 검토가 필요합니다.</li>
+                    <li>콜라보 상품은 각 IP에 1건씩 집계하므로 IP별 비중의 합계는 전체 IP 상품 비중과 다를 수 있습니다.</li>
+                </ul>
+            </div>
+            <div class="insight-item">
+                <h4><i class="fa-solid fa-lightbulb"></i> 기획 검토 시 확인할 항목</h4>
+                <ul>
+                    <li>가격은 수집 당시 표시가격입니다. 실제 결제가격이나 소비자 수용 적정가를 의미하지 않습니다.</li>
+                    <li>순위 변화와 함께 상품 구성·패키지·프로모션을 확인하세요. 랭킹만으로 출시 성과를 예측할 수 없습니다.</li>
+                </ul>
+            </div>
+        `;
+
+        // IP Summary Table
+        const tbody = document.getElementById('ip-summary-tbody');
+        tbody.innerHTML = '';
+
+        sortedIps.forEach(([ipName, count]) => {
+            const ipProds = allProducts.filter(p => DashboardMetrics.ipNames(p).includes(ipName));
+            const bestProduct = ipProds.sort((a, b) => a.rank - b.rank)[0];
+            const ratioPct = roundToOneDecimal((count / allProducts.length) * 100);
+
+            const tr = document.createElement('tr');
+            tr.innerHTML = `
+                <td><strong class="${ipName !== '미분류' && ipName !== '기타 캐릭터/팬시' ? 'ip-clickable' : ''}" data-ip="${ipName}" style="color:#FEE500; font-size:14px;">${ipName} ${ipName !== '미분류' && ipName !== '기타 캐릭터/팬시' ? '<i class="fa-solid fa-arrow-up-right-from-square" style="font-size:10px; margin-left:4px; opacity:0.7;"></i>' : ''}</strong></td>
+                <td><span class="badge-brand">${count}개</span></td>
+                <td><span style="color:#6366F1; font-weight:700;">${ratioPct}%</span></td>
+                <td class="badge-rank">${bestProduct ? bestProduct.rank + '위' : '-'}</td>
+                <td>${bestProduct ? `[${bestProduct.category}] <strong>[${bestProduct.brand}]</strong> ${bestProduct.product_name} (${bestProduct.price})` : '-'}</td>
+            `;
+            tbody.appendChild(tr);
+        });
+    }
+
     function renderIpChart(ipData) {
         const ctx = document.getElementById('ipChart').getContext('2d');
         if (ipChartInstance) ipChartInstance.destroy();
@@ -942,6 +1031,129 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
+
+    // ── IP 추이(시계열) 차트 ──────────────────────────────────────────────
+    const TREND_COLORS = ['#FEE500', '#60A5FA', '#F472B6', '#34D399', '#FB923C', '#A78BFA', '#F87171', '#38BDF8'];
+
+    function formatTrendDate(d) {
+        if (!d || d.length !== 8) return d;
+        return `${d.slice(4, 6)}/${d.slice(6, 8)}`;
+    }
+
+    function getTrendTargetCategory() {
+        return (activeCategory === 'all') ? '전체' : activeCategory;
+    }
+
+    function renderTrendIpChecklist(entities) {
+        const box = document.getElementById('trend-ip-checklist');
+        if (!box) return;
+
+        const names = Object.keys(entities).filter(k => k !== '__미분류__');
+        names.sort((a, b) => {
+            const sumA = entities[a].reduce((s, p) => s + (p.count || 0), 0);
+            const sumB = entities[b].reduce((s, p) => s + (p.count || 0), 0);
+            return sumB - sumA;
+        });
+
+        if (trendSelectedIps === null) {
+            trendSelectedIps = new Set(names.slice(0, 5));
+        }
+
+        box.innerHTML = '';
+        names.forEach(name => {
+            const label = document.createElement('label');
+            label.style.cssText = 'display:flex; align-items:center; gap:4px; cursor:pointer; padding:4px 8px; border-radius:6px; background:rgba(255,255,255,0.04);';
+            label.innerHTML = `<input type="checkbox" ${trendSelectedIps.has(name) ? 'checked' : ''} style="cursor:pointer;"> ${name}`;
+            label.querySelector('input').addEventListener('change', (e) => {
+                if (e.target.checked) trendSelectedIps.add(name);
+                else trendSelectedIps.delete(name);
+                renderTrendChart();
+            });
+            box.appendChild(label);
+        });
+
+        if (entities['__미분류__']) {
+            const label = document.createElement('label');
+            label.style.cssText = 'display:flex; align-items:center; gap:4px; cursor:pointer; padding:4px 8px; border-radius:6px; background:rgba(255,255,255,0.08); opacity:0.85;';
+            label.innerHTML = `<input type="checkbox" ${trendSelectedIps.has('__미분류__') ? 'checked' : ''} style="cursor:pointer;"> 미분류 (참고선)`;
+            label.querySelector('input').addEventListener('change', (e) => {
+                if (e.target.checked) trendSelectedIps.add('__미분류__');
+                else trendSelectedIps.delete('__미분류__');
+                renderTrendChart();
+            });
+            box.appendChild(label);
+        }
+    }
+
+    function renderTrendChart() {
+        const canvas = document.getElementById('trendChart');
+        if (!canvas || typeof Chart === 'undefined') return;
+
+        const targetCat = getTrendTargetCategory();
+        const entities = (ipTrendsData && ipTrendsData[targetCat]) ? ipTrendsData[targetCat] : {};
+
+        const metricSelector = document.getElementById('trend-metric-selector');
+        if (metricSelector) trendMetric = metricSelector.value || 'share';
+
+        renderTrendIpChecklist(entities);
+
+        const dateSet = new Set();
+        Object.values(entities).forEach(series => series.forEach(p => dateSet.add(p.date)));
+        const dates = Array.from(dateSet).sort();
+
+        const metricLabel = { share: '점유율 (%)', avg_price: '평균가 (원)', count: '노출 개수' }[trendMetric] || trendMetric;
+
+        const datasets = [];
+        let colorIdx = 0;
+        Array.from(trendSelectedIps || []).forEach(name => {
+            const series = entities[name];
+            if (!series) return;
+            const byDate = {};
+            series.forEach(p => { byDate[p.date] = p[trendMetric]; });
+            const isMisc = name === '__미분류__';
+            datasets.push({
+                label: isMisc ? '미분류(참고)' : name,
+                data: dates.map(d => (byDate[d] !== undefined ? byDate[d] : null)),
+                spanGaps: true,
+                borderColor: isMisc ? 'rgba(148, 163, 184, 0.7)' : TREND_COLORS[colorIdx % TREND_COLORS.length],
+                backgroundColor: 'transparent',
+                borderDash: isMisc ? [6, 4] : [],
+                borderWidth: isMisc ? 2 : 2.5,
+                tension: 0.3,
+                pointRadius: 2
+            });
+            if (!isMisc) colorIdx++;
+        });
+
+        if (trendChartInstance) trendChartInstance.destroy();
+        trendChartInstance = new Chart(canvas.getContext('2d'), {
+            type: 'line',
+            data: { labels: dates.map(formatTrendDate), datasets },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                interaction: { mode: 'index', intersect: false },
+                plugins: {
+                    legend: { labels: { color: '#CBD5E1' } },
+                    tooltip: {
+                        callbacks: {
+                            label: (ctx) => `${ctx.dataset.label}: ${ctx.parsed.y}${trendMetric === 'share' ? '%' : trendMetric === 'avg_price' ? '원' : '개'}`
+                        }
+                    }
+                },
+                scales: {
+                    x: { ticks: { color: '#94A3B8' }, grid: { display: false } },
+                    y: {
+                        ticks: { color: '#94A3B8' },
+                        grid: { color: 'rgba(255, 255, 255, 0.05)' },
+                        title: { display: true, text: metricLabel, color: '#94A3B8' }
+                    }
+                }
+            }
+        });
+    }
+
+    document.getElementById('trend-metric-selector') && document.getElementById('trend-metric-selector').addEventListener('change', renderTrendChart);
 
     function renderBrandChart(brandData) {
         const ctx = document.getElementById('brandChart').getContext('2d');
@@ -1041,8 +1253,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 <td><span class="badge-cat">${catStr}</span></td>
                 <td class="badge-rank">${p.rank}위 ${deltaBadge}</td>
                 <td>
-                    <span style="${isIpProduct ? 'background: rgba(254, 229, 0, 0.15); color: #FEE500; border: 1px solid rgba(254, 229, 0, 0.3);' : 'background: rgba(255, 255, 255, 0.05); color: #94A3B8;'} padding: 3px 8px; border-radius: 4px; font-size: 11px; font-weight: 600;">
-                        ${ipStr}
+                    <span class="${isIpProduct && ipStr !== '기타 캐릭터/팬시' ? 'ip-clickable' : ''}" data-ip="${ipStr}" style="${isIpProduct ? 'background: rgba(254, 229, 0, 0.15); color: #FEE500; border: 1px solid rgba(254, 229, 0, 0.3);' : 'background: rgba(255, 255, 255, 0.05); color: #94A3B8;'} padding: 3px 8px; border-radius: 4px; font-size: 11px; font-weight: 600;">
+                        ${ipStr} ${isIpProduct && ipStr !== '기타 캐릭터/팬시' ? '<i class="fa-solid fa-magnifying-glass-chart" style="font-size:9px; margin-left:3px;"></i>' : ''}
                     </span>
                 </td>
                 <td><span class="badge-brand">${brandStr}</span></td>
@@ -1058,9 +1270,244 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
+    // Search Filter
+    searchBox.addEventListener('input', (e) => {
+        const query = e.target.value.toLowerCase().trim();
+        const baseProducts = getFilteredProducts();
+        const filtered = baseProducts.filter(p => 
+            p.product_name.toLowerCase().includes(query) || 
+            (p.brand && p.brand.toLowerCase().includes(query)) ||
+            (p.character_ip && p.character_ip.toLowerCase().includes(query)) ||
+            (p.category && p.category.toLowerCase().includes(query))
+        );
+        renderTable(filtered);
+    });
+
     refreshBtn.addEventListener('click', () => {
         loadData();
     });
+
+    // ── IP DETAIL INSIGHT MODAL LOGIC ──────────────────────────────────
+    const ipModal = document.getElementById('ip-detail-modal');
+    const modalCloseBtn = document.getElementById('modal-close-btn');
+
+    function closeIpDetailModal() {
+        if (ipModal) {
+            ipModal.classList.remove('active');
+            ipModal.setAttribute('aria-hidden', 'true');
+        }
+    }
+
+    if (modalCloseBtn) {
+        modalCloseBtn.addEventListener('click', closeIpDetailModal);
+    }
+    if (ipModal) {
+        ipModal.addEventListener('click', (e) => {
+            if (e.target === ipModal) closeIpDetailModal();
+        });
+    }
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && ipModal && ipModal.classList.contains('active')) {
+            closeIpDetailModal();
+        }
+    });
+
+    document.addEventListener('click', (e) => {
+        const clickable = e.target.closest('.ip-clickable');
+        if (clickable) {
+            const ipName = clickable.getAttribute('data-ip');
+            if (ipName && ipName !== '일반/비IP 상품' && ipName !== '미분류' && ipName !== '기타 캐릭터/팬시') {
+                openIpDetailModal(ipName);
+            }
+        }
+    });
+
+    function openIpDetailModal(ipName) {
+        if (!ipModal || !ipName) return;
+
+        const ipProducts = rawProductsData.filter(p => p.character_ip && p.character_ip.includes(ipName));
+
+        if (!ipProducts || ipProducts.length === 0) return;
+
+        document.getElementById('modal-ip-title').textContent = ipName;
+        document.getElementById('modal-ip-subtitle').textContent = `${ipName} IP B2B 마케팅 & 상품 인사이트 딥다이브 리포트`;
+
+        const totalCount = ipProducts.length;
+        const totalAllProducts = rawProductsData.length;
+        const share = totalAllProducts > 0 ? ((totalCount / totalAllProducts) * 100).toFixed(1) : 0;
+
+        let totalPrice = 0;
+        let priceCount = 0;
+        ipProducts.forEach(p => {
+            const pNum = parseInt((p.price || '').replace(/[^\d]/g, ''), 10);
+            if (pNum && !isNaN(pNum)) {
+                totalPrice += pNum;
+                priceCount++;
+            }
+        });
+        const avgPrice = priceCount > 0 ? Math.round(totalPrice / priceCount) : 0;
+        const minRank = Math.min(...ipProducts.map(p => p.rank || 999));
+
+        document.getElementById('modal-kpi-rank').textContent = minRank < 999 ? `최고 ${minRank}위` : '-';
+        document.getElementById('modal-kpi-count').textContent = `${totalCount}개`;
+        document.getElementById('modal-kpi-share').textContent = `${share}%`;
+        document.getElementById('modal-kpi-price').textContent = `${avgPrice.toLocaleString()}원`;
+
+        const tierCounts = {};
+        ipProducts.forEach(p => {
+            const tier = p.price_tier || '미분류';
+            tierCounts[tier] = (tierCounts[tier] || 0) + 1;
+        });
+
+        const tierHtml = Object.entries(tierCounts).map(([tier, count]) => {
+            const pct = ((count / totalCount) * 100).toFixed(0);
+            return `
+                <div style="display:flex; justify-content:space-between; align-items:center; font-size:12.5px; margin-bottom:4px;">
+                    <span style="color:#FEE500; font-weight:600;">${tier}</span>
+                    <span>${count}개 (${pct}%)</span>
+                </div>
+                <div style="background:rgba(255,255,255,0.06); height:6px; border-radius:3px; overflow:hidden; margin-bottom:10px;">
+                    <div style="background:#6366F1; width:${pct}%; height:100%;"></div>
+                </div>
+            `;
+        }).join('');
+        document.getElementById('modal-price-matrix').innerHTML = tierHtml;
+
+        // 3. Category Breakdown
+        const catCounts = {};
+        ipProducts.forEach(p => {
+            const cat = p.category || '기타';
+            catCounts[cat] = (catCounts[cat] || 0) + 1;
+        });
+
+        const catHtml = Object.entries(catCounts).map(([cat, count]) => {
+            const pct = ((count / totalCount) * 100).toFixed(0);
+            return `
+                <div style="display:flex; justify-content:space-between; align-items:center; font-size:12.5px; margin-bottom:4px;">
+                    <span style="color:#60A5FA; font-weight:600;">${cat}</span>
+                    <span>${count}개 (${pct}%)</span>
+                </div>
+                <div style="background:rgba(255,255,255,0.06); height:6px; border-radius:3px; overflow:hidden; margin-bottom:10px;">
+                    <div style="background:#06B6D4; width:${pct}%; height:100%;"></div>
+                </div>
+            `;
+        }).join('');
+        document.getElementById('modal-cat-matrix').innerHTML = catHtml;
+
+        // 4. IP News & Marketing Highlights (100% IP Coverage)
+        let newsItems = [];
+        const cleanName = ipName.split('(')[0].split('/')[0].trim();
+        for (const [k, items] of Object.entries(ipNewsData)) {
+            const cleanK = k.split('(')[0].split('/')[0].trim();
+            if (ipName.includes(k) || k.includes(ipName) || cleanName.includes(cleanK) || cleanK.includes(cleanName)) {
+                newsItems = newsItems.concat(items);
+            }
+        }
+
+        // 중복 제거
+        const seenTitles = new Set();
+        newsItems = newsItems.filter(item => {
+            if (seenTitles.has(item.title)) return false;
+            seenTitles.add(item.title);
+            return true;
+        });
+
+        if (newsItems.length === 0) {
+            newsItems = [
+                {
+                    "title": `[카카오 선물하기] ${ipName} 모바일 굿즈 및 선물하기 랭킹 실시간 집계 중`,
+                    "source": "카카오 선물하기 트래킹",
+                    "date": "2026.03",
+                    "summary": `${ipName} IP 관련 상품이 선물 기획전 및 랭킹 상위권에 수집되어 시장 모니터링이 진행 중입니다.`
+                }
+            ];
+        }
+
+        const newsContainer = document.getElementById('modal-ip-news-list');
+        if (newsContainer) {
+            newsContainer.innerHTML = newsItems.map(item => {
+                const isVerified = item.verified === true;
+                const borderColor = isVerified ? 'rgba(56,189,248,0.25)' : 'rgba(255,255,255,0.07)';
+                const titleColor = isVerified ? '#38BDF8' : '#94A3B8';
+                const badge = isVerified
+                    ? `<span style="font-size:10px; background:rgba(56,189,248,0.15); color:#38BDF8; border:1px solid rgba(56,189,248,0.3); padding:1px 6px; border-radius:4px; white-space:nowrap; flex-shrink:0;">📰 검증된 기사</span>`
+                    : `<span style="font-size:10px; background:rgba(148,163,184,0.1); color:#64748B; border:1px solid rgba(148,163,184,0.2); padding:1px 6px; border-radius:4px; white-space:nowrap; flex-shrink:0;">📊 트렌드 분석</span>`;
+                return `
+                <div style="background:rgba(255,255,255,0.02); border:1px solid ${borderColor}; border-radius:8px; padding:12px 16px;">
+                    <div style="display:flex; justify-content:space-between; align-items:flex-start; margin-bottom:6px; gap:10px;">
+                        <span style="font-weight:${isVerified ? '700' : '500'}; color:${titleColor}; font-size:13px; line-height:1.4;">${item.title}</span>
+                        <div style="display:flex; flex-direction:column; align-items:flex-end; gap:4px; flex-shrink:0;">
+                            ${badge}
+                            <span style="font-size:10px; color:#64748B; white-space:nowrap;">${item.source} · ${item.date}</span>
+                        </div>
+                    </div>
+                    <div style="font-size:12.5px; color:${isVerified ? '#CBD5E1' : '#64748B'}; line-height:1.6;">${item.summary}</div>
+                </div>`;
+            }).join('');
+        }
+
+        // 5. Collab Brands
+        const brandCounts = {};
+        ipProducts.forEach(p => {
+            if (p.brand && p.brand !== '-' && p.brand !== 'Kakao Gift') {
+                brandCounts[p.brand] = (brandCounts[p.brand] || 0) + 1;
+            }
+        });
+        const sortedBrands = Object.entries(brandCounts).sort((a, b) => b[1] - a[1]);
+        const collabHtml = sortedBrands.length > 0
+            ? sortedBrands.map(([bName, bCnt]) => `<span class="collab-chip">${bName} (${bCnt})</span>`).join('')
+            : `<span style="color:#94A3B8; font-size:12px;">단독 출품 브랜드 중심</span>`;
+        document.getElementById('modal-collab-brands').innerHTML = collabHtml;
+
+        // 6. Marketing Takeaways Text
+        const topTier = Object.entries(tierCounts).sort((a, b) => b[1] - a[1])[0];
+        const topTierName = topTier ? topTier[0] : '2만원대';
+
+        const topCat = Object.entries(catCounts).sort((a, b) => b[1] - a[1])[0];
+        const topCatName = topCat ? topCat[0] : '카테고리';
+
+        let takeaways = `
+            🎯 <strong>[가격 & 포지셔닝]</strong> <strong>${ipName}</strong> IP는 <strong>${topTierName}</strong> 가격대(평균가 ${avgPrice.toLocaleString()}원) 상품군에 높은 밀도로 진입해 있습니다.<br>
+            📂 <strong>[주력 카테고리 장배]</strong> <strong>${topCatName}</strong> 분야(${topCat ? topCat[1] : 0}개 상품)에서 가장 높은 노출을 보이며 점유율을 이끌고 있습니다.<br>
+        `;
+        if (sortedBrands.length > 0) {
+            takeaways += `🤝 <strong>[주요 입점/콜라보 브랜드]</strong> <strong>${sortedBrands.slice(0, 3).map(b => b[0]).join(', ')}</strong> 등의 파트너 브랜드가 해당 IP 제품을 라이브하고 있습니다.`;
+        }
+        document.getElementById('modal-marketing-takeaways').innerHTML = takeaways;
+
+        const sortedProds = [...ipProducts].sort((a, b) => a.rank - b.rank);
+        const tbody = document.getElementById('modal-products-tbody');
+        tbody.innerHTML = '';
+
+        sortedProds.forEach(p => {
+            let badges = '';
+            if (p.is_exclusive) badges += `<span style="background:rgba(99,102,241,0.2); color:#A5B4FC; padding:1px 5px; border-radius:3px; font-size:10px; margin-right:3px;">단독</span>`;
+            if (p.has_packaging) badges += `<span style="background:rgba(236,72,153,0.2); color:#F472B6; padding:1px 5px; border-radius:3px; font-size:10px; margin-right:3px;">포장</span>`;
+            if (p.has_engraving) badges += `<span style="background:rgba(16,185,129,0.2); color:#34D399; padding:1px 5px; border-radius:3px; font-size:10px; margin-right:3px;">각인</span>`;
+
+            let deltaBadge = '';
+            if (p.is_new_entry) {
+                deltaBadge = `<span style="background:#EF4444; color:#FFF; font-size:9px; padding:1px 4px; border-radius:3px; margin-left:3px;">NEW</span>`;
+            } else if (p.rank_delta && p.rank_delta > 0) {
+                deltaBadge = `<span style="color:#10B981; font-size:10px; margin-left:3px;"><i class="fa-solid fa-caret-up"></i>${p.rank_delta}</span>`;
+            }
+
+            const tr = document.createElement('tr');
+            tr.innerHTML = `
+                <td><strong style="color:#FEE500;">${p.rank}위</strong> ${deltaBadge}</td>
+                <td><span class="badge-cat">${p.category || '리빙'}</span></td>
+                <td><span class="badge-brand">${p.brand || '-'}</span></td>
+                <td style="color:#F8FAFC; font-weight:500;">${p.product_name}</td>
+                <td style="color:#FEE500; font-weight:600;">${p.price}</td>
+                <td>${badges || '-'}</td>
+                <td>${p.url ? `<a href="${p.url}" target="_blank" class="product-link-btn">이동 <i class="fa-solid fa-chevron-right" style="font-size:10px;"></i></a>` : '-'}</td>
+            `;
+            tbody.appendChild(tr);
+        });
+
+        ipModal.classList.add('active');
+        ipModal.setAttribute('aria-hidden', 'false');
+    }
 
     loadAvailableDates().then(() => loadData());
 });
