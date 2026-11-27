@@ -443,167 +443,11 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
-    function formatWeekLabel(dateStr) {
-        if (!dateStr || dateStr.length !== 8) return '주간';
-        const month = parseInt(dateStr.slice(4, 6), 10);
-        const day = parseInt(dateStr.slice(6, 8), 10);
-        const weekNum = Math.ceil(day / 7);
-        return `${month}월 ${weekNum}주차`;
-    }
-
-    function formatShortDate(dateStr) {
-        if (!dateStr || dateStr.length !== 8) return '';
-        return `${dateStr.slice(4, 6)}.${dateStr.slice(6, 8)}`;
-    }
-
-    function renderWeeklyBriefing() {
-        const titleEl = document.getElementById('weekly-briefing-title');
-        const periodEl = document.getElementById('weekly-briefing-period');
-        const gridEl = document.getElementById('weekly-briefing-grid');
-        if (!gridEl) return;
-
-        const cats = (weeklyInsightsData && weeklyInsightsData.categories) ? weeklyInsightsData.categories : {};
-        const allCat = cats['전체'] || {};
-        const livingCat = cats['리빙 전체'] || {};
-        const topIps = allCat.top_ips || [];
-        const livingTopIps = livingCat.top_ips || [];
-        const steadyProds = (allCat.steady_products || []).filter(item => DashboardMetrics.ipNames(item).length);
-        const momentum = allCat.momentum || {};
-        const risingIps = momentum.rising_ips || [];
-        const newIps = momentum.new_entry_ips || [];
-
-        const endDate = weeklyInsightsData?.end_date || (rawProductsData[0]?.scraped_at || '').slice(0, 10).replace(/-/g, '');
-        const startDate = weeklyInsightsData?.start_date || '';
-        const weekLabel = formatWeekLabel(endDate);
-        const rangeText = (startDate && endDate)
-            ? `${formatShortDate(startDate)} ~ ${formatShortDate(endDate)} · ${weeklyInsightsData.observed_days || 7}일 수집`
-            : (weeklyInsightsData?.period_label || '최근 7일 자동 집계');
-
-        if (titleEl) {
-            titleEl.innerHTML = `<i class="fa-solid fa-fire highlight-rose"></i> 🗓️ [${periodText(weekLabel)}] 주간 IP 히트 트렌드 (자동 브리핑)`;
-        }
-        if (periodEl) {
-            periodEl.innerHTML = `<i class="fa-solid fa-clock"></i> ${periodText(rangeText)}`;
-        }
-
-        // Column 1: 주간 Top IP
-        const top1 = topIps[0];
-        const top2 = topIps[1];
-        const top3 = topIps[2];
-        const living1 = livingTopIps[0];
-
-        let col1Headline = '주간 데이터 집계 중';
-        let col1List = '<span style="color:var(--text-muted);">수집된 주간 IP 데이터가 없습니다.</span>';
-        if (top1) {
-            col1Headline = top2
-                ? `${periodText(top1.ip_name)} (${top1.share}) · ${periodText(top2.ip_name)} (${top2.share})`
-                : `${periodText(top1.ip_name)} (${top1.share})`;
-            col1List = [
-                top1 ? `• <strong>전체 1위:</strong> ${periodText(top1.ip_name)} (${top1.share} · ${top1.count}건)` : '',
-                top2 ? `• <strong>전체 2위:</strong> ${periodText(top2.ip_name)} (${top2.share} · ${top2.count}건)` : '',
-                top3 ? `• <strong>전체 3위:</strong> ${periodText(top3.ip_name)} (${top3.share} · ${top3.count}건)` : '',
-                living1 ? `• <strong>리빙 전체 1위:</strong> ${periodText(living1.ip_name)} (${living1.share})` : ''
-            ].filter(Boolean).join('<br>');
-        } else if (rawProductsData.length > 0) {
-            const fallbackSummary = DashboardMetrics.summarize(rawProductsData);
-            const sortedFallback = Object.entries(fallbackSummary.ipCounts).sort((a, b) => b[1] - a[1]);
-            if (sortedFallback[0]) {
-                col1Headline = `${periodText(sortedFallback[0][0])} (${sortedFallback[0][1]}건 노출)`;
-                col1List = sortedFallback.slice(0, 3).map(([name, cnt], idx) =>
-                    `• <strong>${idx + 1}위:</strong> ${periodText(name)} (${cnt}건)`
-                ).join('<br>');
-            }
-        }
-
-        // Column 2: 급상승 모멘텀 또는 팬시 핵심 Top 상품
-        let col2Badge = '모멘텀 자동 분석';
-        let col2Headline = '팬시/문구 핵심 IP 동향';
-        let col2Body = '';
-        if (risingIps.length > 0 || newIps.length > 0) {
-            const pick = risingIps[0] || newIps[0];
-            col2Badge = risingIps.length > 0 ? '직전 대비 급상승' : '신규 진입';
-            col2Headline = `${periodText(pick.ip_name)} (${periodText(pick.growth_rate)})`;
-            const ev = (pick.evidence_products || [])[0];
-            col2Body = `
-                <div style="font-size:0.84rem; color:var(--text-secondary); margin:8px 0; line-height:1.4;">
-                    직전 7일 대비 순위 가중 점수 <strong>${pick.score_delta > 0 ? '+' + pick.score_delta : pick.score_delta}p</strong> 변동 (${pick.appearance_days}일 출현)
-                </div>
-                <div style="font-size:0.82rem; color:var(--text-muted); line-height:1.4;">
-                    ${ev ? `• <strong>대표 상품:</strong> ${periodText(ev.product_name)} (${periodText(ev.price)})` : ''}
-                    ${risingIps[1] ? `<br>• <strong>차순위 상승:</strong> ${periodText(risingIps[1].ip_name)} (${periodText(risingIps[1].growth_rate)})` : ''}
-                </div>
-            `;
-        } else {
-            const fancyProds = rawProductsData.filter(p => p.category === '팬시/문구/취미 (IP핵심)').slice(0, 10);
-            const fancySummary = DashboardMetrics.summarize(fancyProds);
-            const topFancyIp = Object.entries(fancySummary.ipCounts).sort((a, b) => b[1] - a[1])[0];
-            col2Headline = topFancyIp
-                ? `팬시 Top 10 내 ${periodText(topFancyIp[0])} ${topFancyIp[1]}개 진입`
-                : '팬시/문구/취미 상위 랭킹';
-            col2Body = `
-                <div style="font-size:0.84rem; color:var(--text-secondary); margin:8px 0; line-height:1.4;">
-                    최신 수집 기준 팬시 Top 10 평균 IP가 <strong>${fancySummary.avgIpPrice ? fancySummary.avgIpPrice.toLocaleString() + '원' : '-'}</strong>
-                </div>
-                <div style="font-size:0.82rem; color:var(--text-muted); line-height:1.4;">
-                    ${fancyProds.slice(0, 3).map(p => `• <strong>${p.rank}위:</strong> ${periodText(p.product_name)} (${periodText(p.price)})`).join('<br>')}
-                </div>
-            `;
-        }
-
-        // Column 3: 카테고리별 1위 & 장기 노출 스테디 상품
-        const catLeaderLines = ['팬시/문구/취미 (IP핵심)', '침구/패브릭', '주방/식기'].map(cat => {
-            const first = rawProductsData.find(p => p.category === cat && p.rank === 1) || rawProductsData.find(p => p.category === cat);
-            if (!first) return '';
-            const shortCat = cat.replace(' (IP핵심)', '');
-            return `• <strong>${shortCat} 1위:</strong> ${periodText(first.product_name)} (${periodText(first.price)})`;
-        }).filter(Boolean).join('<br>');
-
-        const steadyTop = steadyProds[0];
-        const col3Headline = steadyTop
-            ? `${periodText(steadyTop.character_ip.split(',')[0])} 등 장기 스테디 강세`
-            : '카테고리별 1위 현황';
-
-        gridEl.innerHTML = `
-            <div class="takeaway-item" style="background:rgba(15,23,42,0.7); padding:16px 18px; border-radius:12px; border-left:4px solid var(--kakao-yellow);">
-                <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:4px;">
-                    <span style="font-size:0.82rem; color:var(--text-secondary); font-weight:600;">👑 주간 1위 IP &amp; 점유율</span>
-                    <span style="font-size:0.75rem; background:rgba(254,229,0,0.2); color:var(--kakao-yellow); padding:2px 6px; border-radius:4px; font-weight:700;">최근 7일 자동집계</span>
-                </div>
-                <div style="font-size:1.05rem; font-weight:800; color:var(--kakao-yellow); margin-bottom:8px;">${col1Headline}</div>
-                <div style="font-size:0.82rem; color:var(--text-muted); line-height:1.5;">
-                    ${col1List}
-                </div>
-            </div>
-
-            <div class="takeaway-item" style="background:rgba(15,23,42,0.7); padding:16px 18px; border-radius:12px; border-left:4px solid var(--accent-cyan);">
-                <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:4px;">
-                    <span style="font-size:0.82rem; color:var(--text-secondary); font-weight:600;">⚡ 주간 모멘텀 &amp; 팬시 핵심</span>
-                    <span style="font-size:0.75rem; background:rgba(6,182,212,0.2); color:var(--accent-cyan); padding:2px 6px; border-radius:4px; font-weight:700;">${periodText(col2Badge)}</span>
-                </div>
-                <div style="font-size:1.05rem; font-weight:800; color:var(--accent-cyan);">${col2Headline}</div>
-                ${col2Body}
-            </div>
-
-            <div class="takeaway-item" style="background:rgba(15,23,42,0.7); padding:16px 18px; border-radius:12px; border-left:4px solid var(--accent-rose);">
-                <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:4px;">
-                    <span style="font-size:0.82rem; color:var(--text-secondary); font-weight:600;">🏆 카테고리별 1위 &amp; 스테디셀러</span>
-                    <span style="font-size:0.75rem; background:rgba(244,63,94,0.2); color:var(--accent-rose); padding:2px 6px; border-radius:4px; font-weight:700;">최신 랭킹 기준</span>
-                </div>
-                <div style="font-size:1.05rem; font-weight:800; color:var(--accent-rose); margin-bottom:8px;">${col3Headline}</div>
-                <div style="font-size:0.82rem; color:var(--text-muted); line-height:1.5;">
-                    ${catLeaderLines || '집계된 카테고리 1위 데이터가 없습니다.'}
-                </div>
-            </div>
-        `;
-    }
-
     function renderDashboard() {
         if (activePage === 'page-period-insights') {
             renderPeriodInsights();
             return;
         }
-
-        renderWeeklyBriefing();
 
         const products = getFilteredProducts();
         if (!products) return;
@@ -975,10 +819,29 @@ document.addEventListener('DOMContentLoaded', () => {
         `;
 
         // IP Summary Table
+        const ipSearchInput = document.getElementById('ip-strategy-search-box');
+        const query = ipSearchInput ? ipSearchInput.value.toLowerCase().trim() : '';
         const tbody = document.getElementById('ip-summary-tbody');
         tbody.innerHTML = '';
 
-        sortedIps.forEach(([ipName, count]) => {
+        const filteredIps = query
+            ? sortedIps.filter(([ipName]) => {
+                if (ipName.toLowerCase().includes(query)) return true;
+                const ipProds = allProducts.filter(p => DashboardMetrics.ipNames(p).includes(ipName));
+                return ipProds.some(p =>
+                    (p.product_name && p.product_name.toLowerCase().includes(query)) ||
+                    (p.brand && p.brand.toLowerCase().includes(query)) ||
+                    (p.category && p.category.toLowerCase().includes(query))
+                );
+            })
+            : sortedIps;
+
+        if (filteredIps.length === 0) {
+            tbody.innerHTML = '<tr><td colspan="5" style="text-align:center; padding: 20px; color:#94A3B8;">검색 결과가 없습니다.</td></tr>';
+            return;
+        }
+
+        filteredIps.forEach(([ipName, count]) => {
             const ipProds = allProducts.filter(p => DashboardMetrics.ipNames(p).includes(ipName));
             const bestProduct = ipProds.sort((a, b) => a.rank - b.rank)[0];
             const ratioPct = roundToOneDecimal((count / allProducts.length) * 100);
@@ -1282,6 +1145,17 @@ document.addEventListener('DOMContentLoaded', () => {
         );
         renderTable(filtered);
     });
+
+    const ipStrategySearchBox = document.getElementById('ip-strategy-search-box');
+    if (ipStrategySearchBox) {
+        ipStrategySearchBox.addEventListener('input', () => {
+            const products = getFilteredProducts();
+            if (!products) return;
+            const summary = DashboardMetrics.summarize(products);
+            const sortedIps = Object.entries(summary.ipCounts).sort((a, b) => b[1] - a[1]);
+            renderIpStrategyPage(products, sortedIps);
+        });
+    }
 
     refreshBtn.addEventListener('click', () => {
         loadData();

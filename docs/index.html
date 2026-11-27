@@ -81,18 +81,66 @@
             <!-- PAGE 1: 📊 기획 브리핑 (홈) (Overview & Charts View) -->
             <!-- ================================================================= -->
             <div id="page-overview" class="page-view active">
-                <!-- 🎯 주간 IP 히트 트렌드 브리핑 (수집 데이터 기반 자동 업데이트) -->
-                <section id="weekly-briefing-section" class="card quick-takeaway-banner" style="background: linear-gradient(135deg, rgba(254, 229, 0, 0.14), rgba(99, 102, 241, 0.12)); border: 1px solid var(--border-highlight); margin-bottom: 24px; padding: 22px 26px;">
+                <!-- 🎯 MD / 상품기획 주간 IP 히트 트렌드 & 배경 분석 브리핑 (주 1회 업데이트) -->
+                <section class="card quick-takeaway-banner" style="background: linear-gradient(135deg, rgba(254, 229, 0, 0.14), rgba(99, 102, 241, 0.12)); border: 1px solid var(--border-highlight); margin-bottom: 24px; padding: 22px 26px;">
                     <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:14px; flex-wrap:wrap; gap:10px;">
-                        <h3 id="weekly-briefing-title" style="font-size:1.15rem; font-weight:700; color:var(--kakao-yellow); display:flex; align-items:center; gap:8px;">
-                            <i class="fa-solid fa-fire highlight-rose"></i> 🗓️ 주간 IP 히트 트렌드 (Weekly Briefing)
+                        <h3 style="font-size:1.15rem; font-weight:700; color:var(--kakao-yellow); display:flex; align-items:center; gap:8px;">
+                            <i class="fa-solid fa-fire highlight-rose"></i> 🗓️ [11월 3주차] 주간 IP 히트 트렌드 &amp; 배경 분석 (Weekly Briefing)
                         </h3>
-                        <span id="weekly-briefing-period" style="font-size:0.8rem; color:var(--text-secondary); background:rgba(0,0,0,0.35); padding:4px 12px; border-radius:20px; font-weight:600;">
-                            <i class="fa-solid fa-clock"></i> 주간 데이터 집계 중...
+                        <span style="font-size:0.8rem; color:var(--text-secondary); background:rgba(0,0,0,0.35); padding:4px 12px; border-radius:20px; font-weight:600;">
+                            <i class="fa-solid fa-clock"></i> 7일 단위 종합 리포트 (11.20 ~ 11.26)
                         </span>
                     </div>
-                    <div id="weekly-briefing-grid" class="takeaway-grid" style="display:grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap:16px;">
-                        <div style="color:var(--text-muted); font-size:0.88rem; padding:12px;">주간 브리핑 데이터를 불러오는 중입니다...</div>
+                    <div class="takeaway-grid" style="display:grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap:16px;">
+                        <!-- Column 1: Top IP & Verified Trigger -->
+                        <div class="takeaway-item" style="background:rgba(15,23,42,0.7); padding:16px 18px; border-radius:12px; border-left:4px solid var(--kakao-yellow);">
+                            <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:4px;">
+                                <span style="font-size:0.82rem; color:var(--text-secondary); font-weight:600;">👑 주간 1위 IP &amp; 오프라인 화제성</span>
+                                <span style="font-size:0.75rem; background:rgba(254,229,0,0.2); color:var(--kakao-yellow); padding:2px 6px; border-radius:4px; font-weight:700;">팝업·콜라보 연동</span>
+                            </div>
+                            <div style="font-size:1.08rem; font-weight:800; color:var(--kakao-yellow);">치이카와 수성 · 가나디 양강 구도</div>
+                            <div style="font-size:0.81rem; color:var(--text-primary); background:rgba(255,255,255,0.06); padding:8px 10px; border-radius:6px; margin:8px 0 8px; line-height:1.45;">
+                                📰 <strong>주간 트렌드 팩트:</strong> 더현대 서울 <strong>'치이카와 클리닉' 팝업</strong>(11.27~) 오픈 및 <strong>가나디</strong> 도미노피자 한정판 키링·더현대 '우체국 팝업'(12월) 화제로 팬덤 수요 집중
+                            </div>
+                            <div style="font-size:0.82rem; color:var(--text-muted); line-height:1.4;">
+                                • <strong>전체 1위:</strong> 먼작귀/치이카와 (11.3% · 팬시 1위)<br>
+                                • <strong>전체 2위:</strong> 가나디 (10.3% · 리빙 전체 1위 9.5%)<br>
+                                • <strong>전체 3위:</strong> 산리오 (용산 크리스마스 팝업 진행 중)
+                            </div>
+                        </div>
+
+                        <!-- Column 2: Form Factor Trend -->
+                        <div class="takeaway-item" style="background:rgba(15,23,42,0.7); padding:16px 18px; border-radius:12px; border-left:4px solid var(--accent-cyan);">
+                            <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:4px;">
+                                <span style="font-size:0.82rem; color:var(--text-secondary); font-weight:600;">⚡ 주간 급상승 IP &amp; 폼팩터</span>
+                                <span style="font-size:0.75rem; background:rgba(6,182,212,0.2); color:var(--accent-cyan); padding:2px 6px; border-radius:4px; font-weight:700;">스퀴시 + 데스크테리어</span>
+                            </div>
+                            <div style="font-size:1.08rem; font-weight:800; color:var(--accent-cyan);">가나디 전방위 확산 &amp; 1만원대 실용 소품</div>
+                            <div style="font-size:0.84rem; color:var(--text-secondary); margin:8px 0; line-height:1.4;">
+                                팬시 Top 10 중 <strong>가나디 5개 품목</strong> 진입(3·6·7·9·10위) — 스트레스볼 인형과 책상·휴대 소품으로 품목 다각화
+                            </div>
+                            <div style="font-size:0.82rem; color:var(--text-muted); line-height:1.4;">
+                                • <strong>스트레스볼:</strong> 먼작귀 키링(12,000원), 가나디 인형(16,300원)<br>
+                                • <strong>데스크·휴대:</strong> 피규어 거치대(14,800원), 복조리 파우치(12,000원)
+                            </div>
+                        </div>
+
+                        <!-- Column 3: Seasonal & Holiday -->
+                        <div class="takeaway-item" style="background:rgba(15,23,42,0.7); padding:16px 18px; border-radius:12px; border-left:4px solid var(--accent-rose);">
+                            <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:4px;">
+                                <span style="font-size:0.82rem; color:var(--text-secondary); font-weight:600;">❄️ 연말 홀리데이 &amp; 방한 리빙</span>
+                                <span style="font-size:0.75rem; background:rgba(244,63,94,0.2); color:var(--accent-rose); padding:2px 6px; border-radius:4px; font-weight:700;">방한 + 2027 신년</span>
+                            </div>
+                            <div style="font-size:1.08rem; font-weight:800; color:var(--accent-rose);">보온 패브릭 &amp; 연말 홈파티·신년 굿즈</div>
+                            <div style="font-size:0.84rem; color:var(--text-secondary); margin:8px 0; line-height:1.4;">
+                                본격적인 겨울 추위와 연말 시즌이 맞물리며 <strong>방한 침구·보온 텀블러·2027 캘린더</strong>가 카테고리 상위권 장악
+                            </div>
+                            <div style="font-size:0.82rem; color:var(--text-muted); line-height:1.4;">
+                                • <strong>방한 패브릭:</strong> 핸드워머 쿠션(22,900원), 후드·극세사 담요<br>
+                                • <strong>신년·연말:</strong> 2027 데스크 캘린더·다이어리, 홀리데이 와인잔<br>
+                                • <strong>보온 주방:</strong> 레고트×헬로키티(35,100원), 스탠리·리락쿠마 텀블러
+                            </div>
+                        </div>
                     </div>
                 </section>
 
@@ -294,8 +342,14 @@
 
                 <!-- Top IP Ranking Summary -->
                 <section class="card" style="margin-bottom: 28px;">
-                    <div class="section-header">
+                    <div class="section-header table-header">
                         <h2><i class="fa-solid fa-heart highlight-rose"></i> 🧸 현재 인기 캐릭터 IP 노출 순위 & 주력 상품</h2>
+                        <div class="table-tools">
+                            <div class="search-input">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                                <input type="text" id="ip-strategy-search-box" placeholder="캐릭터 IP, 브랜드, 상품명 검색...">
+                            </div>
+                        </div>
                     </div>
                     <div style="background:rgba(254, 229, 0, 0.08); border-left:3px solid var(--kakao-yellow); padding:10px 14px; border-radius:6px; margin-bottom:14px; font-size:0.86rem; color:var(--text-secondary);">
                         💡 <strong style="color:var(--kakao-yellow);">Tip:</strong> 표에서 캐릭터명을 클릭하시면 <strong>주력 가격대 매트릭스, 카테고리별 상품 분포, 1~5위 효자 상품 리스트</strong> 딥다이브 리포트가 열립니다.
@@ -503,7 +557,7 @@
     </div>
 
     <script src="metrics.js?v=2"></script>
-    <script src="app.js?v=18"></script>
+    <script src="app.js?v=19"></script>
 </body>
 </html>
 
