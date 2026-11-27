@@ -1079,6 +1079,19 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
+    function formatDeltaBadge(p) {
+        if (p.rank_comparison_status === 'unavailable') {
+            return `<span style="color:#94A3B8;font-size:10px;margin-left:4px;" title="이전 수집 범위 또는 상품 식별 정보가 부족합니다.">비교 불가</span>`;
+        } else if (p.is_new_entry) {
+            return `<span style="background:#EF4444; color:#FFF; font-size:9px; padding:1px 4px; border-radius:3px; margin-left:4px; font-weight:700;">NEW</span>`;
+        } else if (p.rank_delta && p.rank_delta > 0) {
+            return `<span style="color:#10B981; font-size:10px; font-weight:700; margin-left:4px;"><i class="fa-solid fa-caret-up"></i> ${p.rank_delta}</span>`;
+        } else if (p.rank_delta && p.rank_delta < 0) {
+            return `<span style="color:#EF4444; font-size:10px; font-weight:700; margin-left:4px;"><i class="fa-solid fa-caret-down"></i> ${Math.abs(p.rank_delta)}</span>`;
+        }
+        return '';
+    }
+
     function renderTable(products) {
         const tbody = document.getElementById('ranking-table-body');
         tbody.innerHTML = '';
@@ -1088,8 +1101,35 @@ document.addEventListener('DOMContentLoaded', () => {
             return;
         }
 
-        products.forEach(p => {
-            const catStr = p.category ? p.category : '리빙 전체';
+        let rowsToRender = products.map(p => ({
+            ...p,
+            mergedContexts: [{ category: p.category || '리빙 전체', rank: p.rank, deltaBadge: formatDeltaBadge(p) }]
+        }));
+
+        if (activeCategory === 'all') {
+            const grouped = new Map();
+            rowsToRender.forEach(item => {
+                const key = item.product_id ? String(item.product_id) : `${item.brand || ''}::${item.product_name}`;
+                if (!grouped.has(key)) {
+                    grouped.set(key, { ...item, mergedContexts: [...item.mergedContexts] });
+                } else {
+                    const existing = grouped.get(key);
+                    const ctx = item.mergedContexts[0];
+                    if (!existing.mergedContexts.some(c => c.category === ctx.category && c.rank === ctx.rank)) {
+                        existing.mergedContexts.push(ctx);
+                    }
+                    if ((item.rank || 999) < (existing.rank || 999)) {
+                        existing.rank = item.rank;
+                        existing.rank_delta = item.rank_delta;
+                        existing.is_new_entry = item.is_new_entry;
+                        existing.rank_comparison_status = item.rank_comparison_status;
+                    }
+                }
+            });
+            rowsToRender = Array.from(grouped.values());
+        }
+
+        rowsToRender.forEach(p => {
             const brandStr = p.brand ? p.brand : '-';
             const ipStr = p.character_ip ? p.character_ip : '일반/비IP 상품';
             const isIpProduct = ipStr !== '일반/비IP 상품';
@@ -1100,20 +1140,14 @@ document.addEventListener('DOMContentLoaded', () => {
             if (p.has_packaging) uspBadges += `<span style="background:rgba(236,72,153,0.2); color:#F472B6; border:1px solid rgba(236,72,153,0.4); padding:1px 5px; border-radius:3px; font-size:10px; margin-right:3px;">포장</span>`;
             if (p.has_engraving) uspBadges += `<span style="background:rgba(16,185,129,0.2); color:#34D399; border:1px solid rgba(16,185,129,0.4); padding:1px 5px; border-radius:3px; font-size:10px; margin-right:3px;">각인</span>`;
 
-            let deltaBadge = '';
-            if (p.rank_comparison_status === 'unavailable') {
-                deltaBadge = `<span style="color:#94A3B8;font-size:10px;margin-left:4px;" title="이전 수집 범위 또는 상품 식별 정보가 부족합니다.">비교 불가</span>`;
-            } else if (p.is_new_entry) {
-                deltaBadge = `<span style="background:#EF4444; color:#FFF; font-size:9px; padding:1px 4px; border-radius:3px; margin-left:4px; font-weight:700;">NEW</span>`;
-            } else if (p.rank_delta && p.rank_delta > 0) {
-                deltaBadge = `<span style="color:#10B981; font-size:10px; font-weight:700; margin-left:4px;"><i class="fa-solid fa-caret-up"></i> ${p.rank_delta}</span>`;
-            } else if (p.rank_delta && p.rank_delta < 0) {
-                deltaBadge = `<span style="color:#EF4444; font-size:10px; font-weight:700; margin-left:4px;"><i class="fa-solid fa-caret-down"></i> ${Math.abs(p.rank_delta)}</span>`;
-            }
+            const deltaBadge = formatDeltaBadge(p);
+            const catCellHtml = (activeCategory === 'all' && p.mergedContexts.length > 1)
+                ? p.mergedContexts.map(c => `<div style="margin-bottom:3px;"><span class="badge-cat">${c.category}</span> <span style="font-size:11px; color:#CBD5E1; font-weight:600;">${c.rank}위</span></div>`).join('')
+                : `<span class="badge-cat">${p.mergedContexts[0].category}</span>`;
 
             const tr = document.createElement('tr');
             tr.innerHTML = `
-                <td><span class="badge-cat">${catStr}</span></td>
+                <td>${catCellHtml}</td>
                 <td class="badge-rank">${p.rank}위 ${deltaBadge}</td>
                 <td>
                     <span class="${isIpProduct && ipStr !== '기타 캐릭터/팬시' ? 'ip-clickable' : ''}" data-ip="${ipStr}" style="${isIpProduct ? 'background: rgba(254, 229, 0, 0.15); color: #FEE500; border: 1px solid rgba(254, 229, 0, 0.3);' : 'background: rgba(255, 255, 255, 0.05); color: #94A3B8;'} padding: 3px 8px; border-radius: 4px; font-size: 11px; font-weight: 600;">
